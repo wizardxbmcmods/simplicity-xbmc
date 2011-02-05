@@ -808,7 +808,7 @@
 					<ondown>9000</ondown>
 					<itemgap>0</itemgap>
 					<orientation>horizontal</orientation>
-					<visible>Container(9000).HasFocus(9) + [[Skin.HasSetting(HomeScriptButton1) + !IsEmpty(Skin.String(HomeScriptButton1_label))] | [Skin.HasSetting(HomeScriptButton2) + !IsEmpty(Skin.String(HomeScriptButton2_label))] | [Skin.HasSetting(HomeScriptButton3) + !IsEmpty(Skin.String(HomeScriptButton3_label))] | [Skin.HasSetting(HomeScriptButton4) + !IsEmpty(Skin.String(HomeScriptButton4_label))] | [Skin.HasSetting(HomeScriptButton5) + !IsEmpty(Skin.String(HomeScriptButton5_label))] | [Skin.HasSetting(HomeScriptButton6) + !IsEmpty(Skin.String(HomeScriptButton6_label))]]</visible>						
+					<visible>Container(9000).HasFocus(9)</visible>						
 					<control type="button" id="90151">
 						<animation effect="slide" start="0,0" end="0,-10" time="100" >Focus</animation>
 						<animation effect="slide" start="0,-10" end="0,0" time="100" >UnFocus</animation>

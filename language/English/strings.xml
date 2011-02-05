@@ -122,16 +122,19 @@
   <string id="31320">Last Logged In</string>
   <string id="31321">Karaoke Song Selector</string>
   <string id="31322">Aired</string>
-  <string id="31323">Latest Movies</string>
-  <string id="31324">Latest Episodes</string>
+  <string id="31323">Latest Movie</string>
+  <string id="31324">Latest Episode</string>
   <string id="31325">Playlist Options</string>
   <string id="31326">Created</string>
   <string id="31327">Resolution</string>
   <string id="31328">Recently Added</string>
   <string id="31329">[B]TIMER SET![/B] [COLOR=grey2] - SYSTEM AUTO SHUTDOWN IN[/COLOR]</string>
+  <string id="31330">New Movies</string>
+  <string id="31331">New Episodes</string>
   <string id="31422">Hide Res. Flags</string>
   <string id="31423">Hide Flags</string>
   <string id="31424">More Info</string>
+
 
   <!-- Description Labels  -->
   <string id="31400">[B]CONFIGURE APPEARANCE SETTINGS[/B][CR][CR]Change the skin · Set language and region · Change file listing options[CR]Set up a screensaver</string>
