@@ -2,6 +2,16 @@
 
 
 
+
+
+
+
+
+[B]1.0.1[/B] 
+
+- Nothing new, just cleaning up some code and fixing some shadows.
+
+
 [B]1.0.0[/B] 
 
 - Initial Commit to the Google Site

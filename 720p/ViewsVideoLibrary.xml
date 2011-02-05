@@ -2137,7 +2137,7 @@
 					<control type="grouplist">
 						<description>Studio Codec Flagging Images</description>
 						<posx>870</posx>
-						<posy>280</posy>
+						<posy>273</posy>
 						<width>150</width>
 						<align>left</align>
 						<itemgap>0</itemgap>
