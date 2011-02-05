@@ -59,22 +59,20 @@
 						<itemlayout height="240" width="150">
 							<control type="image">
 								<description>Main Icon</description>
-								<posx>5</posx>
-								<posy>5</posy>
-								<width>93</width>
-								<height>138</height>
-								<aspectratio align="left">stretch</aspectratio>
+								<posx>4</posx>
+								<posy>4</posy>
+								<width>99</width>
+								<height>144</height>
+								<aspectratio>stretch</aspectratio>
 								<fadetime>200</fadetime>
 								<texture>simplicity/poster-home-shadow.png</texture>
 							</control>
 							<control type="image">
-								<description>Main Icon</description>
-								<posx>0</posx>
-								<posy>0</posy>
+								<posx>2</posx>
+								<posy>2</posy>
 								<width>93</width>
 								<height>138</height>
-								<aspectratio align="left">stretch</aspectratio>
-								<fadetime>200</fadetime>
+								<aspectratio>stretch</aspectratio>
 								<texture diffuse="simplicity/poster-home-diffuse.png">$INFO[ListItem.ActualIcon]</texture>
 							</control>
 							<control type="image">
@@ -91,11 +89,11 @@
 						<focusedlayout height="240" width="150">
 							<control type="image">
 								<description>Main Icon</description>
-								<posx>7</posx>
-								<posy>7</posy>
-								<width>93</width>
-								<height>138</height>
-								<aspectratio align="left">stretch</aspectratio>
+								<posx>4</posx>
+								<posy>4</posy>
+								<width>99</width>
+								<height>144</height>
+								<aspectratio>stretch</aspectratio>
 								<fadetime>200</fadetime>
 								<texture>simplicity/poster-home-shadow.png</texture>
 							</control>
@@ -110,8 +108,8 @@
 							<control type="largeimage">
 								<posx>1</posx>
 								<posy>1</posy> 
-								<width>95</width>
-								<height>140</height>
+								<width>96</width>
+								<height>141</height>
 								<aligny>center</aligny>
 								<texture diffuse="simplicity/poster-home-diffuse.png">simplicity/poster-border5.png</texture>
 								<aspectratio>stretch</aspectratio>
@@ -119,8 +117,8 @@
 							<control type="image">
 								<posx>1</posx>
 								<posy>1</posy> 
-								<width>95</width>
-								<height>140</height>
+								<width>96</width>
+								<height>141</height>
 								<aspectratio align="left">stretch</aspectratio>
 								<fadetime>200</fadetime>
 								<texture diffuse="simplicity/poster-home-diffuse.png">simplicity/black-back.png</texture>
@@ -217,11 +215,11 @@
 						<itemlayout height="240" width="115">
 							<control type="image">
 								<description>Main Icon</description>
-								<posx>7</posx>
-								<posy>7</posy>
-								<width>93</width>
-								<height>138</height>
-								<aspectratio align="left">stretch</aspectratio>
+								<posx>4</posx>
+								<posy>4</posy>
+								<width>99</width>
+								<height>144</height>
+								<aspectratio>stretch</aspectratio>
 								<fadetime>200</fadetime>
 								<texture>simplicity/poster-home-shadow.png</texture>
 							</control>
@@ -256,11 +254,11 @@
 						<focusedlayout height="240" width="115">
 							<control type="image">
 								<description>Main Icon</description>
-								<posx>7</posx>
-								<posy>7</posy>
-								<width>93</width>
-								<height>138</height>
-								<aspectratio align="left">stretch</aspectratio>
+								<posx>4</posx>
+								<posy>4</posy>
+								<width>99</width>
+								<height>144</height>
+								<aspectratio>stretch</aspectratio>
 								<fadetime>200</fadetime>
 								<texture>simplicity/poster-home-shadow.png</texture>
 							</control>

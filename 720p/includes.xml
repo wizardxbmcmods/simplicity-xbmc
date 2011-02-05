@@ -2006,7 +2006,7 @@
 				<posy>2</posy>
 				<width>118</width>
 				<height>118</height>
-				<texture>simplicity/cd-now-playing.png</texture>
+				<texture fallback="simplicity/cd-now-playing.png">$INFO[Player.FolderPath]/cdart.png</texture>
 				<aspectratio align="center">keep</aspectratio>
 				<animation effect="rotate" end="-360" center="auto" time="2000" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
 			</control>

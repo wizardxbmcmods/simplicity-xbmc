@@ -375,6 +375,7 @@
 						<height>20</height>
 						<font>Shade_24</font>
 						<textcolor>white</textcolor>
+						<selectedcolor>white</selectedcolor>
 						<scroll>false</scroll>
 						<scrollspeed>0</scrollspeed>
 						<align>left</align>
@@ -387,6 +388,7 @@
 						<height>20</height>
 						<font>Shade_20</font>
 						<textcolor>grey2</textcolor>
+						<selectedcolor>grey2</selectedcolor>
 						<scroll>false</scroll>
 						<scrollspeed>0</scrollspeed>
 						<align>left</align>
