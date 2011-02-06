@@ -339,7 +339,7 @@
 				<width>160</width>
 				<height>30</height>
 				<aspectratio align="right">keep</aspectratio>
-				<texture>leftrating/$INFO[Player.StarRating]</texture>
+				<texture>$INFO[Player.StarRating]</texture>
 			</control>
 			<control type="label">
 				<posx>0</posx>
@@ -351,7 +351,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>Shade_24_Bold</font>
-				<textcolor>white</textcolor>
+				<textcolor>yellow</textcolor>
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="label">
@@ -385,6 +385,9 @@
 				<width>818</width>
 				<height>14</height>
 				<info>Player.Progress</info>
+			<texturebg border="6,0,6,0">simplicity/progress-back.png</texturebg>
+			<lefttexture border="6,0,0,0">simplicity/progress-left.png</lefttexture>
+			<midtexture border="6,0,6,0">simplicity/osd-front.png</midtexture>
 			</control>
 			<control type="label">
 				<description>Elapsed Time Label</description>
@@ -610,21 +613,30 @@
 	</control>
 	<control type="image">
 		<description>cover image</description>
+		<posx>11</posx>
+		<posy>395</posy>
+		<width>308</width>
+		<height>293</height>
+		<texture>simplicity/cd-shadow.png</texture>
+		<animation effect="slide" start="-118" end="0" time="300" tween="cubic" easing="out" delay="500">WindowOpen</animation>
+	</control>
+	<control type="image">
+		<description>cover image</description>
 		<posx>15</posx>
 		<posy>395</posy>
 		<width>300</width>
 		<height>285</height>
-		<texture diffuse="simplicity/cdcover_mask.png">$INFO[MusicPlayer.Cover]</texture>
+		<texture>$INFO[MusicPlayer.Cover]</texture>
 		<aspectratio aligny="bottom">stretch</aspectratio>
 		<animation effect="slide" start="-118" end="0" time="300" tween="cubic" easing="out" delay="500">WindowOpen</animation>
 	</control>
 	<control type="image">
 		<description>cover image</description>
 		<posx>15</posx>
-		<posy>681</posy>
+		<posy>395</posy>
 		<width>300</width>
 		<height>285</height>
-		<texture flipy="true" diffuse="simplicity/cdcover_mask_reflection.png">$INFO[MusicPlayer.cover]</texture>
+		<texture>simplicity/cd-cover-gloss.png</texture>
 		<aspectratio aligny="bottom">stretch</aspectratio>
 		<animation effect="slide" start="-118" end="0" time="300" tween="cubic" easing="out" delay="500">WindowOpen</animation>
 	</control>
