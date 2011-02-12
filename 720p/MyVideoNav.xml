@@ -1,7 +1,7 @@
 <window id="25">
 	<defaultcontrol always="true">9999</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-	<views>50,59,500,501,504,505,506,507,508,509,511,532,534,535,536,537,538,539,540,552</views>
+	<views>50,59,500,501,504,505,506,507,508,509,511,532,534,535,536,537,538,539,540,552,553</views>
 	<visible>!Skin.HasSetting(KioskMode)</visible>
 	<controls>
 		<control type="button" id="9999">
@@ -106,6 +106,8 @@
 			<!-- view id = 540 -->
 			<include>Carousel</include>
 			<!-- view id = 552 -->
+			<include>ScreenTestView</include>
+			<!-- view id = 553 -->
 			<include>MovieGenreView</include>
 			<!-- view id = 59 -->
 		</control>
@@ -251,6 +253,15 @@
 						<onclick>Skin.ToggleSetting(View508HideInfo)</onclick>
 						<selected>Skin.HasSetting(View508HideInfo)</selected>
 						<visible>Control.IsVisible(508)</visible>
+					</control>
+					<control type="radiobutton" id="206">
+						<textwidth>170</textwidth>
+						<description>Toggle Flags Instead of Plot</description>
+						<include>ButtonCommonValuesSub</include>
+						<label>Use Flags</label>
+						<onclick>Skin.ToggleSetting(UseFlags)</onclick>
+						<selected>Skin.HasSetting(UseFlags)</selected>
+						<visible>Control.IsVisible(532)</visible>
 					</control>
 				</control>
 			</control>

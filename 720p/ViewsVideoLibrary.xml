@@ -1651,6 +1651,39 @@
 							<align>left</align>
 							<texture>simplicity/banners/$INFO[ListItem.Overlay]</texture>
 						</control>
+				<control type="group">
+					<visible>Skin.HasSetting(UseFlags)</visible>
+				<control type="group">
+					<description>Media Codec Flagging Images</description>
+						<posx>270</posx>
+						<posy>110</posy>
+						<include>VideoCodecFlaggingConditionsList</include>
+				</control>
+				<control type="group">
+					<description>Media Codec Flagging Images</description>
+						<posx>351</posx>
+						<posy>110</posy>
+						<include>VideoResolutionFlaggingConditionsList</include>
+				</control>
+				<control type="group">
+						<description>Media Codec Flagging Images</description>
+						<posx>438</posx>
+						<posy>110</posy>
+						<include>AspectCodecFlaggingConditions</include>
+				</control>
+				<control type="group">
+					<description>Media Codec Flagging Images</description>
+						<posx>525</posx>
+						<posy>110</posy>
+						<include>AudioCodecFlaggingConditionsList</include>
+				</control>
+				<control type="group">
+					<description>Media Codec Flagging Images</description>
+						<posx>612</posx>
+						<posy>110</posy>
+						<include>AudioChannelFlaggingConditionsList</include>
+				</control>
+				</control>
 					<control type="textbox">
 						<posx>270</posx>
 						<posy>107</posy>
@@ -1661,6 +1694,7 @@
 						<align>left</align>
 						<label>$INFO[ListItem.Plot]</label>
 						<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+					<visible>!Skin.HasSetting(UseFlags)</visible>
 					</control>
 					<control type="image">
 						<posx>0</posx>
@@ -4111,6 +4145,318 @@
 					</control>
 				</control>
 			</control>
+		</control>
+	</include>
+
+
+	<include name="ScreenTestView">
+		<control type="group">
+			<visible>Control.IsVisible(553)</visible>
+			<include>VisibleFadeEffect</include>
+			<posx>0</posx>
+			<posy>0</posy>
+
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>1280</width>
+							<height>720</height>
+							<texture>simplicity/black.png</texture> 											
+						</control>
+
+						<control type="image">
+							<posx>220</posx>
+							<posy>285</posy>
+							<width>172</width>
+							<height>162</height>
+							<aspectratio>scale</aspectratio>
+							<texture background="true" fallback="tv-test-pattern.png">$INFO[Container(553).ListItem(-2).Path,,extrathumbs/thumb1.jpg]</texture>			
+							<animation type="Conditional" condition="true">
+								<effect type="rotatey" start="0,0" end="7,0" delay="0" time="0"/>
+								<effect type="fade" start="0" end="100" time="500"/>
+							</animation>
+						</control>
+						<control type="image">
+							<posx>220</posx>
+							<posy>285</posy>
+							<width>172</width>
+							<height>162</height>
+							<aspectratio>scale</aspectratio>
+							<texture>simplicity/tvs/static.png</texture> 			
+							<animation type="Conditional" condition="true">
+								<effect type="rotatey" start="0,0" end="7,0" delay="0" time="0"/>
+							</animation>
+							<animation effect="fade" start="0" end="100" time="500" condition="Container(553).OnNext + Container(553).OnPrevious">Conditional</animation>
+							<visible>Container(553).OnNext | Container(553).OnPrevious</visible>
+						</control>
+
+						<control type="image">
+							<posx>300</posx>
+							<posy>75</posy>
+							<width>172</width>
+							<height>172</height>
+							<aspectratio>scale</aspectratio>
+							<texture background="true" fallback="tv-test-pattern.png">$INFO[Container(553).ListItem(-1).Path,,extrathumbs/thumb1.jpg]</texture>			
+							<animation type="Conditional" condition="true">
+								<effect type="rotatey" start="0,0" end="-20,0" delay="0" time="0"/>
+								<effect type="rotate" start="0,0" end="-3,0" delay="0" time="0"/>
+								<effect type="fade" start="0" end="100" time="500"/>
+							</animation>
+						</control>
+						<control type="image">
+							<posx>300</posx>
+							<posy>75</posy>
+							<width>172</width>
+							<height>172</height>
+							<aspectratio>scale</aspectratio>
+							<texture>simplicity/tvs/static.png</texture> 			
+							<animation type="Conditional" condition="true">
+								<effect type="rotatey" start="0,0" end="-20,0" delay="0" time="0"/>
+								<effect type="rotate" start="0,0" end="-3,0" delay="0" time="0"/>
+							</animation>
+							<animation effect="fade" start="0" end="100" time="500" condition="Container(553).OnNext + Container(553).OnPrevious">Conditional</animation>
+							<visible>Container(553).OnNext | Container(553).OnPrevious</visible>
+						</control>
+
+						<control type="image">
+							<posx>402</posx>
+							<posy>285</posy>
+							<width>156</width>
+							<height>156</height>
+							<aspectratio>scale</aspectratio>
+							<texture background="true" fallback="tv-test-pattern.png" diffuse="simplicity/tvs/diffuse.png">$INFO[Container(553).ListItem(0).Path,,extrathumbs/thumb1.jpg]</texture>			
+						</control>
+						<control type="image">
+							<posx>400</posx>
+							<posy>285</posy>
+							<width>156</width>
+							<height>156</height>
+							<aspectratio>scale</aspectratio>
+							<texture diffuse="simplicity/tvs/diffuse.png">simplicity/tvs/static.png</texture> 			
+							<animation effect="fade" start="0" end="100" time="500" condition="Container(553).OnNext + Container(553).OnPrevious">Conditional</animation>
+							<visible>Container(553).OnNext | Container(553).OnPrevious</visible>
+						</control>
+
+						<control type="image">
+							<posx>133</posx>
+							<posy>437</posy>
+							<width>142</width>
+							<height>168</height>
+							<aspectratio>scale</aspectratio>
+							<texture background="true" fallback="tv-test-pattern.png" diffuse="simplicity/tvs/diffuse2.png">$INFO[Container(553).ListItem(3).Path,,extrathumbs/thumb1.jpg]</texture>
+							<animation type="Conditional" condition="true">
+								<effect type="rotate" start="0,0" end="-3,0" delay="0" time="0"/>
+								<effect type="rotatex" start="0,0" end="3,0" delay="0" time="0"/>
+							</animation>			
+						</control>
+						<control type="image">
+							<posx>133</posx>
+							<posy>437</posy>
+							<width>142</width>
+							<height>168</height>
+							<aspectratio>scale</aspectratio>
+							<texture background="true" fallback="tv-test-pattern.png" diffuse="simplicity/tvs/diffuse2.png">simplicity/tvs/static.png</texture> 
+							<animation type="Conditional" condition="true">
+								<effect type="rotate" start="0,0" end="-3,0" delay="0" time="0"/>
+								<effect type="rotatex" start="0,0" end="3,0" delay="0" time="0"/>
+							</animation>		
+							<animation effect="fade" start="0" end="100" time="500" condition="Container(553).OnNext + Container(553).OnPrevious">Conditional</animation>
+							<visible>Container(553).OnNext | Container(553).OnPrevious</visible>	
+						</control>
+
+
+						<control type="image">
+							<posx>260</posx>
+							<posy>447</posy>
+							<width>180</width>
+							<height>178</height>
+							<aspectratio>scale</aspectratio>
+							<texture background="true" fallback="tv-test-pattern.png">$INFO[Container(553).ListItem(2).Path,,extrathumbs/thumb1.jpg]</texture>			
+							<animation type="Conditional" condition="true">
+								<effect type="rotatex" start="0,0" end="3,0" delay="0" time="0"/>
+								<effect type="rotatey" start="0,0" end="-5,0" delay="0" time="0"/>
+							</animation>
+						</control>
+						<control type="image">
+							<posx>260</posx>
+							<posy>447</posy>
+							<width>180</width>
+							<height>178</height>
+							<aspectratio>scale</aspectratio>
+							<texture background="true" fallback="tv-test-pattern.png">simplicity/tvs/static.png</texture> 	
+							<animation type="Conditional" condition="true">
+								<effect type="rotatex" start="0,0" end="3,0" delay="0" time="0"/>
+								<effect type="rotatey" start="0,0" end="-5,0" delay="0" time="0"/>
+							</animation>
+							<animation effect="fade" start="0" end="100" time="500" condition="Container(553).OnNext + Container(553).OnPrevious">Conditional</animation>
+							<visible>Container(553).OnNext | Container(553).OnPrevious</visible>	
+						</control>
+
+
+
+						<control type="image">
+							<posx>464</posx>
+							<posy>456</posy>
+							<width>150</width>
+							<height>165</height>
+							<aspectratio>scale</aspectratio>
+							<texture background="true" fallback="tv-test-pattern.png">$INFO[Container(553).ListItem(1).Path,,extrathumbs/thumb1.jpg]</texture>			
+							<animation type="Conditional" condition="true">
+								<effect type="rotatex" start="0,0" end="13,0" delay="0" time="0"/>
+								<effect type="rotatey" start="0,0" end="-14,0" delay="0" time="0"/>
+								<effect type="rotate" start="0,0" end="3,0" delay="0" time="0"/>
+							</animation>
+						</control>
+						<control type="image">
+							<posx>464</posx>
+							<posy>456</posy>
+							<width>150</width>
+							<height>165</height>
+							<aspectratio>scale</aspectratio>
+							<texture background="true" fallback="tv-test-pattern.png">simplicity/tvs/static.png</texture> 	
+							<animation type="Conditional" condition="true">
+								<effect type="rotatex" start="0,0" end="13,0" delay="0" time="0"/>
+								<effect type="rotatey" start="0,0" end="-14,0" delay="0" time="0"/>
+								<effect type="rotate" start="0,0" end="3,0" delay="0" time="0"/>
+							</animation>
+							<animation effect="fade" start="0" end="100" time="500" condition="Container(553).OnNext + Container(553).OnPrevious">Conditional</animation>
+							<visible>Container(553).OnNext | Container(553).OnPrevious</visible>	
+						</control>
+
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>1280</width>
+							<height>720</height>
+							<texture>simplicity/tvs/screen-test.png</texture> 											
+						</control>
+
+
+
+
+			<include>LeftOptions</include>
+			<include>MovieBreadCrumbs</include>
+			<control type="fixedlist" id="553">
+				<include>Zoom</include>		
+				<posx>644</posx>
+				<posy>110</posy>
+				<width>930</width>
+				<height>540</height>
+				<onleft>2</onleft>
+				<onright>-</onright>
+				<onup>553</onup>
+				<ondown>553</ondown>
+				<viewtype label="ScreenTest">list</viewtype>
+				<focusposition>2</focusposition>
+				<pagecontrol>60</pagecontrol>
+				<scrolltime>400</scrolltime>
+				<preloaditems>100</preloaditems>
+				<visible>Container.Content(Movies)</visible>
+				<itemlayout height="80" width="500">
+					<control type="group">
+						<posx>65</posx>
+						<control type="image">
+							<posx>50</posx>
+							<posy>17</posy>
+							<width>40</width>
+							<height>40</height>
+							<align>left</align>
+							<texture>simplicity/banners/$INFO[ListItem.Overlay]</texture>
+							<visible>![!Skin.HasSetting(EnableWatchedIconMovies) + Container.Content(Movies)]</visible>
+						</control>
+						<control type="label">
+							<posx>135</posx>
+							<posy>8</posy>
+							<width>380</width>
+							<height>30</height>
+							<font>Shade_24</font>
+							<textcolor>grey4</textcolor>
+							<align>left</align>
+							<label>$INFO[ListItem.title]</label>
+						</control>	
+						<control type="label">
+							<posx>135</posx>
+							<posy>35</posy>
+							<width>380</width>
+							<height>20</height>
+							<font>Shade_20</font>
+							<textcolor>grey2</textcolor>
+							<align>left</align>
+							<label>$INFO[ListItem.Year]</label>
+						</control>					
+					</control>	
+				</itemlayout>
+				<focusedlayout height="210" width="800">
+					<control type="label">
+						<posx>270</posx>
+						<posy>24</posy>
+						<width>350</width>
+						<height>20</height>
+						<font>Shade_24</font>
+						<textcolor>white</textcolor>
+						<selectedcolor>white</selectedcolor>
+						<scroll>false</scroll>
+						<scrollspeed>0</scrollspeed>
+						<align>left</align>
+						<label>$INFO[ListItem.Title]</label>
+					</control>
+					<control type="label">
+						<posx>270</posx>
+						<posy>52</posy>
+						<width>350</width>
+						<height>20</height>
+						<font>Shade_20</font>
+						<textcolor>grey2</textcolor>
+						<selectedcolor>grey2</selectedcolor>
+						<scroll>false</scroll>
+						<scrollspeed>0</scrollspeed>
+						<align>left</align>
+						<label>$INFO[ListItem.Genre]</label>
+					</control>
+					<control type="image">
+						<description>Rating value</description>
+						<posx>270</posx>
+						<posy>76</posy>
+						<width>154</width>
+						<height>30</height>
+						<align>right</align>
+						<texture>$INFO[Listitem.StarRating]</texture>
+					</control>
+						<control type="image">
+							<posx>450</posx>
+							<posy>71</posy>
+							<width>40</width>
+							<height>40</height>
+							<align>left</align>
+							<texture>simplicity/banners/$INFO[ListItem.Overlay]</texture>
+						</control>
+					<control type="textbox">
+						<posx>270</posx>
+						<posy>107</posy>
+						<width>350</width>
+						<height>62</height>
+						<font>Shade_16</font>
+						<textcolor>white</textcolor>
+						<selectedcolor>white</selectedcolor>
+						<align>left</align>
+						<label>$INFO[ListItem.PlotOutline]</label>
+						<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>26</posy>
+						<width>252</width>
+						<height>139</height>
+						<align>right</align>
+						<aspect>stretch</aspect>
+						<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+						<bordertexture border="8">simplicity/thumbborder.png</bordertexture>
+						<bordersize>8</bordersize>
+					</control>
+				</focusedlayout>
+			</control>		
+
+
 		</control>
 	</include>
 
