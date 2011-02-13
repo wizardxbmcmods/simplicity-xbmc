@@ -1,7 +1,7 @@
 <window id="25">
 	<defaultcontrol always="true">9999</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-	<views>50,59,500,501,504,505,506,507,508,509,511,532,534,535,536,537,538,539,540,552,553</views>
+	<views>50,59,500,501,504,505,506,507,508,509,511,532,534,535,536,537,538,539,540,552,553,554</views>
 	<visible>!Skin.HasSetting(KioskMode)</visible>
 	<controls>
 		<control type="button" id="9999">
@@ -108,6 +108,8 @@
 			<!-- view id = 552 -->
 			<include>ScreenTestView</include>
 			<!-- view id = 553 -->
+			<include>Actor-Wall-View</include>
+			<!-- view id = 554 -->
 			<include>MovieGenreView</include>
 			<!-- view id = 59 -->
 		</control>

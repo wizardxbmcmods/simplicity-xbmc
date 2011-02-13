@@ -8,7 +8,7 @@
 			<include>Overlay</include>
 			<include>UpOptions</include>
 			<include >MovieBreadCrumbs</include>
-			<include condition="Container.Content(TVShows)">DownOpenTVGuide</include>
+			<include>DownOpenRecent</include>
 			<include>TVBreadCrumbs</include>
 			<control type="FixedList" id="504">
 				<include>Zoom</include>
@@ -19,7 +19,7 @@
 				<onleft>504</onleft>
 				<onright>504</onright>
 				<onup>2</onup>
-				<ondown>527</ondown>
+				<ondown>ActivateWindow(1112,Home,return)</ondown>
 				<viewtype label="Fanart Slide">list</viewtype>
 				<orientation>Horizontal</orientation>
 				<pagecontrol>60</pagecontrol>
@@ -501,6 +501,7 @@
 			<include>MovieBreadCrumbs</include>
 			<include>SeasonBreadCrumbs</include>
 			<include>TVBreadCrumbs</include>
+			<include>DownOpenRecent</include>
 			<control type="group">
 				<posx>0</posx>
 				<posy>-30</posy>
@@ -513,7 +514,7 @@
 						<posy>298</posy>
 						<width>1800</width>
 						<height>300</height>		
-						<ondown>-</ondown>
+						<ondown>ActivateWindow(1112,Home,return)</ondown>
 						<onup>2</onup>
 						<onleft>506</onleft>
 						<onright>506</onright>
@@ -955,9 +956,15 @@
 		<control type="group">
 			<posx>0</posx>
 			<posy>0</posy>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1290</width>
+				<height>730</height>
+				<texture>simplicity/background-solid.png</texture>
+			</control>
 			<visible>Control.IsVisible(508)</visible>
 			<include>VisibleFadeEffect</include>
-			<include>Overlay</include>
 			<include>MovieBreadCrumbs</include>
 			<control type="group">
 				<posx>0</posx>
@@ -974,7 +981,7 @@
 						<ondown>-</ondown>
 						<onup>508</onup>
 						<onleft>2</onleft>
-						<onright>508</onright>
+						<onright>ActivateWindow(1112,Home,return)</onright>
 						<pagecontrol>70</pagecontrol>
 						<scrolltime>200</scrolltime>
 						<focusposition>3</focusposition>
@@ -1294,6 +1301,7 @@
 					<control type="group">
 						<posy>30</posy>
 						<include>LeftOptions</include>
+						<include>RightOpenRecent</include>
 					</control>
 					<control type="group">
 						<include>Zoom</include>
@@ -1323,6 +1331,7 @@
 			<include>Overlay</include>
 			<include>UpOptions</include>
 			<include>MovieBreadCrumbs</include>
+			<include>DownOpenRecent</include>
 			<control type="FixedList" id="509">
 				<include>Zoom</include>
 				<posx>-110</posx>
@@ -1332,7 +1341,7 @@
 				<onleft>509</onleft>
 				<onright>509</onright>
 				<onup>2</onup>
-				<ondown>527</ondown>
+				<ondown>	ActivateWindow(1112,Home,return)</ondown>
 				<viewtype label="Info Slide">list</viewtype>
 				<orientation>Horizontal</orientation>
 				<pagecontrol>60</pagecontrol>
@@ -2591,8 +2600,16 @@
 			<include>VisibleFadeEffect</include>
 			<posx>0</posx>
 			<posy>0</posy>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1290</width>
+				<height>730</height>
+				<texture>simplicity/background-solid.png</texture>
+			</control>
 			<include>LeftOptions</include>
 			<include>MovieBreadCrumbs</include>
+			<include>RightOpenRecent</include>
 			<control type="fixedlist" id="539">
 				<include>Zoom</include>		
 				<posx>544</posx>
@@ -2600,7 +2617,7 @@
 				<width>930</width>
 				<height>540</height>
 				<onleft>2</onleft>
-				<onright>-</onright>
+				<onright>ActivateWindow(1112,Home,return)</onright>
 				<onup>539</onup>
 				<ondown>539</ondown>
 				<viewtype label="Fanart List">list</viewtype>
@@ -2825,6 +2842,7 @@
 			<include>MovieBreadCrumbs</include>
 			<include>SeasonBreadCrumbs</include>
 			<include>TVBreadCrumbs</include>
+			<include>DownOpenRecent</include>
 			<control type="group">
 				<posx>0</posx>
 				<posy>-30</posy>
@@ -2837,7 +2855,7 @@
 						<posy>348</posy>
 						<width>1580</width>
 						<height>300</height>		
-						<ondown>-</ondown>
+						<ondown>ActivateWindow(1112,Home,return)</ondown>
 						<onup>2</onup>
 						<onleft>540</onleft>
 						<onright>540</onright>
@@ -3444,6 +3462,7 @@
 			<include>MovieBreadCrumbs</include>
 			<include>TVBreadCrumbs</include>
 			<include>Zoom</include>
+			<include>RightOpenRecent</include>
 			<control type="image">
 				<posx>102</posx>
 				<posy>88</posy>
@@ -3502,7 +3521,7 @@
 				<width>870</width>
 				<height>517</height>
 				<onleft>2</onleft>
-				<onright>-</onright>
+				<onright>ActivateWindow(1112,Home,return)</onright>
 				<onup>552</onup>
 				<ondown>552</ondown>
 				<viewtype label="Carousel List">list</viewtype>
@@ -4336,6 +4355,7 @@
 
 			<include>LeftOptions</include>
 			<include>MovieBreadCrumbs</include>
+			<include>RightOpenRecent</include>
 			<control type="fixedlist" id="553">
 				<include>Zoom</include>		
 				<posx>644</posx>
@@ -4343,10 +4363,10 @@
 				<width>930</width>
 				<height>540</height>
 				<onleft>2</onleft>
-				<onright>-</onright>
+				<onright>ActivateWindow(1112,Home,return)</onright>
 				<onup>553</onup>
 				<ondown>553</ondown>
-				<viewtype label="ScreenTest">list</viewtype>
+				<viewtype label="Screens">list</viewtype>
 				<focusposition>2</focusposition>
 				<pagecontrol>60</pagecontrol>
 				<scrolltime>400</scrolltime>
@@ -4455,8 +4475,119 @@
 					</control>
 				</focusedlayout>
 			</control>		
+		</control>
+	</include>
 
-
+	<include name="Actor-Wall-View">
+		<control type="group">
+			<visible>Control.IsVisible(554)</visible>
+			<include>VisibleFadeEffect</include>
+			<posx>0</posx>
+			<posy>0</posy>
+			<include>Overlay</include>
+			<include>ActorBreadCrumbs</include>
+			<control type="Panel" id="554">
+				<include>Zoom</include>		
+				<posx>22</posx>
+				<posy>110</posy>
+				<width>1260</width>
+				<height>577</height>
+				<onleft>2</onleft>
+				<onright>-</onright>
+				<onup>554</onup>
+				<ondown>554</ondown>
+				<viewtype label="Actor Wall">list</viewtype>
+				<pagecontrol>60</pagecontrol>
+				<scrolltime>300</scrolltime>
+				<preloaditems>300</preloaditems>
+				<orientation>vertical</orientation>
+				<visible>Container.Content(Actors)</visible>
+				<itemlayout height="155" width="155">
+					<control type="group">
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>150</width>
+							<height>150</height>
+							<aspectratio>scale</aspectratio>
+							<texture background="true" fallback="simplicity/actor-fallback.png">$INFO[ListItem.Thumb]</texture>
+							<bordertexture border="4">thumbborder.png</bordertexture>
+							<bordersize>4</bordersize>
+						</control>
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>150</width>
+							<height>150</height>
+							<aspectratio>scale</aspectratio>
+							<texture>simplicity/wall-grain.png</texture>
+						</control>
+					</control>	
+				</itemlayout>
+				<focusedlayout height="210" width="210">
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>150</width>
+						<height>150</height>
+						<aspectratio>scale</aspectratio>
+						<texture background="true" fallback="simplicity/actor-fallback.png">$INFO[ListItem.Thumb]</texture>
+						<bordertexture border="4">simplicity/thumbborder.png</bordertexture>
+						<bordersize>4</bordersize>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" start="100" end="120" center="auto" time="100"/>
+						</animation>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>150</width>
+						<height>150</height>
+						<aspectratio>scale</aspectratio>
+						<texture background="true">simplicity/actor-fade5.png</texture>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" start="100" end="120" center="auto" time="100"/>
+						</animation>
+					</control>
+				<control type="label">
+					<posx>75</posx>
+					<posy>70</posy>
+					<width>150</width>
+					<height>150</height>
+					<font>Shade_18</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<wrapmultiline>true</wrapmultiline>
+					<scroll>false</scroll>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label]</label>
+						<animation type="Focus" reversible="false">
+							<effect type="fade" start="0" end="100" time="200" delay="200"/>
+						</animation>
+				</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>150</width>
+						<height>150</height>
+						<aspectratio>scale</aspectratio>
+						<texture background="true" fallback="simplicity/artist-fallback.png">simplicity/poster-border5.png</texture>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" start="100" end="120" center="auto" time="100"/>
+						</animation>
+					</control>
+				</focusedlayout>
+			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>640</posy>	
+				<width>1280</width>
+				<height>70</height>
+				<aspect>stretch</aspect>
+				<texture>simplicity/wall-bottom.png</texture>
+			</control>
+			<include>LeftOptions</include>
 		</control>
 	</include>
 

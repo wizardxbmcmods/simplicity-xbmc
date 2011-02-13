@@ -975,6 +975,41 @@
 		</control>	
 	</include>
 
+<include name="ActorBreadCrumbs">
+		<control type="group">
+			<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
+			<control type="label">
+				<description>Title label</description>
+				<posx>90</posx>
+				<posy>40</posy>
+				<height>20</height>
+				<width>275</width>
+				<label>Actors</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>Shade_50</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<visible>Container.Content(Actors)</visible>
+				<include>TopSlide</include>
+			</control>	
+			<control type="label">
+				<description>Title label</description>
+				<posx>240</posx>
+				<posy>49</posy>
+				<height>20</height>
+				<width>275</width>
+				<label>by $INFO[Container.SortMethod], $INFO[Container().NumItems] items</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>Shade_20</font>
+				<textcolor>grey2</textcolor>
+				<visible>Container.Content(Actors)</visible>
+				<include>TopSlide</include>
+			</control>	
+		</control>	
+	</include>
+
 
 	<include name="UpOptions">
 		<control type="group">
@@ -1080,6 +1115,59 @@
 			</control>	
 		</control>	
 	</include>
+
+<include name="RightOpenRecent">
+		<control type="group">
+			<include>BottomSlide</include>
+			<control type="image">
+				<posx>150r</posx>
+				<posy>679</posy>
+				<width>15</width>
+				<height>15</height>
+				<texture>simplicity/right-arrow.png</texture>
+			</control>
+			<control type="label">
+				<description>View Options</description>
+				<posx>172r</posx>
+				<posy>675</posy>
+				<height>20</height>
+				<width>275</width>
+				<label>Recent Items</label>
+				<align>right</align>
+				<aligny>center</aligny>
+				<font>Shade_20</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+			</control>	
+		</control>	
+	</include>
+
+	<include name="DownOpenRecent">
+		<control type="group">
+			<include>BottomSlide</include>
+			<control type="image">
+				<posx>150r</posx>
+				<posy>679</posy>
+				<width>15</width>
+				<height>15</height>
+				<texture>simplicity/down-arrow.png</texture>
+			</control>
+			<control type="label">
+				<description>View Options</description>
+				<posx>282r</posx>
+				<posy>675</posy>
+				<height>20</height>
+				<width>275</width>
+				<label>Recent Items</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>Shade_20</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+			</control>	
+		</control>	
+	</include>
+
 
 	<include name="PageNumbers">
 		<control type="label">

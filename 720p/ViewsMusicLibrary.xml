@@ -872,6 +872,45 @@
 							<effect type="zoom" start="100" end="120" center="auto" time="100"/>
 						</animation>
 					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>150</width>
+						<height>150</height>
+						<aspectratio>scale</aspectratio>
+						<texture background="true">simplicity/actor-fade5.png</texture>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" start="100" end="120" center="auto" time="100"/>
+						</animation>
+					</control>
+				<control type="label">
+					<posx>75</posx>
+					<posy>70</posy>
+					<width>150</width>
+					<height>150</height>
+					<font>Shade_18</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<wrapmultiline>true</wrapmultiline>
+					<scroll>false</scroll>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label]</label>
+						<animation type="Focus" reversible="false">
+							<effect type="fade" start="0" end="100" time="200" delay="200"/>
+						</animation>
+				</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>150</width>
+						<height>150</height>
+						<aspectratio>scale</aspectratio>
+						<texture background="true" fallback="simplicity/artist-fallback.png">simplicity/poster-border5.png</texture>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" start="100" end="120" center="auto" time="100"/>
+						</animation>
+					</control>
 				</focusedlayout>
 			</control>
 			<control type="image">
@@ -1007,6 +1046,17 @@
 						<texture background="true" fallback="simplicity/album-fallback.png">$INFO[ListItem.Thumb]</texture>
 						<bordertexture border="4">simplicity/thumbborder.png</bordertexture>
 						<bordersize>4</bordersize>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" start="100" end="120" center="auto" time="100"/>
+						</animation>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>150</width>
+						<height>150</height>
+						<aspectratio>scale</aspectratio>
+						<texture background="true" fallback="simplicity/album-fallback.png">simplicity/poster-border5.png</texture>
 						<animation type="Focus" reversible="false">
 							<effect type="zoom" start="100" end="120" center="auto" time="100"/>
 						</animation>

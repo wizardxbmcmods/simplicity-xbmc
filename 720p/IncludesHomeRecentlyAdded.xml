@@ -400,7 +400,7 @@
 								<height>120</height>
 								<aspectratio align="left">stretch</aspectratio>
 								<fadetime>200</fadetime>
-								<texture>$INFO[ListItem.ActualIcon]</texture>
+								<texture fallback="nothumb.png">$INFO[ListItem.ActualIcon]</texture>
 								<bordertexture border="4">thumbborder.png</bordertexture>
 								<bordersize>4</bordersize>
 							</control>		
@@ -438,7 +438,7 @@
 								<width>200</width>
 								<height>120</height>
 								<aspectratio align="left">stretch</aspectratio>
-								<texture>$INFO[ListItem.ActualIcon]</texture>
+								<texture fallback="nothumb.png">$INFO[ListItem.ActualIcon]</texture>
 								<bordertexture border="4">thumbborder.png</bordertexture>
 								<bordersize>4</bordersize>
 							</control>
@@ -553,7 +553,7 @@
 								<width>200</width>
 								<height>120</height>
 								<aspectratio>stretch</aspectratio>
-								<texture>$INFO[ListItem.ActualIcon]</texture>
+								<texture fallback="nothumb.png">$INFO[ListItem.ActualIcon]</texture>
 								<bordertexture border="4">thumbborder.png</bordertexture>
 								<bordersize>4</bordersize>
 							</control>	
@@ -609,7 +609,7 @@
 								<width>200</width>
 								<height>120</height>
 								<aspectratio>stretch</aspectratio>
-								<texture>$INFO[ListItem.ActualIcon]</texture>
+								<texture fallback="nothumb.png">$INFO[ListItem.ActualIcon]</texture>
 								<bordertexture border="4">thumbborder.png</bordertexture>
 								<bordersize>4</bordersize>
 							</control>
@@ -1204,7 +1204,7 @@
 								<height>120</height>
 								<aspectratio align="left">stretch</aspectratio>
 								<fadetime>200</fadetime>
-								<texture>$INFO[ListItem.ActualIcon]</texture>
+								<texture fallback="nothumbalbum.png">$INFO[ListItem.ActualIcon]</texture>
 								<bordertexture border="4">thumbborder.png</bordertexture>
 								<bordersize>4</bordersize>
 								<control type="image">
@@ -1234,7 +1234,7 @@
 								<width>120</width>
 								<height>120</height>
 								<aspectratio align="left">stretch</aspectratio>
-								<texture>$INFO[ListItem.ActualIcon]</texture>
+								<texture fallback="nothumbalbum.png">$INFO[ListItem.ActualIcon]</texture>
 								<bordertexture border="4">thumbborder.png</bordertexture>
 								<bordersize>4</bordersize>
 							</control>
@@ -1344,7 +1344,7 @@
 								<height>120</height>
 								<aspectratio>stretch</aspectratio>
 								<fadetime>200</fadetime>
-								<texture>$INFO[ListItem.ActualIcon]</texture>
+								<texture fallback="nothumbalbum.png">$INFO[ListItem.ActualIcon]</texture>
 								<bordertexture border="4">thumbborder.png</bordertexture>
 								<bordersize>4</bordersize>
 							</control>
@@ -1375,7 +1375,7 @@
 								<height>120</height>
 								<aspectratio>stretch</aspectratio>
 								<fadetime>200</fadetime>
-								<texture>$INFO[ListItem.ActualIcon]</texture>
+								<texture fallback="nothumbalbum.png">$INFO[ListItem.ActualIcon]</texture>
 								<bordertexture border="4">thumbborder.png</bordertexture>
 								<bordersize>4</bordersize>
 							</control>

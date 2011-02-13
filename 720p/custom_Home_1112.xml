@@ -1,7 +1,8 @@
 <window id="1112">
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<controls>
-
+		<control type="group">
+			<include>Zoom</include>
 		<!--<visible>StringCompare(Window(Home).Property(LatestEpisode.10.ShowTitle),ListItem.Label)</visible>-->
 		<control type="image">
 			<posx>0</posx>
@@ -85,7 +86,6 @@
 						<height>190</height>
 						<aspectratio>stretch</aspectratio>
 						<texture>$INFO[ListItem.Thumb]</texture>
-
 						<bordertexture border="8">thumbshadow.png</bordertexture>
 						<bordersize>8</bordersize>
 					</control>
@@ -96,8 +96,6 @@
 						<height>190</height>
 						<aspectratio>stretch</aspectratio>
 						<texture>simplicity/black-back.png</texture>
-						<visible>Control.HasFocus(9001) | Control.HasFocus(9002) | Control.HasFocus(9003) | Control.HasFocus(9004)</visible>
-
 						<bordertexture border="8">thumbshadow.png</bordertexture>
 						<bordersize>8</bordersize>
 					</control>
@@ -108,7 +106,6 @@
 						<height>190</height>
 						<aspectratio>stretch</aspectratio>
 						<texture diffuse="simplicity/custom_home_movie_diffuse.png" flipy="true">$INFO[ListItem.Thumb]</texture>
-
 						<bordertexture border="8"/>
 						<bordersize>8</bordersize>
 					</control>
@@ -118,9 +115,7 @@
 						<width>140</width>
 						<height>190</height>
 						<aspectratio>stretch</aspectratio>
-						<visible>Control.HasFocus(9001) | Control.HasFocus(9002) | Control.HasFocus(9003) | Control.HasFocus(9004)</visible>
 						<texture diffuse="simplicity/custom_home_movie_diffuse.png" flipy="true">simplicity/black-back.png</texture>
-
 						<bordertexture border="8"/>
 						<bordersize>8</bordersize>
 					</control>
@@ -395,7 +390,7 @@
 						<width>290</width>
 						<height>150</height>
 						<aspectratio>scale</aspectratio>
-						<texture>$INFO[ListItem.Thumb]</texture>
+						<texture fallback="nothumb.png">$INFO[ListItem.Thumb]</texture>
 						<bordertexture border="8">thumbshadow.png</bordertexture>
 						<bordersize>8</bordersize>
 					</control>
@@ -406,7 +401,6 @@
 						<height>150</height>
 						<aspectratio>scale</aspectratio>
 						<texture>simplicity/black-back.png</texture>
-						<visible>Control.HasFocus(9000) | Control.HasFocus(9002) | Control.HasFocus(9003) | Control.HasFocus(9004)</visible>
 
 						<bordertexture border="8">thumbshadow.png</bordertexture>
 						<bordersize>8</bordersize>
@@ -417,7 +411,7 @@
 						<width>290</width>
 						<height>150</height>
 						<aspectratio>scale</aspectratio>
-						<texture diffuse="simplicity/custom_home_episode_diffuse.png" flipy="true">$INFO[ListItem.Thumb]</texture>
+						<texture diffuse="simplicity/custom_home_episode_diffuse.png" flipy="true" fallback="nothumb.png">$INFO[ListItem.Thumb]</texture>
 
 						<bordertexture border="8"/>
 						<bordersize>8</bordersize>
@@ -428,7 +422,6 @@
 						<width>290</width>
 						<height>150</height>
 						<aspectratio>stretch</aspectratio>
-						<visible>Control.HasFocus(9000) | Control.HasFocus(9002) | Control.HasFocus(9003) | Control.HasFocus(9004)</visible>
 						<texture diffuse="simplicity/custom_home_episode_diffuse.png" flipy="true">simplicity/black-back.png</texture>
 
 						<bordertexture border="8"/>
@@ -466,7 +459,7 @@
 						<width>290</width>
 						<height>150</height>
 						<aspectratio>scale</aspectratio>
-						<texture diffuse="simplicity/custom_home_episode_diffuse.png" flipy="true">$INFO[ListItem.Thumb]</texture>
+						<texture diffuse="simplicity/custom_home_episode_diffuse.png" flipy="true" fallback="nothumb.png">$INFO[ListItem.Thumb]</texture>
 						<animation effect="fade" start="100" end="80" time="0" condition="Control.HasFocus(9002) | Control.HasFocus(9000) | Control.HasFocus(9003) | Control.HasFocus(9004)">Conditional</animation>
 
 						<bordertexture border="8"/>
@@ -490,7 +483,7 @@
 						<width>290</width>
 						<height>150</height>
 						<aspectratio>scale</aspectratio>
-						<texture>$INFO[ListItem.Thumb]</texture>
+						<texture fallback="nothumb.png">$INFO[ListItem.Thumb]</texture>
 
 						<animation effect="fade" start="100" end="80" time="0" condition="Control.HasFocus(9002) | Control.HasFocus(9000) | Control.HasFocus(9003) | Control.HasFocus(9004)">Conditional</animation>
 						<bordertexture border="8">thumbshadow.png</bordertexture>
@@ -704,7 +697,7 @@
 						<width>150</width>
 						<height>150</height>
 						<aspectratio>stretch</aspectratio>
-						<texture>$INFO[ListItem.Thumb]</texture>
+						<texture fallback="nothumbalbum.png">$INFO[ListItem.Thumb]</texture>
 
 						<bordertexture border="8">thumbshadow.png</bordertexture>
 						<bordersize>8</bordersize>
@@ -716,8 +709,6 @@
 						<height>150</height>
 						<aspectratio>stretch</aspectratio>
 						<texture>simplicity/black-back.png</texture>
-						<visible>Control.HasFocus(9000) | Control.HasFocus(9001) | Control.HasFocus(9003) | Control.HasFocus(9004)</visible>
-
 						<bordertexture border="8">thumbshadow.png</bordertexture>
 						<bordersize>8</bordersize>
 					</control>
@@ -727,7 +718,7 @@
 						<width>150</width>
 						<height>150</height>
 						<aspectratio>stretch</aspectratio>
-						<texture diffuse="simplicity/custom_home_album_diffuse.png" flipy="true">$INFO[ListItem.Thumb]</texture>
+						<texture diffuse="simplicity/custom_home_album_diffuse.png" flipy="true" fallback="nothumbalbum.png">$INFO[ListItem.Thumb]</texture>
 
 						<bordertexture border="8"/>
 						<bordersize>8</bordersize>
@@ -738,7 +729,6 @@
 						<width>150</width>
 						<height>150</height>
 						<aspectratio>stretch</aspectratio>
-						<visible>Control.HasFocus(9000) | Control.HasFocus(9001) | Control.HasFocus(9003) | Control.HasFocus(9004)</visible>
 						<texture diffuse="simplicity/custom_home_album_diffuse.png" flipy="true">simplicity/black-back.png</texture>
 
 						<bordertexture border="8"/>
@@ -776,7 +766,7 @@
 						<width>150</width>
 						<height>150</height>
 						<aspectratio>stretch</aspectratio>
-						<texture diffuse="simplicity/custom_home_album_diffuse.png" flipy="true">$INFO[ListItem.Thumb]</texture>
+						<texture diffuse="simplicity/custom_home_album_diffuse.png" flipy="true" fallback="nothumbalbum.png">$INFO[ListItem.Thumb]</texture>
 						<animation effect="fade" start="100" end="80" time="0" condition="Control.HasFocus(9001) | Control.HasFocus(9000) | Control.HasFocus(9003) | Control.HasFocus(9004)">Conditional</animation>
 
 						<bordertexture border="8"/>
@@ -800,7 +790,7 @@
 						<width>150</width>
 						<height>150</height>
 						<aspectratio>stretch</aspectratio>
-						<texture>$INFO[ListItem.Thumb]</texture>
+						<texture fallback="nothumbalbum.png">$INFO[ListItem.Thumb]</texture>
 
 						<animation effect="fade" start="100" end="80" time="0" condition="Control.HasFocus(9001) | Control.HasFocus(9000) | Control.HasFocus(9003) | Control.HasFocus(9004)">Conditional</animation>
 						<bordertexture border="8">thumbshadow.png</bordertexture>
@@ -974,7 +964,7 @@
 
 		</control>
 
-
+		</control>
 	</controls>
 </window>
 

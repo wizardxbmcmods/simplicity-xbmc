@@ -7,15 +7,6 @@
 		<include>CommonMediaPlayingBackground</include>
 		<control type="group">
 			<include>Window_OpenClose_Animation</include>		
-			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>1280</width>
-				<height>720</height>
-				<texture border="20">simplicity/black-back.png</texture>
-				<include>VisibleFadeEffect</include>
-				<visible>Control.IsVisible(50) | Control.IsVisible(51) | Control.IsVisible(500)</visible>
-			</control>
 		</control>
 		<control type="group">
 			<include>Window_OpenClose_Animation</include>		

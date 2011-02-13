@@ -3,7 +3,13 @@
 		<control type="group">
 			<visible>Control.IsVisible(50)</visible>
 			<include>VisibleFadeEffect</include>
-			<include>Overlay</include>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1290</width>
+				<height>730</height>
+				<texture background="true">simplicity/background-solid.png</texture>
+			</control>
 			<include>LeftOptions</include>
 			<include>FileBreadCrumbs</include>
 			<include>RightOpenTVGuide</include>
