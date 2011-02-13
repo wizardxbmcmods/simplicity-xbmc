@@ -316,19 +316,7 @@
 						<scrollspeed>0</scrollspeed>
 						<align>left</align>
 						<aligny>center</aligny>
-						<label>Episodes:  $INFO[ListItem.Episode]</label>
-						<animation effect="slide" time="0" start="0,0" end="0,-70" condition="[Container.Content(TVShows) + !Skin.HasSetting(TVShowsUsePosters)]">Conditional</animation>
-					</control>
-					<control type="label">
-						<posx>20</posx>
-						<posy>610</posy>
-						<width>280</width>
-						<height>30</height>
-						<font>Shade_20</font>
-						<align>left</align>
-						<aligny>center</aligny>
-						<textcolor>white</textcolor>
-						<label>Unwatched:  $INFO[ListItem.Property(UnWatchedEpisodes)]</label>
+						<label>$INFO[ListItem.Episode] Episodes - $INFO[ListItem.Property(UnWatchedEpisodes)] Unwatched</label>
 						<animation effect="slide" time="0" start="0,0" end="0,-70" condition="[Container.Content(TVShows) + !Skin.HasSetting(TVShowsUsePosters)]">Conditional</animation>
 					</control>
 					<control type="label">
@@ -442,18 +430,7 @@
 						<scrollspeed>0</scrollspeed>
 						<align>left</align>
 						<aligny>center</aligny>
-						<label>Episodes:  $INFO[ListItem.Episode]</label>
-					</control>
-					<control type="label">
-						<posx>20</posx>
-						<posy>610</posy>
-						<width>280</width>
-						<height>30</height>
-						<font>Shade_20</font>
-						<align>left</align>
-						<aligny>center</aligny>
-						<textcolor>white</textcolor>
-						<label>Unwatched:  $INFO[ListItem.Property(UnWatchedEpisodes)]</label>
+						<label>$INFO[ListItem.Episode] Episodes - $INFO[ListItem.Property(UnWatchedEpisodes)] Unwatched</label>
 					</control>
 					<control type="label">
 						<posx>375</posx>
@@ -574,18 +551,7 @@
 						<scrollspeed>0</scrollspeed>
 						<align>left</align>
 						<aligny>center</aligny>
-						<label>Episodes:  $INFO[ListItem.Episode]</label>
-					</control>
-					<control type="label">
-						<posx>20</posx>
-						<posy>610</posy>
-						<width>280</width>
-						<height>30</height>
-						<font>Shade_20</font>
-						<align>left</align>
-						<aligny>center</aligny>
-						<textcolor>white</textcolor>
-						<label>Unwatched:  $INFO[ListItem.Property(UnWatchedEpisodes)]</label>
+						<label>$INFO[ListItem.Episode] Episodes - $INFO[ListItem.Property(UnWatchedEpisodes)] Unwatched</label>
 					</control>
 					<control type="label">
 						<posx>375</posx>
