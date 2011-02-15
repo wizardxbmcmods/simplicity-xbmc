@@ -116,7 +116,7 @@
 							<posy>250</posy>
 							<width>800</width>
 							<height>30</height>
-							<font>Shade_40</font>
+							<font>Simplicity_40</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<scroll>false</scroll>
@@ -128,7 +128,7 @@
 							<posy>610</posy>
 							<width>800</width>
 							<height>30</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<textcolor>grey2</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<scroll>false</scroll>
@@ -140,7 +140,7 @@
 							<posy>640</posy>
 							<width>800</width>
 							<height>30</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<textcolor>grey2</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<scroll>false</scroll>
@@ -153,7 +153,7 @@
 							<posy>670</posy>
 							<width>500</width>
 							<height>69</height>
-							<font>Shade_18</font>
+							<font>Simplicity_18</font>
 							<align>left</align>
 							<textcolor>white</textcolor>
 							<label>$INFO[ListItem.Property(Album_Description) ]</label>
@@ -249,7 +249,7 @@
 					<posy>130</posy>
 					<width>940</width>
 					<height>88</height>
-							<font>Shade_40</font>
+							<font>Simplicity_40</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
 					<align>Left</align>
@@ -260,7 +260,7 @@
 					<posy>442</posy>
 					<width>940</width>
 					<height>88</height>
-							<font>Shade_24</font>
+							<font>Simplicity_24</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
 					<align>Left</align>
@@ -271,7 +271,7 @@
 					<posy>475</posy>
 					<width>400</width>
 					<height>25</height>
-					<font>Shade_20</font>
+					<font>Simplicity_20</font>
 					<textcolor>grey2</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -284,7 +284,7 @@
 					<posy>502</posy>
 					<width>400</width>
 					<height>25</height>
-					<font>Shade_20</font>
+					<font>Simplicity_20</font>
 					<textcolor>grey2</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -340,7 +340,7 @@
 							<posy>0</posy>
 							<width>80</width>
 							<height>20</height>
-							<font>Shade_60</font>
+							<font>Simplicity_60</font>
 							<textcolor>grey4</textcolor>
 							<align>right</align>
 							<label>$INFO[ListItem.TrackNumber]</label>
@@ -350,7 +350,7 @@
 							<posy>8</posy>
 							<width>500</width>
 							<height>30</height>
-							<font>Shade_24</font>
+							<font>Simplicity_24</font>
 							<textcolor>grey4</textcolor>
 							<align>left</align>
 							<label>$INFO[ListItem.title]</label>
@@ -360,7 +360,7 @@
 							<posy>35</posy>
 							<width>350</width>
 							<height>20</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<textcolor>grey2</textcolor>
 							<align>left</align>
 							<label>Released: $INFO[ListItem.Year]</label>
@@ -373,7 +373,7 @@
 						<posy>49</posy>
 						<width>450</width>
 						<height>20</height>
-						<font>Shade_24</font>
+						<font>Simplicity_24</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>white</selectedcolor>
 						<scroll>false</scroll>
@@ -386,7 +386,7 @@
 						<posy>77</posy>
 						<width>300</width>
 						<height>20</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<textcolor>grey2</textcolor>
 						<selectedcolor>grey2</selectedcolor>
 						<scroll>false</scroll>
@@ -423,7 +423,7 @@
 					<posy>150</posy>
 					<width>400</width>
 					<height>20</height>
-					<font>Shade_40</font>
+					<font>Simplicity_40</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -436,7 +436,7 @@
 					<posy>210</posy>
 					<width>400</width>
 					<height>20</height>
-					<font>Shade_24</font>
+					<font>Simplicity_24</font>
 					<textcolor>grey2</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -449,7 +449,7 @@
 					<posy>240</posy>
 					<width>400</width>
 					<height>20</height>
-					<font>Shade_24</font>
+					<font>Simplicity_24</font>
 					<textcolor>grey2</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -462,7 +462,7 @@
 					<posy>270</posy>
 					<width>400</width>
 					<height>20</height>
-					<font>Shade_24</font>
+					<font>Simplicity_24</font>
 					<textcolor>grey2</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -475,7 +475,7 @@
 					<posy>300</posy>
 					<width>400</width>
 					<height>20</height>
-					<font>Shade_24</font>
+					<font>Simplicity_24</font>
 					<textcolor>grey2</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -488,7 +488,7 @@
 					<posy>350</posy>
 					<width>400</width>
 					<height>195</height>
-					<font>Shade_20</font>
+					<font>Simplicity_20</font>
 					<textcolor>white</textcolor>
 					<align>left</align>
 					<label>$INFO[ListItem.Property(Album_Description)]</label>
@@ -528,7 +528,7 @@
 							<posy>8</posy>
 							<width>500</width>
 							<height>30</height>
-							<font>Shade_24</font>
+							<font>Simplicity_24</font>
 							<textcolor>grey4</textcolor>
 							<align>left</align>
 							<label>$INFO[ListItem.Artist]</label>
@@ -538,7 +538,7 @@
 							<posy>35</posy>
 							<width>500</width>
 							<height>20</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<textcolor>grey2</textcolor>
 							<align>left</align>
 							<label>$INFO[ListItem.Album]</label>
@@ -551,7 +551,7 @@
 						<posy>49</posy>
 						<width>450</width>
 						<height>20</height>
-						<font>Shade_24</font>
+						<font>Simplicity_24</font>
 						<textcolor>white</textcolor>
 						<scroll>false</scroll>
 						<scrollspeed>0</scrollspeed>
@@ -563,7 +563,7 @@
 						<posy>77</posy>
 						<width>450</width>
 						<height>20</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<textcolor>grey2</textcolor>
 						<scroll>false</scroll>
 						<scrollspeed>0</scrollspeed>
@@ -599,7 +599,7 @@
 					<posy>150</posy>
 					<width>400</width>
 					<height>20</height>
-					<font>Shade_40</font>
+					<font>Simplicity_40</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -612,7 +612,7 @@
 					<posy>210</posy>
 					<width>400</width>
 					<height>20</height>
-					<font>Shade_24</font>
+					<font>Simplicity_24</font>
 					<textcolor>grey2</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -625,7 +625,7 @@
 					<posy>240</posy>
 					<width>400</width>
 					<height>20</height>
-					<font>Shade_24</font>
+					<font>Simplicity_24</font>
 					<textcolor>grey2</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -638,7 +638,7 @@
 					<posy>270</posy>
 					<width>400</width>
 					<height>20</height>
-					<font>Shade_24</font>
+					<font>Simplicity_24</font>
 					<textcolor>grey2</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -651,7 +651,7 @@
 					<posy>300</posy>
 					<width>400</width>
 					<height>20</height>
-					<font>Shade_24</font>
+					<font>Simplicity_24</font>
 					<textcolor>grey2</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -664,7 +664,7 @@
 					<posy>350</posy>
 					<width>400</width>
 					<height>195</height>
-					<font>Shade_20</font>
+					<font>Simplicity_20</font>
 					<textcolor>white</textcolor>
 					<align>left</align>
 					<label>$INFO[ListItem.Property(Album_Description)]</label>
@@ -712,7 +712,7 @@
 							<posy>8</posy>
 							<width>500</width>
 							<height>30</height>
-							<font>Shade_24</font>
+							<font>Simplicity_24</font>
 							<textcolor>grey2</textcolor>
 							<align>left</align>
 							<label>$INFO[ListItem.artist]</label>
@@ -725,7 +725,7 @@
 						<posy>77</posy>
 						<width>450</width>
 						<height>20</height>
-						<font>Shade_30</font>
+						<font>Simplicity_30</font>
 						<textcolor>white</textcolor>
 						<scroll>false</scroll>
 						<scrollspeed>0</scrollspeed>
@@ -752,7 +752,7 @@
 					<posy>150</posy>
 					<width>400</width>
 					<height>20</height>
-					<font>Shade_40</font>
+					<font>Simplicity_40</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -765,7 +765,7 @@
 					<posy>240</posy>
 					<width>400</width>
 					<height>20</height>
-					<font>Shade_24</font>
+					<font>Simplicity_24</font>
 					<textcolor>grey2</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -778,7 +778,7 @@
 					<posy>270</posy>
 					<width>400</width>
 					<height>20</height>
-					<font>Shade_24</font>
+					<font>Simplicity_24</font>
 					<textcolor>grey2</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -791,7 +791,7 @@
 					<posy>300</posy>
 					<width>400</width>
 					<height>20</height>
-					<font>Shade_24</font>
+					<font>Simplicity_24</font>
 					<textcolor>grey2</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -804,7 +804,7 @@
 					<posy>350</posy>
 					<width>400</width>
 					<height>195</height>
-					<font>Shade_20</font>
+					<font>Simplicity_20</font>
 					<textcolor>white</textcolor>
 					<align>left</align>
 					<label>$INFO[ListItem.Property(Artist_Description)]</label>
@@ -888,7 +888,7 @@
 					<posy>70</posy>
 					<width>150</width>
 					<height>150</height>
-					<font>Shade_18</font>
+					<font>Simplicity_18</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<wrapmultiline>true</wrapmultiline>
@@ -929,7 +929,7 @@
 						<posy>150</posy>
 						<width>400</width>
 						<height>20</height>
-						<font>Shade_40</font>
+						<font>Simplicity_40</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<scroll>false</scroll>
@@ -942,7 +942,7 @@
 						<posy>240</posy>
 						<width>400</width>
 						<height>20</height>
-						<font>Shade_24</font>
+						<font>Simplicity_24</font>
 						<textcolor>grey2</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<scroll>false</scroll>
@@ -955,7 +955,7 @@
 						<posy>270</posy>
 						<width>400</width>
 						<height>20</height>
-						<font>Shade_24</font>
+						<font>Simplicity_24</font>
 						<textcolor>grey2</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<scroll>false</scroll>
@@ -968,7 +968,7 @@
 						<posy>300</posy>
 						<width>400</width>
 						<height>20</height>
-						<font>Shade_24</font>
+						<font>Simplicity_24</font>
 						<textcolor>grey2</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<scroll>false</scroll>
@@ -981,7 +981,7 @@
 				<posy>350</posy>
 				<width>400</width>
 				<height>195</height>
-				<font>Shade_20</font>
+				<font>Simplicity_20</font>
 				<textcolor>white</textcolor>
 				<align>left</align>
 				<label>$INFO[ListItem.Property(Artist_Description)]</label>
@@ -1079,7 +1079,7 @@
 						<posy>150</posy>
 						<width>400</width>
 						<height>20</height>
-						<font>Shade_40</font>
+						<font>Simplicity_40</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<scroll>false</scroll>
@@ -1092,7 +1092,7 @@
 						<posy>240</posy>
 						<width>400</width>
 						<height>20</height>
-						<font>Shade_24</font>
+						<font>Simplicity_24</font>
 						<textcolor>grey2</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<scroll>false</scroll>
@@ -1105,7 +1105,7 @@
 						<posy>270</posy>
 						<width>400</width>
 						<height>20</height>
-						<font>Shade_24</font>
+						<font>Simplicity_24</font>
 						<textcolor>grey2</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<scroll>false</scroll>
@@ -1118,7 +1118,7 @@
 						<posy>300</posy>
 						<width>400</width>
 						<height>20</height>
-						<font>Shade_24</font>
+						<font>Simplicity_24</font>
 						<textcolor>grey2</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<scroll>false</scroll>
@@ -1131,7 +1131,7 @@
 				<posy>350</posy>
 				<width>400</width>
 				<height>195</height>
-				<font>Shade_20</font>
+				<font>Simplicity_20</font>
 				<textcolor>white</textcolor>
 				<align>left</align>
 				<label>$INFO[ListItem.Property(Artist_Description)]</label>

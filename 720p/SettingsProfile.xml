@@ -30,7 +30,7 @@
 				<height>80</height>
 				<textoffsety>13</textoffsety>
 				<label>20096</label>
-				<font>Shade_24_Bold</font>
+				<font>Simplicity_24_Bold</font>
 				<align>right</align>
 				<aligny>top</aligny>
 				<texturenofocus border="5">simplicity/menuitemnf.png</texturenofocus>
@@ -46,7 +46,7 @@
 				<posy>135</posy>
 				<width>240</width>
 				<height>25</height>
-				<font>Shade_20_Bold</font>
+				<font>Simplicity_20_Bold</font>
 				<textcolor>grey2</textcolor>
 				<align>right</align>
 				<aligny>center</aligny>
@@ -58,7 +58,7 @@
 				<posy>135</posy>
 				<width>240</width>
 				<height>25</height>
-				<font>Shade_20_Bold</font>
+				<font>Simplicity_20_Bold</font>
 				<textcolor>grey2</textcolor>
 				<align>right</align>
 				<aligny>center</aligny>
@@ -83,7 +83,7 @@
 					<posy>220</posy>
 					<width>240</width>
 					<height>20</height>
-					<font>Shade_18_Bold</font>
+					<font>Simplicity_18_Bold</font>
 					<textcolor>white</textcolor>
 					<align>center</align>
 					<aligny>center</aligny>
@@ -94,7 +94,7 @@
 					<posy>245</posy>
 					<width>240</width>
 					<height>20</height>
-					<font>Shade_20_Bold</font>
+					<font>Simplicity_20_Bold</font>
 					<textcolor>white</textcolor>
 					<align>center</align>
 					<aligny>center</aligny>
@@ -105,7 +105,7 @@
 					<posy>280</posy>
 					<width>240</width>
 					<height>30</height>
-					<font>Shade_18_Bold</font>
+					<font>Simplicity_18_Bold</font>
 					<textcolor>blue</textcolor>
 					<align>center</align>
 					<aligny>center</aligny>
@@ -116,7 +116,7 @@
 					<posy>305</posy>
 					<width>240</width>
 					<height>30</height>
-					<font>Shade_20_Bold</font>
+					<font>Simplicity_20_Bold</font>
 					<textcolor>white</textcolor>
 					<align>center</align>
 					<aligny>center</aligny>
@@ -136,7 +136,7 @@
 				<posy>20</posy>
 				<width>740</width>
 				<height>30</height>
-				<font>Shade_30_Bold</font>
+				<font>Simplicity_30_Bold</font>
 				<label>$LOCALIZE[10034]</label>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -170,7 +170,7 @@
 						<posy>145</posy>
 						<width>178</width>
 						<height>25</height>
-						<font>Shade_18</font>
+						<font>Simplicity_18</font>
 						<textcolor>grey2</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<align>center</align>
@@ -193,7 +193,7 @@
 						<posy>145</posy>
 						<width>178</width>
 						<height>25</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<align>center</align>

@@ -59,7 +59,7 @@
 					<posy>40</posy>
 					<width>630</width>
 					<height>30</height>
-					<font>Shade_40</font>
+					<font>Simplicity_40</font>
 					<label>1023</label>
 					<align>right</align>
 					<aligny>center</aligny>
@@ -72,7 +72,7 @@
 					<posy>70</posy>
 					<width>630</width>
 					<height>30</height>
-					<font>Shade_16_Bold</font>
+					<font>Simplicity_16_Bold</font>
 					<align>right</align>
 					<aligny>center</aligny>
 					<textcolor>white</textcolor>
@@ -172,7 +172,7 @@
 							<posy>0</posy>
 							<width>580</width>
 							<height>40</height>
-							<font>Shade_18</font>
+							<font>Simplicity_18</font>
 							<align>left</align>
 							<aligny>center</aligny>
 							<selectedcolor>green</selectedcolor>
@@ -208,7 +208,7 @@
 							<posy>0</posy>
 							<width>580</width>
 							<height>40</height>
-							<font>Shade_18</font>
+							<font>Simplicity_18</font>
 							<align>left</align>
 							<aligny>center</aligny>
 							<selectedcolor>green</selectedcolor>
@@ -247,7 +247,7 @@
 							<posy>0</posy>
 							<width>580</width>
 							<height>40</height>
-							<font>Shade_18</font>
+							<font>Simplicity_18</font>
 							<align>left</align>
 							<aligny>center</aligny>
 							<selectedcolor>green</selectedcolor>
@@ -283,7 +283,7 @@
 							<posy>0</posy>
 							<width>580</width>
 							<height>40</height>
-							<font>Shade_18</font>
+							<font>Simplicity_18</font>
 							<align>left</align>
 							<aligny>center</aligny>
 							<selectedcolor>green</selectedcolor>
@@ -316,7 +316,7 @@
 					<align>right</align>
 					<aligny>center</aligny>
 					<textcolor>white</textcolor>
-					<font>Shade_24</font>
+					<font>Simplicity_24</font>
 					<label>($INFO[Container(450).NumItems]) $LOCALIZE[31025] - $LOCALIZE[31024] ($INFO[Container(450).CurrentPage]/$INFO[Container(450).NumPages])</label>
 					<visible>!Control.IsVisible(451)</visible>
 				</control>
@@ -329,7 +329,7 @@
 					<align>right</align>
 					<aligny>center</aligny>
 					<textcolor>white</textcolor>
-					<font>Shade_24</font>
+					<font>Simplicity_24</font>
 					<label>($INFO[Container(451).NumItems]) $LOCALIZE[31025] - $LOCALIZE[31024] ($INFO[Container(451).CurrentPage]/$INFO[Container(451).NumPages])</label>
 					<visible>Control.IsVisible(451)</visible>
 				</control>

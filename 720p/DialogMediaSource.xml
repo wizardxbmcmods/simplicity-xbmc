@@ -21,7 +21,7 @@
 			<posy>18</posy>
 			<width>760</width>
 			<height>30</height>
-			<font>Shade_24_Bold</font>
+			<font>Simplicity_24_Bold</font>
 			<label>$LOCALIZE[13406]</label>
 			<align>center</align>
 			<aligny>center</aligny>
@@ -35,7 +35,7 @@
 			<height>30</height>
 			<align>center</align>
 			<aligny>center</aligny>
-			<font>Shade_20</font>
+			<font>Simplicity_20</font>
 			<label>1021</label>
 			<textcolor>white</textcolor>
 		</control>
@@ -63,7 +63,7 @@
 					<posy>0</posy>
 					<width>490</width>
 					<height>40</height>
-					<font>Shade_20</font>
+					<font>Simplicity_20</font>
 					<align>left</align>
 					<aligny>center</aligny>
 					<textcolor>grey2</textcolor>
@@ -93,7 +93,7 @@
 					<posy>0</posy>
 					<width>490</width>
 					<height>40</height>
-					<font>Shade_20</font>
+					<font>Simplicity_20</font>
 					<align>left</align>
 					<aligny>center</aligny>
 					<selectedcolor>selected</selectedcolor>
@@ -126,7 +126,7 @@
 				<width>200</width>
 				<height>41</height>
 				<label>1024</label>
-				<font>Shade_20_Bold_title</font>
+				<font>Simplicity_20_Bold_title</font>
 				<textcolor>black</textcolor>
 				<focusedcolor>black</focusedcolor>
 				<shadowcolor>grey2</shadowcolor>
@@ -146,7 +146,7 @@
 				<width>200</width>
 				<height>41</height>
 				<label>15019</label>
-				<font>Shade_20_Bold_title</font>
+				<font>Simplicity_20_Bold_title</font>
 				<textcolor>black</textcolor>
 				<focusedcolor>black</focusedcolor>
 				<shadowcolor>grey2</shadowcolor>
@@ -166,7 +166,7 @@
 				<width>200</width>
 				<height>41</height>
 				<label>1210</label>
-				<font>Shade_20_Bold_title</font>
+				<font>Simplicity_20_Bold_title</font>
 				<textcolor>black</textcolor>
 				<focusedcolor>black</focusedcolor>
 				<shadowcolor>grey2</shadowcolor>
@@ -188,7 +188,7 @@
 			<height>30</height>
 			<align>center</align>
 			<aligny>center</aligny>
-			<font>Shade_18</font>
+			<font>Simplicity_18</font>
 			<label>1022</label>
 			<textcolor>white</textcolor>
 			<shadowcolor>black</shadowcolor>
@@ -202,7 +202,7 @@
 			<align>center</align>
 			<aligny>center</aligny>
 			<label>-</label>
-			<font>Shade_20_Bold_title</font>
+			<font>Simplicity_20_Bold_title</font>
 			<texturefocus>simplicity/menuitemfo.png</texturefocus>
 			<texturenofocus>simplicity/menuitemnf.png</texturenofocus>
 			<onup>10</onup>
@@ -222,7 +222,7 @@
 				<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
 				<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
 				<label>186</label>
-				<font>Shade_20_Bold_title</font>
+				<font>Simplicity_20_Bold_title</font>
 				<textcolor>black</textcolor>
 				<focusedcolor>black</focusedcolor>
 				<shadowcolor>grey2</shadowcolor>
@@ -242,7 +242,7 @@
 				<aligny>center</aligny>
 				<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
 				<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
-				<font>Shade_20_Bold_title</font>
+				<font>Simplicity_20_Bold_title</font>
 				<textcolor>black</textcolor>
 				<focusedcolor>black</focusedcolor>
 				<shadowcolor>grey2</shadowcolor>
@@ -265,7 +265,7 @@
 				<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
 				<disabledcolor>grey7</disabledcolor>
 				<label>20333</label>
-				<font>Shade_20_Bold_title</font>
+				<font>Simplicity_20_Bold_title</font>
 				<textcolor>black</textcolor>
 				<focusedcolor>black</focusedcolor>
 				<shadowcolor>grey2</shadowcolor>

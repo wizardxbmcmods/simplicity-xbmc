@@ -24,7 +24,7 @@
 				<posy>18</posy>
 				<width>570</width>
 				<height>30</height>
-				<font>Shade_30_Bold</font>
+				<font>Simplicity_30_Bold</font>
 				<label>$LOCALIZE[13406]</label>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -87,7 +87,7 @@
 						<posy>0</posy>
 						<width>530</width>
 						<height>40</height>
-						<font>Shade_24</font>
+						<font>Simplicity_24</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<align>left</align>
@@ -102,7 +102,7 @@
 				<posy>592</posy>
 				<width>300</width>
 				<height>35</height>
-				<font>Shade_18_Bold</font>
+				<font>Simplicity_18_Bold</font>
 				<align>right</align>
 				<aligny>center</aligny>
 				<scroll>true</scroll>
@@ -116,7 +116,7 @@
 				<width>200</width>
 				<height>40</height>
 				<label>186</label>
-				<font>Shade_20</font>
+				<font>Simplicity_20</font>
 				<textcolor>black</textcolor>
 				<focusedcolor>black</focusedcolor>
 				<shadowcolor>grey2</shadowcolor>
@@ -162,7 +162,7 @@
 						<posy>0</posy>
 						<width>410</width>
 						<height>30</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<textcolor>grey</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<align>left</align>
@@ -174,7 +174,7 @@
 						<posy>30</posy>
 						<width>410</width>
 						<height>50</height>
-						<font>Shade_18</font>
+						<font>Simplicity_18</font>
 						<textcolor>grey</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<align>left</align>
@@ -214,7 +214,7 @@
 						<posy>0</posy>
 						<width>410</width>
 						<height>30</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<align>left</align>
@@ -226,7 +226,7 @@
 						<posy>30</posy>
 						<width>410</width>
 						<height>50</height>
-						<font>Shade_18</font>
+						<font>Simplicity_18</font>
 						<textcolor>grey</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<align>left</align>

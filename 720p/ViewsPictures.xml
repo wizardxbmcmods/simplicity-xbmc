@@ -104,7 +104,7 @@
 					<label>$INFO[ListItem.label,[COLOR=white][B]Filename[/B][/COLOR] - ]</label>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>Shade_24</font>
+					<font>Simplicity_24</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
@@ -117,7 +117,7 @@
 					<label>$INFO[ListItem.PictureResolution,[COLOR=white][B]$LOCALIZE[31327][/B][/COLOR] - ]</label>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>Shade_24</font>
+					<font>Simplicity_24</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
@@ -130,7 +130,7 @@
 					<label>$INFO[ListItem.PictureDateTime,[COLOR=white][B]$LOCALIZE[31326][/B][/COLOR] - ]</label>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>Shade_24</font>
+					<font>Simplicity_24</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
@@ -236,7 +236,7 @@
 					<label>[B]$INFO[ListItem.Label][/B]</label>
 					<align>center</align>
 					<aligny>center</aligny>
-					<font>Shade_24</font>
+					<font>Simplicity_24</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
@@ -260,7 +260,7 @@
 					<label>$INFO[ListItem.PictureResolution,[COLOR=white][B]$LOCALIZE[31327][/B][/COLOR] - ]</label>
 					<align>center</align>
 					<aligny>center</aligny>
-					<font>Shade_24</font>
+					<font>Simplicity_24</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
@@ -273,7 +273,7 @@
 					<label>$INFO[ListItem.PictureDateTime,[COLOR=white][B]$LOCALIZE[31326][/B][/COLOR] - ]</label>
 					<align>center</align>
 					<aligny>center</aligny>
-					<font>Shade_24</font>
+					<font>Simplicity_24</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>

@@ -20,7 +20,7 @@
 					<posy>50</posy>
 					<width>1030</width>
 					<height>30</height>
-					<font>Shade_40</font>
+					<font>Simplicity_40</font>
 					<align>center</align>
 					<aligny>center</aligny>
 					<textcolor>white</textcolor>
@@ -33,7 +33,7 @@
 					<width>1000</width>
 					<height>600</height>
 					<label>-</label>
-					<font>Shade_20</font>
+					<font>Simplicity_20</font>
 					<align>justify</align>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>

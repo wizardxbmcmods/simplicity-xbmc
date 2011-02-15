@@ -29,7 +29,7 @@
 			<posy>18</posy>
 			<width>560</width>
 			<height>30</height>
-			<font>Shade_30_Bold</font>
+			<font>Simplicity_30_Bold</font>
 			<label>$INFO[Control.GetLabel(1)] $INFO[System.Progressbar,- ,%]</label>
 			<align>left</align>
 			<aligny>center</aligny>
@@ -46,7 +46,7 @@
 			<aligny>center</aligny>
 			<label>-</label>
 			<haspath>true</haspath>
-			<font>Shade_24</font>
+			<font>Simplicity_24</font>
 		</control>
 		<control type="label" id="3">
 			<description>dialog line 2</description>
@@ -58,7 +58,7 @@
 			<aligny>center</aligny>
 			<label>-</label>
 			<haspath>true</haspath>
-			<font>Shade_24</font>
+			<font>Simplicity_24</font>
 		</control>
 		<control type="label" id="4">
 			<description>dialog line 3</description>
@@ -70,7 +70,7 @@
 			<aligny>center</aligny>
 			<label>-</label>
 			<haspath>true</haspath>
-			<font>Shade_24</font>
+			<font>Simplicity_24</font>
 		</control>
 		<control type="progress">
 			<description>Progressbar</description>
@@ -90,7 +90,7 @@
 			<width>200</width>
 			<height>40</height>
 			<label>222</label>
-			<font>Shade_20_Bold</font>
+			<font>Simplicity_20_Bold</font>
 			<textcolor>black</textcolor>
 			<focusedcolor>black</focusedcolor>
 			<shadowcolor>grey2</shadowcolor>

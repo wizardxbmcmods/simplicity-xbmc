@@ -25,7 +25,7 @@
 				<posy>18</posy>
 				<width>760</width>
 				<height>30</height>
-				<font>Shade_30_Bold</font>
+				<font>Simplicity_30_Bold</font>
 				<label>$LOCALIZE[3] - $LOCALIZE[5]</label>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -39,7 +39,7 @@
 				<posy>18</posy>
 				<width>760</width>
 				<height>30</height>
-				<font>Shade_30_Bold</font>
+				<font>Simplicity_30_Bold</font>
 				<label>$LOCALIZE[292] - $LOCALIZE[5]</label>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -54,7 +54,7 @@
 				<width>760</width>
 				<align>center</align>
 				<label>13390</label>
-				<font>Shade_20_Bold</font>
+				<font>Simplicity_20_Bold</font>
 			</control>
 			<control type="grouplist" id="5">
 				<description>control area</description>
@@ -92,7 +92,7 @@
 			<height>40</height>
 			<texturefocus border="0,2,0,2">simplicity/menuitemfo.png</texturefocus>
 			<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
-			<font>Shade_24</font>
+			<font>Simplicity_24</font>
 			<textcolor>grey2</textcolor>
 			<focusedcolor>white</focusedcolor>
 		</control>
@@ -101,7 +101,7 @@
 			<posx>0</posx>
 			<posy>0</posy>
 			<height>40</height>
-			<font>Shade_24</font>
+			<font>Simplicity_24</font>
 			<textcolor>grey2</textcolor>
 			<focusedcolor>white</focusedcolor>
 			<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
@@ -112,7 +112,7 @@
 			<posx>0</posx>
 			<posy>0</posy>
 			<height>40</height>
-			<font>Shade_24</font>
+			<font>Simplicity_24</font>
 			<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 			<radiowidth>83</radiowidth>
@@ -127,7 +127,7 @@
 			<posx>0</posx>
 			<posy>0</posy>
 			<height>40</height>
-			<font>Shade_24</font>
+			<font>Simplicity_24</font>
 			<textcolor>grey2</textcolor>
 			<focusedcolor>white</focusedcolor>
 			<spinwidth>43</spinwidth>

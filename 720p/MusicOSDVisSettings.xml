@@ -41,7 +41,7 @@
 				<posy>18</posy>
 				<width>760</width>
 				<height>30</height>
-				<font>Shade_24_Bold</font>
+				<font>Simplicity_24_Bold</font>
 				<label>$LOCALIZE[250] - $LOCALIZE[5]</label>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -55,7 +55,7 @@
 				<width>760</width>
 				<align>center</align>
 				<label>13390</label>
-				<font>Shade_20_Bold</font>
+				<font>Simplicity_20_Bold</font>
 			</control>
 			<control type="grouplist" id="5">
 				<description>control area</description>
@@ -93,7 +93,7 @@
 			<posx>0</posx>
 			<posy>0</posy>
 			<height>40</height>
-			<font>Shade_20</font>
+			<font>Simplicity_20</font>
 			<textcolor>grey2</textcolor>
 			<focusedcolor>white</focusedcolor>
 			<texturefocus>simplicity/menuitemfo.png</texturefocus>
@@ -104,7 +104,7 @@
 			<posx>0</posx>
 			<posy>0</posy>
 			<height>40</height>
-			<font>Shade_20</font>
+			<font>Simplicity_20</font>
 			<textcolor>grey2</textcolor>
 			<focusedcolor>white</focusedcolor>
 			<texturefocus>simplicity/menuitemfo.png</texturefocus>
@@ -115,7 +115,7 @@
 			<posx>0</posx>
 			<posy>0</posy>
 			<height>40</height>
-			<font>Shade_20</font>
+			<font>Simplicity_20</font>
 			<textcolor>grey2</textcolor>
 			<focusedcolor>white</focusedcolor>
 			<texturefocus>simplicity/menuitemfo.png</texturefocus>

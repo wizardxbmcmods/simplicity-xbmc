@@ -48,7 +48,7 @@
 				<posy>20</posy>
 				<width>580</width>
 				<height>30</height>
-				<font>Shade_40</font>
+				<font>Simplicity_40</font>
 				<label>[B]$LOCALIZE[658][/B]</label>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -87,7 +87,7 @@
 				<height>30</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_30</font>
+				<font>Simplicity_30</font>
 				<label>[B]$INFO[ListItem.Title][/B]</label>
 				<textcolor>white</textcolor>
 				<scroll>true</scroll>
@@ -100,7 +100,7 @@
 				<height>25</height>
 				<align>right</align>
 				<aligny>center</aligny>
-				<font>Shade_20_Bold</font>
+				<font>Simplicity_20_Bold</font>
 				<textcolor>white</textcolor>
 				<label>$LOCALIZE[557]:</label>
 			</control>
@@ -112,7 +112,7 @@
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_24</font>
+				<font>Simplicity_24</font>
 				<textcolor>white</textcolor>
 				<label fallback="161">$INFO[ListItem.Artist]</label>
 			</control>
@@ -124,7 +124,7 @@
 				<height>25</height>
 				<align>right</align>
 				<aligny>center</aligny>
-				<font>Shade_20_Bold</font>
+				<font>Simplicity_20_Bold</font>
 				<textcolor>white</textcolor>
 				<label>$LOCALIZE[558]:</label>
 			</control>
@@ -136,7 +136,7 @@
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_24</font>
+				<font>Simplicity_24</font>
 				<textcolor>white</textcolor>
 				<label fallback="161">$INFO[ListItem.Album]$INFO[musicplayer.discnumber, - $LOCALIZE[427]:]</label>
 			</control>
@@ -148,7 +148,7 @@
 				<height>25</height>
 				<align>right</align>
 				<aligny>center</aligny>
-				<font>Shade_20_Bold</font>
+				<font>Simplicity_20_Bold</font>
 				<textcolor>white</textcolor>
 				<label>$LOCALIZE[515]:</label>
 			</control>
@@ -160,7 +160,7 @@
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_24</font>
+				<font>Simplicity_24</font>
 				<textcolor>white</textcolor>
 				<label fallback="161">$INFO[ListItem.Genre]</label>
 			</control>
@@ -172,7 +172,7 @@
 				<height>25</height>
 				<align>right</align>
 				<aligny>center</aligny>
-				<font>Shade_20_Bold</font>
+				<font>Simplicity_20_Bold</font>
 				<textcolor>white</textcolor>
 				<label>$LOCALIZE[562]:</label>
 			</control>
@@ -184,7 +184,7 @@
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_24</font>
+				<font>Simplicity_24</font>
 				<textcolor>white</textcolor>
 				<label fallback="161">$INFO[ListItem.Year]</label>
 			</control>
@@ -196,7 +196,7 @@
 				<height>25</height>
 				<align>right</align>
 				<aligny>center</aligny>
-				<font>Shade_20_Bold</font>
+				<font>Simplicity_20_Bold</font>
 				<textcolor>white</textcolor>
 				<label>$LOCALIZE[554]:</label>
 			</control>
@@ -208,7 +208,7 @@
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_24</font>
+				<font>Simplicity_24</font>
 				<textcolor>white</textcolor>
 				<label fallback="161">$INFO[ListItem.TrackNumber]</label>
 			</control>
@@ -220,7 +220,7 @@
 				<height>25</height>
 				<align>right</align>
 				<aligny>center</aligny>
-				<font>Shade_20_Bold</font>
+				<font>Simplicity_20_Bold</font>
 				<textcolor>white</textcolor>
 				<label>$LOCALIZE[563]:</label>
 			</control>
@@ -272,7 +272,7 @@
 				<height>25</height>
 				<align>right</align>
 				<aligny>center</aligny>
-				<font>Shade_20_Bold</font>
+				<font>Simplicity_20_Bold</font>
 				<textcolor>white</textcolor>
 				<label>$LOCALIZE[569]:</label>
 			</control>
@@ -282,7 +282,7 @@
 				<posy>345</posy>
 				<width>460</width>
 				<height>100</height>
-				<font>Shade_24</font>
+				<font>Simplicity_24</font>
 				<pagecontrol>-</pagecontrol>
 				<label fallback="161">$INFO[ListItem.Comment]</label>
 			</control>
@@ -296,7 +296,7 @@
 					<width>240</width>
 					<height>41</height>
 					<label>186</label>
-					<font>Shade_20_Bold</font>
+					<font>Simplicity_20_Bold</font>
 					<align>right</align>
 					<texturenofocus>simplicity/menuitemnf.png</texturenofocus>
 					<texturefocus>simplicity/menuitemfo.png</texturefocus>
@@ -312,7 +312,7 @@
 					<width>240</width>
 					<height>41</height>
 					<label>222</label>
-					<font>Shade_20_Bold</font>
+					<font>Simplicity_20_Bold</font>
 					<align>right</align>
 					<texturenofocus>simplicity/menuitemnf.png</texturenofocus>
 					<texturefocus>simplicity/menuitemfo.png</texturefocus>
@@ -328,7 +328,7 @@
 					<width>240</width>
 					<height>41</height>
 					<label>10523</label>
-					<font>Shade_20_Bold</font>
+					<font>Simplicity_20_Bold</font>
 					<align>right</align>
 					<texturenofocus>simplicity/menuitemnf.png</texturenofocus>
 					<texturefocus>simplicity/menuitemfo.png</texturefocus>
@@ -344,7 +344,7 @@
 					<width>240</width>
 					<height>41</height>
 					<label>13405</label>
-					<font>Shade_20_Bold</font>
+					<font>Simplicity_20_Bold</font>
 					<align>right</align>
 					<texturenofocus>simplicity/menuitemnf.png</texturenofocus>
 					<texturefocus>simplicity/menuitemfo.png</texturefocus>

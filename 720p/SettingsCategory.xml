@@ -57,7 +57,7 @@
 				<posy>6</posy>
 				<width>260</width>
 				<height>80</height>
-				<font>Shade_40</font>
+				<font>Simplicity_40</font>
 				<label>$INFO[Control.GetLabel(2)]</label>
 				<align>center</align>
 				<textcolor>white</textcolor>
@@ -85,7 +85,7 @@
 			<textoffsetx>20</textoffsetx>
 			<align>center</align>
 			<aligny>center</aligny>
-			<font>Shade_18_Bold</font>
+			<font>Simplicity_18_Bold</font>
 			<textcolor>grey3</textcolor>
 			<focusedcolor>white</focusedcolor>
 			<texturefocus>simplicity/list-selector.png</texturefocus>
@@ -97,7 +97,7 @@
 			<posx>0</posx>
 			<posy>0</posy>
 			<height>40</height>
-			<font>Shade_20</font>
+			<font>Simplicity_20</font>
 			<textcolor>white</textcolor>
 			<focusedcolor>white</focusedcolor>
 			<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
@@ -110,7 +110,7 @@
 			<height>40</height>
 			<radiowidth>83</radiowidth>
 			<radioheight>67</radioheight>
-			<font>Shade_20</font>
+			<font>Simplicity_20</font>
 			<textcolor>white</textcolor>
 			<focusedcolor>white</focusedcolor>
 			<textureradiofocus>simplicity/settings-radiobutton-on.png</textureradiofocus>
@@ -122,7 +122,7 @@
 			<description>Default SpinControlex</description>
 			<posx>0</posx>
 			<posy>0</posy>
-			<font>Shade_20</font>
+			<font>Simplicity_20</font>
 			<textcolor>white</textcolor>
 			<focusedcolor>white</focusedcolor>
 			<width>300</width>

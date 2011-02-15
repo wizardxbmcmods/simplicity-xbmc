@@ -34,7 +34,7 @@
 				<posy>40</posy>
 				<width>710</width>
 				<height>30</height>
-				<font>Shade_30</font>
+				<font>Simplicity_30</font>
 				<label>[B]$LOCALIZE[13406][/B]</label>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -80,7 +80,7 @@
 						<posy>0</posy>
 						<width>160</width>
 						<height>35</height>
-						<font>Shade_18_Bold</font>
+						<font>Simplicity_18_Bold</font>
 						<aligny>center</aligny>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
@@ -93,7 +93,7 @@
 						<posy>0</posy>
 						<width>390</width>
 						<height>35</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<aligny>center</aligny>
 						<shadowcolor>black</shadowcolor>
 						<selectedcolor>selected</selectedcolor>
@@ -123,7 +123,7 @@
 						<posy>0</posy>
 						<width>160</width>
 						<height>35</height>
-						<font>Shade_18_Bold</font>
+						<font>Simplicity_18_Bold</font>
 						<aligny>center</aligny>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
@@ -136,7 +136,7 @@
 						<posy>0</posy>
 						<width>390</width>
 						<height>35</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<aligny>center</aligny>
 						<shadowcolor>black</shadowcolor>
 						<selectedcolor>selected</selectedcolor>

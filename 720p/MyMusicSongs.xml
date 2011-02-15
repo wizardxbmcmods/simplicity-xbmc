@@ -224,7 +224,7 @@
 					<posy>220</posy>
 					<width>260</width>
 					<height>545</height>
-					<font>Shade_18</font>
+					<font>Simplicity_18</font>
 					<label>Current View Mode</label>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>

@@ -21,7 +21,7 @@
 			<posy>18</posy>
 			<width>660</width>
 			<height>30</height>
-			<font>Shade_24_Bold</font>
+			<font>Simplicity_24_Bold</font>
 			<label>$LOCALIZE[20043]</label>
 			<align>center</align>
 			<aligny>center</aligny>
@@ -46,7 +46,7 @@
 			<posx>0</posx>
 			<posy>0</posy>
 			<height>40</height>
-			<font>Shade_20</font>
+			<font>Simplicity_20</font>
 			<textcolor>grey2</textcolor>
 			<focusedcolor>white</focusedcolor>
 			<texturefocus>simplicity/menuitemfo.png</texturefocus>
@@ -57,7 +57,7 @@
 			<posx>0</posx>
 			<posy>0</posy>
 			<height>40</height>
-			<font>Shade_20</font>
+			<font>Simplicity_20</font>
 			<textcolor>grey2</textcolor>
 			<focusedcolor>white</focusedcolor>
 			<texturefocus>simplicity/menuitemfo.png</texturefocus>
@@ -68,7 +68,7 @@
 			<posx>0</posx>
 			<posy>0</posy>
 			<height>40</height>
-			<font>Shade_20</font>
+			<font>Simplicity_20</font>
 			<textcolor>grey2</textcolor>
 			<focusedcolor>white</focusedcolor>
 			<texturefocus>simplicity/menuitemfo.png</texturefocus>
@@ -91,7 +91,7 @@
 			<aligny>center</aligny>
 			<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
 			<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
-			<font>Shade_20_Bold</font>
+			<font>Simplicity_20_Bold</font>
 			<textcolor>black</textcolor>
 			<focusedcolor>black</focusedcolor>
 			<shadowcolor>grey2</shadowcolor>
@@ -111,7 +111,7 @@
 			<aligny>center</aligny>
 			<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
 			<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
-			<font>Shade_20_Bold</font>
+			<font>Simplicity_20_Bold</font>
 			<textcolor>black</textcolor>
 			<focusedcolor>black</focusedcolor>
 			<shadowcolor>grey2</shadowcolor>

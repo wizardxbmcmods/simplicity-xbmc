@@ -39,7 +39,7 @@
 				<posy>100</posy>
 				<width>690</width>
 				<height>40</height>
-				<font>Shade_24</font>
+				<font>Simplicity_24</font>
 				<textcolor>white</textcolor>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -77,7 +77,7 @@
 						<posy>10</posy>
 						<width>580</width>
 						<height>40</height>
-						<font>Shade_20_Bold</font>
+						<font>Simplicity_20_Bold</font>
 						<textcolor>grey2</textcolor>
 						<selectedcolor>white</selectedcolor>
 						<align>left</align>
@@ -89,7 +89,7 @@
 						<posy>50</posy>
 						<width>580</width>
 						<height>40</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<textcolor>grey2</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<align>left</align>
@@ -128,7 +128,7 @@
 						<posy>10</posy>
 						<width>580</width>
 						<height>40</height>
-						<font>Shade_20_Bold</font>
+						<font>Simplicity_20_Bold</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<align>left</align>
@@ -140,7 +140,7 @@
 						<posy>50</posy>
 						<width>580</width>
 						<height>40</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<textcolor>grey2</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<align>left</align>

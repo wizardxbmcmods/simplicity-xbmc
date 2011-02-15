@@ -20,7 +20,7 @@
 				<posy>4</posy>
 				<width>370</width>
 				<height>18</height>
-				<font>Shade_20</font>
+				<font>Simplicity_20</font>
 				<textcolor>white</textcolor>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -31,7 +31,7 @@
 				<posy>27</posy>
 				<width>370</width>
 				<height>20</height>
-				<font>Shade_13_Bold</font>
+				<font>Simplicity_13_Bold</font>
 				<align>left</align>
 				<aligny>center</aligny>
 			</control>

@@ -57,7 +57,7 @@
 					<posy>75</posy>
 					<width>850</width>
 					<height>30</height>
-					<font>Shade_50</font>
+					<font>Simplicity_50</font>
 					<label>$INFO[Listitem.Title]</label>
 					<align>left</align>
 					<aligny>center</aligny>
@@ -70,7 +70,7 @@
 					<posy>130</posy>
 					<width>650</width>
 					<height>30</height>
-					<font>Shade_20</font>
+					<font>Simplicity_20</font>
 					<label>[B]"$INFO[Listitem.Tagline]"[/B]</label>
 					<align>left</align>
 					<aligny>center</aligny>
@@ -150,7 +150,7 @@
 						<posy>510</posy>
 						<width>112</width>
 						<height>30</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<textcolor>white</textcolor>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -161,7 +161,7 @@
 						<posy>560</posy>
 						<width>71</width>
 						<height>30</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<textcolor>white</textcolor>
 						<scroll>false</scroll>
 						<scrollspeed>0</scrollspeed>
@@ -174,7 +174,7 @@
 						<posy>610</posy>
 						<width>280</width>
 						<height>30</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<align>left</align>
 						<aligny>center</aligny>
 						<textcolor>white</textcolor>
@@ -185,7 +185,7 @@
 						<posy>375</posy>
 						<width>400</width>
 						<height>50</height>
-						<font>Shade_24_Bold</font>
+						<font>Simplicity_24_Bold</font>
 						<textcolor>white</textcolor>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -197,7 +197,7 @@
 						<posy>425</posy>
 						<width>470</width>
 						<height>170</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<align>justify</align>
 						<textcolor>white</textcolor>
 						<pagecontrol>61</pagecontrol>
@@ -210,7 +210,7 @@
 						<posy>375</posy>
 						<width>400</width>
 						<height>50</height>
-						<font>Shade_24_Bold</font>
+						<font>Simplicity_24_Bold</font>
 						<textcolor>white</textcolor>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -222,7 +222,7 @@
 						<posy>425</posy>
 						<width>350</width>
 						<height>170</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<textcolor>white</textcolor>
 						<align>left</align>
 						<label>$INFO[ListItem.CastandRole]</label>
@@ -298,7 +298,7 @@
 						<posy>510</posy>
 						<width>112</width>
 						<height>30</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<textcolor>white</textcolor>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -310,7 +310,7 @@
 						<posy>560</posy>
 						<width>280</width>
 						<height>30</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<textcolor>white</textcolor>
 						<scroll>false</scroll>
 						<scrollspeed>0</scrollspeed>
@@ -324,7 +324,7 @@
 						<posy>375</posy>
 						<width>400</width>
 						<height>50</height>
-						<font>Shade_24_Bold</font>
+						<font>Simplicity_24_Bold</font>
 						<textcolor>white</textcolor>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -336,7 +336,7 @@
 						<posy>425</posy>
 						<width>470</width>
 						<height>170</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<align>justify</align>
 						<textcolor>white</textcolor>
 						<pagecontrol>61</pagecontrol>
@@ -349,7 +349,7 @@
 						<posy>375</posy>
 						<width>400</width>
 						<height>50</height>
-						<font>Shade_24_Bold</font>
+						<font>Simplicity_24_Bold</font>
 						<textcolor>white</textcolor>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -361,7 +361,7 @@
 						<posy>425</posy>
 						<width>370</width>
 						<height>170</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<textcolor>white</textcolor>
 						<align>left</align>
 						<label>$INFO[ListItem.CastandRole]</label>
@@ -413,7 +413,7 @@
 						<posy>510</posy>
 						<width>112</width>
 						<height>30</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<textcolor>white</textcolor>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -424,7 +424,7 @@
 						<posy>560</posy>
 						<width>280</width>
 						<height>30</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<textcolor>white</textcolor>
 						<scroll>false</scroll>
 						<scrollspeed>0</scrollspeed>
@@ -437,7 +437,7 @@
 						<posy>375</posy>
 						<width>400</width>
 						<height>50</height>
-						<font>Shade_24_Bold</font>
+						<font>Simplicity_24_Bold</font>
 						<textcolor>white</textcolor>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -449,7 +449,7 @@
 						<posy>425</posy>
 						<width>470</width>
 						<height>170</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<align>justify</align>
 						<textcolor>white</textcolor>
 						<pagecontrol>61</pagecontrol>
@@ -462,7 +462,7 @@
 						<posy>375</posy>
 						<width>400</width>
 						<height>50</height>
-						<font>Shade_24_Bold</font>
+						<font>Simplicity_24_Bold</font>
 						<textcolor>white</textcolor>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -474,7 +474,7 @@
 						<posy>425</posy>
 						<width>370</width>
 						<height>170</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<textcolor>white</textcolor>
 						<align>left</align>
 						<label>$INFO[ListItem.CastandRole]</label>
@@ -534,7 +534,7 @@
 						<posy>510</posy>
 						<width>112</width>
 						<height>30</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<textcolor>white</textcolor>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -545,7 +545,7 @@
 						<posy>560</posy>
 						<width>280</width>
 						<height>30</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<textcolor>white</textcolor>
 						<scroll>false</scroll>
 						<scrollspeed>0</scrollspeed>
@@ -558,7 +558,7 @@
 						<posy>375</posy>
 						<width>400</width>
 						<height>50</height>
-						<font>Shade_24_Bold</font>
+						<font>Simplicity_24_Bold</font>
 						<textcolor>white</textcolor>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -570,7 +570,7 @@
 						<posy>425</posy>
 						<width>470</width>
 						<height>170</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<align>justify</align>
 						<textcolor>white</textcolor>
 						<pagecontrol>61</pagecontrol>
@@ -583,7 +583,7 @@
 						<posy>375</posy>
 						<width>400</width>
 						<height>50</height>
-						<font>Shade_24_Bold</font>
+						<font>Simplicity_24_Bold</font>
 						<textcolor>white</textcolor>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -595,7 +595,7 @@
 						<posy>425</posy>
 						<width>370</width>
 						<height>170</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<textcolor>white</textcolor>
 						<align>left</align>
 						<label>$INFO[ListItem.CastandRole]</label>
@@ -651,7 +651,7 @@
 						<posy>510</posy>
 						<width>112</width>
 						<height>30</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<textcolor>white</textcolor>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -663,7 +663,7 @@
 						<posy>560</posy>
 						<width>280</width>
 						<height>30</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<textcolor>white</textcolor>
 						<scroll>false</scroll>
 						<scrollspeed>0</scrollspeed>
@@ -677,7 +677,7 @@
 						<posy>610</posy>
 						<width>280</width>
 						<height>30</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<align>left</align>
 						<aligny>center</aligny>
 						<textcolor>white</textcolor>
@@ -689,7 +689,7 @@
 						<posy>375</posy>
 						<width>400</width>
 						<height>50</height>
-						<font>Shade_24_Bold</font>
+						<font>Simplicity_24_Bold</font>
 						<textcolor>white</textcolor>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -701,7 +701,7 @@
 						<posy>425</posy>
 						<width>470</width>
 						<height>170</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<align>justify</align>
 						<textcolor>white</textcolor>
 						<pagecontrol>61</pagecontrol>
@@ -714,7 +714,7 @@
 						<posy>375</posy>
 						<width>400</width>
 						<height>50</height>
-						<font>Shade_24_Bold</font>
+						<font>Simplicity_24_Bold</font>
 						<textcolor>white</textcolor>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -726,7 +726,7 @@
 						<posy>425</posy>
 						<width>370</width>
 						<height>170</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<textcolor>white</textcolor>
 						<align>left</align>
 						<label>$INFO[ListItem.CastandRole]</label>
@@ -762,7 +762,7 @@
 							<height>25</height>
 							<align>right</align>
 							<aligny>center</aligny>
-							<font>Shade_20_Bold</font>
+							<font>Simplicity_20_Bold</font>
 							<textcolor>white</textcolor>
 							<label>$LOCALIZE[557]:</label>
 						</control>
@@ -774,7 +774,7 @@
 							<height>25</height>
 							<align>left</align>
 							<aligny>center</aligny>
-							<font>Shade_24</font>
+							<font>Simplicity_24</font>
 							<textcolor>white</textcolor>
 							<label fallback="161">$INFO[ListItem.Artist]</label>
 						</control>
@@ -786,7 +786,7 @@
 							<height>25</height>
 							<align>right</align>
 							<aligny>center</aligny>
-							<font>Shade_20_Bold</font>
+							<font>Simplicity_20_Bold</font>
 							<textcolor>white</textcolor>
 							<label>$LOCALIZE[558]:</label>
 						</control>
@@ -798,7 +798,7 @@
 							<height>25</height>
 							<align>left</align>
 							<aligny>center</aligny>
-							<font>Shade_24</font>
+							<font>Simplicity_24</font>
 							<textcolor>white</textcolor>
 							<label fallback="161">$INFO[ListItem.Album]$INFO[musicplayer.discnumber, - $LOCALIZE[427]:]</label>
 						</control>
@@ -810,7 +810,7 @@
 							<height>25</height>
 							<align>right</align>
 							<aligny>center</aligny>
-							<font>Shade_20_Bold</font>
+							<font>Simplicity_20_Bold</font>
 							<textcolor>white</textcolor>
 							<label>$LOCALIZE[515]:</label>
 						</control>
@@ -822,7 +822,7 @@
 							<height>25</height>
 							<align>left</align>
 							<aligny>center</aligny>
-							<font>Shade_24</font>
+							<font>Simplicity_24</font>
 							<textcolor>white</textcolor>
 							<label fallback="161">$INFO[ListItem.Genre]</label>
 						</control>
@@ -834,7 +834,7 @@
 							<height>25</height>
 							<align>right</align>
 							<aligny>center</aligny>
-							<font>Shade_20_Bold</font>
+							<font>Simplicity_20_Bold</font>
 							<textcolor>white</textcolor>
 							<label>$LOCALIZE[562]:</label>
 						</control>
@@ -846,7 +846,7 @@
 							<height>25</height>
 							<align>left</align>
 							<aligny>center</aligny>
-							<font>Shade_24</font>
+							<font>Simplicity_24</font>
 							<textcolor>white</textcolor>
 							<label fallback="161">$INFO[ListItem.Year]</label>
 						</control>
@@ -858,7 +858,7 @@
 							<height>25</height>
 							<align>right</align>
 							<aligny>center</aligny>
-							<font>Shade_20_Bold</font>
+							<font>Simplicity_20_Bold</font>
 							<textcolor>white</textcolor>
 							<label>$LOCALIZE[554]:</label>
 						</control>
@@ -870,7 +870,7 @@
 							<height>25</height>
 							<align>left</align>
 							<aligny>center</aligny>
-							<font>Shade_24</font>
+							<font>Simplicity_24</font>
 							<textcolor>white</textcolor>
 							<label fallback="161">$INFO[ListItem.TrackNumber]</label>
 						</control>				

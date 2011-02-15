@@ -161,7 +161,7 @@
 					<posy>430</posy>
 					<width>850</width>
 					<height>25</height>
-					<font>Shade_50</font>
+					<font>Simplicity_50</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -182,7 +182,7 @@
 					<posy>530</posy>
 					<width>400</width>
 					<height>25</height>
-					<font>Shade_20</font>
+					<font>Simplicity_20</font>
 					<textcolor>grey2</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -196,7 +196,7 @@
 					<posy>530</posy>
 					<width>400</width>
 					<height>25</height>
-					<font>Shade_20</font>
+					<font>Simplicity_20</font>
 					<textcolor>grey2</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -210,7 +210,7 @@
 					<posy>530</posy>
 					<width>400</width>
 					<height>25</height>
-					<font>Shade_20</font>
+					<font>Simplicity_20</font>
 					<textcolor>grey2</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -224,7 +224,7 @@
 					<posy>560</posy>
 					<width>400</width>
 					<height>25</height>
-					<font>Shade_20</font>
+					<font>Simplicity_20</font>
 					<textcolor>grey2</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -237,7 +237,7 @@
 					<posy>590</posy>
 					<width>400</width>
 					<height>25</height>
-					<font>Shade_20</font>
+					<font>Simplicity_20</font>
 					<textcolor>grey2</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -404,7 +404,7 @@
 					<posy>430</posy>
 					<width>850</width>
 					<height>25</height>
-					<font>Shade_50</font>
+					<font>Simplicity_50</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -418,7 +418,7 @@
 					<posy>430</posy>
 					<width>850</width>
 					<height>25</height>
-					<font>Shade_50</font>
+					<font>Simplicity_50</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -440,7 +440,7 @@
 					<posy>490</posy>
 					<width>400</width>
 					<height>25</height>
-					<font>Shade_20</font>
+					<font>Simplicity_20</font>
 					<textcolor>grey2</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -454,7 +454,7 @@
 					<posy>490</posy>
 					<width>400</width>
 					<height>25</height>
-					<font>Shade_20</font>
+					<font>Simplicity_20</font>
 					<textcolor>grey2</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -469,7 +469,7 @@
 					<posy>530</posy>
 					<width>400</width>
 					<height>100</height>
-					<font>Shade_20</font>
+					<font>Simplicity_20</font>
 					<align>left</align>
 					<textcolor>white</textcolor>
 					<label>$INFO[ListItem.Plot]</label>
@@ -628,7 +628,7 @@
 							<posy>250</posy>
 							<width>800</width>
 							<height>30</height>
-							<font>Shade_40</font>
+							<font>Simplicity_40</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<scroll>false</scroll>
@@ -640,7 +640,7 @@
 							<posy>300</posy>
 							<width>350</width>
 							<height>20</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<textcolor>grey2</textcolor>
 							<align>left</align>
 							<label>$INFO[ListItem.Property(TotalEpisodes)] episodes, $INFO[ListItem.Property(UnWatchedEpisodes)] unwatched</label>
@@ -661,7 +661,7 @@
 							<posy>610</posy>
 							<width>800</width>
 							<height>30</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<textcolor>grey2</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<scroll>false</scroll>
@@ -674,7 +674,7 @@
 							<posy>610</posy>
 							<width>800</width>
 							<height>30</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<textcolor>grey2</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<scroll>false</scroll>
@@ -687,7 +687,7 @@
 							<posy>610</posy>
 							<width>800</width>
 							<height>30</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<textcolor>grey2</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<scroll>false</scroll>
@@ -700,7 +700,7 @@
 							<posy>610</posy>
 							<width>800</width>
 							<height>30</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<textcolor>grey2</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<scroll>false</scroll>
@@ -714,7 +714,7 @@
 							<posy>640</posy>
 							<width>500</width>
 							<height>89</height>
-							<font>Shade_18</font>
+							<font>Simplicity_18</font>
 							<align>left</align>
 							<textcolor>white</textcolor>
 							<label>$INFO[ListItem.PlotOutline]</label>
@@ -727,7 +727,7 @@
 							<posy>640</posy>
 							<width>500</width>
 							<height>89</height>
-							<font>Shade_18</font>
+							<font>Simplicity_18</font>
 							<align>left</align>
 							<textcolor>white</textcolor>
 							<label>$INFO[ListItem.Plot]</label>
@@ -740,7 +740,7 @@
 							<posy>640</posy>
 							<width>500</width>
 							<height>89</height>
-							<font>Shade_18</font>
+							<font>Simplicity_18</font>
 							<align>left</align>
 							<textcolor>white</textcolor>
 							<label>$INFO[Container.ShowPlot]</label>
@@ -883,7 +883,7 @@
 					<posy>160</posy>
 					<width>850</width>
 					<height>25</height>
-					<font>Shade_50</font>
+					<font>Simplicity_50</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -904,7 +904,7 @@
 					<posy>210</posy>
 					<width>400</width>
 					<height>25</height>
-					<font>Shade_20</font>
+					<font>Simplicity_20</font>
 					<textcolor>grey2</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -917,7 +917,7 @@
 					<posy>240</posy>
 					<width>400</width>
 					<height>25</height>
-					<font>Shade_20</font>
+					<font>Simplicity_20</font>
 					<textcolor>grey2</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -943,7 +943,7 @@
 					<posy>420</posy>
 					<width>540</width>
 					<height>170</height>
-					<font>Shade_20</font>
+					<font>Simplicity_20</font>
 					<align>left</align>
 					<textcolor>white</textcolor>
 					<label>$INFO[ListItem.Plot]</label>
@@ -1069,7 +1069,7 @@
 									<posy>17</posy>
 									<width>500</width>
 									<height>55</height>
-									<font>Shade_18</font>
+									<font>Simplicity_18</font>
 									<align>left</align>
 									<textcolor>white</textcolor>
 									<shadowcolor>black</shadowcolor>
@@ -1085,7 +1085,7 @@
 									<posy>110</posy>
 									<width>325</width>
 									<height>49</height>
-									<font>Shade_12</font>
+									<font>Simplicity_12</font>
 									<align>justify</align>
 									<textcolor>white</textcolor>
 									<label>$INFO[ListItem.PlotOutline]</label>
@@ -1113,7 +1113,7 @@
 									<posy>72</posy>
 									<width>250</width>
 									<height>20</height>
-									<font>Shade_16</font>
+									<font>Simplicity_16</font>
 									<textcolor>white</textcolor>
 									<shadowcolor>black</shadowcolor>
 									<scroll>false</scroll>
@@ -1130,7 +1130,7 @@
 									<posy>72</posy>
 									<width>250</width>
 									<height>20</height>
-									<font>Shade_16</font>
+									<font>Simplicity_16</font>
 									<textcolor>white</textcolor>
 									<shadowcolor>black</shadowcolor>
 									<scroll>false</scroll>
@@ -1178,7 +1178,7 @@
 									<posy>17</posy>
 									<width>500</width>
 									<height>55</height>
-									<font>Shade_18</font>
+									<font>Simplicity_18</font>
 									<align>left</align>
 									<textcolor>white</textcolor>
 									<shadowcolor>black</shadowcolor>
@@ -1194,7 +1194,7 @@
 									<posy>110</posy>
 									<width>325</width>
 									<height>49</height>
-									<font>Shade_12</font>
+									<font>Simplicity_12</font>
 									<align>justify</align>
 									<textcolor>white</textcolor>
 									<label>$INFO[ListItem.PlotOutline]</label>
@@ -1222,7 +1222,7 @@
 									<posy>72</posy>
 									<width>700</width>
 									<height>20</height>
-									<font>Shade_16</font>
+									<font>Simplicity_16</font>
 									<textcolor>white</textcolor>
 									<shadowcolor>black</shadowcolor>
 									<scroll>false</scroll>
@@ -1239,7 +1239,7 @@
 									<posy>72</posy>
 									<width>700</width>
 									<height>20</height>
-									<font>Shade_16</font>
+									<font>Simplicity_16</font>
 									<textcolor>white</textcolor>
 									<shadowcolor>black</shadowcolor>
 									<scroll>false</scroll>
@@ -1452,7 +1452,7 @@
 					<posy>160</posy>
 					<width>850</width>
 					<height>25</height>
-					<font>Shade_50</font>
+					<font>Simplicity_50</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -1473,7 +1473,7 @@
 					<posy>210</posy>
 					<width>400</width>
 					<height>25</height>
-					<font>Shade_20</font>
+					<font>Simplicity_20</font>
 					<textcolor>grey2</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -1487,7 +1487,7 @@
 					<posy>210</posy>
 					<width>400</width>
 					<height>25</height>
-					<font>Shade_20</font>
+					<font>Simplicity_20</font>
 					<textcolor>grey2</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -1501,7 +1501,7 @@
 					<posy>240</posy>
 					<width>400</width>
 					<height>25</height>
-					<font>Shade_20</font>
+					<font>Simplicity_20</font>
 					<textcolor>grey2</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -1514,7 +1514,7 @@
 					<posy>320</posy>
 					<width>400</width>
 					<height>25</height>
-					<font>Shade_20</font>
+					<font>Simplicity_20</font>
 					<textcolor>grey2</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -1540,7 +1540,7 @@
 					<posy>420</posy>
 					<width>540</width>
 					<height>170</height>
-					<font>Shade_20</font>
+					<font>Simplicity_20</font>
 					<align>left</align>
 					<textcolor>white</textcolor>
 					<label>$INFO[ListItem.Plot]</label>
@@ -1591,7 +1591,7 @@
 							<posy>0</posy>
 							<width>80</width>
 							<height>20</height>
-							<font>Shade_60</font>
+							<font>Simplicity_60</font>
 							<textcolor>grey4</textcolor>
 							<align>right</align>
 							<label>$INFO[ListItem.Episode]</label>
@@ -1601,7 +1601,7 @@
 							<posy>8</posy>
 							<width>500</width>
 							<height>30</height>
-							<font>Shade_24</font>
+							<font>Simplicity_24</font>
 							<textcolor>grey4</textcolor>
 							<align>left</align>
 							<label>$INFO[ListItem.title]</label>
@@ -1611,7 +1611,7 @@
 							<posy>35</posy>
 							<width>350</width>
 							<height>20</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<textcolor>grey2</textcolor>
 							<align>left</align>
 							<label>Originally aired: $INFO[ListItem.Date]</label>
@@ -1624,7 +1624,7 @@
 						<posy>24</posy>
 						<width>450</width>
 						<height>20</height>
-						<font>Shade_24</font>
+						<font>Simplicity_24</font>
 						<textcolor>white</textcolor>
 						<scroll>false</scroll>
 						<scrollspeed>0</scrollspeed>
@@ -1636,7 +1636,7 @@
 						<posy>52</posy>
 						<width>300</width>
 						<height>20</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<textcolor>grey2</textcolor>
 						<scroll>false</scroll>
 						<scrollspeed>0</scrollspeed>
@@ -1698,7 +1698,7 @@
 						<posy>107</posy>
 						<width>450</width>
 						<height>62</height>
-						<font>Shade_16</font>
+						<font>Simplicity_16</font>
 						<textcolor>white</textcolor>
 						<align>left</align>
 						<label>$INFO[ListItem.Plot]</label>
@@ -1796,7 +1796,7 @@
 				<posy>400</posy>
 				<width>384</width>
 				<height>168</height>
-				<font>Shade_20</font>
+				<font>Simplicity_20</font>
 				<textcolor>white</textcolor>
 				<align>left</align>
 				<label>$INFO[Container.ShowPlot]</label>
@@ -1849,7 +1849,7 @@
 					<posy>445</posy>
 					<width>400</width>
 					<height>25</height>
-					<font>Shade_20</font>
+					<font>Simplicity_20</font>
 					<textcolor>grey2</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -1863,7 +1863,7 @@
 					<posy>445</posy>
 					<width>400</width>
 					<height>25</height>
-					<font>Shade_20</font>
+					<font>Simplicity_20</font>
 					<textcolor>grey2</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -1877,7 +1877,7 @@
 					<posy>470</posy>
 					<width>400</width>
 					<height>25</height>
-					<font>Shade_20</font>
+					<font>Simplicity_20</font>
 					<textcolor>grey2</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -1922,7 +1922,7 @@
 							<posy>0</posy>
 							<width>200</width>
 							<height>20</height>
-							<font>Shade_30</font>
+							<font>Simplicity_30</font>
 							<textcolor>grey4</textcolor>
 							<align>left</align>
 							<label>$INFO[ListItem.Title]</label>
@@ -1932,7 +1932,7 @@
 							<posy>11</posy>
 							<width>350</width>
 							<height>20</height>
-							<font>Shade_18</font>
+							<font>Simplicity_18</font>
 							<textcolor>grey2</textcolor>
 							<align>left</align>
 							<label>$INFO[ListItem.Property(TotalEpisodes)] episodes, $INFO[ListItem.Property(UnWatchedEpisodes)] unwatched</label>
@@ -1945,7 +1945,7 @@
 						<posy>50</posy>
 						<width>450</width>
 						<height>20</height>
-						<font>Shade_40</font>
+						<font>Simplicity_40</font>
 						<textcolor>white</textcolor>
 						<scroll>false</scroll>
 						<scrollspeed>0</scrollspeed>
@@ -1957,7 +1957,7 @@
 						<posy>100</posy>
 						<width>350</width>
 						<height>20</height>
-						<font>Shade_18</font>
+						<font>Simplicity_18</font>
 						<textcolor>grey2</textcolor>
 						<align>left</align>
 						<label>$INFO[ListItem.Property(TotalEpisodes)] episodes, $INFO[ListItem.Property(UnWatchedEpisodes)] unwatched</label>
@@ -2046,7 +2046,7 @@
 				<posy>270</posy>
 				<width>300</width>
 				<height>20</height>
-				<font>Shade_20</font>
+				<font>Simplicity_20</font>
 				<textcolor>grey2</textcolor>
 				<scroll>false</scroll>
 				<scrollspeed>0</scrollspeed>
@@ -2059,7 +2059,7 @@
 				<posy>400</posy>
 				<width>384</width>
 				<height>168</height>
-				<font>Shade_20</font>
+				<font>Simplicity_20</font>
 				<textcolor>white</textcolor>
 				<align>left</align>
 				<label>$INFO[Container.ShowPlot]</label>
@@ -2110,7 +2110,7 @@
 						<label fallback="416">$INFO[listitem.title]</label>
 						<align>left</align>
 						<aligny>center</aligny>
-						<font>Shade_30</font>
+						<font>Simplicity_30</font>
 						<textcolor>faded</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<scroll>false</scroll>
@@ -2124,7 +2124,7 @@
 						<label>$INFO[listitem.year]    $INFO[listitem.genre]</label>
 						<align>left</align>
 						<aligny>center</aligny>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<textcolor>grey2</textcolor>
 						<scroll>false</scroll>
 					</control>
@@ -2137,7 +2137,7 @@
 						<label>$INFO[ListItem.Property(NumEpisodes)] episodes, $INFO[ListItem.Property(UnWatchedEpisodes)] unwatched</label>
 						<align>right</align>
 						<aligny>center</aligny>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<textcolor>grey2</textcolor>
 						<scroll>false</scroll>
 					</control>
@@ -2212,7 +2212,7 @@
 						<height>25</height>
 						<label>$INFO[listitem.year]    $INFO[listitem.genre]</label>
 						<align>left</align>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<textcolor>white</textcolor>
 						<scroll>false</scroll>
 					</control>
@@ -2224,7 +2224,7 @@
 						<height>25</height>
 						<label>$INFO[ListItem.Property(NumEpisodes)] episodes, $INFO[ListItem.Property(UnWatchedEpisodes)] unwatched</label>
 						<align>left</align>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<textcolor>white</textcolor>
 						<scroll>false</scroll>
 					</control>
@@ -2269,7 +2269,7 @@
 							<width>310</width>
 							<height>145</height>
 							<aligny>center</aligny>
-							<texture background="true">$INFO[ListItem.Path,,logo.png]</texture>
+							<texture background="true" fallback="logo-fallback.png">$INFO[ListItem.Path,,logo.png]</texture>
 							<aspectratio>keep</aspectratio>
 							<animation effect="fade" start="100" end="40" time="0" condition="Control.HasFocus(536)">conditional</animation>
 							<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(536)">conditional</animation>
@@ -2282,7 +2282,7 @@
 							<width>310</width>
 							<height>145</height>
 							<aligny>center</aligny>
-							<texture background="true">$INFO[ListItem.Path,,logo.png]</texture>
+							<texture background="true" fallback="logo-fallback.png">$INFO[ListItem.Path,,logo.png]</texture>
 							<animation effect="zoom" end="140" center="auto" time="200">Focus</animation> 
 							<aspectratio>keep</aspectratio>
 						</control>
@@ -2306,7 +2306,7 @@
 						<posy>337</posy>
 						<width>400</width>
 						<height>30</height>
-						<font>Shade_18</font>
+						<font>Simplicity_18</font>
 						<textcolor>white</textcolor>
 						<scroll>false</scroll>
 						<align>left</align>
@@ -2318,7 +2318,7 @@
 						<posy>372</posy>
 						<width>320</width>
 						<height>30</height>
-						<font>Shade_18</font>
+						<font>Simplicity_18</font>
 						<textcolor>white</textcolor>
 						<scroll>false</scroll>
 						<align>left</align>
@@ -2341,7 +2341,7 @@
 						<posy>600</posy>
 						<width>500</width>
 						<height>99</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<align>left</align>
 						<textcolor>white</textcolor>
 						<label>$INFO[ListItem.Plot]</label>
@@ -2426,7 +2426,7 @@
 					<posy>337</posy>
 					<width>400</width>
 					<height>30</height>
-					<font>Shade_18</font>
+					<font>Simplicity_18</font>
 					<textcolor>white</textcolor>
 					<scroll>false</scroll>
 					<align>right</align>
@@ -2438,7 +2438,7 @@
 					<posy>372</posy>
 					<width>320</width>
 					<height>30</height>
-					<font>Shade_18</font>
+					<font>Simplicity_18</font>
 					<textcolor>white</textcolor>
 					<scroll>false</scroll>
 					<align>right</align>
@@ -2549,7 +2549,7 @@
 						<posy>337</posy>
 						<width>400</width>
 						<height>30</height>
-						<font>Shade_18</font>
+						<font>Simplicity_18</font>
 						<textcolor>white</textcolor>
 						<scroll>false</scroll>
 						<align>left</align>
@@ -2561,7 +2561,7 @@
 						<posy>372</posy>
 						<width>320</width>
 						<height>30</height>
-						<font>Shade_18</font>
+						<font>Simplicity_18</font>
 						<textcolor>white</textcolor>
 						<scroll>false</scroll>
 						<align>left</align>
@@ -2584,7 +2584,7 @@
 						<posy>600</posy>
 						<width>500</width>
 						<height>99</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<align>left</align>
 						<textcolor>white</textcolor>
 						<label>$INFO[ListItem.Plot]</label>
@@ -2643,7 +2643,7 @@
 							<posy>8</posy>
 							<width>500</width>
 							<height>30</height>
-							<font>Shade_24</font>
+							<font>Simplicity_24</font>
 							<textcolor>grey4</textcolor>
 							<align>left</align>
 							<label>$INFO[ListItem.title]</label>
@@ -2653,7 +2653,7 @@
 							<posy>35</posy>
 							<width>350</width>
 							<height>20</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<textcolor>grey2</textcolor>
 							<align>left</align>
 							<label>$INFO[ListItem.Year]</label>
@@ -2666,7 +2666,7 @@
 						<posy>24</posy>
 						<width>450</width>
 						<height>20</height>
-						<font>Shade_24</font>
+						<font>Simplicity_24</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>white</selectedcolor>
 						<scroll>false</scroll>
@@ -2679,7 +2679,7 @@
 						<posy>52</posy>
 						<width>450</width>
 						<height>20</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<textcolor>grey2</textcolor>
 						<selectedcolor>grey2</selectedcolor>
 						<scroll>false</scroll>
@@ -2709,7 +2709,7 @@
 						<posy>107</posy>
 						<width>450</width>
 						<height>62</height>
-						<font>Shade_16</font>
+						<font>Simplicity_16</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>white</selectedcolor>
 						<align>left</align>
@@ -2775,7 +2775,7 @@
 					<posy>445</posy>
 					<width>400</width>
 					<height>25</height>
-					<font>Shade_20</font>
+					<font>Simplicity_20</font>
 					<textcolor>grey2</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -2789,7 +2789,7 @@
 					<posy>445</posy>
 					<width>400</width>
 					<height>25</height>
-					<font>Shade_20</font>
+					<font>Simplicity_20</font>
 					<textcolor>grey2</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -2803,7 +2803,7 @@
 					<posy>470</posy>
 					<width>400</width>
 					<height>25</height>
-					<font>Shade_20</font>
+					<font>Simplicity_20</font>
 					<textcolor>grey2</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -2817,7 +2817,7 @@
 					<posy>505</posy>
 					<width>384</width>
 					<height>100</height>
-					<font>Shade_20</font>
+					<font>Simplicity_20</font>
 					<textcolor>white</textcolor>
 					<align>left</align>
 					<label>$INFO[ListItem.Plot]</label>
@@ -2984,7 +2984,7 @@
 							<posy>250</posy>
 							<width>800</width>
 							<height>30</height>
-							<font>Shade_40</font>
+							<font>Simplicity_40</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<scroll>false</scroll>
@@ -2996,7 +2996,7 @@
 							<posy>300</posy>
 							<width>350</width>
 							<height>20</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<textcolor>grey2</textcolor>
 							<align>left</align>
 							<label>$INFO[ListItem.Property(TotalEpisodes)] episodes, $INFO[ListItem.Property(UnWatchedEpisodes)] unwatched</label>
@@ -3036,7 +3036,7 @@
 							<posy>520</posy>
 							<width>490</width>
 							<height>62</height>
-							<font>Shade_16</font>
+							<font>Simplicity_16</font>
 							<align>justify</align>
 							<textcolor>white</textcolor>
 							<label>$INFO[ListItem.Plot]</label>
@@ -3049,7 +3049,7 @@
 							<posy>520</posy>
 							<width>490</width>
 							<height>120</height>
-							<font>Shade_16</font>
+							<font>Simplicity_16</font>
 							<align>justify</align>
 							<textcolor>white</textcolor>
 							<label>$INFO[ListItem.Plot]</label>
@@ -3062,7 +3062,7 @@
 							<posy>520</posy>
 							<width>490</width>
 							<height>120</height>
-							<font>Shade_16</font>
+							<font>Simplicity_16</font>
 							<align>justify</align>
 							<textcolor>white</textcolor>
 							<label>$INFO[Container.ShowPlot]</label>
@@ -3090,7 +3090,7 @@
 							<posy>0</posy>
 							<width>160</width>
 							<height>25</height>
-							<font>Shade_16</font>
+							<font>Simplicity_16</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<scroll>false</scroll>
@@ -3101,7 +3101,7 @@
 							<posy>30</posy>
 							<width>160</width>
 							<height>25</height>
-							<font>Shade_13</font>
+							<font>Simplicity_13</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<scroll>false</scroll>
@@ -3112,7 +3112,7 @@
 							<posy>50</posy>
 							<width>160</width>
 							<height>25</height>
-							<font>Shade_13</font>
+							<font>Simplicity_13</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<scroll>false</scroll>
@@ -3123,7 +3123,7 @@
 							<posy>70</posy>
 							<width>160</width>
 							<height>25</height>
-							<font>Shade_13</font>
+							<font>Simplicity_13</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<scroll>false</scroll>
@@ -3134,7 +3134,7 @@
 							<posy>90</posy>
 							<width>160</width>
 							<height>25</height>
-							<font>Shade_13</font>
+							<font>Simplicity_13</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<scroll>false</scroll>
@@ -3145,7 +3145,7 @@
 							<posy>110</posy>
 							<width>160</width>
 							<height>25</height>
-							<font>Shade_13</font>
+							<font>Simplicity_13</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<scroll>false</scroll>
@@ -3157,7 +3157,7 @@
 							<posy>30</posy>
 							<width>160</width>
 							<height>25</height>
-							<font>Shade_13</font>
+							<font>Simplicity_13</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<scroll>false</scroll>
@@ -3169,7 +3169,7 @@
 							<posy>50</posy>
 							<width>160</width>
 							<height>25</height>
-							<font>Shade_13</font>
+							<font>Simplicity_13</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<scroll>false</scroll>
@@ -3181,7 +3181,7 @@
 							<posy>70</posy>
 							<width>160</width>
 							<height>25</height>
-							<font>Shade_13</font>
+							<font>Simplicity_13</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<scroll>false</scroll>
@@ -3193,7 +3193,7 @@
 							<posy>90</posy>
 							<width>160</width>
 							<height>25</height>
-							<font>Shade_13</font>
+							<font>Simplicity_13</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<scroll>false</scroll>
@@ -3205,7 +3205,7 @@
 							<posy>110</posy>
 							<width>160</width>
 							<height>25</height>
-							<font>Shade_13</font>
+							<font>Simplicity_13</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<scroll>false</scroll>
@@ -3218,7 +3218,7 @@
 							<posy>110</posy>
 							<width>160</width>
 							<height>25</height>
-							<font>Shade_13</font>
+							<font>Simplicity_13</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<scroll>false</scroll>
@@ -3235,7 +3235,7 @@
 							<posy>0</posy>
 							<width>160</width>
 							<height>25</height>
-							<font>Shade_16</font>
+							<font>Simplicity_16</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<scroll>false</scroll>
@@ -3246,7 +3246,7 @@
 							<posy>30</posy>
 							<width>160</width>
 							<height>25</height>
-							<font>Shade_13</font>
+							<font>Simplicity_13</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<scroll>false</scroll>
@@ -3257,7 +3257,7 @@
 							<posy>50</posy>
 							<width>160</width>
 							<height>25</height>
-							<font>Shade_13</font>
+							<font>Simplicity_13</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<scroll>false</scroll>
@@ -3268,7 +3268,7 @@
 							<posy>70</posy>
 							<width>160</width>
 							<height>25</height>
-							<font>Shade_13</font>
+							<font>Simplicity_13</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<scroll>false</scroll>
@@ -3279,7 +3279,7 @@
 							<posy>90</posy>
 							<width>160</width>
 							<height>25</height>
-							<font>Shade_13</font>
+							<font>Simplicity_13</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<scroll>false</scroll>
@@ -3290,7 +3290,7 @@
 							<posy>110</posy>
 							<width>160</width>
 							<height>25</height>
-							<font>Shade_13</font>
+							<font>Simplicity_13</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<scroll>false</scroll>
@@ -3302,7 +3302,7 @@
 							<posy>30</posy>
 							<width>160</width>
 							<height>25</height>
-							<font>Shade_13</font>
+							<font>Simplicity_13</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<scroll>false</scroll>
@@ -3314,7 +3314,7 @@
 							<posy>50</posy>
 							<width>160</width>
 							<height>25</height>
-							<font>Shade_13</font>
+							<font>Simplicity_13</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<scroll>false</scroll>
@@ -3326,7 +3326,7 @@
 							<posy>70</posy>
 							<width>160</width>
 							<height>25</height>
-							<font>Shade_13</font>
+							<font>Simplicity_13</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<scroll>false</scroll>
@@ -3338,7 +3338,7 @@
 							<posy>90</posy>
 							<width>160</width>
 							<height>25</height>
-							<font>Shade_13</font>
+							<font>Simplicity_13</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<scroll>false</scroll>
@@ -3350,7 +3350,7 @@
 							<posy>110</posy>
 							<width>160</width>
 							<height>25</height>
-							<font>Shade_13</font>
+							<font>Simplicity_13</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<scroll>false</scroll>
@@ -3366,7 +3366,7 @@
 							<posy>0</posy>
 							<width>160</width>
 							<height>25</height>
-							<font>Shade_16</font>
+							<font>Simplicity_16</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<scroll>false</scroll>
@@ -3377,7 +3377,7 @@
 							<posy>30</posy>
 							<width>160</width>
 							<height>25</height>
-							<font>Shade_13</font>
+							<font>Simplicity_13</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<scroll>false</scroll>
@@ -3388,7 +3388,7 @@
 							<posy>50</posy>
 							<width>160</width>
 							<height>25</height>
-							<font>Shade_13</font>
+							<font>Simplicity_13</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<scroll>false</scroll>
@@ -3399,7 +3399,7 @@
 							<posy>70</posy>
 							<width>160</width>
 							<height>25</height>
-							<font>Shade_13</font>
+							<font>Simplicity_13</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<scroll>false</scroll>
@@ -3411,7 +3411,7 @@
 							<posy>30</posy>
 							<width>160</width>
 							<height>25</height>
-							<font>Shade_13</font>
+							<font>Simplicity_13</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<scroll>false</scroll>
@@ -3423,7 +3423,7 @@
 							<posy>50</posy>
 							<width>160</width>
 							<height>25</height>
-							<font>Shade_13</font>
+							<font>Simplicity_13</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<scroll>false</scroll>
@@ -3435,7 +3435,7 @@
 							<posy>70</posy>
 							<width>160</width>
 							<height>25</height>
-							<font>Shade_13</font>
+							<font>Simplicity_13</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<scroll>false</scroll>
@@ -3488,7 +3488,7 @@
 				<label>Title</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_18</font>
+				<font>Simplicity_18</font>
 				<textcolor>grey2</textcolor>
 			</control>	
 			<control type="label">
@@ -3500,7 +3500,7 @@
 				<label>Watched</label>
 				<align>center</align>
 				<aligny>center</aligny>
-				<font>Shade_18</font>
+				<font>Simplicity_18</font>
 				<textcolor>grey2</textcolor>
 			</control>	
 			<control type="label">
@@ -3512,7 +3512,7 @@
 				<label>Rating</label>
 				<align>center</align>
 				<aligny>center</aligny>
-				<font>Shade_18</font>
+				<font>Simplicity_18</font>
 				<textcolor>grey2</textcolor>
 			</control>	
 			<control type="list" id="552">
@@ -3539,7 +3539,7 @@
 						<label fallback="416">$INFO[listitem.title]</label>
 						<align>left</align>
 						<aligny>center</aligny>
-						<font>Shade_18</font>
+						<font>Simplicity_18</font>
 						<textcolor>grey2</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<scroll>false</scroll>
@@ -3560,7 +3560,7 @@
 						<label>$INFO[listitem.rating]</label>
 						<align>center</align>
 						<aligny>center</aligny>
-						<font>Shade_18</font>
+						<font>Simplicity_18</font>
 						<textcolor>grey2</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<scroll>false</scroll>
@@ -3591,7 +3591,7 @@
 						<label fallback="416">$INFO[listitem.title]</label>
 						<align>left</align>
 						<aligny>center</aligny>
-						<font>Shade_18</font>
+						<font>Simplicity_18</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>white</selectedcolor>
 						<shadowcolor>black</shadowcolor>
@@ -3603,7 +3603,7 @@
 						<posy>76</posy>
 						<width>410</width>
 						<height>48</height>
-						<font>Shade_18</font>
+						<font>Simplicity_18</font>
 						<align>left</align>
 						<textcolor>grey2</textcolor>
 						<selectedcolor>grey2</selectedcolor>
@@ -3618,7 +3618,7 @@
 						<posy>66</posy>
 						<width>410</width>
 						<height>48</height>
-						<font>Shade_18</font>
+						<font>Simplicity_18</font>
 						<align>left</align>
 						<textcolor>grey2</textcolor>
 						<selectedcolor>grey2</selectedcolor>
@@ -3634,7 +3634,7 @@
 						<posy>50</posy>
 						<width>410</width>
 						<height>25</height>
-						<font>Shade_18</font>
+						<font>Simplicity_18</font>
 						<textcolor>grey2</textcolor>
 						<selectedcolor>grey2</selectedcolor>
 						<shadowcolor>black</shadowcolor>
@@ -3650,7 +3650,7 @@
 						<posy>50</posy>
 						<width>410</width>
 						<height>25</height>
-						<font>Shade_18</font>
+						<font>Simplicity_18</font>
 						<textcolor>grey2</textcolor>
 						<selectedcolor>grey2</selectedcolor>
 						<shadowcolor>black</shadowcolor>
@@ -3666,7 +3666,7 @@
 						<posy>50</posy>
 						<width>410</width>
 						<height>25</height>
-						<font>Shade_18</font>
+						<font>Simplicity_18</font>
 						<textcolor>grey2</textcolor>
 						<selectedcolor>grey2</selectedcolor>
 						<shadowcolor>black</shadowcolor>
@@ -3693,7 +3693,7 @@
 						<label>$INFO[listitem.rating]</label>
 						<align>center</align>
 						<aligny>center</aligny>
-						<font>Shade_18</font>
+						<font>Simplicity_18</font>
 						<textcolor>grey2</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<scroll>false</scroll>
@@ -3718,7 +3718,7 @@
 					<posy>475</posy>
 					<width>357</width>
 					<height>25</height>
-					<font>Shade_20</font>
+					<font>Simplicity_20</font>
 					<textcolor>grey2</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -3745,7 +3745,7 @@
 					<posy>505</posy>
 					<width>357</width>
 					<height>25</height>
-					<font>Shade_20</font>
+					<font>Simplicity_20</font>
 					<textcolor>grey2</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -3759,7 +3759,7 @@
 					<posy>535</posy>
 					<width>357</width>
 					<height>25</height>
-					<font>Shade_20</font>
+					<font>Simplicity_20</font>
 					<textcolor>grey2</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
@@ -3786,7 +3786,7 @@
 				<posy>472</posy>
 				<width>357</width>
 				<height>175</height>
-				<font>Shade_18</font>
+				<font>Simplicity_18</font>
 				<align>justify</align>
 				<textcolor>grey4</textcolor>
 				<label>$INFO[ListItem.Plot]</label>
@@ -4389,7 +4389,7 @@
 							<posy>8</posy>
 							<width>380</width>
 							<height>30</height>
-							<font>Shade_24</font>
+							<font>Simplicity_24</font>
 							<textcolor>grey4</textcolor>
 							<align>left</align>
 							<label>$INFO[ListItem.title]</label>
@@ -4399,7 +4399,7 @@
 							<posy>35</posy>
 							<width>380</width>
 							<height>20</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<textcolor>grey2</textcolor>
 							<align>left</align>
 							<label>$INFO[ListItem.Year]</label>
@@ -4412,7 +4412,7 @@
 						<posy>24</posy>
 						<width>350</width>
 						<height>20</height>
-						<font>Shade_24</font>
+						<font>Simplicity_24</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>white</selectedcolor>
 						<scroll>false</scroll>
@@ -4425,7 +4425,7 @@
 						<posy>52</posy>
 						<width>350</width>
 						<height>20</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<textcolor>grey2</textcolor>
 						<selectedcolor>grey2</selectedcolor>
 						<scroll>false</scroll>
@@ -4455,7 +4455,7 @@
 						<posy>107</posy>
 						<width>350</width>
 						<height>62</height>
-						<font>Shade_16</font>
+						<font>Simplicity_16</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>white</selectedcolor>
 						<align>left</align>
@@ -4554,7 +4554,7 @@
 					<posy>70</posy>
 					<width>150</width>
 					<height>150</height>
-					<font>Shade_18</font>
+					<font>Simplicity_18</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<wrapmultiline>true</wrapmultiline>

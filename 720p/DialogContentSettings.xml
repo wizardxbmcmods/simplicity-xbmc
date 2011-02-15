@@ -23,7 +23,7 @@
 				<posy>18</posy>
 				<width>760</width>
 				<height>30</height>
-				<font>Shade_30_Bold</font>
+				<font>Simplicity_30_Bold</font>
 				<label>$LOCALIZE[20333]</label>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -36,7 +36,7 @@
 				<posy>60</posy>
 				<width>320</width>
 				<height>40</height>
-				<font>Shade_20_Bold</font>
+				<font>Simplicity_20_Bold</font>
 				<label>$LOCALIZE[20344]</label>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -65,7 +65,7 @@
 				<posy>100</posy>
 				<width>280</width>
 				<height>40</height>
-				<font>Shade_24</font>
+				<font>Simplicity_24</font>
 				<label>$INFO[Control.GetLabel(3)]</label>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -78,7 +78,7 @@
 				<posy>150</posy>
 				<width>320</width>
 				<height>20</height>
-				<font>Shade_20_Bold</font>
+				<font>Simplicity_20_Bold</font>
 				<label>$LOCALIZE[31312]</label>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -100,7 +100,7 @@
 				<posy>315</posy>
 				<width>320</width>
 				<height>30</height>
-				<font>Shade_20_Bold</font>
+				<font>Simplicity_20_Bold</font>
 				<label>[B]$INFO[ListItem.Label][/B]</label>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -121,7 +121,7 @@
 				<posy>60</posy>
 				<width>370</width>
 				<height>40</height>
-				<font>Shade_20_Bold</font>
+				<font>Simplicity_20_Bold</font>
 				<label>$LOCALIZE[31313]</label>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -159,7 +159,7 @@
 						<posy>0</posy>
 						<width>290</width>
 						<height>40</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<align>left</align>
 						<aligny>center</aligny>
 						<textcolor>grey2</textcolor>
@@ -196,7 +196,7 @@
 						<posy>0</posy>
 						<width>290</width>
 						<height>40</height>
-						<font>Shade_20_Bold</font>
+						<font>Simplicity_20_Bold</font>
 						<align>left</align>
 						<aligny>center</aligny>
 						<textcolor>white</textcolor>
@@ -234,7 +234,7 @@
 				<posy>355</posy>
 				<width>740</width>
 				<height>30</height>
-				<font>Shade_20_Bold</font>
+				<font>Simplicity_20_Bold</font>
 				<label>$LOCALIZE[31314]</label>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -267,7 +267,7 @@
 				<posx>0</posx>
 				<posy>0</posy>
 				<height>40</height>
-				<font>Shade_20</font>
+				<font>Simplicity_20</font>
 				<texturefocus>simplicity/row-small.png</texturefocus>
 				<texturenofocus>REMOVEradiobutton-nofocus.png</texturenofocus>
 			</control>
@@ -283,7 +283,7 @@
 					<aligny>center</aligny>
 					<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
 					<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
-					<font>Shade_20_Bold_title</font>
+					<font>Simplicity_20_Bold_title</font>
 					<textcolor>black</textcolor>
 					<focusedcolor>black</focusedcolor>
 					<shadowcolor>grey2</shadowcolor>
@@ -303,7 +303,7 @@
 					<aligny>center</aligny>
 					<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
 					<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
-					<font>Shade_20_Bold_title</font>
+					<font>Simplicity_20_Bold_title</font>
 					<textcolor>black</textcolor>
 					<focusedcolor>black</focusedcolor>
 					<shadowcolor>grey2</shadowcolor>
@@ -323,7 +323,7 @@
 					<aligny>center</aligny>
 					<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
 					<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
-					<font>Shade_20_Bold_title</font>
+					<font>Simplicity_20_Bold_title</font>
 					<textcolor>black</textcolor>
 					<focusedcolor>black</focusedcolor>
 					<shadowcolor>grey2</shadowcolor>

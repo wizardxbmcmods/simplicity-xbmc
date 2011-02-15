@@ -71,7 +71,7 @@
 					<posy>-10</posy>
 					<width>1080</width>
 					<height>30</height>
-					<font>Shade_40</font>
+					<font>Simplicity_40</font>
 					<label>Currently in $INFO[Weather.Location]</label>
 					<align>left</align>
 					<aligny>center</aligny>
@@ -87,7 +87,7 @@
 					<posy>225</posy>
 					<width>160</width>
 					<height>40</height>
-					<font>Shade_70_UltraThin</font>
+					<font>Simplicity_70_UltraThin</font>
 					<align>right</align>
 					<aligny>top</aligny>
 					<label>$INFO[Window.Property(Current.Temperature)]</label>
@@ -100,7 +100,7 @@
 					<posy>225</posy>
 					<width>100</width>
 					<height>40</height>
-					<font>Shade_70_UltraThin</font>
+					<font>Simplicity_70_UltraThin</font>
 					<align>left</align>
 					<aligny>top</aligny>
 					<label>$INFO[System.TemperatureUnits]</label>
@@ -124,7 +124,7 @@
 					<height>30</height>
 					<info>Window.Property(Current.Condition)</info>
 					<wrapmultiline>true</wrapmultiline>
-					<font>Shade_40</font>
+					<font>Simplicity_40</font>
 					<align>center</align>
 					<aligny>center</aligny>
 					<textcolor>white</textcolor>
@@ -147,7 +147,7 @@
 						<posx>170</posx>
 						<posy>400</posy>
 						<height>35</height>
-						<font>Shade_24</font>
+						<font>Simplicity_24</font>
 						<align>right</align>
 						<aligny>center</aligny>
 						<label>$LOCALIZE[402] :</label>
@@ -159,7 +159,7 @@
 						<posx>170</posx>
 						<posy>430</posy>
 						<height>35</height>
-						<font>Shade_24</font>
+						<font>Simplicity_24</font>
 						<align>right</align>
 						<aligny>center</aligny>
 						<label>$LOCALIZE[405] :</label>
@@ -171,7 +171,7 @@
 						<posx>170</posx>
 						<posy>460</posy>
 						<height>35</height>
-						<font>Shade_24</font>
+						<font>Simplicity_24</font>
 						<align>right</align>
 						<aligny>center</aligny>
 						<label>$LOCALIZE[406] :</label>
@@ -183,7 +183,7 @@
 						<posx>170</posx>
 						<posy>490</posy>
 						<height>35</height>
-						<font>Shade_24</font>
+						<font>Simplicity_24</font>
 						<align>right</align>
 						<aligny>center</aligny>
 						<label>$LOCALIZE[403] :</label>
@@ -195,7 +195,7 @@
 						<posx>170</posx>
 						<posy>520</posy>
 						<height>35</height>
-						<font>Shade_24</font>
+						<font>Simplicity_24</font>
 						<align>right</align>
 						<aligny>center</aligny>
 						<label>$LOCALIZE[404] :</label>
@@ -207,7 +207,7 @@
 						<posx>400</posx>
 						<posy>400</posy>
 						<height>35</height>
-						<font>Shade_24</font>
+						<font>Simplicity_24</font>
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$INFO[Window.Property(Current.FeelsLike)]$INFO[System.TemperatureUnits]</label>
@@ -219,7 +219,7 @@
 						<posx>400</posx>
 						<posy>430</posy>
 						<height>35</height>
-						<font>Shade_24</font>
+						<font>Simplicity_24</font>
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$INFO[Window.Property(Current.DewPoint)]$INFO[System.TemperatureUnits]</label>
@@ -231,7 +231,7 @@
 						<posx>400</posx>
 						<posy>460</posy>
 						<height>35</height>
-						<font>Shade_24</font>
+						<font>Simplicity_24</font>
 						<align>left</align>
 						<aligny>center</aligny>
 						<info>Window.Property(Current.Humidity)</info>
@@ -243,7 +243,7 @@
 						<posx>400</posx>
 						<posy>490</posy>
 						<height>35</height>
-						<font>Shade_24</font>
+						<font>Simplicity_24</font>
 						<align>left</align>
 						<aligny>center</aligny>
 						<info>Window.Property(Current.UVIndex)</info>
@@ -255,7 +255,7 @@
 						<posx>400</posx>
 						<posy>520</posy>
 						<height>35</height>
-						<font>Shade_24</font>
+						<font>Simplicity_24</font>
 						<align>left</align>
 						<aligny>center</aligny>
 						<info>Window.Property(Current.Wind)</info>
@@ -276,7 +276,7 @@
 					<posy>18</posy>
 					<width>460</width>
 					<height>30</height>
-					<font>Shade_18_Bold</font>
+					<font>Simplicity_18_Bold</font>
 					<label>10508</label>
 					<align>center</align>
 					<aligny>center</aligny>
@@ -293,7 +293,7 @@
 						<posy>0</posy>
 						<width>340</width>
 						<height>35</height>
-						<font>Shade_18_Bold</font>
+						<font>Simplicity_18_Bold</font>
 						<info>Window.Property(Day0.Title)</info>
 						<align>center</align>
 						<aligny>center</aligny>
@@ -314,7 +314,7 @@
 						<posx>40</posx>
 						<posy>50</posy>
 						<height>20</height>
-						<font>Shade_24</font>
+						<font>Simplicity_24</font>
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$LOCALIZE[393] :</label>
@@ -328,7 +328,7 @@
 						<posy>50</posy>
 						<height>20</height>
 						<label>$INFO[Window.Property(Day0.HighTemp)]$INFO[System.TemperatureUnits]</label>
-						<font>Shade_24</font>
+						<font>Simplicity_24</font>
 						<align>left</align>
 						<aligny>center</aligny>
 						<textcolor>white</textcolor>
@@ -340,7 +340,7 @@
 						<posx>40</posx>
 						<posy>80</posy>
 						<height>20</height>
-						<font>Shade_24</font>
+						<font>Simplicity_24</font>
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$LOCALIZE[391] :</label>
@@ -354,7 +354,7 @@
 						<posy>80</posy>
 						<height>20</height>
 						<label>$INFO[Window.Property(Day0.LowTemp)]$INFO[System.TemperatureUnits]</label>
-						<font>Shade_24</font>
+						<font>Simplicity_24</font>
 						<align>left</align>
 						<aligny>center</aligny>
 						<textcolor>white</textcolor>
@@ -368,7 +368,7 @@
 						<width>320</width>
 						<height>20</height>
 						<info>Window.Property(Day0.Outlook)</info>
-						<font>Shade_24</font>
+						<font>Simplicity_24</font>
 						<align>left</align>
 						<aligny>center</aligny>
 						<textcolor>white</textcolor>
@@ -385,7 +385,7 @@
 						<posy>0</posy>
 						<width>340</width>
 						<height>35</height>
-						<font>Shade_18_Bold</font>
+						<font>Simplicity_18_Bold</font>
 						<info>Window.Property(Day1.Title)</info>
 						<align>center</align>
 						<aligny>center</aligny>
@@ -406,7 +406,7 @@
 						<posx>40</posx>
 						<posy>50</posy>
 						<height>20</height>
-						<font>Shade_24</font>
+						<font>Simplicity_24</font>
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$LOCALIZE[393] :</label>
@@ -420,7 +420,7 @@
 						<posy>50</posy>
 						<height>20</height>
 						<label>$INFO[Window.Property(Day1.HighTemp)]$INFO[System.TemperatureUnits]</label>
-						<font>Shade_24</font>
+						<font>Simplicity_24</font>
 						<align>left</align>
 						<aligny>center</aligny>
 						<textcolor>white</textcolor>
@@ -432,7 +432,7 @@
 						<posx>40</posx>
 						<posy>80</posy>
 						<height>20</height>
-						<font>Shade_24</font>
+						<font>Simplicity_24</font>
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$LOCALIZE[391] :</label>
@@ -446,7 +446,7 @@
 						<posy>80</posy>
 						<height>20</height>
 						<label>$INFO[Window.Property(Day1.LowTemp)]$INFO[System.TemperatureUnits]</label>
-						<font>Shade_24</font>
+						<font>Simplicity_24</font>
 						<align>left</align>
 						<aligny>center</aligny>
 						<textcolor>white</textcolor>
@@ -460,7 +460,7 @@
 						<width>320</width>
 						<height>20</height>
 						<info>Window.Property(Day1.Outlook)</info>
-						<font>Shade_24</font>
+						<font>Simplicity_24</font>
 						<align>left</align>
 						<aligny>center</aligny>
 						<textcolor>white</textcolor>
@@ -477,7 +477,7 @@
 						<posy>0</posy>
 						<width>340</width>
 						<height>35</height>
-						<font>Shade_18_Bold</font>
+						<font>Simplicity_18_Bold</font>
 						<info>Window.Property(Day2.Title)</info>
 						<align>center</align>
 						<aligny>center</aligny>
@@ -498,7 +498,7 @@
 						<posx>40</posx>
 						<posy>50</posy>
 						<height>20</height>
-						<font>Shade_24</font>
+						<font>Simplicity_24</font>
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$LOCALIZE[393] :</label>
@@ -512,7 +512,7 @@
 						<posy>50</posy>
 						<height>20</height>
 						<label>$INFO[Window.Property(Day2.HighTemp)]$INFO[System.TemperatureUnits]</label>
-						<font>Shade_24</font>
+						<font>Simplicity_24</font>
 						<align>left</align>
 						<aligny>center</aligny>
 						<textcolor>white</textcolor>
@@ -524,7 +524,7 @@
 						<posx>40</posx>
 						<posy>80</posy>
 						<height>20</height>
-						<font>Shade_24</font>
+						<font>Simplicity_24</font>
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$LOCALIZE[391] :</label>
@@ -538,7 +538,7 @@
 						<posy>80</posy>
 						<height>20</height>
 						<label>$INFO[Window.Property(Day2.LowTemp)]$INFO[System.TemperatureUnits]</label>
-						<font>Shade_24</font>
+						<font>Simplicity_24</font>
 						<align>left</align>
 						<aligny>center</aligny>
 						<textcolor>white</textcolor>
@@ -552,7 +552,7 @@
 						<width>320</width>
 						<height>20</height>
 						<info>Window.Property(Day2.Outlook)</info>
-						<font>Shade_24</font>
+						<font>Simplicity_24</font>
 						<align>left</align>
 						<aligny>center</aligny>
 						<textcolor>white</textcolor>
@@ -569,7 +569,7 @@
 						<posy>0</posy>
 						<width>340</width>
 						<height>35</height>
-						<font>Shade_18_Bold</font>
+						<font>Simplicity_18_Bold</font>
 						<info>Window.Property(Day3.Title)</info>
 						<align>center</align>
 						<aligny>center</aligny>
@@ -590,7 +590,7 @@
 						<posx>40</posx>
 						<posy>50</posy>
 						<height>20</height>
-						<font>Shade_24</font>
+						<font>Simplicity_24</font>
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$LOCALIZE[393] :</label>
@@ -604,7 +604,7 @@
 						<posy>50</posy>
 						<height>20</height>
 						<label>$INFO[Window.Property(Day3.HighTemp)]$INFO[System.TemperatureUnits]</label>
-						<font>Shade_24</font>
+						<font>Simplicity_24</font>
 						<align>left</align>
 						<aligny>center</aligny>
 						<textcolor>white</textcolor>
@@ -616,7 +616,7 @@
 						<posx>40</posx>
 						<posy>80</posy>
 						<height>20</height>
-						<font>Shade_24</font>
+						<font>Simplicity_24</font>
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$LOCALIZE[391] :</label>
@@ -630,7 +630,7 @@
 						<posy>80</posy>
 						<height>20</height>
 						<label>$INFO[Window.Property(Day3.LowTemp)]$INFO[System.TemperatureUnits]</label>
-						<font>Shade_24</font>
+						<font>Simplicity_24</font>
 						<align>left</align>
 						<aligny>center</aligny>
 						<textcolor>white</textcolor>
@@ -644,7 +644,7 @@
 						<width>320</width>
 						<height>20</height>
 						<info>Window.Property(Day3.Outlook)</info>
-						<font>Shade_24</font>
+						<font>Simplicity_24</font>
 						<align>left</align>
 						<aligny>center</aligny>
 						<textcolor>white</textcolor>
@@ -753,7 +753,7 @@
 					<height>40</height>
 					<width>270</width>
 					<label>31027</label>
-					<font>Shade_15_Bold</font>
+					<font>Simplicity_15_Bold</font>
 					<textcolor>white</textcolor>
 					<align>left</align>
 					<aligny>center</aligny>

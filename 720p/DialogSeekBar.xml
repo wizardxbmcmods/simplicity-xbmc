@@ -125,7 +125,7 @@
 					<height>20</height>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>Shade_24</font>
+					<font>Simplicity_24</font>
 					<textcolor>white</textcolor>
 					<label>31042</label>
 					<visible>Player.Playing + !Player.Seeking</visible>
@@ -138,7 +138,7 @@
 					<height>20</height>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>Shade_24</font>
+					<font>Simplicity_24</font>
 					<textcolor>white</textcolor>
 					<label>31043</label>
 					<visible>[Player.Paused + !Player.Caching] + !Player.Seeking</visible>
@@ -151,7 +151,7 @@
 					<height>20</height>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>Shade_24</font>
+					<font>Simplicity_24</font>
 					<textcolor>white</textcolor>
 					<label>$LOCALIZE[15107] $INFO[Player.CacheLevel]%</label>
 					<visible>[Player.Paused + Player.Caching] + !Player.Seeking</visible>
@@ -164,7 +164,7 @@
 					<height>20</height>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>Shade_24</font>
+					<font>Simplicity_24</font>
 					<textcolor>white</textcolor>
 					<label>[UPPERCASE]$LOCALIZE[773][/UPPERCASE]</label>
 					<visible>Player.Seeking</visible>
@@ -177,7 +177,7 @@
 					<height>20</height>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>Shade_24</font>
+					<font>Simplicity_24</font>
 					<textcolor>white</textcolor>
 					<label>31044</label>
 					<visible>Player.Forwarding</visible>
@@ -190,7 +190,7 @@
 					<height>20</height>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>Shade_24</font>
+					<font>Simplicity_24</font>
 					<textcolor>white</textcolor>
 					<label> x 2</label>
 					<visible>Player.Forwarding2x</visible>
@@ -203,7 +203,7 @@
 					<height>20</height>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>Shade_24</font>
+					<font>Simplicity_24</font>
 					<textcolor>white</textcolor>
 					<label> x 4</label>
 					<visible>Player.Forwarding4x</visible>
@@ -216,7 +216,7 @@
 					<height>20</height>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>Shade_24</font>
+					<font>Simplicity_24</font>
 					<textcolor>white</textcolor>
 					<label> x 8</label>
 					<visible>Player.Forwarding8x</visible>
@@ -229,7 +229,7 @@
 					<height>20</height>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>Shade_24</font>
+					<font>Simplicity_24</font>
 					<textcolor>white</textcolor>
 					<label> x 16</label>
 					<visible>Player.Forwarding16x</visible>
@@ -242,7 +242,7 @@
 					<height>20</height>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>Shade_24</font>
+					<font>Simplicity_24</font>
 					<textcolor>white</textcolor>
 					<label> x 32</label>
 					<visible>Player.Forwarding32x</visible>
@@ -255,7 +255,7 @@
 					<height>20</height>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>Shade_24</font>
+					<font>Simplicity_24</font>
 					<textcolor>white</textcolor>
 					<label>31045</label>
 					<visible>Player.Rewinding</visible>
@@ -268,7 +268,7 @@
 					<height>20</height>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>Shade_24</font>
+					<font>Simplicity_24</font>
 					<textcolor>white</textcolor>
 					<label> x 2</label>
 					<visible>Player.Rewinding2x</visible>
@@ -281,7 +281,7 @@
 					<height>20</height>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>Shade_24</font>
+					<font>Simplicity_24</font>
 					<textcolor>white</textcolor>
 					<label> x 4</label>
 					<visible>Player.Rewinding4x</visible>
@@ -294,7 +294,7 @@
 					<height>20</height>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>Shade_24</font>
+					<font>Simplicity_24</font>
 					<textcolor>white</textcolor>
 					<label> x 8</label>
 					<visible>Player.Rewinding8x</visible>
@@ -307,7 +307,7 @@
 					<height>20</height>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>Shade_24</font>
+					<font>Simplicity_24</font>
 					<textcolor>white</textcolor>
 					<label> x 16</label>
 					<visible>Player.Rewinding16x</visible>
@@ -320,7 +320,7 @@
 					<height>20</height>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>Shade_24</font>
+					<font>Simplicity_24</font>
 					<textcolor>white</textcolor>
 					<label> x 32</label>
 					<visible>Player.Rewinding32x</visible>
@@ -355,7 +355,7 @@
 					<posy>15</posy>
 					<width>1280</width>
 					<height>20</height>
-					<font>Shade_20</font>
+					<font>Simplicity_20</font>
 					<textcolor>grey7</textcolor>
 					<align>center</align>
 					<aligny>center</aligny>
@@ -367,7 +367,7 @@
 					<posy>15</posy>
 					<width>1280</width>
 					<height>20</height>
-					<font>Shade_20</font>
+					<font>Simplicity_20</font>
 					<textcolor>grey7</textcolor>
 					<align>center</align>
 					<aligny>center</aligny>
@@ -379,7 +379,7 @@
 					<posy>15</posy>
 					<width>150</width>
 					<height>20</height>
-					<font>Shade_20</font>
+					<font>Simplicity_20</font>
 					<textcolor>grey7</textcolor>
 					<align>left</align>
 					<aligny>center</aligny>
@@ -391,7 +391,7 @@
 					<posy>15</posy>
 					<width>150</width>
 					<height>20</height>
-					<font>Shade_20</font>
+					<font>Simplicity_20</font>
 					<textcolor>grey7</textcolor>
 					<align>left</align>
 					<aligny>center</aligny>
@@ -403,7 +403,7 @@
 					<posy>5</posy>
 					<width>240</width>
 					<height>20</height>
-					<font>Shade_20</font>
+					<font>Simplicity_20</font>
 					<textcolor>grey7</textcolor>
 					<align>right</align>
 					<aligny>center</aligny>
@@ -415,7 +415,7 @@
 					<posy>5</posy>
 					<width>240</width>
 					<height>20</height>
-					<font>Shade_20</font>
+					<font>Simplicity_20</font>
 					<textcolor>grey7</textcolor>
 					<align>right</align>
 					<aligny>center</aligny>
@@ -427,7 +427,7 @@
 					<posy>25</posy>
 					<width>240</width>
 					<height>20</height>
-					<font>Shade_20</font>
+					<font>Simplicity_20</font>
 					<textcolor>grey7</textcolor>
 					<align>right</align>
 					<aligny>center</aligny>
@@ -439,7 +439,7 @@
 					<posy>25</posy>
 					<width>240</width>
 					<height>20</height>
-					<font>Shade_20</font>
+					<font>Simplicity_20</font>
 					<textcolor>grey7</textcolor>
 					<align>right</align>
 					<aligny>center</aligny>
@@ -459,7 +459,7 @@
 				<height>20</height>
 				<align>right</align>
 				<aligny>center</aligny>
-				<font>Shade_20_Bold</font>
+				<font>Simplicity_20_Bold</font>
 				<textcolor>white</textcolor>
 				<label>$LOCALIZE[21396]</label>
 				<visible>player.chaptercount</visible>
@@ -472,7 +472,7 @@
 				<height>20</height>
 				<align>right</align>
 				<aligny>center</aligny>
-				<font>Shade_18_Bold</font>
+				<font>Simplicity_18_Bold</font>
 				<textcolor>white</textcolor>
 				<label>$INFO[player.chapter]$INFO[player.chaptercount, / ]</label>
 				<visible>player.chaptercount</visible>

@@ -60,7 +60,7 @@
 						<posy>217</posy>
 						<width>190</width>
 						<height>30</height>
-						<font>Shade_18_Bold</font>
+						<font>Simplicity_18_Bold</font>
 						<textcolor>grey3</textcolor>
 						<align>center</align>
 						<aligny>center</aligny>
@@ -72,7 +72,7 @@
 						<posy>217</posy>
 						<width>190</width>
 						<height>30</height>
-						<font>Shade_18_Bold</font>
+						<font>Simplicity_18_Bold</font>
 						<textcolor>grey2</textcolor>
 						<align>center</align>
 						<aligny>center</aligny>
@@ -126,7 +126,7 @@
 						<posy>217</posy>
 						<width>190</width>
 						<height>30</height>
-						<font>Shade_18_Bold</font>
+						<font>Simplicity_18_Bold</font>
 						<textcolor>white</textcolor>
 						<align>center</align>
 						<aligny>center</aligny>
@@ -138,7 +138,7 @@
 						<posy>217</posy>
 						<width>190</width>
 						<height>30</height>
-						<font>Shade_18_Bold</font>
+						<font>Simplicity_18_Bold</font>
 						<textcolor>grey3</textcolor>
 						<align>center</align>
 						<aligny>center</aligny>
@@ -365,7 +365,7 @@
 						<posy>236</posy>
 						<width>310</width>
 						<height>30</height>
-						<font>Shade_18_Bold</font>
+						<font>Simplicity_18_Bold</font>
 						<textcolor>grey3</textcolor>
 						<align>center</align>
 						<aligny>center</aligny>
@@ -377,7 +377,7 @@
 						<posy>236</posy>
 						<width>310</width>
 						<height>30</height>
-						<font>Shade_18_Bold</font>
+						<font>Simplicity_18_Bold</font>
 						<textcolor>grey2</textcolor>
 						<align>center</align>
 						<aligny>center</aligny>
@@ -434,7 +434,7 @@
 						<posy>236</posy>
 						<width>310</width>
 						<height>30</height>
-						<font>Shade_18_Bold</font>
+						<font>Simplicity_18_Bold</font>
 						<textcolor>grey3</textcolor>
 						<align>center</align>
 						<aligny>center</aligny>
@@ -446,7 +446,7 @@
 						<posy>236</posy>
 						<width>310</width>
 						<height>30</height>
-						<font>Shade_18_Bold</font>
+						<font>Simplicity_18_Bold</font>
 						<textcolor>white</textcolor>
 						<align>center</align>
 						<aligny>center</aligny>
@@ -672,7 +672,7 @@
 						<posy>195</posy>
 						<width>190</width>
 						<height>30</height>
-						<font>Shade_18_Bold</font>
+						<font>Simplicity_18_Bold</font>
 						<textcolor>grey3</textcolor>
 						<align>center</align>
 						<aligny>center</aligny>
@@ -684,7 +684,7 @@
 						<posy>195</posy>
 						<width>190</width>
 						<height>30</height>
-						<font>Shade_18_Bold</font>
+						<font>Simplicity_18_Bold</font>
 						<textcolor>grey2</textcolor>
 						<align>center</align>
 						<aligny>center</aligny>
@@ -741,7 +741,7 @@
 						<posy>195</posy>
 						<width>190</width>
 						<height>30</height>
-						<font>Shade_18_Bold</font>
+						<font>Simplicity_18_Bold</font>
 						<textcolor>grey3</textcolor>
 						<align>center</align>
 						<aligny>center</aligny>
@@ -753,7 +753,7 @@
 						<posy>195</posy>
 						<width>190</width>
 						<height>30</height>
-						<font>Shade_18_Bold</font>
+						<font>Simplicity_18_Bold</font>
 						<textcolor>white</textcolor>
 						<align>center</align>
 						<aligny>center</aligny>

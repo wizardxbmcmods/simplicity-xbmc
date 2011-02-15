@@ -26,7 +26,7 @@
 				<posy>6</posy>
 				<width>260</width>
 				<height>80</height>
-				<font>Shade_40</font>
+				<font>Simplicity_40</font>
 				<label>Skin</label>
 				<align>center</align>
 				<textcolor>white</textcolor>
@@ -56,7 +56,7 @@
 						<posy>0</posy>
 						<width>260</width>
 						<height>60</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<textcolor>grey3</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<align>center</align>
@@ -79,7 +79,7 @@
 						<posy>0</posy>
 						<width>260</width>
 						<height>60</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<textcolor>white</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<align>center</align>
@@ -164,7 +164,7 @@
 					<control type="label" id="100">
 						<width>750</width>
 						<height>45</height>
-						<font>Shade_20_Bold_title</font>
+						<font>Simplicity_20_Bold_title</font>
 						<label>31106</label>
 						<textcolor>yellow</textcolor>
 						<shadowcolor>black</shadowcolor>
@@ -176,7 +176,7 @@
 						<posy>0</posy>
 						<width>900</width>
 						<height>40</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<textcolor>white</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<radiowidth>83</radiowidth>
@@ -194,7 +194,7 @@
 						<posy>0</posy>
 						<width>900</width>
 						<height>40</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<textcolor>white</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<radiowidth>83</radiowidth>
@@ -212,7 +212,7 @@
 						<posy>0</posy>
 						<width>900</width>
 						<height>40</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<textcolor>white</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<radiowidth>83</radiowidth>
@@ -230,7 +230,7 @@
 						<posy>0</posy>
 						<width>900</width>
 						<height>40</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<textcolor>white</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
@@ -244,7 +244,7 @@
 						<posy>0</posy>
 						<width>900</width>
 						<height>40</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<textcolor>white</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
@@ -256,7 +256,7 @@
 					<control type="label" id="104">
 						<width>750</width>
 						<height>45</height>
-						<font>Shade_20_Bold_title</font>
+						<font>Simplicity_20_Bold_title</font>
 						<label>20343</label>
 						<textcolor>yellow</textcolor>
 						<shadowcolor>black</shadowcolor>
@@ -268,7 +268,7 @@
 						<posy>0</posy>
 						<width>900</width>
 						<height>40</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<textcolor>white</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<radiowidth>83</radiowidth>
@@ -286,7 +286,7 @@
 						<posy>0</posy>
 						<width>900</width>
 						<height>40</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<textcolor>white</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<radiowidth>83</radiowidth>
@@ -304,7 +304,7 @@
 						<posy>0</posy>
 						<width>900</width>
 						<height>40</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<textcolor>white</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<radiowidth>83</radiowidth>
@@ -320,7 +320,7 @@
 					<control type="label" id="106">
 						<width>750</width>
 						<height>45</height>
-						<font>Shade_20_Bold_title</font>
+						<font>Simplicity_20_Bold_title</font>
 						<label>Startup Window</label>
 						<textcolor>yellow</textcolor>
 						<shadowcolor>black</shadowcolor>
@@ -332,7 +332,7 @@
 						<posy>0</posy>
 						<width>900</width>
 						<height>40</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<textcolor>white</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<radiowidth>83</radiowidth>
@@ -351,7 +351,7 @@
 						<posy>0</posy>
 						<width>900</width>
 						<height>40</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<textcolor>white</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
@@ -364,7 +364,7 @@
 					<control type="label" id="109">
 						<width>750</width>
 						<height>45</height>
-						<font>Shade_20_Bold_title</font>
+						<font>Simplicity_20_Bold_title</font>
 						<label>31102</label>
 						<textcolor>yellow</textcolor>
 						<shadowcolor>black</shadowcolor>
@@ -376,7 +376,7 @@
 						<posy>0</posy>
 						<width>900</width>
 						<height>40</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<textcolor>white</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<radiowidth>83</radiowidth>
@@ -394,7 +394,7 @@
 						<posy>0</posy>
 						<height>40</height>
 						<width>900</width>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<textcolor>white</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<radiowidth>83</radiowidth>
@@ -438,7 +438,7 @@
 					<control type="label" id="200">
 						<width>750</width>
 						<height>45</height>
-						<font>Shade_20_Bold_title</font>
+						<font>Simplicity_20_Bold_title</font>
 						<label>31101</label>
 						<textcolor>yellow</textcolor>
 						<shadowcolor>black</shadowcolor>
@@ -451,7 +451,7 @@
 						<posy>0</posy>
 						<width>900</width>
 						<height>40</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<textcolor>white</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<radiowidth>83</radiowidth>
@@ -467,7 +467,7 @@
 					<control type="label" id="226">
 						<width>750</width>
 						<height>45</height>
-						<font>Shade_20_Bold_title</font>
+						<font>Simplicity_20_Bold_title</font>
 						<label>Global Home Options</label>
 						<textcolor>yellow</textcolor>
 						<shadowcolor>black</shadowcolor>
@@ -480,7 +480,7 @@
 						<posy>0</posy>
 						<width>900</width>
 						<height>40</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<textcolor>white</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<radiowidth>83</radiowidth>
@@ -499,7 +499,7 @@
 						<posy>0</posy>
 						<width>900</width>
 						<height>40</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<textcolor>white</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<radiowidth>83</radiowidth>
@@ -515,7 +515,7 @@
 					<control type="label" id="206">
 						<width>750</width>
 						<height>45</height>
-						<font>Shade_20_Bold_title</font>
+						<font>Simplicity_20_Bold_title</font>
 						<label>31108</label>
 						<textcolor>yellow</textcolor>
 						<shadowcolor>black</shadowcolor>
@@ -528,7 +528,7 @@
 						<posy>0</posy>
 						<width>900</width>
 						<height>40</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<textcolor>white</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<radiowidth>83</radiowidth>
@@ -547,7 +547,7 @@
 						<posy>0</posy>
 						<width>900</width>
 						<height>40</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<textcolor>white</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<radiowidth>83</radiowidth>
@@ -567,7 +567,7 @@
 						<posy>0</posy>
 						<width>900</width>
 						<height>40</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<textcolor>white</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<radiowidth>83</radiowidth>
@@ -587,7 +587,7 @@
 						<posy>0</posy>
 						<width>900</width>
 						<height>40</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<textcolor>white</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<radiowidth>83</radiowidth>
@@ -606,7 +606,7 @@
 						<posy>0</posy>
 						<width>900</width>
 						<height>40</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<textcolor>white</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<radiowidth>83</radiowidth>
@@ -625,7 +625,7 @@
 						<posy>0</posy>
 						<width>900</width>
 						<height>40</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<textcolor>white</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<radiowidth>83</radiowidth>
@@ -644,7 +644,7 @@
 						<posy>0</posy>
 						<width>900</width>
 						<height>40</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<textcolor>white</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<radiowidth>83</radiowidth>
@@ -663,7 +663,7 @@
 						<posy>0</posy>
 						<width>900</width>
 						<height>40</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<textcolor>white</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<radiowidth>83</radiowidth>
@@ -682,7 +682,7 @@
 						<posy>0</posy>
 						<width>900</width>
 						<height>40</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<textcolor>white</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<radiowidth>83</radiowidth>
@@ -701,7 +701,7 @@
 						<posy>0</posy>
 						<width>900</width>
 						<height>40</height>
-						<font>Shade_20</font>
+						<font>Simplicity_20</font>
 						<textcolor>white</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<radiowidth>83</radiowidth>
@@ -739,7 +739,7 @@
 						<posy>0</posy>
 						<width>900</width>
 						<height>45</height>
-						<font>Shade_20_Bold_title</font>
+						<font>Simplicity_20_Bold_title</font>
 						<label>31109</label>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
@@ -814,7 +814,7 @@
 								<posy>0</posy>
 								<width>600</width>
 								<height>40</height>
-								<font>Shade_20</font>
+								<font>Simplicity_20</font>
 								<textcolor>white</textcolor>
 								<align>left</align>
 								<aligny>center</aligny>
@@ -826,7 +826,7 @@
 								<posy>0</posy>
 								<width>600</width>
 								<height>40</height>
-								<font>Shade_20</font>
+								<font>Simplicity_20</font>
 								<textcolor>white</textcolor>
 								<align>left</align>
 								<aligny>center</aligny>
@@ -838,7 +838,7 @@
 								<posy>0</posy>
 								<width>640</width>
 								<height>40</height>
-								<font>Shade_20</font>
+								<font>Simplicity_20</font>
 								<textcolor>white</textcolor>
 								<align>right</align>
 								<aligny>center</aligny>
@@ -850,7 +850,7 @@
 								<posy>0</posy>
 								<width>640</width>
 								<height>40</height>
-								<font>Shade_20</font>
+								<font>Simplicity_20</font>
 								<textcolor>white</textcolor>
 								<align>right</align>
 								<aligny>center</aligny>
@@ -952,7 +952,7 @@
 								<width>180</width>
 								<height>40</height>
 								<label>31113</label>
-								<font>Shade_20</font>
+								<font>Simplicity_20</font>
 								<textcolor>grey2</textcolor>
 								<focusedcolor>white</focusedcolor>
 								<align>center</align>
@@ -971,7 +971,7 @@
 								<width>180</width>
 								<height>40</height>
 								<label>31114</label>
-								<font>Shade_20</font>
+								<font>Simplicity_20</font>
 								<textcolor>grey2</textcolor>
 								<focusedcolor>white</focusedcolor>
 								<align>center</align>
@@ -990,7 +990,7 @@
 								<width>180</width>
 								<height>40</height>
 								<label>571</label>
-								<font>Shade_20</font>
+								<font>Simplicity_20</font>
 								<textcolor>grey2</textcolor>
 								<focusedcolor>white</focusedcolor>
 								<align>center</align>
@@ -1012,7 +1012,7 @@
 								<width>180</width>
 								<height>40</height>
 								<label>31113</label>
-								<font>Shade_20</font>
+								<font>Simplicity_20</font>
 								<textcolor>grey2</textcolor>
 								<focusedcolor>white</focusedcolor>
 								<align>center</align>
@@ -1031,7 +1031,7 @@
 								<width>180</width>
 								<height>40</height>
 								<label>31114</label>
-								<font>Shade_20</font>
+								<font>Simplicity_20</font>
 								<textcolor>grey2</textcolor>
 								<focusedcolor>white</focusedcolor>
 								<align>center</align>
@@ -1050,7 +1050,7 @@
 								<width>180</width>
 								<height>40</height>
 								<label>571</label>
-								<font>Shade_20</font>
+								<font>Simplicity_20</font>
 								<textcolor>grey2</textcolor>
 								<focusedcolor>white</focusedcolor>
 								<align>center</align>
@@ -1072,7 +1072,7 @@
 								<width>180</width>
 								<height>40</height>
 								<label>31113</label>
-								<font>Shade_20</font>
+								<font>Simplicity_20</font>
 								<textcolor>grey2</textcolor>
 								<focusedcolor>white</focusedcolor>
 								<align>center</align>
@@ -1091,7 +1091,7 @@
 								<width>180</width>
 								<height>40</height>
 								<label>31114</label>
-								<font>Shade_20</font>
+								<font>Simplicity_20</font>
 								<textcolor>grey2</textcolor>
 								<focusedcolor>white</focusedcolor>
 								<align>center</align>
@@ -1110,7 +1110,7 @@
 								<width>180</width>
 								<height>40</height>
 								<label>571</label>
-								<font>Shade_20</font>
+								<font>Simplicity_20</font>
 								<textcolor>grey2</textcolor>
 								<focusedcolor>white</focusedcolor>
 								<align>center</align>
@@ -1132,7 +1132,7 @@
 								<width>180</width>
 								<height>40</height>
 								<label>31113</label>
-								<font>Shade_20</font>
+								<font>Simplicity_20</font>
 								<textcolor>grey2</textcolor>
 								<focusedcolor>white</focusedcolor>
 								<align>center</align>
@@ -1151,7 +1151,7 @@
 								<width>180</width>
 								<height>40</height>
 								<label>31114</label>
-								<font>Shade_20</font>
+								<font>Simplicity_20</font>
 								<textcolor>grey2</textcolor>
 								<focusedcolor>white</focusedcolor>
 								<align>center</align>
@@ -1170,7 +1170,7 @@
 								<width>180</width>
 								<height>40</height>
 								<label>571</label>
-								<font>Shade_20</font>
+								<font>Simplicity_20</font>
 								<textcolor>grey2</textcolor>
 								<focusedcolor>white</focusedcolor>
 								<align>center</align>
@@ -1192,7 +1192,7 @@
 								<width>180</width>
 								<height>40</height>
 								<label>31113</label>
-								<font>Shade_20</font>
+								<font>Simplicity_20</font>
 								<textcolor>grey2</textcolor>
 								<focusedcolor>white</focusedcolor>
 								<align>center</align>
@@ -1211,7 +1211,7 @@
 								<width>180</width>
 								<height>40</height>
 								<label>31114</label>
-								<font>Shade_20</font>
+								<font>Simplicity_20</font>
 								<textcolor>grey2</textcolor>
 								<focusedcolor>white</focusedcolor>
 								<align>center</align>
@@ -1230,7 +1230,7 @@
 								<width>180</width>
 								<height>40</height>
 								<label>571</label>
-								<font>Shade_20</font>
+								<font>Simplicity_20</font>
 								<textcolor>grey2</textcolor>
 								<focusedcolor>white</focusedcolor>
 								<align>center</align>
@@ -1252,7 +1252,7 @@
 								<width>180</width>
 								<height>40</height>
 								<label>31113</label>
-								<font>Shade_20</font>
+								<font>Simplicity_20</font>
 								<textcolor>grey2</textcolor>
 								<focusedcolor>white</focusedcolor>
 								<align>center</align>
@@ -1271,7 +1271,7 @@
 								<width>180</width>
 								<height>40</height>
 								<label>31114</label>
-								<font>Shade_20</font>
+								<font>Simplicity_20</font>
 								<textcolor>grey2</textcolor>
 								<focusedcolor>white</focusedcolor>
 								<align>center</align>
@@ -1290,7 +1290,7 @@
 								<width>180</width>
 								<height>40</height>
 								<label>571</label>
-								<font>Shade_20</font>
+								<font>Simplicity_20</font>
 								<textcolor>grey2</textcolor>
 								<focusedcolor>white</focusedcolor>
 								<align>center</align>
@@ -1312,7 +1312,7 @@
 								<width>180</width>
 								<height>40</height>
 								<label>31113</label>
-								<font>Shade_20</font>
+								<font>Simplicity_20</font>
 								<textcolor>grey2</textcolor>
 								<focusedcolor>white</focusedcolor>
 								<align>center</align>
@@ -1331,7 +1331,7 @@
 								<width>180</width>
 								<height>40</height>
 								<label>31114</label>
-								<font>Shade_20</font>
+								<font>Simplicity_20</font>
 								<textcolor>grey2</textcolor>
 								<focusedcolor>white</focusedcolor>
 								<align>center</align>
@@ -1350,7 +1350,7 @@
 								<width>180</width>
 								<height>40</height>
 								<label>571</label>
-								<font>Shade_20</font>
+								<font>Simplicity_20</font>
 								<textcolor>grey2</textcolor>
 								<focusedcolor>white</focusedcolor>
 								<align>center</align>
@@ -1372,7 +1372,7 @@
 								<width>180</width>
 								<height>40</height>
 								<label>31113</label>
-								<font>Shade_20</font>
+								<font>Simplicity_20</font>
 								<textcolor>grey2</textcolor>
 								<focusedcolor>white</focusedcolor>
 								<align>center</align>
@@ -1391,7 +1391,7 @@
 								<width>180</width>
 								<height>40</height>
 								<label>31114</label>
-								<font>Shade_20</font>
+								<font>Simplicity_20</font>
 								<textcolor>grey2</textcolor>
 								<focusedcolor>white</focusedcolor>
 								<align>center</align>
@@ -1410,7 +1410,7 @@
 								<width>180</width>
 								<height>40</height>
 								<label>571</label>
-								<font>Shade_20</font>
+								<font>Simplicity_20</font>
 								<textcolor>grey2</textcolor>
 								<focusedcolor>white</focusedcolor>
 								<align>center</align>
@@ -1432,7 +1432,7 @@
 								<width>180</width>
 								<height>40</height>
 								<label>31113</label>
-								<font>Shade_20</font>
+								<font>Simplicity_20</font>
 								<textcolor>grey2</textcolor>
 								<focusedcolor>white</focusedcolor>
 								<align>center</align>
@@ -1451,7 +1451,7 @@
 								<width>180</width>
 								<height>40</height>
 								<label>31114</label>
-								<font>Shade_20</font>
+								<font>Simplicity_20</font>
 								<textcolor>grey2</textcolor>
 								<focusedcolor>white</focusedcolor>
 								<align>center</align>
@@ -1470,7 +1470,7 @@
 								<width>180</width>
 								<height>40</height>
 								<label>571</label>
-								<font>Shade_20</font>
+								<font>Simplicity_20</font>
 								<textcolor>grey2</textcolor>
 								<focusedcolor>white</focusedcolor>
 								<align>center</align>
@@ -1492,7 +1492,7 @@
 								<width>180</width>
 								<height>40</height>
 								<label>31113</label>
-								<font>Shade_20</font>
+								<font>Simplicity_20</font>
 								<textcolor>grey2</textcolor>
 								<focusedcolor>white</focusedcolor>
 								<align>center</align>
@@ -1511,7 +1511,7 @@
 								<width>180</width>
 								<height>40</height>
 								<label>31114</label>
-								<font>Shade_20</font>
+								<font>Simplicity_20</font>
 								<textcolor>grey2</textcolor>
 								<focusedcolor>white</focusedcolor>
 								<align>center</align>
@@ -1530,7 +1530,7 @@
 								<width>180</width>
 								<height>40</height>
 								<label>571</label>
-								<font>Shade_20</font>
+								<font>Simplicity_20</font>
 								<textcolor>grey2</textcolor>
 								<focusedcolor>white</focusedcolor>
 								<align>center</align>
@@ -1552,7 +1552,7 @@
 								<width>180</width>
 								<height>40</height>
 								<label>31113</label>
-								<font>Shade_20</font>
+								<font>Simplicity_20</font>
 								<textcolor>grey2</textcolor>
 								<focusedcolor>white</focusedcolor>
 								<align>center</align>
@@ -1571,7 +1571,7 @@
 								<width>180</width>
 								<height>40</height>
 								<label>31114</label>
-								<font>Shade_20</font>
+								<font>Simplicity_20</font>
 								<textcolor>grey2</textcolor>
 								<focusedcolor>white</focusedcolor>
 								<align>center</align>
@@ -1590,7 +1590,7 @@
 								<width>180</width>
 								<height>40</height>
 								<label>571</label>
-								<font>Shade_20</font>
+								<font>Simplicity_20</font>
 								<textcolor>grey2</textcolor>
 								<focusedcolor>white</focusedcolor>
 								<align>center</align>
@@ -1612,7 +1612,7 @@
 								<width>180</width>
 								<height>40</height>
 								<label>31113</label>
-								<font>Shade_20</font>
+								<font>Simplicity_20</font>
 								<textcolor>grey2</textcolor>
 								<focusedcolor>white</focusedcolor>
 								<align>center</align>
@@ -1631,7 +1631,7 @@
 								<width>180</width>
 								<height>40</height>
 								<label>31114</label>
-								<font>Shade_20</font>
+								<font>Simplicity_20</font>
 								<textcolor>grey2</textcolor>
 								<focusedcolor>white</focusedcolor>
 								<align>center</align>
@@ -1650,7 +1650,7 @@
 								<width>180</width>
 								<height>40</height>
 								<label>571</label>
-								<font>Shade_20</font>
+								<font>Simplicity_20</font>
 								<textcolor>grey2</textcolor>
 								<focusedcolor>white</focusedcolor>
 								<align>center</align>
@@ -1703,7 +1703,7 @@
 						<control type="label" id="400">
 							<width>750</width>
 							<height>45</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<label>31118</label>
 							<textcolor>yellow</textcolor>
 							<shadowcolor>black</shadowcolor>
@@ -1716,7 +1716,7 @@
 							<posy>0</posy>
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
 			<radiowidth>83</radiowidth>
@@ -1733,7 +1733,7 @@
 							<posx>0</posx>
 							<posy>0</posy>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus border="0,2,0,2">simplicity/menuitemfo.png</texturefocus>
@@ -1747,7 +1747,7 @@
 							<posx>0</posx>
 							<posy>0</posy>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus border="0,2,0,2">simplicity/menuitemfo.png</texturefocus>
@@ -1763,7 +1763,7 @@
 							<posy>0</posy>
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus border="0,2,0,2">simplicity/menuitemfo.png</texturefocus>
@@ -1776,7 +1776,7 @@
 						<posx>0</posx>
 							<posy>0</posy>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus border="0,2,0,2">simplicity/menuitemfo.png</texturefocus>
@@ -1790,7 +1790,7 @@
 							<posx>0</posx>
 							<posy>0</posy>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus border="0,2,0,2">simplicity/menuitemfo.png</texturefocus>
@@ -1806,7 +1806,7 @@
 							<posy>0</posy>
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus border="0,2,0,2">simplicity/menuitemfo.png</texturefocus>
@@ -1819,7 +1819,7 @@
 							<posx>0</posx>
 							<posy>0</posy>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus border="0,2,0,2">simplicity/menuitemfo.png</texturefocus>
@@ -1833,7 +1833,7 @@
 							<posx>0</posx>
 							<posy>0</posy>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus border="0,2,0,2">simplicity/menuitemfo.png</texturefocus>
@@ -1849,7 +1849,7 @@
 							<posy>0</posy>
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus border="0,2,0,2">simplicity/menuitemfo.png</texturefocus>
@@ -1862,7 +1862,7 @@
 							<posx>0</posx>
 							<posy>0</posy>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus border="0,2,0,2">simplicity/menuitemfo.png</texturefocus>
@@ -1876,7 +1876,7 @@
 							<posx>0</posx>
 							<posy>0</posy>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus border="0,2,0,2">simplicity/menuitemfo.png</texturefocus>
@@ -1892,7 +1892,7 @@
 							<posy>0</posy>
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus border="0,2,0,2">simplicity/menuitemfo.png</texturefocus>
@@ -1905,7 +1905,7 @@
 							<posx>0</posx>
 							<posy>0</posy>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus border="0,2,0,2">simplicity/menuitemfo.png</texturefocus>
@@ -1919,7 +1919,7 @@
 							<posx>0</posx>
 							<posy>0</posy>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus border="0,2,0,2">simplicity/menuitemfo.png</texturefocus>
@@ -1935,7 +1935,7 @@
 							<posy>0</posy>
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus border="0,2,0,2">simplicity/menuitemfo.png</texturefocus>
@@ -1948,7 +1948,7 @@
 							<posx>0</posx>
 							<posy>0</posy>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus border="0,2,0,2">simplicity/menuitemfo.png</texturefocus>
@@ -1962,7 +1962,7 @@
 							<posx>0</posx>
 							<posy>0</posy>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus border="0,2,0,2">simplicity/menuitemfo.png</texturefocus>
@@ -1976,7 +1976,7 @@
 						<control type="label" id="419">
 							<width>750</width>
 							<height>45</height>
-							<font>Shade_20_Bold_title</font>
+							<font>Simplicity_20_Bold_title</font>
 							<label>31122</label>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
@@ -1989,7 +1989,7 @@
 							<posy>0</posy>
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus border="0,2,0,2">simplicity/menuitemfo.png</texturefocus>
@@ -2002,7 +2002,7 @@
 							<posx>0</posx>
 							<posy>0</posy>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus border="0,2,0,2">simplicity/menuitemfo.png</texturefocus>
@@ -2016,7 +2016,7 @@
 							<posx>0</posx>
 							<posy>0</posy>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus border="0,2,0,2">simplicity/menuitemfo.png</texturefocus>
@@ -2030,7 +2030,7 @@
 						<control type="label" id="423">
 							<width>750</width>
 							<height>45</height>
-							<font>Shade_20_Bold_title</font>
+							<font>Simplicity_20_Bold_title</font>
 							<label>31140</label>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
@@ -2043,7 +2043,7 @@
 							<posy>0</posy>
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus border="0,2,0,2">simplicity/menuitemfo.png</texturefocus>
@@ -2056,7 +2056,7 @@
 							<posx>0</posx>
 							<posy>0</posy>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus border="0,2,0,2">simplicity/menuitemfo.png</texturefocus>
@@ -2070,7 +2070,7 @@
 						<control type="label" id="426">
 							<width>750</width>
 							<height>45</height>
-							<font>Shade_20_Bold_title</font>
+							<font>Simplicity_20_Bold_title</font>
 							<label>31141</label>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
@@ -2083,7 +2083,7 @@
 							<posy>0</posy>
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus border="0,2,0,2">simplicity/menuitemfo.png</texturefocus>
@@ -2096,7 +2096,7 @@
 							<posx>0</posx>
 							<posy>0</posy>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus border="0,2,0,2">simplicity/menuitemfo.png</texturefocus>
@@ -2140,7 +2140,7 @@
 						<control type="label" id="500">
 							<width>750</width>
 							<height>45</height>
-							<font>Shade_20_Bold_title</font>
+							<font>Simplicity_20_Bold_title</font>
 							<label>Global View Options</label>
 							<textcolor>yellow</textcolor>
 							<shadowcolor>black</shadowcolor>
@@ -2150,7 +2150,7 @@
 						<control type="radiobutton" id="501">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<label>Remove "Minutes" from Duration Labels</label>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
@@ -2166,7 +2166,7 @@
 						<control type="radiobutton" id="502">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<label>Disable Clock</label>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
@@ -2182,7 +2182,7 @@
 						<control type="radiobutton" id="503">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<label>Disable Bread Crumbs</label>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
@@ -2198,7 +2198,7 @@
 						<control type="radiobutton" id="504">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<label>$LOCALIZE[31129]</label>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
@@ -2214,7 +2214,7 @@
 						<control type="button" id="505">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_18</font>
+							<font>Simplicity_18</font>
 							<label>- $LOCALIZE[31130]</label>
 							<label2>[COLOR=white]$INFO[Skin.String(SubtitleScript_Path)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
@@ -2227,7 +2227,7 @@
 						<control type="radiobutton" id="506">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<label>Remove Fanart From Music Visualization</label>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
@@ -2243,7 +2243,7 @@
 						<control type="radiobutton" id="507">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<label>Remove Clock From Music Visualization</label>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
@@ -2259,7 +2259,7 @@
 						<control type="radiobutton" id="509">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<label>Enable Kiosk Mode</label>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
@@ -2275,7 +2275,7 @@
 						<control type="radiobutton" id="511">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<label>Enable Watched Icon for Movie Views</label>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
@@ -2291,7 +2291,7 @@
 						<control type="radiobutton" id="512">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<label>Use TV Theme Songs</label>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
@@ -2309,7 +2309,7 @@
 							<posy>0</posy>
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<radiowidth>83</radiowidth>
@@ -2327,7 +2327,7 @@
 							<posy>0</posy>
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_18</font>
+							<font>Simplicity_18</font>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
@@ -2340,7 +2340,7 @@
 						<control type="label" id="515">
 							<width>750</width>
 							<height>45</height>
-							<font>Shade_20_Bold_title</font>
+							<font>Simplicity_20_Bold_title</font>
 							<label>TV Show Image Downloader</label>
 							<textcolor>yellow</textcolor>
 							<shadowcolor>black</shadowcolor>
@@ -2358,13 +2358,13 @@
 							<shadowcolor>grey2</shadowcolor>
 							<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
 							<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
-							<font>Shade_20_Bold_title</font>
+							<font>Simplicity_20_Bold_title</font>
 							<onclick>XBMC.RunScript(script.logo-downloader,mode=bulk,clearart=True,logo=True,showthumb=landscape.jpg,poster=poster.jpg,banner=banner.jpg)</onclick>
 						</control>
 						<control type="label" id="517">
 							<width>750</width>
 							<height>45</height>
-							<font>Shade_20_Bold_title</font>
+							<font>Simplicity_20_Bold_title</font>
 							<label>TV Theme Song Downloader</label>
 							<textcolor>yellow</textcolor>
 							<shadowcolor>black</shadowcolor>
@@ -2382,7 +2382,7 @@
 							<shadowcolor>grey2</shadowcolor>
 							<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
 							<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
-							<font>Shade_20_Bold_title</font>
+							<font>Simplicity_20_Bold_title</font>
 							<onclick>XBMC.RunScript(script.TvTunes)</onclick>
 						</control>
 					</control>
@@ -2403,7 +2403,7 @@
 						<control type="label" id="500">
 							<width>750</width>
 							<height>45</height>
-							<font>Shade_20_Bold_title</font>
+							<font>Simplicity_20_Bold_title</font>
 							<label>Custom Program Shortcuts on Home Screen</label>
 							<textcolor>yellow</textcolor>
 							<shadowcolor>black</shadowcolor>
@@ -2413,7 +2413,7 @@
 						<control type="radiobutton" id="601">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20_Bold_title</font>
+							<font>Simplicity_20_Bold_title</font>
 							<label>$LOCALIZE[31119] [B]1[/B]</label>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
@@ -2429,7 +2429,7 @@
 						<control type="button" id="602">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<label> - $LOCALIZE[31120]</label>
 							<label2>[COLOR=selected]$INFO[Skin.String(HomeScriptButton1_label)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
@@ -2442,7 +2442,7 @@
 						<control type="button" id="603">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<label> - $LOCALIZE[31121]</label>
 							<label2>[COLOR=selected]$INFO[Skin.String(HomeScriptButton1_Path)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
@@ -2455,7 +2455,7 @@
 						<control type="button" id="604">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<label> - $LOCALIZE[31131]</label>
 							<label2>[COLOR=selected]$INFO[Skin.String(HomeScriptButton1_Image)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
@@ -2468,7 +2468,7 @@
 						<control type="radiobutton" id="605">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20_Bold_title</font>
+							<font>Simplicity_20_Bold_title</font>
 							<label>$LOCALIZE[31119] [B]2[/B]</label>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
@@ -2484,7 +2484,7 @@
 						<control type="button" id="606">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<label> - $LOCALIZE[31120]</label>
 							<label2>[COLOR=selected]$INFO[Skin.String(HomeScriptButton2_label)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
@@ -2497,7 +2497,7 @@
 						<control type="button" id="607">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<label> - $LOCALIZE[31121]</label>
 							<label2>[COLOR=selected]$INFO[Skin.String(HomeScriptButton2_Path)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
@@ -2510,7 +2510,7 @@
 						<control type="button" id="608">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<label> - $LOCALIZE[31131]</label>
 							<label2>[COLOR=selected]$INFO[Skin.String(HomeScriptButton2_Image)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
@@ -2523,7 +2523,7 @@
 						<control type="radiobutton" id="609">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20_Bold_title</font>
+							<font>Simplicity_20_Bold_title</font>
 							<label>$LOCALIZE[31119] [B]3[/B]</label>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
@@ -2539,7 +2539,7 @@
 						<control type="button" id="610">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<label> - $LOCALIZE[31120]</label>
 							<label2>[COLOR=selected]$INFO[Skin.String(HomeScriptButton3_label)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
@@ -2552,7 +2552,7 @@
 						<control type="button" id="611">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<label> - $LOCALIZE[31121]</label>
 							<label2>[COLOR=selected]$INFO[Skin.String(HomeScriptButton3_Path)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
@@ -2565,7 +2565,7 @@
 						<control type="button" id="612">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<label> - $LOCALIZE[31131]</label>
 							<label2>[COLOR=selected]$INFO[Skin.String(HomeScriptButton3_Image)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
@@ -2593,7 +2593,7 @@
 						<control type="label" id="500">
 							<width>750</width>
 							<height>45</height>
-							<font>Shade_20_Bold_title</font>
+							<font>Simplicity_20_Bold_title</font>
 							<label>Custom Addon Shortcuts on Home Screen</label>
 							<textcolor>yellow</textcolor>
 							<shadowcolor>black</shadowcolor>
@@ -2603,7 +2603,7 @@
 						<control type="radiobutton" id="701">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20_Bold_title</font>
+							<font>Simplicity_20_Bold_title</font>
 							<label>$LOCALIZE[31132] [B]1[/B]</label>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
@@ -2619,7 +2619,7 @@
 						<control type="button" id="702">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<label> - $LOCALIZE[31120]</label>
 							<label2>[COLOR=selected]$INFO[Skin.String(HomeAddonButton1_label)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
@@ -2632,7 +2632,7 @@
 						<control type="button" id="703">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<label> - $LOCALIZE[31133]</label>
 							<label2>[COLOR=selected]$INFO[Skin.String(VideoButtonPathScript_1)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
@@ -2646,7 +2646,7 @@
 						<control type="button" id="704">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<label> - $LOCALIZE[31131]</label>
 							<label2>[COLOR=selected]$INFO[Skin.String(HomeAddonButton1_Image)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
@@ -2659,7 +2659,7 @@
 						<control type="radiobutton" id="705">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20_Bold_title</font>
+							<font>Simplicity_20_Bold_title</font>
 							<label>$LOCALIZE[31132] [B]2[/B]</label>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
@@ -2675,7 +2675,7 @@
 						<control type="button" id="706">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<label> - $LOCALIZE[31120]</label>
 							<label2>[COLOR=selected]$INFO[Skin.String(HomeAddonButton2_label)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
@@ -2688,7 +2688,7 @@
 						<control type="button" id="707">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<label> - $LOCALIZE[31133]</label>
 							<label2>[COLOR=selected]$INFO[Skin.String(VideoButtonPathScript_2)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
@@ -2702,7 +2702,7 @@
 						<control type="button" id="708">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<label> - $LOCALIZE[31131]</label>
 							<label2>[COLOR=selected]$INFO[Skin.String(HomeAddonButton2_Image)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
@@ -2715,7 +2715,7 @@
 						<control type="radiobutton" id="709">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20_Bold_title</font>
+							<font>Simplicity_20_Bold_title</font>
 							<label>$LOCALIZE[31132] [B]3[/B]</label>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
@@ -2731,7 +2731,7 @@
 						<control type="button" id="710">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<label> - $LOCALIZE[31120]</label>
 							<label2>[COLOR=selected]$INFO[Skin.String(HomeAddonButton3_label)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
@@ -2744,7 +2744,7 @@
 						<control type="button" id="711">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<label> - $LOCALIZE[31133]</label>
 							<label2>[COLOR=selected]$INFO[Skin.String(VideoButtonPathScript_3)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
@@ -2758,7 +2758,7 @@
 						<control type="button" id="712">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<label> - $LOCALIZE[31131]</label>
 							<label2>[COLOR=selected]$INFO[Skin.String(HomeAddonButton3_Image)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
@@ -2786,7 +2786,7 @@
 						<control type="label" id="500">
 							<width>750</width>
 							<height>45</height>
-							<font>Shade_20_Bold_title</font>
+							<font>Simplicity_20_Bold_title</font>
 							<label>Movie Genre Shortcuts on Home Screen</label>
 							<textcolor>yellow</textcolor>
 							<shadowcolor>black</shadowcolor>
@@ -2812,7 +2812,7 @@
 						<control type="radiobutton" id="802">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20_Bold_title</font>
+							<font>Simplicity_20_Bold_title</font>
 							<label>Action</label>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
@@ -2829,7 +2829,7 @@
 						<control type="radiobutton" id="803">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20_Bold_title</font>
+							<font>Simplicity_20_Bold_title</font>
 							<label>Adult</label>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
@@ -2846,7 +2846,7 @@
 						<control type="radiobutton" id="804">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20_Bold_title</font>
+							<font>Simplicity_20_Bold_title</font>
 							<label>Adventure</label>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
@@ -2863,7 +2863,7 @@
 						<control type="radiobutton" id="805">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20_Bold_title</font>
+							<font>Simplicity_20_Bold_title</font>
 							<label>Animation</label>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
@@ -2880,7 +2880,7 @@
 						<control type="radiobutton" id="806">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20_Bold_title</font>
+							<font>Simplicity_20_Bold_title</font>
 							<label>Anime</label>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
@@ -2897,7 +2897,7 @@
 						<control type="radiobutton" id="807">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20_Bold_title</font>
+							<font>Simplicity_20_Bold_title</font>
 							<label>Biography</label>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
@@ -2914,7 +2914,7 @@
 						<control type="radiobutton" id="808">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20_Bold_title</font>
+							<font>Simplicity_20_Bold_title</font>
 							<label>Bollywood</label>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
@@ -2931,7 +2931,7 @@
 						<control type="radiobutton" id="809">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20_Bold_title</font>
+							<font>Simplicity_20_Bold_title</font>
 							<label>Children</label>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
@@ -2948,7 +2948,7 @@
 						<control type="radiobutton" id="810">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20_Bold_title</font>
+							<font>Simplicity_20_Bold_title</font>
 							<label>Christmas</label>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
@@ -2965,7 +2965,7 @@
 						<control type="radiobutton" id="811">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20_Bold_title</font>
+							<font>Simplicity_20_Bold_title</font>
 							<label>Comedy</label>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
@@ -2982,7 +2982,7 @@
 						<control type="radiobutton" id="812">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20_Bold_title</font>
+							<font>Simplicity_20_Bold_title</font>
 							<label>Concert</label>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
@@ -2999,7 +2999,7 @@
 						<control type="radiobutton" id="813">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20_Bold_title</font>
+							<font>Simplicity_20_Bold_title</font>
 							<label>Crime</label>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
@@ -3016,7 +3016,7 @@
 						<control type="radiobutton" id="814">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20_Bold_title</font>
+							<font>Simplicity_20_Bold_title</font>
 							<label>Disaster</label>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
@@ -3033,7 +3033,7 @@
 						<control type="radiobutton" id="815">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20_Bold_title</font>
+							<font>Simplicity_20_Bold_title</font>
 							<label>Documentary</label>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
@@ -3050,7 +3050,7 @@
 						<control type="radiobutton" id="816">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20_Bold_title</font>
+							<font>Simplicity_20_Bold_title</font>
 							<label>Drama</label>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
@@ -3067,7 +3067,7 @@
 						<control type="radiobutton" id="817">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20_Bold_title</font>
+							<font>Simplicity_20_Bold_title</font>
 							<label>Family</label>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
@@ -3084,7 +3084,7 @@
 						<control type="radiobutton" id="818">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20_Bold_title</font>
+							<font>Simplicity_20_Bold_title</font>
 							<label>Fantasy</label>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
@@ -3101,7 +3101,7 @@
 						<control type="radiobutton" id="819">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20_Bold_title</font>
+							<font>Simplicity_20_Bold_title</font>
 							<label>Halloween</label>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
@@ -3118,7 +3118,7 @@
 						<control type="radiobutton" id="820">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20_Bold_title</font>
+							<font>Simplicity_20_Bold_title</font>
 							<label>Hentai</label>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
@@ -3135,7 +3135,7 @@
 						<control type="radiobutton" id="821">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20_Bold_title</font>
+							<font>Simplicity_20_Bold_title</font>
 							<label>History</label>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
@@ -3152,7 +3152,7 @@
 						<control type="radiobutton" id="822">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20_Bold_title</font>
+							<font>Simplicity_20_Bold_title</font>
 							<label>Horror</label>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
@@ -3169,7 +3169,7 @@
 						<control type="radiobutton" id="823">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20_Bold_title</font>
+							<font>Simplicity_20_Bold_title</font>
 							<label>Independent</label>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
@@ -3186,7 +3186,7 @@
 						<control type="radiobutton" id="824">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20_Bold_title</font>
+							<font>Simplicity_20_Bold_title</font>
 							<label>Monster</label>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
@@ -3203,7 +3203,7 @@
 						<control type="radiobutton" id="825">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20_Bold_title</font>
+							<font>Simplicity_20_Bold_title</font>
 							<label>Music</label>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
@@ -3220,7 +3220,7 @@
 						<control type="radiobutton" id="826">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20_Bold_title</font>
+							<font>Simplicity_20_Bold_title</font>
 							<label>Musical</label>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
@@ -3237,7 +3237,7 @@
 						<control type="radiobutton" id="827">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20_Bold_title</font>
+							<font>Simplicity_20_Bold_title</font>
 							<label>Mystery</label>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
@@ -3254,7 +3254,7 @@
 						<control type="radiobutton" id="828">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20_Bold_title</font>
+							<font>Simplicity_20_Bold_title</font>
 							<label>Nature</label>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
@@ -3271,7 +3271,7 @@
 						<control type="radiobutton" id="829">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20_Bold_title</font>
+							<font>Simplicity_20_Bold_title</font>
 							<label>Religion</label>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
@@ -3288,7 +3288,7 @@
 						<control type="radiobutton" id="830">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20_Bold_title</font>
+							<font>Simplicity_20_Bold_title</font>
 							<label>Romance</label>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
@@ -3305,7 +3305,7 @@
 						<control type="radiobutton" id="831">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20_Bold_title</font>
+							<font>Simplicity_20_Bold_title</font>
 							<label>Sci-Fi</label>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
@@ -3322,7 +3322,7 @@
 						<control type="radiobutton" id="832">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20_Bold_title</font>
+							<font>Simplicity_20_Bold_title</font>
 							<label>Short</label>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
@@ -3339,7 +3339,7 @@
 						<control type="radiobutton" id="833">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20_Bold_title</font>
+							<font>Simplicity_20_Bold_title</font>
 							<label>Sports</label>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
@@ -3356,7 +3356,7 @@
 						<control type="radiobutton" id="834">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20_Bold_title</font>
+							<font>Simplicity_20_Bold_title</font>
 							<label>Superhero</label>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
@@ -3373,7 +3373,7 @@
 						<control type="radiobutton" id="835">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20_Bold_title</font>
+							<font>Simplicity_20_Bold_title</font>
 							<label>Supernatural</label>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
@@ -3390,7 +3390,7 @@
 						<control type="radiobutton" id="836">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20_Bold_title</font>
+							<font>Simplicity_20_Bold_title</font>
 							<label>Thriller</label>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
@@ -3407,7 +3407,7 @@
 						<control type="radiobutton" id="837">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20_Bold_title</font>
+							<font>Simplicity_20_Bold_title</font>
 							<label>War</label>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>1
@@ -3424,7 +3424,7 @@
 						<control type="radiobutton" id="838">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20_Bold_title</font>
+							<font>Simplicity_20_Bold_title</font>
 							<label>Western</label>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
@@ -3441,7 +3441,7 @@
 						<control type="radiobutton" id="839">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20_Bold_title</font>
+							<font>Simplicity_20_Bold_title</font>
 							<label>Wrestling</label>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
@@ -3490,7 +3490,7 @@
 						<control type="label" id="500">
 							<width>750</width>
 							<height>45</height>
-							<font>Shade_20_Bold_title</font>
+							<font>Simplicity_20_Bold_title</font>
 							<label>Custom Favorites Shortcuts on Home Screen</label>
 							<textcolor>yellow</textcolor>
 							<shadowcolor>black</shadowcolor>
@@ -3500,7 +3500,7 @@
 						<control type="radiobutton" id="913">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20_Bold_title</font>
+							<font>Simplicity_20_Bold_title</font>
 							<label>$LOCALIZE[31134] [B]1[/B]</label>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
@@ -3518,7 +3518,7 @@
 						<control type="button" id="914">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
@@ -3531,7 +3531,7 @@
 						<control type="button" id="915">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
@@ -3545,7 +3545,7 @@
 						<control type="button" id="916">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
@@ -3559,7 +3559,7 @@
 						<control type="radiobutton" id="917">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20_Bold_title</font>
+							<font>Simplicity_20_Bold_title</font>
 							<label>$LOCALIZE[31134] [B]2[/B]</label>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
@@ -3577,7 +3577,7 @@
 						<control type="button" id="918">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
@@ -3590,7 +3590,7 @@
 						<control type="button" id="919">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
@@ -3604,7 +3604,7 @@
 						<control type="button" id="920">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
@@ -3618,7 +3618,7 @@
 						<control type="radiobutton" id="921">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20_Bold_title</font>
+							<font>Simplicity_20_Bold_title</font>
 							<label>$LOCALIZE[31134] [B]3[/B]</label>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
@@ -3636,7 +3636,7 @@
 						<control type="button" id="922">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
@@ -3649,7 +3649,7 @@
 						<control type="button" id="923">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
@@ -3663,7 +3663,7 @@
 						<control type="button" id="924">
 							<width>900</width>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>

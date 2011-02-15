@@ -157,7 +157,7 @@
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_20_Bold</font>
+				<font>Simplicity_20_Bold</font>
 				<textcolor>white</textcolor>
 				<label>31043</label>
 				<visible>[Player.Paused + !Player.Caching] + !Player.Seeking</visible>
@@ -170,7 +170,7 @@
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_20_Bold</font>
+				<font>Simplicity_20_Bold</font>
 				<textcolor>white</textcolor>
 				<label>$LOCALIZE[15107] $INFO[Player.CacheLevel]%</label>
 				<visible>[Player.Paused + Player.Caching] + !Player.Seeking</visible>
@@ -183,7 +183,7 @@
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_20_Bold</font>
+				<font>Simplicity_20_Bold</font>
 				<textcolor>white</textcolor>
 				<label>[UPPERCASE]$LOCALIZE[773][/UPPERCASE]</label>
 				<visible>Player.Seeking</visible>
@@ -196,7 +196,7 @@
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_20_Bold</font>
+				<font>Simplicity_20_Bold</font>
 				<textcolor>white</textcolor>
 				<label>$LOCALIZE[31044] x2</label>
 				<visible>Player.Forwarding2x</visible>
@@ -209,7 +209,7 @@
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_20_Bold</font>
+				<font>Simplicity_20_Bold</font>
 				<textcolor>white</textcolor>
 				<label>$LOCALIZE[31044] x4</label>
 				<visible>Player.Forwarding4x</visible>
@@ -222,7 +222,7 @@
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_20_Bold</font>
+				<font>Simplicity_20_Bold</font>
 				<textcolor>white</textcolor>
 				<label>$LOCALIZE[31044] x8</label>
 				<visible>Player.Forwarding8x</visible>
@@ -235,7 +235,7 @@
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_20_Bold</font>
+				<font>Simplicity_20_Bold</font>
 				<textcolor>white</textcolor>
 				<label>$LOCALIZE[31044] x16</label>
 				<visible>Player.Forwarding16x</visible>
@@ -248,7 +248,7 @@
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_20_Bold</font>
+				<font>Simplicity_20_Bold</font>
 				<textcolor>white</textcolor>
 				<label>$LOCALIZE[31044] x32</label>
 				<visible>Player.Forwarding32x</visible>
@@ -261,7 +261,7 @@
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_20_Bold</font>
+				<font>Simplicity_20_Bold</font>
 				<textcolor>white</textcolor>
 				<label>$LOCALIZE[31045] x2</label>
 				<visible>Player.Rewinding2x</visible>
@@ -274,7 +274,7 @@
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_20_Bold</font>
+				<font>Simplicity_20_Bold</font>
 				<textcolor>white</textcolor>
 				<label>$LOCALIZE[31045] x4</label>
 				<visible>Player.Rewinding4x</visible>
@@ -287,7 +287,7 @@
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_20_Bold</font>
+				<font>Simplicity_20_Bold</font>
 				<textcolor>white</textcolor>
 				<label>$LOCALIZE[31045] x8</label>
 				<visible>Player.Rewinding8x</visible>
@@ -300,7 +300,7 @@
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_20_Bold</font>
+				<font>Simplicity_20_Bold</font>
 				<textcolor>white</textcolor>
 				<label>$LOCALIZE[31045] x16</label>
 				<visible>Player.Rewinding16x</visible>
@@ -313,7 +313,7 @@
 				<height>25</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_20_Bold</font>
+				<font>Simplicity_20_Bold</font>
 				<textcolor>white</textcolor>
 				<label>$LOCALIZE[31045] x32</label>
 				<visible>Player.Rewinding32x</visible>
@@ -327,7 +327,7 @@
 				<label>$INFO[MusicPlayer.Artist]$INFO[MusicPlayer.Album, - ]</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_24</font>
+				<font>Simplicity_24</font>
 				<textcolor>grey</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<visible>Player.Playing + !Player.Seeking</visible>
@@ -350,7 +350,7 @@
 				<scroll>true</scroll>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_24_Bold</font>
+				<font>Simplicity_24_Bold</font>
 				<textcolor>yellow</textcolor>
 				<shadowcolor>black</shadowcolor>
 			</control>
@@ -362,7 +362,7 @@
 				<label>$INFO[musicplayer.Playlistposition,$LOCALIZE[554]: ]$INFO[musicplayer.Playlistlength, / ]</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_24</font>
+				<font>Simplicity_24</font>
 				<textcolor>grey2</textcolor>
 				<shadowcolor>black</shadowcolor>
 			</control>
@@ -374,7 +374,7 @@
 				<label>[COLOR=white]$LOCALIZE[209] :[/COLOR] $INFO[MusicPlayer.offset(1).Artist,, - ]$INFO[MusicPlayer.offset(1).Title]</label>
 				<align>right</align>
 				<aligny>center</aligny>
-				<font>Shade_24</font>
+				<font>Simplicity_24</font>
 				<textcolor>grey2</textcolor>
 				<shadowcolor>black</shadowcolor>
 			</control>
@@ -395,7 +395,7 @@
 				<posy>100</posy>
 				<width>375</width>
 				<height>20</height>
-				<font>Shade_24</font>
+				<font>Simplicity_24</font>
 				<textcolor>white</textcolor>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -408,7 +408,7 @@
 				<posy>100</posy>
 				<width>375</width>
 				<height>20</height>
-				<font>Shade_24</font>
+				<font>Simplicity_24</font>
 				<textcolor>white</textcolor>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -423,7 +423,7 @@
 				<label>$INFO[Player.Duration]</label>
 				<align>right</align>
 				<aligny>center</aligny>
-				<font>Shade_24</font>
+				<font>Simplicity_24</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 			</control>
@@ -485,7 +485,7 @@
 		<label>$LOCALIZE[31046]</label>
 		<align>left</align>
 		<aligny>center</aligny>
-		<font>Shade_20_Bold</font>
+		<font>Simplicity_20_Bold</font>
 		<textcolor>white</textcolor>
 		<shadowcolor>black</shadowcolor>
 	</control>
@@ -509,7 +509,7 @@
 		<label>$LOCALIZE[250]</label>
 		<align>right</align>
 		<aligny>center</aligny>
-		<font>Shade_20_Bold</font>
+		<font>Simplicity_20_Bold</font>
 		<textcolor>white</textcolor>
 		<shadowcolor>black</shadowcolor>
 	</control>
@@ -547,7 +547,7 @@
 		<label>$LOCALIZE[31047]</label>
 		<align>right</align>
 		<aligny>center</aligny>
-		<font>Shade_20_Bold</font>
+		<font>Simplicity_20_Bold</font>
 		<textcolor>white</textcolor>
 		<shadowcolor>black</shadowcolor>
 	</control>

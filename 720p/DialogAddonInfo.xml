@@ -32,7 +32,7 @@
 				<posy>20</posy>
 				<width>580</width>
 				<height>30</height>
-				<font>Shade_40</font>
+				<font>Simplicity_40</font>
 				<label>[B]Addon Information[/B]</label>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -74,7 +74,7 @@
 				<height>30</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_20_Bold</font>
+				<font>Simplicity_20_Bold</font>
 				<label>[B]$INFO[ListItem.Property(Addon.Name)][/B]</label>
 				<textcolor>white</textcolor>
 				<scroll>true</scroll>
@@ -91,7 +91,7 @@
 					<label>$LOCALIZE[146]</label>
 					<align>right</align>
 					<aligny>center</aligny>
-					<font>Shade_18_Bold</font>
+					<font>Simplicity_18_Bold</font>
 					<textcolor>white</textcolor>
 				</control>
 				<control type="label">
@@ -103,7 +103,7 @@
 					<label fallback="416">$INFO[ListItem.Property(Addon.Type)]</label>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>Shade_18</font>
+					<font>Simplicity_18</font>
 					<scroll>true</scroll>
 					<textcolor>grey2</textcolor>
 				</control>
@@ -116,7 +116,7 @@
 					<label>$LOCALIZE[21863]:</label>
 					<align>right</align>
 					<aligny>center</aligny>
-					<font>Shade_18_Bold</font>
+					<font>Simplicity_18_Bold</font>
 					<textcolor>white</textcolor>
 				</control>
 				<control type="label">
@@ -128,7 +128,7 @@
 					<label fallback="416">$INFO[ListItem.Property(Addon.Creator)]</label>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>Shade_18</font>
+					<font>Simplicity_18</font>
 					<scroll>true</scroll>
 					<textcolor>grey2</textcolor>
 				</control>
@@ -141,7 +141,7 @@
 					<label>$LOCALIZE[24051]</label>
 					<align>right</align>
 					<aligny>center</aligny>
-					<font>Shade_18_Bold</font>
+					<font>Simplicity_18_Bold</font>
 					<textcolor>white</textcolor>
 				</control>
 				<control type="label">
@@ -153,7 +153,7 @@
 					<label fallback="416">$INFO[ListItem.Property(Addon.Version)]</label>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>Shade_18</font>
+					<font>Simplicity_18</font>
 					<scroll>true</scroll>
 					<textcolor>grey2</textcolor>
 				</control>
@@ -166,7 +166,7 @@
 					<label>$LOCALIZE[563]:</label>
 					<align>right</align>
 					<aligny>center</aligny>
-					<font>Shade_18_Bold</font>
+					<font>Simplicity_18_Bold</font>
 					<textcolor>white</textcolor>
 				</control>
 				<control type="image">
@@ -186,7 +186,7 @@
 					<label>$LOCALIZE[20037]:</label>
 					<align>right</align>
 					<aligny>center</aligny>
-					<font>Shade_18_Bold</font>
+					<font>Simplicity_18_Bold</font>
 					<textcolor>white</textcolor>
 				</control>
 				<control type="fadelabel">
@@ -198,7 +198,7 @@
 					<label fallback="416">$INFO[ListItem.Property(Addon.Summary)]</label>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>Shade_18</font>
+					<font>Simplicity_18</font>
 					<scrollout>false</scrollout>
 					<pauseatend>2000</pauseatend>
 					<textcolor>grey2</textcolor>
@@ -219,7 +219,7 @@
 					<label>$LOCALIZE[21821]</label>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>Shade_18</font>
+					<font>Simplicity_18</font>
 					<textcolor>white</textcolor>
 				</control>
 				<control type="group">
@@ -233,7 +233,7 @@
 						<label>$INFO[Container(400).CurrentPage, $LOCALIZE[31024] [COLOR=grey]([/COLOR]]$INFO[Container(400).NumPages,/,[COLOR=grey])[/COLOR]]</label>
 						<align>right</align>
 						<aligny>center</aligny>
-						<font>Shade_16</font>
+						<font>Simplicity_16</font>
 						<textcolor>grey</textcolor>
 					</control>
 					<control type="textbox" id="400">
@@ -242,7 +242,7 @@
 						<posy>195</posy>
 						<width>580</width>
 						<height>160</height>
-						<font>Shade_16</font>
+						<font>Simplicity_16</font>
 						<align>-</align>
 						<textcolor>white</textcolor>
 						<label>$INFO[ListItem.Property(Addon.Description)]</label>
@@ -272,7 +272,7 @@
 						<label>$LOCALIZE[24052]</label>
 						<align>left</align>
 						<aligny>center</aligny>
-						<font>Shade_18</font>
+						<font>Simplicity_18</font>
 						<textcolor>white</textcolor>
 					</control>
 					<control type="textbox">
@@ -281,7 +281,7 @@
 						<posy>395</posy>
 						<width>580</width>
 						<height>40</height>
-						<font>Shade_18</font>
+						<font>Simplicity_18</font>
 						<align>-</align>
 						<textcolor>white</textcolor>
 						<label>$INFO[ListItem.Property(Addon.Disclaimer)]</label>
@@ -299,7 +299,7 @@
 						<label>$INFO[Container(401).CurrentPage, $LOCALIZE[31024] [COLOR=white]([/COLOR]]$INFO[Container(401).NumPages,/,[COLOR=white])[/COLOR]]</label>
 						<align>right</align>
 						<aligny>center</aligny>
-						<font>Shade_18</font>
+						<font>Simplicity_18</font>
 						<textcolor>grey</textcolor>
 					</control>
 					<control type="textbox" id="401">
@@ -308,7 +308,7 @@
 						<posy>195</posy>
 						<width>580</width>
 						<height>250</height>
-						<font>Shade_18</font>
+						<font>Simplicity_18</font>
 						<align>-</align>
 						<textcolor>white</textcolor>
 						<label>$INFO[ListItem.Property(Addon.Description)]</label>
@@ -342,7 +342,7 @@
 					<height>51</height>
 					<textoffsetx>20</textoffsetx>
 					<label>24022</label>
-					<font>Shade_18_Bold</font>
+					<font>Simplicity_18_Bold</font>
 					<align>right</align>
 					<texturenofocus border="5">simplicity/menuitemnf.png</texturenofocus>
 					<texturefocus border="5">simplicity/list-selector.png</texturefocus>
@@ -359,7 +359,7 @@
 					<height>51</height>
 					<textoffsetx>20</textoffsetx>
 					<label>24021</label>
-					<font>Shade_18_Bold</font>
+					<font>Simplicity_18_Bold</font>
 					<align>right</align>
 					<texturenofocus border="5">simplicity/menuitemnf.png</texturenofocus>
 					<texturefocus border="5">simplicity/list-selector.png</texturefocus>
@@ -376,7 +376,7 @@
 					<height>51</height>
 					<textoffsetx>20</textoffsetx>
 					<label>24020</label>
-					<font>Shade_18_Bold</font>
+					<font>Simplicity_18_Bold</font>
 					<align>right</align>
 					<texturenofocus border="5">simplicity/menuitemnf.png</texturenofocus>
 					<texturefocus border="5">simplicity/list-selector.png</texturefocus>
@@ -393,7 +393,7 @@
 					<height>51</height>
 					<textoffsetx>20</textoffsetx>
 					<label>24069</label>
-					<font>Shade_18_Bold</font>
+					<font>Simplicity_18_Bold</font>
 					<align>right</align>
 					<texturenofocus border="5">simplicity/menuitemnf.png</texturenofocus>
 					<texturefocus border="5">simplicity/list-selector.png</texturefocus>
@@ -410,7 +410,7 @@
 					<height>51</height>
 					<textoffsetx>20</textoffsetx>
 					<label>24036</label>
-					<font>Shade_18_Bold</font>
+					<font>Simplicity_18_Bold</font>
 					<align>right</align>
 					<texturenofocus border="5">simplicity/menuitemnf.png</texturenofocus>
 					<texturefocus border="5">simplicity/list-selector.png</texturefocus>

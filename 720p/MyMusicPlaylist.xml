@@ -171,7 +171,7 @@
 				<label>Close</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_30_UltraThin</font>
+				<font>Simplicity_30_UltraThin</font>
 				<textcolor>white</textcolor>
 				<visible>Control.IsVisible(8999) | Control.IsVisible(9000) | Control.IsVisible(9010)</visible>
 			</control>	
@@ -200,7 +200,7 @@
 				<label>Navigate Menu</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_30_UltraThin</font>
+				<font>Simplicity_30_UltraThin</font>
 				<textcolor>white</textcolor>
 				<visible>Control.IsVisible(8999) | Control.IsVisible(9000) | Control.IsVisible(9010)</visible>
 			</control>	
@@ -213,7 +213,7 @@
 				<label>View Options</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_30_UltraThin</font>
+				<font>Simplicity_30_UltraThin</font>
 				<textcolor>white</textcolor>
 				<visible>Control.IsVisible(8999) | Control.IsVisible(9000) | Control.IsVisible(9010)</visible>
 			</control>					

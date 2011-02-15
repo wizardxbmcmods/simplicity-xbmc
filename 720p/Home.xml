@@ -210,7 +210,7 @@
 			<width>1280</width>
 			<align>center</align>
 			<aligny>center</aligny>
-			<font>Shade_170</font>
+			<font>Simplicity_170</font>
 			<label>$INFO[Container(9000).ListItem.Label]</label>
 			<textcolor>grey3</textcolor>
 			<animation effect="fade" start="100" end="0" time="200" >WindowClose</animation>
@@ -244,7 +244,7 @@
 					<width>1280</width>
 					<align>center</align>
 					<aligny>center</aligny>
-					<font>Shade_100</font>
+					<font>Simplicity_100</font>
 					<label>$INFO[Window.Property(LatestMovie.1.Title)]</label>
 					<textcolor>grey3</textcolor>
 					<visible>!Control.HasFocus(9000) + !Control.HasFocus(8006)</visible>
@@ -260,7 +260,7 @@
 					<width>1280</width>
 					<align>center</align>
 					<aligny>center</aligny>
-					<font>Shade_100</font>
+					<font>Simplicity_100</font>
 					<label>$INFO[Container(8006).ListItem.Label]</label>
 					<textcolor>grey3</textcolor>
 					<visible>!Control.HasFocus(9000) + !Control.HasFocus(8005)</visible>
@@ -298,7 +298,7 @@
 					<posy>102</posy>
 					<width min="50" max="150">auto</width>
 					<align>center</align>
-					<font>Shade_26_Bold</font>
+					<font>Simplicity_26_Bold</font>
 					<label>$INFO[ListItem.Label]</label>
 					<textcolor>grey3</textcolor>
 				</control>
@@ -311,7 +311,7 @@
 					<posy>102</posy>
 					<width min="50" max="150">auto</width>
 					<align>center</align>
-					<font>Shade_26_Bold</font>
+					<font>Simplicity_26_Bold</font>
 					<label>$INFO[ListItem.Label]</label>
 					<textcolor>white</textcolor>
 					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8000)">Conditional</animation>
@@ -1126,7 +1126,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<colordiffuse>80FFFFFF</colordiffuse>
-				<font>Shade_30_UltraThin</font>
+				<font>Simplicity_30_UltraThin</font>
 				<textcolor>grey2</textcolor>
 			</control>	-->
 
@@ -1140,7 +1140,7 @@
 				<posy>16</posy>
 				<height>35</height>
 				<width>2500</width>
-				<font>Shade_18</font>
+				<font>Simplicity_18</font>
 				<label>[B][COLOR=yellow]TV ALERT[/COLOR][/B] -- $INFO[Window(Home).Property(NextAired.1.ShowTitle)], $INFO[Window(Home).Property(NextAired.1.airday)] at $INFO[Window(Home).Property(NextAired.1.shortime)] on $INFO[Window(Home).Property(NextAired.1.network)] -- [B][COLOR=yellow]TV ALERT[/COLOR][/B] -- $INFO[Window(Home).Property(NextAired.2.ShowTitle)], $INFO[Window(Home).Property(NextAired.2.airday)] at $INFO[Window(Home).Property(NextAired.2.shortime)] on $INFO[Window(Home).Property(NextAired.2.network)] -- [B][COLOR=yellow]TV ALERT[/COLOR][/B] -- $INFO[Window(Home).Property(NextAired.3.ShowTitle)], $INFO[Window(Home).Property(NextAired.3.airday)] at $INFO[Window(Home).Property(NextAired.3.shortime)] on $INFO[Window(Home).Property(NextAired.3.network)]</label>
 				<fontcolor>grey3</fontcolor>
 				<titlecolor>white</titlecolor>
@@ -1163,7 +1163,7 @@
 				<posy>16</posy>
 				<height>35</height>
 				<width>1280</width>
-				<font>Shade_18_Bold</font>
+				<font>Simplicity_18_Bold</font>
 				<urlset>1</urlset>
 				<textcolor>grey2</textcolor>
 				<titlecolor>white</titlecolor>

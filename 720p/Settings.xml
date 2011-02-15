@@ -59,7 +59,7 @@
 						<posy>0</posy>
 						<width>380</width>
 						<height>61</height>
-						<font>Shade_40</font>
+						<font>Simplicity_40</font>
 						<textcolor>white</textcolor>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -98,7 +98,7 @@
 				<posy>130</posy>
 				<width>260</width>
 				<height>30</height>
-				<font>Shade_26</font>
+				<font>Simplicity_26</font>
 				<label>$INFO[ListItem.label]</label>
 				<align>center</align>
 				<textcolor>white</textcolor>
@@ -111,7 +111,7 @@
 						<posy>0</posy>
 						<width>380</width>
 						<height>61</height>
-						<font>Shade_40</font>
+						<font>Simplicity_40</font>
 						<textcolor>white</textcolor>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -143,7 +143,7 @@
 				<posy>130</posy>
 				<width>260</width>
 				<height>30</height>
-				<font>Shade_26</font>
+				<font>Simplicity_26</font>
 				<label>$INFO[ListItem.label]</label>
 				<align>center</align>
 				<textcolor>white</textcolor>
@@ -216,7 +216,7 @@
 				<posy>60</posy>
 				<width>1280</width>
 				<height>30</height>
-				<font>Shade_40</font>
+				<font>Simplicity_40</font>
 				<label>$LOCALIZE[31000] $LOCALIZE[5]</label>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -238,7 +238,7 @@
 				<posy>560</posy>
 				<width>1080</width>
 				<height>300</height>
-				<font>Shade_24</font>
+				<font>Simplicity_24</font>
 				<label>$INFO[Container(9000).ListItem.Label2]</label>
 				<align>justify</align>
 				<textcolor>white</textcolor>

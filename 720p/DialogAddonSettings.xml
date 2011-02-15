@@ -51,7 +51,7 @@
 				<posy>20</posy>
 				<width>640</width>
 				<height>30</height>
-				<font>Shade_30_Bold</font>
+				<font>Simplicity_30_Bold</font>
 				<label>-</label>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -111,7 +111,7 @@
 					<aligny>center</aligny>
 					<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
 					<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
-					<font>Shade_20_Bold</font>
+					<font>Simplicity_20_Bold</font>
 					<textcolor>black</textcolor>
 					<focusedcolor>black</focusedcolor>
 					<shadowcolor>grey2</shadowcolor>
@@ -131,7 +131,7 @@
 					<aligny>center</aligny>
 					<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
 					<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
-					<font>Shade_20_Bold</font>
+					<font>Simplicity_20_Bold</font>
 					<textcolor>black</textcolor>
 					<focusedcolor>black</focusedcolor>
 					<shadowcolor>grey2</shadowcolor>
@@ -151,7 +151,7 @@
 					<aligny>center</aligny>
 					<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
 					<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
-					<font>Shade_20_Bold</font>
+					<font>Simplicity_20_Bold</font>
 					<textcolor>black</textcolor>
 					<focusedcolor>black</focusedcolor>
 					<shadowcolor>grey2</shadowcolor>
@@ -170,7 +170,7 @@
 				<width>257</width>
 				<height>51</height>
 				<textoffsetx>20</textoffsetx>
-				<font>Shade_18_Bold</font>
+				<font>Simplicity_18_Bold</font>
 				<align>right</align>
 				<texturenofocus border="5">simplicity/menuitemnf.png</texturenofocus>
 				<texturefocus border="5">simplicity/list-selector.png</texturefocus>
@@ -179,7 +179,7 @@
 			<control type="button" id="3">
 				<description>Default Button</description>
 				<height>40</height>
-				<font>Shade_18</font>
+				<font>Simplicity_18</font>
 				<textcolor>grey2</textcolor>
 				<focusedcolor>white</focusedcolor>
 				<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
@@ -188,7 +188,7 @@
 			<control type="radiobutton" id="4">
 				<description>Default RadioButton</description>
 				<height>40</height>
-				<font>Shade_18</font>
+				<font>Simplicity_18</font>
 				<textcolor>grey2</textcolor>
 				<focusedcolor>white</focusedcolor>
 				<radiowidth>83</radiowidth>
@@ -213,13 +213,13 @@
 				<texturedown>simplicity/scroll-down-2.png</texturedown>
 				<textureupfocus>simplicity/scroll-up-focus.png</textureupfocus>
 				<texturedownfocus>simplicity/scroll-down-focus.png</texturedownfocus>
-				<font>Shade_18</font>
+				<font>Simplicity_18</font>
 				<aligny>center</aligny>
 				<reverse>yes</reverse>
 			</control>
 			<control type="label" id="7">
 				<height>45</height>
-				<font>Shade_20</font>
+				<font>Simplicity_20</font>
 				<label>-</label>
 				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
@@ -234,7 +234,7 @@
 			<control type="sliderex" id="8">
 				<description>Default Slider</description>
 				<height>40</height>
-				<font>Shade_18</font>
+				<font>Simplicity_18</font>
 				<textcolor>grey2</textcolor>
 				<focusedcolor>white</focusedcolor>
 				<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>

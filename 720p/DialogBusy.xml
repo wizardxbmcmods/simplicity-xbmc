@@ -36,7 +36,7 @@
 			<align>left</align>
 			<aligny>center</aligny>
 			<label>[COLOR=white][B]Working...[/B][/COLOR][CR]$LOCALIZE[20186] !</label>
-			<font>Shade_20_Bold</font>
+			<font>Simplicity_20_Bold</font>
 		</control>
 	</controls>
 </window>

@@ -28,7 +28,7 @@
 						<label>Latest Movie</label>
 						<align>center</align>
 						<aligny>center</aligny>
-						<font>Shade_26</font>
+						<font>Simplicity_26</font>
 						<textcolor>white</textcolor>
 					</control>	
 					<control type="label">
@@ -40,7 +40,7 @@
 						<label>New Movies</label>
 						<align>center</align>
 						<aligny>center</aligny>
-						<font>Shade_26</font>
+						<font>Simplicity_26</font>
 						<textcolor>white</textcolor>
 					</control>	
 					<control type="list" id="8005">
@@ -153,7 +153,7 @@
 						<label>$INFO[Window.Property(LatestMovie.1.Title)]</label>
 						<align>left</align>
 						<aligny>center</aligny>
-						<font>Shade_18</font>
+						<font>Simplicity_18</font>
 						<textcolor>white</textcolor>
 					</control>	
 					<control type="label">
@@ -165,7 +165,7 @@
 						<label>$INFO[Window.Property(LatestMovie.1.Year)], $INFO[Window.Property(LatestMovie.1.RunningTime)]</label>
 						<align>left</align>
 						<aligny>center</aligny>
-						<font>Shade_18</font>
+						<font>Simplicity_18</font>
 						<textcolor>grey2</textcolor>
 					</control>	
 					<control type="label">
@@ -177,7 +177,7 @@
 						<label>Director: [COLOR=white]$INFO[Window.Property(LatestMovie.1.Director)][/COLOR]</label>
 						<align>left</align>
 						<aligny>center</aligny>
-						<font>Shade_18</font>
+						<font>Simplicity_18</font>
 						<textcolor>grey2</textcolor>
 					</control>	
 					<control type="image">
@@ -355,7 +355,7 @@
 						<label>Latest Episode</label>
 						<align>center</align>
 						<aligny>center</aligny>
-						<font>Shade_26</font>
+						<font>Simplicity_26</font>
 						<textcolor>white</textcolor>
 					</control>	
 					<control type="label">
@@ -367,7 +367,7 @@
 						<label>New Episodes</label>
 						<align>center</align>
 						<aligny>center</aligny>
-						<font>Shade_26</font>
+						<font>Simplicity_26</font>
 						<textcolor>white</textcolor>
 					</control>	
 					<control type="list" id="8007">
@@ -489,7 +489,7 @@
 						<label>$INFO[Window.Property(LatestEpisode.1.ShowTitle)]</label>
 						<align>left</align>
 						<aligny>center</aligny>
-						<font>Shade_18</font>
+						<font>Simplicity_18</font>
 						<textcolor>white</textcolor>
 					</control>	
 					<control type="label">
@@ -501,7 +501,7 @@
 						<label>"$INFO[Window.Property(LatestEpisode.1.EpisodeTitle)]"</label>
 						<align>left</align>
 						<aligny>center</aligny>
-						<font>Shade_18</font>
+						<font>Simplicity_18</font>
 						<textcolor>grey2</textcolor>
 					</control>	
 					<!--<control type="label">
@@ -513,7 +513,7 @@
 						<label>$INFO[Window.Property(RandomEpisode.1.RunningTime)]</label>
 						<align>left</align>
 						<aligny>center</aligny>
-						<font>Shade_24_Bold</font>
+						<font>Simplicity_24_Bold</font>
 						<textcolor>grey2</textcolor>
 					</control>-->	
 				</control>
@@ -590,7 +590,7 @@
 								<label>$INFO[ListItem.label]</label>
 								<align>center</align>
 								<aligny>center</aligny>
-								<font>Shade_16</font>
+								<font>Simplicity_16</font>
 								<textcolor>white</textcolor>
 							</control>		
 						</itemlayout>
@@ -648,7 +648,7 @@
 								<label>$INFO[ListItem.label]</label>
 								<align>center</align>
 								<aligny>center</aligny>
-								<font>Shade_16</font>
+								<font>Simplicity_16</font>
 								<textcolor>white</textcolor>
 							</control>		
 							<control type="image">
@@ -741,7 +741,7 @@
 								<posy>-9</posy>
 								<width>200</width>
 								<height>40</height>
-								<font>Shade_18_Bold</font>
+								<font>Simplicity_18_Bold</font>
 								<textcolor>grey2</textcolor>
 								<shadowcolor>black</shadowcolor>
 								<align>center</align>
@@ -774,7 +774,7 @@
 									<posy>-9</posy>
 									<width>200</width>
 									<height>40</height>
-									<font>Shade_18_Bold</font>
+									<font>Simplicity_18_Bold</font>
 									<textcolor>white</textcolor>
 									<align>center</align>
 									<aligny>center</aligny>
@@ -786,7 +786,7 @@
 									<posy>-9</posy>
 									<width>200</width>
 									<height>40</height>
-									<font>Shade_18_Bold</font>
+									<font>Simplicity_18_Bold</font>
 									<textcolor>grey2</textcolor>
 									<shadowcolor>black</shadowcolor>
 									<align>center</align>
@@ -1158,7 +1158,7 @@
 						<label>Latest Music</label>
 						<align>center</align>
 						<aligny>center</aligny>
-						<font>Shade_26</font>
+						<font>Simplicity_26</font>
 						<textcolor>white</textcolor>
 					</control>	
 					<control type="label">
@@ -1170,7 +1170,7 @@
 						<label>New Music</label>
 						<align>center</align>
 						<aligny>center</aligny>
-						<font>Shade_26</font>
+						<font>Simplicity_26</font>
 						<textcolor>white</textcolor>
 					</control>	
 					<control type="list" id="8009">
@@ -1276,7 +1276,7 @@
 						<label>$INFO[Window.Property(LatestSong.1.Artist)]</label>
 						<align>left</align>
 						<aligny>center</aligny>
-						<font>Shade_18</font>
+						<font>Simplicity_18</font>
 						<textcolor>white</textcolor>
 					</control>	
 					<control type="label">
@@ -1288,7 +1288,7 @@
 						<label>"$INFO[Window.Property(LatestSong.1.Title)]"</label>
 						<align>left</align>
 						<aligny>center</aligny>
-						<font>Shade_18</font>
+						<font>Simplicity_18</font>
 						<textcolor>grey2</textcolor>
 					</control>	
 					<control type="label">
@@ -1300,7 +1300,7 @@
 						<label>$INFO[Window.Property(LatestSong.1.Album)]</label>
 						<align>left</align>
 						<aligny>center</aligny>
-						<font>Shade_18</font>
+						<font>Simplicity_18</font>
 						<textcolor>grey2</textcolor>
 					</control>
 				</control>
@@ -1479,7 +1479,7 @@
 								<posy>210</posy>
 								<width>200</width>
 								<height>40</height>
-								<font>Shade_24</font>
+								<font>Simplicity_24</font>
 								<textcolor>grey2</textcolor>
 								<selectedcolor>selected</selectedcolor>
 								<align>center</align>
@@ -1510,7 +1510,7 @@
 								<posy>210</posy>
 								<width>200</width>
 								<height>40</height>
-								<font>Shade_24</font>
+								<font>Simplicity_24</font>
 								<textcolor>white</textcolor>
 								<selectedcolor>selected</selectedcolor>
 								<align>center</align>
@@ -1524,7 +1524,7 @@
 								<posy>210</posy>
 								<width>200</width>
 								<height>40</height>
-								<font>Shade_24</font>
+								<font>Simplicity_24</font>
 								<textcolor>grey2</textcolor>
 								<selectedcolor>selected</selectedcolor>
 								<align>center</align>
@@ -1613,7 +1613,7 @@
 								<posy>-9</posy>
 								<width>200</width>
 								<height>40</height>
-								<font>Shade_18_Bold</font>
+								<font>Simplicity_18_Bold</font>
 								<textcolor>grey2</textcolor>
 								<shadowcolor>black</shadowcolor>
 								<align>center</align>
@@ -1653,7 +1653,7 @@
 									<posy>-9</posy>
 									<width>200</width>
 									<height>40</height>
-									<font>Shade_18_Bold</font>
+									<font>Simplicity_18_Bold</font>
 									<textcolor>white</textcolor>
 									<align>center</align>
 									<aligny>center</aligny>
@@ -1665,7 +1665,7 @@
 									<posy>-9</posy>
 									<width>200</width>
 									<height>40</height>
-									<font>Shade_18_Bold</font>
+									<font>Simplicity_18_Bold</font>
 									<textcolor>grey2</textcolor>
 									<shadowcolor>black</shadowcolor>
 									<align>center</align>

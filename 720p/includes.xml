@@ -86,7 +86,7 @@
 						<posy>-67</posy>
 						<width>340</width>
 						<height>35</height>
-						<font>Shade_18_Bold</font>
+						<font>Simplicity_18_Bold</font>
 						<info>Window(Weather).Property(Day0.Title)</info>
 						<align>center</align>
 						<aligny>center</aligny>
@@ -107,7 +107,7 @@
 						<posx>310</posx>
 						<posy>60</posy>
 						<height>20</height>
-						<font>Shade_16</font>
+						<font>Simplicity_16</font>
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$LOCALIZE[393] :</label>
@@ -121,7 +121,7 @@
 						<posy>60</posy>
 						<height>20</height>
 						<label>$INFO[Window(Weather).Property(Day0.HighTemp)]</label>
-						<font>Shade_16</font>
+						<font>Simplicity_16</font>
 						<align>left</align>
 						<aligny>center</aligny>
 						<textcolor>white</textcolor>
@@ -133,7 +133,7 @@
 						<posx>380</posx>
 						<posy>60</posy>
 						<height>20</height>
-						<font>Shade_16</font>
+						<font>Simplicity_16</font>
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$LOCALIZE[391] :</label>
@@ -147,7 +147,7 @@
 						<posy>60</posy>
 						<height>20</height>
 						<label>$INFO[Window(Weather).Property(Day0.LowTemp)]</label>
-						<font>Shade_16</font>
+						<font>Simplicity_16</font>
 						<align>left</align>
 						<aligny>center</aligny>
 						<textcolor>white</textcolor>
@@ -161,7 +161,7 @@
 						<width>120</width>
 						<height>20</height>
 						<info>Window(Weather).Property(Day0.Outlook)</info>
-						<font>Shade_16</font>
+						<font>Simplicity_16</font>
 						<align>center</align>
 						<aligny>center</aligny>
 						<textcolor>white</textcolor>
@@ -178,7 +178,7 @@
 						<posy>-67</posy>
 						<width>340</width>
 						<height>35</height>
-						<font>Shade_18_Bold</font>
+						<font>Simplicity_18_Bold</font>
 						<info>Window(Weather).Property(Day1.Title)</info>
 						<align>center</align>
 						<aligny>center</aligny>
@@ -199,7 +199,7 @@
 						<posx>480</posx>
 						<posy>60</posy>
 						<height>20</height>
-						<font>Shade_16</font>
+						<font>Simplicity_16</font>
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$LOCALIZE[393] :</label>
@@ -213,7 +213,7 @@
 						<posy>60</posy>
 						<height>20</height>
 						<label>$INFO[Window(Weather).Property(Day1.HighTemp)]</label>
-						<font>Shade_16</font>
+						<font>Simplicity_16</font>
 						<align>left</align>
 						<aligny>center</aligny>
 						<textcolor>white</textcolor>
@@ -225,7 +225,7 @@
 						<posx>550</posx>
 						<posy>60</posy>
 						<height>20</height>
-						<font>Shade_16</font>
+						<font>Simplicity_16</font>
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$LOCALIZE[391] :</label>
@@ -239,7 +239,7 @@
 						<posy>60</posy>
 						<height>20</height>
 						<label>$INFO[Window(Weather).Property(Day1.LowTemp)]</label>
-						<font>Shade_16</font>
+						<font>Simplicity_16</font>
 						<align>left</align>
 						<aligny>center</aligny>
 						<textcolor>white</textcolor>
@@ -253,7 +253,7 @@
 						<width>120</width>
 						<height>20</height>
 						<info>Window(Weather).Property(Day1.Outlook)</info>
-						<font>Shade_16</font>
+						<font>Simplicity_16</font>
 						<align>center</align>
 						<aligny>center</aligny>
 						<textcolor>white</textcolor>
@@ -270,7 +270,7 @@
 						<posy>-67</posy>
 						<width>340</width>
 						<height>35</height>
-						<font>Shade_18_Bold</font>
+						<font>Simplicity_18_Bold</font>
 						<info>Window(Weather).Property(Day2.Title)</info>
 						<align>center</align>
 						<aligny>center</aligny>
@@ -291,7 +291,7 @@
 						<posx>650</posx>
 						<posy>60</posy>
 						<height>20</height>
-						<font>Shade_16</font>
+						<font>Simplicity_16</font>
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$LOCALIZE[393] :</label>
@@ -305,7 +305,7 @@
 						<posy>60</posy>
 						<height>20</height>
 						<label>$INFO[Window(Weather).Property(Day2.HighTemp)]</label>
-						<font>Shade_16</font>
+						<font>Simplicity_16</font>
 						<align>left</align>
 						<aligny>center</aligny>
 						<textcolor>white</textcolor>
@@ -317,7 +317,7 @@
 						<posx>720</posx>
 						<posy>60</posy>
 						<height>20</height>
-						<font>Shade_16</font>
+						<font>Simplicity_16</font>
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$LOCALIZE[391] :</label>
@@ -331,7 +331,7 @@
 						<posy>60</posy>
 						<height>20</height>
 						<label>$INFO[Window(Weather).Property(Day2.LowTemp)]</label>
-						<font>Shade_16</font>
+						<font>Simplicity_16</font>
 						<align>left</align>
 						<aligny>center</aligny>
 						<textcolor>white</textcolor>
@@ -345,7 +345,7 @@
 						<width>120</width>
 						<height>20</height>
 						<info>Window(Weather).Property(Day2.Outlook)</info>
-						<font>Shade_16</font>
+						<font>Simplicity_16</font>
 						<align>center</align>
 						<aligny>center</aligny>
 						<textcolor>white</textcolor>
@@ -362,7 +362,7 @@
 						<posy>-67</posy>
 						<width>340</width>
 						<height>35</height>
-						<font>Shade_18_Bold</font>
+						<font>Simplicity_18_Bold</font>
 						<info>Window(Weather).Property(Day3.Title)</info>
 						<align>center</align>
 						<aligny>center</aligny>
@@ -383,7 +383,7 @@
 						<posx>820</posx>
 						<posy>60</posy>
 						<height>20</height>
-						<font>Shade_16</font>
+						<font>Simplicity_16</font>
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$LOCALIZE[393] :</label>
@@ -397,7 +397,7 @@
 						<posy>60</posy>
 						<height>20</height>
 						<label>$INFO[Window(Weather).Property(Day3.HighTemp)]</label>
-						<font>Shade_16</font>
+						<font>Simplicity_16</font>
 						<align>left</align>
 						<aligny>center</aligny>
 						<textcolor>white</textcolor>
@@ -409,7 +409,7 @@
 						<posx>890</posx>
 						<posy>60</posy>
 						<height>20</height>
-						<font>Shade_16</font>
+						<font>Simplicity_16</font>
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$LOCALIZE[391] :</label>
@@ -423,7 +423,7 @@
 						<posy>60</posy>
 						<height>20</height>
 						<label>$INFO[Window(Weather).Property(Day3.LowTemp)]</label>
-						<font>Shade_16</font>
+						<font>Simplicity_16</font>
 						<align>left</align>
 						<aligny>center</aligny>
 						<textcolor>white</textcolor>
@@ -437,7 +437,7 @@
 						<width>120</width>
 						<height>20</height>
 						<info>Window(Weather).Property(Day3.Outlook)</info>
-						<font>Shade_16</font>
+						<font>Simplicity_16</font>
 						<align>center</align>
 						<aligny>center</aligny>
 						<textcolor>white</textcolor>
@@ -458,7 +458,7 @@
 			<label>Files</label>
 			<align>left</align>
 			<aligny>center</aligny>
-			<font>Shade_50</font>
+			<font>Simplicity_50</font>
 			<textcolor>white</textcolor>
 			<shadowcolor>black</shadowcolor>
 			<include>TopSlide</include>
@@ -472,7 +472,7 @@
 			<label>by $INFO[Container().ViewMode], $INFO[ListItem.TrackNumber] | $INFO[Container().NumItems]</label>
 			<align>left</align>
 			<aligny>center</aligny>
-			<font>Shade_20</font>
+			<font>Simplicity_20</font>
 			<textcolor>grey2</textcolor>
 			<include>TopSlide</include>
 		</control>	
@@ -490,7 +490,7 @@
 				<label>Music Videos</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_50</font>
+				<font>Simplicity_50</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<include>TopSlide</include>
@@ -504,7 +504,7 @@
 				<label>by $INFO[Container.SortMethod], $INFO[Container().NumItems] items</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_20</font>
+				<font>Simplicity_20</font>
 				<textcolor>grey2</textcolor>
 				<include>TopSlide</include>
 			</control>	
@@ -576,7 +576,7 @@
 				<label>Files</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_50</font>
+				<font>Simplicity_50</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<include>TopSlide</include>
@@ -590,7 +590,7 @@
 				<label>by $INFO[Container.SortMethod], $INFO[Container().NumItems] items</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_20</font>
+				<font>Simplicity_20</font>
 				<textcolor>grey2</textcolor>
 				<include>TopSlide</include>
 			</control>	
@@ -608,7 +608,7 @@
 				<label>Trailers</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_50</font>
+				<font>Simplicity_50</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<include>TopSlide</include>
@@ -622,7 +622,7 @@
 				<label>by $INFO[Container.SortMethod], $INFO[Container().NumItems] items</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_20</font>
+				<font>Simplicity_20</font>
 				<textcolor>grey2</textcolor>
 				<include>TopSlide</include>
 			</control>	
@@ -640,7 +640,7 @@
 				<label>Addons</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_50</font>
+				<font>Simplicity_50</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<include>TopSlide</include>
@@ -654,7 +654,7 @@
 				<label>by $INFO[Container.SortMethod], $INFO[Container().NumItems] items</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_20</font>
+				<font>Simplicity_20</font>
 				<textcolor>grey2</textcolor>
 				<include>TopSlide</include>
 			</control>	
@@ -672,7 +672,7 @@
 				<label>Genres</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_50</font>
+				<font>Simplicity_50</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<include>TopSlide</include>
@@ -686,7 +686,7 @@
 				<label>by $INFO[Container.SortMethod], $INFO[Container().NumItems] items</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_20</font>
+				<font>Simplicity_20</font>
 				<textcolor>grey2</textcolor>
 				<include>TopSlide</include>
 			</control>	
@@ -704,7 +704,7 @@
 				<label>Pictures</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_50</font>
+				<font>Simplicity_50</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<include>TopSlide</include>
@@ -718,7 +718,7 @@
 				<label>Browsing: $INFO[Container.FolderName]</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_20</font>
+				<font>Simplicity_20</font>
 				<textcolor>grey2</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<include>TopSlide</include>
@@ -732,7 +732,7 @@
 				<label>by $INFO[Container.SortMethod], $INFO[Container().NumItems] items</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_20</font>
+				<font>Simplicity_20</font>
 				<textcolor>grey2</textcolor>
 				<include>TopSlide</include>
 			</control>	
@@ -750,7 +750,7 @@
 				<label>Movies</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_50</font>
+				<font>Simplicity_50</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<visible>Container.Content(Movies)</visible>
@@ -765,7 +765,7 @@
 				<label>by $INFO[Container.SortMethod], $INFO[Container().NumItems] items</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_20</font>
+				<font>Simplicity_20</font>
 				<textcolor>grey2</textcolor>
 				<visible>Container.Content(Movies)</visible>
 				<include>TopSlide</include>
@@ -784,7 +784,7 @@
 				<label>TV Shows</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_50</font>
+				<font>Simplicity_50</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<visible>Container.Content(TVShows)</visible>
@@ -799,7 +799,7 @@
 				<label>by $INFO[Container.SortMethod], $INFO[Container().NumItems] items</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_20</font>
+				<font>Simplicity_20</font>
 				<textcolor>grey2</textcolor>
 				<visible>Container.Content(TVShows)</visible>
 				<include>TopSlide</include>
@@ -818,7 +818,7 @@
 				<label>$INFO[ListItem.TVShowTitle]</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_50</font>
+				<font>Simplicity_50</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<include>TopSlide</include>
@@ -833,7 +833,7 @@
 				<label>$INFO[Container().NumItems] items</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_20</font>
+				<font>Simplicity_20</font>
 				<textcolor>grey2</textcolor>
 				<include>TopSlide</include>
 				<visible>Container.Content(Seasons)</visible>
@@ -852,7 +852,7 @@
 				<label>$INFO[ListItem.TVShowTitle]: Season $INFO[ListItem.Season]</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_50</font>
+				<font>Simplicity_50</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<include>TopSlide</include>
@@ -866,7 +866,7 @@
 				<label>$INFO[Container().NumItems] episodes</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_20</font>
+				<font>Simplicity_20</font>
 				<textcolor>grey2</textcolor>
 				<include>TopSlide</include>
 			</control>	
@@ -884,7 +884,7 @@
 				<label>Albums</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_50</font>
+				<font>Simplicity_50</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<visible>Container.Content(Albums)</visible>
@@ -899,7 +899,7 @@
 				<label>by $INFO[Container.SortMethod], $INFO[Container().NumItems] items</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_20</font>
+				<font>Simplicity_20</font>
 				<textcolor>grey2</textcolor>
 				<visible>Container.Content(Albums)</visible>
 				<include>TopSlide</include>
@@ -918,7 +918,7 @@
 				<label>Songs</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_50</font>
+				<font>Simplicity_50</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<visible>Container.Content(Songs)</visible>
@@ -933,7 +933,7 @@
 				<label>by $INFO[Container.SortMethod], $INFO[Container().NumItems] items</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_20</font>
+				<font>Simplicity_20</font>
 				<textcolor>grey2</textcolor>
 				<visible>Container.Content(Songs)</visible>
 				<include>TopSlide</include>
@@ -952,7 +952,7 @@
 				<label>Artists</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_50</font>
+				<font>Simplicity_50</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<visible>Container.Content(Artists)</visible>
@@ -967,7 +967,7 @@
 				<label>by $INFO[Container.SortMethod], $INFO[Container().NumItems] items</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_20</font>
+				<font>Simplicity_20</font>
 				<textcolor>grey2</textcolor>
 				<visible>Container.Content(Artists)</visible>
 				<include>TopSlide</include>
@@ -987,7 +987,7 @@
 				<label>Actors</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_50</font>
+				<font>Simplicity_50</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<visible>Container.Content(Actors)</visible>
@@ -1002,7 +1002,7 @@
 				<label>by $INFO[Container.SortMethod], $INFO[Container().NumItems] items</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_20</font>
+				<font>Simplicity_20</font>
 				<textcolor>grey2</textcolor>
 				<visible>Container.Content(Actors)</visible>
 				<include>TopSlide</include>
@@ -1031,7 +1031,7 @@
 				<label>View Options</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_20</font>
+				<font>Simplicity_20</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 			</control>	
@@ -1057,7 +1057,7 @@
 				<label>View Options</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_20</font>
+				<font>Simplicity_20</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 			</control>	
@@ -1083,7 +1083,7 @@
 				<label>TV Guide</label>
 				<align>right</align>
 				<aligny>center</aligny>
-				<font>Shade_20</font>
+				<font>Simplicity_20</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 			</control>	
@@ -1109,7 +1109,7 @@
 				<label>TV Guide</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_20</font>
+				<font>Simplicity_20</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 			</control>	
@@ -1135,7 +1135,7 @@
 				<label>Recent Items</label>
 				<align>right</align>
 				<aligny>center</aligny>
-				<font>Shade_20</font>
+				<font>Simplicity_20</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 			</control>	
@@ -1161,7 +1161,7 @@
 				<label>Recent Items</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_20</font>
+				<font>Simplicity_20</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 			</control>	
@@ -1179,7 +1179,7 @@
 			<label>Page $INFO[Container().CurrentPage]$INFO[Container().NumPages,/]</label>
 			<align>right</align>
 			<aligny>center</aligny>
-			<font>Shade_20</font>
+			<font>Simplicity_20</font>
 			<textcolor>white</textcolor>
 			<shadowcolor>black</shadowcolor>
 		</control>
@@ -1369,7 +1369,7 @@
 		<width>220</width>
 		<textoffsetx>10</textoffsetx>
 		<aligny>center</aligny>
-		<font>Shade_15_Bold</font>
+		<font>Simplicity_15_Bold</font>
 		<textcolor>grey2</textcolor>
 		<focusedcolor>white</focusedcolor>
 		<radioposx>150</radioposx>
@@ -1386,7 +1386,7 @@
 		<width>220</width>
 		<textoffsetx>10</textoffsetx>
 		<aligny>center</aligny>
-		<font>Shade_15_Bold</font>
+		<font>Simplicity_15_Bold</font>
 		<textcolor>grey2</textcolor>
 		<focusedcolor>white</focusedcolor>
 		<texturefocus border="0,2,0,2">simplicity/view-options-button-extra.png</texturefocus>
@@ -1398,7 +1398,7 @@
 		<width>190</width>
 		<textoffsetx>10</textoffsetx>
 		<aligny>center</aligny>
-		<font>Shade_15_Bold</font>
+		<font>Simplicity_15_Bold</font>
 		<textcolor>grey3</textcolor>
 		<focusedcolor>white</focusedcolor>
 		<texturefocus border="5">simplicity/view-options-button.png</texturefocus>
@@ -1410,7 +1410,7 @@
 		<width>370</width>
 		<textoffsetx>10</textoffsetx>
 		<aligny>center</aligny>
-		<font>Shade_15_Bold</font>
+		<font>Simplicity_15_Bold</font>
 		<textcolor>grey2</textcolor>
 		<focusedcolor>white</focusedcolor>
 		<texturefocus border="5">simplicity/view-options-button.png</texturefocus>
@@ -1422,7 +1422,7 @@
 		<width>180</width>
 		<textoffsetx>10</textoffsetx>
 		<aligny>center</aligny>
-		<font>Shade_15_Bold</font>
+		<font>Simplicity_15_Bold</font>
 		<textcolor>grey3</textcolor>
 		<focusedcolor>white</focusedcolor>
 		<texturefocus border="5">simplicity/view-options-button.png</texturefocus>
@@ -1433,7 +1433,7 @@
 		<height>40</height>
 		<width>180</width>
 		<textoffsetx>10</textoffsetx>
-		<font>Shade_20_Bold_title</font>
+		<font>Simplicity_20_Bold_title</font>
 		<textcolor>black</textcolor>
 		<focusedcolor>black</focusedcolor>
 		<shadowcolor>grey2</shadowcolor>
@@ -1458,7 +1458,7 @@
 		<width min="50" max="250">auto</width>
 		<textoffsetx>0</textoffsetx>
 		<aligny>center</aligny>
-		<font>Shade_26_Bold</font>
+		<font>Simplicity_26_Bold</font>
 		<texturefocus>-</texturefocus>
 		<texturenofocus>-</texturenofocus>
 		<textcolor>grey3</textcolor>
@@ -1469,7 +1469,7 @@
 		<height>40</height>
 		<width>170</width>
 		<textoffsetx>20</textoffsetx>
-		<font>Shade_20_Bold_title</font>
+		<font>Simplicity_20_Bold_title</font>
 		<textcolor>black</textcolor>
 		<focusedcolor>black</focusedcolor>
 		<shadowcolor>grey2</shadowcolor>
@@ -1506,7 +1506,7 @@
 			<label>[B]$INFO[MusicPlayer.Artist][/B]</label>
 			<align>left</align>
 			<aligny>center</aligny>
-			<font>Shade_20</font>
+			<font>Simplicity_20</font>
 			<textcolor>grey2</textcolor>
 			<shadowcolor>black</shadowcolor>
 		</control>
@@ -1519,7 +1519,7 @@
 			<label>$INFO[MusicPlayer.Title]</label>
 			<align>left</align>
 			<aligny>center</aligny>
-			<font>Shade_24_Bold</font>
+			<font>Simplicity_24_Bold</font>
 			<textcolor>white</textcolor>
 			<shadowcolor>black</shadowcolor>
 			<scrollout>false</scrollout>
@@ -1534,7 +1534,7 @@
 			<label>$INFO[MusicPlayer.Album]$INFO[musicplayer.discnumber, - $LOCALIZE[427]:]</label>
 			<align>left</align>
 			<aligny>center</aligny>
-			<font>Shade_18</font>
+			<font>Simplicity_18</font>
 			<textcolor>white</textcolor>
 			<shadowcolor>black</shadowcolor>
 		</control>
@@ -1547,7 +1547,7 @@
 			<label>$INFO[MusicPlayer.Time]$INFO[MusicPlayer.Duration, / ]</label>
 			<align>left</align>
 			<aligny>center</aligny>
-			<font>Shade_18</font>
+			<font>Simplicity_18</font>
 			<textcolor>white</textcolor>
 			<shadowcolor>black</shadowcolor>
 		</control>
@@ -1560,7 +1560,7 @@
 			<label>[COLOR=white]$LOCALIZE[209] :[/COLOR] $INFO[MusicPlayer.offset(1).Title]</label>
 			<align>right</align>
 			<aligny>center</aligny>
-			<font>Shade_18</font>
+			<font>Simplicity_18</font>
 			<textcolor>grey</textcolor>
 			<shadowcolor>black</shadowcolor>
 		</control>
@@ -1593,7 +1593,7 @@
 			<label>[B]$INFO[VideoPlayer.Studio][/B]</label>
 			<align>left</align>
 			<aligny>center</aligny>
-			<font>Shade_20</font>
+			<font>Simplicity_20</font>
 			<textcolor>grey2</textcolor>
 			<shadowcolor>black</shadowcolor>
 			<visible>!videoplayer.content(episodes) + !videoplayer.content(musicvideos)</visible>
@@ -1607,7 +1607,7 @@
 			<label>[B]$INFO[VideoPlayer.tvshowtitle][/B]</label>
 			<align>left</align>
 			<aligny>center</aligny>
-			<font>Shade_20</font>
+			<font>Simplicity_20</font>
 			<textcolor>white</textcolor>
 			<shadowcolor>black</shadowcolor>
 			<visible>videoplayer.content(episodes)</visible>
@@ -1621,7 +1621,7 @@
 			<label>[B]$INFO[VideoPlayer.Artist][/B]</label>
 			<align>left</align>
 			<aligny>center</aligny>
-			<font>Shade_20</font>
+			<font>Simplicity_20</font>
 			<textcolor>white</textcolor>
 			<shadowcolor>black</shadowcolor>
 			<visible>videoplayer.content(musicvideos)</visible>
@@ -1637,7 +1637,7 @@
 			<label>$INFO[VideoPlayer.Title]</label>
 			<align>left</align>
 			<aligny>center</aligny>
-			<font>Shade_24_Bold</font>
+			<font>Simplicity_24_Bold</font>
 			<textcolor>white</textcolor>
 			<shadowcolor>black</shadowcolor>
 			<scrollout>false</scrollout>
@@ -1652,7 +1652,7 @@
 			<label>$INFO[VideoPlayer.Genre]</label>
 			<align>left</align>
 			<aligny>center</aligny>
-			<font>Shade_18</font>
+			<font>Simplicity_18</font>
 			<textcolor>white</textcolor>
 			<shadowcolor>black</shadowcolor>
 			<visible>!videoplayer.content(episodes) + !videoplayer.content(musicvideos)</visible>
@@ -1665,7 +1665,7 @@
 			<label>$INFO[VideoPlayer.Album]</label>
 			<align>left</align>
 			<aligny>center</aligny>
-			<font>Shade_18</font>
+			<font>Simplicity_18</font>
 			<textcolor>white</textcolor>
 			<shadowcolor>black</shadowcolor>
 			<visible>videoplayer.content(musicvideos)</visible>
@@ -1679,7 +1679,7 @@
 			<label>$LOCALIZE[20373] $INFO[VideoPlayer.Season] - $LOCALIZE[20359] $INFO[VideoPlayer.episode]</label>
 			<align>left</align>
 			<aligny>center</aligny>
-			<font>Shade_18</font>
+			<font>Simplicity_18</font>
 			<textcolor>white</textcolor>
 			<shadowcolor>black</shadowcolor>
 			<visible>videoplayer.content(episodes)</visible>
@@ -1693,7 +1693,7 @@
 			<label>$INFO[VideoPlayer.Time]$INFO[VideoPlayer.Duration, / ]</label>
 			<align>left</align>
 			<aligny>center</aligny>
-			<font>Shade_18</font>
+			<font>Simplicity_18</font>
 			<textcolor>white</textcolor>
 			<shadowcolor>black</shadowcolor>
 		</control>
@@ -1916,7 +1916,7 @@
 				<label>Now Playing</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_35_UltraThin</font>
+				<font>Simplicity_35_UltraThin</font>
 				<textcolor>white</textcolor>
 			</control>	
 			<control type="button" id="608">
@@ -1951,7 +1951,7 @@
 				<label>$INFO[MusicPlayer.Title]</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_18</font>
+				<font>Simplicity_18</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<scrollout>false</scrollout>
@@ -1965,7 +1965,7 @@
 				<label>$INFO[MusicPlayer.Artist]$INFO[MusicPlayer.Album, | ]</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_16</font>
+				<font>Simplicity_16</font>
 				<textcolor>grey2</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<scrollout>false</scrollout>
@@ -1986,7 +1986,7 @@
 				<label>Now Playing</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_35_UltraThin</font>
+				<font>Simplicity_35_UltraThin</font>
 				<textcolor>white</textcolor>
 			</control>	
 			<control type="button" id="608">
@@ -2017,7 +2017,7 @@
 				<label>$INFO[VideoPlayer.Title]</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_18</font>
+				<font>Simplicity_18</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<scrollout>false</scrollout>
@@ -2031,7 +2031,7 @@
 				<label>$INFO[VideoPlayer.TVShowTitle,, - ]$INFO[VideoPlayer.Season,,x]$INFO[VideoPlayer.Episode]</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_16</font>
+				<font>Simplicity_16</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<scrollout>false</scrollout>
@@ -2046,7 +2046,7 @@
 				<label>$INFO[VideoPlayer.Year]$INFO[VideoPlayer.Director, | ]$INFO[VideoPlayer.Genre, | ]</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_16</font>
+				<font>Simplicity_16</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<scrollout>false</scrollout>
@@ -2086,7 +2086,7 @@
 				<label>Now Playing</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_26</font>
+				<font>Simplicity_26</font>
 				<textcolor>white</textcolor>
 			</control>	
 			<control type="image">
@@ -2114,7 +2114,7 @@
 				<label>$INFO[MusicPlayer.Title]</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_20</font>
+				<font>Simplicity_20</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<scrollout>false</scrollout>
@@ -2128,7 +2128,7 @@
 				<label>$INFO[MusicPlayer.Artist]$INFO[MusicPlayer.Album, - ]</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_20</font>
+				<font>Simplicity_20</font>
 				<textcolor>grey2</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<scrollout>false</scrollout>
@@ -2142,7 +2142,7 @@
 				<label>$INFO[MusicPlayer.TimeRemaining]</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_20</font>
+				<font>Simplicity_20</font>
 				<textcolor>grey2</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<scrollout>false</scrollout>
@@ -2199,7 +2199,7 @@
 				<label>$INFO[VideoPlayer.Title]</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_20</font>
+				<font>Simplicity_20</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<scrollout>false</scrollout>
@@ -2214,7 +2214,7 @@
 				<label>$INFO[VideoPlayer.Year]</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_16</font>
+				<font>Simplicity_16</font>
 				<textcolor>grey2</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<scrollout>false</scrollout>
@@ -2229,7 +2229,7 @@
 				<label>"$INFO[VideoPlayer.TVShowTitle]"</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_20</font>
+				<font>Simplicity_20</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<scrollout>false</scrollout>
@@ -2244,7 +2244,7 @@
 				<label>$INFO[VideoPlayer.Title]</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Shade_16</font>
+				<font>Simplicity_16</font>
 				<textcolor>grey2</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<scrollout>false</scrollout>
@@ -2297,7 +2297,7 @@
 				<label>$INFO[MusicPlayer.Title]</label>
 				<align>right</align>
 				<aligny>center</aligny>
-				<font>Shade_20_Bold</font>
+				<font>Simplicity_20_Bold</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<scrollout>false</scrollout>
@@ -2311,7 +2311,7 @@
 				<label>$INFO[MusicPlayer.Artist]$INFO[MusicPlayer.Album, | ]</label>
 				<align>right</align>
 				<aligny>center</aligny>
-				<font>Shade_18_Bold</font>
+				<font>Simplicity_18_Bold</font>
 				<textcolor>grey2</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<scrollout>false</scrollout>
@@ -2342,7 +2342,7 @@
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.SortLetter]</label>
 				<textcolor>white</textcolor>
-				<font>Shade_40</font>
+				<font>Simplicity_40</font>
 			</control>
 		</control>
 	</include>
@@ -2367,7 +2367,7 @@
 			<align>left</align>
 			<aligny>center</aligny>
 			<colordiffuse>80FFFFFF</colordiffuse>
-			<font>Shade_18</font>
+			<font>Simplicity_18</font>
 			<textcolor>white</textcolor>
 			<shadowcolor>black</shadowcolor>
 			<label>$INFO[System.Time]</label>				
@@ -2441,7 +2441,7 @@
 			<align>right</align>
 			<aligny>center</aligny>
 			<colordiffuse>80FFFFFF</colordiffuse>
-			<font>Shade_40_UltraThin</font>
+			<font>Simplicity_40_UltraThin</font>
 			<textcolor>grey2</textcolor>
 			<label>$INFO[Weather.Temperature]</label>
 		</control>
@@ -2606,7 +2606,7 @@
 			<height>51</height>
 			<info>system.time</info>
 			<colordiffuse>80FFFFFF</colordiffuse>
-			<font>Shade_18</font>
+			<font>Simplicity_18</font>
 			<textcolor>white</textcolor>
 			<aligny>center</aligny>
 		</control>

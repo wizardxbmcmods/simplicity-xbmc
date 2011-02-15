@@ -48,7 +48,7 @@
 				<label>Move</label>
 				<align>right</align>
 				<aligny>center</aligny>
-				<font>Shade_24</font>
+				<font>Simplicity_24</font>
 				<textcolor>white</textcolor>
 			</control>
 			<control type="group">
@@ -93,7 +93,7 @@
 							<posy>0</posy>
 							<width>346</width>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<align>left</align>
 							<aligny>center</aligny>
 							<selectedcolor>white</selectedcolor>
@@ -122,7 +122,7 @@
 							<posy>0</posy>
 							<width>346</width>
 							<height>40</height>
-							<font>Shade_20</font>
+							<font>Simplicity_20</font>
 							<align>left</align>
 							<aligny>center</aligny>
 							<selectedcolor>white</selectedcolor>
