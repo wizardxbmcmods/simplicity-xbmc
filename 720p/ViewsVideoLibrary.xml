@@ -2404,7 +2404,7 @@
 						<aligny>center</aligny>
 						<aspectratio>stretch</aspectratio>
 						<fadetime>200</fadetime>
-						<texture background="true">$INFO[ListItem.Path,,logo.png]</texture>
+						<texture background="true" fallback="logo-fallback.png">$INFO[ListItem.Path,,logo.png]</texture>
 					</control>			
 				</focusedlayout>
 			</control>
@@ -2492,10 +2492,19 @@
 						<control type="largeimage">
 							<posx>0</posx>
 							<posy>0</posy> 
+							<width>268</width>
+							<height>133</height>
+							<aligny>center</aligny>
+							<texture background="true">simplicity/landscape-slide-shadow.png</texture>
+							<aspectratio>stretch</aspectratio>
+						</control>
+						<control type="largeimage">
+							<posx>0</posx>
+							<posy>0</posy> 
 							<width>260</width>
 							<height>125</height>
 							<aligny>center</aligny>
-							<texture diffuse="simplicity/landscape-slide-diffuse.png" background="true">$INFO[ListItem.Path,,landscape.jpg]</texture>
+							<texture diffuse="simplicity/landscape-slide-diffuse.png" background="true" fallback="nothumb.png">$INFO[ListItem.Path,,landscape.jpg]</texture>
 							<aspectratio>stretch</aspectratio>
 						</control>
 						<control type="largeimage">
@@ -2512,10 +2521,20 @@
 						<control type="largeimage">
 							<posx>40</posx>
 							<posy>0</posy> 
+							<width>268</width>
+							<height>133</height>
+							<aligny>center</aligny>
+							<texture background="true">simplicity/landscape-slide-shadow.png</texture>
+							<animation effect="zoom" end="140" center="auto" time="200">Focus</animation> 
+							<aspectratio>stretch</aspectratio>
+						</control>
+						<control type="largeimage">
+							<posx>40</posx>
+							<posy>0</posy> 
 							<width>260</width>
 							<height>125</height>
 							<aligny>center</aligny>
-							<texture diffuse="simplicity/landscape-slide-diffuse.png" background="true">$INFO[ListItem.Path,,landscape.jpg]</texture>
+							<texture diffuse="simplicity/landscape-slide-diffuse.png" background="true" fallback="nothumb.png">$INFO[ListItem.Path,,landscape.jpg]</texture>
 							<animation effect="zoom" end="140" center="auto" time="200">Focus</animation> 
 							<aspectratio>stretch</aspectratio>
 						</control>

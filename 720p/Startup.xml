@@ -36,15 +36,15 @@
 
 
 
-		<control type="button" id="10">
-            <description>trigger</description>
-            <onfocus>ReplaceWindow(Home)</onfocus>
-            <onfocus>XBMC.RunScript(script.randomitems,limit=10&amp;unplayed=True&amp;random=True)</onfocus>
-			<onfocus>XBMC.RunScript(script.tv.show.next.aired,silent=true&alarm=99)</onfocus>
-			<onfocus>SetFocus(11)</onfocus>
-            <texturenofocus>-</texturenofocus>
-            <texturefocus>-</texturefocus>
-	    </control>  
-		<include>CommonVideoBackground</include>
-	</controls>
+	<control type="button" id="10">
+		<description>trigger</description>
+		<onfocus>ReplaceWindow(Home)</onfocus>
+		<onfocus>XBMC.RunScript(script.randomitems,limit=10&amp;unplayed=True&amp;random=True)</onfocus>
+		<onfocus>XBMC.RunScript(script.tv.show.next.aired,silent=true&amp;alarm=99)</onfocus>
+		<onfocus>SetFocus(11)</onfocus>
+		<texturenofocus>-</texturenofocus>
+		<texturefocus>-</texturefocus>
+	</control>  
+	<include>CommonVideoBackground</include>
+</controls>
 </window>
