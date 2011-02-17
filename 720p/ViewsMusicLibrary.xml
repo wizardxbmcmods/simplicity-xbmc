@@ -74,7 +74,7 @@
 								<height>169</height>
 								<aligny>center</aligny>
 								<texture>simplicity/album-slide-shadow.png</texture>
-								<animation effect="zoom" end="160" center="auto" time="200">Focus</animation> 
+								<animation  reversible="false" effect="zoom" end="160" center="auto" time="200">Focus</animation> 
 							</control>
 							<control type="largeimage">
 								<posx>50</posx>
@@ -83,7 +83,7 @@
 								<height>160</height>
 								<aligny>center</aligny>
 								<texture>$INFO[ListItem.Icon]</texture>
-								<animation effect="zoom" end="160" center="auto" time="200">Focus</animation> 
+								<animation  reversible="false" effect="zoom" end="160" center="auto" time="200">Focus</animation> 
 								<aspectratio>stretch</aspectratio>
 							</control>
 							<control type="largeimage">
@@ -93,7 +93,7 @@
 								<height>164</height>
 								<aligny>center</aligny>
 								<texture diffuse="simplicity/poster-slide-fanart-diffuse.png" background="true">simplicity/poster-border5.png</texture>
-								<animation effect="zoom" end="160" center="auto" time="200">Focus</animation> 
+								<animation  reversible="false" effect="zoom" end="160" center="auto" time="200">Focus</animation> 
 								<aspectratio>stretch</aspectratio>
 							</control>
 						</focusedlayout>

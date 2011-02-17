@@ -575,7 +575,7 @@
 								<height>166</height>
 								<aligny>center</aligny>
 								<texture diffuse="simplicity/fanart-slide-poster-diffuse.png" background="true">simplicity/poster-slide-poster-shadow.png</texture>
-							<animation effect="zoom" end="160" center="auto" time="200">Focus</animation> 
+							<animation reversible="false" effect="zoom" end="160" center="auto" time="300">Focus</animation> 
 								<aspectratio>stretch</aspectratio>
 							</control>
 							<control type="largeimage">
@@ -585,7 +585,7 @@
 								<height>160</height>
 								<aligny>center</aligny>
 								<texture diffuse="simplicity/fanart-slide-poster-diffuse.png" background="true">$INFO[ListItem.Icon]</texture>
-							<animation effect="zoom" end="160" center="auto" time="200">Focus</animation> 
+							<animation reversible="false" effect="zoom" end="160" center="auto" time="300">Focus</animation> 
 								<aspectratio>stretch</aspectratio>
 							</control>
 							<control type="largeimage">
@@ -595,7 +595,7 @@
 								<height>164</height>
 								<aligny>center</aligny>
 								<texture diffuse="simplicity/fanart-slide-poster-diffuse.png" background="true">simplicity/poster-border5.png</texture>
-							<animation effect="zoom" end="160" center="auto" time="200">Focus</animation> 
+							<animation reversible="false" effect="zoom" end="160" center="auto" time="300">Focus</animation> 
 								<aspectratio>stretch</aspectratio>
 							</control>
 							<control type="image">
@@ -604,7 +604,7 @@
 								<width>48</width>
 								<height>48</height>
 								<texture diffuse="simplicity/fanart-slide-poster-diffuse.png">$INFO[ListItem.Overlay]</texture>
-							<animation effect="fade" end="100" time="200" delay="200">Focus</animation> 
+							<animation effect="fade" end="100" time="200" delay="400">Focus</animation> 
 								<visible>![!Skin.HasSetting(EnableWatchedIconMovies) + Container.Content(Movies)]</visible>
 							</control>
 						</focusedlayout>
@@ -812,7 +812,7 @@
 					</control>
 					<control type="image">
 						<posx>268</posx>
-						<posy>33</posy>
+						<posy>32</posy>
 						<width>35</width>
 						<height>35</height>
 						<texture diffuse="simplicity/bannerdiffuse.png">$INFO[ListItem.Overlay]</texture>
@@ -834,7 +834,7 @@
 						<width>303</width>
 						<height>63</height>
 						<texture background="false" diffuse="simplicity/bannerdiffuse.png">simplicity/banner-shadow7.png</texture>
-						<animation effect="zoom" end="140" center="auto" time="200">Focus</animation> 
+						<animation reversible="false" effect="zoom" end="140" center="auto" time="200">Focus</animation> 
 					</control>
 					<control type="image">
 						<posx>60</posx>
@@ -843,7 +843,7 @@
 						<height>60</height>
 						<aspectratio scalediffuse="true">stretch</aspectratio>
 						<texture diffuse="simplicity/bannerdiffuse.png" background="true">$INFO[Listitem.Icon]</texture>
-						<animation effect="zoom" end="140" center="auto" time="200">Focus</animation> 
+						<animation reversible="false" effect="zoom" end="140" center="auto" time="200">Focus</animation> 
 					</control>
 					<control type="image">
 						<posx>60</posx>
@@ -852,16 +852,15 @@
 						<height>60</height>
 						<aspectratio scalediffuse="true">stretch</aspectratio>
 						<texture diffuse="simplicity/bannerdiffuse.png" background="true">simplicity/banner-gloss.png</texture>
-						<animation effect="zoom" end="140" center="auto" time="200">Focus</animation> 
+						<animation  reversible="false" effect="zoom" end="140" center="auto" time="200">Focus</animation> 
 					</control>
 					<control type="image">
-						<posx>383</posx>
-						<posy>40</posy>
-						<width>35</width>
-						<height>35</height>
+						<posx>382</posx>
+						<posy>37</posy>
+						<width>42</width>
+						<height>42</height>
 						<texture diffuse="simplicity/info-slide-poster-diffuse.png">$INFO[ListItem.Overlay]</texture>
-						<animation effect="zoom" end="140" center="auto" time="200">Focus</animation> 
-						<animation effect="fade" start="0" end="100" time="400" delay="200">Focus</animation>
+							<animation  reversible="false" effect="fade" end="100" time="200" delay="300">Focus</animation> 
 					</control>
 				</focusedlayout>
 			</control>
@@ -2196,14 +2195,14 @@
 						<align>left</align>
 						<texture>$INFO[Listitem.StarRating]</texture>
 					</control>
-					<!--<control type="image">
-						<posx>643</posx>
-						<posy>80</posy>
-						<width>70</width>
-						<height>70</height>
+					<control type="image">
+						<posx>1050</posx>
+						<posy>359</posy>
+						<width>42</width>
+						<height>42</height>
 						<fadetime>200</fadetime>
 						<texture>simplicity/banners/$INFO[ListItem.Overlay]</texture>
-					</control>-->
+					</control>
 					<control type="label">
 						<description>Title</description>
 						<posx>880</posx>

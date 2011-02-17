@@ -35,7 +35,7 @@
 				<posy>-90</posy>
 				<width>2</width>
 				<height>780</height>
-				<texture>separator2.png</texture>
+				<texture>simplicity/separator-white.png</texture>
 			</control>
 			<control type="image">
 				<description>separator image</description>
@@ -43,7 +43,7 @@
 				<posy>538</posy>
 				<width>650</width>
 				<height>1</height>
-				<texture>separator2.png</texture>
+				<texture>simplicity/separatorwhite_horizontal.png</texture>
 			</control>
 			<control type="label" id="20">
 				<description>header label</description>
@@ -84,7 +84,7 @@
 				<onright>30</onright>
 			</control>
 			<control type="scrollbar" id="30">
-				<posx>920</posx>
+				<posx>940</posx>
 				<posy>70</posy>
 				<width>25</width>
 				<height>470</height>
@@ -180,10 +180,10 @@
 				<description>Default Button</description>
 				<height>40</height>
 				<font>Simplicity_18</font>
-				<textcolor>grey2</textcolor>
-				<focusedcolor>white</focusedcolor>
-				<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
-				<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
+						<textcolor>white</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+						<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
 			</control>
 			<control type="radiobutton" id="4">
 				<description>Default RadioButton</description>
@@ -195,8 +195,8 @@
 				<radioheight>67</radioheight>
 				<textureradiofocus>simplicity/settings-radiobutton-on.png</textureradiofocus>
 				<textureradionofocus>simplicity/settings-radiobutton-off.png</textureradionofocus>
-				<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
-				<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
+						<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+						<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
 			</control>
 			<control type="spincontrolex" id="5">
 				<description>Default spincontrolex</description>
@@ -206,7 +206,7 @@
 				<spinwidth>43</spinwidth>
 				<spinheight>67</spinheight>
 				<textoffsetx>7</textoffsetx>
-				<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+					<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
 				<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
 				<texturebg>simplicity/button-focus-white.png</texturebg>
 				<textureup>simplicity/scroll-up-2.png</textureup>
@@ -221,7 +221,7 @@
 				<height>45</height>
 				<font>Simplicity_20</font>
 				<label>-</label>
-				<textcolor>blue</textcolor>
+				<textcolor>yellow</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<align>left</align>
 				<aligny>center</aligny>
