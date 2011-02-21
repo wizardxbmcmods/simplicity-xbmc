@@ -1,44 +1,17 @@
 <window id="115">
 	<defaultcontrol>1</defaultcontrol>
 	<visible>!Control.HasFocus(9000) + [VideoPlayer.IsFullscreen + [Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding]]</visible>
-	<animation effect="slide" start="0,120" end="0,0" time="100">WindowOpen</animation>
-	<animation effect="slide" start="0,0" end="0,120" time="100">WindowClose</animation>
+
 	<coordinates>
 		<system>1</system>
 		<posx>0</posx>
 		<posy>650</posy>
 	</coordinates>
 	<controls>
-		<control type="group">
-			<animation effect="slide" end="0,120" start="0,0" time="100" condition="[Window.IsVisible(Visualisation) + Player.ShowInfo]">Conditional</animation>
-			<control type="image">
-				<posx>137</posx>
-				<posy>-20</posy>
-				<width>1006</width>
-				<height>208</height>
-				<texture border="20,20,20,2">simplicity/osd-bg.png</texture>
-				<animation effect="slide" start="0,0" end="0,-60" time="300" tween="quadratic" easing="out" condition="Window.IsVisible(2901)">Conditional</animation>
-			</control>
-			<!--<control type="largeimage">
-				<posx>970</posx>
-				<posy>-125</posy> 
-				<width>310</width>
-				<height>145</height>
-				<texture>$INFO[Player.FolderPath]../clearart.png</texture>
-				<texture>$INFO[Player.FolderPath]/clearart.png</texture>
-				<aspectratio>keep</aspectratio>
-				<visible>VideoPlayer.Content(episodes) + Skin.HasSetting(TVClearart)</visible>
-			</control>
-			<control type="largeimage">
-				<posx>1020</posx>
-				<posy>-279</posy> 
-				<width>245</width>
-				<height>300</height>
-				<texture diffuse="simplicity/posterdiffuse.png">$INFO[VideoPlayer.Cover]</texture>
-				<aspectratio>keep</aspectratio>
-				<visible>VideoPlayer.Content(movies) + Skin.HasSetting(MovieClearart)</visible>
-			</control>-->
-			<control type="group">
+
+	<control type="group">
+	<animation effect="slide" start="0,-120" end="0,0" time="100">WindowOpen</animation>
+	<animation effect="slide" start="0,0" end="0,-120" time="100">WindowClose</animation>
 				<posx>0</posx>
 				<posy>-635</posy>
 				<control type="image">
@@ -115,6 +88,8 @@
 				</control>
 			</control>
 			<control type="group">
+	<animation effect="slide" start="0,-120" end="0,0" time="100">WindowOpen</animation>
+	<animation effect="slide" start="0,0" end="0,-120" time="100">WindowClose</animation>
 				<posx>90</posx>
 				<posy>-610</posy>
 				<control type="label">
@@ -127,6 +102,7 @@
 					<aligny>center</aligny>
 					<font>Simplicity_24</font>
 					<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
 					<label>31042</label>
 					<visible>Player.Playing + !Player.Seeking</visible>
 				</control>
@@ -140,6 +116,7 @@
 					<aligny>center</aligny>
 					<font>Simplicity_24</font>
 					<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
 					<label>31043</label>
 					<visible>[Player.Paused + !Player.Caching] + !Player.Seeking</visible>
 				</control>
@@ -153,6 +130,7 @@
 					<aligny>center</aligny>
 					<font>Simplicity_24</font>
 					<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
 					<label>$LOCALIZE[15107] $INFO[Player.CacheLevel]%</label>
 					<visible>[Player.Paused + Player.Caching] + !Player.Seeking</visible>
 				</control>
@@ -166,6 +144,7 @@
 					<aligny>center</aligny>
 					<font>Simplicity_24</font>
 					<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
 					<label>[UPPERCASE]$LOCALIZE[773][/UPPERCASE]</label>
 					<visible>Player.Seeking</visible>
 				</control>
@@ -179,6 +158,7 @@
 					<aligny>center</aligny>
 					<font>Simplicity_24</font>
 					<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
 					<label>31044</label>
 					<visible>Player.Forwarding</visible>
 				</control>
@@ -192,6 +172,7 @@
 					<aligny>center</aligny>
 					<font>Simplicity_24</font>
 					<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
 					<label> x 2</label>
 					<visible>Player.Forwarding2x</visible>
 				</control>
@@ -205,6 +186,7 @@
 					<aligny>center</aligny>
 					<font>Simplicity_24</font>
 					<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
 					<label> x 4</label>
 					<visible>Player.Forwarding4x</visible>
 				</control>
@@ -218,6 +200,7 @@
 					<aligny>center</aligny>
 					<font>Simplicity_24</font>
 					<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
 					<label> x 8</label>
 					<visible>Player.Forwarding8x</visible>
 				</control>
@@ -231,6 +214,7 @@
 					<aligny>center</aligny>
 					<font>Simplicity_24</font>
 					<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
 					<label> x 16</label>
 					<visible>Player.Forwarding16x</visible>
 				</control>
@@ -244,6 +228,7 @@
 					<aligny>center</aligny>
 					<font>Simplicity_24</font>
 					<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
 					<label> x 32</label>
 					<visible>Player.Forwarding32x</visible>
 				</control>
@@ -257,6 +242,7 @@
 					<aligny>center</aligny>
 					<font>Simplicity_24</font>
 					<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
 					<label>31045</label>
 					<visible>Player.Rewinding</visible>
 				</control>
@@ -270,6 +256,7 @@
 					<aligny>center</aligny>
 					<font>Simplicity_24</font>
 					<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
 					<label> x 2</label>
 					<visible>Player.Rewinding2x</visible>
 				</control>
@@ -283,6 +270,7 @@
 					<aligny>center</aligny>
 					<font>Simplicity_24</font>
 					<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
 					<label> x 4</label>
 					<visible>Player.Rewinding4x</visible>
 				</control>
@@ -296,6 +284,7 @@
 					<aligny>center</aligny>
 					<font>Simplicity_24</font>
 					<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
 					<label> x 8</label>
 					<visible>Player.Rewinding8x</visible>
 				</control>
@@ -309,6 +298,7 @@
 					<aligny>center</aligny>
 					<font>Simplicity_24</font>
 					<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
 					<label> x 16</label>
 					<visible>Player.Rewinding16x</visible>
 				</control>
@@ -322,10 +312,102 @@
 					<aligny>center</aligny>
 					<font>Simplicity_24</font>
 					<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
 					<label> x 32</label>
 					<visible>Player.Rewinding32x</visible>
 				</control>
 
+			<control type="group">
+				<visible>VideoPlayer.Content(episodes)</visible>
+	<animation effect="slide" start="0,-120" end="0,0" time="100">WindowOpen</animation>
+	<animation effect="slide" start="0,0" end="0,-120" time="100">WindowClose</animation>
+				<posx>60</posx>
+				<posy>-55</posy>
+					<control type="image">
+						<posx>787</posx>
+						<posy>37</posy>
+						<width>310</width>
+						<height>65</height>
+						<aspectratio>keep</aspectratio>
+						<texture>simplicity/logo-bg.png</texture>
+					</control>
+					<control type="image">
+						<posx>820</posx>
+						<posy>40</posy>
+						<width>147</width>
+						<height>57</height>
+						<aspectratio>keep</aspectratio>
+ 						<texture background="true">$INFO[Player.FolderPath]../logo.png</texture> 
+					</control>
+					<control type="image">
+						<posx>820</posx>
+						<posy>40</posy>
+						<width>147</width>
+						<height>57</height>
+						<aspectratio>keep</aspectratio>
+ 						<texture background="true">$INFO[Player.FolderPath]logo.png</texture> 
+					</control>
+<control type="group">
+			<!-- Chapter Count images -->
+			<control type="label" id="1">
+				<description>Chapter Pos No</description>
+				<posx>1070</posx>
+				<posy>47</posy>
+				<width>200</width>
+				<height>20</height>
+				<align>right</align>
+				<aligny>center</aligny>
+				<font>Simplicity_20</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<label>$LOCALIZE[21396]</label>
+			</control>
+			<control type="label" id="1">
+				<description>Chapter Pos No</description>
+				<posx>937</posx>
+				<posy>69</posy>
+				<width>200</width>
+				<height>20</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>Simplicity_18</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<label>$INFO[player.chapter]$INFO[player.chaptercount, / ]</label>
+				<visible>player.chaptercount</visible>
+			</control>
+			<control type="label" id="1">
+				<description>Chapter Pos No</description>
+				<posx>937</posx>
+				<posy>69</posy>
+				<width>200</width>
+				<height>20</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>Simplicity_18</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<label>01 / 01</label>
+				<visible>!player.chaptercount</visible>
+			</control>
+		</control>
+			</control>
+
+
+			</control>
+
+
+		<control type="group">
+	<animation effect="slide" start="0,120" end="0,0" time="100">WindowOpen</animation>
+	<animation effect="slide" start="0,0" end="0,120" time="100">WindowClose</animation>
+			<animation effect="slide" end="0,120" start="0,0" time="100" condition="[Window.IsVisible(Visualisation) + Player.ShowInfo]">Conditional</animation>
+			<control type="image">
+				<posx>137</posx>
+				<posy>-20</posy>
+				<width>1006</width>
+				<height>208</height>
+				<texture border="20,20,20,2">simplicity/osd-bg.png</texture>
+				<animation effect="slide" start="0,0" end="0,-60" time="300" tween="quadratic" easing="out" condition="Window.IsVisible(2901)">Conditional</animation>
 			</control>
 			<control type="group">
 				<animation effect="slide" start="0,0" end="0,-60" time="300" tween="quadratic" easing="out" condition="Window.IsVisible(2901)">Conditional</animation>
@@ -447,36 +529,6 @@
 				</control>
 			</control>
 		</control>
-		<control type="group">
-			<visible>!Skin.HasSetting(TVClearart)</visible>
-			<!-- Chapter Count images -->
-			<visible>player.chaptercount</visible>
-			<control type="label" id="1">
-				<description>Chapter Pos No</description>
-				<posx>1130</posx>
-				<posy>-24</posy>
-				<width>200</width>
-				<height>20</height>
-				<align>right</align>
-				<aligny>center</aligny>
-				<font>Simplicity_20_Bold</font>
-				<textcolor>white</textcolor>
-				<label>$LOCALIZE[21396]</label>
-				<visible>player.chaptercount</visible>
-			</control>
-			<control type="label" id="1">
-				<description>Chapter Pos No</description>
-				<posx>1130</posx>
-				<posy>-5</posy>
-				<width>200</width>
-				<height>20</height>
-				<align>right</align>
-				<aligny>center</aligny>
-				<font>Simplicity_18_Bold</font>
-				<textcolor>white</textcolor>
-				<label>$INFO[player.chapter]$INFO[player.chaptercount, / ]</label>
-				<visible>player.chaptercount</visible>
-			</control>
-		</control>
+		
 	</controls>
 </window>

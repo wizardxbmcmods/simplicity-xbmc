@@ -19,6 +19,40 @@
 				<posy>0</posy>
 				<width>1280</width>
 				<height>720</height>
+				<texture background="true">movies-fallback.png</texture>
+				<include>backgroundfade</include>
+				<fadetime>FanartCrossfadeTime</fadetime>
+				<visible>![Skin.HasSetting(VideoLibraryMovieFanart) | Control.IsVisible(513)]</visible>
+				<visible>Container.Content(Movies)+!Control.IsVisible(521)</visible>
+				<visible>Container.Content(Movies)+!Control.IsVisible(549)</visible>
+				<visible>Container.Content(Movies)+!Control.IsVisible(552)</visible>
+				<visible>Container.Content(Movies)+!Control.IsVisible(539)</visible>
+				<visible>Container.Content(Movies)+!Control.IsVisible(508)</visible>
+				<visible>Container.Content(Movies)+!Control.IsVisible(540)</visible>
+				<visible>!Skin.HasSetting(VideoLibraryMovieFanart) + IsEmpty(ListItem.Property(Fanart_Image)) + Container.Content(Movies)</visible>
+			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<texture background="true">tv-fallback.png</texture>
+				<include>backgroundfade</include>
+				<fadetime>FanartCrossfadeTime</fadetime>
+				<visible>![Skin.HasSetting(VideoLibraryMovieFanart) | Control.IsVisible(513)]</visible>
+				<visible>Container.Content(Movies)+!Control.IsVisible(521)</visible>
+				<visible>Container.Content(Movies)+!Control.IsVisible(549)</visible>
+				<visible>Container.Content(Movies)+!Control.IsVisible(552)</visible>
+				<visible>Container.Content(Movies)+!Control.IsVisible(539)</visible>
+				<visible>Container.Content(Movies)+!Control.IsVisible(508)</visible>
+				<visible>Container.Content(Movies)+!Control.IsVisible(540)</visible>
+				<visible>!Skin.HasSetting(VideoLibraryMovieFanart) + IsEmpty(ListItem.Property(Fanart_Image)) + Container.Content(TVShows)</visible>
+			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
 				<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
 				<include>backgroundfade</include>
 				<fadetime>FanartCrossfadeTime</fadetime>

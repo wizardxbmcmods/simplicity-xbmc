@@ -1,6 +1,6 @@
+[B]1.0.4[/B] 
 
-
-
+- Added logo to pause screen
 
 
 [B]1.0.3[/B] 

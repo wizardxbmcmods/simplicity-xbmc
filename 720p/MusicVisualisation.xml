@@ -4,6 +4,26 @@
 	<zorder>2</zorder>
 	<controls>
 
+
+		<control type="image">
+			<description>visualisation background</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture fallback="DefaultFanart.jpg">$INFO[MusicPlayer.Property(Fanart_Image)]</texture> 					
+		</control>
+
+
+		<control type="image">
+			<description>visualisation background</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1290</width>
+			<height>730</height>
+			<texture>simplicity/background-overlay.png</texture> 					
+		</control>
+
 		<control type="visualisation" id="2">
 			<description>visualisation</description>
 			<posx>0</posx>
@@ -11,58 +31,6 @@
 			<width>1280</width>
 			<height>720</height>
 		</control>
-
-		<control type="image">
-			<visible>!Skin.HasSetting(PandoraVis) + !Skin.HasSetting(NoVisualizationArt)</visible>
-			<description>visualisation background</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<colordiffuse>eeeeeeee</colordiffuse>
-			<visible>!Visualisation.Enabled + Player.HasAudio</visible>
-			<texture fallback="DefaultFanart.jpg">$INFO[MusicPlayer.Property(Fanart_Image)]</texture> 					
-		</control>
-
-
-		<control type="image">
-			<visible>!Skin.HasSetting(PandoraVis) + !Skin.HasSetting(NoVisualizationArt)</visible>
-			<description>visualisation background</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<colordiffuse>55555555</colordiffuse>					
-			<visible>Visualisation.Enabled + Player.HasAudio</visible>
-
-			<texture fallback="DefaultFanart.jpg">$INFO[MusicPlayer.Property(Fanart_Image)]</texture> >
-
-	</control>
-
-	<control type="image">
-		<visible>Skin.HasSetting(PandoraVis) + !Skin.HasSetting(NoVisualizationArt)</visible>
-		<description>visualisation background</description>
-		<posx>0</posx>
-		<posy>0</posy>
-		<width>1280</width>
-		<height>720</height>
-		<colordiffuse>eeeeeeee</colordiffuse>
-		<visible>!Visualisation.Enabled + Player.HasAudio</visible>
-		<texture>simplicity/pandorafanart.png</texture> >
-</control>
-
-<control type="image">
-		<visible>Skin.HasSetting(PandoraVis) + !Skin.HasSetting(NoVisualizationArt)</visible>
-	<description>visualisation background</description>
-	<posx>0</posx>
-	<posy>0</posy>
-	<width>1280</width>
-	<height>720</height>
-	<colordiffuse>55555555</colordiffuse>					
-	<visible>Visualisation.Enabled + Player.HasAudio</visible>
-	<texture>simplicity/pandorafanart.png</texture> >
-
-</control>
 
 
 <!-- Dark Mod code start Top Screen Title-->
@@ -322,7 +290,7 @@
 			<control type="label">
 				<posx>0</posx>
 				<posy>-5</posy>
-				<width>690</width>
+				<width>620</width>
 				<height>25</height>
 				<label>$INFO[MusicPlayer.Artist]$INFO[MusicPlayer.Album, - ]</label>
 				<align>left</align>
@@ -335,7 +303,7 @@
 			<control type="image">
 				<description>Rating image</description>
 				<posx>660</posx>
-				<posy>-5</posy>
+				<posy>-10</posy>
 				<width>160</width>
 				<height>30</height>
 				<aspectratio align="right">keep</aspectratio>
@@ -573,7 +541,7 @@
 	<visible>Player.ShowInfo</visible>
 	<animation effect="slide" start="0,0" end="-500,0" delay="0" time="300">hidden</animation>
 	<animation effect="slide" start="-500,0" end="0,0" delay="0" time="300">visible</animation>
-	<control type="image">
+	<control type="image" id="7657">
 		<description>Cd overlay</description>
 		<animation effect="slide" start="-118" end="0" time="900" tween="cubic" easing="out" delay="1000">WindowOpen</animation>
 		<animation type="WindowClose">
@@ -588,7 +556,7 @@
 		<!-- 112 -->
 		<posy>412</posy>
 		<!-- -143 -->
-		<texture fallback="cd/default.png">$INFO[Player.FolderPath]/cdart.png</texture>
+		<texture>$INFO[Player.FolderPath]/cdart.png</texture>
 		<aspectratio align="bottom">keep</aspectratio>
 		<visible>!Skin.HasSetting(PandoraVis)</visible>
 	</control>
@@ -607,10 +575,26 @@
 		<!-- 112 -->
 		<posy>412</posy>
 		<!-- -143 -->
-		<texture fallback="cd/default_pandora.png">$INFO[Player.FolderPath]/cdart.png</texture>
+		<texture>cd/default.png</texture>
 		<aspectratio align="bottom">keep</aspectratio>
-		<visible>Skin.HasSetting(PandoraVis)</visible>
+		<visible>IsEmpty(Control.GetLabel(7657))</visible>
 	</control>
+	<control type="image">
+		<animation effect="slide" start="-118" end="0" time="900" tween="cubic" easing="out" delay="1000">WindowOpen</animation>
+		<animation type="WindowClose">
+			<effect type="slide" start="0" end="-114" time="800" tween="cubic" easing="in" delay="0"/>
+			<effect type="fade" start="100" end="0" time="1300"/>
+			<condition type="!Player.Playing"/>
+		</animation>
+		<description>Cd overlay</description>
+		<width>111</width>
+		<height>41</height>
+		<posx>265</posx>
+		<posy>412</posy>
+		<texture>simplicity/needle.png</texture>
+		<visible>IsEmpty(Control.GetLabel(7657))</visible>
+	</control>
+
 	<control type="image">
 		<description>cover image</description>
 		<posx>11</posx>
