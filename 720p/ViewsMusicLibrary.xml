@@ -1037,6 +1037,21 @@
 					</control>	
 				</itemlayout>
 				<focusedlayout height="510" width="210">
+	<control type="image">
+	<visible>!Skin.HasSetting(DisableCD)</visible>
+		<description>Cd overlay</description>
+		<animation effect="fade" start="0" end="100" time="0" delay="400">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="0,-85" time="900" tween="cubic" easing="out" delay="300" reversible="false">Focus</animation>
+		<animation effect="rotate" end="-360" center="auto" time="2000" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
+		<width>140</width>
+		<height>140</height>
+		<posx>5</posx>
+		<!-- 112 -->
+		<posy>0</posy>
+		<!-- -143 -->
+		<texture fallback="cd/default.png">$INFO[ListItem.Path],,cdart.png</texture>
+		<aspectratio align="bottom">keep</aspectratio>
+	</control>
 					<control type="image">
 						<posx>0</posx>
 						<posy>0</posy>
@@ -1071,6 +1086,7 @@
 				<aspect>stretch</aspect>
 				<texture>simplicity/wall-bottom.png</texture>
 			</control>
+
 			<include>LeftOptions</include>
 			<!--<control type="group">
 				<include>Zoom</include>		

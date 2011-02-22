@@ -322,7 +322,7 @@
 	<animation effect="slide" start="0,-120" end="0,0" time="100">WindowOpen</animation>
 	<animation effect="slide" start="0,0" end="0,-120" time="100">WindowClose</animation>
 				<posx>60</posx>
-				<posy>-55</posy>
+				<posy>-51</posy>
 					<control type="image">
 						<posx>787</posx>
 						<posy>37</posy>
@@ -347,9 +347,19 @@
 						<aspectratio>keep</aspectratio>
  						<texture background="true">$INFO[Player.FolderPath]logo.png</texture> 
 					</control>
+					<control type="image">
+						<posx>993</posx>
+						<posy>22</posy>
+						<width>100</width>
+						<height>100</height>
+				<align>center</align>
+				<aligny>center</aligny>
+						<aspectratio>keep</aspectratio>
+						<texture>special://skin/media/studios/$INFO[VideoPlayer.Studio,,.png]</texture>
+					</control>
 <control type="group">
 			<!-- Chapter Count images -->
-			<control type="label" id="1">
+		<!--	<control type="label" id="1">
 				<description>Chapter Pos No</description>
 				<posx>1070</posx>
 				<posy>47</posy>
@@ -389,7 +399,7 @@
 				<shadowcolor>black</shadowcolor>
 				<label>01 / 01</label>
 				<visible>!player.chaptercount</visible>
-			</control>
+			</control>-->
 		</control>
 			</control>
 
@@ -458,7 +468,7 @@
 				<control type="label">
 					<description>Popup Info</description>
 					<posx>180</posx>
-					<posy>15</posy>
+					<posy>5</posy>
 					<width>150</width>
 					<height>20</height>
 					<font>Simplicity_20</font>
@@ -470,7 +480,7 @@
 				<control type="label">
 					<description>Popup Info</description>
 					<posx>255</posx>
-					<posy>15</posy>
+					<posy>5</posy>
 					<width>150</width>
 					<height>20</height>
 					<font>Simplicity_20</font>
@@ -479,6 +489,34 @@
 					<aligny>center</aligny>
 					<label>$INFO[Player.Duration]</label>
 				</control>
+
+			<control type="label" id="1">
+				<description>Chapter Pos No</description>
+					<posx>180</posx>
+					<posy>25</posy>
+				<width>200</width>
+				<height>20</height>
+					<font>Simplicity_20</font>
+					<textcolor>grey7</textcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+				<label>$LOCALIZE[21396]: $INFO[player.chapter]$INFO[player.chaptercount, / ]</label>
+				<visible>player.chaptercount</visible>
+			</control>
+			<control type="label" id="1">
+				<description>Chapter Pos No</description>
+					<posx>180</posx>
+					<posy>25</posy>
+				<width>200</width>
+				<height>20</height>
+					<font>Simplicity_20</font>
+					<textcolor>grey7</textcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+				<label>$LOCALIZE[21396]: 01 / 01</label>
+				<visible>!player.chaptercount</visible>
+			</control>
+
 				<control type="label">
 					<description>Popup Info</description>
 					<posx>1007</posx>

@@ -2228,7 +2228,7 @@
 							<width>900</width>
 							<height>40</height>
 							<font>Simplicity_20</font>
-							<label>Remove Fanart From Music Visualization</label>
+							<label>Remove Upcoming Tracks From Music Visualization</label>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<radiowidth>83</radiowidth>
@@ -2237,8 +2237,8 @@
 							<textureradionofocus>simplicity/settings-radiobutton-off.png</textureradionofocus>
 							<texturefocus>simplicity/button-focus.png</texturefocus>
 							<texturenofocus>simplicity/menuitemnf.png</texturenofocus>
-							<onclick>Skin.ToggleSetting(NoVisualizationArt)</onclick>
-							<selected>Skin.HasSetting(NoVisualizationArt)</selected>
+							<onclick>Skin.ToggleSetting(NoUpcomingList)</onclick>
+							<selected>Skin.HasSetting(NoUpcomingList)</selected>
 						</control>
 						<control type="radiobutton" id="507">
 							<width>900</width>

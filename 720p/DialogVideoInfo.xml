@@ -969,7 +969,7 @@
 					<control type="button" id="10">
 						<description>Get Thumb</description>
 						<include>ButtonInfoDialogsCommonValues</include>
-						<label>13405</label>
+						<label>Get Thumb</label>
 					</control>
 					<control type="button" id="12">
 						<description>Get Fanart</description>
