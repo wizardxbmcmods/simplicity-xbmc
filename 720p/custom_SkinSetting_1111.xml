@@ -225,6 +225,38 @@
 						<onclick>Skin.ToggleSetting(No_Media_Titles_In_Scanner)</onclick>
 						<selected>!Skin.HasSetting(No_Media_Titles_In_Scanner)</selected>
 					</control>
+					<control type="radiobutton" id="104">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_20</font>
+							<label>Enable Kiosk Mode</label>
+							<textcolor>white</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<radiowidth>83</radiowidth>
+							<radioheight>67</radioheight>
+							<textureradiofocus>simplicity/settings-radiobutton-on.png</textureradiofocus>
+							<textureradionofocus>simplicity/settings-radiobutton-off.png</textureradionofocus>
+							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
+							<onclick>Skin.ToggleSetting(KioskMode)</onclick>
+							<selected>Skin.HasSetting(KioskMode)</selected>
+					</control>
+					<control type="radiobutton" id="105">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_20</font>
+							<label>Disable View Preview Images</label>
+							<textcolor>white</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<radiowidth>83</radiowidth>
+							<radioheight>67</radioheight>
+							<textureradiofocus>simplicity/settings-radiobutton-on.png</textureradiofocus>
+							<textureradionofocus>simplicity/settings-radiobutton-off.png</textureradionofocus>
+							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
+							<onclick>Skin.ToggleSetting(DisableViewPreview)</onclick>
+							<selected>Skin.HasSetting(DisableViewPreview)</selected>
+					</control>
 					<!--	<control type="radiobutton" id="133">
 						<posx>0</posx>
 						<posy>0</posy>
@@ -253,7 +285,7 @@
 						<onclick>Skin.ToggleSetting(WindowedTrailer)</onclick>
 						<selected>Skin.HasSetting(WindowedTrailer)</selected>
 					</control>-->
-					<control type="label" id="104">
+					<control type="label" id="107">
 						<width>750</width>
 						<height>45</height>
 						<font>Simplicity_20_Bold_title</font>
@@ -263,7 +295,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="radiobutton" id="105">
+					<control type="radiobutton" id="108">
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>900</width>
@@ -281,7 +313,7 @@
 						<onclick>Skin.ToggleSetting(TVShowsUsePosters)</onclick>
 						<selected>Skin.HasSetting(TVShowsUsePosters)</selected>
 					</control>
-					<control type="radiobutton" id="112">
+					<control type="radiobutton" id="109">
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>900</width>
@@ -299,7 +331,7 @@
 						<onclick>Skin.ToggleSetting(UseLandscapes)</onclick>
 						<selected>Skin.HasSetting(UseLandscapes)</selected>
 					</control>
-					<control type="radiobutton" id="113">
+					<control type="radiobutton" id="110">
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>900</width>
@@ -317,7 +349,7 @@
 						<onclick>Skin.ToggleSetting(EnableClearartViews)</onclick>
 						<selected>Skin.HasSetting(EnableClearartViews)</selected>
 					</control>
-					<control type="label" id="106">
+					<control type="label" id="111">
 						<width>750</width>
 						<height>45</height>
 						<font>Simplicity_20_Bold_title</font>
@@ -327,7 +359,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="radiobutton" id="107">
+					<control type="radiobutton" id="112">
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>900</width>
@@ -345,7 +377,7 @@
 						<onclick>Skin.ToggleSetting(Use_Startup_Playlist)</onclick>
 						<selected>Skin.HasSetting(Use_Startup_Playlist)</selected>
 					</control>
-					<control type="button" id="108">
+					<control type="button" id="113">
 						<description>Startup Playlist Path</description>
 						<posx>0</posx>
 						<posy>0</posy>
@@ -361,7 +393,7 @@
 						<onclick>Skin.SetFile(Startup_Playlist_Path,.m3u,t:\playlists\music\)</onclick>
 						<enable>Skin.HasSetting(Use_Startup_Playlist)</enable>
 					</control>
-					<control type="label" id="109">
+					<control type="label" id="114">
 						<width>750</width>
 						<height>45</height>
 						<font>Simplicity_20_Bold_title</font>
@@ -371,7 +403,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="radiobutton" id="110">
+					<control type="radiobutton" id="115">
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>900</width>
@@ -389,7 +421,7 @@
 						<onclick>Skin.ToggleSetting(ShowBackgroundVideo)</onclick>
 						<selected>!Skin.HasSetting(ShowBackgroundVideo)</selected>
 					</control>
-					<control type="radiobutton" id="111">
+					<control type="radiobutton" id="116">
 						<posx>0</posx>
 						<posy>0</posy>
 						<height>40</height>
@@ -2195,35 +2227,6 @@
 							<onclick>Skin.ToggleSetting(DisableBreadCrumbs)</onclick>
 							<selected>Skin.HasSetting(DisableBreadCrumbs)</selected>
 						</control>
-						<control type="radiobutton" id="504">
-							<width>900</width>
-							<height>40</height>
-							<font>Simplicity_20</font>
-							<label>$LOCALIZE[31129]</label>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
-							<radiowidth>83</radiowidth>
-							<radioheight>67</radioheight>
-							<textureradiofocus>simplicity/settings-radiobutton-on.png</textureradiofocus>
-							<textureradionofocus>simplicity/settings-radiobutton-off.png</textureradionofocus>
-							<texturefocus>simplicity/button-focus.png</texturefocus>
-							<texturenofocus>simplicity/menuitemnf.png</texturenofocus>
-							<onclick>Skin.ToggleSetting(SubtitleDownload_Enable)</onclick>
-							<selected>Skin.HasSetting(SubtitleDownload_Enable)</selected>
-						</control>
-						<control type="button" id="505">
-							<width>900</width>
-							<height>40</height>
-							<font>Simplicity_18</font>
-							<label>- $LOCALIZE[31130]</label>
-							<label2>[COLOR=white]$INFO[Skin.String(SubtitleScript_Path)][/COLOR]</label2>
-							<textcolor>grey2</textcolor>
-							<focusedcolor>white</focusedcolor>
-							<texturefocus>simplicity/button-focus.png</texturefocus>
-							<texturenofocus>simplicity/menuitemnf.png</texturenofocus>
-							<onclick>Skin.SetAddon(SubtitleScript_Path,xbmc.python.subtitles)</onclick>
-							<visible>Skin.HasSetting(SubtitleDownload_Enable)</visible>
-						</control>
 						<control type="radiobutton" id="506">
 							<width>900</width>
 							<height>40</height>
@@ -2255,22 +2258,6 @@
 							<texturenofocus>simplicity/menuitemnf.png</texturenofocus>
 							<onclick>Skin.ToggleSetting(NoVisualizationClock)</onclick>
 							<selected>Skin.HasSetting(NoVisualizationClock)</selected>
-						</control>
-						<control type="radiobutton" id="509">
-							<width>900</width>
-							<height>40</height>
-							<font>Simplicity_20</font>
-							<label>Enable Kiosk Mode</label>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
-							<radiowidth>83</radiowidth>
-							<radioheight>67</radioheight>
-							<textureradiofocus>simplicity/settings-radiobutton-on.png</textureradiofocus>
-							<textureradionofocus>simplicity/settings-radiobutton-off.png</textureradionofocus>
-							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
-							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
-							<onclick>Skin.ToggleSetting(KioskMode)</onclick>
-							<selected>Skin.HasSetting(KioskMode)</selected>
 						</control>
 						<control type="radiobutton" id="511">
 							<width>900</width>
@@ -2337,7 +2324,36 @@
 							<onclick>Skin.SetAddon(LyricScript_Path,xbmc.python.lyrics)</onclick>
 							<visible>Skin.HasSetting(LyricScript_Enable)</visible>
 						</control>
-						<control type="label" id="515">
+						<control type="radiobutton" id="515">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_20</font>
+							<label>$LOCALIZE[31129]</label>
+							<textcolor>white</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<radiowidth>83</radiowidth>
+							<radioheight>67</radioheight>
+							<textureradiofocus>simplicity/settings-radiobutton-on.png</textureradiofocus>
+							<textureradionofocus>simplicity/settings-radiobutton-off.png</textureradionofocus>
+							<texturefocus>simplicity/button-focus.png</texturefocus>
+							<texturenofocus>simplicity/menuitemnf.png</texturenofocus>
+							<onclick>Skin.ToggleSetting(SubtitleDownload_Enable)</onclick>
+							<selected>Skin.HasSetting(SubtitleDownload_Enable)</selected>
+						</control>
+						<control type="button" id="516">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_18</font>
+							<label>- $LOCALIZE[31130]</label>
+							<label2>[COLOR=white]$INFO[Skin.String(SubtitleScript_Path)][/COLOR]</label2>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus>simplicity/button-focus.png</texturefocus>
+							<texturenofocus>simplicity/menuitemnf.png</texturenofocus>
+							<onclick>Skin.SetAddon(SubtitleScript_Path,xbmc.python.subtitles)</onclick>
+							<visible>Skin.HasSetting(SubtitleDownload_Enable)</visible>
+						</control>
+						<control type="label" id="517">
 							<width>750</width>
 							<height>45</height>
 							<font>Simplicity_20_Bold_title</font>
@@ -2347,7 +2363,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 						</control>
-						<control type="button" id="516">
+						<control type="button" id="518">
 							<width>180</width>
 							<height>40</height>
 							<align>center</align>
@@ -2361,7 +2377,7 @@
 							<font>Simplicity_20_Bold_title</font>
 							<onclick>XBMC.RunScript(script.logo-downloader,mode=bulk,clearart=True,logo=True,showthumb=landscape.jpg,poster=poster.jpg,banner=banner.jpg)</onclick>
 						</control>
-						<control type="label" id="517">
+						<control type="label" id="519">
 							<width>750</width>
 							<height>45</height>
 							<font>Simplicity_20_Bold_title</font>
@@ -2371,7 +2387,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 						</control>
-						<control type="button" id="518">
+						<control type="button" id="520">
 							<width>180</width>
 							<height>40</height>
 							<align>center</align>

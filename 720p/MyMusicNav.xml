@@ -77,8 +77,8 @@
 		<control type="group">
 			<posx>-30</posx>
 			<posy>0</posy>
-			<animation effect="slide" start="0,0" end="250,0" time="400" tween="quadratic" easing="out" condition="ControlGroup(9000).HasFocus | ControlGroup(9001).HasFocus | Control.HasFocus(8999)">Conditional</animation>
-			<animation effect="slide" start="0,0" end="-250,0" time="400" tween="quadratic" easing="out" condition="ControlGroup(9000).HasFocus | ControlGroup(9001).HasFocus">WindowClose</animation>
+			<animation effect="slide" start="0,0" end="250,0" time="400" tween="quadratic" easing="out" condition="ControlGroup(9000).HasFocus | ControlGroup(9001).HasFocus | Control.HasFocus(8999) | ControlGroup(9002).HasFocus">Conditional</animation>
+			<animation effect="slide" start="0,0" end="-250,0" time="400" tween="quadratic" easing="out" condition="ControlGroup(9000).HasFocus | ControlGroup(9001).HasFocus | ControlGroup(9002).HasFocus">WindowClose</animation>
 			<control type="group">
 				<animation effect="slide" end="-240,0" time="300" tween="quadratic" easing="out">WindowClose</animation>
 				<animation effect="slide" start="-15,0" end="0,0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
@@ -89,6 +89,7 @@
 					<height>720</height>
 					<texture>simplicity/setting-popup.png</texture>
 					<animation effect="zoom" start="0,0,1,720" end="0,0,221,720" time="300" tween="quadratic" easing="out" condition="Control.HasFocus(98) | ControlGroup(9001).HasFocus">Conditional</animation>
+					<animation effect="zoom" start="0,0,1,720" end="0,0,221,720" time="300" tween="quadratic" easing="out" condition="[ControlGroup(9002).HasFocus | Control.HasFocus(2)] + !Skin.HasSetting(DisableViewPreview)">Conditional</animation>
 				</control>
 				<!--<control type="image">
 					<posx>-10</posx>
@@ -172,7 +173,190 @@
 						<selected>Skin.HasSetting(DisableCD)</selected>
 						<visible>Control.IsVisible(516)</visible>
 					</control>
+				</control>
+			</control>
+			<control type="group" id="9002">
+			<visible>!Skin.HasSetting(DisableViewPreview)</visible>
+				<posx>-220</posx>
+				<posy>0</posy>
+				<animation effect="fade" start="100" end="0" time="0" condition="!ControlGroup(9002).HasFocus + !Control.HasFocus(2)">conditional</animation>
+				<animation effect="fade" start="0" end="100" delay="300" time="200" condition="Control.HasFocus(2) | ControlGroup(9002).HasFocus">conditional</animation>
+				<animation effect="fade" start="100" end="0" time="0" condition="Control.HasFocus(2) | ControlGroup(9002).HasFocus">WindowClose</animation>
+				<animation effect="slide" end="220,0" time="300" tween="quadratic" easing="out" condition="ControlGroup(9002).HasFocus | Control.HasFocus(2)">Conditional</animation>
+				<!-- Dont popup automatically  <animation effect="slide" end="220,0" time="300" tween="quadratic" easing="out">Focus</animation>-->
+				<control type="button">
+					<description>Fake button for mouse control</description>
+					<posx>-15</posx>
+					<posy>0</posy>
+					<width>245</width>
+					<height>720</height>
+					<label>-</label>
+					<font>-</font>
+					<texturenofocus>-</texturenofocus>
+					<texturefocus>-</texturefocus>
+					<visible>true</visible>
+				</control>
+				<control type="grouplist" id="9011">
+					<posx>25</posx>
+					<posy>40</posy>
+					<width>220</width>
+					<height>630</height>
+					<onleft>9000</onleft>
+					<onright>50</onright>
+					<onup>9011</onup>
+					<ondown>9011</ondown>
+					<itemgap>10</itemgap>
 
+					<control type="button" id="21">
+						<description>Album Slide</description>
+						<width>174</width>
+						<height>95</height>
+						<align>center</align>
+						<aligny>center</aligny>
+						<texturenofocus border="5">simplicity/views/Album Slide/previewimage.png</texturenofocus>
+						<texturefocus border="5">simplicity/views/Album Slide/previewimage.png</texturefocus>
+						<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(21)">Conditional</animation>			
+						<animation effect="zoom" end="106" center="auto">Focus</animation>
+						<onclick>Container.SetViewMode(509)</onclick>
+						<visible>Container.Content(Albums)</visible> 	
+					</control>
+					<control type="button" id="22">
+						<description>Video Slide</description>
+						<width>174</width>
+						<height>95</height>
+						<align>center</align>
+						<aligny>center</aligny>
+						<texturenofocus border="5">simplicity/views/Video Slide/previewimage.png</texturenofocus>
+						<texturefocus border="5">simplicity/views/Video Slide/previewimage.png</texturefocus>
+						<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(22)">Conditional</animation>			
+						<animation effect="zoom" end="106" center="auto">Focus</animation>
+						<onclick>Container.SetViewMode(511)</onclick>
+						<visible>Container.Content(MusicVideos)</visible>
+					</control>
+					<control type="button" id="23">
+						<description>Song List</description>
+						<width>174</width>
+						<height>95</height>
+						<align>center</align>
+						<aligny>center</aligny>
+						<texturenofocus border="5">simplicity/views/Song List/previewimage.png</texturenofocus>
+						<texturefocus border="5">simplicity/views/Song List/previewimage.png</texturefocus>
+						<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(23)">Conditional</animation>			
+						<animation effect="zoom" end="106" center="auto">Focus</animation>
+						<onclick>Container.SetViewMode(512)</onclick>
+						<visible>Container.Content(Songs)</visible>
+					</control>
+					<control type="button" id="24">
+						<description>Album List</description>
+						<width>174</width>
+						<height>95</height>
+						<align>center</align>
+						<aligny>center</aligny>
+						<texturenofocus border="5">simplicity/views/Album List/previewimage.png</texturenofocus>
+						<texturefocus border="5">simplicity/views/Album List/previewimage.png</texturefocus>
+						<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(24)">Conditional</animation>			
+						<animation effect="zoom" end="106" center="auto">Focus</animation>
+						<onclick>Container.SetViewMode(513)</onclick>
+						<visible>Container.Content(Albums)</visible>
+					</control>
+					<control type="button" id="25">
+						<description>Artist List</description>
+						<width>174</width>
+						<height>95</height>
+						<align>center</align>
+						<aligny>center</aligny>
+						<texturenofocus border="5">simplicity/views/Artist List/previewimage.png</texturenofocus>
+						<texturefocus border="5">simplicity/views/Artist List/previewimage.png</texturefocus>
+						<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(25)">Conditional</animation>			
+						<animation effect="zoom" end="106" center="auto">Focus</animation>
+						<onclick>Container.SetViewMode(514)</onclick>
+						<visible>Container.Content(Artists)</visible>
+					</control>
+					<control type="button" id="26">
+						<description>Artist Wall</description>
+						<width>174</width>
+						<height>95</height>
+						<align>center</align>
+						<aligny>center</aligny>
+						<texturenofocus border="5">simplicity/views/Artist Wall/previewimage.png</texturenofocus>
+						<texturefocus border="5">simplicity/views/Artist Wall/previewimage.png</texturefocus>
+						<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(26)">Conditional</animation>			
+						<animation effect="zoom" end="106" center="auto">Focus</animation>
+						<onclick>Container.SetViewMode(515)</onclick>
+						<visible>Container.Content(Artists)</visible>
+					</control>
+					<control type="button" id="27">
+						<description>Album Wall</description>
+						<width>174</width>
+						<height>95</height>
+						<align>center</align>
+						<aligny>center</aligny>
+						<texturenofocus border="5">simplicity/views/Album Wall/previewimage.png</texturenofocus>
+						<texturefocus border="5">simplicity/views/Album Wall/previewimage.png</texturefocus>
+						<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(27)">Conditional</animation>			
+						<animation effect="zoom" end="106" center="auto">Focus</animation>
+						<onclick>Container.SetViewMode(516)</onclick>
+						<visible>Container.Content(Albums)</visible>
+					</control>
+					<control type="button" id="36">
+						<description>List</description>
+						<width>174</width>
+						<height>95</height>
+						<align>center</align>
+						<aligny>center</aligny>
+						<texturenofocus border="5">simplicity/views/List/previewimage.png</texturenofocus>
+						<texturefocus border="5">simplicity/views/List/previewimage.png</texturefocus>
+						<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(36)">Conditional</animation>			
+						<animation effect="zoom" end="106" center="auto">Focus</animation>
+						<onclick>Container.SetViewMode(50)</onclick>
+						<visible>!substring(container.folderpath,plugin://plugin.video.xbmcflicks)</visible> 	
+					</control>
+
+					<control type="button" id="42">
+						<description>Thumbnail</description>
+						<width>174</width>
+						<height>95</height>
+						<align>center</align>
+						<aligny>center</aligny>
+						<texturenofocus border="5">simplicity/views/Thumbnail/previewimage.png</texturenofocus>
+						<texturefocus border="5">simplicity/views/Thumbnail/previewimage.png</texturefocus>
+						<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(42)">Conditional</animation>			
+						<animation effect="zoom" end="106" center="auto">Focus</animation>
+						<onclick>Container.SetViewMode(500)</onclick>
+						<visible>![Window.IsVisible(VideoLibrary) + Container.Content(TVShows) | Window.IsVisible(VideoLibrary) + Container.Content(Episodes)]</visible>
+						<visible>!substring(container.folderpath,plugin://plugin.video.xbmcflicks)</visible> 				
+					</control>
+
+					<control type="button" id="44">
+						<description>Wall</description>
+						<width>174</width>
+						<height>95</height>
+						<align>center</align>
+						<aligny>center</aligny>
+						<texturenofocus border="5">simplicity/views/Wall/previewimage.png</texturenofocus>
+						<texturefocus border="5">simplicity/views/Wall/previewimage.png</texturefocus>
+						<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(44)">Conditional</animation>	
+						<animation effect="zoom" end="106" center="auto">Focus</animation>		
+						<onclick>Container.SetViewMode(508)</onclick>
+						<visible>Container.Content(Movies)</visible>
+					</control>
+
+				</control>
+				<control type="image">
+					<posx>95</posx>
+					<posy>10</posy>
+					<width>30</width>
+					<height>30</height>
+					<texture>simplicity/arrow-up.png</texture>
+					<visible>Container(9011).HasPrevious</visible>
+				</control>
+				<control type="image">
+					<posx>95</posx>
+					<posy>680</posy>
+					<width>30</width>
+					<height>30</height>
+					<texture flipy="true">simplicity/arrow-up.png</texture>
+					<visible>Container(9011).HasNext</visible>
 				</control>
 			</control>
 			<control type="button" id="8999">
@@ -215,7 +399,7 @@
 					<include>ButtonCommonValuesSub</include>
 					<label>-</label>
 					<onleft>50</onleft>
-					<onright>50</onright>
+					<onright>9011</onright>
 					<onup>611</onup>
 					<ondown>3</ondown>
 				</control>

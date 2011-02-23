@@ -35,7 +35,6 @@
 						<height>194</height>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="simplicity/fanart-slide-fanart-diffuse.png" background="true">simplicity/fanart-slide-fanart-shadow.png</texture>
-						<visible>![Skin.HasSetting(UseBanners) + Container.Content(TVShows)] + ![Skin.HasSetting(UseLogos) + Container.Content(TVShows)]</visible>
 					</control>
 					<control type="image">
 						<posy>28</posy>
@@ -43,39 +42,6 @@
 						<height>192</height>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<texture diffuse="simplicity/fanart-slide-fanart-diffuse.png" background="true">$INFO[Listitem.Property(Fanart_Image)]</texture>
-						<visible>![Skin.HasSetting(UseBanners) + Container.Content(TVShows)] + ![Skin.HasSetting(UseLogos) + Container.Content(TVShows)]</visible>
-					</control>
-					<control type="image">
-						<posy>58</posy>
-						<width>355</width>
-						<height>72</height>
-						<aspectratio scalediffuse="false">stretch</aspectratio>
-						<texture background="true" diffuse="simplicity/bannerdiffuse.png">simplicity/banner-shadow7.png</texture>
-						<visible>Skin.HasSetting(UseBanners) + Container.Content(TVShows)</visible>
-					</control>
-					<control type="image">
-						<posy>58</posy>
-						<width>347</width>
-						<height>64</height>
-						<aspectratio scalediffuse="false">stretch</aspectratio>
-						<texture background="true" diffuse="simplicity/bannerdiffuse.png">$INFO[ListItem.Path,,banner.jpg]</texture>
-						<visible>Skin.HasSetting(UseBanners) + Container.Content(TVShows)</visible>
-					</control>
-					<control type="image">
-						<posy>58</posy>
-						<width>347</width>
-						<height>64</height>
-						<aspectratio scalediffuse="false">stretch</aspectratio>
-						<texture background="true" diffuse="simplicity/bannerdiffuse.png">simplicity/banner-gloss.png</texture>
-						<visible>Skin.HasSetting(UseBanners) + Container.Content(TVShows)</visible>
-					</control>
-					<control type="image">
-						<posy>58</posy>
-						<width>347</width>
-						<height>64</height>
-						<aspectratio scalediffuse="false">stretch</aspectratio>
-						<texture background="true" diffuse="simplicity/bannerdiffuse.png">simplicity/black-back.png</texture>
-						<visible>Skin.HasSetting(UseBanners) + Container.Content(TVShows)</visible>
 					</control>
 					<control type="image">
 						<posy>28</posy>
@@ -83,7 +49,6 @@
 						<height>192</height>
 						<texture diffuse="simplicity/fanart-slide-fanart-diffuse.png" background="true">simplicity/black-back.png</texture>
 						<aspectratio scalediffuse="false">stretch</aspectratio>		
-						<visible>![Skin.HasSetting(UseBanners) + Container.Content(TVShows)] + ![Skin.HasSetting(UseLogos) + Container.Content(TVShows)]</visible>
 					</control>
 					<control type="image">
 						<posx>301.5</posx>
@@ -92,15 +57,6 @@
 						<height>48</height>
 						<texture diffuse="simplicity/fanart-slide-fanart-diffuse.png">$INFO[ListItem.Overlay]</texture>
 						<visible>[!Skin.HasSetting(UseBanners) + Container.Content(TVShows)] | [Skin.HasSetting(EnableWatchedIconMovies) + Container.Content(Movies)]</visible>
-					</control>
-					<control type="image">
-						<posy>48</posy>
-						<width>250</width>
-						<height>80</height>
-						<aspectratio scalediffuse="false">keep</aspectratio>
-						<texture background="true" diffuse="simplicity/bannerdiffuse.png">$INFO[ListItem.Path,,logo.png]</texture>
-						<visible>Skin.HasSetting(UseLogos) + Container.Content(TVShows)</visible>
-						<animation effect="fade" start="100" end="40" time="0" condition="Control.HasFocus(504) | !Control.HasFocus(504)">Conditional</animation>
 					</control>
 				</itemlayout>
 				<focusedlayout height="340" width="239">
@@ -142,8 +98,6 @@
 			</control>
 			<control type="group">
 				<include>Zoom</include>
-				<animation effect="slide" start="0,0" end="0,-80" time="0" condition="Skin.HasSetting(UseBanners) + Container.Content(TVShows)">Conditional</animation>
-				<animation effect="slide" start="0,0" end="0,-80" time="0" condition="Skin.HasSetting(UseLogos) + Container.Content(TVShows)">Conditional</animation>
 				<control type="grouplist">
 					<description>Studio Codec Flagging Images</description>
 					<posx>408</posx>
@@ -153,8 +107,6 @@
 					<itemgap>0</itemgap>
 					<orientation>horizontal</orientation>
 					<include>StudioFlaggingConditions</include>
-					<animation effect="slide" start="0,0" end="0,110" time="0" condition="Skin.HasSetting(UseBanners) + Container.Content(TVShows)">Conditional</animation>
-					<animation effect="slide" start="0,0" end="0,80" time="0" condition="Skin.HasSetting(UseLogos) + Container.Content(TVShows)">Conditional</animation>
 				</control>
 				<control type="label">
 					<posx>408</posx>
