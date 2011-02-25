@@ -1929,7 +1929,7 @@
 				<texturefocus border="5">simplicity/folder-focus.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
 				<onleft>50</onleft>
-				<onright>50</onright>
+				<onright>50</onright> 
 				<onup>603</onup>
 				<ondown>611</ondown>
 				<onclick>fullscreen</onclick>
@@ -1947,7 +1947,7 @@
 			<control type="fadelabel">
 				<posx>45</posx>
 				<posy>160</posy>
-				<width>370</width>
+				<width>570</width>
 				<height>20</height>
 				<label>$INFO[MusicPlayer.Title]</label>
 				<align>left</align>
@@ -1961,7 +1961,7 @@
 			<control type="fadelabel">
 				<posx>45</posx>
 				<posy>185</posy>
-				<width>370</width>
+				<width>570</width>
 				<height>20</height>
 				<label>$INFO[MusicPlayer.Artist]$INFO[MusicPlayer.Album, | ]</label>
 				<align>left</align>
@@ -2105,12 +2105,26 @@
 				<width>122</width>
 				<height>118</height>
 				<texture>$INFO[MusicPlayer.Cover]</texture>
+						<bordertexture border="1">simplicity/thumbborder.png</bordertexture>
+						<bordersize>1</bordersize>
 				<aspectratio align="center">stretch</aspectratio>
 			</control>
+			<control type="image">
+				<posx>40</posx>
+				<posy>2</posy>
+				<width>122</width>
+				<height>118</height>
+				<texture>album-fallback.png</texture>
+						<bordertexture border="1">simplicity/thumbborder.png</bordertexture>
+						<bordersize>1</bordersize>
+  				 <visible>stringcompare(MusicPlayer.Cover,DefaultAlbumCover.png)</visible>
+				<aspectratio align="center">stretch</aspectratio>
+			</control>
+
 			<control type="fadelabel">
 				<posx>230</posx>
 				<posy>20</posy>
-				<width>370</width>
+				<width>580</width>
 				<height>20</height>
 				<label>$INFO[MusicPlayer.Title]</label>
 				<align>left</align>
@@ -2124,7 +2138,7 @@
 			<control type="fadelabel">
 				<posx>230</posx>
 				<posy>50</posy>
-				<width>480</width>
+				<width>580</width>
 				<height>20</height>
 				<label>$INFO[MusicPlayer.Artist]$INFO[MusicPlayer.Album, - ]</label>
 				<align>left</align>

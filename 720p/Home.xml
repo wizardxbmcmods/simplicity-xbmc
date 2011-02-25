@@ -352,6 +352,7 @@
 					<label>$LOCALIZE[31503]</label>
 					<icon>homeicons/home-full.png</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Home_Folder)]</thumb>
+					<visible>!Skin.HasSetting(HomeMenuNoHomeButton)</visible>
 					<onclick>XBMC.ActivateWindow(1115)</onclick>
 				</item>		
 				<item id="2">
@@ -424,7 +425,7 @@
 					<icon>homeicons/scripts-full.png</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Addons_Folder)]</thumb>
 					<onclick>ActivateWindow(Programs,Addons,return)</onclick>
-					<visible>!Skin.HasSetting(HomeMenuNoAddonsButton)</visible>
+					<visible>!Skin.HasSetting(HomeMenuNoProgramsButton)</visible>
 				</item>
 				<item id="15">
 					<description>TV GUIDE</description>
@@ -432,6 +433,7 @@
 					<icon>-</icon>
 					<thumb>-</thumb>
 					<onclick>ActivateWindow(1116)</onclick>
+					<visible>!Skin.HasSetting(HomeMenuNoTVGuideButton)</visible>
 				</item>
 				<item id="16">
 					<description>Custom Button Two</description>

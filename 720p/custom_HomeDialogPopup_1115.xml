@@ -152,6 +152,7 @@
 						<label>FAVORITES</label>
 						<label2>-]</label2>
 						<onclick>ActivateWindow(Favourites)</onclick>
+						<onclick>Dialog.Close(1115)</onclick>
 						<icon>-</icon>
 						<thumb>-</thumb>
 					</item>

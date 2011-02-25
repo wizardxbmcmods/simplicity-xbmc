@@ -187,7 +187,7 @@
 						<aspectratio>keep</aspectratio>
 						<texture>$INFO[ListItem.Icon]</texture>
 						<visible>!Container.Content(Genres) + !Container.Content(Studios)</visible>
-						<visible>!StringCompare(ListItem.label,Directors) + !StringCompare(ListItem.label,Year) + !StringCompare(ListItem.label,Genres) + !StringCompare(ListItem.label,Title) + !StringCompare(ListItem.label,Album information) + !StringCompare(ListItem.label,Lyrics) + !StringCompare(ListItem.label,Artist information) + !StringCompare(ListItem.label,Movie information) + !StringCompare(ListItem.label,Music Add-ons) + !StringCompare(ListItem.label,Music video information) + !StringCompare(ListItem.label,Picture Add-ons) + !StringCompare(ListItem.label,Program Add-ons) + !StringCompare(ListItem.label,Screensaver) + !StringCompare(ListItem.label,Skin) + !StringCompare(ListItem.label,Subtitles) + !StringCompare(ListItem.label,TV information) + !StringCompare(ListItem.label,Video Add-ons) + !StringCompare(ListItem.label,Visualization) + !StringCompare(ListItem.label,Weather) + !StringCompare(ListItem.label,All Add-ons) + !StringCompare(ListItem.label,Add-on repository) + !StringCompare(ListItem.label,Search) + !StringCompare(ListItem.label,Install from zip file) + !StringCompare(ListItem.label,Videos)</visible>
+						<visible>!StringCompare(ListItem.label,Countries) + !StringCompare(ListItem.label,Sets) + !StringCompare(ListItem.label,Studios) + !StringCompare(ListItem.label,Directors) + !StringCompare(ListItem.label,Year) + !StringCompare(ListItem.label,Genres) + !StringCompare(ListItem.label,Title) + !StringCompare(ListItem.label,Album information) + !StringCompare(ListItem.label,Lyrics) + !StringCompare(ListItem.label,Artist information) + !StringCompare(ListItem.label,Movie information) + !StringCompare(ListItem.label,Music Add-ons) + !StringCompare(ListItem.label,Music video information) + !StringCompare(ListItem.label,Picture Add-ons) + !StringCompare(ListItem.label,Program Add-ons) + !StringCompare(ListItem.label,Screensaver) + !StringCompare(ListItem.label,Skin) + !StringCompare(ListItem.label,Subtitles) + !StringCompare(ListItem.label,TV information) + !StringCompare(ListItem.label,Video Add-ons) + !StringCompare(ListItem.label,Visualization) + !StringCompare(ListItem.label,Weather) + !StringCompare(ListItem.label,All Add-ons) + !StringCompare(ListItem.label,Add-on repository) + !StringCompare(ListItem.label,Search) + !StringCompare(ListItem.label,Install from zip file) + !StringCompare(ListItem.label,Videos)</visible>
 					</control>
 					<control type="image">
 						<posx>75</posx>
@@ -258,7 +258,7 @@
 						<aspectratio>keep</aspectratio>
 						<texture>$INFO[ListItem.Icon]</texture>
 						<visible>!Container.Content(Genres) + !Container.Content(Studios)</visible>
-						<visible>!StringCompare(ListItem.label,Directors) + !StringCompare(ListItem.label,Year) + !StringCompare(ListItem.label,Genres) + !StringCompare(ListItem.label,Title) + !StringCompare(ListItem.label,Album information) + !StringCompare(ListItem.label,Lyrics) + !StringCompare(ListItem.label,Artist information) + !StringCompare(ListItem.label,Movie information) + !StringCompare(ListItem.label,Music Add-ons) + !StringCompare(ListItem.label,Music video information) + !StringCompare(ListItem.label,Picture Add-ons) + !StringCompare(ListItem.label,Program Add-ons) + !StringCompare(ListItem.label,Screensaver) + !StringCompare(ListItem.label,Skin) + !StringCompare(ListItem.label,Subtitles) + !StringCompare(ListItem.label,TV information) + !StringCompare(ListItem.label,Video Add-ons) + !StringCompare(ListItem.label,Visualization) + !StringCompare(ListItem.label,Weather) + !StringCompare(ListItem.label,All Add-ons) + !StringCompare(ListItem.label,Add-on repository) + !StringCompare(ListItem.label,Search) + !StringCompare(ListItem.label,Install from zip file) + !StringCompare(ListItem.label,Videos)</visible>
+						<visible>!StringCompare(ListItem.label,Countries) + !StringCompare(ListItem.label,Sets) + !StringCompare(ListItem.label,Studios) + !StringCompare(ListItem.label,Directors) + !StringCompare(ListItem.label,Year) + !StringCompare(ListItem.label,Genres) + !StringCompare(ListItem.label,Title) + !StringCompare(ListItem.label,Album information) + !StringCompare(ListItem.label,Lyrics) + !StringCompare(ListItem.label,Artist information) + !StringCompare(ListItem.label,Movie information) + !StringCompare(ListItem.label,Music Add-ons) + !StringCompare(ListItem.label,Music video information) + !StringCompare(ListItem.label,Picture Add-ons) + !StringCompare(ListItem.label,Program Add-ons) + !StringCompare(ListItem.label,Screensaver) + !StringCompare(ListItem.label,Skin) + !StringCompare(ListItem.label,Subtitles) + !StringCompare(ListItem.label,TV information) + !StringCompare(ListItem.label,Video Add-ons) + !StringCompare(ListItem.label,Visualization) + !StringCompare(ListItem.label,Weather) + !StringCompare(ListItem.label,All Add-ons) + !StringCompare(ListItem.label,Add-on repository) + !StringCompare(ListItem.label,Search) + !StringCompare(ListItem.label,Install from zip file) + !StringCompare(ListItem.label,Videos)</visible>
 						<animation effect="zoom" start="100" end="110" center="auto" easing="out" tween="back" time="100">Focus</animation>
 					</control>
 					<control type="image">
@@ -315,10 +315,11 @@
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
-				<width>1290</width>
-				<height>730</height>
-				<texture>simplicity/background-solid.png</texture>
+				<width>1280</width>
+				<height>720</height>
+				<texture>addons/amt.jpg</texture>
 			</control>
+			<include>Overlay</include>
 			<include>UpOptions</include>
 			<include>TrailerBreadCrumbs</include>
 			<control type="group">
@@ -1915,7 +1916,7 @@
 				<ondown>78</ondown>
 				<viewtype label="Netflix">list</viewtype>
 				<pagecontrol>60</pagecontrol>
-				<scrolltime>400</scrolltime>
+				<scrolltime>300</scrolltime>
 				<focusposition>3</focusposition>
 				<preloaditems>200</preloaditems>
 				<orientation>horizontal</orientation>
@@ -1972,7 +1973,7 @@
 				</itemlayout>
 				<focusedlayout height="400" width="275">
 					<control type="group">	
-						<animation effect="zoom" end="160" center="auto" time="300">Focus</animation> 
+						<animation effect="zoom" end="160" center="auto" time="300" reversible="false">Focus</animation> 
 						<posx>0</posx>
 						<posy>100</posy>
 						<control type="group">	

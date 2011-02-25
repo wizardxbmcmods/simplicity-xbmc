@@ -129,7 +129,7 @@
 						<onclick>-</onclick>
 					</item>
 					<item id="9">
-						<label>Favorites</label>
+						<label>Shortcuts</label>
 						<label2>-</label2>
 						<onclick>-</onclick>
 					</item>
@@ -460,7 +460,7 @@
 					<posx>310</posx>
 					<posy>50</posy>
 					<width>900</width>
-					<height>670</height>
+					<height>640</height>
 					<itemgap>-1</itemgap>
 					<pagecontrol>60</pagecontrol>
 					<onleft>9000</onleft>
@@ -555,6 +555,44 @@
 						<aligny>center</aligny>
 					</control>
 					<control type="radiobutton" id="207">
+						<description>Hide Home Button</description>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>900</width>
+						<height>40</height>
+						<font>Simplicity_20</font>
+						<textcolor>white</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<radiowidth>83</radiowidth>
+						<radioheight>67</radioheight>
+						<textureradiofocus>simplicity/settings-radiobutton-on.png</textureradiofocus>
+						<textureradionofocus>simplicity/settings-radiobutton-off.png</textureradionofocus>
+						<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+						<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
+						<label>$LOCALIZE[31111] - Home</label>
+						<onclick>Skin.ToggleSetting(HomeMenuNoHomeButton)</onclick>
+						<selected>Skin.HasSetting(HomeMenuNoHomeButton)</selected>
+					</control>
+					<control type="radiobutton" id="208">
+						<description>Hide Home Button</description>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>900</width>
+						<height>40</height>
+						<font>Simplicity_20</font>
+						<textcolor>white</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<radiowidth>83</radiowidth>
+						<radioheight>67</radioheight>
+						<textureradiofocus>simplicity/settings-radiobutton-on.png</textureradiofocus>
+						<textureradionofocus>simplicity/settings-radiobutton-off.png</textureradionofocus>
+						<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+						<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
+						<label>$LOCALIZE[31111] - TV Guide</label>
+						<onclick>Skin.ToggleSetting(HomeMenuNoTVGuideButton)</onclick>
+						<selected>Skin.HasSetting(HomeMenuNoTVGuideButton)</selected>
+					</control>
+					<control type="radiobutton" id="209">
 						<description>Hide Videos Button</description>
 						<posx>0</posx>
 						<posy>0</posy>
@@ -573,7 +611,7 @@
 						<onclick>Skin.ToggleSetting(HomeMenuNoVideosButton)</onclick>
 						<selected>Skin.HasSetting(HomeMenuNoVideosButton)</selected>
 					</control>
-					<control type="radiobutton" id="217">
+					<control type="radiobutton" id="210">
 						<description>Hide Movies Button</description>
 						<posx>0</posx>
 						<posy>0</posy>
@@ -593,7 +631,7 @@
 						<selected>Skin.HasSetting(HomeMenuNoMoviesButton)</selected>
 						<enable>Library.HasContent(Movies)</enable>
 					</control>
-					<control type="radiobutton" id="218">
+					<control type="radiobutton" id="211">
 						<description>Hide TV Shows Button</description>
 						<posx>0</posx>
 						<posy>0</posy>
@@ -613,7 +651,7 @@
 						<selected>Skin.HasSetting(HomeMenuNoTVShowsButton)</selected>
 						<enable>Library.HasContent(TVShows)</enable>
 					</control>
-					<control type="radiobutton" id="208">
+					<control type="radiobutton" id="212">
 						<description>Hide Music Button</description>
 						<posx>0</posx>
 						<posy>0</posy>
@@ -632,7 +670,7 @@
 						<onclick>Skin.ToggleSetting(HomeMenuNoMusicButton)</onclick>
 						<selected>Skin.HasSetting(HomeMenuNoMusicButton)</selected>
 					</control>
-					<control type="radiobutton" id="209">
+					<control type="radiobutton" id="213">
 						<description>Hide Pictures Button</description>
 						<posx>0</posx>
 						<posy>0</posy>
@@ -651,7 +689,7 @@
 						<onclick>Skin.ToggleSetting(HomeMenuNoPicturesButton)</onclick>
 						<selected>Skin.HasSetting(HomeMenuNoPicturesButton)</selected>
 					</control>
-					<control type="radiobutton" id="210">
+					<control type="radiobutton" id="214">
 						<description>Hide Programs Button</description>
 						<posx>0</posx>
 						<posy>0</posy>
@@ -670,7 +708,7 @@
 						<onclick>Skin.ToggleSetting(HomeMenuNoProgramsButton)</onclick>
 						<selected>Skin.HasSetting(HomeMenuNoProgramsButton)</selected>
 					</control>
-					<control type="radiobutton" id="211">
+					<control type="radiobutton" id="215">
 						<description>Hide Addons Button</description>
 						<posx>0</posx>
 						<posy>0</posy>
@@ -685,11 +723,11 @@
 						<textureradionofocus>simplicity/settings-radiobutton-off.png</textureradionofocus>
 						<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
 						<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
-						<label>$LOCALIZE[31111] - $LOCALIZE[247]</label>
+						<label>$LOCALIZE[31111] - Addons</label>
 						<onclick>Skin.ToggleSetting(HomeMenuNoAddonsButton)</onclick>
 						<selected>Skin.HasSetting(HomeMenuNoAddonsButton)</selected>
 					</control>
-					<control type="radiobutton" id="212">
+					<control type="radiobutton" id="216">
 						<description>Hide Weather Button</description>
 						<posx>0</posx>
 						<posy>0</posy>
@@ -708,7 +746,7 @@
 						<onclick>Skin.ToggleSetting(HomeMenuNoWeatherButton)</onclick>
 						<selected>Skin.HasSetting(HomeMenuNoWeatherButton)</selected>
 					</control>
-					<control type="radiobutton" id="213">
+					<control type="radiobutton" id="217">
 						<description>Hide Settings Button</description>
 						<posx>0</posx>
 						<posy>0</posy>
@@ -727,7 +765,7 @@
 						<onclick>Skin.ToggleSetting(HomeMenuNoSettingsButton)</onclick>
 						<selected>Skin.HasSetting(HomeMenuNoSettingsButton)</selected>
 					</control>
-					<control type="radiobutton" id="214">
+					<control type="radiobutton" id="218">
 						<description>Hide Shutdown Button</description>
 						<posx>0</posx>
 						<posy>0</posy>
@@ -750,12 +788,13 @@
 				<control type="scrollbar" id="60">
 					<posx>1230</posx>
 					<posy>60</posy>
-					<width>30</width>
-					<height>600</height>
-					<texturesliderbackground border="0,0,0,0">simplicity/scrollbar-background.png</texturesliderbackground>
-					<texturesliderbar border="0,0,0,0">simplicity/scrollbar-slider-not-selected.png</texturesliderbar>
-					<texturesliderbarfocus border="0,0,0,0">simplicity/scrollbar-slider-selected.png</texturesliderbarfocus>
-					<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
+						<width>25</width>
+						<height>640</height>
+						<texturesliderbackground border="0,14,0,14">scrollbarv.png</texturesliderbackground>
+						<texturesliderbar border="0,14,0,14">scrollbarv_bar.png</texturesliderbar>
+						<texturesliderbarfocus border="0,14,0,14">scrollbarv_bar_focus.png</texturesliderbarfocus>
+						<textureslidernib>ScrollBarNib.png</textureslidernib>
+						<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
 					<onleft>9002</onleft>
 					<onright>9000</onright>
 					<showonepage>false</showonepage>
@@ -2789,14 +2828,14 @@
 				<control type="group">
 					<control type="grouplist" id="9008">
 						<visible>Container(9000).Hasfocus(8)</visible>
-						<posx>310</posx>
-						<posy>50</posy>
-						<width>900</width>
-						<height>670</height>
+					<posx>310</posx>
+					<posy>50</posy>
+					<width>900</width>
+					<height>630</height>
 						<itemgap>-1</itemgap>
-						<pagecontrol>60</pagecontrol>
+						<pagecontrol>61</pagecontrol>
 						<onleft>9000</onleft>
-						<onright>60</onright>
+						<onright>61</onright>
 						<onup>9008</onup>
 						<ondown>9008</ondown>
 						<control type="label" id="500">
@@ -3489,7 +3528,22 @@
 						<visible>Container(9000).Hasfocus(8)</visible>
 					</control>
 				</control>
-
+				<control type="scrollbar" id="61">
+					<posx>1230</posx>
+					<posy>60</posy>
+						<width>25</width>
+						<height>640</height>
+						<texturesliderbackground border="0,14,0,14">scrollbarv.png</texturesliderbackground>
+						<texturesliderbar border="0,14,0,14">scrollbarv_bar.png</texturesliderbar>
+						<texturesliderbarfocus border="0,14,0,14">scrollbarv_bar_focus.png</texturesliderbarfocus>
+						<textureslidernib>ScrollBarNib.png</textureslidernib>
+						<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
+					<onleft>9008</onleft>
+					<onright>9000</onright>
+					<showonepage>false</showonepage>
+					<orientation>vertical</orientation>
+					<visible>Container(9000).Hasfocus(8)</visible>
+				</control>
 				<control type="group">
 					<control type="grouplist" id="9009">
 						<visible>Container(9000).Hasfocus(9)</visible>
@@ -3507,7 +3561,7 @@
 							<width>750</width>
 							<height>45</height>
 							<font>Simplicity_20_Bold_title</font>
-							<label>Custom Favorites Shortcuts on Home Screen</label>
+							<label>Custom Menu Shortcuts on Home Screen</label>
 							<textcolor>yellow</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<align>left</align>
@@ -3539,7 +3593,7 @@
 							<focusedcolor>white</focusedcolor>
 							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
 							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
-							<label>- LABEL</label>
+							<label>- LABEL (Use All Caps)</label>
 							<label2>[COLOR=selected]$INFO[Skin.String(Menu_Custom2_Label)][/COLOR]</label2>
 							<onclick>Skin.SetString(Menu_Custom2_Label)</onclick>
 							<visible>Skin.HasSetting(Menu_Custom2)</visible>
@@ -3558,7 +3612,7 @@
 							<onclick>ActivateWindow(1114)</onclick>
 							<visible>Skin.HasSetting(Menu_Custom2)</visible>
 						</control>
-						<control type="button" id="916">
+						<!--<control type="button" id="916">
 							<width>900</width>
 							<height>40</height>
 							<font>Simplicity_20</font>
@@ -3570,7 +3624,7 @@
 							<label2>[COLOR=selected]$INFO[Skin.String(Menu_Custom2_Folder)][/COLOR]</label2>
 							<onclick>Skin.SetImage(Menu_Custom2_Folder)</onclick>
 							<visible>Skin.HasSetting(Menu_Custom2)</visible>
-						</control>
+						</control>-->
 
 						<control type="radiobutton" id="917">
 							<width>900</width>
@@ -3598,7 +3652,7 @@
 							<focusedcolor>white</focusedcolor>
 							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
 							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
-							<label>- LABEL</label>
+							<label>- LABEL (Use All Caps)</label>
 							<label2>[COLOR=selected]$INFO[Skin.String(Menu_Custom3_Label)][/COLOR]</label2>
 							<onclick>Skin.SetString(Menu_Custom3_Label)</onclick>
 							<visible>Skin.HasSetting(Menu_Custom3)</visible>
@@ -3617,7 +3671,7 @@
 							<onclick>ActivateWindow(1114)</onclick>
 							<visible>Skin.HasSetting(Menu_Custom3)</visible>
 						</control>
-						<control type="button" id="920">
+						<!--<control type="button" id="920">
 							<width>900</width>
 							<height>40</height>
 							<font>Simplicity_20</font>
@@ -3629,7 +3683,7 @@
 							<label2>[COLOR=selected]$INFO[Skin.String(Menu_Custom3_Folder)][/COLOR]</label2>
 							<onclick>Skin.SetImage(Menu_Custom3_Folder)</onclick>
 							<visible>Skin.HasSetting(Menu_Custom3)</visible>
-						</control>
+						</control>-->
 
 						<control type="radiobutton" id="921">
 							<width>900</width>
@@ -3657,7 +3711,7 @@
 							<focusedcolor>white</focusedcolor>
 							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
 							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
-							<label>- LABEL</label>
+							<label>- LABEL (Use All Caps)</label>
 							<label2>[COLOR=selected]$INFO[Skin.String(Menu_Custom4_Label)][/COLOR]</label2>
 							<onclick>Skin.SetString(Menu_Custom4_Label)</onclick>
 							<visible>Skin.HasSetting(Menu_Custom4)</visible>
@@ -3676,7 +3730,7 @@
 							<onclick>ActivateWindow(1114)</onclick>
 							<visible>Skin.HasSetting(Menu_Custom4)</visible>
 						</control>
-						<control type="button" id="924">
+						<!--<control type="button" id="924">
 							<width>900</width>
 							<height>40</height>
 							<font>Simplicity_20</font>
@@ -3688,7 +3742,7 @@
 							<label2>[COLOR=selected]$INFO[Skin.String(Menu_Custom4_Folder)][/COLOR]</label2>
 							<onclick>Skin.SetImage(Menu_Custom4_Folder)</onclick>
 							<visible>Skin.HasSetting(Menu_Custom4)</visible>
-						</control>
+						</control>-->
 
 					</control>
 				</control>
