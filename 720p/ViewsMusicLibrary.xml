@@ -766,7 +766,7 @@
 					<width>400</width>
 					<height>20</height>
 					<font>Simplicity_24</font>
-					<textcolor>grey2</textcolor>
+					<textcolor>yellow</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
 					<scrollspeed>0</scrollspeed>
@@ -779,7 +779,7 @@
 					<width>400</width>
 					<height>20</height>
 					<font>Simplicity_24</font>
-					<textcolor>grey2</textcolor>
+					<textcolor>yellow</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
 					<scrollspeed>0</scrollspeed>
@@ -792,7 +792,7 @@
 					<width>400</width>
 					<height>20</height>
 					<font>Simplicity_24</font>
-					<textcolor>grey2</textcolor>
+					<textcolor>yellow</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
 					<scrollspeed>0</scrollspeed>
@@ -803,7 +803,7 @@
 					<posx>90</posx>
 					<posy>350</posy>
 					<width>400</width>
-					<height>195</height>
+					<height>190</height>
 					<font>Simplicity_20</font>
 					<textcolor>white</textcolor>
 					<align>left</align>

@@ -4,7 +4,6 @@
 	<views>50,52,58,66,500,509,506,511,512,513,514,515,516,517</views>
 	<visible>!Skin.HasSetting(KioskMode)</visible>
 	<controls>
-		<include>CommonMusicBackground</include>
 		<control type="group">
 			<include>Window_OpenClose_Animation</include>		
 			<control type="image">
@@ -342,7 +341,19 @@
 						<onclick>Container.SetViewMode(508)</onclick>
 						<visible>Container.Content(Movies)</visible>
 					</control>
-
+					<control type="button" id="45">
+						<description>Wall</description>
+						<width>174</width>
+						<height>95</height>
+						<align>center</align>
+						<aligny>center</aligny>
+						<texturenofocus border="5">simplicity/views/Fanart/previewimage.png</texturenofocus>
+						<texturefocus border="5">simplicity/views/Fanart/previewimage.png</texturefocus>
+						<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(45)">Conditional</animation>	
+						<animation effect="zoom" end="106" center="auto">Focus</animation>		
+						<onclick>Container.SetViewMode(517)</onclick>
+						<visible>Container.Content(Albums)</visible>
+					</control>
 				</control>
 				<control type="image">
 					<posx>95</posx>

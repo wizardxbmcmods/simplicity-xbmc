@@ -1,7 +1,7 @@
 <window id="25">
 	<defaultcontrol always="true">9999</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-	<views>50,59,500,501,504,505,506,507,508,509,511,532,534,535,536,537,538,539,540,552,553,554,555</views>
+	<views>50,59,500,501,504,505,506,507,508,509,511,532,534,535,536,537,538,539,540,552,553,554,555,556</views>
 	<visible>!Skin.HasSetting(KioskMode)</visible>
 	<controls>
 		<control type="button" id="9999">
@@ -63,6 +63,7 @@
 				<visible>Container.Content(Movies)+!Control.IsVisible(539)</visible>
 				<visible>Container.Content(Movies)+!Control.IsVisible(508)</visible>
 				<visible>Container.Content(Movies)+!Control.IsVisible(540)</visible>
+				<visible>Container.Content(Movies) + !Control.IsVisible(556)</visible>
 			</control>
 			<control type="image">
 				<posx>0</posx>
@@ -146,6 +147,8 @@
 			<!-- view id = 554 -->
 			<include>FanartView</include>
 			<!-- view id = 555 -->
+			<include>GridView</include>
+			<!-- view id = 556 -->
 			<include>MovieGenreView</include>
 			<!-- view id = 59 -->
 		</control>
@@ -686,7 +689,32 @@
 						<onclick>Container.SetViewMode(66)</onclick>		
 						<visible>SubString(Container.FolderPath,addons)</visible>							
 					</control>
-
+					<control type="button" id="67">
+						<description>Fanart</description>
+						<width>174</width>
+						<height>95</height>
+						<align>center</align>
+						<aligny>center</aligny>
+						<texturenofocus border="5">simplicity/views/Fanart/previewimage.png</texturenofocus>
+						<texturefocus border="5">simplicity/views/Fanart/previewimage.png</texturefocus>
+						<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(67)">Conditional</animation>	
+						<animation effect="zoom" end="106" center="auto">Focus</animation>		
+						<onclick>Container.SetViewMode(555)</onclick>		
+						<visible>Container.Content(Movies)</visible>							
+					</control>
+					<control type="button" id="68">
+						<description>Fanart</description>
+						<width>174</width>
+						<height>95</height>
+						<align>center</align>
+						<aligny>center</aligny>
+						<texturenofocus border="5">simplicity/views/Rows/previewimage.png</texturenofocus>
+						<texturefocus border="5">simplicity/views/Rows/previewimage.png</texturefocus>
+						<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(68)">Conditional</animation>	
+						<animation effect="zoom" end="106" center="auto">Focus</animation>		
+						<onclick>Container.SetViewMode(556)</onclick>		
+						<visible>Container.Content(Movies)</visible>							
+					</control>
 				</control>
 				<control type="image">
 					<posx>95</posx>

@@ -8,60 +8,53 @@
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
-				<width>1280</width>
-				<height>720</height>
-				<texture>simplicity/border.png</texture>
-			</control>
-			<control type="image">
-				<description>Current Fanart image</description>
-				<posx>220</posx>
-				<posy>0</posy>
-				<width>1060</width>
-				<height>650</height>
-				<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
-				<aspectratio>stretch</aspectratio>
-			</control>
-			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>1280</width>
-				<height>720</height>
-				<texture>simplicity/fanfade.png</texture>
-			</control>
-			<control type="image">
-				<posx>90</posx>
-				<posy>0</posy>
-				<width>1190</width>
-				<height>700</height>
-				<texture>simplicity/vignette2.png</texture>
-			</control>
-			<control type="image">
-				<posx>20</posx>
-				<posy>660</posy>
 				<width>1290</width>
-				<height>1</height>
-				<texture>simplicity/separatorwhite_horizontal.png</texture>
+				<height>730</height>
+				<texture>simplicity/background-solid.png</texture>
 			</control>
 			<control type="group">
 				<animation effect="fade" delay="400" start="0" end="100" time="200">WindowOpen</animation>
 				<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
 				<control type="label">
-					<animation effect="slide" time="0" start="0,0" end="-325,0" condition="	Container.Content(MusicVideos)">Conditional</animation>
-					<animation effect="slide" time="0" start="0,0" end="-340,0" condition="	[Container.Content(TVShows) + !Skin.HasSetting(TVShowsUsePosters)]">Conditional</animation>
-					<animation effect="slide" time="0" start="0,0" end="-340,0" condition="	Container.Content(Episodes)">Conditional</animation>
-					<animation effect="slide" time="0" start="0,0" end="340,0" condition="	[Container.Content(TVShows) + !StringCompare(Container.FolderPath,videodb://2/2/)]">Conditional</animation>
-					<animation effect="slide" time="0" start="0,0" end="-340,0" condition="	[Container.Content(TVShows) + !StringCompare(Container.FolderPath,videodb://2/2/) + Skin.HasSetting(TVShowsUsePosters)]">Conditional</animation>
 					<description>header label</description>
-					<posx>375</posx>
-					<posy>75</posy>
+					<posx>510</posx>
+					<posy>20</posy>
 					<width>850</width>
 					<height>30</height>
-					<font>Simplicity_50</font>
-					<label>$INFO[Listitem.Title]</label>
+					<font>Simplicity_40</font>
+					<label>[B]$INFO[Listitem.Title][/B]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
+				</control>
+				<control type="label">
+					<description>header label</description>
+					<posx>510</posx>
+					<posy>20</posy>
+					<width>850</width>
+					<height>30</height>
+					<font>Simplicity_40</font>
+					<label>[B]$INFO[ListItem.TVShowTitle][/B]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<visible>!Container.Content(Episodes)</visible>
+				</control>
+				<control type="label">
+					<description>Album header label</description>
+					<posx>510</posx>
+					<posy>65</posy>
+					<width>650</width>
+					<height>30</height>
+					<font>Simplicity_30_UltraThin</font>
+					<label>[COLOR=white]By:[/COLOR] $INFO[Listitem.Artist]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textcolor>grey2</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<visible>container.content(MusicVideos)</visible>
 				</control>
 				<!--<control type="label">
 					<description>header label</description>
@@ -80,24 +73,23 @@
 				</control>-->
 				<control type="grouplist">
 					<description>Studio Codec Flagging Images</description>
-					<posx>1100</posx>
-					<posy>38</posy>
-					<width>150</width>
+					<posx>510</posx>
+					<posy>80</posy>
+					<width>105</width>
 					<align>left</align>
 					<itemgap>0</itemgap>
 					<orientation>horizontal</orientation>
-					<include>StudioFlaggingConditionsBig</include>
+					<include>StudioFlaggingConditions</include>
 				</control>
 				<control type="grouplist">
 					<description>Media Codec Flagging Images</description>
-					<posx>385</posx>
-					<posy>610</posy>
-					<width>500</width>
+					<posx>630</posx>
+					<posy>109</posy>
+					<width>600</width>
 					<align>left</align>
-					<itemgap>30</itemgap>
+					<itemgap>20</itemgap>
 					<orientation>horizontal</orientation>
 					<include>VisibleFadeEffect</include>
-					<animation effect="slide" time="0" start="0,0" end="-310,0" condition="	Container.Content(MusicVideos)">Conditional</animation>
 					<visible>!Control.IsVisible(50) + [Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
 					<include>VideoTypeHackFlaggingConditions</include>
 					<include>VideoCodecFlaggingConditions</include>
@@ -110,55 +102,33 @@
 					<posx>20</posx>
 					<include>VisibleFadeEffect</include>
 					<control type="image">
-						<posx>20</posx>
-						<posy>40</posy>
-						<width>300</width>
-						<height>400</height>
+						<posx>-20</posx>
+						<posy>-15</posy>
+						<width>480</width>
+						<height>720</height>
 						<aspectratio>stretch</aspectratio>
 						<texture>$INFO[ListItem.Icon]</texture>
-						<bordertexture border="5">simplicity/folder-focus.png</bordertexture>
-						<bordersize>5</bordersize>
+						<bordertexture border="2">simplicity/folder-focus.png</bordertexture>
+						<bordersize>2</bordersize>
 					</control>
 				</control>
 				<control type="group">
 					<visible>Container.Content(Movies)</visible>
 					<posy>15</posy>
-					<posx>20</posx>
+					<posx>0</posx>
 					<include>VisibleFadeEffect</include>
 					<control type="image">
 						<description>Rating value</description>
-						<posx>20</posx>
-						<posy>460</posy>
+						<posx>510</posx>
+						<posy>50</posy>
 						<width>150</width>
 						<height>30</height>
 						<texture>$INFO[Listitem.StarRating]</texture>
 					</control>
-					<control type="grouplist">
-						<description>MPAA Flagging Conditions Images</description>
-						<posx>190</posx>
-						<posy>454</posy>
-						<width>130</width>
-						<align>right</align>
-						<itemgap>0</itemgap>
-						<colordiffuse>80FFFFFF</colordiffuse>
-						<orientation>horizontal</orientation>
-						<include>MPAAFlaggingConditionsShade</include>
-					</control>
 					<control type="fadelabel">
-						<posx>20</posx>
-						<posy>510</posy>
-						<width>112</width>
-						<height>30</height>
-						<font>Simplicity_20</font>
-						<textcolor>white</textcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Year]</label>
-					</control>
-					<control type="fadelabel">
-						<posx>20</posx>
-						<posy>560</posy>
-						<width>71</width>
+						<posx>685</posx>
+						<posy>50</posy>
+						<width>101</width>
 						<height>30</height>
 						<font>Simplicity_20</font>
 						<textcolor>white</textcolor>
@@ -167,10 +137,83 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Duration] mins</label>
+						<visible>!Skin.HasSetting(NoMinutes)</visible>
+					</control>
+					<control type="fadelabel">
+						<posx>685</posx>
+						<posy>50</posy>
+						<width>101</width>
+						<height>30</height>
+						<font>Simplicity_20</font>
+						<textcolor>white</textcolor>
+						<scroll>false</scroll>
+						<scrollspeed>0</scrollspeed>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Duration]</label>
+						<visible>Skin.HasSetting(NoMinutes)</visible>
+					</control>
+					<control type="grouplist">
+						<description>MPAA Flagging Conditions Images</description>
+						<posx>710</posx>
+						<posy>43</posy>
+						<width>130</width>
+						<align>left</align>
+						<itemgap>0</itemgap>
+						<colordiffuse>80FFFFFF</colordiffuse>
+						<orientation>horizontal</orientation>
+						<include>MPAAFlaggingConditionsShade</include>
+					</control>
+					<control type="textbox" id="400">
+						<description>Description Value for Movies</description>
+						<posx>510</posx>
+						<posy>170</posy>
+						<width>700</width>
+						<height>167</height>
+						<font>Simplicity_20</font>
+						<align>left</align>
+						<textcolor>white</textcolor>
+						<pagecontrol>61</pagecontrol>
+						<label>$INFO[ListItem.Plot]</label>
+						<autoscroll time="3000" delay="4000" repeat="5000">!Control.HasFocus(61) + Skin.HasSetting(AutoScroll)</autoscroll>
+						<visible>!Control.IsVisible(50)</visible>
 					</control>
 					<control type="label">
-						<posx>20</posx>
-						<posy>610</posy>
+						<posx>510</posx>
+						<posy>375</posy>
+						<width>400</width>
+						<height>50</height>
+						<font>Simplicity_24_Bold</font>
+						<textcolor>yellow</textcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>Cast</label>
+					</control>
+					<control type="textbox">
+						<description>Cast</description>
+						<posx>510</posx>
+						<posy>425</posy>
+						<width>350</width>
+						<height>167</height>
+						<font>Simplicity_20</font>
+						<textcolor>white</textcolor>
+						<align>left</align>
+						<label>$INFO[ListItem.CastandRole]</label>
+					</control>  
+					<control type="label">
+						<posx>910</posx>
+						<posy>375</posy>
+						<width>400</width>
+						<height>50</height>
+						<font>Simplicity_24_Bold</font>
+						<textcolor>yellow</textcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>Director</label>
+					</control>
+					<control type="label">
+						<posx>910</posx>
+						<posy>425</posy>
 						<width>280</width>
 						<height>30</height>
 						<font>Simplicity_20</font>
@@ -180,52 +223,27 @@
 						<info>ListItem.Director</info>
 					</control>
 					<control type="label">
-						<posx>375</posx>
-						<posy>375</posy>
+						<posx>910</posx>
+						<posy>475</posy>
 						<width>400</width>
 						<height>50</height>
 						<font>Simplicity_24_Bold</font>
-						<textcolor>white</textcolor>
+						<textcolor>yellow</textcolor>
 						<align>left</align>
 						<aligny>center</aligny>
-						<label>Plot Summary</label>
-					</control>
-					<control type="textbox" id="400">
-						<description>Description Value for Movies</description>
-						<posx>375</posx>
-						<posy>425</posy>
-						<width>470</width>
-						<height>170</height>
-						<font>Simplicity_20</font>
-						<align>justify</align>
-						<textcolor>white</textcolor>
-						<pagecontrol>61</pagecontrol>
-						<label>$INFO[ListItem.Plot]</label>
-						<autoscroll time="3000" delay="4000" repeat="5000">!Control.HasFocus(61) + Skin.HasSetting(AutoScroll)</autoscroll>
-						<visible>!Control.IsVisible(50)</visible>
+						<label>Writer</label>
 					</control>
 					<control type="label">
-						<posx>900</posx>
-						<posy>375</posy>
-						<width>400</width>
-						<height>50</height>
-						<font>Simplicity_24_Bold</font>
-						<textcolor>white</textcolor>
+						<posx>910</posx>
+						<posy>525</posy>
+						<width>280</width>
+						<height>30</height>
+						<font>Simplicity_20</font>
 						<align>left</align>
 						<aligny>center</aligny>
-						<label>Cast</label>
-					</control>
-					<control type="textbox">
-						<description>Cast</description>
-						<posx>900</posx>
-						<posy>425</posy>
-						<width>350</width>
-						<height>170</height>
-						<font>Simplicity_20</font>
 						<textcolor>white</textcolor>
-						<align>left</align>
-						<label>$INFO[ListItem.CastandRole]</label>
-					</control>  
+						<info>ListItem.Writer</info>
+					</control>
 				</control>
 
 				<!--TVshows with banners-->
@@ -235,56 +253,65 @@
 					<visible>!Container.Content(Episodes)</visible>
 					<visible>![Container.Content(TVShows) + Skin.HasSetting(TVShowsUsePosters)]</visible>
 					<visible>!Container.Content(Movies)</visible>
-					<posy>15</posy>
-					<posx>20</posx>
+					<posy>-45</posy>
+					<posx>25</posx>
 					<include>VisibleFadeEffect</include>
 					<control type="image">
-						<posx>22</posx>
-						<posy>182</posy>
-						<width>504</width>
+						<posx>-18</posx>
+						<posy>122</posy>
+						<width>474</width>
 						<height>104</height>
 						<aspectratio>stretch</aspectratio>
 						<texture background="true" diffuse="simplicity/bannerdiffuse.png">simplicity/banner-shadow7.png</texture>
 						<visible>!Container.Content(Seasons) + ![Container.Content(TVShows) + !StringCompare(Container.FolderPath,videodb://2/2/)] + !Container.Content(MusicVideos)</visible>
 					</control>
 					<control type="image">
-						<posx>20</posx>
-						<posy>180</posy>
-						<width>500</width>
+						<posx>-16</posx>
+						<posy>120</posy>
+						<width>470</width>
 						<height>100</height>
 						<aspectratio>stretch</aspectratio>
 						<texture background="true" diffuse="simplicity/bannerdiffuse.png">$INFO[ListItem.Icon]</texture>
 						<visible>!Container.Content(Seasons) + ![Container.Content(TVShows) + !StringCompare(Container.FolderPath,videodb://2/2/)] + !Container.Content(MusicVideos)</visible>
 					</control>
 					<control type="image">
-						<posx>20</posx>
-						<posy>180</posy>
-						<width>500</width>
+						<posx>-16</posx>
+						<posy>120</posy>
+						<width>470</width>
 						<height>100</height>
 						<aspectratio>stretch</aspectratio>
 						<texture background="true" diffuse="simplicity/bannerdiffuse.png">simplicity/banner-gloss.png</texture>
 						<visible>!Container.Content(Seasons) + ![Container.Content(TVShows) + !StringCompare(Container.FolderPath,videodb://2/2/)] + !Container.Content(MusicVideos)</visible>
 					</control>
+					<control type="image">
+							<posx>20</posx>
+							<posy>250</posy> 
+							<width>400</width>
+							<height>155</height>
+							<aligny>center</aligny>
+							<texture background="true" fallback="logo-fallback.png">$INFO[ListItem.path]/$INFO[ListItem.title]/logo.png</texture> 
+							<aspectratio>keep</aspectratio>
+							<visible>Skin.HasSetting(EnableClearartViews)</visible>
+						</control>
 				</control>
 				<control type="group">
 					<visible>[Container.Content(TVShows) + !Skin.HasSetting(TVShowsUsePosters)]</visible>
 					<visible>!Container.Content(Seasons) + ![Container.Content(TVShows) + !StringCompare(Container.FolderPath,videodb://2/2/)]</visible>
 					<posy>15</posy>
-					<posx>20</posx>
+					<posx>0</posx>
 					<include>VisibleFadeEffect</include>
 					<control type="image">
 						<description>Rating value</description>
-						<posx>20</posx>
-						<posy>460</posy>
+						<posx>510</posx>
+						<posy>50</posy>
 						<width>150</width>
 						<height>30</height>
 						<texture>$INFO[Listitem.StarRating]</texture>
-						<animation effect="slide" time="0" start="0,0" end="0,-70" condition="[Container.Content(TVShows) + !Skin.HasSetting(TVShowsUsePosters)]">Conditional</animation>
 					</control>
 					<control type="grouplist">
 						<description>MPAA Flagging Conditions Images</description>
-						<posx>21</posx>
-						<posy>380</posy>
+						<posx>710</posx>
+						<posy>43</posy>
 						<width>130</width>
 						<align>left</align>
 						<itemgap>0</itemgap>
@@ -292,51 +319,14 @@
 						<orientation>horizontal</orientation>
 						<include>TVMPAAFlaggingConditions</include>
 					</control>
-					<control type="fadelabel">
-						<posx>20</posx>
-						<posy>510</posy>
-						<width>112</width>
-						<height>30</height>
-						<font>Simplicity_20</font>
-						<textcolor>white</textcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Year]</label>
-						<animation effect="slide" time="0" start="0,0" end="0,-70" condition="[Container.Content(TVShows) + !Skin.HasSetting(TVShowsUsePosters)]">Conditional</animation>
-					</control>
-					<control type="fadelabel">
-						<posx>20</posx>
-						<posy>560</posy>
-						<width>280</width>
-						<height>30</height>
-						<font>Simplicity_20</font>
-						<textcolor>white</textcolor>
-						<scroll>false</scroll>
-						<scrollspeed>0</scrollspeed>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Episode] Episodes - $INFO[ListItem.Property(UnWatchedEpisodes)] Unwatched</label>
-						<animation effect="slide" time="0" start="0,0" end="0,-70" condition="[Container.Content(TVShows) + !Skin.HasSetting(TVShowsUsePosters)]">Conditional</animation>
-					</control>
-					<control type="label">
-						<posx>375</posx>
-						<posy>375</posy>
-						<width>400</width>
-						<height>50</height>
-						<font>Simplicity_24_Bold</font>
-						<textcolor>white</textcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>Plot Summary</label>
-					</control>
 					<control type="textbox" id="400">
 						<description>Description Value for Movies</description>
-						<posx>375</posx>
-						<posy>425</posy>
-						<width>470</width>
-						<height>170</height>
+						<posx>510</posx>
+						<posy>170</posy>
+						<width>700</width>
+						<height>167</height>
 						<font>Simplicity_20</font>
-						<align>justify</align>
+						<align>left</align>
 						<textcolor>white</textcolor>
 						<pagecontrol>61</pagecontrol>
 						<label>$INFO[ListItem.Plot]</label>
@@ -344,27 +334,70 @@
 						<visible>!Control.IsVisible(50)</visible>
 					</control>
 					<control type="label">
-						<posx>900</posx>
+						<posx>510</posx>
 						<posy>375</posy>
 						<width>400</width>
 						<height>50</height>
 						<font>Simplicity_24_Bold</font>
-						<textcolor>white</textcolor>
+						<textcolor>yellow</textcolor>
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>Cast</label>
 					</control>
 					<control type="textbox">
 						<description>Cast</description>
-						<posx>900</posx>
+						<posx>510</posx>
 						<posy>425</posy>
-						<width>370</width>
-						<height>170</height>
+						<width>350</width>
+						<height>167</height>
 						<font>Simplicity_20</font>
 						<textcolor>white</textcolor>
 						<align>left</align>
 						<label>$INFO[ListItem.CastandRole]</label>
 					</control>  
+					<control type="label">
+						<posx>910</posx>
+						<posy>375</posy>
+						<width>400</width>
+						<height>50</height>
+						<font>Simplicity_24_Bold</font>
+						<textcolor>yellow</textcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>Episodes</label>
+					</control>
+					<control type="label">
+						<posx>910</posx>
+						<posy>425</posy>
+						<width>280</width>
+						<height>30</height>
+						<font>Simplicity_20</font>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>white</textcolor>
+						<info>ListItem.Episode</info>
+					</control>
+					<control type="label">
+						<posx>910</posx>
+						<posy>475</posy>
+						<width>400</width>
+						<height>50</height>
+						<font>Simplicity_24_Bold</font>
+						<textcolor>yellow</textcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>Airing</label>
+					</control>
+			<control type="group" id="5012">
+				<posx>910</posx>
+				<posy>525</posy>
+				<include>EpisodeNextAiredDate</include>
+			</control>
+			<control type="group">
+				<posx>910</posx>
+				<posy>555</posy>
+				<include>EpisodeNextAiredTime</include>
+			</control>
 				</control>
 
 				<control type="group">
@@ -373,83 +406,48 @@
 					<posx>20</posx>
 					<include>VisibleFadeEffect</include>
 					<control type="image">
-						<posx>20</posx>
-						<posy>40</posy>
-						<width>300</width>
-						<height>400</height>
+						<posx>-20</posx>
+						<posy>-15</posy>
+						<width>480</width>
+						<height>720</height>
 						<aspectratio>stretch</aspectratio>
-						<texture background="true">$INFO[ListItem.Icon]</texture>
-						<bordertexture border="5">simplicity/folder-focus.png</bordertexture>
-						<bordersize>5</bordersize>
+						<texture>$INFO[ListItem.Icon]</texture>
+						<bordertexture border="2">simplicity/folder-focus.png</bordertexture>
+						<bordersize>2</bordersize>
 					</control>
 				</control>
 				<control type="group">
 					<visible>Container.Content(TVShows) + !StringCompare(Container.FolderPath,videodb://2/2/)</visible>
 					<posy>15</posy>
-					<posx>20</posx>
+					<posx>0</posx>
 					<include>VisibleFadeEffect</include>
 					<control type="image">
 						<description>Rating value</description>
-						<posx>20</posx>
-						<posy>460</posy>
+						<posx>510</posx>
+						<posy>50</posy>
 						<width>150</width>
 						<height>30</height>
 						<texture>$INFO[Listitem.StarRating]</texture>
 					</control>
 					<control type="grouplist">
 						<description>MPAA Flagging Conditions Images</description>
-						<posx>188</posx>
-						<posy>445</posy>
+						<posx>710</posx>
+						<posy>43</posy>
 						<width>130</width>
-						<align>right</align>
+						<align>left</align>
 						<itemgap>0</itemgap>
 						<colordiffuse>80FFFFFF</colordiffuse>
 						<orientation>horizontal</orientation>
 						<include>TVMPAAFlaggingConditions</include>
 					</control>
-					<control type="fadelabel">
-						<posx>20</posx>
-						<posy>510</posy>
-						<width>112</width>
-						<height>30</height>
-						<font>Simplicity_20</font>
-						<textcolor>white</textcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Year]</label>
-					</control>
-					<control type="fadelabel">
-						<posx>20</posx>
-						<posy>560</posy>
-						<width>280</width>
-						<height>30</height>
-						<font>Simplicity_20</font>
-						<textcolor>white</textcolor>
-						<scroll>false</scroll>
-						<scrollspeed>0</scrollspeed>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Episode] Episodes - $INFO[ListItem.Property(UnWatchedEpisodes)] Unwatched</label>
-					</control>
-					<control type="label">
-						<posx>375</posx>
-						<posy>375</posy>
-						<width>400</width>
-						<height>50</height>
-						<font>Simplicity_24_Bold</font>
-						<textcolor>white</textcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>Plot Summary</label>
-					</control>
 					<control type="textbox" id="400">
 						<description>Description Value for Movies</description>
-						<posx>375</posx>
-						<posy>425</posy>
-						<width>470</width>
-						<height>170</height>
+						<posx>510</posx>
+						<posy>170</posy>
+						<width>700</width>
+						<height>167</height>
 						<font>Simplicity_20</font>
-						<align>justify</align>
+						<align>left</align>
 						<textcolor>white</textcolor>
 						<pagecontrol>61</pagecontrol>
 						<label>$INFO[ListItem.Plot]</label>
@@ -457,120 +455,122 @@
 						<visible>!Control.IsVisible(50)</visible>
 					</control>
 					<control type="label">
-						<posx>900</posx>
+						<posx>510</posx>
 						<posy>375</posy>
 						<width>400</width>
 						<height>50</height>
 						<font>Simplicity_24_Bold</font>
-						<textcolor>white</textcolor>
+						<textcolor>yellow</textcolor>
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>Cast</label>
 					</control>
 					<control type="textbox">
 						<description>Cast</description>
-						<posx>900</posx>
+						<posx>510</posx>
 						<posy>425</posy>
-						<width>370</width>
-						<height>170</height>
+						<width>350</width>
+						<height>167</height>
 						<font>Simplicity_20</font>
 						<textcolor>white</textcolor>
 						<align>left</align>
 						<label>$INFO[ListItem.CastandRole]</label>
 					</control>  
+						<control type="label">
+						<posx>910</posx>
+						<posy>375</posy>
+						<width>400</width>
+						<height>50</height>
+						<font>Simplicity_24_Bold</font>
+						<textcolor>yellow</textcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>Episodes</label>
+					</control>
+					<control type="label">
+						<posx>910</posx>
+						<posy>425</posy>
+						<width>280</width>
+						<height>30</height>
+						<font>Simplicity_20</font>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>white</textcolor>
+						<info>ListItem.Episode</info>
+					</control>
+					<control type="label">
+						<posx>910</posx>
+						<posy>475</posy>
+						<width>400</width>
+						<height>50</height>
+						<font>Simplicity_24_Bold</font>
+						<textcolor>yellow</textcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>Airing</label>
+					</control>
+			<control type="group" id="5012">
+				<posx>910</posx>
+				<posy>525</posy>
+				<include>EpisodeNextAiredDate</include>
+			</control>
+			<control type="group">
+				<posx>910</posx>
+				<posy>555</posy>
+				<include>EpisodeNextAiredTime</include>
+			</control>
 				</control>
 
 				<!--Posters-->
 
 				<control type="group">
-					<visible>[Container.Content(TVShows) + Skin.HasSetting(TVShowsUsePosters)] + !Control.HasFocus(12)</visible>
+					<visible>[Container.Content(TVShows) + Skin.HasSetting(TVShowsUsePosters)]</visible>
 					<posy>15</posy>
 					<posx>20</posx>
 					<include>VisibleFadeEffect</include>
 					<control type="image">
-						<posx>20</posx>
-						<posy>40</posy>
-						<width>300</width>
-						<height>400</height>
+						<posx>-20</posx>
+						<posy>-15</posy>
+						<width>480</width>
+						<height>720</height>
 						<aspectratio>stretch</aspectratio>
-						<texture diffuse="simplicity/fanart-slide-poster-diffuse.png">$INFO[ListItem.Icon]</texture>
-					</control>
-					<control type="image">
-						<posx>16</posx>
-						<posy>36</posy>
-						<width>308</width>
-						<height>408</height>
-						<aspectratio scalediffuse="true">stretch</aspectratio>
-						<texture diffuse="simplicity/fanart-slide-poster-diffuse.png">simplicity/poster-border5.png</texture>
+						<texture>$INFO[ListItem.Icon]</texture>
+						<bordertexture border="2">simplicity/folder-focus.png</bordertexture>
+						<bordersize>2</bordersize>
 					</control>
 				</control>
 				<control type="group">
-					<visible>[Container.Content(TVShows) + Skin.HasSetting(TVShowsUsePosters)] + !Control.HasFocus(12)</visible>
+					<visible>[Container.Content(TVShows) + Skin.HasSetting(TVShowsUsePosters)]</visible>
 					<posy>15</posy>
-					<posx>20</posx>
+					<posx>0</posx>
 					<include>VisibleFadeEffect</include>
 					<control type="image">
 						<description>Rating value</description>
-						<posx>20</posx>
-						<posy>460</posy>
+						<posx>510</posx>
+						<posy>50</posy>
 						<width>150</width>
 						<height>30</height>
 						<texture>$INFO[Listitem.StarRating]</texture>
 					</control>
 					<control type="grouplist">
 						<description>MPAA Flagging Conditions Images</description>
-						<posx>188</posx>
-						<posy>445</posy>
+						<posx>710</posx>
+						<posy>43</posy>
 						<width>130</width>
-						<align>right</align>
+						<align>left</align>
 						<itemgap>0</itemgap>
 						<colordiffuse>80FFFFFF</colordiffuse>
 						<orientation>horizontal</orientation>
 						<include>TVMPAAFlaggingConditions</include>
 					</control>
-					<control type="fadelabel">
-						<posx>20</posx>
-						<posy>510</posy>
-						<width>112</width>
-						<height>30</height>
-						<font>Simplicity_20</font>
-						<textcolor>white</textcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Year]</label>
-					</control>
-					<control type="fadelabel">
-						<posx>20</posx>
-						<posy>560</posy>
-						<width>280</width>
-						<height>30</height>
-						<font>Simplicity_20</font>
-						<textcolor>white</textcolor>
-						<scroll>false</scroll>
-						<scrollspeed>0</scrollspeed>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Episode] Episodes - $INFO[ListItem.Property(UnWatchedEpisodes)] Unwatched</label>
-					</control>
-					<control type="label">
-						<posx>375</posx>
-						<posy>375</posy>
-						<width>400</width>
-						<height>50</height>
-						<font>Simplicity_24_Bold</font>
-						<textcolor>white</textcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>Plot Summary</label>
-					</control>
 					<control type="textbox" id="400">
 						<description>Description Value for Movies</description>
-						<posx>375</posx>
-						<posy>425</posy>
-						<width>470</width>
-						<height>170</height>
+						<posx>510</posx>
+						<posy>170</posy>
+						<width>700</width>
+						<height>167</height>
 						<font>Simplicity_20</font>
-						<align>justify</align>
+						<align>left</align>
 						<textcolor>white</textcolor>
 						<pagecontrol>61</pagecontrol>
 						<label>$INFO[ListItem.Plot]</label>
@@ -578,27 +578,71 @@
 						<visible>!Control.IsVisible(50)</visible>
 					</control>
 					<control type="label">
-						<posx>900</posx>
+						<posx>510</posx>
 						<posy>375</posy>
 						<width>400</width>
 						<height>50</height>
 						<font>Simplicity_24_Bold</font>
-						<textcolor>white</textcolor>
+						<textcolor>yellow</textcolor>
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>Cast</label>
 					</control>
 					<control type="textbox">
 						<description>Cast</description>
-						<posx>900</posx>
+						<posx>510</posx>
 						<posy>425</posy>
-						<width>370</width>
-						<height>170</height>
+						<width>350</width>
+						<height>167</height>
 						<font>Simplicity_20</font>
 						<textcolor>white</textcolor>
 						<align>left</align>
 						<label>$INFO[ListItem.CastandRole]</label>
 					</control>  
+					<control type="label">
+						<posx>910</posx>
+						<posy>375</posy>
+						<width>400</width>
+						<height>50</height>
+						<font>Simplicity_24_Bold</font>
+						<textcolor>yellow</textcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>Director</label>
+					</control>
+					<control type="label">
+						<posx>910</posx>
+						<posy>425</posy>
+						<width>280</width>
+						<height>30</height>
+						<font>Simplicity_20</font>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>white</textcolor>
+						<info>ListItem.Director</info>
+					</control>
+					<control type="label">
+						<posx>910</posx>
+						<posy>475</posy>
+						<width>400</width>
+						<height>50</height>
+						<font>Simplicity_24_Bold</font>
+						<textcolor>yellow</textcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>Writer</label>
+					</control>
+					<control type="label">
+						<posx>910</posx>
+						<posy>525</posy>
+						<width>280</width>
+						<height>30</height>
+						<font>Simplicity_20</font>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>white</textcolor>
+						<info>ListItem.Writer</info>
+					</control>
 				</control>
 
 
@@ -606,61 +650,46 @@
 
 				<control type="group">
 					<visible>Container.Content(Episodes) + !Control.HasFocus(12)</visible>
-					<posy>15</posy>
+				<posy>15</posy>
 					<posx>20</posx>
 					<include>VisibleFadeEffect</include>
 					<control type="image">
-						<posx>20</posx>
-						<posy>140</posy>
-						<width>400</width>
-						<height>200</height>
+						<posx>-20</posx>
+						<posy>-15</posy>
+						<width>480</width>
+						<height>720</height>
 						<aspectratio>stretch</aspectratio>
-						<texture background="true">$INFO[ListItem.Icon]</texture>
-						<bordertexture border="4">simplicity/thumbborder.png</bordertexture>
-						<bordersize>4</bordersize>
+						<texture>$INFO[Container.SeasonThumb]</texture>
+						<bordertexture border="2">simplicity/folder-focus.png</bordertexture>
+						<bordersize>2</bordersize>
 					</control>
 				</control>
 				<control type="group">
 					<visible>Container.Content(Episodes) + !Control.HasFocus(12)</visible>
 					<posy>15</posy>
-					<posx>20</posx>
+					<posx>0</posx>
 					<include>VisibleFadeEffect</include>
 					<control type="image">
+						<posx>510</posx>
+						<posy>392</posy>
+						<width>349</width>
+						<height>196</height>
+						<texture>$INFO[ListItem.Icon]</texture>
+						<bordertexture border="2">simplicity/folder-focus.png</bordertexture>
+						<bordersize>2</bordersize>
+					</control>
+					<control type="image">
 						<description>Rating value</description>
-						<posx>20</posx>
-						<posy>460</posy>
+						<posx>510</posx>
+						<posy>50</posy>
 						<width>150</width>
 						<height>30</height>
 						<texture>$INFO[Listitem.StarRating]</texture>
-						<animation effect="slide" time="0" start="0,0" end="0,-70" condition="[Container.Content(Episodes)]">Conditional</animation>
-					</control>
-					<control type="grouplist">
-						<description>MPAA Flagging Conditions Images</description>
-						<posx>21</posx>
-						<posy>380</posy>
-						<width>130</width>
-						<align>left</align>
-						<itemgap>0</itemgap>
-						<colordiffuse>80FFFFFF</colordiffuse>
-						<orientation>horizontal</orientation>
-						<include>TVMPAAFlaggingConditions</include>
 					</control>
 					<control type="fadelabel">
-						<posx>20</posx>
-						<posy>510</posy>
-						<width>112</width>
-						<height>30</height>
-						<font>Simplicity_20</font>
-						<textcolor>white</textcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Premiered]</label>
-						<animation effect="slide" time="0" start="0,0" end="0,-70" condition="[Container.Content(Episodes)]">Conditional</animation>
-					</control>
-					<control type="fadelabel">
-						<posx>20</posx>
-						<posy>560</posy>
-						<width>280</width>
+						<posx>685</posx>
+						<posy>50</posy>
+						<width>101</width>
 						<height>30</height>
 						<font>Simplicity_20</font>
 						<textcolor>white</textcolor>
@@ -668,63 +697,65 @@
 						<scrollspeed>0</scrollspeed>
 						<align>left</align>
 						<aligny>center</aligny>
-						<label>Season:  $INFO[ListItem.Season]</label>
-						<animation effect="slide" time="0" start="0,0" end="0,-70" condition="[Container.Content(Episodes)]">Conditional</animation>
+						<label>$INFO[ListItem.Duration] mins</label>
+						<visible>!Skin.HasSetting(NoMinutes)</visible>
 					</control>
-					<control type="label">
-						<posx>20</posx>
-						<posy>610</posy>
-						<width>280</width>
+					<control type="fadelabel">
+						<posx>685</posx>
+						<posy>50</posy>
+						<width>101</width>
 						<height>30</height>
 						<font>Simplicity_20</font>
+						<textcolor>white</textcolor>
+						<scroll>false</scroll>
+						<scrollspeed>0</scrollspeed>
 						<align>left</align>
 						<aligny>center</aligny>
-						<textcolor>white</textcolor>
-						<label>Episode:  $INFO[ListItem.Episode]</label>
-						<animation effect="slide" time="0" start="0,0" end="0,-70" condition="[Container.Content(Episodes)]">Conditional</animation>
+						<label>$INFO[ListItem.Duration]</label>
+						<visible>Skin.HasSetting(NoMinutes)</visible>
 					</control>
-					<control type="label">
-						<posx>375</posx>
-						<posy>375</posy>
-						<width>400</width>
-						<height>50</height>
-						<font>Simplicity_24_Bold</font>
-						<textcolor>white</textcolor>
+					<control type="grouplist">
+						<description>MPAA Flagging Conditions Images</description>
+						<posx>710</posx>
+						<posy>43</posy>
+						<width>130</width>
 						<align>left</align>
-						<aligny>center</aligny>
-						<label>Plot Summary</label>
+						<itemgap>0</itemgap>
+						<colordiffuse>80FFFFFF</colordiffuse>
+						<orientation>horizontal</orientation>
+						<include>TVMPAAFlaggingConditions</include>
 					</control>
 					<control type="textbox" id="400">
 						<description>Description Value for Movies</description>
-						<posx>375</posx>
-						<posy>425</posy>
-						<width>470</width>
-						<height>170</height>
+						<posx>510</posx>
+						<posy>170</posy>
+						<width>700</width>
+						<height>167</height>
 						<font>Simplicity_20</font>
-						<align>justify</align>
+						<align>left</align>
 						<textcolor>white</textcolor>
 						<pagecontrol>61</pagecontrol>
 						<label>$INFO[ListItem.Plot]</label>
 						<autoscroll time="3000" delay="4000" repeat="5000">!Control.HasFocus(61) + Skin.HasSetting(AutoScroll)</autoscroll>
 						<visible>!Control.IsVisible(50)</visible>
-					</control>
+					</control>  
 					<control type="label">
-						<posx>900</posx>
+						<posx>910</posx>
 						<posy>375</posy>
 						<width>400</width>
 						<height>50</height>
 						<font>Simplicity_24_Bold</font>
-						<textcolor>white</textcolor>
+						<textcolor>yellow</textcolor>
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>Cast</label>
 					</control>
 					<control type="textbox">
 						<description>Cast</description>
-						<posx>900</posx>
+						<posx>910</posx>
 						<posy>425</posy>
-						<width>370</width>
-						<height>170</height>
+						<width>350</width>
+						<height>167</height>
 						<font>Simplicity_20</font>
 						<textcolor>white</textcolor>
 						<align>left</align>
@@ -736,146 +767,132 @@
 				<!--Musicvideos-->
 
 				<control type="group">
-					<visible>Container.Content(MusicVideos) + !Control.HasFocus(12)</visible>
-					<posy>80</posy>
-					<posx>50</posx>
+					<visible>Container.Content(MusicVideos)</visible>
+						<posy>15</posy>
+					<posx>0</posx>
 					<include>VisibleFadeEffect</include>
-					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>380</width>
-						<height>360</height>
-						<aspectratio>keep</aspectratio>
-						<bordertexture border="4">simplicity/thumbborder.png</bordertexture>
-						<bordersize>4</bordersize>
-						<texture background="true">$INFO[ListItem.Icon]</texture>
-					</control>
-					<control type="group">
-						<posy>200</posy>
-						<posx>-330</posx>
-						<control type="label">
-							<description>Artist Title</description>
-							<posx>400</posx>
-							<posy>140</posy>
-							<width>130</width>
-							<height>25</height>
-							<align>right</align>
-							<aligny>center</aligny>
-							<font>Simplicity_20_Bold</font>
-							<textcolor>white</textcolor>
-							<label>$LOCALIZE[557]:</label>
-						</control>
-						<control type="fadelabel">
-							<description>Artist Value</description>
-							<posx>410</posx>
-							<posy>140</posy>
-							<width>460</width>
-							<height>25</height>
-							<align>left</align>
-							<aligny>center</aligny>
-							<font>Simplicity_24</font>
-							<textcolor>white</textcolor>
-							<label fallback="161">$INFO[ListItem.Artist]</label>
-						</control>
-						<control type="label">
-							<description>Album Title</description>
-							<posx>400</posx>
-							<posy>175</posy>
-							<width>130</width>
-							<height>25</height>
-							<align>right</align>
-							<aligny>center</aligny>
-							<font>Simplicity_20_Bold</font>
-							<textcolor>white</textcolor>
-							<label>$LOCALIZE[558]:</label>
-						</control>
-						<control type="fadelabel">
-							<description>Album Value</description>
-							<posx>410</posx>
-							<posy>175</posy>
-							<width>460</width>
-							<height>25</height>
-							<align>left</align>
-							<aligny>center</aligny>
-							<font>Simplicity_24</font>
-							<textcolor>white</textcolor>
-							<label fallback="161">$INFO[ListItem.Album]$INFO[musicplayer.discnumber, - $LOCALIZE[427]:]</label>
-						</control>
-						<control type="label">
-							<description>Genre Title</description>
-							<posx>400</posx>
-							<posy>210</posy>
-							<width>130</width>
-							<height>25</height>
-							<align>right</align>
-							<aligny>center</aligny>
-							<font>Simplicity_20_Bold</font>
-							<textcolor>white</textcolor>
-							<label>$LOCALIZE[515]:</label>
-						</control>
-						<control type="fadelabel">
-							<description>Genre Value</description>
-							<posx>410</posx>
-							<posy>210</posy>
-							<width>460</width>
-							<height>25</height>
-							<align>left</align>
-							<aligny>center</aligny>
-							<font>Simplicity_24</font>
-							<textcolor>white</textcolor>
-							<label fallback="161">$INFO[ListItem.Genre]</label>
-						</control>
-						<control type="label">
-							<description>Year Title</description>
-							<posx>400</posx>
-							<posy>245</posy>
-							<width>130</width>
-							<height>25</height>
-							<align>right</align>
-							<aligny>center</aligny>
-							<font>Simplicity_20_Bold</font>
-							<textcolor>white</textcolor>
-							<label>$LOCALIZE[562]:</label>
-						</control>
-						<control type="fadelabel">
-							<description>Year Value</description>
-							<posx>410</posx>
-							<posy>245</posy>
-							<width>460</width>
-							<height>25</height>
-							<align>left</align>
-							<aligny>center</aligny>
-							<font>Simplicity_24</font>
-							<textcolor>white</textcolor>
-							<label fallback="161">$INFO[ListItem.Year]</label>
-						</control>
-						<control type="label">
-							<description>Track Number Title</description>
-							<posx>400</posx>
-							<posy>280</posy>
-							<width>130</width>
-							<height>25</height>
-							<align>right</align>
-							<aligny>center</aligny>
-							<font>Simplicity_20_Bold</font>
-							<textcolor>white</textcolor>
-							<label>$LOCALIZE[554]:</label>
-						</control>
-						<control type="fadelabel">
-							<description>Track Number Value</description>
-							<posx>410</posx>
-							<posy>280</posy>
-							<width>460</width>
-							<height>25</height>
-							<align>left</align>
-							<aligny>center</aligny>
-							<font>Simplicity_24</font>
-							<textcolor>white</textcolor>
-							<label fallback="161">$INFO[ListItem.TrackNumber]</label>
-						</control>				
-					</control>			
+				<control type="image">
+					<posx>0</posx>
+					<posy>-15</posy>
+					<width>480</width>
+					<height>480</height>
+						<bordertexture border="2">simplicity/thumbborder.png</bordertexture>
+						<bordersize>2</bordersize>
+							<texture background="true">simplicity/black.png</texture>
 				</control>
-
+				<control type="image">
+					<posx>0</posx>
+					<posy>-15</posy>
+					<width>480</width>
+					<height>480</height>
+					<aspectratio>keep</aspectratio>
+						<bordertexture border="2">-</bordertexture>
+						<bordersize>2</bordersize>
+							<texture fallback="simplicity/artist-fallback.png" background="true">$INFO[ListItem.Thumb]</texture>
+				</control>
+				<control type="list" id="49">
+						<posx>510</posx>
+						<posy>170</posy>
+						<width>700</width>
+						<height>330</height>
+						<onleft>49</onleft>
+						<onright>49</onright>
+						<onup>9000</onup>
+						<ondown>61</ondown>
+						<pagecontrol>-</pagecontrol>
+						<scrolltime>200</scrolltime>
+						<itemlayout height="40">
+							<control type="label">
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>160</width>
+								<height>30</height>
+						<font>Simplicity_24_Bold</font>
+						<textcolor>yellow</textcolor>
+								<align>left</align>
+								<aligny>center</aligny>
+								<selectedcolor>selected</selectedcolor>
+								<info>ListItem.Label</info>
+							</control>
+							<control type="label">
+								<posx>135</posx>
+								<posy>0</posy>
+								<width>580</width>
+								<height>30</height>
+						<font>Simplicity_20</font>
+								<align>left</align>
+								<aligny>center</aligny>
+								<textcolor>white</textcolor>
+								<selectedcolor>white</selectedcolor>
+								<info>ListItem.Label2</info>
+							</control>
+						</itemlayout>
+						<focusedlayout height="40">
+							<control type="label">
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>160</width>
+								<height>30</height>
+								<align>left</align>
+								<aligny>center</aligny>
+						<font>Simplicity_24_Bold</font>
+						<textcolor>yellow</textcolor>
+								<selectedcolor>selected</selectedcolor>
+								<info>ListItem.Label</info>
+							</control>
+							<control type="label">
+								<posx>135</posx>
+								<posy>0</posy>
+								<width>580</width>
+								<height>30</height>
+						<font>Simplicity_20</font>
+								<align>left</align>
+								<aligny>center</aligny>
+								<textcolor>white</textcolor>
+								<selectedcolor>white</selectedcolor>
+								<info>ListItem.Label2</info>
+							</control>
+						</focusedlayout>
+						<content>
+							<item>
+								<label>Duration</label>
+								<label2>$INFO[ListItem.Duration] Minutes</label2>
+								<onclick>-</onclick>
+								<visible>!IsEmpty(ListItem.Duration)</visible>
+							</item>
+							<item>
+								<label>$LOCALIZE[558]:</label>
+								<label2>$INFO[ListItem.Album]$INFO[musicplayer.discnumber, - $LOCALIZE[427]:]</label2>
+								<onclick>-</onclick>
+								<visible>!IsEmpty(ListItem.Album)</visible>
+							</item>
+							<item>
+								<label>$LOCALIZE[515]:</label>
+								<label2>$INFO[ListItem.Genre]</label2>
+								<onclick>-</onclick>
+								<visible>!IsEmpty(ListItem.Genre)</visible>
+							</item>
+							<item>
+								<label>$LOCALIZE[562]:</label>
+								<label2>$INFO[ListItem.Year]</label2>
+								<onclick>-</onclick>
+								<visible>!IsEmpty(ListItem.Year)</visible>
+							</item>
+							<item>
+								<label>$LOCALIZE[554]:</label>
+								<label2>$INFO[ListItem.TrackNumber]</label2>
+								<onclick>-</onclick>
+								<visible>!IsEmpty(ListItem.TrackNumber)</visible>
+							</item>
+							<item>
+								<label>$LOCALIZE[21899]:</label>
+								<label2>$INFO[ListItem.Studio]</label2>
+								<onclick>-</onclick>
+								<visible>!IsEmpty(ListItem.Studio)</visible>
+							</item>
+						</content>
+					</control>
+				</control>
 				<control type="panel" id="50">
 					<posx>380</posx>
 					<posy>520</posy>
@@ -939,8 +956,16 @@
 						</control>
 					</focusedlayout>
 				</control>
+						<control type="image">
+							<posx>510</posx>
+							<posy>660</posy>
+							<width>740</width>
+							<height>1</height>
+							<align>center</align>
+							<texture>simplicity/line.png</texture>
+						</control>
 				<control type="grouplist" id="9000">
-					<posx>0</posx>
+					<posx>242</posx>
 					<posy>670</posy>
 					<width>1280</width>
 					<height>40</height>
@@ -953,7 +978,7 @@
 					<ondown>9000</ondown>
 					<control type="togglebutton" id="8">
 						<description>Play/browse to Show</description>
-						<include>ButtonInfoDialogsCommonValues</include>
+						<include>ButtonInfoDialogsCommonValuesInfo</include>
 						<label>208</label>
 						<alttexturefocus border="2">simplicity/button-focus-white.png</alttexturefocus>
 						<alttexturenofocus border="2">simplicity/button-nofocus.png</alttexturenofocus>
@@ -962,37 +987,37 @@
 					</control>
 					<control type="button" id="6">
 						<description>Refresh</description>
-						<include>ButtonInfoDialogsCommonValues</include>
+						<include>ButtonInfoDialogsCommonValuesInfo</include>
 						<label>184</label>
 					</control>
 					<control type="button" id="10">
 						<description>Get Thumb</description>
-						<include>ButtonInfoDialogsCommonValues</include>
-						<label>Get Thumb</label>
+						<include>ButtonInfoDialogsCommonValuesInfo</include>
+						<label>Thumb</label>
 					</control>
 					<control type="button" id="12">
 						<description>Get Fanart</description>
-						<include>ButtonInfoDialogsCommonValues</include>
-						<label>20413</label>
+						<include>ButtonInfoDialogsCommonValuesInfo</include>
+						<label>Fanart</label>
 					</control>
 					<control type="button" id="11">
 						<description>Play Trailer</description>
-						<include>ButtonInfoDialogsCommonValues</include>
+						<include>ButtonInfoDialogsCommonValuesInfo</include>
 						<label>20410</label>
 						<visible>!IsEmpty(ListItem.Trailer)</visible>
 					</control>
 					<control type="button" id="13">
-						<description>Get Logo</description>
-						<include>ButtonInfoDialogsCommonValues</include>
+						<description>Logo</description>
+						<include>ButtonInfoDialogsCommonValuesInfo</include>
 						<onclick>XBMC.RunScript(script.logo-downloader,mode=solo,clearart=True,logo=True,showthumb=landscape.jpg,poster=poster.jpg,banner=banner.jpg,showname=$INFO[ListItem.TVShowTitle])</onclick>
-						<label>Get Logo</label>
+						<label>Logo</label>
 						<visible>Container.Content(TVShows)</visible>
 					</control>
 					<control type="button" id="14">
 						<description>Get Logo</description>
-						<include>ButtonInfoDialogsCommonValues</include>
+						<include>ButtonInfoDialogsCommonValuesInfo</include>
 						<onclick>XBMC.RunScript(script.TvTunes,mode=solo&amp;tvpath=$INFO[ListItem.FilenameAndPath]&amp;tvname=$INFO[ListItem.TVShowTitle])</onclick>
-						<label>Get Tunes</label>
+						<label>Theme</label>
 						<visible>Container.Content(TVShows)</visible>
 					</control>
 

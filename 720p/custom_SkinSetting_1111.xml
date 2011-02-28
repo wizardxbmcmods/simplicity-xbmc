@@ -2205,7 +2205,7 @@
 						<itemgap>-1</itemgap>
 						<pagecontrol>60</pagecontrol>
 						<onleft>9000</onleft>
-						<onright>9000</onright>
+						<onright>60</onright>
 						<onup>9005</onup>
 						<ondown>9005</ondown>
 						<control type="label" id="500">
@@ -2297,6 +2297,22 @@
 							<texturenofocus>simplicity/menuitemnf.png</texturenofocus>
 							<onclick>Skin.ToggleSetting(NoVisualizationClock)</onclick>
 							<selected>Skin.HasSetting(NoVisualizationClock)</selected>
+						</control>
+						<control type="radiobutton" id="508">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_20</font>
+							<label>Enable Clearart On Info Screen</label>
+							<textcolor>white</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<radiowidth>83</radiowidth>
+							<radioheight>67</radioheight>
+							<textureradiofocus>simplicity/settings-radiobutton-on.png</textureradiofocus>
+							<textureradionofocus>simplicity/settings-radiobutton-off.png</textureradionofocus>
+							<texturefocus>simplicity/button-focus.png</texturefocus>
+							<texturenofocus>simplicity/menuitemnf.png</texturenofocus>
+							<onclick>Skin.ToggleSetting(ClearartOnInfoScreen)</onclick>
+							<selected>Skin.HasSetting(ClearartOnInfoScreen)</selected>
 						</control>
 						<control type="radiobutton" id="511">
 							<width>900</width>
@@ -2441,6 +2457,22 @@
 							<onclick>XBMC.RunScript(script.TvTunes)</onclick>
 						</control>
 					</control>
+				</control>
+				<control type="scrollbar" id="60">
+					<posx>1230</posx>
+					<posy>60</posy>
+						<width>25</width>
+						<height>640</height>
+						<texturesliderbackground border="0,14,0,14">scrollbarv.png</texturesliderbackground>
+						<texturesliderbar border="0,14,0,14">scrollbarv_bar.png</texturesliderbar>
+						<texturesliderbarfocus border="0,14,0,14">scrollbarv_bar_focus.png</texturesliderbarfocus>
+						<textureslidernib>ScrollBarNib.png</textureslidernib>
+						<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
+					<onleft>9005</onleft>
+					<onright>9000</onright>
+					<showonepage>false</showonepage>
+					<orientation>vertical</orientation>
+					<visible>Container(9000).Hasfocus(5)</visible>
 				</control>
 				<control type="group">
 					<control type="grouplist" id="9006">
