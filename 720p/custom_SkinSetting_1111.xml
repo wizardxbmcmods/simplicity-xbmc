@@ -133,6 +133,11 @@
 						<label2>-</label2>
 						<onclick>-</onclick>
 					</item>
+					<item id="20">
+						<label>Advanced</label>
+						<label2>-</label2>
+						<onclick>-</onclick>
+					</item>
 				</content>
 			</control>
 			<!--<control type="label">
@@ -2314,6 +2319,22 @@
 							<onclick>Skin.ToggleSetting(ClearartOnInfoScreen)</onclick>
 							<selected>Skin.HasSetting(ClearartOnInfoScreen)</selected>
 						</control>
+						<control type="radiobutton" id="509">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_20</font>
+							<label>Enable "Extra Thumbs" On Info Screen</label>
+							<textcolor>white</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<radiowidth>83</radiowidth>
+							<radioheight>67</radioheight>
+							<textureradiofocus>simplicity/settings-radiobutton-on.png</textureradiofocus>
+							<textureradionofocus>simplicity/settings-radiobutton-off.png</textureradionofocus>
+							<texturefocus>simplicity/button-focus.png</texturefocus>
+							<texturenofocus>simplicity/menuitemnf.png</texturenofocus>
+							<onclick>Skin.ToggleSetting(UseThumbsOnInfo)</onclick>
+							<selected>Skin.HasSetting(UseThumbsOnInfo)</selected>
+						</control>
 						<control type="radiobutton" id="511">
 							<width>900</width>
 							<height>40</height>
@@ -2329,22 +2350,6 @@
 							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
 							<onclick>Skin.ToggleSetting(EnableWatchedIconMovies)</onclick>
 							<selected>Skin.HasSetting(EnableWatchedIconMovies)</selected>
-						</control>
-						<control type="radiobutton" id="512">
-							<width>900</width>
-							<height>40</height>
-							<font>Simplicity_20</font>
-							<label>Use TV Theme Songs</label>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
-							<radiowidth>83</radiowidth>
-							<radioheight>67</radioheight>
-							<textureradiofocus>simplicity/settings-radiobutton-on.png</textureradiofocus>
-							<textureradionofocus>simplicity/settings-radiobutton-off.png</textureradionofocus>
-							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
-							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
-							<onclick>Skin.ToggleSetting(UseTvTunes)</onclick>
-							<selected>Skin.HasSetting(UseTvTunes)</selected>
 						</control>
 						<control type="radiobutton" id="513">
 							<posx>0</posx>
@@ -2407,54 +2412,6 @@
 							<texturenofocus>simplicity/menuitemnf.png</texturenofocus>
 							<onclick>Skin.SetAddon(SubtitleScript_Path,xbmc.python.subtitles)</onclick>
 							<visible>Skin.HasSetting(SubtitleDownload_Enable)</visible>
-						</control>
-						<control type="label" id="517">
-							<width>750</width>
-							<height>45</height>
-							<font>Simplicity_20_Bold_title</font>
-							<label>TV Show Image Downloader</label>
-							<textcolor>yellow</textcolor>
-							<shadowcolor>black</shadowcolor>
-							<align>left</align>
-							<aligny>center</aligny>
-						</control>
-						<control type="button" id="518">
-							<width>180</width>
-							<height>40</height>
-							<align>center</align>
-							<aligny>center</aligny>
-							<label>Get Images</label>
-							<textcolor>black</textcolor>
-							<focusedcolor>black</focusedcolor>
-							<shadowcolor>grey2</shadowcolor>
-							<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
-							<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
-							<font>Simplicity_20_Bold_title</font>
-							<onclick>XBMC.RunScript(script.logo-downloader,mode=bulk,clearart=True,logo=True,showthumb=landscape.jpg,poster=poster.jpg,banner=banner.jpg)</onclick>
-						</control>
-						<control type="label" id="519">
-							<width>750</width>
-							<height>45</height>
-							<font>Simplicity_20_Bold_title</font>
-							<label>TV Theme Song Downloader</label>
-							<textcolor>yellow</textcolor>
-							<shadowcolor>black</shadowcolor>
-							<align>left</align>
-							<aligny>center</aligny>
-						</control>
-						<control type="button" id="520">
-							<width>180</width>
-							<height>40</height>
-							<align>center</align>
-							<aligny>center</aligny>
-							<label>Get Tunes</label>
-							<textcolor>black</textcolor>
-							<focusedcolor>black</focusedcolor>
-							<shadowcolor>grey2</shadowcolor>
-							<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
-							<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
-							<font>Simplicity_20_Bold_title</font>
-							<onclick>XBMC.RunScript(script.TvTunes)</onclick>
 						</control>
 					</control>
 				</control>
@@ -3775,8 +3732,112 @@
 							<onclick>Skin.SetImage(Menu_Custom4_Folder)</onclick>
 							<visible>Skin.HasSetting(Menu_Custom4)</visible>
 						</control>-->
-
 					</control>
+				<control type="grouplist" id="9020">
+					<visible>Container(9000).Hasfocus(20)</visible>
+					<posx>310</posx>
+					<posy>50</posy>
+					<width>900</width>
+					<height>670</height>
+					<itemgap>-1</itemgap>
+					<pagecontrol>60</pagecontrol>
+					<onleft>9000</onleft>
+					<onright>60</onright>
+					<onup>9020</onup>
+					<ondown>9020</ondown>
+					<control type="label" id="2000">
+						<width>750</width>
+						<height>45</height>
+						<font>Simplicity_20_Bold_title</font>
+						<label>31511</label>
+						<textcolor>yellow</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+					</control>
+					<control type="radiobutton" id="2001">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>900</width>
+						<height>40</height>
+						<font>Simplicity_20</font>
+						<textcolor>white</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<radiowidth>83</radiowidth>
+						<radioheight>67</radioheight>
+						<textureradiofocus>simplicity/settings-radiobutton-on.png</textureradiofocus>
+						<textureradionofocus>simplicity/settings-radiobutton-off.png</textureradionofocus>
+						<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+						<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
+						<label>Enable "Poster.jpg" Support</label>	
+						<onclick>Skin.ToggleSetting(UsePosterJPG)</onclick>
+						<selected>Skin.HasSetting(UsePosterJPG)</selected>
+					</control>
+						<control type="radiobutton" id="2002">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_20</font>
+							<label>Use TV Theme Songs</label>
+							<textcolor>white</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<radiowidth>83</radiowidth>
+							<radioheight>67</radioheight>
+							<textureradiofocus>simplicity/settings-radiobutton-on.png</textureradiofocus>
+							<textureradionofocus>simplicity/settings-radiobutton-off.png</textureradionofocus>
+							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
+							<onclick>Skin.ToggleSetting(UseTvTunes)</onclick>
+							<selected>Skin.HasSetting(UseTvTunes)</selected>
+						</control>
+					<control type="label" id="2010">
+							<width>750</width>
+							<height>45</height>
+							<font>Simplicity_20_Bold_title</font>
+							<label>TV Show Image Downloader</label>
+							<textcolor>yellow</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<align>left</align>
+							<aligny>center</aligny>
+						</control>
+						<control type="button" id="2011">
+							<width>180</width>
+							<height>40</height>
+							<align>center</align>
+							<aligny>center</aligny>
+							<label>Get Images</label>
+							<textcolor>black</textcolor>
+							<focusedcolor>black</focusedcolor>
+							<shadowcolor>grey2</shadowcolor>
+							<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
+							<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
+							<font>Simplicity_20_Bold_title</font>
+							<onclick>XBMC.RunScript(script.logo-downloader,mode=bulk,clearart=True,logo=True,showthumb=landscape.jpg,poster=poster.jpg,banner=banner.jpg)</onclick>
+						</control>
+						<control type="label" id="2012">
+							<width>750</width>
+							<height>45</height>
+							<font>Simplicity_20_Bold_title</font>
+							<label>TV Theme Song Downloader</label>
+							<textcolor>yellow</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<align>left</align>
+							<aligny>center</aligny>
+						</control>
+						<control type="button" id="2013">
+							<width>180</width>
+							<height>40</height>
+							<align>center</align>
+							<aligny>center</aligny>
+							<label>Get Tunes</label>
+							<textcolor>black</textcolor>
+							<focusedcolor>black</focusedcolor>
+							<shadowcolor>grey2</shadowcolor>
+							<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
+							<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
+							<font>Simplicity_20_Bold_title</font>
+							<onclick>XBMC.RunScript(script.TvTunes)</onclick>
+						</control>
+				</control>
 				</control>
 			</control>
 		</control>

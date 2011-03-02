@@ -19,7 +19,7 @@
 					<description>header label</description>
 					<posx>510</posx>
 					<posy>20</posy>
-					<width>850</width>
+					<width>700</width>
 					<height>30</height>
 					<font>Simplicity_40</font>
 					<label>[B]$INFO[Listitem.Album][/B]</label>
@@ -33,7 +33,7 @@
 					<description>Artist header label</description>
 					<posx>510</posx>
 					<posy>20</posy>
-					<width>850</width>
+					<width>700</width>
 					<height>30</height>
 					<font>Simplicity_40</font>
 					<label>$INFO[Listitem.Artist]</label>
@@ -60,7 +60,7 @@
 					<description>Album header label</description>
 					<posx>510</posx>
 					<posy>50</posy>
-					<width>650</width>
+					<width>700</width>
 					<height>30</height>
 					<font>Simplicity_30_UltraThin</font>
 					<label>[COLOR=white]By:[/COLOR] $INFO[Listitem.Artist]</label>
@@ -74,7 +74,7 @@
 					<description>Album header label</description>
 					<posx>700</posx>
 					<posy>90</posy>
-					<width>650</width>
+					<width>700</width>
 					<height>30</height>
 					<font>Simplicity_30_UltraThin</font>
 					<label>$INFO[Listitem.Year]</label>

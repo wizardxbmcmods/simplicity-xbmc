@@ -1,3 +1,8 @@
+[B]1.0.5[/B] 
+
+- A coiuple of new views
+- Added support for Poster.jpp (See Skin Settings)
+
 [B]1.0.4[/B] 
 
 - Added logo to pause screen
@@ -11,8 +16,6 @@
 [B]1.0.2[/B] 
 
 - Attempting to submit to offical repo.
-
-
 
 
 [B]1.0.1[/B] 

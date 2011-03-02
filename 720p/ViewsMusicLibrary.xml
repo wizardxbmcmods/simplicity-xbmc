@@ -1325,9 +1325,9 @@
 					<posx>-70</posx>
 					<posy>-60</posy>
 					<control type="label">
-						<posx>306</posx>
+						<posx>206</posx>
 						<posy>445</posy>
-						<width>800</width>
+						<width>1000</width>
 						<height>30</height>
 						<font>Simplicity_40</font>
 						<textcolor>white</textcolor>

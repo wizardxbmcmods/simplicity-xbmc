@@ -64,6 +64,7 @@
 				<visible>Container.Content(Movies)+!Control.IsVisible(508)</visible>
 				<visible>Container.Content(Movies)+!Control.IsVisible(540)</visible>
 				<visible>Container.Content(Movies) + !Control.IsVisible(556)</visible>
+				<visible>Container.Content(TVShows) + !Control.IsVisible(556)</visible>
 			</control>
 			<control type="image">
 				<posx>0</posx>
@@ -452,7 +453,7 @@
 						<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(31)">Conditional</animation>			
 						<animation effect="zoom" end="106" center="auto">Focus</animation>
 						<onclick>Container.SetViewMode(504)</onclick>
-						<visible>Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(TvShowsUsePosters)]</visible>
+					<visible>Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(TvShowsUsePosters)] | [Container.Content(TVShows) + Skin.HasSetting(UsePosterJPG)]</visible>
 					</control>
 
 					<control type="button" id="33">
@@ -524,7 +525,7 @@
 						<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(38)">Conditional</animation>			
 						<animation effect="zoom" end="106" center="auto">Focus</animation>
 						<onclick>Container.SetViewMode(540)</onclick>
-						<visible>Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(TVShowsUsePosters) | Container.Content(Seasons)]</visible>
+						<visible>Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(TVShowsUsePosters) | Container.Content(Seasons)] | [Container.Content(TVShows) + Skin.HasSetting(UsePosterJPG)]</visible>
 					</control>
 					<control type="button" id="39">
 						<description>Poster Slide</description>
@@ -537,7 +538,7 @@
 						<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(39)">Conditional</animation>			
 						<animation effect="zoom" end="106" center="auto">Focus</animation>
 						<onclick>Container.SetViewMode(506)</onclick>
-						<visible>Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(TVShowsUsePosters) | Container.Content(Seasons)]</visible>
+						<visible>Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(TVShowsUsePosters) | Container.Content(Seasons)] | [Container.Content(TVShows) + Skin.HasSetting(UsePosterJPG)]</visible>
 					</control>
 
 					<control type="button" id="40">
@@ -700,7 +701,7 @@
 						<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(67)">Conditional</animation>	
 						<animation effect="zoom" end="106" center="auto">Focus</animation>		
 						<onclick>Container.SetViewMode(555)</onclick>		
-						<visible>Container.Content(Movies)</visible>							
+					<visible>Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(TvShowsUsePosters)] | [Container.Content(TVShows) + Skin.HasSetting(UsePosterJPG)]</visible>					
 					</control>
 					<control type="button" id="68">
 						<description>Fanart</description>
@@ -713,7 +714,7 @@
 						<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(68)">Conditional</animation>	
 						<animation effect="zoom" end="106" center="auto">Focus</animation>		
 						<onclick>Container.SetViewMode(556)</onclick>		
-						<visible>Container.Content(Movies)</visible>							
+					<visible>Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(TvShowsUsePosters)] | [Container.Content(TVShows) + Skin.HasSetting(UsePosterJPG)]</visible>			
 					</control>
 				</control>
 				<control type="image">
