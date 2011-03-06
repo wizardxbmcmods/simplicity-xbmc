@@ -2612,6 +2612,7 @@
 			</control>
 			<include>LeftOptions</include>
 			<include>MovieBreadCrumbs</include>
+			<include>TVBreadCrumbs</include>
 			<include>RightOpenRecent</include>
 			<control type="fixedlist" id="539">
 				<include>Zoom</include>		
@@ -2628,7 +2629,7 @@
 				<pagecontrol>60</pagecontrol>
 				<scrolltime>400</scrolltime>
 				<preloaditems>100</preloaditems>
-				<visible>Container.Content(Movies)</visible>
+				<visible>Container.Content(Movies) | Container.Content(TVShows)</visible>
 				<itemlayout height="80" width="500">
 					<control type="group">
 						<posx>65</posx>
@@ -2689,6 +2690,21 @@
 						<scrollspeed>0</scrollspeed>
 						<align>left</align>
 						<label>$INFO[ListItem.Genre]</label>
+						<visible>Container.Content(Movies)</visible>
+					</control>
+					<control type="label">
+						<posx>270</posx>
+						<posy>52</posy>
+						<width>450</width>
+						<height>20</height>
+						<font>Simplicity_20</font>
+						<textcolor>grey2</textcolor>
+						<selectedcolor>grey2</selectedcolor>
+						<scroll>false</scroll>
+						<scrollspeed>0</scrollspeed>
+						<align>left</align>
+						<label>$INFO[ListItem.Year] | $INFO[ListItem.Genre]</label>
+						<visible>Container.Content(TVShows)</visible>
 					</control>
 					<control type="image">
 						<description>Rating value</description>
@@ -2707,6 +2723,16 @@
 							<align>left</align>
 							<texture>simplicity/banners/$INFO[ListItem.Overlay]</texture>
 						</control>
+			<control type="image">
+						<posx>270</posx>
+						<posy>86</posy>
+				<description>Studio</description>
+				<aspectratio>keep</aspectratio>
+						<align>left</align>
+				<width>105</width>		
+				<texture>special://skin/media/studios/$INFO[ListItem.Studio,,.png]</texture>
+			<visible>Container.Content(TVShows)</visible>
+			</control>    
 					<control type="textbox">
 						<posx>270</posx>
 						<posy>107</posy>
@@ -2734,6 +2760,7 @@
 			</control>		
 
 			<control type="group">
+			<visible>Container.Content(Movies)</visible>
 				<include>Zoom</include>
 				<control type="image">
 					<posx>96</posx>
@@ -2824,6 +2851,87 @@
 					<textcolor>white</textcolor>
 					<align>left</align>
 					<label>$INFO[ListItem.Plot]</label>
+					<include>Zoom</include>		
+				</control>
+			</control>
+	<control type="group">
+			<visible>Container.Content(TVShows)</visible>
+				<include>Zoom</include>
+				<!--<control type="image">
+					<posx>96</posx>
+					<posy>140</posy>
+					<width>213</width>
+					<height>301</height>
+					<aspectratio scalediffuse="false">stretch</aspectratio>
+					<texture diffuse="simplicity/fanart-slide-poster-diffuse.png" background="true">simplicity/poster-fanartslide-shadow2.png</texture>
+					<animation effect="fade" start="0" end="100" time="400" delay="200" reversible="false">Focus</animation>
+				</control>
+				<control type="image">
+					<posx>96</posx>
+					<posy>140</posy>
+					<width>204</width>
+					<height>292</height>
+					<aspectratio scalediffuse="false">stretch</aspectratio>
+					<texture diffuse="simplicity/fanart-slide-poster-diffuse.png" background="true">$INFO[Listitem.Icon]</texture>
+					<animation effect="fade" start="0" end="100" time="400" delay="200" reversible="false">Focus</animation>
+				</control>
+				<control type="image">
+					<posx>92</posx>
+					<posy>136</posy>
+					<width>212</width>
+					<height>300</height>
+					<aspectratio scalediffuse="true">stretch</aspectratio>
+					<texture diffuse="simplicity/fanart-slide-poster-diffuse.png" background="true">simplicity/poster-border5.png</texture>
+					<animation effect="fade" start="0" end="100" time="400" delay="200" reversible="false">Focus</animation>
+				</control>-->
+				<control type="image">
+					<posx>96</posx>
+					<posy>140</posy>
+					<width>384</width>
+					<height>216</height>
+					<texture background="true" fallback="logo-fallback.png">$INFO[ListItem.Path,,clearart.png]</texture>
+					<animation effect="fade" start="0" end="100" time="400" delay="200" reversible="false">Focus</animation>
+				</control>
+				<control type="image">
+					<posx>96</posx>
+					<posy>356</posy>
+					<width>384</width>
+					<height>1</height>
+					<aspectratio>stretch</aspectratio>
+					<texture background="true">simplicity/line.png</texture>
+				</control>
+				<control type="group">
+					<posx>96</posx>
+					<posy>546</posy>
+					<include>EpisodeNextAiredDate</include>
+					<visible>Container.Content(TVShows)</visible>
+				</control>
+				<control type="group">
+					<posx>96</posx>
+					<posy>576</posy>
+					<include>EpisodeNextAiredTime</include>
+					<visible>Container.Content(TVShows)</visible>
+				</control>
+						<control type="label">
+					<posx>96</posx>
+					<posy>516</posy>
+							<width>350</width>
+							<height>20</height>
+							<font>Simplicity_20</font>
+							<textcolor>grey2</textcolor>
+							<align>left</align>
+							<label>$INFO[ListItem.Property(TotalEpisodes)] episodes, $INFO[ListItem.Property(UnWatchedEpisodes)] unwatched</label>
+						</control>		
+				<control type="textbox">
+					<posx>90</posx>
+					<posy>376</posy>
+					<width>384</width>
+					<height>120</height>
+					<font>Simplicity_20</font>
+					<textcolor>white</textcolor>
+					<align>left</align>
+					<label>$INFO[ListItem.Plot]</label>
+						<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 					<include>Zoom</include>		
 				</control>
 			</control>

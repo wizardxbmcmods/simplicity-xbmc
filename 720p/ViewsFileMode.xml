@@ -2517,6 +2517,15 @@
 				<width>1280</width>
 				<height>720</height>
 				<aspectratio>stretch</aspectratio>
+				<texture background="true">addons/espnfanart.jpg</texture>
+				<visible>substring(container.folderpath,plugin://plugin.video.espn3)</visible> 
+			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<aspectratio>stretch</aspectratio>
 				<texture background="true">addons/cbsfanart.jpg</texture>
 				<visible>substring(container.folderpath,plugin://plugin.video.cbs)</visible> 
 			</control>
@@ -2566,7 +2575,7 @@
 				<scrolltime>300</scrolltime>
 				<focusposition>1</focusposition>
 				<preloaditems>400</preloaditems>
-				<visible>substring(container.folderpath,plugin://plugin.video.KidsWB) | substring(container.folderpath,plugin://plugin.video.nickelodeon) | substring(container.folderpath,plugin://plugin.video.nickjr) | substring(container.folderpath,plugin://plugin.video.adult.swim) | substring(container.folderpath,plugin://plugin.video.cartoon.network) | substring(container.folderpath,plugin://plugin.video.cbs) | substring(container.folderpath,plugin://plugin.video.tnt) | substring(container.folderpath,plugin://plugin.video.tbs)</visible> 
+				<visible>substring(container.folderpath,plugin://plugin.video.espn3) | substring(container.folderpath,plugin://plugin.video.KidsWB) | substring(container.folderpath,plugin://plugin.video.nickelodeon) | substring(container.folderpath,plugin://plugin.video.nickjr) | substring(container.folderpath,plugin://plugin.video.adult.swim) | substring(container.folderpath,plugin://plugin.video.cartoon.network) | substring(container.folderpath,plugin://plugin.video.cbs) | substring(container.folderpath,plugin://plugin.video.tnt) | substring(container.folderpath,plugin://plugin.video.tbs)</visible> 
 				<itemlayout height="220" width="360">	
 					<control type="image">
 						<posx>3</posx>
@@ -2634,7 +2643,7 @@
 							<height>200</height>
 							<aspectratio scalediffuse="false">stretch</aspectratio>
 							<texture background="true">simplicity/fanart-slide-fanart-shadow.png</texture>
-							<animation effect="zoom" end="120" center="auto" time="200">Focus</animation> 
+							<animation effect="zoom" end="120" center="auto" time="200" reversible="false">Focus</animation> 
 						</control>
 						<control type="image">
 							<posy>4</posy>
@@ -2644,7 +2653,7 @@
 							<texture background="true">$INFO[Listitem.Icon]</texture>
 							<bordertexture border="4">simplicity/thumbborder.png</bordertexture>
 							<bordersize>4</bordersize>
-							<animation effect="zoom" end="120" center="auto" time="200">Focus</animation> 
+							<animation effect="zoom" end="120" center="auto" time="200" reversible="false">Focus</animation> 
 						</control>
 						<control type="image">
 							<posy>4</posy>
@@ -2654,7 +2663,7 @@
 							<texture background="true">addons/nickjr.jpg</texture>
 							<bordertexture border="4">simplicity/thumbborder.png</bordertexture>
 							<bordersize>4</bordersize>
-							<animation effect="zoom" end="120" center="auto" time="200">Focus</animation> 
+							<animation effect="zoom" end="120" center="auto" time="200" reversible="false">Focus</animation> 
 							<visible>[substring(container.folderpath,plugin://plugin.video.nick) + SubString(ListItem.Title,Featured)]</visible>
 						</control>
 						<control type="image">
@@ -2665,7 +2674,7 @@
 							<texture background="true">addons/cnclips.jpg</texture>
 							<bordertexture border="4">simplicity/thumbborder.png</bordertexture>
 							<bordersize>4</bordersize>
-							<animation effect="zoom" end="120" center="auto" time="200">Focus</animation> 
+							<animation effect="zoom" end="120" center="auto" time="200" reversible="false">Focus</animation> 
 							<visible>[substring(container.folderpath,plugin://plugin.video.cartoon.network) + SubString(ListItem.Title,Clips)]</visible>
 						</control>
 						<control type="image">
@@ -2676,7 +2685,7 @@
 							<texture background="true">addons/cbsnext.jpg</texture>
 							<bordertexture border="4">simplicity/thumbborder.png</bordertexture>
 							<bordersize>4</bordersize>
-							<animation effect="zoom" end="120" center="auto" time="200">Focus</animation> 
+							<animation effect="zoom" end="120" center="auto" time="200" reversible="false">Focus</animation> 
 							<visible>[substring(container.folderpath,plugin://plugin.video.cbs) + SubString(ListItem.Title,Next Page)]</visible>
 						</control>
 					</control>
@@ -2743,6 +2752,34 @@
 					<label>$INFO[ListItem.Title]</label>
 				</control>
 			</control>
+
+	<control type="group">
+				<visible>substring(container.folderpath,plugin://plugin.video.espn3)</visible> 
+				<include>Zoom</include>
+				<control type="textbox">
+					<posx>165</posx>
+					<posy>130</posy>
+					<width>980</width>
+					<height>50</height>
+					<font>Simplicity_40</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<align>Left</align>
+					<label>$INFO[ListItem.TVShowTitle]</label>
+				</control>
+				<control type="textbox">
+					<posx>165</posx>
+					<posy>442</posy>
+					<width>980</width>
+					<height>50</height>
+					<font>Simplicity_24</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<align>Left</align>
+					<label>$INFO[ListItem.Title]</label>
+				</control>
+			</control>
+
 
 			<control type="group">
 				<visible>substring(container.folderpath,plugin://plugin.video.adult.swim)</visible> 

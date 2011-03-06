@@ -133,6 +133,11 @@
 						<label2>-</label2>
 						<onclick>-</onclick>
 					</item>
+					<item id="11">
+						<label>Pictures</label>
+						<label2>-</label2>
+						<onclick>-</onclick>
+					</item>
 					<item id="20">
 						<label>Advanced</label>
 						<label2>-</label2>
@@ -2437,11 +2442,11 @@
 						<posx>310</posx>
 						<posy>50</posy>
 						<width>900</width>
-						<height>670</height>
+						<height>640</height>
 						<itemgap>-1</itemgap>
 						<pagecontrol>60</pagecontrol>
 						<onleft>9000</onleft>
-						<onright>9000</onright>
+						<onright>60</onright>
 						<onup>9006</onup>
 						<ondown>9006</ondown>
 						<control type="label" id="500">
@@ -2619,19 +2624,145 @@
 							<onclick>Skin.SetImage(HomeScriptButton3_Image)</onclick>
 							<visible>Skin.HasSetting(HomeScriptButton3)</visible>
 						</control>
+						<control type="radiobutton" id="613">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_20_Bold_title</font>
+							<label>$LOCALIZE[31119] [B]4[/B]</label>
+							<textcolor>white</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<radiowidth>83</radiowidth>
+							<radioheight>67</radioheight>
+							<textureradiofocus>simplicity/settings-radiobutton-on.png</textureradiofocus>
+							<textureradionofocus>simplicity/settings-radiobutton-off.png</textureradionofocus>
+							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
+							<onclick>Skin.ToggleSetting(HomeScriptButton4)</onclick>
+							<selected>Skin.HasSetting(HomeScriptButton4)</selected>
+						</control>
+						<control type="button" id="614">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_20</font>
+							<label> - $LOCALIZE[31120]</label>
+							<label2>[COLOR=selected]$INFO[Skin.String(HomeScriptButton4_label)][/COLOR]</label2>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
+							<onclick>Skin.SetString(HomeScriptButton4_label)</onclick>
+							<visible>Skin.HasSetting(HomeScriptButton4)</visible>
+						</control>
+						<control type="button" id="615">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_20</font>
+							<label> - $LOCALIZE[31121]</label>
+							<label2>[COLOR=selected]$INFO[Skin.String(HomeScriptButton4_Path)][/COLOR]</label2>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
+							<onclick>Skin.SetAddon(HomeScriptButton4_Path,xbmc.python.script)</onclick>
+							<visible>Skin.HasSetting(HomeScriptButton4)</visible>
+						</control>
+						<control type="button" id="616">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_20</font>
+							<label> - $LOCALIZE[31131]</label>
+							<label2>[COLOR=selected]$INFO[Skin.String(HomeScriptButton4_Image)][/COLOR]</label2>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
+							<onclick>Skin.SetImage(HomeScriptButton4_Image)</onclick>
+							<visible>Skin.HasSetting(HomeScriptButton4)</visible>
+						</control>
+						<control type="radiobutton" id="617">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_20_Bold_title</font>
+							<label>$LOCALIZE[31119] [B]5[/B]</label>
+							<textcolor>white</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<radiowidth>83</radiowidth>
+							<radioheight>67</radioheight>
+							<textureradiofocus>simplicity/settings-radiobutton-on.png</textureradiofocus>
+							<textureradionofocus>simplicity/settings-radiobutton-off.png</textureradionofocus>
+							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
+							<onclick>Skin.ToggleSetting(HomeScriptButton5)</onclick>
+							<selected>Skin.HasSetting(HomeScriptButton5)</selected>
+						</control>
+						<control type="button" id="618">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_20</font>
+							<label> - $LOCALIZE[31120]</label>
+							<label2>[COLOR=selected]$INFO[Skin.String(HomeScriptButton5_label)][/COLOR]</label2>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
+							<onclick>Skin.SetString(HomeScriptButton5_label)</onclick>
+							<visible>Skin.HasSetting(HomeScriptButton5)</visible>
+						</control>
+						<control type="button" id="619">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_20</font>
+							<label> - $LOCALIZE[31121]</label>
+							<label2>[COLOR=selected]$INFO[Skin.String(HomeScriptButton5_Path)][/COLOR]</label2>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
+							<onclick>Skin.SetAddon(HomeScriptButton5_Path,xbmc.python.script)</onclick>
+							<visible>Skin.HasSetting(HomeScriptButton5)</visible>
+						</control>
+						<control type="button" id="620">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_20</font>
+							<label> - $LOCALIZE[31131]</label>
+							<label2>[COLOR=selected]$INFO[Skin.String(HomeScriptButton5_Image)][/COLOR]</label2>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
+							<onclick>Skin.SetImage(HomeScriptButton5_Image)</onclick>
+							<visible>Skin.HasSetting(HomeScriptButton5)</visible>
+						</control>
 					</control>
 				</control>
+				<control type="scrollbar" id="60">
+					<posx>1230</posx>
+					<posy>60</posy>
+						<width>25</width>
+						<height>640</height>
+						<texturesliderbackground border="0,14,0,14">scrollbarv.png</texturesliderbackground>
+						<texturesliderbar border="0,14,0,14">scrollbarv_bar.png</texturesliderbar>
+						<texturesliderbarfocus border="0,14,0,14">scrollbarv_bar_focus.png</texturesliderbarfocus>
+						<textureslidernib>ScrollBarNib.png</textureslidernib>
+						<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
+					<onleft>9006</onleft>
+					<onright>9000</onright>
+					<showonepage>false</showonepage>
+					<orientation>vertical</orientation>
+						<visible>Container(9000).Hasfocus(6)</visible>
+					</control>
 				<control type="group">
 					<control type="grouplist" id="9007">
 						<visible>Container(9000).Hasfocus(7)</visible>
 						<posx>310</posx>
 						<posy>50</posy>
 						<width>900</width>
-						<height>670</height>
+						<height>640</height>
 						<itemgap>-1</itemgap>
 						<pagecontrol>60</pagecontrol>
 						<onleft>9000</onleft>
-						<onright>9000</onright>
+						<onright>60</onright>
 						<onup>9007</onup>
 						<ondown>9007</ondown>
 						<control type="label" id="500">
@@ -2812,8 +2943,136 @@
 							<onclick>Skin.SetImage(HomeAddonButton3_Image)</onclick>
 							<visible>Skin.HasSetting(HomeAddonButton3)</visible>
 						</control>
+						<control type="radiobutton" id="713">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_20_Bold_title</font>
+							<label>$LOCALIZE[31132] [B]4[/B]</label>
+							<textcolor>white</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<radiowidth>83</radiowidth>
+							<radioheight>67</radioheight>
+							<textureradiofocus>simplicity/settings-radiobutton-on.png</textureradiofocus>
+							<textureradionofocus>simplicity/settings-radiobutton-off.png</textureradionofocus>
+							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
+							<onclick>Skin.ToggleSetting(HomeAddonButton4)</onclick>
+							<selected>Skin.HasSetting(HomeAddonButton4)</selected>
+						</control>
+						<control type="button" id="714">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_20</font>
+							<label> - $LOCALIZE[31120]</label>
+							<label2>[COLOR=selected]$INFO[Skin.String(HomeAddonButton4_label)][/COLOR]</label2>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
+							<onclick>Skin.SetString(HomeAddonButton4_label)</onclick>
+							<visible>Skin.HasSetting(HomeAddonButton4)</visible>
+						</control>
+						<control type="button" id="715">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_20</font>
+							<label> - $LOCALIZE[31133]</label>
+							<label2>[COLOR=selected]$INFO[Skin.String(VideoButtonPathScript_4)][/COLOR]</label2>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
+							<onclick>Skin.SetAddon(VideoButtonPathScript_4,xbmc.python.pluginsource)</onclick>
+							<onclick>Skin.SetString(VideoButtonPath_4,ActivateWindow(videofiles,plugin://$INFO[Skin.String(VideoButtonPathScript_4)]))</onclick>
+							<visible>Skin.HasSetting(HomeAddonButton4)</visible>
+						</control>
+						<control type="button" id="716">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_20</font>
+							<label> - $LOCALIZE[31131]</label>
+							<label2>[COLOR=selected]$INFO[Skin.String(HomeAddonButton4_Image)][/COLOR]</label2>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
+							<onclick>Skin.SetImage(HomeAddonButton4_Image)</onclick>
+							<visible>Skin.HasSetting(HomeAddonButton4)</visible>
+						</control>
+						<control type="radiobutton" id="717">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_20_Bold_title</font>
+							<label>$LOCALIZE[31132] [B]5[/B]</label>
+							<textcolor>white</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<radiowidth>83</radiowidth>
+							<radioheight>67</radioheight>
+							<textureradiofocus>simplicity/settings-radiobutton-on.png</textureradiofocus>
+							<textureradionofocus>simplicity/settings-radiobutton-off.png</textureradionofocus>
+							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
+							<onclick>Skin.ToggleSetting(HomeAddonButton5)</onclick>
+							<selected>Skin.HasSetting(HomeAddonButton5)</selected>
+						</control>
+						<control type="button" id="718">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_20</font>
+							<label> - $LOCALIZE[31120]</label>
+							<label2>[COLOR=selected]$INFO[Skin.String(HomeAddonButton5_label)][/COLOR]</label2>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
+							<onclick>Skin.SetString(HomeAddonButton5_label)</onclick>
+							<visible>Skin.HasSetting(HomeAddonButton5)</visible>
+						</control>
+						<control type="button" id="719">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_20</font>
+							<label> - $LOCALIZE[31133]</label>
+							<label2>[COLOR=selected]$INFO[Skin.String(VideoButtonPathScript_5)][/COLOR]</label2>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
+							<onclick>Skin.SetAddon(VideoButtonPathScript_5,xbmc.python.pluginsource)</onclick>
+							<onclick>Skin.SetString(VideoButtonPath_5,ActivateWindow(videofiles,plugin://$INFO[Skin.String(VideoButtonPathScript_5)]))</onclick>
+							<visible>Skin.HasSetting(HomeAddonButton5)</visible>
+						</control>
+						<control type="button" id="720">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_20</font>
+							<label> - $LOCALIZE[31131]</label>
+							<label2>[COLOR=selected]$INFO[Skin.String(HomeAddonButton5_Image)][/COLOR]</label2>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
+							<onclick>Skin.SetImage(HomeAddonButton5_Image)</onclick>
+							<visible>Skin.HasSetting(HomeAddonButton5)</visible>
+						</control>
 					</control>
 				</control>
+				<control type="scrollbar" id="60">
+					<posx>1230</posx>
+					<posy>60</posy>
+						<width>25</width>
+						<height>640</height>
+						<texturesliderbackground border="0,14,0,14">scrollbarv.png</texturesliderbackground>
+						<texturesliderbar border="0,14,0,14">scrollbarv_bar.png</texturesliderbar>
+						<texturesliderbarfocus border="0,14,0,14">scrollbarv_bar_focus.png</texturesliderbarfocus>
+						<textureslidernib>ScrollBarNib.png</textureslidernib>
+						<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
+					<onleft>9007</onleft>
+					<onright>9000</onright>
+					<showonepage>false</showonepage>
+					<orientation>vertical</orientation>
+						<visible>Container(9000).Hasfocus(7)</visible>
+					</control>
 				<control type="group">
 					<control type="grouplist" id="9008">
 						<visible>Container(9000).Hasfocus(8)</visible>
@@ -3732,6 +3991,327 @@
 							<onclick>Skin.SetImage(Menu_Custom4_Folder)</onclick>
 							<visible>Skin.HasSetting(Menu_Custom4)</visible>
 						</control>-->
+					</control>
+			<control type="group">
+					<control type="grouplist" id="9011">
+						<visible>Container(9000).Hasfocus(11)</visible>
+						<posx>310</posx>
+						<posy>50</posy>
+						<width>900</width>
+						<height>640</height>
+						<itemgap>-1</itemgap>
+						<pagecontrol>60</pagecontrol>
+						<onleft>9000</onleft>
+						<onright>60</onright>
+						<onup>9011</onup>
+						<ondown>9011</ondown>
+						<control type="label" id="1100">
+							<width>750</width>
+							<height>45</height>
+							<font>Simplicity_20_Bold_title</font>
+							<label>Custom Picture Addon Shortcuts on Home Screen</label>
+							<textcolor>yellow</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<align>left</align>
+							<aligny>center</aligny>
+						</control>
+						<control type="radiobutton" id="1101">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_20_Bold_title</font>
+							<label>$LOCALIZE[31135] [B]1[/B]</label>
+							<textcolor>white</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<radiowidth>83</radiowidth>
+							<radioheight>67</radioheight>
+							<textureradiofocus>simplicity/settings-radiobutton-on.png</textureradiofocus>
+							<textureradionofocus>simplicity/settings-radiobutton-off.png</textureradionofocus>
+							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
+							<onclick>Skin.ToggleSetting(HomePictureButton1)</onclick>
+							<selected>Skin.HasSetting(HomePictureButton1)</selected>
+						</control>
+						<control type="button" id="1102">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_20</font>
+							<label> - $LOCALIZE[31120]</label>
+							<label2>[COLOR=selected]$INFO[Skin.String(HomePictureButton1_label)][/COLOR]</label2>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
+							<onclick>Skin.SetString(HomePictureButton1_label)</onclick>
+							<visible>Skin.HasSetting(HomePictureButton1)</visible>
+						</control>
+						<control type="button" id="1103">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_20</font>
+							<label> - $LOCALIZE[31133]</label>
+							<label2>[COLOR=selected]$INFO[Skin.String(PictureButtonPathScript_1)][/COLOR]</label2>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
+							<onclick>Skin.SetAddon(PictureButtonPathScript_1,xbmc.python.pluginsource)</onclick>
+							<onclick>Skin.SetString(PictureButtonPath_1,ActivateWindow(videofiles,plugin://$INFO[Skin.String(PictureButtonPathScript_1)]))</onclick>
+							<visible>Skin.HasSetting(HomePictureButton1)</visible>
+						</control>
+						<control type="button" id="1104">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_20</font>
+							<label> - $LOCALIZE[31131]</label>
+							<label2>[COLOR=selected]$INFO[Skin.String(HomePictureButton1_Image)][/COLOR]</label2>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
+							<onclick>Skin.SetImage(HomePictureButton1_Image)</onclick>
+							<visible>Skin.HasSetting(HomePictureButton1)</visible>
+						</control>
+						<control type="radiobutton" id="1105">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_20_Bold_title</font>
+							<label>$LOCALIZE[31135] [B]2[/B]</label>
+							<textcolor>white</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<radiowidth>83</radiowidth>
+							<radioheight>67</radioheight>
+							<textureradiofocus>simplicity/settings-radiobutton-on.png</textureradiofocus>
+							<textureradionofocus>simplicity/settings-radiobutton-off.png</textureradionofocus>
+							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
+							<onclick>Skin.ToggleSetting(HomePictureButton2)</onclick>
+							<selected>Skin.HasSetting(HomePictureButton2)</selected>
+						</control>
+						<control type="button" id="1106">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_20</font>
+							<label> - $LOCALIZE[31120]</label>
+							<label2>[COLOR=selected]$INFO[Skin.String(HomePictureButton2_label)][/COLOR]</label2>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
+							<onclick>Skin.SetString(HomePictureButton2_label)</onclick>
+							<visible>Skin.HasSetting(HomePictureButton2)</visible>
+						</control>
+						<control type="button" id="1107">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_20</font>
+							<label> - $LOCALIZE[31133]</label>
+							<label2>[COLOR=selected]$INFO[Skin.String(PictureButtonPathScript_2)][/COLOR]</label2>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
+							<onclick>Skin.SetAddon(PictureButtonPathScript_2,xbmc.python.pluginsource)</onclick>
+							<onclick>Skin.SetString(PictureButtonPath_2,ActivateWindow(videofiles,plugin://$INFO[Skin.String(PictureButtonPathScript_2)]))</onclick>
+							<visible>Skin.HasSetting(HomePictureButton2)</visible>
+						</control>
+						<control type="button" id="1108">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_20</font>
+							<label> - $LOCALIZE[31131]</label>
+							<label2>[COLOR=selected]$INFO[Skin.String(HomePictureButton2_Image)][/COLOR]</label2>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
+							<onclick>Skin.SetImage(HomePictureButton2_Image)</onclick>
+							<visible>Skin.HasSetting(HomePictureButton2)</visible>
+						</control>
+						<control type="radiobutton" id="1109">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_20_Bold_title</font>
+							<label>$LOCALIZE[31135] [B]3[/B]</label>
+							<textcolor>white</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<radiowidth>83</radiowidth>
+							<radioheight>67</radioheight>
+							<textureradiofocus>simplicity/settings-radiobutton-on.png</textureradiofocus>
+							<textureradionofocus>simplicity/settings-radiobutton-off.png</textureradionofocus>
+							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
+							<onclick>Skin.ToggleSetting(HomePictureButton3)</onclick>
+							<selected>Skin.HasSetting(HomePictureButton3)</selected>
+						</control>
+						<control type="button" id="1110">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_20</font>
+							<label> - $LOCALIZE[31120]</label>
+							<label2>[COLOR=selected]$INFO[Skin.String(HomePictureButton3_label)][/COLOR]</label2>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
+							<onclick>Skin.SetString(HomePictureButton3_label)</onclick>
+							<visible>Skin.HasSetting(HomePictureButton3)</visible>
+						</control>
+						<control type="button" id="1111">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_20</font>
+							<label> - $LOCALIZE[31133]</label>
+							<label2>[COLOR=selected]$INFO[Skin.String(PictureButtonPathScript_3)][/COLOR]</label2>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
+							<onclick>Skin.SetAddon(PictureButtonPathScript_3,xbmc.python.pluginsource)</onclick>
+							<onclick>Skin.SetString(PictureButtonPath_3,ActivateWindow(videofiles,plugin://$INFO[Skin.String(PictureButtonPathScript_3)]))</onclick>
+							<visible>Skin.HasSetting(HomePictureButton3)</visible>
+						</control>
+						<control type="button" id="1112">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_20</font>
+							<label> - $LOCALIZE[31131]</label>
+							<label2>[COLOR=selected]$INFO[Skin.String(HomePictureButton3_Image)][/COLOR]</label2>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
+							<onclick>Skin.SetImage(HomePictureButton3_Image)</onclick>
+							<visible>Skin.HasSetting(HomePictureButton3)</visible>
+						</control>
+						<control type="radiobutton" id="1113">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_20_Bold_title</font>
+							<label>$LOCALIZE[31135] [B]4[/B]</label>
+							<textcolor>white</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<radiowidth>83</radiowidth>
+							<radioheight>67</radioheight>
+							<textureradiofocus>simplicity/settings-radiobutton-on.png</textureradiofocus>
+							<textureradionofocus>simplicity/settings-radiobutton-off.png</textureradionofocus>
+							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
+							<onclick>Skin.ToggleSetting(HomePictureButton4)</onclick>
+							<selected>Skin.HasSetting(HomePictureButton4)</selected>
+						</control>
+						<control type="button" id="1114">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_20</font>
+							<label> - $LOCALIZE[31120]</label>
+							<label2>[COLOR=selected]$INFO[Skin.String(HomePictureButton4_label)][/COLOR]</label2>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
+							<onclick>Skin.SetString(HomePictureButton4_label)</onclick>
+							<visible>Skin.HasSetting(HomePictureButton4)</visible>
+						</control>
+						<control type="button" id="1115">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_20</font>
+							<label> - $LOCALIZE[31133]</label>
+							<label2>[COLOR=selected]$INFO[Skin.String(PictureButtonPathScript_4)][/COLOR]</label2>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
+							<onclick>Skin.SetAddon(PictureButtonPathScript_4,xbmc.python.pluginsource)</onclick>
+							<onclick>Skin.SetString(PictureButtonPath_4,ActivateWindow(videofiles,plugin://$INFO[Skin.String(PictureButtonPathScript_4)]))</onclick>
+							<visible>Skin.HasSetting(HomePictureButton4)</visible>
+						</control>
+						<control type="button" id="1116">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_20</font>
+							<label> - $LOCALIZE[31131]</label>
+							<label2>[COLOR=selected]$INFO[Skin.String(HomePictureButton4_Image)][/COLOR]</label2>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
+							<onclick>Skin.SetImage(HomePictureButton4_Image)</onclick>
+							<visible>Skin.HasSetting(HomePictureButton4)</visible>
+						</control>
+						<control type="radiobutton" id="1117">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_20_Bold_title</font>
+							<label>$LOCALIZE[31135] [B]5[/B]</label>
+							<textcolor>white</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<radiowidth>83</radiowidth>
+							<radioheight>67</radioheight>
+							<textureradiofocus>simplicity/settings-radiobutton-on.png</textureradiofocus>
+							<textureradionofocus>simplicity/settings-radiobutton-off.png</textureradionofocus>
+							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
+							<onclick>Skin.ToggleSetting(HomePictureButton5)</onclick>
+							<selected>Skin.HasSetting(HomePictureButton5)</selected>
+						</control>
+						<control type="button" id="1118">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_20</font>
+							<label> - $LOCALIZE[31120]</label>
+							<label2>[COLOR=selected]$INFO[Skin.String(HomePictureButton5_label)][/COLOR]</label2>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
+							<onclick>Skin.SetString(HomePictureButton5_label)</onclick>
+							<visible>Skin.HasSetting(HomePictureButton5)</visible>
+						</control>
+						<control type="button" id="1119">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_20</font>
+							<label> - $LOCALIZE[31133]</label>
+							<label2>[COLOR=selected]$INFO[Skin.String(PictureButtonPathScript_5)][/COLOR]</label2>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
+							<onclick>Skin.SetAddon(PictureButtonPathScript_5,xbmc.python.pluginsource)</onclick>
+							<onclick>Skin.SetString(PictureButtonPath_5,ActivateWindow(videofiles,plugin://$INFO[Skin.String(PictureButtonPathScript_5)]))</onclick>
+							<visible>Skin.HasSetting(HomePictureButton5)</visible>
+						</control>
+						<control type="button" id="1120">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_20</font>
+							<label> - $LOCALIZE[31131]</label>
+							<label2>[COLOR=selected]$INFO[Skin.String(HomePictureButton5_Image)][/COLOR]</label2>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
+							<onclick>Skin.SetImage(HomePictureButton5_Image)</onclick>
+							<visible>Skin.HasSetting(HomePictureButton5)</visible>
+						</control>
+					</control>
+				</control>
+				<control type="scrollbar" id="60">
+					<posx>1230</posx>
+					<posy>60</posy>
+						<width>25</width>
+						<height>640</height>
+						<texturesliderbackground border="0,14,0,14">scrollbarv.png</texturesliderbackground>
+						<texturesliderbar border="0,14,0,14">scrollbarv_bar.png</texturesliderbar>
+						<texturesliderbarfocus border="0,14,0,14">scrollbarv_bar_focus.png</texturesliderbarfocus>
+						<textureslidernib>ScrollBarNib.png</textureslidernib>
+						<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
+					<onleft>9011</onleft>
+					<onright>9000</onright>
+					<showonepage>false</showonepage>
+					<orientation>vertical</orientation>
+						<visible>Container(9000).Hasfocus(11)</visible>
 					</control>
 				<control type="grouplist" id="9020">
 					<visible>Container(9000).Hasfocus(20)</visible>
