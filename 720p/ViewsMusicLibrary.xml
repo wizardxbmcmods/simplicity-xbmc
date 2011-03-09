@@ -8,6 +8,7 @@
 			<include>Overlay</include>
 			<include>UpOptions</include>
 			<include>AlbumBreadCrumbs</include>
+			<include>DownOpenRecent</include>
 			<control type="group">
 				<posx>0</posx>
 				<posy>-30</posy>
@@ -20,7 +21,7 @@
 						<posy>298</posy>
 						<width>1800</width>
 						<height>300</height>		
-						<ondown>-</ondown>
+						<ondown>ActivateWindow(1112,Home,return)</ondown>
 						<onup>2</onup>
 						<onleft>509</onleft>
 						<onright>509</onright>
@@ -46,6 +47,17 @@
 								<aligny>center</aligny>
 								<texture fallback="album-fallback.png" background="true">$INFO[ListItem.Thumb]</texture>
 								<aspectratio>stretch</aspectratio>
+								<visible>!StringCompare(ListItem.label,* All albums)</visible>
+							</control>
+							<control type="largeimage">
+								<posx>0</posx>
+								<posy>2</posy> 
+								<width>160</width>
+								<height>160</height>
+								<aligny>center</aligny>
+								<texture>simplicity/all-albums.png</texture>
+								<aspectratio>stretch</aspectratio>
+								<visible>StringCompare(ListItem.label,* All albums)</visible>
 							</control>
 							<control type="largeimage">
 								<posx>-2</posx>
@@ -84,6 +96,18 @@
 								<aligny>center</aligny>
 								<texture fallback="album-fallback.png" background="true">$INFO[ListItem.Thumb]</texture>
 								<animation  reversible="false" effect="zoom" end="160" center="auto" time="200">Focus</animation> 
+								<visible>!StringCompare(ListItem.label,* All albums)</visible>
+								<aspectratio>stretch</aspectratio>
+							</control>
+							<control type="largeimage">
+								<posx>50</posx>
+								<posy>4</posy> 
+								<width>160</width>
+								<height>160</height>
+								<aligny>center</aligny>
+								<texture>simplicity/all-albums.png</texture>
+								<animation  reversible="false" effect="zoom" end="160" center="auto" time="200">Focus</animation> 
+								<visible>StringCompare(ListItem.label,* All albums)</visible>
 								<aspectratio>stretch</aspectratio>
 							</control>
 							<control type="largeimage">
@@ -111,6 +135,16 @@
 							<align>left</align>
 							<texture>$INFO[Listitem.StarRating]</texture>
 						</control>
+						<control type="image">
+							<description>Rating value</description>
+							<posx>252</posx>
+							<posy>300</posy>
+							<width>154</width>
+							<height>30</height>
+							<align>left</align>
+							<texture>Rating.png</texture>
+							<visible>StringCompare(ListItem.label,* All albums)</visible>
+						</control>
 						<control type="label">
 							<posx>252</posx>
 							<posy>250</posy>
@@ -122,6 +156,19 @@
 							<scroll>false</scroll>
 							<align>left</align>
 							<label>$INFO[ListItem.Album]</label>
+						</control>
+						<control type="label">
+							<posx>252</posx>
+							<posy>250</posy>
+							<width>800</width>
+							<height>30</height>
+							<font>Simplicity_40</font>
+							<textcolor>white</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<scroll>false</scroll>
+							<align>left</align>
+							<label>$INFO[Container().ListItem(1).Artist]</label>
+							<visible>StringCompare(ListItem.label,* All albums)</visible>
 						</control>
 						<control type="label">
 							<posx>252</posx>
@@ -137,6 +184,78 @@
 						</control>
 						<control type="label">
 							<posx>252</posx>
+							<posy>610</posy>
+							<width>800</width>
+							<height>30</height>
+							<font>Simplicity_20</font>
+							<textcolor>white</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<scroll>false</scroll>
+							<align>left</align>
+							<label>- $INFO[Container().ListItem(1).Label]</label>
+							<visible>StringCompare(ListItem.label,* All albums)</visible>
+						</control>
+						<control type="label">
+							<posx>252</posx>
+							<posy>640</posy>
+							<width>800</width>
+							<height>30</height>
+							<font>Simplicity_20</font>
+							<textcolor>white</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<scroll>false</scroll>
+							<align>left</align>
+							<label>- $INFO[Container().ListItem(2).Label]</label>
+							<visible>StringCompare(ListItem.label,* All albums)</visible>
+							<visible>!StringCompare(Container().ListItem(2).Label,* All albums)</visible>
+							<visible>!StringCompare(Container().ListItem(2).Label,Container().ListItem(1).Label)]</visible>
+						</control>
+						<control type="label">
+							<posx>252</posx>
+							<posy>670</posy>
+							<width>800</width>
+							<height>30</height>
+							<font>Simplicity_20</font>
+							<textcolor>white</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<scroll>false</scroll>
+							<align>left</align>
+							<label>- $INFO[Container().ListItem(3).Label]</label>
+							<visible>StringCompare(ListItem.label,* All albums)</visible>
+							<visible>!StringCompare(Container().ListItem(3).Label,* All albums)</visible>
+							<visible>!StringCompare(Container().ListItem(3).Label,Container().ListItem(1).Label)]</visible>
+						</control>
+						<control type="label">
+							<posx>252</posx>
+							<posy>700</posy>
+							<width>800</width>
+							<height>30</height>
+							<font>Simplicity_20</font>
+							<textcolor>white</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<scroll>false</scroll>
+							<align>left</align>
+							<label>- $INFO[Container().ListItem(4).Label]</label>
+							<visible>StringCompare(ListItem.label,* All albums)</visible>
+							<visible>!StringCompare(Container().ListItem(4).Label,* All albums)]</visible>
+							<visible>!StringCompare(Container().ListItem(4).Label,Container().ListItem(1).Label)]</visible>
+						</control>
+						<control type="label">
+							<posx>252</posx>
+							<posy>730</posy>
+							<width>800</width>
+							<height>30</height>
+							<font>Simplicity_20</font>
+							<textcolor>white</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<scroll>false</scroll>
+							<align>left</align>
+							<label>& More...</label>
+							<visible>IntegerGreaterThan(Container.NumItems,5) </visible>
+							<visible>StringCompare(ListItem.label,* All albums)</visible>
+						</control>
+						<control type="label">
+							<posx>252</posx>
 							<posy>640</posy>
 							<width>800</width>
 							<height>30</height>
@@ -146,6 +265,7 @@
 							<scroll>false</scroll>
 							<align>left</align>
 							<label>$INFO[ListItem.Year], $INFO[ListItem.Genre]</label>
+							<visible>!StringCompare(ListItem.label,* All albums)</visible>
 						</control>
 						<control type="textbox">
 							<description>Description Value The Movie</description>
@@ -317,6 +437,7 @@
 			<include>Overlay</include>
 			<include>LeftOptions</include>
 			<include>SongBreadCrumbs</include>
+			<include>RightOpenRecent</include>
 			<control type="fixedlist" id="512">
 				<include>Zoom</include>		
 				<posx>544</posx>
@@ -324,7 +445,7 @@
 				<width>930</width>
 				<height>540</height>
 				<onleft>2</onleft>
-				<onright>-</onright>
+				<onright>ActivateWindow(1112,Home,return)</onright>
 				<onup>512</onup>
 				<ondown>512</ondown>
 				<viewtype label="Song List">list</viewtype>
@@ -505,6 +626,7 @@
 			<include>Overlay</include>
 			<include>LeftOptions</include>
 			<include>AlbumBreadCrumbs</include>
+			<include>RightOpenRecent</include>
 			<control type="fixedlist" id="513">
 				<include>Zoom</include>		
 				<posx>544</posx>
@@ -512,7 +634,7 @@
 				<width>930</width>
 				<height>540</height>
 				<onleft>2</onleft>
-				<onright>-</onright>
+				<onright>ActivateWindow(1112,Home,return)</onright>
 				<onup>513</onup>
 				<ondown>513</ondown>
 				<viewtype label="Album List">list</viewtype>
@@ -531,7 +653,7 @@
 							<font>Simplicity_24</font>
 							<textcolor>grey4</textcolor>
 							<align>left</align>
-							<label>$INFO[ListItem.Artist]</label>
+							<label>$INFO[ListItem.label]</label>
 						</control>	
 						<control type="label">
 							<posx>135</posx>
@@ -541,7 +663,7 @@
 							<font>Simplicity_20</font>
 							<textcolor>grey2</textcolor>
 							<align>left</align>
-							<label>$INFO[ListItem.Album]</label>
+							<label>$INFO[ListItem.Artist]</label>
 						</control>					
 					</control>	
 				</itemlayout>
@@ -556,7 +678,7 @@
 						<scroll>false</scroll>
 						<scrollspeed>0</scrollspeed>
 						<align>left</align>
-						<label>$INFO[ListItem.Artist]</label>
+						<label>$INFO[ListItem.label]</label>
 					</control>
 					<control type="label">
 						<posx>230</posx>
@@ -568,7 +690,7 @@
 						<scroll>false</scroll>
 						<scrollspeed>0</scrollspeed>
 						<align>left</align>
-						<label>[COLOR=grey4]$INFO[ListItem.Album][/COLOR]</label>
+						<label>[COLOR=grey4]$INFO[ListItem.Artist][/COLOR]</label>
 					</control>
 					<control type="image">
 						<description>Rating value</description>
@@ -580,15 +702,28 @@
 						<texture>$INFO[Listitem.StarRating]</texture>
 					</control>
 					<control type="image">
-						<posx>0</posx>
+						<posx>50</posx>
 						<posy>26</posy>
-						<width>252</width>
-						<height>139</height>
+						<width>150</width>
+						<height>150</height>
 						<align>right</align>
 						<aspect>stretch</aspect>
 							<texture fallback="album-fallback.png" background="true">$INFO[ListItem.Thumb]</texture>
 						<bordertexture border="8">simplicity/thumbborder.png</bordertexture>
 						<bordersize>8</bordersize>
+						<visible>!StringCompare(ListItem.label,* All albums)</visible>
+					</control>
+					<control type="image">
+						<posx>50</posx>
+						<posy>26</posy>
+						<width>150</width>
+						<height>150</height>
+						<align>right</align>
+						<aspect>stretch</aspect>
+							<texture background="true">simplicity/all-albums.png</texture>
+						<bordertexture border="8">simplicity/thumbborder.png</bordertexture>
+						<bordersize>8</bordersize>
+						<visible>StringCompare(ListItem.label,* All albums)</visible>
 					</control>
 				</focusedlayout>
 			</control>
@@ -606,6 +741,143 @@
 					<scrollspeed>0</scrollspeed>
 					<align>left</align>
 					<label>$INFO[ListItem.Artist]</label>
+						<visible>!StringCompare(ListItem.label,* All albums)</visible>
+				</control>		
+				<control type="label">
+					<posx>90</posx>
+					<posy>150</posy>
+					<width>400</width>
+					<height>20</height>
+					<font>Simplicity_40</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<scroll>false</scroll>
+					<scrollspeed>0</scrollspeed>
+					<align>left</align>
+							<label>$INFO[Container().ListItem(1).Artist]</label>
+							<visible>StringCompare(ListItem.label,* All albums)</visible>
+				</control>		
+				<control type="label">
+					<posx>90</posx>
+					<posy>210</posy>
+					<width>400</width>
+					<height>20</height>
+					<font>Simplicity_24</font>
+					<textcolor>grey2</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<scroll>false</scroll>
+					<scrollspeed>0</scrollspeed>
+					<align>left</align>
+					<label>- $INFO[Container().ListItem(1).Label]</label>
+					<visible>StringCompare(ListItem.label,* All albums)</visible>
+				</control>		
+				<control type="label">
+					<posx>90</posx>
+					<posy>240</posy>
+					<width>400</width>
+					<height>20</height>
+					<font>Simplicity_24</font>
+					<textcolor>grey2</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<scroll>false</scroll>
+					<scrollspeed>0</scrollspeed>
+					<align>left</align>
+					<label>- $INFO[Container().ListItem(2).Label]</label>
+					<visible>StringCompare(ListItem.label,* All albums)</visible>
+							<visible>!StringCompare(Container().ListItem(2).Label,* All albums)</visible>
+				</control>		
+				<control type="label">
+					<posx>90</posx>
+					<posy>270</posy>
+					<width>400</width>
+					<height>20</height>
+					<font>Simplicity_24</font>
+					<textcolor>grey2</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<scroll>false</scroll>
+					<scrollspeed>0</scrollspeed>
+					<align>left</align>
+					<label>- $INFO[Container().ListItem(3).Label]</label>
+					<visible>StringCompare(ListItem.label,* All albums)</visible>
+							<visible>!StringCompare(Container().ListItem(3).Label,* All albums)</visible>
+							<visible>!StringCompare(Container().ListItem(3).Label,Container().ListItem(1).Label)]</visible>
+							<visible>!StringCompare(Container().ListItem(3).Label,Container().ListItem(2).Label)]</visible>
+							<visible>!StringCompare(Container().ListItem(3).Label,Container().ListItem(4).Label)]</visible>
+							<visible>!StringCompare(Container().ListItem(3).Label,Container().ListItem(5).Label)]</visible>
+							<visible>!StringCompare(Container().ListItem(3).Label,Container().ListItem(6).Label)]</visible>
+				</control>		
+				<control type="label">
+					<posx>90</posx>
+					<posy>300</posy>
+					<width>400</width>
+					<height>20</height>
+					<font>Simplicity_24</font>
+					<textcolor>grey2</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<scroll>false</scroll>
+					<scrollspeed>0</scrollspeed>
+					<align>left</align>
+					<label>- $INFO[Container().ListItem(4).Label]</label>
+					<visible>StringCompare(ListItem.label,* All albums)</visible>
+							<visible>!StringCompare(Container().ListItem(4).Label,* All albums)</visible>
+							<visible>!StringCompare(Container().ListItem(4).Label,Container().ListItem(1).Label)]</visible>
+							<visible>!StringCompare(Container().ListItem(4).Label,Container().ListItem(2).Label)]</visible>
+							<visible>!StringCompare(Container().ListItem(4).Label,Container().ListItem(3).Label)]</visible>
+							<visible>!StringCompare(Container().ListItem(4).Label,Container().ListItem(5).Label)]</visible>
+				</control>		
+				<control type="label">
+					<posx>90</posx>
+					<posy>330</posy>
+					<width>400</width>
+					<height>20</height>
+					<font>Simplicity_24</font>
+					<textcolor>grey2</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<scroll>false</scroll>
+					<scrollspeed>0</scrollspeed>
+					<align>left</align>
+					<label>- $INFO[Container().ListItem(5).Label]</label>
+					<visible>StringCompare(ListItem.label,* All albums)</visible>
+							<visible>!StringCompare(Container().ListItem(5).Label,* All albums)</visible>
+							<visible>!StringCompare(Container().ListItem(5).Label,Container().ListItem(1).Label)]</visible>
+							<visible>!StringCompare(Container().ListItem(5).Label,Container().ListItem(2).Label)]</visible>
+							<visible>!StringCompare(Container().ListItem(5).Label,Container().ListItem(3).Label)]</visible>
+							<visible>!StringCompare(Container().ListItem(5).Label,Container().ListItem(4).Label)]</visible>
+				</control>		
+				<control type="label">
+					<posx>90</posx>
+					<posy>360</posy>
+					<width>400</width>
+					<height>20</height>
+					<font>Simplicity_24</font>
+					<textcolor>grey2</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<scroll>false</scroll>
+					<scrollspeed>0</scrollspeed>
+					<align>left</align>
+					<label>- $INFO[Container().ListItem(6).Label]</label>
+					<visible>StringCompare(ListItem.label,* All albums)</visible>
+							<visible>!StringCompare(Container().ListItem(6).Label,* All albums)</visible>
+							<visible>!StringCompare(Container().ListItem(6).Label,Container().ListItem(1).Label)]</visible>
+							<visible>!StringCompare(Container().ListItem(6).Label,Container().ListItem(2).Label)]</visible>
+							<visible>!StringCompare(Container().ListItem(6).Label,Container().ListItem(3).Label)]</visible>
+							<visible>!StringCompare(Container().ListItem(6).Label,Container().ListItem(4).Label)]</visible>
+							<visible>!StringCompare(Container().ListItem(5).Label,Container().ListItem(5).Label)]</visible>
+				</control>		
+				<control type="label">
+					<posx>90</posx>
+					<posy>390</posy>
+					<width>400</width>
+					<height>20</height>
+					<font>Simplicity_24</font>
+					<textcolor>grey2</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<scroll>false</scroll>
+					<scrollspeed>0</scrollspeed>
+					<align>left</align>
+					<label>& More...</label>
+					<visible>IntegerGreaterThan(Container.NumItems,6) </visible>
+					<visible>StringCompare(ListItem.label,* All albums)</visible>
 				</control>		
 				<control type="label">
 					<posx>90</posx>
@@ -619,6 +891,21 @@
 					<scrollspeed>0</scrollspeed>
 					<align>left</align>
 					<label>$INFO[ListItem.Album]</label>
+						<visible>!StringCompare(ListItem.label,* All albums)</visible>
+				</control>		
+				<control type="label">
+					<posx>90</posx>
+					<posy>210</posy>
+					<width>400</width>
+					<height>20</height>
+					<font>Simplicity_24</font>
+					<textcolor>grey2</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<scroll>false</scroll>
+					<scrollspeed>0</scrollspeed>
+					<align>left</align>
+					<label>$INFO[ListItem.Album]</label>
+						<visible>!StringCompare(ListItem.label,* All albums)</visible>
 				</control>		
 				<control type="label">
 					<posx>90</posx>
@@ -626,12 +913,13 @@
 					<width>400</width>
 					<height>20</height>
 					<font>Simplicity_24</font>
-					<textcolor>grey2</textcolor>
+					<textcolor>yellow</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
 					<scrollspeed>0</scrollspeed>
 					<align>left</align>
 					<label>Released: [COLOR=grey4]$INFO[ListItem.Year][/COLOR]</label>
+						<visible>!StringCompare(ListItem.label,* All albums)</visible>
 				</control>		
 				<control type="label">
 					<posx>90</posx>
@@ -639,12 +927,13 @@
 					<width>400</width>
 					<height>20</height>
 					<font>Simplicity_24</font>
-					<textcolor>grey2</textcolor>
+					<textcolor>yellow</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
 					<scrollspeed>0</scrollspeed>
 					<align>left</align>
 					<label>Label: [COLOR=grey4]$INFO[ListItem.Property(Album_Label)][/COLOR]</label>
+						<visible>!StringCompare(ListItem.label,* All albums)</visible>
 				</control>
 				<control type="label">
 					<posx>90</posx>
@@ -652,12 +941,13 @@
 					<width>400</width>
 					<height>20</height>
 					<font>Simplicity_24</font>
-					<textcolor>grey2</textcolor>
+					<textcolor>yellow</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>false</scroll>
 					<scrollspeed>0</scrollspeed>
 					<align>left</align>
 					<label>Style: [COLOR=grey4]$INFO[ListItem.Property(Album_Style)][/COLOR]</label>
+						<visible>!StringCompare(ListItem.label,* All albums)</visible>
 				</control>				
 				<control type="textbox">
 					<posx>90</posx>
@@ -668,6 +958,7 @@
 					<textcolor>white</textcolor>
 					<align>left</align>
 					<label>$INFO[ListItem.Property(Album_Description)]</label>
+						<visible>!StringCompare(ListItem.label,* All albums)</visible>
 				</control>
 			</control>
 		</control>
@@ -681,6 +972,7 @@
 			<include>Overlay</include>
 			<include>LeftOptions</include>
 			<include>ArtistBreadCrumbs</include>
+			<include>RightOpenRecent</include>
 			<control type="fixedlist" id="514">
 				<include>Zoom</include>		
 				<posx>544</posx>
@@ -688,7 +980,7 @@
 				<width>930</width>
 				<height>540</height>
 				<onleft>2</onleft>
-				<onright>-</onright>
+				<onright>ActivateWindow(1112,Home,return)</onright>
 				<onup>514</onup>
 				<ondown>514</ondown>
 				<viewtype label="Artist List">list</viewtype>
@@ -827,7 +1119,7 @@
 				<width>1260</width>
 				<height>577</height>
 				<onleft>2</onleft>
-				<onright>-</onright>
+				<onright>ActivateWindow(1112,Home,return)</onright>
 				<onup>515</onup>
 				<ondown>515</ondown>
 				<viewtype label="Artist Wall">list</viewtype>
@@ -922,6 +1214,7 @@
 				<texture>simplicity/wall-bottom.png</texture>
 			</control>
 			<include>LeftOptions</include>
+			<include>RightOpenRecent</include>
 			<!--<control type="group">
 				<include>Zoom</include>		
 					<control type="label">
@@ -1005,7 +1298,7 @@
 				<width>1260</width>
 				<height>577</height>
 				<onleft>2</onleft>
-				<onright>-</onright>
+				<onright>ActivateWindow(1112,Home,return)</onright>
 				<onup>516</onup>
 				<ondown>516</ondown>
 				<viewtype label="Album Wall">list</viewtype>
@@ -1025,6 +1318,18 @@
 							<texture background="true" fallback="simplicity/album-fallback.png">$INFO[ListItem.Thumb]</texture>
 							<bordertexture border="4">thumbborder.png</bordertexture>
 							<bordersize>4</bordersize>
+							<visible>!StringCompare(ListItem.label,* All albums)</visible>
+						</control>
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>150</width>
+							<height>150</height>
+							<aspectratio>scale</aspectratio>
+							<texture background="true">simplicity/all-albums.png</texture>
+							<bordertexture border="4">thumbborder.png</bordertexture>
+							<bordersize>4</bordersize>
+							<visible>StringCompare(ListItem.label,* All albums)</visible>
 						</control>
 						<control type="image">
 							<posx>0</posx>
@@ -1061,9 +1366,24 @@
 						<texture background="true" fallback="simplicity/album-fallback.png">$INFO[ListItem.Thumb]</texture>
 						<bordertexture border="4">simplicity/thumbborder.png</bordertexture>
 						<bordersize>4</bordersize>
+							<visible>!StringCompare(ListItem.label,* All albums)</visible>
 						<animation type="Focus" reversible="false">
 							<effect type="zoom" start="100" end="120" center="auto" time="100"/>
 						</animation>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>150</width>
+						<height>150</height>
+						<aspectratio>scale</aspectratio>
+						<texture background="true">simplicity/all-albums.png</texture>
+						<bordertexture border="4">simplicity/thumbborder.png</bordertexture>
+						<bordersize>4</bordersize>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" start="100" end="120" center="auto" time="100"/>
+						</animation>
+							<visible>StringCompare(ListItem.label,* All albums)</visible>
 					</control>
 					<control type="image">
 						<posx>0</posx>
@@ -1086,7 +1406,7 @@
 				<aspect>stretch</aspect>
 				<texture>simplicity/wall-bottom.png</texture>
 			</control>
-
+			<include>RightOpenRecent</include>
 			<include>LeftOptions</include>
 			<!--<control type="group">
 				<include>Zoom</include>		
@@ -1182,7 +1502,7 @@
 			<control type="group">
 				<posx>0</posx>
 				<posy>-30</posy>
-				<control type="wraplist" id="517">
+				<control type="fixedlist" id="517">
 					<include>Zoom</include>
 					<posx>-282</posx>
 					<posy>484</posy>
@@ -1216,8 +1536,9 @@
 							<width>150</width>
 							<height>150</height>
 							<aligny>center</aligny>
-							<texture diffuse="simplicity/fanart-slide-poster-diffuse.png" background="true">$INFO[ListItem.Icon]</texture>
+							<texture diffuse="simplicity/fanart-slide-poster-diffuse.png" background="true" fallback="simplicity/album-fallback.png">$INFO[ListItem.thumb]</texture>
 							<aspectratio>stretch</aspectratio>
+								<visible>!StringCompare(ListItem.label,* All albums)</visible>
 						</control>
 						<control type="largeimage">
 							<posx>0</posx>
@@ -1225,8 +1546,29 @@
 							<width>150</width>
 							<height>150</height>
 							<aligny>center</aligny>
-							<texture diffuse="simplicity/fanart-slide-poster-diffuse-reflect.png" background="true" flipy="true">$INFO[ListItem.Icon]</texture>
+							<texture diffuse="simplicity/fanart-slide-poster-diffuse-reflect.png" background="true" flipy="true" fallback="simplicity/album-fallback.png">$INFO[ListItem.thumb]</texture>
 							<aspectratio>stretch</aspectratio>
+								<visible>!StringCompare(ListItem.label,* All albums)</visible>
+						</control>
+						<control type="largeimage">
+							<posx>0</posx>
+							<posy>42</posy> 
+							<width>150</width>
+							<height>150</height>
+							<aligny>center</aligny>
+							<texture diffuse="simplicity/fanart-slide-poster-diffuse.png" background="true" fallback="simplicity/album-fallback.png">simplicity/all-albums.png</texture>
+							<aspectratio>stretch</aspectratio>
+								<visible>StringCompare(ListItem.label,* All albums)</visible>
+						</control>
+						<control type="largeimage">
+							<posx>0</posx>
+							<posy>197</posy> 
+							<width>150</width>
+							<height>150</height>
+							<aligny>center</aligny>
+							<texture diffuse="simplicity/fanart-slide-poster-diffuse-reflect.png" background="true" flipy="true" fallback="simplicity/album-fallback.png">simplicity/all-albums.png</texture>
+							<aspectratio>stretch</aspectratio>
+								<visible>StringCompare(ListItem.label,* All albums)</visible>
 						</control>
 						<control type="largeimage">
 							<posx>-2</posx>
@@ -1283,9 +1625,10 @@
 							<width>150</width>
 							<height>150</height>
 							<aligny>center</aligny>
-							<texture diffuse="simplicity/fanart-slide-poster-diffuse.png" background="true">$INFO[ListItem.Icon]</texture>
+							<texture diffuse="simplicity/fanart-slide-poster-diffuse.png" background="true" fallback="simplicity/album-fallback.png">$INFO[ListItem.thumb]</texture>
 							<animation effect="zoom" start="0,42,150,150" end="10,42,170,170" center="auto" time="300" reversible="false">Focus</animation> 
 							<aspectratio>stretch</aspectratio>
+								<visible>!StringCompare(ListItem.label,* All albums)</visible>
 						</control>
 						<control type="largeimage">
 							<posx>10</posx>
@@ -1293,9 +1636,32 @@
 							<width>150</width>
 							<height>150</height>
 							<aligny>center</aligny>
-							<texture diffuse="simplicity/fanart-slide-poster-diffuse-reflect.png" background="true" flipy="true">$INFO[ListItem.Icon]</texture>
+							<texture diffuse="simplicity/fanart-slide-poster-diffuse-reflect.png" background="true" flipy="true" fallback="simplicity/album-fallback.png">$INFO[ListItem.thumb]</texture>
 							<animation effect="zoom" start="0,197,150,150" end="10,217,170,170" center="auto" time="300" reversible="false">Focus</animation> 
 							<aspectratio>stretch</aspectratio>
+								<visible>!StringCompare(ListItem.label,* All albums)</visible>
+						</control>
+						<control type="largeimage">
+							<posx>10</posx>
+							<posy>42</posy> 
+							<width>150</width>
+							<height>150</height>
+							<aligny>center</aligny>
+							<texture diffuse="simplicity/fanart-slide-poster-diffuse.png" background="true" fallback="simplicity/album-fallback.png">simplicity/all-albums.png</texture>
+							<animation effect="zoom" start="0,42,150,150" end="10,42,170,170" center="auto" time="300" reversible="false">Focus</animation> 
+							<aspectratio>stretch</aspectratio>
+								<visible>StringCompare(ListItem.label,* All albums)</visible>
+						</control>
+						<control type="largeimage">
+							<posx>10</posx>
+							<posy>217</posy> 
+							<width>150</width>
+							<height>150</height>
+							<aligny>center</aligny>
+							<texture diffuse="simplicity/fanart-slide-poster-diffuse-reflect.png" background="true" flipy="true" fallback="simplicity/album-fallback.png">simplicity/all-albums.png</texture>
+							<animation effect="zoom" start="0,197,150,150" end="10,217,170,170" center="auto" time="300" reversible="false">Focus</animation> 
+							<aspectratio>stretch</aspectratio>
+								<visible>StringCompare(ListItem.label,* All albums)</visible>
 						</control>
 						<control type="largeimage">
 							<posx>8</posx>
@@ -1334,8 +1700,23 @@
 						<shadowcolor>black</shadowcolor>
 						<scroll>false</scroll>
 						<align>center</align>
-						<label>$INFO[ListItem.Album]</label>
+						<label>$INFO[ListItem.label]</label>
+							<visible>!StringCompare(ListItem.label,* All albums)</visible>
 					</control>
+					<control type="label">
+						<posx>206</posx>
+						<posy>445</posy>
+						<width>1000</width>
+						<height>30</height>
+						<font>Simplicity_40</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<scroll>false</scroll>
+						<align>center</align>
+							<label>$INFO[Container().ListItem(1).Artist]</label>
+							<visible>StringCompare(ListItem.label,* All albums)</visible>
+					</control>
+
 				<control type="image">
 					<description>Rating value</description>
 					<posx>630</posx>
@@ -1343,6 +1724,15 @@
 					<width>154</width>
 					<height>30</height>
 					<texture>$INFO[Listitem.StarRating]</texture>
+				</control>
+				<control type="image">
+					<description>Rating value</description>
+					<posx>630</posx>
+					<posy>495</posy>
+					<width>154</width>
+					<height>30</height>
+					<texture>rating.png</texture>
+							<visible>StringCompare(ListItem.label,* All albums)</visible>
 				</control>
 					<control type="label">
 						<posx>306</posx>

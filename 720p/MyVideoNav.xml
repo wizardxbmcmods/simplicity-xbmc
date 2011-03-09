@@ -64,7 +64,7 @@
 				<visible>Container.Content(Movies)+!Control.IsVisible(508)</visible>
 				<visible>Container.Content(Movies)+!Control.IsVisible(540)</visible>
 				<visible>Container.Content(Movies) + !Control.IsVisible(556)</visible>
-				<visible>Container.Content(TVShows) + !Control.IsVisible(556)</visible>
+				<visible>!Control.IsVisible(556)</visible>
 			</control>
 			<control type="image">
 				<posx>0</posx>
@@ -123,8 +123,6 @@
 			<!-- view id = 511 -->
 			<include>Episode-List</include>
 			<!-- view id = 532 -->
-			<include>MoviePosterList</include>
-			<!-- view id = 533 -->
 			<include>Season-List</include>
 			<!-- view id = 534 -->
 			<include>Banner-List</include>

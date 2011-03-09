@@ -147,7 +147,7 @@
                         <texture>$INFO[Listitem.StarRating]</texture>
                     </control>
                     <control type = "fadelabel">
-                        <posx>685</posx>
+                        <posx>840</posx>
                         <posy>50</posy>
                         <width>101</width>
                         <height>30</height>
@@ -161,7 +161,7 @@
                         <visible>!Skin.HasSetting(NoMinutes)</visible>
                     </control>
                     <control type = "fadelabel">
-                        <posx>685</posx>
+                        <posx>840</posx>
                         <posy>50</posy>
                         <width>101</width>
                         <height>30</height>
@@ -176,7 +176,7 @@
                     </control>
                     <control type = "grouplist">
                         <description>MPAA Flagging Conditions Images</description>
-                        <posx>710</posx>
+                        <posx>685</posx>
                         <posy>43</posy>
                         <width>130</width>
                         <align>left</align>
@@ -339,7 +339,7 @@
                         <width>400</width>
                         <height>155</height>
                         <aligny>center</aligny>
-                        <texture background = "true" fallback = "logo-fallback.png">$INFO[ListItem.path]/$INFO[ListItem.title]/logo.png</texture>
+                        <texture background = "true" fallback = "logo-fallback.png">$INFO[ListItem.FileNameAndPath]logo.png</texture>
                         <aspectratio>keep</aspectratio>
                         <visible>Skin.HasSetting(EnableClearartViews)</visible>
                     </control>
@@ -360,8 +360,8 @@
                     </control>
                     <control type = "grouplist">
                         <description>MPAA Flagging Conditions Images</description>
-                        <posx>710</posx>
-                        <posy>43</posy>
+                        <posx>695</posx>
+                        <posy>35</posy>
                         <width>130</width>
                         <align>left</align>
                         <itemgap>0</itemgap>
@@ -483,8 +483,8 @@
                     </control>
                     <control type = "grouplist">
                         <description>MPAA Flagging Conditions Images</description>
-                        <posx>710</posx>
-                        <posy>43</posy>
+                        <posx>695</posx>
+                        <posy>35</posy>
                         <width>130</width>
                         <align>left</align>
                         <itemgap>0</itemgap>
@@ -588,7 +588,7 @@
                         <width>480</width>
                         <height>720</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture>$INFO[ListItem.path]/$INFO[ListItem.title]/poster.jpg</texture>
+                        <texture>$INFO[ListItem.FileNameAndPath]poster.jpg</texture>
                         <bordertexture border = "2">simplicity/folder-focus.png</bordertexture>
                         <bordersize>2</bordersize>
                     </control>
@@ -609,8 +609,8 @@
                     </control>
                     <control type = "grouplist">
                         <description>MPAA Flagging Conditions Images</description>
-                        <posx>710</posx>
-                        <posy>43</posy>
+                        <posx>695</posx>
+                        <posy>35</posy>
                         <width>130</width>
                         <align>left</align>
                         <itemgap>0</itemgap>
@@ -732,8 +732,8 @@
                     </control>
                     <control type = "grouplist">
                         <description>MPAA Flagging Conditions Images</description>
-                        <posx>710</posx>
-                        <posy>43</posy>
+                        <posx>695</posx>
+                        <posy>35</posy>
                         <width>130</width>
                         <align>left</align>
                         <itemgap>0</itemgap>
@@ -857,8 +857,8 @@
                     </control>
                     <control type = "grouplist">
                         <description>MPAA Flagging Conditions Images</description>
-                        <posx>710</posx>
-                        <posy>43</posy>
+                        <posx>695</posx>
+                        <posy>35</posy>
                         <width>130</width>
                         <align>left</align>
                         <itemgap>0</itemgap>
@@ -990,7 +990,7 @@
                         <texture>$INFO[Listitem.StarRating]</texture>
                     </control>
                     <control type = "fadelabel">
-                        <posx>685</posx>
+                        <posx>805</posx>
                         <posy>50</posy>
                         <width>101</width>
                         <height>30</height>
@@ -1004,7 +1004,7 @@
                         <visible>!Skin.HasSetting(NoMinutes)</visible>
                     </control>
                     <control type = "fadelabel">
-                        <posx>685</posx>
+                        <posx>805</posx>
                         <posy>50</posy>
                         <width>101</width>
                         <height>30</height>
@@ -1019,8 +1019,8 @@
                     </control>
                     <control type = "grouplist">
                         <description>MPAA Flagging Conditions Images</description>
-                        <posx>710</posx>
-                        <posy>43</posy>
+                        <posx>695</posx>
+                        <posy>35</posy>
                         <width>130</width>
                         <align>left</align>
                         <itemgap>0</itemgap>
