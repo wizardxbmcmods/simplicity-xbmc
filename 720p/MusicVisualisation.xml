@@ -110,7 +110,7 @@
 				<posx>-30</posx>
 				<posy>160r</posy>
 				<width>1350</width>
-				<height>500</height>
+				<height>200</height>
 				<texture>simplicity/dialog-bg-source.png</texture>
 			</control>
 			<control type="group">
@@ -555,7 +555,7 @@
 				<height>260</height>
 				<posx>175</posx>
 				<!-- 112 -->
-				<posy>412</posy>
+				<posy>407</posy>
 				<!-- -143 -->
 				<texture>$INFO[Player.FolderPath]/cdart.png</texture>
 				<aspectratio align="bottom">keep</aspectratio>
@@ -574,7 +574,7 @@
 				<height>260</height>
 				<posx>175</posx>
 				<!-- 112 -->
-				<posy>412</posy>
+				<posy>407</posy>
 				<!-- -143 -->
 				<texture>cd/default.png</texture>
 				<aspectratio align="bottom">keep</aspectratio>
@@ -591,15 +591,14 @@
 				<width>111</width>
 				<height>41</height>
 				<posx>265</posx>
-				<posy>412</posy>
+				<posy>407</posy>
 				<texture>simplicity/needle.png</texture>
 				<visible>IsEmpty(Control.GetLabel(7657))</visible>
 			</control>
-
 			<control type="image">
 				<description>cover image</description>
 				<posx>11</posx>
-				<posy>395</posy>
+				<posy>385</posy>
 				<width>308</width>
 				<height>293</height>
 				<texture>simplicity/cd-shadow.png</texture>
@@ -609,9 +608,9 @@
 			<control type="image">
 				<description>cover image</description>
 				<posx>15</posx>
-				<posy>395</posy>
+				<posy>385</posy>
 				<width>300</width>
-				<height>285</height>
+				<height>300</height>
 				<texture>$INFO[MusicPlayer.Cover]</texture>
 				<fadetime>FanartCrossfadeTime</fadetime>
 				<aspectratio aligny="bottom">stretch</aspectratio>
@@ -620,9 +619,9 @@
 			<control type="image">
 				<description>cover image</description>
 				<posx>15</posx>
-				<posy>395</posy>
+				<posy>385</posy>
 				<width>300</width>
-				<height>285</height>
+				<height>300</height>
 				<texture>album-fallback.png</texture>
 				<fadetime>FanartCrossfadeTime</fadetime>
 				<aspectratio aligny="bottom">stretch</aspectratio>
@@ -632,10 +631,44 @@
 			<control type="image">
 				<description>cover image</description>
 				<posx>15</posx>
-				<posy>395</posy>
+				<posy>385</posy>
 				<width>300</width>
-				<height>285</height>
+				<height>300</height>
 				<texture>simplicity/cd-cover-gloss.png</texture>
+				<fadetime>FanartCrossfadeTime</fadetime>
+				<aspectratio aligny="bottom">stretch</aspectratio>
+				<animation effect="slide" start="-118" end="0" time="300" tween="cubic" easing="out" delay="500">WindowOpen</animation>
+			</control>
+			<control type="image">
+				<description>cover image</description>
+				<posx>15</posx>
+				<posy>686</posy>
+				<width>300</width>
+				<height>300</height>
+				<texture diffuse="simplicity/cd-reflect-vis.png" flipy="true">$INFO[MusicPlayer.Cover]</texture>
+				<fadetime>FanartCrossfadeTime</fadetime>
+				<aspectratio aligny="bottom">stretch</aspectratio>
+				<animation effect="slide" start="-118" end="0" time="300" tween="cubic" easing="out" delay="500">WindowOpen</animation>
+			</control>
+			<control type="image">
+				<description>cover image</description>
+				<posx>15</posx>
+				<posy>686</posy>
+				<width>300</width>
+				<height>300</height>
+				<texture diffuse="simplicity/cd-reflect-vis.png" flipy="true">album-fallback.png</texture>
+				<fadetime>FanartCrossfadeTime</fadetime>
+				<aspectratio aligny="bottom">stretch</aspectratio>
+				<animation effect="slide" start="-118" end="0" time="300" tween="cubic" easing="out" delay="500">WindowOpen</animation>
+  				 <visible>stringcompare(MusicPlayer.Cover,DefaultAlbumCover.png)</visible>
+			</control>
+			<control type="image">
+				<description>cover image</description>
+				<posx>15</posx>
+				<posy>686</posy>
+				<width>300</width>
+				<height>300</height>
+				<texture diffuse="simplicity/cd-reflect-vis.png" flipy="true">simplicity/cd-cover-gloss.png</texture>
 				<fadetime>FanartCrossfadeTime</fadetime>
 				<aspectratio aligny="bottom">stretch</aspectratio>
 				<animation effect="slide" start="-118" end="0" time="300" tween="cubic" easing="out" delay="500">WindowOpen</animation>
