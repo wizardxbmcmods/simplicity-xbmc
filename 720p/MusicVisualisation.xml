@@ -110,7 +110,7 @@
 				<posx>-30</posx>
 				<posy>160r</posy>
 				<width>1350</width>
-				<height>200</height>
+				<height>250</height>
 				<texture>simplicity/dialog-bg-source.png</texture>
 			</control>
 			<control type="group">
