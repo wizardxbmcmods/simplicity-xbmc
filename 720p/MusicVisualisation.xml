@@ -463,7 +463,7 @@
 				<posy>50</posy>
 				<width>360</width>
 				<height>25</height>
-				<label>$INFO[musicplayer.Codec,Â· Codec: ,]$INFO[musicplayer.Bitrate,[CR]Â· Bitrate: ,kbps]$INFO[musicplayer.bitspersample,[CR]Â· Bits:,bit]$INFO[musicplayer.Samplerate,[CR]Â· Freq.: ,kHz]$INFO[musicplayer.Channels,[CR]Â· Channels: ]</label>
+				<label>$INFO[musicplayer.Codec,· Codec: ,]$INFO[musicplayer.Bitrate,[CR]· Bitrate: ,kbps]$INFO[musicplayer.bitspersample,[CR]· Bits:,bit]$INFO[musicplayer.Samplerate,[CR]· Freq.: ,kHz]$INFO[musicplayer.Channels,[CR]· Channels: ]</label>
 				<align>left</align>
 				<aligny>top</aligny>
 				<font>font13</font>
@@ -487,7 +487,7 @@
 				<posy>50</posy>
 				<width>right</width>
 				<height>25</height>
-				<label>$INFO[Visualisation.Name] [I]($LOCALIZE[20166])[/I] Â·[CR]fps: $INFO[System.FPS] Â·</label>
+				<label>$INFO[Visualisation.Name] [I]($LOCALIZE[20166])[/I] ·[CR]fps: $INFO[System.FPS] ·</label>
 				<align>right</align>
 				<aligny>top</aligny>
 				<font>font13</font>
@@ -500,7 +500,7 @@
 				<posy>50</posy>
 				<width>360</width>
 				<height>25</height>
-				<label>$INFO[Visualisation.Name] Â·[CR]fps: $INFO[System.FPS] Â·</label>
+				<label>$INFO[Visualisation.Name] ·[CR]fps: $INFO[System.FPS] ·</label>
 				<align>right</align>
 				<aligny>top</aligny>
 				<font>font13</font>
@@ -525,7 +525,7 @@
 				<posy>135</posy>
 				<width>360</width>
 				<height>25</height>
-				<label fallback="Â· (UnAvailable)">$INFO[Visualisation.Preset,, Â·]</label>
+				<label fallback="· (UnAvailable)">$INFO[Visualisation.Preset,, ·]</label>
 				<align>right</align>
 				<aligny>top</aligny>
 				<font>font12</font>
@@ -536,13 +536,93 @@
 		</control>
 
 		<!-- Mod- group animation -->
-
 		<control type="group">
+		<visible>Skin.HasSetting(UseTurntable)</visible>
+		<control type="image">
+			<description>visualisation background</description>
+			<posx>30</posx>
+			<posy>400</posy>
+			<width>373</width>
+			<height>308</height>
+			<texture>simplicity/table.png</texture> 					
+		</control>
+		<control type="group" id="7657">
 			<animation effect="slide" start="0,0" end="0,-60" time="300" tween="quadratic" easing="out" condition="Window.IsVisible(120)">Conditional</animation>
 			<visible>Player.ShowInfo</visible>
 			<animation effect="slide" start="0,0" end="-500,0" delay="0" time="300">hidden</animation>
 			<animation effect="slide" start="-500,0" end="0,0" delay="0" time="300">visible</animation>
 			<control type="image" id="7657">
+				<description>Cd overlay</description>
+				<animation effect="slide" start="-118" end="0" time="900" tween="cubic" easing="out" delay="1000">WindowOpen</animation>
+				<animation type="WindowClose">
+					<effect type="slide" start="0" end="-114" time="800" tween="cubic" easing="in" delay="0"/>
+					<effect type="fade" start="100" end="0" time="1300"/>
+					<condition type="!Player.Playing"/>
+				</animation>
+				<animation effect="rotate" end="-360" center="auto" time="2800" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
+				<width>250</width>
+				<height>250</height>
+				<posx>59</posx>
+				<!-- 112 -->
+				<posy>427</posy>
+				<!-- -143 -->
+				<texture>$INFO[Player.FolderPath]/cdart.png</texture>
+			</control>
+			<control type="image">
+				<description>Cd overlay</description>
+				<animation effect="slide" start="-118" end="0" time="900" tween="cubic" easing="out" delay="1000">WindowOpen</animation>
+				<animation type="WindowClose">
+					<effect type="slide" start="0" end="-114" time="800" tween="cubic" easing="in" delay="0"/>
+					<effect type="fade" start="100" end="0" time="1300"/>
+					<condition type="!Player.Playing"/>
+				</animation>
+				<animation effect="rotate" end="-360" center="auto" time="2800" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
+				<width>250</width>
+				<height>250</height>
+				<posx>59</posx>
+				<!-- 112 -->
+				<posy>427</posy>
+				<!-- -143 -->
+				<texture>cd/record-grain.png</texture>
+				<visible>!IsEmpty(Control.GetLabel(7657))</visible>
+			</control>
+			<control type="image">
+				<description>Cd overlay</description>
+				<animation effect="slide" start="-118" end="0" time="900" tween="cubic" easing="out" delay="1000">WindowOpen</animation>
+				<animation type="WindowClose">
+					<effect type="slide" start="0" end="-114" time="800" tween="cubic" easing="in" delay="0"/>
+					<effect type="fade" start="100" end="0" time="1300"/>
+					<condition type="!Player.Playing"/>
+				</animation>
+				<animation effect="rotate" end="-360" center="auto" time="2000" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
+				<width>250</width>
+				<height>250</height>
+				<posx>59</posx>
+				<!-- 112 -->
+				<posy>427</posy>
+				<!-- -143 -->
+				<texture>cd/default.png</texture>
+				<visible>IsEmpty(Control.GetLabel(7657))</visible>
+			</control>		
+		</control>
+		<control type="image">
+			<description>visualisation background</description>
+			<posx>30</posx>
+			<posy>400</posy>
+			<width>373</width>
+			<height>308</height>
+			<texture>simplicity/arm.png</texture> 	
+		</control>
+		</control>
+
+		<control type="group">
+		<visible>!Skin.HasSetting(UseTurntable)</visible>
+			<control type="group">
+			<animation effect="slide" start="0,0" end="0,-60" time="300" tween="quadratic" easing="out" condition="Window.IsVisible(120)">Conditional</animation>
+			<visible>Player.ShowInfo</visible>
+			<animation effect="slide" start="0,0" end="-500,0" delay="0" time="300">hidden</animation>
+			<animation effect="slide" start="-500,0" end="0,0" delay="0" time="300">visible</animation>
+			<control type="image" id="7658">
 				<description>Cd overlay</description>
 				<animation effect="slide" start="-118" end="0" time="900" tween="cubic" easing="out" delay="1000">WindowOpen</animation>
 				<animation type="WindowClose">
@@ -559,7 +639,6 @@
 				<!-- -143 -->
 				<texture>$INFO[Player.FolderPath]/cdart.png</texture>
 				<aspectratio align="bottom">keep</aspectratio>
-				<visible>!Skin.HasSetting(PandoraVis)</visible>
 			</control>
 			<control type="image">
 				<description>Cd overlay</description>
@@ -578,7 +657,7 @@
 				<!-- -143 -->
 				<texture>cd/default.png</texture>
 				<aspectratio align="bottom">keep</aspectratio>
-				<visible>IsEmpty(Control.GetLabel(7657))</visible>
+				<visible>IsEmpty(Control.GetLabel(7658))</visible>
 			</control>
 			<control type="image">
 				<animation effect="slide" start="-118" end="0" time="900" tween="cubic" easing="out" delay="1000">WindowOpen</animation>
@@ -593,7 +672,7 @@
 				<posx>265</posx>
 				<posy>407</posy>
 				<texture>simplicity/needle.png</texture>
-				<visible>IsEmpty(Control.GetLabel(7657))</visible>
+				<visible>IsEmpty(Control.GetLabel(7658))</visible>
 			</control>
 			<control type="image">
 				<description>cover image</description>
@@ -684,6 +763,9 @@
 			<animation effect="slide" start="-118" end="0" time="300" tween="cubic" easing="out" delay="500">WindowOpen</animation>
 		</control>-->
 		</control>
+		</control>
+
+
 		<control type="group">
 			<visible>!Skin.HasSetting(NoUpcomingList)</visible>
 			<posy>15</posy>

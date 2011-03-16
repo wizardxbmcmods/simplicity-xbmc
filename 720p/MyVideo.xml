@@ -23,7 +23,6 @@
 			<include>Addon-Slide</include>
 			<!-- view id = 66 -->
 		</control>
-		<include>BehindDialogFadeOut</include>
 		<control type="group">
 			<posx>-30</posx>
 			<posy>0</posy>
@@ -296,5 +295,6 @@
 		</control>
 
 		<include>Clock</include>
+				<include>BehindDialogFadeOut</include>
 	</controls>
 </window>

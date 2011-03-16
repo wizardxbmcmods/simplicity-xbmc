@@ -17,7 +17,6 @@
 			<include>Addon-Slide</include>
 			<!-- view id = 66 -->
 		</control>
-		<include>BehindDialogFadeOut</include>
 		<include>ScrollOffsetLabel</include>
 		<control type="group">
 			<posx>-30</posx>
@@ -122,5 +121,6 @@
 			</control>
 		</control>		
 		<include>Clock</include>
+		<include>BehindDialogFadeOut</include>
 	</controls>
 </window>

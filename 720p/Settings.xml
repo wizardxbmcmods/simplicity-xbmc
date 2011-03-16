@@ -245,7 +245,8 @@
 				<shadowcolor>black</shadowcolor>
 			</control>-->
 		</control>
-		<include>BehindDialogFadeOut</include>		
+
 		<include>Clock</include>		
-	</controls>
+		<include>BehindDialogFadeOut</include>		
+		</controls>
 </window>

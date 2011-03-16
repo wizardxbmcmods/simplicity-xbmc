@@ -13,7 +13,6 @@
 			<include>AppView</include>
 			<!-- view id = 55 -->
 		</control>
-		<include>BehindDialogFadeOut</include>
 		<include>ScrollOffsetLabel</include>
 		<control type="group">
 			<posx>-50</posx>
@@ -189,5 +188,6 @@
 			</control>					
 		</control>
 		<include>Clock</include>
+				<include>BehindDialogFadeOut</include>
 	</controls>
 </window>
