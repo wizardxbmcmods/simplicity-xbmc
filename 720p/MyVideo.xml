@@ -4,7 +4,6 @@
 	<views>50,51,54,57,58,65,66,500,501,508,505,509,555</views>
 	<visible>!Skin.HasSetting(KioskMode)</visible>
 	<controls>
-		<include>CommonVideoBackground</include>
 		<include>CommonMediaPlayingBackground</include>
 		<control type="group">
 			<include>Window_OpenClose_Animation</include>		

@@ -98,11 +98,11 @@
 						<label2>31112</label2>
 						<onclick>-</onclick>
 					</item>
-					<!--<item id="3">
+					<item id="3">
 						<label>31102</label>
 						<label2>31115</label2>
 						<onclick>-</onclick>
-					</item>-->
+					</item>
 					<!--<item id="4">
 						<label>31116</label>
 						<label2>31200</label2>
@@ -811,18 +811,21 @@
 					<orientation>vertical</orientation>
 					<visible>Container(9000).Hasfocus(2)</visible>
 				</control>
-				<!--<control type="group">
-					<posx>100</posx>
-					<posy>30</posy>
+
+<!--backgrounds-->
+
+				<control type="group">
+					<posx>310</posx>
+					<posy>50</posy>
 					<visible>Container(9000).Hasfocus(3)</visible>
-					<control type="label">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>900</width>
+					<control type="label" id="200">
+					<posx>0</posx>
+					<posy>0</posy>
+						<width>750</width>
 						<height>45</height>
 						<font>Simplicity_20_Bold_title</font>
 						<label>31109</label>
-						<textcolor>white</textcolor>
+						<textcolor>yellow</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -830,13 +833,15 @@
 					<control type="button" id="304">
 						<description>Menu Item Next Button</description>
 						<posx>810</posx>
-						<posy>53</posy>
-						<width>22</width>
-						<height>22</height>
+						<posy>30</posy>
+					<width>48</width>
+					<height>70</height>		
 						<label>-</label>
 						<font>-</font>
-						<texturenofocus>shade/scroll-down-2.png</texturenofocus>
-						<texturefocus>shade/scroll-down-focus.png</texturefocus>
+			<spinwidth>48</spinwidth>
+				<spinheight>70</spinheight>
+						<texturenofocus>simplicity/scroll-down-2.png</texturenofocus>
+						<texturefocus>simplicity/scroll-down-focus.png</texturefocus>
 						<onclick>Control.Move(9003,1)</onclick>
 						<onleft>9000</onleft>
 						<onright>305</onright>
@@ -845,12 +850,14 @@
 					</control>
 					<control type="button" id="305">
 						<description>Menu Item Prev Button</description>
-						<posx>832</posx>
-						<posy>53</posy>
-						<width>22</width>
-						<height>22</height>
+						<posx>858</posx>
+						<posy>30</posy>
+					<width>48</width>
+					<height>70</height>		
 						<label>-</label>
 						<font>-</font>
+				<spinwidth>48</spinwidth>
+				<spinheight>70</spinheight>
 						<texturenofocus>simplicity/scroll-up-2.png</texturenofocus>
 						<texturefocus>simplicity/scroll-up-focus.png</texturefocus>
 						<onclick>Control.Move(9003,-1)</onclick>
@@ -941,64 +948,64 @@
 						</focusedlayout>
 						<content>
 							<item id="1">
-								<label>3</label>
+								<label>Home</label>
+								<onclick>-</onclick>
+								<icon>special://skin/backgrounds/Home.jpg</icon>
+								<thumb>$INFO[Skin.String(Home_Custom_Back_Home_Folder)]</thumb>
+							</item>
+							<item id="2">
+								<label>Movies</label>
+								<onclick>-</onclick>
+								<icon>special://skin/backgrounds/Movies.jpg</icon>
+								<thumb>$INFO[Skin.String(Home_Custom_Back_Movies_Folder)]</thumb>
+							</item>
+							<item id="3">
+								<label>TV Shows</label>
+								<onclick>-</onclick>
+								<icon>special://skin/backgrounds/tvshows.jpg</icon>
+								<thumb>$INFO[Skin.String(Home_Custom_Back_TVShows_Folder)]</thumb>
+							</item>
+							<item id="4">
+								<label>Videos</label>
 								<onclick>-</onclick>
 								<icon>special://skin/backgrounds/videos.jpg</icon>
 								<thumb>$INFO[Skin.String(Home_Custom_Back_Video_Folder)]</thumb>
 							</item>
-							<item id="10">
-								<label>20342</label>
+							<item id="5">
+								<label>Music</label>
 								<onclick>-</onclick>
-								<icon>special://skin/backgrounds/videos.jpg</icon>
-								<thumb>$INFO[Skin.String(Home_Custom_Back_Movies_Folder)]</thumb>
-							</item>
-							<item id="11">
-								<label>20343</label>
-								<onclick>-</onclick>
-								<icon>special://skin/backgrounds/videos.jpg</icon>
-								<thumb>$INFO[Skin.String(Home_Custom_Back_TVShow_Folder)]</thumb>
-							</item>
-							<item id="2">
-								<label>2</label>
-								<onclick>-</onclick>
-								<icon>special://skin/backgrounds/music.jpg</icon>
+								<icon>special://skin/backgrounds/Music.jpg</icon>
 								<thumb>$INFO[Skin.String(Home_Custom_Back_Music_Folder)]</thumb>
 							</item>
-							<item id="3">
-								<label>1</label>
+							<item id="6">
+								<label>Pictures</label>
 								<onclick>-</onclick>
 								<icon>special://skin/backgrounds/pictures.jpg</icon>
 								<thumb>$INFO[Skin.String(Home_Custom_Back_Pictures_Folder)]</thumb>
 							</item>
-							<item id="4">
-								<label>0</label>
-								<onclick>-</onclick>
-								<icon>special://skin/backgrounds/programs.jpg</icon>
-								<thumb>$INFO[Skin.String(Home_Custom_Back_Programs_Folder)]</thumb>
-							</item>
-							<item id="5">
-								<label>8</label>
+							<item id="7">
+								<label>Weather</label>
 								<onclick>-</onclick>
 								<icon>special://skin/backgrounds/weather.jpg</icon>
 								<thumb>$INFO[Skin.String(Home_Custom_Back_Weather_Folder)]</thumb>
 							</item>
-							<item id="6">
+							<item id="10">
 								<label>Addons</label>
 								<onclick>-</onclick>
 								<icon>special://skin/backgrounds/addons.jpg</icon>
 								<thumb>$INFO[Skin.String(Home_Custom_Back_Addons_Folder)]</thumb>
 							</item>
-							<item id="7">
-								<label>13000</label>
+							<item id="11">
+								<label>Programs</label>
 								<onclick>-</onclick>
-								<icon>special://skin/backgrounds/settings.jpg</icon>
-								<thumb>$INFO[Skin.String(Home_Custom_Back_Settings_Folder)]</thumb>
+								<icon>special://skin/backgrounds/programs.jpg</icon>
+								<thumb>$INFO[Skin.String(Home_Custom_Back_Programs_Folder)]</thumb>
 							</item>
 							<item id="12">
-								<label>Home</label>
+								<label>TV Guide</label>
 								<onclick>-</onclick>
-								<icon>special://skin/backgrounds/home.jpg</icon>
-								<thumb>$INFO[Skin.String(Home_Custom_Back_Home_Folder)]</thumb>
+								<icon>special://skin/backgrounds/tvguide.jpg</icon>
+								<thumb>$INFO[Skin.String(Home_Custom_Back_TVGuide_Folder)]</thumb>
 							</item>
 							<item id="13">
 								<label>Settings</label>
@@ -1033,13 +1040,14 @@
 								<width>180</width>
 								<height>40</height>
 								<label>31113</label>
-								<font>Simplicity_20</font>
-								<textcolor>grey2</textcolor>
-								<focusedcolor>white</focusedcolor>
-								<align>center</align>
+								<textcolor>black</textcolor>
+								<focusedcolor>black</focusedcolor>
+								<shadowcolor>grey2</shadowcolor>
 								<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
 								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
-								<onclick>Skin.SetImage(Home_Custom_Back_Video_Folder)</onclick>
+								<font>Simplicity_20_Bold_title</font>
+								<align>center</align>
+								<onclick>Skin.SetImage(Home_Custom_Back_Home_Folder)</onclick>
 								<onleft>302</onleft>
 								<onright>301</onright>
 								<onup>304</onup>
@@ -1052,13 +1060,14 @@
 								<width>180</width>
 								<height>40</height>
 								<label>31114</label>
-								<font>Simplicity_20</font>
-								<textcolor>grey2</textcolor>
-								<focusedcolor>white</focusedcolor>
-								<align>center</align>
+								<textcolor>black</textcolor>
+								<focusedcolor>black</focusedcolor>
+								<shadowcolor>grey2</shadowcolor>
 								<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
 								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
-								<onclick>Skin.SetPath(Home_Custom_Back_Video_Folder)</onclick>
+								<font>Simplicity_20_Bold_title</font>
+								<align>center</align>
+								<onclick>Skin.SetPath(Home_Custom_Back_Home_Folder)</onclick>
 								<onleft>300</onleft>
 								<onright>302</onright>
 								<onup>304</onup>
@@ -1071,13 +1080,14 @@
 								<width>180</width>
 								<height>40</height>
 								<label>571</label>
-								<font>Simplicity_20</font>
-								<textcolor>grey2</textcolor>
-								<focusedcolor>white</focusedcolor>
-								<align>center</align>
+								<textcolor>black</textcolor>
+								<focusedcolor>black</focusedcolor>
+								<shadowcolor>grey2</shadowcolor>
 								<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
 								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
-								<onclick>Skin.Reset(Home_Custom_Back_Video_Folder)</onclick>
+								<font>Simplicity_20_Bold_title</font>
+								<align>center</align>
+								<onclick>Skin.Reset(Home_Custom_Back_Home_Folder)</onclick>
 								<onleft>301</onleft>
 								<onright>300</onright>
 								<onup>304</onup>
@@ -1093,13 +1103,14 @@
 								<width>180</width>
 								<height>40</height>
 								<label>31113</label>
-								<font>Simplicity_20</font>
-								<textcolor>grey2</textcolor>
-								<focusedcolor>white</focusedcolor>
-								<align>center</align>
+								<textcolor>black</textcolor>
+								<focusedcolor>black</focusedcolor>
+								<shadowcolor>grey2</shadowcolor>
 								<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
 								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
-								<onclick>Skin.SetImage(Home_Custom_Back_Music_Folder)</onclick>
+								<font>Simplicity_20_Bold_title</font>
+								<align>center</align>
+								<onclick>Skin.SetImage(Home_Custom_Back_Movies_Folder)</onclick>
 								<onleft>302</onleft>
 								<onright>301</onright>
 								<onup>304</onup>
@@ -1112,13 +1123,14 @@
 								<width>180</width>
 								<height>40</height>
 								<label>31114</label>
-								<font>Simplicity_20</font>
-								<textcolor>grey2</textcolor>
-								<focusedcolor>white</focusedcolor>
-								<align>center</align>
+								<textcolor>black</textcolor>
+								<focusedcolor>black</focusedcolor>
+								<shadowcolor>grey2</shadowcolor>
 								<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
 								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
-								<onclick>Skin.SetPath(Home_Custom_Back_Music_Folder)</onclick>
+								<font>Simplicity_20_Bold_title</font>
+								<align>center</align>
+								<onclick>Skin.SetPath(Home_Custom_Back_Movies_Folder)</onclick>
 								<onleft>300</onleft>
 								<onright>302</onright>
 								<onup>304</onup>
@@ -1131,13 +1143,14 @@
 								<width>180</width>
 								<height>40</height>
 								<label>571</label>
-								<font>Simplicity_20</font>
-								<textcolor>grey2</textcolor>
-								<focusedcolor>white</focusedcolor>
-								<align>center</align>
+								<textcolor>black</textcolor>
+								<focusedcolor>black</focusedcolor>
+								<shadowcolor>grey2</shadowcolor>
 								<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
 								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
-								<onclick>Skin.Reset(Home_Custom_Back_Music_Folder)</onclick>
+								<font>Simplicity_20_Bold_title</font>
+								<align>center</align>
+								<onclick>Skin.Reset(Home_Custom_Back_Movies_Folder)</onclick>
 								<onleft>301</onleft>
 								<onright>300</onright>
 								<onup>304</onup>
@@ -1153,13 +1166,14 @@
 								<width>180</width>
 								<height>40</height>
 								<label>31113</label>
-								<font>Simplicity_20</font>
-								<textcolor>grey2</textcolor>
-								<focusedcolor>white</focusedcolor>
-								<align>center</align>
+								<textcolor>black</textcolor>
+								<focusedcolor>black</focusedcolor>
+								<shadowcolor>grey2</shadowcolor>
 								<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
 								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
-								<onclick>Skin.SetImage(Home_Custom_Back_Pictures_Folder)</onclick>
+								<font>Simplicity_20_Bold_title</font>
+								<align>center</align>
+								<onclick>Skin.SetImage(Home_Custom_Back_TVShows_Folder)</onclick>
 								<onleft>302</onleft>
 								<onright>301</onright>
 								<onup>304</onup>
@@ -1172,13 +1186,14 @@
 								<width>180</width>
 								<height>40</height>
 								<label>31114</label>
-								<font>Simplicity_20</font>
-								<textcolor>grey2</textcolor>
-								<focusedcolor>white</focusedcolor>
-								<align>center</align>
+								<textcolor>black</textcolor>
+								<focusedcolor>black</focusedcolor>
+								<shadowcolor>grey2</shadowcolor>
 								<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
 								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
-								<onclick>Skin.SetPath(Home_Custom_Back_Pictures_Folder)</onclick>
+								<font>Simplicity_20_Bold_title</font>
+								<align>center</align>
+								<onclick>Skin.SetPath(Home_Custom_Back_TVShows_Folder)</onclick>
 								<onleft>300</onleft>
 								<onright>302</onright>
 								<onup>304</onup>
@@ -1191,13 +1206,14 @@
 								<width>180</width>
 								<height>40</height>
 								<label>571</label>
-								<font>Simplicity_20</font>
-								<textcolor>grey2</textcolor>
-								<focusedcolor>white</focusedcolor>
-								<align>center</align>
+								<textcolor>black</textcolor>
+								<focusedcolor>black</focusedcolor>
+								<shadowcolor>grey2</shadowcolor>
 								<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
 								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
-								<onclick>Skin.Reset(Home_Custom_Back_Pictures_Folder)</onclick>
+								<font>Simplicity_20_Bold_title</font>
+								<align>center</align>
+								<onclick>Skin.Reset(Home_Custom_Back_TVShows_Folder)</onclick>
 								<onleft>301</onleft>
 								<onright>300</onright>
 								<onup>304</onup>
@@ -1213,13 +1229,14 @@
 								<width>180</width>
 								<height>40</height>
 								<label>31113</label>
-								<font>Simplicity_20</font>
-								<textcolor>grey2</textcolor>
-								<focusedcolor>white</focusedcolor>
-								<align>center</align>
+								<textcolor>black</textcolor>
+								<focusedcolor>black</focusedcolor>
+								<shadowcolor>grey2</shadowcolor>
 								<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
 								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
-								<onclick>Skin.SetImage(Home_Custom_Back_Programs_Folder)</onclick>
+								<font>Simplicity_20_Bold_title</font>
+								<align>center</align>
+								<onclick>Skin.SetImage(Home_Custom_Back_Videos_Folder)</onclick>
 								<onleft>302</onleft>
 								<onright>301</onright>
 								<onup>304</onup>
@@ -1232,13 +1249,14 @@
 								<width>180</width>
 								<height>40</height>
 								<label>31114</label>
-								<font>Simplicity_20</font>
-								<textcolor>grey2</textcolor>
-								<focusedcolor>white</focusedcolor>
-								<align>center</align>
+								<textcolor>black</textcolor>
+								<focusedcolor>black</focusedcolor>
+								<shadowcolor>grey2</shadowcolor>
 								<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
 								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
-								<onclick>Skin.SetPath(Home_Custom_Back_Programs_Folder)</onclick>
+								<font>Simplicity_20_Bold_title</font>
+								<align>center</align>
+								<onclick>Skin.SetPath(Home_Custom_Back_Videos_Folder)</onclick>
 								<onleft>300</onleft>
 								<onright>302</onright>
 								<onup>304</onup>
@@ -1251,13 +1269,14 @@
 								<width>180</width>
 								<height>40</height>
 								<label>571</label>
-								<font>Simplicity_20</font>
-								<textcolor>grey2</textcolor>
-								<focusedcolor>white</focusedcolor>
-								<align>center</align>
+								<textcolor>black</textcolor>
+								<focusedcolor>black</focusedcolor>
+								<shadowcolor>grey2</shadowcolor>
 								<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
 								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
-								<onclick>Skin.Reset(Home_Custom_Back_Programs_Folder)</onclick>
+								<font>Simplicity_20_Bold_title</font>
+								<align>center</align>
+								<onclick>Skin.Reset(Home_Custom_Back_Videos_Folder)</onclick>
 								<onleft>301</onleft>
 								<onright>300</onright>
 								<onup>304</onup>
@@ -1273,13 +1292,14 @@
 								<width>180</width>
 								<height>40</height>
 								<label>31113</label>
-								<font>Simplicity_20</font>
-								<textcolor>grey2</textcolor>
-								<focusedcolor>white</focusedcolor>
-								<align>center</align>
+								<textcolor>black</textcolor>
+								<focusedcolor>black</focusedcolor>
+								<shadowcolor>grey2</shadowcolor>
 								<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
 								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
-								<onclick>Skin.SetImage(Home_Custom_Back_Weather_Folder)</onclick>
+								<font>Simplicity_20_Bold_title</font>
+								<align>center</align>
+								<onclick>Skin.SetImage(Home_Custom_Back_Music_Folder)</onclick>
 								<onleft>302</onleft>
 								<onright>301</onright>
 								<onup>304</onup>
@@ -1292,13 +1312,14 @@
 								<width>180</width>
 								<height>40</height>
 								<label>31114</label>
-								<font>Simplicity_20</font>
-								<textcolor>grey2</textcolor>
-								<focusedcolor>white</focusedcolor>
-								<align>center</align>
+								<textcolor>black</textcolor>
+								<focusedcolor>black</focusedcolor>
+								<shadowcolor>grey2</shadowcolor>
 								<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
 								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
-								<onclick>Skin.SetPath(Home_Custom_Back_Weather_Folder)</onclick>
+								<font>Simplicity_20_Bold_title</font>
+								<align>center</align>
+								<onclick>Skin.SetPath(Home_Custom_Back_Music_Folder)</onclick>
 								<onleft>300</onleft>
 								<onright>302</onright>
 								<onup>304</onup>
@@ -1311,13 +1332,14 @@
 								<width>180</width>
 								<height>40</height>
 								<label>571</label>
-								<font>Simplicity_20</font>
-								<textcolor>grey2</textcolor>
-								<focusedcolor>white</focusedcolor>
-								<align>center</align>
+								<textcolor>black</textcolor>
+								<focusedcolor>black</focusedcolor>
+								<shadowcolor>grey2</shadowcolor>
 								<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
 								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
-								<onclick>Skin.Reset(Home_Custom_Back_Weather_Folder)</onclick>
+								<font>Simplicity_20_Bold_title</font>
+								<align>center</align>
+								<onclick>Skin.Reset(Home_Custom_Back_Music_Folder)</onclick>
 								<onleft>301</onleft>
 								<onright>300</onright>
 								<onup>304</onup>
@@ -1333,13 +1355,14 @@
 								<width>180</width>
 								<height>40</height>
 								<label>31113</label>
-								<font>Simplicity_20</font>
-								<textcolor>grey2</textcolor>
-								<focusedcolor>white</focusedcolor>
-								<align>center</align>
+								<textcolor>black</textcolor>
+								<focusedcolor>black</focusedcolor>
+								<shadowcolor>grey2</shadowcolor>
 								<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
 								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
-								<onclick>Skin.SetImage(Home_Custom_Back_Addons_Folder)</onclick>
+								<font>Simplicity_20_Bold_title</font>
+								<align>center</align>
+								<onclick>Skin.SetImage(Home_Custom_Back_Pictures_Folder)</onclick>
 								<onleft>302</onleft>
 								<onright>301</onright>
 								<onup>304</onup>
@@ -1352,13 +1375,14 @@
 								<width>180</width>
 								<height>40</height>
 								<label>31114</label>
-								<font>Simplicity_20</font>
-								<textcolor>grey2</textcolor>
-								<focusedcolor>white</focusedcolor>
-								<align>center</align>
+								<textcolor>black</textcolor>
+								<focusedcolor>black</focusedcolor>
+								<shadowcolor>grey2</shadowcolor>
 								<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
 								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
-								<onclick>Skin.SetPath(Home_Custom_Back_Addons_Folder)</onclick>
+								<font>Simplicity_20_Bold_title</font>
+								<align>center</align>
+								<onclick>Skin.SetPath(Home_Custom_Back_Pictures_Folder)</onclick>
 								<onleft>300</onleft>
 								<onright>302</onright>
 								<onup>304</onup>
@@ -1371,13 +1395,14 @@
 								<width>180</width>
 								<height>40</height>
 								<label>571</label>
-								<font>Simplicity_20</font>
-								<textcolor>grey2</textcolor>
-								<focusedcolor>white</focusedcolor>
-								<align>center</align>
+								<textcolor>black</textcolor>
+								<focusedcolor>black</focusedcolor>
+								<shadowcolor>grey2</shadowcolor>
 								<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
 								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
-								<onclick>Skin.Reset(Home_Custom_Back_Addons_Folder)</onclick>
+								<font>Simplicity_20_Bold_title</font>
+								<align>center</align>
+								<onclick>Skin.Reset(Home_Custom_Back_Pictures_Folder)</onclick>
 								<onleft>301</onleft>
 								<onright>300</onright>
 								<onup>304</onup>
@@ -1393,13 +1418,14 @@
 								<width>180</width>
 								<height>40</height>
 								<label>31113</label>
-								<font>Simplicity_20</font>
-								<textcolor>grey2</textcolor>
-								<focusedcolor>white</focusedcolor>
-								<align>center</align>
+								<textcolor>black</textcolor>
+								<focusedcolor>black</focusedcolor>
+								<shadowcolor>grey2</shadowcolor>
 								<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
 								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
-								<onclick>Skin.SetImage(Home_Custom_Back_Settings_Folder)</onclick>
+								<font>Simplicity_20_Bold_title</font>
+								<align>center</align>
+								<onclick>Skin.SetImage(Home_Custom_Back_Weather_Folder)</onclick>
 								<onleft>302</onleft>
 								<onright>301</onright>
 								<onup>304</onup>
@@ -1412,13 +1438,14 @@
 								<width>180</width>
 								<height>40</height>
 								<label>31114</label>
-								<font>Simplicity_20</font>
-								<textcolor>grey2</textcolor>
-								<focusedcolor>white</focusedcolor>
-								<align>center</align>
+								<textcolor>black</textcolor>
+								<focusedcolor>black</focusedcolor>
+								<shadowcolor>grey2</shadowcolor>
 								<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
 								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
-								<onclick>Skin.SetPath(Home_Custom_Back_Settings_Folder)</onclick>
+								<font>Simplicity_20_Bold_title</font>
+								<align>center</align>
+								<onclick>Skin.SetPath(Home_Custom_Back_Weather_Folder)</onclick>
 								<onleft>300</onleft>
 								<onright>302</onright>
 								<onup>304</onup>
@@ -1431,13 +1458,14 @@
 								<width>180</width>
 								<height>40</height>
 								<label>571</label>
-								<font>Simplicity_20</font>
-								<textcolor>grey2</textcolor>
-								<focusedcolor>white</focusedcolor>
-								<align>center</align>
+								<textcolor>black</textcolor>
+								<focusedcolor>black</focusedcolor>
+								<shadowcolor>grey2</shadowcolor>
 								<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
 								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
-								<onclick>Skin.Reset(Home_Custom_Back_Settings_Folder)</onclick>
+								<font>Simplicity_20_Bold_title</font>
+								<align>center</align>
+								<onclick>Skin.Reset(Home_Custom_Back_Weather_Folder)</onclick>
 								<onleft>301</onleft>
 								<onright>300</onright>
 								<onup>304</onup>
@@ -1453,13 +1481,14 @@
 								<width>180</width>
 								<height>40</height>
 								<label>31113</label>
-								<font>Simplicity_20</font>
-								<textcolor>grey2</textcolor>
-								<focusedcolor>white</focusedcolor>
-								<align>center</align>
+								<textcolor>black</textcolor>
+								<focusedcolor>black</focusedcolor>
+								<shadowcolor>grey2</shadowcolor>
 								<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
 								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
-								<onclick>Skin.SetImage(Home_Custom_Back_Movies_Folder)</onclick>
+								<font>Simplicity_20_Bold_title</font>
+								<align>center</align>
+								<onclick>Skin.SetImage(Home_Custom_Back_Addons_Folder)</onclick>
 								<onleft>302</onleft>
 								<onright>301</onright>
 								<onup>304</onup>
@@ -1472,13 +1501,14 @@
 								<width>180</width>
 								<height>40</height>
 								<label>31114</label>
-								<font>Simplicity_20</font>
-								<textcolor>grey2</textcolor>
-								<focusedcolor>white</focusedcolor>
-								<align>center</align>
+								<textcolor>black</textcolor>
+								<focusedcolor>black</focusedcolor>
+								<shadowcolor>grey2</shadowcolor>
 								<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
 								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
-								<onclick>Skin.SetPath(Home_Custom_Back_Movies_Folder)</onclick>
+								<font>Simplicity_20_Bold_title</font>
+								<align>center</align>
+								<onclick>Skin.SetPath(Home_Custom_Back_Addons_Folder)</onclick>
 								<onleft>300</onleft>
 								<onright>302</onright>
 								<onup>304</onup>
@@ -1491,13 +1521,14 @@
 								<width>180</width>
 								<height>40</height>
 								<label>571</label>
-								<font>Simplicity_20</font>
-								<textcolor>grey2</textcolor>
-								<focusedcolor>white</focusedcolor>
-								<align>center</align>
+								<textcolor>black</textcolor>
+								<focusedcolor>black</focusedcolor>
+								<shadowcolor>grey2</shadowcolor>
 								<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
 								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
-								<onclick>Skin.Reset(Home_Custom_Back_Movies_Folder)</onclick>
+								<font>Simplicity_20_Bold_title</font>
+								<align>center</align>
+								<onclick>Skin.Reset(Home_Custom_Back_Addons_Folder)</onclick>
 								<onleft>301</onleft>
 								<onright>300</onright>
 								<onup>304</onup>
@@ -1513,13 +1544,14 @@
 								<width>180</width>
 								<height>40</height>
 								<label>31113</label>
-								<font>Simplicity_20</font>
-								<textcolor>grey2</textcolor>
-								<focusedcolor>white</focusedcolor>
-								<align>center</align>
+								<textcolor>black</textcolor>
+								<focusedcolor>black</focusedcolor>
+								<shadowcolor>grey2</shadowcolor>
 								<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
 								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
-								<onclick>Skin.SetImage(Home_Custom_Back_TVShow_Folder)</onclick>
+								<font>Simplicity_20_Bold_title</font>
+								<align>center</align>
+								<onclick>Skin.SetImage(Home_Custom_Back_Programs_Folder)</onclick>
 								<onleft>302</onleft>
 								<onright>301</onright>
 								<onup>304</onup>
@@ -1532,13 +1564,14 @@
 								<width>180</width>
 								<height>40</height>
 								<label>31114</label>
-								<font>Simplicity_20</font>
-								<textcolor>grey2</textcolor>
-								<focusedcolor>white</focusedcolor>
-								<align>center</align>
+								<textcolor>black</textcolor>
+								<focusedcolor>black</focusedcolor>
+								<shadowcolor>grey2</shadowcolor>
 								<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
 								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
-								<onclick>Skin.SetPath(Home_Custom_Back_TVShow_Folder)</onclick>
+								<font>Simplicity_20_Bold_title</font>
+								<align>center</align>
+								<onclick>Skin.SetPath(Home_Custom_Back_Programs_Folder)</onclick>
 								<onleft>300</onleft>
 								<onright>302</onright>
 								<onup>304</onup>
@@ -1551,13 +1584,14 @@
 								<width>180</width>
 								<height>40</height>
 								<label>571</label>
-								<font>Simplicity_20</font>
-								<textcolor>grey2</textcolor>
-								<focusedcolor>white</focusedcolor>
-								<align>center</align>
+								<textcolor>black</textcolor>
+								<focusedcolor>black</focusedcolor>
+								<shadowcolor>grey2</shadowcolor>
 								<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
 								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
-								<onclick>Skin.Reset(Home_Custom_Back_TVShow_Folder)</onclick>
+								<font>Simplicity_20_Bold_title</font>
+								<align>center</align>
+								<onclick>Skin.Reset(Home_Custom_Back_Programs_Folder)</onclick>
 								<onleft>301</onleft>
 								<onright>300</onright>
 								<onup>304</onup>
@@ -1573,13 +1607,14 @@
 								<width>180</width>
 								<height>40</height>
 								<label>31113</label>
-								<font>Simplicity_20</font>
-								<textcolor>grey2</textcolor>
-								<focusedcolor>white</focusedcolor>
-								<align>center</align>
+								<textcolor>black</textcolor>
+								<focusedcolor>black</focusedcolor>
+								<shadowcolor>grey2</shadowcolor>
 								<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
 								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
-								<onclick>Skin.SetImage(Home_Custom_Back_Home_Folder)</onclick>
+								<font>Simplicity_20_Bold_title</font>
+								<align>center</align>
+								<onclick>Skin.SetImage(Home_Custom_Back_TVGuide_Folder)</onclick>
 								<onleft>302</onleft>
 								<onright>301</onright>
 								<onup>304</onup>
@@ -1592,13 +1627,14 @@
 								<width>180</width>
 								<height>40</height>
 								<label>31114</label>
-								<font>Simplicity_20</font>
-								<textcolor>grey2</textcolor>
-								<focusedcolor>white</focusedcolor>
-								<align>center</align>
+								<textcolor>black</textcolor>
+								<focusedcolor>black</focusedcolor>
+								<shadowcolor>grey2</shadowcolor>
 								<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
 								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
-								<onclick>Skin.SetPath(Home_Custom_Back_Home_Folder)</onclick>
+								<font>Simplicity_20_Bold_title</font>
+								<align>center</align>
+								<onclick>Skin.SetPath(Home_Custom_Back_TVGuide_Folder)</onclick>
 								<onleft>300</onleft>
 								<onright>302</onright>
 								<onup>304</onup>
@@ -1611,13 +1647,14 @@
 								<width>180</width>
 								<height>40</height>
 								<label>571</label>
-								<font>Simplicity_20</font>
-								<textcolor>grey2</textcolor>
-								<focusedcolor>white</focusedcolor>
-								<align>center</align>
+								<textcolor>black</textcolor>
+								<focusedcolor>black</focusedcolor>
+								<shadowcolor>grey2</shadowcolor>
 								<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
 								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
-								<onclick>Skin.Reset(Home_Custom_Back_Home_Folder)</onclick>
+								<font>Simplicity_20_Bold_title</font>
+								<align>center</align>
+								<onclick>Skin.Reset(Home_Custom_Back_TVGuide_Folder)</onclick>
 								<onleft>301</onleft>
 								<onright>300</onright>
 								<onup>304</onup>
@@ -1633,12 +1670,13 @@
 								<width>180</width>
 								<height>40</height>
 								<label>31113</label>
-								<font>Simplicity_20</font>
-								<textcolor>grey2</textcolor>
-								<focusedcolor>white</focusedcolor>
-								<align>center</align>
+								<textcolor>black</textcolor>
+								<focusedcolor>black</focusedcolor>
+								<shadowcolor>grey2</shadowcolor>
 								<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
 								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
+								<font>Simplicity_20_Bold_title</font>
+								<align>center</align>
 								<onclick>Skin.SetImage(Home_Custom_Back_Settings_Folder)</onclick>
 								<onleft>302</onleft>
 								<onright>301</onright>
@@ -1652,12 +1690,13 @@
 								<width>180</width>
 								<height>40</height>
 								<label>31114</label>
-								<font>Simplicity_20</font>
-								<textcolor>grey2</textcolor>
-								<focusedcolor>white</focusedcolor>
-								<align>center</align>
+								<textcolor>black</textcolor>
+								<focusedcolor>black</focusedcolor>
+								<shadowcolor>grey2</shadowcolor>
 								<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
 								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
+								<font>Simplicity_20_Bold_title</font>
+								<align>center</align>
 								<onclick>Skin.SetPath(Home_Custom_Back_Settings_Folder)</onclick>
 								<onleft>300</onleft>
 								<onright>302</onright>
@@ -1671,12 +1710,13 @@
 								<width>180</width>
 								<height>40</height>
 								<label>571</label>
-								<font>Simplicity_20</font>
-								<textcolor>grey2</textcolor>
-								<focusedcolor>white</focusedcolor>
-								<align>center</align>
+								<textcolor>black</textcolor>
+								<focusedcolor>black</focusedcolor>
+								<shadowcolor>grey2</shadowcolor>
 								<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
 								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
+								<font>Simplicity_20_Bold_title</font>
+								<align>center</align>
 								<onclick>Skin.Reset(Home_Custom_Back_Settings_Folder)</onclick>
 								<onleft>301</onleft>
 								<onright>300</onright>
@@ -1693,12 +1733,13 @@
 								<width>180</width>
 								<height>40</height>
 								<label>31113</label>
-								<font>Simplicity_20</font>
-								<textcolor>grey2</textcolor>
-								<focusedcolor>white</focusedcolor>
-								<align>center</align>
+								<textcolor>black</textcolor>
+								<focusedcolor>black</focusedcolor>
+								<shadowcolor>grey2</shadowcolor>
 								<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
 								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
+								<font>Simplicity_20_Bold_title</font>
+								<align>center</align>
 								<onclick>Skin.SetImage(Home_Custom_Back_Shutdown_Folder)</onclick>
 								<onleft>302</onleft>
 								<onright>301</onright>
@@ -1712,12 +1753,13 @@
 								<width>180</width>
 								<height>40</height>
 								<label>31114</label>
-								<font>Simplicity_20</font>
-								<textcolor>grey2</textcolor>
-								<focusedcolor>white</focusedcolor>
-								<align>center</align>
+								<textcolor>black</textcolor>
+								<focusedcolor>black</focusedcolor>
+								<shadowcolor>grey2</shadowcolor>
 								<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
 								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
+								<font>Simplicity_20_Bold_title</font>
+								<align>center</align>
 								<onclick>Skin.SetPath(Home_Custom_Back_Shutdown_Folder)</onclick>
 								<onleft>300</onleft>
 								<onright>302</onright>
@@ -1731,12 +1773,13 @@
 								<width>180</width>
 								<height>40</height>
 								<label>571</label>
-								<font>Simplicity_20</font>
-								<textcolor>grey2</textcolor>
-								<focusedcolor>white</focusedcolor>
-								<align>center</align>
+								<textcolor>black</textcolor>
+								<focusedcolor>black</focusedcolor>
+								<shadowcolor>grey2</shadowcolor>
 								<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
 								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
+								<font>Simplicity_20_Bold_title</font>
+								<align>center</align>
 								<onclick>Skin.Reset(Home_Custom_Back_Shutdown_Folder)</onclick>
 								<onleft>301</onleft>
 								<onright>300</onright>
@@ -1767,7 +1810,7 @@
 						<label fallback="571">$INFO[Container(9003).ListItem.Thumb]</label>
 						<textcolor>white</textcolor>
 					</control>
-				</control>-->
+				</control>
 				<!--<control type="group">
 					<control type="grouplist" id="9004">
 						<visible>Container(9000).Hasfocus(4)</visible>
@@ -3876,7 +3919,7 @@
 							<onclick>ActivateWindow(1114)</onclick>
 							<visible>Skin.HasSetting(Menu_Custom2)</visible>
 						</control>
-						<!--<control type="button" id="916">
+						<control type="button" id="916">
 							<width>900</width>
 							<height>40</height>
 							<font>Simplicity_20</font>
@@ -3888,7 +3931,7 @@
 							<label2>[COLOR=selected]$INFO[Skin.String(Menu_Custom2_Folder)][/COLOR]</label2>
 							<onclick>Skin.SetImage(Menu_Custom2_Folder)</onclick>
 							<visible>Skin.HasSetting(Menu_Custom2)</visible>
-						</control>-->
+						</control>
 
 						<control type="radiobutton" id="917">
 							<width>900</width>
@@ -3935,7 +3978,7 @@
 							<onclick>ActivateWindow(1114)</onclick>
 							<visible>Skin.HasSetting(Menu_Custom3)</visible>
 						</control>
-						<!--<control type="button" id="920">
+						<control type="button" id="920">
 							<width>900</width>
 							<height>40</height>
 							<font>Simplicity_20</font>
@@ -3947,7 +3990,7 @@
 							<label2>[COLOR=selected]$INFO[Skin.String(Menu_Custom3_Folder)][/COLOR]</label2>
 							<onclick>Skin.SetImage(Menu_Custom3_Folder)</onclick>
 							<visible>Skin.HasSetting(Menu_Custom3)</visible>
-						</control>-->
+						</control>
 
 						<control type="radiobutton" id="921">
 							<width>900</width>
@@ -3994,7 +4037,7 @@
 							<onclick>ActivateWindow(1114)</onclick>
 							<visible>Skin.HasSetting(Menu_Custom4)</visible>
 						</control>
-						<!--<control type="button" id="924">
+						<control type="button" id="924">
 							<width>900</width>
 							<height>40</height>
 							<font>Simplicity_20</font>
@@ -4006,7 +4049,7 @@
 							<label2>[COLOR=selected]$INFO[Skin.String(Menu_Custom4_Folder)][/COLOR]</label2>
 							<onclick>Skin.SetImage(Menu_Custom4_Folder)</onclick>
 							<visible>Skin.HasSetting(Menu_Custom4)</visible>
-						</control>-->
+						</control>
 					</control>
 			<control type="group">
 					<control type="grouplist" id="9011">

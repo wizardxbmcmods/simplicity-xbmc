@@ -1,7 +1,12 @@
+[B]1.0.6[/B] 
+
+- Added turntable option to Music Visualization screen
+- Added customizable backgrounds to home screen
+
 [B]1.0.5[/B] 
 
-- A coiuple of new views
-- Added support for Poster.jpp (See Skin Settings)
+- A a couple of new views
+- Added support for Poster.jpg (See Skin Settings)
 
 [B]1.0.4[/B] 
 
