@@ -310,7 +310,7 @@
 
 		<control type="group" id="9099">
 			<control type="group" id="9001">
-				<animation effect="slide" end="0,20" time="100">WindowClose</animation>
+				<animation effect="slide" end="0,25" time="100">WindowClose</animation>
 				<animation effect="fade" end="100">WindowOpen</animation>
 				<posx>0</posx>
 				<posy>522</posy>

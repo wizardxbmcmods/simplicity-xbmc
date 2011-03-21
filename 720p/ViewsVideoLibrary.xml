@@ -41,7 +41,7 @@
 						<width>345</width>
 						<height>192</height>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
-						<texture diffuse="simplicity/fanart-slide-fanart-diffuse.png" background="true">$INFO[Listitem.Property(Fanart_Image)]</texture>
+						<texture diffuse="simplicity/fanart-slide-fanart-diffuse.png" background="true" fallback="nothumb.png">$INFO[Listitem.Property(Fanart_Image)]</texture>
 					</control>
 					<control type="image">
 						<posy>28</posy>
@@ -1047,11 +1047,11 @@
 										<effect type="zoom" start="50" end="160" center="auto" time="300" delay="800"/>
 									</animation>
 								</control>
-								<control type="textbox">
+								<control type="label">
 									<description>Title</description>
 									<posx>52</posx>
 									<posy>17</posy>
-									<width>500</width>
+									<width>325</width>
 									<height>55</height>
 									<font>Simplicity_18</font>
 									<align>left</align>
@@ -1156,11 +1156,11 @@
 										<effect type="zoom" start="50" end="160" center="auto" time="300" delay="800"/>
 									</animation>
 								</control>
-								<control type="textbox">
+								<control type="label">
 									<description>Title</description>
 									<posx>-268</posx>
 									<posy>17</posy>
-									<width>500</width>
+									<width>325</width>
 									<height>55</height>
 									<font>Simplicity_18</font>
 									<align>left</align>
@@ -2752,7 +2752,7 @@
 						<height>139</height>
 						<align>right</align>
 						<aspect>stretch</aspect>
-						<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+						<texture background="true" fallback="nothumb.png">$INFO[ListItem.Property(Fanart_Image)]</texture>
 						<bordertexture border="8">simplicity/thumbborder.png</bordertexture>
 						<bordersize>8</bordersize>
 					</control>
@@ -3152,7 +3152,7 @@
 							<width>245</width>
 							<height>127</height>
 							<aspect>scale</aspect>
-							<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+							<texture background="true" fallback="nothumb.png">$INFO[ListItem.Property(Fanart_Image)]</texture>
 							<bordertexture border="2">simplicity/thumbborder.png</bordertexture>
 							<bordersize>2</bordersize>
 						</control>
@@ -3610,7 +3610,7 @@
 				<width>373</width>
 				<height>207</height>
 				<aspect>scale</aspect>
-				<texture background="true" diffuse="simplicity/list-fanart-diffuse.png">$INFO[ListItem.Property(Fanart_Image)]</texture>
+				<texture background="true" diffuse="simplicity/list-fanart-diffuse.png" fallback="nothumb.png">$INFO[ListItem.Property(Fanart_Image)]</texture>
 				<fadetime>FanartCrossfadeTime</fadetime>
 			</control>
 			<control type="label">
@@ -4603,7 +4603,7 @@
 						<height>139</height>
 						<align>right</align>
 						<aspect>stretch</aspect>
-						<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+						<texture background="true" fallback="nothumb.png">$INFO[ListItem.Property(Fanart_Image)]</texture>
 						<bordertexture border="8">simplicity/thumbborder.png</bordertexture>
 						<bordersize>8</bordersize>
 					</control>
