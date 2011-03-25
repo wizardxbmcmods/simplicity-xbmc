@@ -1309,6 +1309,15 @@
                         <label>20410</label>
                         <visible>!IsEmpty(ListItem.Trailer)</visible>
                     </control>
+<control type="button" id="13">
+  	<description>Home Cinema Experience</description>
+     <include>ButtonInfoDialogsCommonValuesInfo</include>
+  	<label>Cinema</label>
+  	<onclick>Dialog.Close(MovieInformation)</onclick>
+  	<onclick>Playlist.Clear</onclick>
+  	<onclick>RunScript(special://home/addons/script.cinema.experience/addon.py)</onclick>
+    <visible>Container.Content(Movies) + Skin.HasSetting(CinemaExperienceButton)</visible>
+</control>
                     <control type = "button" id = "13">
                         <description>Logo</description>
                         <include>ButtonInfoDialogsCommonValuesInfo</include>

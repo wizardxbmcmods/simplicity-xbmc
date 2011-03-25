@@ -402,8 +402,30 @@
 			</control>-->
 		</control>
 			</control>
-
-
+<control type="group">
+				<visible>VideoPlayer.Content(movies)</visible>
+	<animation effect="slide" start="0,-120" end="0,0" time="100">WindowOpen</animation>
+	<animation effect="slide" start="0,0" end="0,-120" time="100">WindowClose</animation>
+				<posx>60</posx>
+				<posy>-51</posy>
+					<control type="image">
+						<posx>983</posx>
+						<posy>37</posy>
+						<width>120</width>
+						<height>65</height>
+						<texture>simplicity/logo-bg.png</texture>
+					</control>
+					<control type="image">
+						<posx>993</posx>
+						<posy>22</posy>
+						<width>100</width>
+						<height>100</height>
+				<align>center</align>
+				<aligny>center</aligny>
+						<aspectratio>keep</aspectratio>
+						<texture>special://skin/media/studios/$INFO[VideoPlayer.Studio,,.png]</texture>
+					</control>
+</control>
 			</control>
 
 

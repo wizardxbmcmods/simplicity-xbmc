@@ -283,6 +283,14 @@
 					<onclick>$INFO[Skin.String(Menu_Custom4_Path)]</onclick>
 					<visible>Skin.HasSetting(Menu_Custom4)</visible>
 				</item>
+				<item id="19">
+					<description>Search</description>
+					<label>SEARCH</label>
+					<icon>special://skin/backgrounds/search.jpg</icon>
+					<thumb>$INFO[Skin.String(Home_Custom_Back_Search_Folder)]</thumb>
+					<visible>!Skin.HasSetting(HomeMenuNoSearchButton)</visible>
+					<onclick>XBMC.ActivateWindow(1118)</onclick>
+				</item>		
 				<item id="10">
 					<description>Settings</description>
 					<label>$LOCALIZE[31508]</label>

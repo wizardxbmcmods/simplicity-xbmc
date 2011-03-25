@@ -35,7 +35,7 @@
 				<posx>0</posx>
 				<posy>60</posy>
 				<width>260</width>
-				<height>600</height>
+				<height>660</height>
 				<itemgap>0</itemgap>
 				<onleft>9010</onleft>
 				<onright>9010</onright>
@@ -140,6 +140,11 @@
 					</item>
 					<item id="20">
 						<label>Advanced</label>
+						<label2>-</label2>
+						<onclick>-</onclick>
+					</item>
+					<item id="21">
+						<label>Now Playing</label>
 						<label2>-</label2>
 						<onclick>-</onclick>
 					</item>
@@ -794,6 +799,25 @@
 						<onclick>Skin.ToggleSetting(HomeMenuNoShutdownButton)</onclick>
 						<selected>Skin.HasSetting(HomeMenuNoShutdownButton)</selected>
 					</control>
+					<control type="radiobutton" id="219">
+						<description>Hide Search Button</description>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>900</width>
+						<height>40</height>
+						<font>Simplicity_20</font>
+						<textcolor>white</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<radiowidth>83</radiowidth>
+						<radioheight>67</radioheight>
+						<textureradiofocus>simplicity/settings-radiobutton-on.png</textureradiofocus>
+						<textureradionofocus>simplicity/settings-radiobutton-off.png</textureradionofocus>
+						<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+						<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
+						<label>$LOCALIZE[31111] - Search</label>
+						<onclick>Skin.ToggleSetting(HomeMenuNoSearchButton)</onclick>
+						<selected>Skin.HasSetting(HomeMenuNoSearchButton)</selected>
+					</control>
 				</control>
 				<control type="scrollbar" id="60">
 					<posx>1230</posx>
@@ -1008,12 +1032,18 @@
 								<thumb>$INFO[Skin.String(Home_Custom_Back_TVGuide_Folder)]</thumb>
 							</item>
 							<item id="13">
+								<label>Search</label>
+								<onclick>-</onclick>
+								<icon>special://skin/backgrounds/search.jpg</icon>
+								<thumb>$INFO[Skin.String(Home_Custom_Back_Search_Folder)]</thumb>
+							</item>
+							<item id="14">
 								<label>Settings</label>
 								<onclick>-</onclick>
 								<icon>special://skin/backgrounds/settings.jpg</icon>
 								<thumb>$INFO[Skin.String(Home_Custom_Back_Settings_Folder)]</thumb>
 							</item>
-							<item id="14">
+							<item id="15">
 								<label>Shutdown</label>
 								<onclick>-</onclick>
 								<icon>special://skin/backgrounds/shutdown.jpg</icon>
@@ -1022,15 +1052,15 @@
 						</content>
 					</control>
 					<control type="image">
-						<posx>180</posx>
+						<posx>60</posx>
 						<posy>100</posy>
-						<width>580</width>
-						<height>435</height>
-						<texture>simplicity/black-back.png</texture>
+						<width>765</width>
+						<height>525</height>
+						<texture>now-playing-border.png</texture>
 					</control>
 					<control type="group">
-						<posx>190</posx>
-						<posy>110</posy>
+						<posx>70</posx>
+						<posy>570</posy>
 						<control type="group">
 							<visible>Container(9003).HasFocus(1)</visible>
 							<control type="button" id="300">
@@ -1089,6 +1119,26 @@
 								<align>center</align>
 								<onclick>Skin.Reset(Home_Custom_Back_Home_Folder)</onclick>
 								<onleft>301</onleft>
+								<onright>303</onright>
+								<onup>304</onup>
+								<ondown>304</ondown>
+							</control>
+							<control type="button" id="303">
+								<description>Video Fanart button</description>
+								<posx>560</posx>
+								<posy>0</posy>
+								<width>180</width>
+								<height>40</height>
+								<label>Use Fanart</label>
+								<textcolor>black</textcolor>
+								<focusedcolor>black</focusedcolor>
+								<shadowcolor>grey2</shadowcolor>
+								<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
+								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
+								<font>Simplicity_20_Bold_title</font>
+								<align>center</align>
+								<onclick>Skin.SetString(Home_Custom_Back_Home_Folder,special://profile/Thumbnails/Video/Fanart)</onclick>
+								<onleft>302</onleft>
 								<onright>300</onright>
 								<onup>304</onup>
 								<ondown>304</ondown>
@@ -1152,6 +1202,26 @@
 								<align>center</align>
 								<onclick>Skin.Reset(Home_Custom_Back_Movies_Folder)</onclick>
 								<onleft>301</onleft>
+								<onright>303</onright>
+								<onup>304</onup>
+								<ondown>304</ondown>
+							</control>
+							<control type="button" id="303">
+								<description>Video Fanart button</description>
+								<posx>560</posx>
+								<posy>0</posy>
+								<width>180</width>
+								<height>40</height>
+								<label>Use Fanart</label>
+								<textcolor>black</textcolor>
+								<focusedcolor>black</focusedcolor>
+								<shadowcolor>grey2</shadowcolor>
+								<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
+								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
+								<font>Simplicity_20_Bold_title</font>
+								<align>center</align>
+								<onclick>Skin.SetString(Home_Custom_Back_Home_Folder,special://profile/Thumbnails/Video/Fanart)</onclick>
+								<onleft>302</onleft>
 								<onright>300</onright>
 								<onup>304</onup>
 								<ondown>304</ondown>
@@ -1215,6 +1285,26 @@
 								<align>center</align>
 								<onclick>Skin.Reset(Home_Custom_Back_TVShows_Folder)</onclick>
 								<onleft>301</onleft>
+								<onright>303</onright>
+								<onup>304</onup>
+								<ondown>304</ondown>
+							</control>
+							<control type="button" id="303">
+								<description>Video Fanart button</description>
+								<posx>560</posx>
+								<posy>0</posy>
+								<width>180</width>
+								<height>40</height>
+								<label>Use Fanart</label>
+								<textcolor>black</textcolor>
+								<focusedcolor>black</focusedcolor>
+								<shadowcolor>grey2</shadowcolor>
+								<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
+								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
+								<font>Simplicity_20_Bold_title</font>
+								<align>center</align>
+								<onclick>Skin.SetString(Home_Custom_Back_Home_Folder,special://profile/Thumbnails/Video/Fanart)</onclick>
+								<onleft>302</onleft>
 								<onright>300</onright>
 								<onup>304</onup>
 								<ondown>304</ondown>
@@ -1236,7 +1326,7 @@
 								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
 								<font>Simplicity_20_Bold_title</font>
 								<align>center</align>
-								<onclick>Skin.SetImage(Home_Custom_Back_Videos_Folder)</onclick>
+								<onclick>Skin.SetImage(Home_Custom_Back_Video_Folder)</onclick>
 								<onleft>302</onleft>
 								<onright>301</onright>
 								<onup>304</onup>
@@ -1256,7 +1346,7 @@
 								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
 								<font>Simplicity_20_Bold_title</font>
 								<align>center</align>
-								<onclick>Skin.SetPath(Home_Custom_Back_Videos_Folder)</onclick>
+								<onclick>Skin.SetPath(Home_Custom_Back_Video_Folder)</onclick>
 								<onleft>300</onleft>
 								<onright>302</onright>
 								<onup>304</onup>
@@ -1276,8 +1366,28 @@
 								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
 								<font>Simplicity_20_Bold_title</font>
 								<align>center</align>
-								<onclick>Skin.Reset(Home_Custom_Back_Videos_Folder)</onclick>
+								<onclick>Skin.Reset(Home_Custom_Back_Video_Folder)</onclick>
 								<onleft>301</onleft>
+								<onright>303</onright>
+								<onup>304</onup>
+								<ondown>304</ondown>
+							</control>
+							<control type="button" id="303">
+								<description>Video Fanart button</description>
+								<posx>560</posx>
+								<posy>0</posy>
+								<width>180</width>
+								<height>40</height>
+								<label>Use Fanart</label>
+								<textcolor>black</textcolor>
+								<focusedcolor>black</focusedcolor>
+								<shadowcolor>grey2</shadowcolor>
+								<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
+								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
+								<font>Simplicity_20_Bold_title</font>
+								<align>center</align>
+								<onclick>Skin.SetString(Home_Custom_Back_Video_Folder,special://profile/Thumbnails/Video/Fanart)</onclick>
+								<onleft>302</onleft>
 								<onright>300</onright>
 								<onup>304</onup>
 								<ondown>304</ondown>
@@ -1341,6 +1451,26 @@
 								<align>center</align>
 								<onclick>Skin.Reset(Home_Custom_Back_Music_Folder)</onclick>
 								<onleft>301</onleft>
+								<onright>303</onright>
+								<onup>304</onup>
+								<ondown>304</ondown>
+							</control>
+							<control type="button" id="303">
+								<description>Video Fanart button</description>
+								<posx>560</posx>
+								<posy>0</posy>
+								<width>180</width>
+								<height>40</height>
+								<label>Use Fanart</label>
+								<textcolor>black</textcolor>
+								<focusedcolor>black</focusedcolor>
+								<shadowcolor>grey2</shadowcolor>
+								<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
+								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
+								<font>Simplicity_20_Bold_title</font>
+								<align>center</align>
+								<onclick>Skin.SetString(Home_Custom_Back_Home_Folder,special://profile/Thumbnails/Video/Fanart)</onclick>
+								<onleft>302</onleft>
 								<onright>300</onright>
 								<onup>304</onup>
 								<ondown>304</ondown>
@@ -1404,6 +1534,26 @@
 								<align>center</align>
 								<onclick>Skin.Reset(Home_Custom_Back_Pictures_Folder)</onclick>
 								<onleft>301</onleft>
+								<onright>303</onright>
+								<onup>304</onup>
+								<ondown>304</ondown>
+							</control>
+							<control type="button" id="303">
+								<description>Video Fanart button</description>
+								<posx>560</posx>
+								<posy>0</posy>
+								<width>180</width>
+								<height>40</height>
+								<label>Use Fanart</label>
+								<textcolor>black</textcolor>
+								<focusedcolor>black</focusedcolor>
+								<shadowcolor>grey2</shadowcolor>
+								<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
+								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
+								<font>Simplicity_20_Bold_title</font>
+								<align>center</align>
+								<onclick>Skin.SetString(Home_Custom_Back_Home_Folder,special://profile/Thumbnails/Video/Fanart)</onclick>
+								<onleft>302</onleft>
 								<onright>300</onright>
 								<onup>304</onup>
 								<ondown>304</ondown>
@@ -1467,6 +1617,26 @@
 								<align>center</align>
 								<onclick>Skin.Reset(Home_Custom_Back_Weather_Folder)</onclick>
 								<onleft>301</onleft>
+								<onright>303</onright>
+								<onup>304</onup>
+								<ondown>304</ondown>
+							</control>
+							<control type="button" id="303">
+								<description>Video Fanart button</description>
+								<posx>560</posx>
+								<posy>0</posy>
+								<width>180</width>
+								<height>40</height>
+								<label>Use Fanart</label>
+								<textcolor>black</textcolor>
+								<focusedcolor>black</focusedcolor>
+								<shadowcolor>grey2</shadowcolor>
+								<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
+								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
+								<font>Simplicity_20_Bold_title</font>
+								<align>center</align>
+								<onclick>Skin.SetString(Home_Custom_Back_Home_Folder,special://profile/Thumbnails/Video/Fanart)</onclick>
+								<onleft>302</onleft>
 								<onright>300</onright>
 								<onup>304</onup>
 								<ondown>304</ondown>
@@ -1530,6 +1700,26 @@
 								<align>center</align>
 								<onclick>Skin.Reset(Home_Custom_Back_Addons_Folder)</onclick>
 								<onleft>301</onleft>
+								<onright>303</onright>
+								<onup>304</onup>
+								<ondown>304</ondown>
+							</control>
+							<control type="button" id="303">
+								<description>Video Fanart button</description>
+								<posx>560</posx>
+								<posy>0</posy>
+								<width>180</width>
+								<height>40</height>
+								<label>Use Fanart</label>
+								<textcolor>black</textcolor>
+								<focusedcolor>black</focusedcolor>
+								<shadowcolor>grey2</shadowcolor>
+								<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
+								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
+								<font>Simplicity_20_Bold_title</font>
+								<align>center</align>
+								<onclick>Skin.SetString(Home_Custom_Back_Home_Folder,special://profile/Thumbnails/Video/Fanart)</onclick>
+								<onleft>302</onleft>
 								<onright>300</onright>
 								<onup>304</onup>
 								<ondown>304</ondown>
@@ -1593,6 +1783,26 @@
 								<align>center</align>
 								<onclick>Skin.Reset(Home_Custom_Back_Programs_Folder)</onclick>
 								<onleft>301</onleft>
+								<onright>303</onright>
+								<onup>304</onup>
+								<ondown>304</ondown>
+							</control>
+							<control type="button" id="303">
+								<description>Video Fanart button</description>
+								<posx>560</posx>
+								<posy>0</posy>
+								<width>180</width>
+								<height>40</height>
+								<label>Use Fanart</label>
+								<textcolor>black</textcolor>
+								<focusedcolor>black</focusedcolor>
+								<shadowcolor>grey2</shadowcolor>
+								<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
+								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
+								<font>Simplicity_20_Bold_title</font>
+								<align>center</align>
+								<onclick>Skin.SetString(Home_Custom_Back_Home_Folder,special://profile/Thumbnails/Video/Fanart)</onclick>
+								<onleft>302</onleft>
 								<onright>300</onright>
 								<onup>304</onup>
 								<ondown>304</ondown>
@@ -1656,6 +1866,26 @@
 								<align>center</align>
 								<onclick>Skin.Reset(Home_Custom_Back_TVGuide_Folder)</onclick>
 								<onleft>301</onleft>
+								<onright>303</onright>
+								<onup>304</onup>
+								<ondown>304</ondown>
+							</control>
+							<control type="button" id="303">
+								<description>Video Fanart button</description>
+								<posx>560</posx>
+								<posy>0</posy>
+								<width>180</width>
+								<height>40</height>
+								<label>Use Fanart</label>
+								<textcolor>black</textcolor>
+								<focusedcolor>black</focusedcolor>
+								<shadowcolor>grey2</shadowcolor>
+								<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
+								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
+								<font>Simplicity_20_Bold_title</font>
+								<align>center</align>
+								<onclick>Skin.SetString(Home_Custom_Back_Home_Folder,special://profile/Thumbnails/Video/Fanart)</onclick>
+								<onleft>302</onleft>
 								<onright>300</onright>
 								<onup>304</onup>
 								<ondown>304</ondown>
@@ -1663,6 +1893,89 @@
 						</control>
 						<control type="group">
 							<visible>Container(9003).HasFocus(13)</visible>
+							<control type="button" id="300">
+								<description>Single Image button</description>
+								<posx>5</posx>
+								<posy>0</posy>
+								<width>180</width>
+								<height>40</height>
+								<label>31113</label>
+								<textcolor>black</textcolor>
+								<focusedcolor>black</focusedcolor>
+								<shadowcolor>grey2</shadowcolor>
+								<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
+								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
+								<font>Simplicity_20_Bold_title</font>
+								<align>center</align>
+								<onclick>Skin.SetImage(Home_Custom_Back_Search_Folder)</onclick>
+								<onleft>302</onleft>
+								<onright>301</onright>
+								<onup>304</onup>
+								<ondown>304</ondown>
+							</control>
+							<control type="button" id="301">
+								<description>Multi Image button</description>
+								<posx>190</posx>
+								<posy>0</posy>
+								<width>180</width>
+								<height>40</height>
+								<label>31114</label>
+								<textcolor>black</textcolor>
+								<focusedcolor>black</focusedcolor>
+								<shadowcolor>grey2</shadowcolor>
+								<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
+								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
+								<font>Simplicity_20_Bold_title</font>
+								<align>center</align>
+								<onclick>Skin.SetPath(Home_Custom_Back_Search_Folder)</onclick>
+								<onleft>300</onleft>
+								<onright>302</onright>
+								<onup>304</onup>
+								<ondown>304</ondown>
+							</control>
+							<control type="button" id="302">
+								<description>Default Image button</description>
+								<posx>375</posx>
+								<posy>0</posy>
+								<width>180</width>
+								<height>40</height>
+								<label>571</label>
+								<textcolor>black</textcolor>
+								<focusedcolor>black</focusedcolor>
+								<shadowcolor>grey2</shadowcolor>
+								<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
+								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
+								<font>Simplicity_20_Bold_title</font>
+								<align>center</align>
+								<onclick>Skin.Reset(Home_Custom_Back_Search_Folder)</onclick>
+								<onleft>301</onleft>
+								<onright>303</onright>
+								<onup>304</onup>
+								<ondown>304</ondown>
+							</control>
+							<control type="button" id="303">
+								<description>Video Fanart button</description>
+								<posx>560</posx>
+								<posy>0</posy>
+								<width>180</width>
+								<height>40</height>
+								<label>Use Fanart</label>
+								<textcolor>black</textcolor>
+								<focusedcolor>black</focusedcolor>
+								<shadowcolor>grey2</shadowcolor>
+								<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
+								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
+								<font>Simplicity_20_Bold_title</font>
+								<align>center</align>
+								<onclick>Skin.SetString(Home_Custom_Back_Search_Folder,special://profile/Thumbnails/Video/Fanart)</onclick>
+								<onleft>302</onleft>
+								<onright>300</onright>
+								<onup>304</onup>
+								<ondown>304</ondown>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container(9003).HasFocus(14)</visible>
 							<control type="button" id="300">
 								<description>Single Image button</description>
 								<posx>5</posx>
@@ -1719,13 +2032,33 @@
 								<align>center</align>
 								<onclick>Skin.Reset(Home_Custom_Back_Settings_Folder)</onclick>
 								<onleft>301</onleft>
+								<onright>303</onright>
+								<onup>304</onup>
+								<ondown>304</ondown>
+							</control>
+							<control type="button" id="303">
+								<description>Video Fanart button</description>
+								<posx>560</posx>
+								<posy>0</posy>
+								<width>180</width>
+								<height>40</height>
+								<label>Use Fanart</label>
+								<textcolor>black</textcolor>
+								<focusedcolor>black</focusedcolor>
+								<shadowcolor>grey2</shadowcolor>
+								<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
+								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
+								<font>Simplicity_20_Bold_title</font>
+								<align>center</align>
+								<onclick>Skin.SetString(Home_Custom_Back_Home_Folder,special://profile/Thumbnails/Video/Fanart)</onclick>
+								<onleft>302</onleft>
 								<onright>300</onright>
 								<onup>304</onup>
 								<ondown>304</ondown>
 							</control>
 						</control>
 						<control type="group">
-							<visible>Container(9003).HasFocus(14)</visible>
+							<visible>Container(9003).HasFocus(15)</visible>
 							<control type="button" id="300">
 								<description>Single Image button</description>
 								<posx>5</posx>
@@ -1782,6 +2115,26 @@
 								<align>center</align>
 								<onclick>Skin.Reset(Home_Custom_Back_Shutdown_Folder)</onclick>
 								<onleft>301</onleft>
+								<onright>303</onright>
+								<onup>304</onup>
+								<ondown>304</ondown>
+							</control>
+							<control type="button" id="303">
+								<description>Video Fanart button</description>
+								<posx>560</posx>
+								<posy>0</posy>
+								<width>180</width>
+								<height>40</height>
+								<label>Use Fanart</label>
+								<textcolor>black</textcolor>
+								<focusedcolor>black</focusedcolor>
+								<shadowcolor>grey2</shadowcolor>
+								<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
+								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
+								<font>Simplicity_20_Bold_title</font>
+								<align>center</align>
+								<onclick>Skin.SetString(Home_Custom_Back_Home_Folder,special://profile/Thumbnails/Video/Fanart)</onclick>
+								<onleft>302</onleft>
 								<onright>300</onright>
 								<onup>304</onup>
 								<ondown>304</ondown>
@@ -1789,18 +2142,18 @@
 						</control>
 					</control>
 					<control type="multiimage">
-						<posx>190</posx>
-						<posy>160</posy>
-						<width>560</width>
-						<height>335</height>
+						<posx>80</posx>
+						<posy>110</posy>
+						<width>728</width>
+						<height>410</height>
 						<imagepath background="true">$INFO[Container(9003).ListItem.Icon]</imagepath>
 						<timeperimage>6000</timeperimage>
 						<randomize>true</randomize>
 						<fadetime>500</fadetime>
 					</control>
 					<control type="label">
-						<posx>190</posx>
-						<posy>505</posy>
+						<posx>160</posx>
+						<posy>535</posy>
 						<width>560</width>
 						<height>20</height>
 						<align>center</align>
@@ -2398,6 +2751,22 @@
 							<texturenofocus>simplicity/menuitemnf.png</texturenofocus>
 							<onclick>Skin.ToggleSetting(UseThumbsOnInfo)</onclick>
 							<selected>Skin.HasSetting(UseThumbsOnInfo)</selected>
+						</control>
+						<control type="radiobutton" id="510">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_20</font>
+							<label>Enable "Cinema Experience" Button</label>
+							<textcolor>white</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<radiowidth>83</radiowidth>
+							<radioheight>67</radioheight>
+							<textureradiofocus>simplicity/settings-radiobutton-on.png</textureradiofocus>
+							<textureradionofocus>simplicity/settings-radiobutton-off.png</textureradionofocus>
+							<texturefocus>simplicity/button-focus.png</texturefocus>
+							<texturenofocus>simplicity/menuitemnf.png</texturenofocus>
+							<onclick>Skin.ToggleSetting(CinemaExperienceButton)</onclick>
+							<selected>Skin.HasSetting(CinemaExperienceButton)</selected>
 						</control>
 						<control type="radiobutton" id="511">
 							<width>900</width>
@@ -4477,6 +4846,144 @@
 							<onclick>XBMC.RunScript(script.TvTunes)</onclick>
 						</control>
 				</control>
+				<control type="grouplist" id="9021">
+					<visible>Container(9000).Hasfocus(21)</visible>
+					<posx>310</posx>
+					<posy>50</posy>
+					<width>900</width>
+					<height>670</height>
+					<itemgap>-1</itemgap>
+					<pagecontrol>60</pagecontrol>
+					<onleft>9000</onleft>
+					<onright>60</onright>
+					<onup>9021</onup>
+					<ondown>9021</ondown>
+					<control type="label" id="2100">
+						<width>750</width>
+						<height>45</height>
+						<font>Simplicity_20_Bold_title</font>
+						<label>Now Playing Options</label>
+						<textcolor>yellow</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+					</control>
+		  <control type="radiobutton" id="2101">
+						<description>Show Music NowPlaying</description>
+						<width>900</width>
+						<height>40</height>
+						<font>Shade_20</font>
+						<textcolor>white</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<radiowidth>83</radiowidth>
+							<radioheight>67</radioheight>
+							<textureradiofocus>simplicity/settings-radiobutton-on.png</textureradiofocus>
+							<textureradionofocus>simplicity/settings-radiobutton-off.png</textureradionofocus>
+							<texturefocus>simplicity/button-focus.png</texturefocus>
+							<texturenofocus>simplicity/menuitemnf.png</texturenofocus>
+						<label>Enable Now Playing Screen</label>
+						<onclick>Skin.ToggleSetting(MusicNowPLaying)</onclick>
+						<selected>Skin.HasSetting(MusicNowPLaying)</selected>
+				</control>
+
+						<control type="radiobutton" id="2102">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_20</font>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<radiowidth>83</radiowidth>
+							<radioheight>67</radioheight>
+							<textureradiofocus>simplicity/settings-radiobutton-on.png</textureradiofocus>
+							<textureradionofocus>simplicity/settings-radiobutton-off.png</textureradionofocus>
+							<texturefocus>simplicity/button-focus.png</texturefocus>
+							<texturenofocus>simplicity/menuitemnf.png</texturenofocus>
+							<label>- Use Alternate Fallback Image</label>
+							<onclick>Skin.ToggleSetting(UseAlternateFallback)</onclick>
+							<selected>Skin.HasSetting(UseAlternateFallback)</selected>
+							<visible>Skin.HasSetting(MusicNowPLaying)</visible>
+						</control>
+				
+						<control type="radiobutton" id="2103">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_20</font>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<radiowidth>83</radiowidth>
+							<radioheight>67</radioheight>
+							<textureradiofocus>simplicity/settings-radiobutton-on.png</textureradiofocus>
+							<textureradionofocus>simplicity/settings-radiobutton-off.png</textureradionofocus>
+							<texturefocus>simplicity/button-focus.png</texturefocus>
+							<texturenofocus>simplicity/menuitemnf.png</texturenofocus>
+							<label>- Remove Clock</label>
+							<onclick>Skin.ToggleSetting(NowPlayingNoClock)</onclick>
+							<selected>Skin.HasSetting(NowPlayingNoClock)</selected>
+							<visible>Skin.HasSetting(MusicNowPLaying)</visible>
+						</control>
+          <control type="radiobutton" id="2111">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_20</font>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<radiowidth>83</radiowidth>
+							<radioheight>67</radioheight>
+							<textureradiofocus>simplicity/settings-radiobutton-on.png</textureradiofocus>
+							<textureradionofocus>simplicity/settings-radiobutton-off.png</textureradionofocus>
+							<texturefocus>simplicity/button-focus.png</texturefocus>
+							<texturenofocus>simplicity/menuitemnf.png</texturenofocus>
+            <label>- Use CDArt</label>
+            <onclick>Skin.ToggleSetting(VisualisationCDart)</onclick>
+            <selected>Skin.HasSetting(VisualisationCDart)</selected>
+							<visible>Skin.HasSetting(MusicNowPLaying)</visible>
+          </control>
+          <control type="radiobutton" id="2112">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_20</font>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<radiowidth>83</radiowidth>
+							<radioheight>67</radioheight>
+							<textureradiofocus>simplicity/settings-radiobutton-on.png</textureradiofocus>
+							<textureradionofocus>simplicity/settings-radiobutton-off.png</textureradionofocus>
+							<texturefocus>simplicity/button-focus.png</texturefocus>
+							<texturenofocus>simplicity/menuitemnf.png</texturenofocus>
+            <label>- Use Alternate Layout</label>
+            <onclick>Skin.ToggleSetting(NowPlayingAlternate)</onclick>
+            <selected>Skin.HasSetting(NowPlayingAlternate)</selected>
+							<visible>Skin.HasSetting(MusicNowPLaying)</visible>
+          </control>
+				</control>
+
+					<control type="image">
+		<posx>448</posx>
+		<posy>318</posy>
+		<width>644</width>
+		<height>368</height>	
+						<texture>now-playing-border.png</texture>
+					<visible>Container(9000).Hasfocus(21)</visible>
+					</control>
+	<control type="image">
+		<description>Default background</description>
+		<posx>450</posx>
+		<posy>320</posy>
+		<width>640</width>
+		<height>364</height>	  
+		<texture>nowplaying.png</texture> 	
+					<visible>Container(9000).Hasfocus(21) + !Control.HasFocus(2112) + !Skin.HasSetting(NowPlayingAlternate)</visible>
+	</control>
+	<control type="image">
+		<description>Default background</description>
+		<posx>450</posx>
+		<posy>320</posy>
+		<width>640</width>
+		<height>364</height>	  
+		<texture>nowplayingalternate.png</texture> 	
+		<visible>[Container(9000).Hasfocus(21) + Control.HasFocus(2112)] | [Container(9000).HasFocus(21) + Skin.HasSetting(NowPlayingAlternate)]</visible>
+	</control>
+
 				</control>
 			</control>
 		</control>

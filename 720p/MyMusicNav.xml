@@ -1,23 +1,12 @@
 <window id="502">
 	<defaultcontrol always="true">50</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-	<views>50,52,58,66,500,509,506,511,512,513,514,515,516,517</views>
+	<views>50,52,58,66,500,509,506,511,512,513,514,515,516,517,518</views>
 	<visible>!Skin.HasSetting(KioskMode)</visible>
 	<controls>
+		<include>CommonMusicBackground</include>
 		<control type="group">
 			<include>Window_OpenClose_Animation</include>		
-			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>1280</width>
-				<height>720</height>
-				<texture background="true">music-fallback.png</texture>
-				<include>backgroundfade</include>
-				<fadetime>FanartCrossfadeTime</fadetime>
-				<visible>!Control.IsVisible(516)</visible>
-				<visible>!Control.IsVisible(515)</visible>
-				<visible>!Skin.HasSetting(MusicLibraryFanart) + IsEmpty(ListItem.Property(Fanart_Image))</visible>
-			</control>
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
@@ -68,6 +57,8 @@
 			<!-- view id = 516 -->
 			<include>FanartViewAlbums</include>
 			<!-- view id = 516 -->
+			<include>Fanart-Slide-Songs</include>
+			<!-- view id = 518 -->
 			<include>AppView3</include>
 			<!-- view id = 58 -->
 			<include>Addon-Slide</include>
@@ -353,6 +344,19 @@
 						<animation effect="zoom" end="106" center="auto">Focus</animation>		
 						<onclick>Container.SetViewMode(517)</onclick>
 						<visible>Container.Content(Albums)</visible>
+					</control>
+					<control type="button" id="46">
+						<description>Wall</description>
+						<width>174</width>
+						<height>95</height>
+						<align>center</align>
+						<aligny>center</aligny>
+						<texturenofocus border="5">simplicity/views/Fanart Slide/previewimage.png</texturenofocus>
+						<texturefocus border="5">simplicity/views/Fanart Slide/previewimage.png</texturefocus>
+						<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(46)">Conditional</animation>	
+						<animation effect="zoom" end="106" center="auto">Focus</animation>		
+						<onclick>Container.SetViewMode(518)</onclick>
+						<visible>Container.Content(Songs)</visible>
 					</control>
 				</control>
 				<control type="image">

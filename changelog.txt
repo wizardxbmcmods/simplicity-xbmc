@@ -1,3 +1,8 @@
+[B]1.0.7[/B] 
+
+- Added Search feature to Home screen
+- Added Now Playign screens
+
 [B]1.0.6[/B] 
 
 - Added turntable option to Music Visualization screen
