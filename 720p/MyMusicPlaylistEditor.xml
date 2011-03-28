@@ -36,10 +36,10 @@
 					<width>200</width>
 					<label>31055</label>
 					<align>center</align>
-							<font>Simplicity_20_Bold_title</font>
-							<textcolor>black</textcolor>
-							<focusedcolor>black</focusedcolor>
-							<shadowcolor>grey2</shadowcolor>
+					<font>Simplicity_20_Bold_title</font>
+					<textcolor>black</textcolor>
+					<focusedcolor>black</focusedcolor>
+					<shadowcolor>grey2</shadowcolor>
 					<include>ButtonHomeSubCommonValues</include>
 					<onleft>50</onleft>
 					<onright>100</onright>
@@ -53,10 +53,10 @@
 					<width>200</width>
 					<label>31056</label>
 					<align>center</align>
-							<font>Simplicity_20_Bold_title</font>
-							<textcolor>black</textcolor>
-							<focusedcolor>black</focusedcolor>
-							<shadowcolor>grey2</shadowcolor>
+					<font>Simplicity_20_Bold_title</font>
+					<textcolor>black</textcolor>
+					<focusedcolor>black</focusedcolor>
+					<shadowcolor>grey2</shadowcolor>
 					<include>ButtonHomeSubCommonValues</include>
 					<onleft>50</onleft>
 					<onright>100</onright>
@@ -70,10 +70,10 @@
 					<width>200</width>
 					<label>31057</label>
 					<align>center</align>
-							<font>Simplicity_20_Bold_title</font>
-							<textcolor>black</textcolor>
-							<focusedcolor>black</focusedcolor>
-							<shadowcolor>grey2</shadowcolor>
+					<font>Simplicity_20_Bold_title</font>
+					<textcolor>black</textcolor>
+					<focusedcolor>black</focusedcolor>
+					<shadowcolor>grey2</shadowcolor>
 					<include>ButtonHomeSubCommonValues</include>
 					<onleft>50</onleft>
 					<onright>100</onright>

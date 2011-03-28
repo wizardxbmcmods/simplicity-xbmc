@@ -268,8 +268,8 @@
 				<posy>0</posy>
 				<height>40</height>
 				<font>Simplicity_20</font>
-										<radiowidth>83</radiowidth>
-						<radioheight>67</radioheight>
+				<radiowidth>83</radiowidth>
+				<radioheight>67</radioheight>
 				<texturefocus>simplicity/row-small.png</texturefocus>
 				<texturenofocus>REMOVEradiobutton-nofocus.png</texturenofocus>
 				<textureradiofocus>simplicity/settings-radiobutton-on.png</textureradiofocus>

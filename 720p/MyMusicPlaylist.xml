@@ -41,7 +41,7 @@
 					<height>720</height>
 					<texture>simplicity/setting-popup.png</texture>
 					<animation effect="zoom" start="0,0,1,720" end="0,0,221,720" time="300" tween="quadratic" easing="out" condition="Control.HasFocus(98) | ControlGroup(9001).HasFocus">Conditional</animation>
-					</control>
+				</control>
 				<!--<control type="image">
 					<posx>-10</posx>
 					<posy>0</posy>
@@ -126,7 +126,7 @@
 					</control>
 				</control>
 			</control>
-			
+
 			<control type="button" id="8999">
 				<description>Fake button for mouse control</description>
 				<posx>0</posx>
@@ -252,6 +252,6 @@
 			</control>
 		</control>
 		<include>Clock</include>
-				<include>BehindDialogFadeOut</include>
+		<include>BehindDialogFadeOut</include>
 	</controls>
 </window>

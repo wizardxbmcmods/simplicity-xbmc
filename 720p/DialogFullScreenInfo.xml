@@ -220,8 +220,8 @@
 					<width>150</width>
 					<height>205</height>
 					<texture>$INFO[VideoPlayer.Cover]</texture>
-						<bordertexture border="3">simplicity/folder-focus.png</bordertexture>
-						<bordersize>3</bordersize>
+					<bordertexture border="3">simplicity/folder-focus.png</bordertexture>
+					<bordersize>3</bordersize>
 					<visible>VideoPlayer.Content(Movies)</visible>
 				</control>
 				<control type="textbox">
@@ -560,8 +560,8 @@
 					<width>320</width>
 					<height>185</height>
 					<texture>$INFO[VideoPlayer.Cover]</texture>
-						<bordertexture border="3">simplicity/folder-focus.png</bordertexture>
-						<bordersize>3</bordersize>
+					<bordertexture border="3">simplicity/folder-focus.png</bordertexture>
+					<bordersize>3</bordersize>
 				</control>
 				<control type="textbox">
 					<description>Description Value The Movie</description>
@@ -641,16 +641,16 @@
 					<shadowcolor>black</shadowcolor>
 					<visible>VideoPlayer.Content(Episodes)</visible>
 				</control>
-						<control type="largeimage">
-							<posx>220</posx>
-							<posy>100</posy> 
-							<width>226</width>
-							<height>127</height>
-							<align>center</align>
-							<aligny>bottom</aligny>
-							<texture background="true">$INFO[Player.FolderPath]../clearart.png</texture> 
-							<visible>Skin.HasSetting(ClearartOnInfoScreen)</visible>
-						</control>
+				<control type="largeimage">
+					<posx>220</posx>
+					<posy>100</posy> 
+					<width>226</width>
+					<height>127</height>
+					<align>center</align>
+					<aligny>bottom</aligny>
+					<texture background="true">$INFO[Player.FolderPath]../clearart.png</texture> 
+					<visible>Skin.HasSetting(ClearartOnInfoScreen)</visible>
+				</control>
 				<!--<control type="grouplist">
 					<description>Media Codec Flagging Images</description>
 					<posx>570</posx>

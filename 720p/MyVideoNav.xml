@@ -264,7 +264,7 @@
 				</control>
 			</control>
 			<control type="group" id="9002">
-			<visible>!Skin.HasSetting(DisableViewPreview)</visible>
+				<visible>!Skin.HasSetting(DisableViewPreview)</visible>
 				<posx>-220</posx>
 				<posy>0</posy>
 				<animation effect="fade" start="100" end="0" time="0" condition="!ControlGroup(9002).HasFocus + !Control.HasFocus(2)">conditional</animation>
@@ -416,7 +416,7 @@
 						<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(31)">Conditional</animation>			
 						<animation effect="zoom" end="106" center="auto">Focus</animation>
 						<onclick>Container.SetViewMode(504)</onclick>
-					<visible>Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(TvShowsUsePosters)] | [Container.Content(TVShows) + Skin.HasSetting(UsePosterJPG)]</visible>
+						<visible>Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(TvShowsUsePosters)] | [Container.Content(TVShows) + Skin.HasSetting(UsePosterJPG)]</visible>
 					</control>
 
 					<control type="button" id="33">
@@ -664,7 +664,7 @@
 						<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(67)">Conditional</animation>	
 						<animation effect="zoom" end="106" center="auto">Focus</animation>		
 						<onclick>Container.SetViewMode(555)</onclick>		
-					<visible>Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(TvShowsUsePosters)] | [Container.Content(TVShows) + Skin.HasSetting(UsePosterJPG)]</visible>					
+						<visible>Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(TvShowsUsePosters)] | [Container.Content(TVShows) + Skin.HasSetting(UsePosterJPG)]</visible>					
 					</control>
 					<control type="button" id="68">
 						<description>Fanart</description>
@@ -677,7 +677,7 @@
 						<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(68)">Conditional</animation>	
 						<animation effect="zoom" end="106" center="auto">Focus</animation>		
 						<onclick>Container.SetViewMode(556)</onclick>		
-					<visible>Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(TvShowsUsePosters)] | [Container.Content(TVShows) + Skin.HasSetting(UsePosterJPG)]</visible>			
+						<visible>Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(TvShowsUsePosters)] | [Container.Content(TVShows) + Skin.HasSetting(UsePosterJPG)]</visible>			
 					</control>
 				</control>
 				<control type="image">
@@ -851,6 +851,6 @@
 
 
 		<include>Clock</include>
-				<include>BehindDialogFadeOut</include>
+		<include>BehindDialogFadeOut</include>
 	</controls>
 </window>

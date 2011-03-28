@@ -62,8 +62,8 @@
 				<height>200</height>
 				<aspectratio>keep</aspectratio>
 				<texture>$INFO[ListItem.Icon]</texture>
-						<bordertexture border="3">simplicity/thumbborder.png</bordertexture>
-						<bordersize>3</bordersize>
+				<bordertexture border="3">simplicity/thumbborder.png</bordertexture>
+				<bordersize>3</bordersize>
 			</control>
 			<control type="label">
 				<description>Song Title value</description>
@@ -227,8 +227,8 @@
 					<posy>-19</posy>
 					<width>48</width>
 					<height>70</height>
-				<spinwidth>48</spinwidth>
-				<spinheight>70</spinheight>
+					<spinwidth>48</spinwidth>
+					<spinheight>70</spinheight>
 					<onclick>DecreaseRating</onclick>
 					<texturenofocus>simplicity/scroll-down-2.png</texturenofocus>
 					<texturefocus>simplicity/scroll-down-focus.png</texturefocus>
@@ -243,8 +243,8 @@
 					<posy>-19</posy>
 					<width>48</width>
 					<height>70</height>				
-				<spinwidth>48</spinwidth>
-				<spinheight>70</spinheight>
+					<spinwidth>48</spinwidth>
+					<spinheight>70</spinheight>
 					<onclick>IncreaseRating</onclick>
 					<texturenofocus>simplicity/scroll-up-2.png</texturenofocus>
 					<texturefocus>simplicity/scroll-up-focus.png</texturefocus>

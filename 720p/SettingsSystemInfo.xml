@@ -5,7 +5,7 @@
 
 		<control type="group">
 			<include>Window_OpenClose_Animation</include>
-	<control type="image">
+			<control type="image">
 				<description>Line</description>
 				<posx>0</posx>
 				<posy>0</posy>
@@ -150,8 +150,8 @@
 				<posy>50</posy>
 				<width>740</width>
 				<height>30</height>
-						<font>Simplicity_20_Bold_title</font>
-						<textcolor>yellow</textcolor>
+				<font>Simplicity_20_Bold_title</font>
+				<textcolor>yellow</textcolor>
 				<label>$LOCALIZE[130] - $INFO[Control.GetLabel(40)]</label>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -252,8 +252,8 @@
 					<label>144</label>
 					<align>left</align>
 					<shadowcolor>black</shadowcolor>
-						<font>Simplicity_20_Bold_title</font>
-						<textcolor>yellow</textcolor>
+					<font>Simplicity_20_Bold_title</font>
+					<textcolor>yellow</textcolor>
 				</control>
 				<control type="label" id="52">
 					<description>CPU Text</description>
@@ -275,9 +275,9 @@
 					<width>320</width>
 					<height>16</height>
 					<info>System.CPUUsage</info>
-								<texturebg border="6,0,6,0">simplicity/progress-back.png</texturebg>
-			<lefttexture border="6,0,0,0">simplicity/progress-left.png</lefttexture>
-			<midtexture border="6,0,6,0">simplicity/osd-front.png</midtexture>
+					<texturebg border="6,0,6,0">simplicity/progress-back.png</texturebg>
+					<lefttexture border="6,0,0,0">simplicity/progress-left.png</lefttexture>
+					<midtexture border="6,0,6,0">simplicity/osd-front.png</midtexture>
 				</control>
 				<control type="label" id="52">
 					<description>Memory Text</description>
@@ -299,9 +299,9 @@
 					<width>320</width>
 					<height>16</height>
 					<info>system.memory(used)</info>
-								<texturebg border="6,0,6,0">simplicity/progress-back.png</texturebg>
-			<lefttexture border="6,0,0,0">simplicity/progress-left.png</lefttexture>
-			<midtexture border="6,0,6,0">simplicity/osd-front.png</midtexture>
+					<texturebg border="6,0,6,0">simplicity/progress-back.png</texturebg>
+					<lefttexture border="6,0,0,0">simplicity/progress-left.png</lefttexture>
+					<midtexture border="6,0,6,0">simplicity/osd-front.png</midtexture>
 				</control>
 			</control>
 		</control>

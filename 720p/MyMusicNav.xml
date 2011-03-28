@@ -168,7 +168,7 @@
 				</control>
 			</control>
 			<control type="group" id="9002">
-			<visible>!Skin.HasSetting(DisableViewPreview)</visible>
+				<visible>!Skin.HasSetting(DisableViewPreview)</visible>
 				<posx>-220</posx>
 				<posy>0</posy>
 				<animation effect="fade" start="100" end="0" time="0" condition="!ControlGroup(9002).HasFocus + !Control.HasFocus(2)">conditional</animation>
@@ -524,6 +524,6 @@
 		</control>
 
 		<include>Clock</include>
-				<include>BehindDialogFadeOut</include>
+		<include>BehindDialogFadeOut</include>
 	</controls>
 </window>

@@ -2764,7 +2764,7 @@
 				</control>
 			</control>
 
-	<control type="group">
+			<control type="group">
 				<visible>substring(container.folderpath,plugin://plugin.video.espn3)</visible> 
 				<include>Zoom</include>
 				<control type="textbox">
@@ -3095,7 +3095,7 @@
 			</control>
 		</control>
 	</include>
-<include name="Addon-Slide">
+	<include name="Addon-Slide">
 		<control type="group">
 			<posx>0</posx>
 			<posy>0</posy>

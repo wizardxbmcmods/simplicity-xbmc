@@ -663,7 +663,7 @@
 			</control>	
 		</control>	
 	</include>
-<include name="GenreBreadCrumbs">
+	<include name="GenreBreadCrumbs">
 		<control type="group">
 			<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 			<control type="label">
@@ -978,7 +978,7 @@
 		</control>	
 	</include>
 
-<include name="ActorBreadCrumbs">
+	<include name="ActorBreadCrumbs">
 		<control type="group">
 			<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
 			<control type="label">
@@ -1119,7 +1119,7 @@
 		</control>	
 	</include>
 
-<include name="RightOpenRecent">
+	<include name="RightOpenRecent">
 		<control type="group">
 			<include>BottomSlide</include>
 			<control type="image">
@@ -1357,7 +1357,7 @@
 			<fadetime>1000</fadetime>
 		</control>
 	</include>
-	
+
 	<include name="ButtonCommonValuesSub">
 		<height>40</height>
 		<width>220</width>
@@ -2112,8 +2112,8 @@
 				<width>122</width>
 				<height>118</height>
 				<texture>$INFO[MusicPlayer.Cover]</texture>
-						<bordertexture border="1">simplicity/thumbborder.png</bordertexture>
-						<bordersize>1</bordersize>
+				<bordertexture border="1">simplicity/thumbborder.png</bordertexture>
+				<bordersize>1</bordersize>
 				<aspectratio align="center">stretch</aspectratio>
 			</control>
 			<control type="image">
@@ -2122,9 +2122,9 @@
 				<width>122</width>
 				<height>118</height>
 				<texture>album-fallback.png</texture>
-						<bordertexture border="1">simplicity/thumbborder.png</bordertexture>
-						<bordersize>1</bordersize>
-  				 <visible>stringcompare(MusicPlayer.Cover,DefaultAlbumCover.png)</visible>
+				<bordertexture border="1">simplicity/thumbborder.png</bordertexture>
+				<bordersize>1</bordersize>
+				<visible>stringcompare(MusicPlayer.Cover,DefaultAlbumCover.png)</visible>
 				<aspectratio align="center">stretch</aspectratio>
 			</control>
 
@@ -2373,7 +2373,7 @@
 			<visible>!Skin.HasSetting(DisableClock)</visible>
 			<visible>!Control.IsVisible(528)</visible>
 			<visible>!Control.IsVisible(56)</visible>
-<include condition="!Skin.HasSetting(NowPlayingClock)">MusicNowPlaying</include>
+			<include condition="!Skin.HasSetting(NowPlayingClock)">MusicNowPlaying</include>
 			<posx>0</posx>
 			<posy>0</posy>
 			<animation effect="fade" start="100" end="0" time="0" condition="Container.Content(Movies) + Control.IsVisible(534) + !Skin.HasSetting(ScrollMovieLessInfo)">conditional</animation>-->
@@ -2640,16 +2640,16 @@
 
 </include>
 <include name="BehindDialogFadeOut">
-		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<texture>simplicity/black-back.png</texture>
-			<animation effect="fade" time="400">Visible</animation>
-			<animation effect="fade" time="200">Hidden</animation>
-			<visible>Window.IsActive(MovieInformation) | Window.IsActive(MusicInformation) | Window.IsActive(SongInformation) | Window.IsActive(FileBrowser) | Window.IsActive(AddonSettings) | Window.IsActive(ContentSettings) | Window.IsActive(SelectDialog) | Window.IsActive(FileStackingDialog) | Window.IsActive(MediaSource) | Window.IsActive(PictureInfo) | Window.IsActive(PlayerControls) | Window.IsActive(VirtualKeyboard) | Window.IsActive(NumericInput) | Window.IsActive(ProfileSettings) | Window.IsActive(LockSettings) | Window.IsActive(SmartPlaylistEditor) | Window.IsActive(SmartPlaylistRule) | Window.IsActive(script-Apple_Movie_Trailers-settings.xml) | Window.IsActive(script-Apple_Movie_Trailers-chooser.xml) | Window.IsActive(script-Apple_Movie_Trailers-search.xml) | Window.IsActive(script-Apple_Movie_Trailers-showtimes.xml) | Window.IsActive(script-XBMC_Lyrics-settings.xml) | Window.IsActive(script-RSS_Editor-rssEditor.xml) | Window.IsActive(script-RSS_Editor-setEditor.xml) | Window.IsVisible(146)</visible>
-		</control>
-	</include>
+	<control type="image">
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>1280</width>
+		<height>720</height>
+		<texture>simplicity/black-back.png</texture>
+		<animation effect="fade" time="400">Visible</animation>
+		<animation effect="fade" time="200">Hidden</animation>
+		<visible>Window.IsActive(MovieInformation) | Window.IsActive(MusicInformation) | Window.IsActive(SongInformation) | Window.IsActive(FileBrowser) | Window.IsActive(AddonSettings) | Window.IsActive(ContentSettings) | Window.IsActive(SelectDialog) | Window.IsActive(FileStackingDialog) | Window.IsActive(MediaSource) | Window.IsActive(PictureInfo) | Window.IsActive(PlayerControls) | Window.IsActive(VirtualKeyboard) | Window.IsActive(NumericInput) | Window.IsActive(ProfileSettings) | Window.IsActive(LockSettings) | Window.IsActive(SmartPlaylistEditor) | Window.IsActive(SmartPlaylistRule) | Window.IsActive(script-Apple_Movie_Trailers-settings.xml) | Window.IsActive(script-Apple_Movie_Trailers-chooser.xml) | Window.IsActive(script-Apple_Movie_Trailers-search.xml) | Window.IsActive(script-Apple_Movie_Trailers-showtimes.xml) | Window.IsActive(script-XBMC_Lyrics-settings.xml) | Window.IsActive(script-RSS_Editor-rssEditor.xml) | Window.IsActive(script-RSS_Editor-setEditor.xml) | Window.IsVisible(146)</visible>
+	</control>
+</include>
 
 </includes>

@@ -794,25 +794,25 @@
 									<label>$INFO[ListItem.label]</label>
 									<visible>!Control.HasFocus(8011)</visible>
 								</control>	
-							<control type="image">
-								<posx>24</posx>
-								<posy>38</posy>
-								<width>100</width>
-								<height>100</height>
-								<aspectratio>stretch</aspectratio>
-								<texture>$INFO[ListItem.Thumb]</texture>
-								<animation effect="fade" time="0" start="100" end="30" condition="Window.IsActive(Home)">Conditional</animation>
-								<visible>!Control.HasFocus(8011)</visible>
-							</control>
-							<control type="image">
-								<posx>24</posx>
-								<posy>38</posy>
-								<width>100</width>
-								<height>100</height>
-								<aspectratio>stretch</aspectratio>
-								<texture>$INFO[ListItem.Thumb]</texture>
-								<visible>Control.HasFocus(8011)</visible>
-							</control>
+								<control type="image">
+									<posx>24</posx>
+									<posy>38</posy>
+									<width>100</width>
+									<height>100</height>
+									<aspectratio>stretch</aspectratio>
+									<texture>$INFO[ListItem.Thumb]</texture>
+									<animation effect="fade" time="0" start="100" end="30" condition="Window.IsActive(Home)">Conditional</animation>
+									<visible>!Control.HasFocus(8011)</visible>
+								</control>
+								<control type="image">
+									<posx>24</posx>
+									<posy>38</posy>
+									<width>100</width>
+									<height>100</height>
+									<aspectratio>stretch</aspectratio>
+									<texture>$INFO[ListItem.Thumb]</texture>
+									<visible>Control.HasFocus(8011)</visible>
+								</control>
 							</control>
 						</focusedlayout>
 						<content>
@@ -1508,18 +1508,18 @@
 									<height>100</height>
 									<aspectratio>stretch</aspectratio>
 									<texture>$INFO[ListItem.Thumb]</texture>
-								<bordertexture border="4">thumbborder.png</bordertexture>
-								<bordersize>4</bordersize>
+									<bordertexture border="4">thumbborder.png</bordertexture>
+									<bordersize>4</bordersize>
 								</control>
-					<control type="image">
-						<posx>23</posx>
-						<posy>37</posy>
-						<width>102</width>
-						<height>102</height>
-						<texture>simplicity/app-glow.png</texture>
-								<animation effect="zoom" start="100" end="105" center="auto" time="200" tween="back" easing="out" reversible="false">Focus</animation>
-								<visible>!Control.HasFocus(9000)</visible>
-					</control>
+								<control type="image">
+									<posx>23</posx>
+									<posy>37</posy>
+									<width>102</width>
+									<height>102</height>
+									<texture>simplicity/app-glow.png</texture>
+									<animation effect="zoom" start="100" end="105" center="auto" time="200" tween="back" easing="out" reversible="false">Focus</animation>
+									<visible>!Control.HasFocus(9000)</visible>
+								</control>
 								<control type="image">
 									<posx>23</posx>
 									<posy>37</posy>
@@ -1527,7 +1527,7 @@
 									<height>102</height>
 									<aspectratio>stretch</aspectratio>
 									<texture>simplicity/black-back.png</texture>
-								<visible>!Control.HasFocus(8009)</visible>
+									<visible>!Control.HasFocus(8009)</visible>
 								</control>
 							</control>
 						</focusedlayout>
@@ -1638,18 +1638,18 @@
 									<height>100</height>
 									<aspectratio>stretch</aspectratio>
 									<texture>$INFO[ListItem.Thumb]</texture>
-								<bordertexture border="4">thumbborder.png</bordertexture>
-								<bordersize>4</bordersize>
+									<bordertexture border="4">thumbborder.png</bordertexture>
+									<bordersize>4</bordersize>
 								</control>
-					<control type="image">
-						<posx>23</posx>
-						<posy>37</posy>
-						<width>102</width>
-						<height>102</height>
-						<texture>simplicity/app-glow.png</texture>
-								<animation effect="zoom" start="100" end="105" center="auto" time="200" tween="back" easing="out" reversible="false">Focus</animation>
-								<visible>!Control.HasFocus(9000)</visible>
-					</control>
+								<control type="image">
+									<posx>23</posx>
+									<posy>37</posy>
+									<width>102</width>
+									<height>102</height>
+									<texture>simplicity/app-glow.png</texture>
+									<animation effect="zoom" start="100" end="105" center="auto" time="200" tween="back" easing="out" reversible="false">Focus</animation>
+									<visible>!Control.HasFocus(9000)</visible>
+								</control>
 								<control type="image">
 									<posx>23</posx>
 									<posy>37</posy>
@@ -1657,7 +1657,7 @@
 									<height>102</height>
 									<aspectratio>stretch</aspectratio>
 									<texture>simplicity/black-back.png</texture>
-								<visible>!Control.HasFocus(8011)</visible>
+									<visible>!Control.HasFocus(8011)</visible>
 								</control>
 							</control>
 						</focusedlayout>
@@ -1769,18 +1769,18 @@
 									<height>100</height>
 									<aspectratio>stretch</aspectratio>
 									<texture>$INFO[ListItem.Thumb]</texture>
-								<bordertexture border="4">thumbborder.png</bordertexture>
-								<bordersize>4</bordersize>
+									<bordertexture border="4">thumbborder.png</bordertexture>
+									<bordersize>4</bordersize>
 								</control>
-					<control type="image">
-						<posx>23</posx>
-						<posy>37</posy>
-						<width>102</width>
-						<height>102</height>
-						<texture>simplicity/app-glow.png</texture>
-								<animation effect="zoom" start="100" end="105" center="auto" time="200" tween="back" easing="out" reversible="false">Focus</animation>
-								<visible>!Control.HasFocus(9000)</visible>
-					</control>
+								<control type="image">
+									<posx>23</posx>
+									<posy>37</posy>
+									<width>102</width>
+									<height>102</height>
+									<texture>simplicity/app-glow.png</texture>
+									<animation effect="zoom" start="100" end="105" center="auto" time="200" tween="back" easing="out" reversible="false">Focus</animation>
+									<visible>!Control.HasFocus(9000)</visible>
+								</control>
 								<control type="image">
 									<posx>23</posx>
 									<posy>37</posy>
@@ -1788,7 +1788,7 @@
 									<height>102</height>
 									<aspectratio>stretch</aspectratio>
 									<texture>simplicity/black-back.png</texture>
-								<visible>!Control.HasFocus(8010)</visible>
+									<visible>!Control.HasFocus(8010)</visible>
 								</control>
 							</control>
 						</focusedlayout>

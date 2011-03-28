@@ -256,6 +256,6 @@
 		</control>
 
 		<include>Clock</include>
-				<include>BehindDialogFadeOut</include>
+		<include>BehindDialogFadeOut</include>
 	</controls>
 </window>

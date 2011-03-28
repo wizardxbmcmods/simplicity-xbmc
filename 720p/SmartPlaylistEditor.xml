@@ -54,9 +54,9 @@
 				<posy>125</posy>
 				<width>740</width>
 				<label>21433</label>
-						<font>Simplicity_20_Bold_title</font>
-						<textcolor>yellow</textcolor>
-						<shadowcolor>black</shadowcolor>
+				<font>Simplicity_20_Bold_title</font>
+				<textcolor>yellow</textcolor>
+				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="edit" id="12">
 				<description>Name Button</description>
@@ -83,9 +83,9 @@
 				<width>740</width>
 				<align>left</align>
 				<label>21434</label>
-						<font>Simplicity_20_Bold_title</font>
-						<textcolor>yellow</textcolor>
-						<shadowcolor>black</shadowcolor>
+				<font>Simplicity_20_Bold_title</font>
+				<textcolor>yellow</textcolor>
+				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="list" id="10">
 				<description>Rules List Control</description>
@@ -113,7 +113,7 @@
 						<aligny>center</aligny>
 						<info>ListItem.Label</info>
 						<selectedcolor>white</selectedcolor>
-				<font>Simplicity_20</font>
+						<font>Simplicity_20</font>
 					</control>
 				</itemlayout>
 				<focusedlayout width="560" height="40">
@@ -122,7 +122,7 @@
 						<posy>0</posy>
 						<width>560</width>
 						<height>41</height>
-				<texture>simplicity/menuitemfo.png</texture>
+						<texture>simplicity/menuitemfo.png</texture>
 						<visible>Control.HasFocus(10)</visible>
 					</control>
 					<control type="image">
@@ -141,7 +141,7 @@
 						<aligny>center</aligny>
 						<info>ListItem.Label</info>
 						<selectedcolor>white</selectedcolor>
-				<font>Simplicity_20</font>
+						<font>Simplicity_20</font>
 					</control>
 				</focusedlayout>
 			</control>
@@ -155,12 +155,12 @@
 					<label>15019</label>
 					<align>center</align>
 					<aligny>center</aligny>
-							<textcolor>black</textcolor>
-							<focusedcolor>black</focusedcolor>
-							<shadowcolor>grey2</shadowcolor>
-							<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
-							<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
-							<font>Simplicity_20_Bold_title</font>
+					<textcolor>black</textcolor>
+					<focusedcolor>black</focusedcolor>
+					<shadowcolor>grey2</shadowcolor>
+					<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
+					<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
+					<font>Simplicity_20_Bold_title</font>
 					<onup>17</onup>
 					<onleft>10</onleft>
 					<onright>10</onright>
@@ -175,12 +175,12 @@
 					<label>1210</label>
 					<align>center</align>
 					<aligny>center</aligny>
-							<textcolor>black</textcolor>
-							<focusedcolor>black</focusedcolor>
-							<shadowcolor>grey2</shadowcolor>
-							<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
-							<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
-							<font>Simplicity_20_Bold_title</font>
+					<textcolor>black</textcolor>
+					<focusedcolor>black</focusedcolor>
+					<shadowcolor>grey2</shadowcolor>
+					<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
+					<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
+					<font>Simplicity_20_Bold_title</font>
 					<onup>13</onup>
 					<onleft>10</onleft>
 					<onright>10</onright>
@@ -195,12 +195,12 @@
 					<label>21435</label>
 					<align>center</align>
 					<aligny>center</aligny>
-							<textcolor>black</textcolor>
-							<focusedcolor>black</focusedcolor>
-							<shadowcolor>grey2</shadowcolor>
-							<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
-							<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
-							<font>Simplicity_20_Bold_title</font>
+					<textcolor>black</textcolor>
+					<focusedcolor>black</focusedcolor>
+					<shadowcolor>grey2</shadowcolor>
+					<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
+					<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
+					<font>Simplicity_20_Bold_title</font>
 					<onup>14</onup>
 					<onleft>10</onleft>
 					<onright>10</onright>
@@ -214,9 +214,9 @@
 				<posy>380</posy>
 				<width>740</width>
 				<label>31325</label>
-						<font>Simplicity_20_Bold_title</font>
-						<textcolor>yellow</textcolor>
-						<shadowcolor>black</shadowcolor>
+				<font>Simplicity_20_Bold_title</font>
+				<textcolor>yellow</textcolor>
+				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="spincontrolex" id="16">
 				<posx>20</posx>
@@ -270,9 +270,9 @@
 				<posy>495</posy>
 				<width>180</width>
 				<height>40</height>
-							<font>Simplicity_20</font>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
+				<font>Simplicity_20</font>
+				<textcolor>white</textcolor>
+				<focusedcolor>white</focusedcolor>
 				<align>center</align>
 				<aligny>center</aligny>
 				<texturefocus border="5">simplicity/menuitemfo.png</texturefocus>
@@ -295,12 +295,12 @@
 					<height>40</height>
 					<align>center</align>
 					<aligny>center</aligny>
-							<textcolor>black</textcolor>
-							<focusedcolor>black</focusedcolor>
-							<shadowcolor>grey2</shadowcolor>
-							<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
-							<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
-							<font>Simplicity_20_Bold_title</font>
+					<textcolor>black</textcolor>
+					<focusedcolor>black</focusedcolor>
+					<shadowcolor>grey2</shadowcolor>
+					<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
+					<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
+					<font>Simplicity_20_Bold_title</font>
 					<label>186</label>
 					<onup>18</onup>
 					<onleft>21</onleft>
@@ -315,12 +315,12 @@
 					<height>40</height>
 					<align>center</align>
 					<aligny>center</aligny>
-							<textcolor>black</textcolor>
-							<focusedcolor>black</focusedcolor>
-							<shadowcolor>grey2</shadowcolor>
-							<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
-							<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
-							<font>Simplicity_20_Bold_title</font>
+					<textcolor>black</textcolor>
+					<focusedcolor>black</focusedcolor>
+					<shadowcolor>grey2</shadowcolor>
+					<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
+					<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
+					<font>Simplicity_20_Bold_title</font>
 					<label>222</label>
 					<onup>18</onup>
 					<onleft>20</onleft>
