@@ -1298,12 +1298,12 @@
 						<include>ButtonInfoDialogsCommonValuesInfo</include>
 						<label>Thumb</label>
 					</control>
-					<control type = "button" id = "11">
+					<control type = "button" id = "12">
 						<description>Get Fanart</description>
 						<include>ButtonInfoDialogsCommonValuesInfo</include>
 						<label>Fanart</label>
 					</control>
-					<control type = "button" id = "12">
+					<control type = "button" id = "11">
 						<description>Play Trailer</description>
 						<include>ButtonInfoDialogsCommonValuesInfo</include>
 						<label>20410</label>

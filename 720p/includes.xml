@@ -826,6 +826,23 @@
 				<shadowcolor>black</shadowcolor>
 				<include>TopSlide</include>
 				<visible>Container.Content(Seasons)</visible>
+				<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+			</control>	
+			<control type="label">
+				<description>Title label</description>
+				<posx>90</posx>
+				<posy>40</posy>
+				<height>20</height>
+				<width>900</width>
+				<label>$INFO[Container().ListItem(1).TVShowTitle]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>Simplicity_50</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<include>TopSlide</include>
+				<visible>Container.Content(Seasons)</visible>
+				<visible>stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 			</control>	
 			<control type="label">
 				<description>Title label</description>
@@ -859,6 +876,22 @@
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<include>TopSlide</include>
+				<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+			</control>	
+			<control type="label">
+				<description>Title label</description>
+				<posx>90</posx>
+				<posy>40</posy>
+				<height>20</height>
+				<width>900</width>
+				<label>$INFO[Container().ListItem(1).TVShowTitle]: Season $INFO[Container().ListItem(1).Season]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>Simplicity_50</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<include>TopSlide</include>
+				<visible>stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 			</control>	
 			<control type="label">
 				<description>Title label</description>
