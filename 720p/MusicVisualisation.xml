@@ -460,18 +460,6 @@
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="label">
-				<posx>30</posx>
-				<posy>50</posy>
-				<width>360</width>
-				<height>25</height>
-				<label>$INFO[musicplayer.Codec,· Codec: ,]$INFO[musicplayer.Bitrate,[CR]· Bitrate: ,kbps]$INFO[musicplayer.bitspersample,[CR]· Bits:,bit]$INFO[musicplayer.Samplerate,[CR]· Freq.: ,kHz]$INFO[musicplayer.Channels,[CR]· Channels: ]</label>
-				<align>left</align>
-				<aligny>top</aligny>
-				<font>font13</font>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
-			</control>
-			<control type="label">
 				<posx>760</posx>
 				<posy>20</posy>
 				<width>360</width>
