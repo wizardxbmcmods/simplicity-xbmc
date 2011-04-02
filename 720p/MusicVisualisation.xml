@@ -13,7 +13,7 @@
 			<height>720</height>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<texture fallback="DefaultFanart.jpg">$INFO[MusicPlayer.Property(Fanart_Image)]</texture>
-	</control>
+		</control>
 
 
 		<control type="image">
@@ -346,7 +346,7 @@
 						<font>Simplicity_24</font>
 						<textcolor>grey2</textcolor>
 						<shadowcolor>black</shadowcolor>
-				<visible>!IsEmpty(Control.GetLabel(7983))</visible>
+						<visible>!IsEmpty(Control.GetLabel(7983))</visible>
 					</control>
 					<control type="progress">
 						<description>Progressbar</description>
@@ -473,32 +473,6 @@
 			</control>
 			<control type="label">
 				<posx>760</posx>
-				<posy>50</posy>
-				<width>right</width>
-				<height>25</height>
-				<label>$INFO[Visualisation.Name] [I]($LOCALIZE[20166])[/I] ·[CR]fps: $INFO[System.FPS] ·</label>
-				<align>right</align>
-				<aligny>top</aligny>
-				<font>font13</font>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<visible>Visualisation.Locked</visible>
-			</control>
-			<control type="label">
-				<posx>760</posx>
-				<posy>50</posy>
-				<width>360</width>
-				<height>25</height>
-				<label>$INFO[Visualisation.Name] ·[CR]fps: $INFO[System.FPS] ·</label>
-				<align>right</align>
-				<aligny>top</aligny>
-				<font>font13</font>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<visible>!Visualisation.Locked</visible>
-			</control>
-			<control type="label">
-				<posx>760</posx>
 				<posy>105</posy>
 				<width>360</width>
 				<height>25</height>
@@ -509,252 +483,239 @@
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 			</control>
-			<control type="label">
-				<posx>760</posx>
-				<posy>135</posy>
-				<width>360</width>
-				<height>25</height>
-				<label fallback="· (UnAvailable)">$INFO[Visualisation.Preset,, ·]</label>
-				<align>right</align>
-				<aligny>top</aligny>
-				<font>font12</font>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<wrapmultiline>true</wrapmultiline>
-			</control>
 		</control>
 
 		<!-- Mod- group animation -->
 		<control type="group">
-		<visible>Skin.HasSetting(UseTurntable)</visible>
-		<control type="group" id="7657">
-			<animation effect="slide" start="0,0" end="0,-60" time="300" tween="quadratic" easing="out" condition="Window.IsVisible(120)">Conditional</animation>
-			<visible>Player.ShowInfo</visible>
-			<animation effect="slide" start="0,0" end="-500,0" delay="0" time="300">hidden</animation>
-			<animation effect="slide" start="-500,0" end="0,0" delay="0" time="300">visible</animation>
-		<control type="image">
-				<animation effect="slide" start="-518" end="0" time="1000" tween="cubic" easing="out" delay="600">WindowOpen</animation>
-				<animation type="WindowClose">
-					<effect type="slide" start="0" end="-514" time="800" tween="cubic" easing="in" delay="0"/>
-					<effect type="fade" start="100" end="0" time="1300"/>
-					<condition type="!Player.Playing"/>
-				</animation>
-			<description>visualisation background</description>
-			<posx>30</posx>
-			<posy>400</posy>
-			<width>373</width>
-			<height>308</height>
-			<texture>simplicity/table.png</texture> 					
-		</control>
-			<control type="image" id="7656">
-				<description>Cd overlay</description>
-				<animation effect="slide" start="-518" end="0" time="1000" tween="cubic" easing="out" delay="600">WindowOpen</animation>
-				<animation type="WindowClose">
-					<effect type="slide" start="0" end="-514" time="800" tween="cubic" easing="in" delay="0"/>
-					<effect type="fade" start="100" end="0" time="1300"/>
-					<condition type="!Player.Playing"/>
-				</animation>
-				<animation effect="rotate" end="-360" center="auto" time="2800" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
-				<width>250</width>
-				<height>250</height>
-				<posx>59</posx>
-				<!-- 112 -->
-				<posy>427</posy>
-				<!-- -143 -->
-				<texture>$INFO[Player.FolderPath]/cdart.png</texture>
+			<visible>Skin.HasSetting(UseTurntable)</visible>
+			<control type="group" id="7657">
+				<animation effect="slide" start="0,0" end="0,-60" time="300" tween="quadratic" easing="out" condition="Window.IsVisible(120)">Conditional</animation>
+				<visible>Player.ShowInfo</visible>
+				<animation effect="slide" start="0,0" end="-500,0" delay="0" time="300">hidden</animation>
+				<animation effect="slide" start="-500,0" end="0,0" delay="0" time="300">visible</animation>
+				<control type="image">
+					<animation effect="slide" start="-518" end="0" time="1000" tween="cubic" easing="out" delay="600">WindowOpen</animation>
+					<animation type="WindowClose">
+						<effect type="slide" start="0" end="-514" time="800" tween="cubic" easing="in" delay="0"/>
+						<effect type="fade" start="100" end="0" time="1300"/>
+						<condition type="!Player.Playing"/>
+					</animation>
+					<description>visualisation background</description>
+					<posx>30</posx>
+					<posy>400</posy>
+					<width>373</width>
+					<height>308</height>
+					<texture>simplicity/table.png</texture> 					
+				</control>
+				<control type="image" id="7656">
+					<description>Cd overlay</description>
+					<animation effect="slide" start="-518" end="0" time="1000" tween="cubic" easing="out" delay="600">WindowOpen</animation>
+					<animation type="WindowClose">
+						<effect type="slide" start="0" end="-514" time="800" tween="cubic" easing="in" delay="0"/>
+						<effect type="fade" start="100" end="0" time="1300"/>
+						<condition type="!Player.Playing"/>
+					</animation>
+					<animation effect="rotate" end="-360" center="auto" time="2800" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
+					<width>250</width>
+					<height>250</height>
+					<posx>59</posx>
+					<!-- 112 -->
+					<posy>427</posy>
+					<!-- -143 -->
+					<texture>$INFO[Player.FolderPath]/cdart.png</texture>
+				</control>
+				<control type="image">
+					<description>Cd overlay</description>
+					<animation effect="slide" start="-518" end="0" time="1000" tween="cubic" easing="out" delay="600">WindowOpen</animation>
+					<animation type="WindowClose">
+						<effect type="slide" start="0" end="-514" time="800" tween="cubic" easing="in" delay="0"/>
+						<effect type="fade" start="100" end="0" time="1300"/>
+						<condition type="!Player.Playing"/>
+					</animation>
+					<animation effect="rotate" end="-360" center="auto" time="2800" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
+					<width>250</width>
+					<height>250</height>
+					<posx>59</posx>
+					<!-- 112 -->
+					<posy>427</posy>
+					<!-- -143 -->
+					<texture>cd/record-grain.png</texture>
+				</control>
+				<control type="image">
+					<description>Cd overlay</description>
+					<animation effect="slide" start="-518" end="0" time="1000" tween="cubic" easing="out" delay="600">WindowOpen</animation>
+					<animation type="WindowClose">
+						<effect type="slide" start="0" end="-514" time="800" tween="cubic" easing="in" delay="0"/>
+						<effect type="fade" start="100" end="0" time="1300"/>
+						<condition type="!Player.Playing"/>
+					</animation>
+					<animation effect="rotate" end="-360" center="auto" time="2000" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
+					<width>250</width>
+					<height>250</height>
+					<posx>59</posx>
+					<!-- 112 -->
+					<posy>427</posy>
+					<!-- -143 -->
+					<texture>cd/default.png</texture>
+					<visible>IsEmpty(Control.GetLabel(7656))</visible>
+				</control>		
+				<control type="image">
+					<animation effect="slide" start="-518" end="0" time="1000" tween="cubic" easing="out" delay="600">WindowOpen</animation>
+					<animation type="WindowClose">
+						<effect type="slide" start="0" end="-514" time="800" tween="cubic" easing="in" delay="0"/>
+						<effect type="fade" start="100" end="0" time="1300"/>
+						<condition type="!Player.Playing"/>
+					</animation>
+					<description>visualisation background</description>
+					<posx>30</posx>
+					<posy>400</posy>
+					<width>373</width>
+					<height>308</height>
+					<texture>simplicity/arm.png</texture> 	
+				</control>
 			</control>
-			<control type="image">
-				<description>Cd overlay</description>
-				<animation effect="slide" start="-518" end="0" time="1000" tween="cubic" easing="out" delay="600">WindowOpen</animation>
-				<animation type="WindowClose">
-					<effect type="slide" start="0" end="-514" time="800" tween="cubic" easing="in" delay="0"/>
-					<effect type="fade" start="100" end="0" time="1300"/>
-					<condition type="!Player.Playing"/>
-				</animation>
-				<animation effect="rotate" end="-360" center="auto" time="2800" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
-				<width>250</width>
-				<height>250</height>
-				<posx>59</posx>
-				<!-- 112 -->
-				<posy>427</posy>
-				<!-- -143 -->
-				<texture>cd/record-grain.png</texture>
-			</control>
-			<control type="image">
-				<description>Cd overlay</description>
-				<animation effect="slide" start="-518" end="0" time="1000" tween="cubic" easing="out" delay="600">WindowOpen</animation>
-				<animation type="WindowClose">
-					<effect type="slide" start="0" end="-514" time="800" tween="cubic" easing="in" delay="0"/>
-					<effect type="fade" start="100" end="0" time="1300"/>
-					<condition type="!Player.Playing"/>
-				</animation>
-				<animation effect="rotate" end="-360" center="auto" time="2000" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
-				<width>250</width>
-				<height>250</height>
-				<posx>59</posx>
-				<!-- 112 -->
-				<posy>427</posy>
-				<!-- -143 -->
-				<texture>cd/default.png</texture>
-				<visible>IsEmpty(Control.GetLabel(7656))</visible>
-			</control>		
-		<control type="image">
-				<animation effect="slide" start="-518" end="0" time="1000" tween="cubic" easing="out" delay="600">WindowOpen</animation>
-				<animation type="WindowClose">
-					<effect type="slide" start="0" end="-514" time="800" tween="cubic" easing="in" delay="0"/>
-					<effect type="fade" start="100" end="0" time="1300"/>
-					<condition type="!Player.Playing"/>
-				</animation>
-			<description>visualisation background</description>
-			<posx>30</posx>
-			<posy>400</posy>
-			<width>373</width>
-			<height>308</height>
-			<texture>simplicity/arm.png</texture> 	
-		</control>
-		</control>
 
 		</control>
 
 		<control type="group">
-		<visible>!Skin.HasSetting(UseTurntable)</visible>
+			<visible>!Skin.HasSetting(UseTurntable)</visible>
 			<control type="group">
-			<animation effect="slide" start="0,0" end="0,-60" time="300" tween="quadratic" easing="out" condition="Window.IsVisible(120)">Conditional</animation>
-			<visible>Player.ShowInfo</visible>
-			<animation effect="slide" start="0,0" end="-500,0" delay="0" time="300">hidden</animation>
-			<animation effect="slide" start="-500,0" end="0,0" delay="0" time="300">visible</animation>
-			<control type="image" id="7658">
-				<description>Cd overlay</description>
-				<animation effect="slide" start="-518" end="0" time="900" tween="cubic" easing="out" delay="1000">WindowOpen</animation>
-				<animation type="WindowClose">
-					<effect type="slide" start="0" end="-514" time="800" tween="cubic" easing="in" delay="0"/>
-					<effect type="fade" start="100" end="0" time="1300"/>
-					<condition type="!Player.Playing"/>
-				</animation>
-				<animation effect="rotate" end="-360" center="auto" time="2000" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
-				<width>275</width>
-				<height>260</height>
-				<posx>175</posx>
-				<!-- 112 -->
-				<posy>407</posy>
-				<!-- -143 -->
-				<texture>$INFO[Player.FolderPath]/cdart.png</texture>
-				<aspectratio align="bottom">keep</aspectratio>
-			</control>
-			<control type="image">
-				<description>Cd overlay</description>
-				<animation effect="slide" start="-518" end="0" time="900" tween="cubic" easing="out" delay="1000">WindowOpen</animation>
-				<animation type="WindowClose">
-					<effect type="slide" start="0" end="-514" time="800" tween="cubic" easing="in" delay="0"/>
-					<effect type="fade" start="100" end="0" time="1300"/>
-					<condition type="!Player.Playing"/>
-				</animation>
-				<animation effect="rotate" end="-360" center="auto" time="2000" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
-				<width>275</width>
-				<height>260</height>
-				<posx>175</posx>
-				<!-- 112 -->
-				<posy>407</posy>
-				<!-- -143 -->
-				<texture>cd/default.png</texture>
-				<aspectratio align="bottom">keep</aspectratio>
-				<visible>IsEmpty(Control.GetLabel(7658))</visible>
-			</control>
-			<control type="group">
-				<animation type="WindowClose">
-					<effect type="slide" start="0" end="-514" time="800" tween="cubic" easing="in" delay="0"/>
-					<effect type="fade" start="100" end="0" time="1300"/>
-					<condition type="!Player.Playing"/>
-				</animation>
-			<control type="image">
-				<animation effect="slide" start="-518" end="0" time="900" tween="cubic" easing="out" delay="1000">WindowOpen</animation>
-				<description>Cd overlay</description>
-				<width>177</width>
-				<height>108</height>
-				<posx>235</posx>
-				<posy>377</posy>
-				<texture>simplicity/arm-2.png</texture>
-				<visible>IsEmpty(Control.GetLabel(7658))</visible>
-			</control>
-			<control type="image">
-				<description>cover image</description>
-				<posx>11</posx>
-				<posy>385</posy>
-				<width>308</width>
-				<height>293</height>
-				<texture>simplicity/cd-shadow.png</texture>
-				<fadetime>FanartCrossfadeTime</fadetime>
-				<animation effect="slide" start="-518" end="0" time="1000" tween="cubic" easing="out" delay="500">WindowOpen</animation>
-			</control>
-			<control type="image">
-				<description>cover image</description>
-				<posx>15</posx>
-				<posy>385</posy>
-				<width>300</width>
-				<height>300</height>
-				<texture>$INFO[MusicPlayer.Cover]</texture>
-				<fadetime>FanartCrossfadeTime</fadetime>
-				<aspectratio aligny="bottom">stretch</aspectratio>
-				<animation effect="slide" start="-518" end="0" time="1000" tween="cubic" easing="out" delay="500">WindowOpen</animation>
-			</control>
-			<control type="image">
-				<description>cover image</description>
-				<posx>15</posx>
-				<posy>385</posy>
-				<width>300</width>
-				<height>300</height>
-				<texture>album-fallback.png</texture>
-				<fadetime>FanartCrossfadeTime</fadetime>
-				<aspectratio aligny="bottom">stretch</aspectratio>
-				<animation effect="slide" start="-518" end="0" time="1000" tween="cubic" easing="out" delay="500">WindowOpen</animation>
-  				 <visible>stringcompare(MusicPlayer.Cover,DefaultAlbumCover.png)</visible>
-			</control>
-			<control type="image">
-				<description>cover image</description>
-				<posx>15</posx>
-				<posy>385</posy>
-				<width>300</width>
-				<height>300</height>
-				<texture>simplicity/cd-cover-gloss.png</texture>
-				<fadetime>FanartCrossfadeTime</fadetime>
-				<aspectratio aligny="bottom">stretch</aspectratio>
-				<animation effect="slide" start="-518" end="0" time="1000" tween="cubic" easing="out" delay="500">WindowOpen</animation>
-			</control>
-			<control type="image">
-				<description>cover image</description>
-				<posx>15</posx>
-				<posy>686</posy>
-				<width>300</width>
-				<height>300</height>
-				<texture diffuse="simplicity/cd-reflect-vis.png" flipy="true">$INFO[MusicPlayer.Cover]</texture>
-				<fadetime>FanartCrossfadeTime</fadetime>
-				<aspectratio aligny="bottom">stretch</aspectratio>
-				<animation effect="slide" start="-518" end="0" time="1000" tween="cubic" easing="out" delay="500">WindowOpen</animation>
-			</control>
-			<control type="image">
-				<description>cover image</description>
-				<posx>15</posx>
-				<posy>686</posy>
-				<width>300</width>
-				<height>300</height>
-				<texture diffuse="simplicity/cd-reflect-vis.png" flipy="true">album-fallback.png</texture>
-				<fadetime>FanartCrossfadeTime</fadetime>
-				<aspectratio aligny="bottom">stretch</aspectratio>
-				<animation effect="slide" start="-518" end="0" time="1000" tween="cubic" easing="out" delay="500">WindowOpen</animation>
-  				 <visible>stringcompare(MusicPlayer.Cover,DefaultAlbumCover.png)</visible>
-			</control>
-			<control type="image">
-				<description>cover image</description>
-				<posx>15</posx>
-				<posy>686</posy>
-				<width>300</width>
-				<height>300</height>
-				<texture diffuse="simplicity/cd-reflect-vis.png" flipy="true">simplicity/cd-cover-gloss.png</texture>
-				<fadetime>FanartCrossfadeTime</fadetime>
-				<aspectratio aligny="bottom">stretch</aspectratio>
-				<animation effect="slide" start="-518" end="0" time="1000" tween="cubic" easing="out" delay="500">WindowOpen</animation>
-			</control>
-			<!--<control type="image">
+				<animation effect="slide" start="0,0" end="0,-60" time="300" tween="quadratic" easing="out" condition="Window.IsVisible(120)">Conditional</animation>
+				<visible>Player.ShowInfo</visible>
+				<animation effect="slide" start="0,0" end="-500,0" delay="0" time="300">hidden</animation>
+				<animation effect="slide" start="-500,0" end="0,0" delay="0" time="300">visible</animation>
+				<control type="image" id="7658">
+					<description>Cd overlay</description>
+					<animation effect="slide" start="-518" end="0" time="900" tween="cubic" easing="out" delay="1000">WindowOpen</animation>
+					<animation type="WindowClose">
+						<effect type="slide" start="0" end="-514" time="800" tween="cubic" easing="in" delay="0"/>
+						<effect type="fade" start="100" end="0" time="1300"/>
+						<condition type="!Player.Playing"/>
+					</animation>
+					<animation effect="rotate" end="-360" center="auto" time="2000" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
+					<width>275</width>
+					<height>260</height>
+					<posx>175</posx>
+					<!-- 112 -->
+					<posy>407</posy>
+					<!-- -143 -->
+					<texture>$INFO[Player.FolderPath]/cdart.png</texture>
+					<aspectratio align="bottom">keep</aspectratio>
+				</control>
+				<control type="image">
+					<description>Cd overlay</description>
+					<animation effect="slide" start="-518" end="0" time="900" tween="cubic" easing="out" delay="1000">WindowOpen</animation>
+					<animation type="WindowClose">
+						<effect type="slide" start="0" end="-514" time="800" tween="cubic" easing="in" delay="0"/>
+						<effect type="fade" start="100" end="0" time="1300"/>
+						<condition type="!Player.Playing"/>
+					</animation>
+					<animation effect="rotate" end="-360" center="auto" time="2000" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
+					<width>275</width>
+					<height>260</height>
+					<posx>175</posx>
+					<!-- 112 -->
+					<posy>407</posy>
+					<!-- -143 -->
+					<texture>cd/default.png</texture>
+					<aspectratio align="bottom">keep</aspectratio>
+					<visible>IsEmpty(Control.GetLabel(7658))</visible>
+				</control>
+				<control type="group">
+					<animation type="WindowClose">
+						<effect type="slide" start="0" end="-514" time="800" tween="cubic" easing="in" delay="0"/>
+						<effect type="fade" start="100" end="0" time="1300"/>
+						<condition type="!Player.Playing"/>
+					</animation>
+					<control type="image">
+						<animation effect="slide" start="-518" end="0" time="900" tween="cubic" easing="out" delay="1000">WindowOpen</animation>
+						<description>Cd overlay</description>
+						<width>177</width>
+						<height>108</height>
+						<posx>235</posx>
+						<posy>377</posy>
+						<texture>simplicity/arm-2.png</texture>
+						<visible>IsEmpty(Control.GetLabel(7658))</visible>
+					</control>
+					<control type="image">
+						<description>cover image</description>
+						<posx>11</posx>
+						<posy>385</posy>
+						<width>308</width>
+						<height>293</height>
+						<texture>simplicity/cd-shadow.png</texture>
+						<fadetime>FanartCrossfadeTime</fadetime>
+						<animation effect="slide" start="-518" end="0" time="1000" tween="cubic" easing="out" delay="500">WindowOpen</animation>
+					</control>
+					<control type="image">
+						<description>cover image</description>
+						<posx>15</posx>
+						<posy>385</posy>
+						<width>300</width>
+						<height>300</height>
+						<texture>$INFO[MusicPlayer.Cover]</texture>
+						<fadetime>FanartCrossfadeTime</fadetime>
+						<aspectratio aligny="bottom">stretch</aspectratio>
+						<animation effect="slide" start="-518" end="0" time="1000" tween="cubic" easing="out" delay="500">WindowOpen</animation>
+					</control>
+					<control type="image">
+						<description>cover image</description>
+						<posx>15</posx>
+						<posy>385</posy>
+						<width>300</width>
+						<height>300</height>
+						<texture>album-fallback.png</texture>
+						<fadetime>FanartCrossfadeTime</fadetime>
+						<aspectratio aligny="bottom">stretch</aspectratio>
+						<animation effect="slide" start="-518" end="0" time="1000" tween="cubic" easing="out" delay="500">WindowOpen</animation>
+						<visible>stringcompare(MusicPlayer.Cover,DefaultAlbumCover.png)</visible>
+					</control>
+					<control type="image">
+						<description>cover image</description>
+						<posx>15</posx>
+						<posy>385</posy>
+						<width>300</width>
+						<height>300</height>
+						<texture>simplicity/cd-cover-gloss.png</texture>
+						<fadetime>FanartCrossfadeTime</fadetime>
+						<aspectratio aligny="bottom">stretch</aspectratio>
+						<animation effect="slide" start="-518" end="0" time="1000" tween="cubic" easing="out" delay="500">WindowOpen</animation>
+					</control>
+					<control type="image">
+						<description>cover image</description>
+						<posx>15</posx>
+						<posy>686</posy>
+						<width>300</width>
+						<height>300</height>
+						<texture diffuse="simplicity/cd-reflect-vis.png" flipy="true">$INFO[MusicPlayer.Cover]</texture>
+						<fadetime>FanartCrossfadeTime</fadetime>
+						<aspectratio aligny="bottom">stretch</aspectratio>
+						<animation effect="slide" start="-518" end="0" time="1000" tween="cubic" easing="out" delay="500">WindowOpen</animation>
+					</control>
+					<control type="image">
+						<description>cover image</description>
+						<posx>15</posx>
+						<posy>686</posy>
+						<width>300</width>
+						<height>300</height>
+						<texture diffuse="simplicity/cd-reflect-vis.png" flipy="true">album-fallback.png</texture>
+						<fadetime>FanartCrossfadeTime</fadetime>
+						<aspectratio aligny="bottom">stretch</aspectratio>
+						<animation effect="slide" start="-518" end="0" time="1000" tween="cubic" easing="out" delay="500">WindowOpen</animation>
+						<visible>stringcompare(MusicPlayer.Cover,DefaultAlbumCover.png)</visible>
+					</control>
+					<control type="image">
+						<description>cover image</description>
+						<posx>15</posx>
+						<posy>686</posy>
+						<width>300</width>
+						<height>300</height>
+						<texture diffuse="simplicity/cd-reflect-vis.png" flipy="true">simplicity/cd-cover-gloss.png</texture>
+						<fadetime>FanartCrossfadeTime</fadetime>
+						<aspectratio aligny="bottom">stretch</aspectratio>
+						<animation effect="slide" start="-518" end="0" time="1000" tween="cubic" easing="out" delay="500">WindowOpen</animation>
+					</control>
+					<!--<control type="image">
 			<description>Cover image overlay</description>
 			<posx>15</posx>
 			<posy>395</posy>
@@ -764,8 +725,8 @@
 			<aspectratio align="bottom">stretch</aspectratio>
 			<animation effect="slide" start="-118" end="0" time="300" tween="cubic" easing="out" delay="500">WindowOpen</animation>
 		</control>-->
-		</control>
-	</control>
+				</control>
+			</control>
 		</control>
 
 
@@ -810,7 +771,7 @@
 				<height>100</height>
 				<fadetime>FanartCrossfadeTime</fadetime>
 				<texture>album-fallback.png</texture>
-  				 <visible>stringcompare(MusicPlayer.offset(1).Cover,DefaultAlbumCover.png)</visible>
+				<visible>stringcompare(MusicPlayer.offset(1).Cover,DefaultAlbumCover.png)</visible>
 			</control>
 			<control type="image">
 				<description>cover image</description>
@@ -831,14 +792,14 @@
 				<fadetime>FanartCrossfadeTime</fadetime>
 				<texture>$INFO[MusicPlayer.offset(2).Cover]</texture>
 			</control>
-<control type="image" id="7984">
+			<control type="image" id="7984">
 				<description>cover image</description>
 				<posx>145</posx>
 				<posy>35</posy>
 				<width>100</width>
 				<height>100</height>
 				<texture>album-fallback.png</texture>
-  				 <visible>stringcompare(MusicPlayer.offset(2).Cover,DefaultAlbumCover.png)</visible>
+				<visible>stringcompare(MusicPlayer.offset(2).Cover,DefaultAlbumCover.png)</visible>
 			</control>
 			<control type="image">
 				<description>cover image</description>
@@ -867,7 +828,7 @@
 				<height>100</height>
 				<fadetime>FanartCrossfadeTime</fadetime>
 				<texture>album-fallback.png</texture>
-  				 <visible>stringcompare(MusicPlayer.offset(3).Cover,DefaultAlbumCover.png)</visible>
+				<visible>stringcompare(MusicPlayer.offset(3).Cover,DefaultAlbumCover.png)</visible>
 			</control>
 			<control type="image">
 				<description>cover image</description>
