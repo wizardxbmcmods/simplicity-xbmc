@@ -889,8 +889,10 @@
 
 		<!--Weather-->
 		<control type="group">
+				<animation effect="fade" start="100" end="0" time="200" >WindowClose</animation>
+				<animation effect="fade" start="0" end="100" time="300" delay="700">WindowOpen</animation>
 			<visible>[Container(9000).Hasfocus(7) + !Skin.HasSetting(HomeMenuNoWeatherButton) + !Skin.HasSetting(HomeAlternate)]</visible>
-			<posx>0</posx>
+			<posx>10</posx>
 			<posy>150</posy>
 			<include>VisibleFadeEffect</include>
 			<animation effect="fade" time="400" delay="800" start="0" end="100" condition="[Container(9000).Hasfocus(7) + !Skin.HasSetting(HomeMenuNoWeatherButton)]">Conditional</animation>
@@ -963,6 +965,180 @@
 				<font>Simplicity_30_UltraThin</font>
 				<textcolor>grey2</textcolor>
 			</control>	-->
+
+
+	<control type="group">
+				<animation effect="fade" start="100" end="0" time="200" >WindowClose</animation>
+				<animation effect="fade" start="0" end="100" time="300" delay="700">WindowOpen</animation>
+					<animation effect="fade" time="400" delay="800" start="0" end="100" condition="[Container(9000).Hasfocus(15)]">Conditional</animation>
+					<animation effect="slide" end="-85,0" time="0" condition="substring(Window(Home).Property(NextAired.2.Today),true)">Conditional</animation>
+					<animation effect="slide" end="-85,0" time="0" condition="substring(Window(Home).Property(NextAired.3.Today),true)">Conditional</animation>
+					<animation effect="slide" end="-85,0" time="0" condition="substring(Window(Home).Property(NextAired.4.Today),true)">Conditional</animation>
+					<animation effect="slide" end="-85,0" time="0" condition="substring(Window(Home).Property(NextAired.5.Today),true)">Conditional</animation>
+					<posx>565</posx>
+					<posy>55</posy>
+					<visible>Container(9000).Hasfocus(15)</visible>
+					<include>VisibleFadeEffect</include>
+					<control type="list" id="8010">
+						<posx>-15</posx>
+						<posy>10</posy>
+						<width>1270</width>
+						<height>500</height>
+						<onleft>8010</onleft>
+						<onright>8010</onright>
+						<onup>-</onup>
+						<ondown>9000</ondown>
+						<orientation>horizontal</orientation>
+						<viewtype label="535">list</viewtype>
+						<pagecontrol>-</pagecontrol>
+						<scrolltime>0</scrolltime>
+						<visible>!Skin.HasSetting(HomeMenuNoTVGuideButton)</visible>
+						<itemlayout height="124" width="182">
+							<control type="label">
+								<posx>90</posx>
+								<posy>48</posy>
+								<width>182</width>
+								<height>30</height>
+								<font>Simplicity_18</font>
+								<textcolor>white</textcolor>
+								<align>center</align>
+								<aligny>center</aligny>
+								<label>Today</label>
+							</control>		
+							<control type="image">
+								<posx>31.5</posx>
+								<posy>85</posy>
+								<width>119</width>
+								<height>46</height>
+								<aspectratio>keep</aspectratio>
+								<texture fallback="logo-fallback.png">$INFO[ListItem.Thumb]</texture>
+							</control>
+							<control type="label">
+								<posx>90</posx>
+								<posy>135</posy>
+								<width>182</width>
+								<height>30</height>
+								<font>Simplicity_18</font>
+								<textcolor>white</textcolor>
+								<align>center</align>
+								<aligny>center</aligny>
+								<label>$INFO[ListItem.label2]</label>
+							</control>		
+							<control type="label">
+								<posx>90</posx>
+								<posy>155</posy>
+								<width>182</width>
+								<height>30</height>
+								<font>Simplicity_16</font>
+								<textcolor>grey2</textcolor>
+								<align>center</align>
+								<aligny>center</aligny>
+								<label>$INFO[ListItem.label]</label>
+							</control>		
+							<control type="image">
+								<posx>30</posx>
+								<posy>195</posy>
+								<width>119</width>
+								<height>1</height>
+								<texture>simplicity/line.png</texture>
+							</control>	
+						</itemlayout>
+						<focusedlayout height="124" width="182">
+							<control type="label">
+								<posx>90</posx>
+								<posy>48</posy>
+								<width>182</width>
+								<height>30</height>
+								<font>Simplicity_18</font>
+								<textcolor>white</textcolor>
+								<align>center</align>
+								<aligny>center</aligny>
+								<label>Today</label>
+							</control>		
+							<control type="image">
+								<posx>31.5</posx>
+								<posy>85</posy>
+								<width>119</width>
+								<height>46</height>
+								<aspectratio>keep</aspectratio>
+								<texture fallback="logo-fallback.png">$INFO[ListItem.Thumb]</texture>
+							</control>
+							<control type="label">
+								<posx>90</posx>
+								<posy>135</posy>
+								<width>182</width>
+								<height>30</height>
+								<font>Simplicity_18</font>
+								<textcolor>white</textcolor>
+								<align>center</align>
+								<aligny>center</aligny>
+								<label>$INFO[ListItem.label2]</label>
+							</control>		
+							<control type="label">
+								<posx>90</posx>
+								<posy>155</posy>
+								<width>182</width>
+								<height>30</height>
+								<font>Simplicity_16</font>
+								<textcolor>grey2</textcolor>
+								<align>center</align>
+								<aligny>center</aligny>
+								<label>$INFO[ListItem.label]</label>
+							</control>	
+							<control type="image">
+								<posx>30</posx>
+								<posy>195</posy>
+								<width>119</width>
+								<height>1</height>
+								<texture>simplicity/line.png</texture>
+							</control>	
+						</focusedlayout>
+						<content>
+							<item id="1">
+								<label>$INFO[Window(Home).Property(NextAired.1.Network)]</label>
+								<label2>$INFO[Window(Home).Property(NextAired.1.shortime)]</label2>
+								<onclick>-</onclick>
+								<icon>-</icon>
+								<thumb>$INFO[Window(Home).Property(NextAired.1.Showpath),,logo.png]</thumb>
+								<visible>substring(Window(Home).Property(NextAired.1.Today),true)</visible>
+							</item>
+							<item id="2">
+								<label>$INFO[Window(Home).Property(NextAired.2.Network)]</label>
+								<label2>$INFO[Window(Home).Property(NextAired.2.shortime)]</label2>
+								<onclick>-</onclick>
+								<icon>-</icon>
+								<thumb>$INFO[Window(Home).Property(NextAired.2.Showpath),,logo.png]</thumb>
+								<visible>substring(Window(Home).Property(NextAired.2.Today),true)</visible>
+							</item>
+							<item id="3">
+								<label>$INFO[Window(Home).Property(NextAired.3.Network)]</label>
+								<label2>$INFO[Window(Home).Property(NextAired.3.shortime)]</label2>
+								<onclick>-</onclick>
+								<icon>-</icon>
+								<thumb>$INFO[Window(Home).Property(NextAired.3.Showpath),,logo.png]</thumb>
+								<visible>substring(Window(Home).Property(NextAired.3.Today),true)</visible>
+							</item>
+							<item id="4">
+								<label>$INFO[Window(Home).Property(NextAired.4.Network)]</label>
+								<label2>$INFO[Window(Home).Property(NextAired.4.shortime)]</label2>
+								<onclick>-</onclick>
+								<icon>-</icon>
+								<thumb>$INFO[Window(Home).Property(NextAired.4.Showpath),,logo.png]</thumb>
+								<visible>substring(Window(Home).Property(NextAired.4.Today),true)</visible>
+							</item>
+							<item id="5">
+								<label>$INFO[Window(Home).Property(NextAired.5.Network)]</label>
+								<label2>$INFO[Window(Home).Property(NextAired.5.shortime)]</label2>
+								<onclick>-</onclick>
+								<icon>-</icon>
+								<thumb>$INFO[Window(Home).Property(NextAired.5.Showpath),,logo.png]</thumb>
+								<visible>substring(Window(Home).Property(NextAired.5.Today),true)</visible>
+							</item>
+						</content>
+					</control>
+				</control>
+
+
 
 		<control type="group">
 			<posy>50r</posy>

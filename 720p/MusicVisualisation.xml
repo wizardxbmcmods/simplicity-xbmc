@@ -71,7 +71,7 @@
 <texture fallback="cd/default.png">cd/$INFO[MusicPlayer.Artist]-$INFO[MusicPlayer.Album].png</texture>
 			
 
-<texture fallback="special://skin/media/visualization/cd.png">$INFO[Player.FolderPath]/cdart.png</texture>
+<texture fallback="visualization/cd.png">$INFO[Player.FolderPath]/cdart.png</texture>
 -->
 
 		<!-- Dark Mod code start  TEXT  -->

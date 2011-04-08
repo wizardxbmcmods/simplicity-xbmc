@@ -1767,6 +1767,7 @@
 						<height>20</height>
 						<font>Simplicity_24</font>
 						<textcolor>white</textcolor>
+						<selectedcolor>white</selectedcolor>
 						<scroll>false</scroll>
 						<scrollspeed>0</scrollspeed>
 						<align>left</align>
@@ -1797,7 +1798,7 @@
 					</control>
 					<control type="image">
 						<posx>450</posx>
-						<posy>71</posy>
+						<posy>73</posy>
 						<width>40</width>
 						<height>40</height>
 						<align>left</align>
@@ -2541,7 +2542,7 @@
 					<control type="grouplist">
 						<description>Studio Codec Flagging Images</description>
 						<posx>242</posx>
-						<posy>200</posy>
+						<posy>190</posy>
 						<width>150</width>
 						<align>left</align>
 						<itemgap>0</itemgap>
@@ -2976,7 +2977,7 @@
 						<aspectratio>keep</aspectratio>
 						<align>left</align>
 						<width>105</width>		
-						<texture>special://skin/media/studios/$INFO[ListItem.Studio,,.png]</texture>
+						<texture>studios/$INFO[ListItem.Studio,,.png]</texture>
 						<visible>Container.Content(TVShows)</visible>
 					</control>    
 					<control type="textbox">

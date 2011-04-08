@@ -458,11 +458,12 @@
 				<control type="scrollbar" id="60">
 					<posx>1230</posx>
 					<posy>60</posy>
-					<width>30</width>
-					<height>600</height>
-					<texturesliderbackground border="0,0,0,0">simplicity/scrollbar-background.png</texturesliderbackground>
-					<texturesliderbar border="0,0,0,0">simplicity/scrollbar-slider-not-selected.png</texturesliderbar>
-					<texturesliderbarfocus border="0,0,0,0">simplicity/scrollbar-slider-selected.png</texturesliderbarfocus>
+					<width>25</width>
+					<height>640</height>
+					<texturesliderbackground border="0,14,0,14">scrollbarv.png</texturesliderbackground>
+					<texturesliderbar border="0,14,0,14">scrollbarv_bar.png</texturesliderbar>
+					<texturesliderbarfocus border="0,14,0,14">scrollbarv_bar_focus.png</texturesliderbarfocus>
+					<textureslidernib>ScrollBarNib.png</textureslidernib>
 					<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
 					<onleft>9001</onleft>
 					<onright>9000</onright>
@@ -5063,6 +5064,22 @@
 							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
 							<onclick>Skin.ToggleSetting(UseTvTunes)</onclick>
 							<selected>Skin.HasSetting(UseTvTunes)</selected>
+						</control>
+						<control type="radiobutton" id="2003">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_20</font>
+							<label>Enable "Delete" Prompt After Watching TV Episodes</label>
+							<textcolor>white</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<radiowidth>83</radiowidth>
+							<radioheight>67</radioheight>
+							<textureradiofocus>simplicity/settings-radiobutton-on.png</textureradiofocus>
+							<textureradionofocus>simplicity/settings-radiobutton-off.png</textureradionofocus>
+							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
+							<onclick>Skin.ToggleSetting(DeleteEps)</onclick>
+							<selected>Skin.HasSetting(DeleteEps)</selected>
 						</control>
 						<control type="label" id="2010">
 							<width>750</width>

@@ -441,15 +441,20 @@
 						<aligny>center</aligny>
 						<label>Airing</label>
 					</control>
-					<control type = "group" id = "5012">
+					<control type = "group">
 						<posx>910</posx>
 						<posy>525</posy>
-						<include>EpisodeNextAiredDate</include>
+						<include>EpisodeNextAiredStatusInfoScreen</include>
 					</control>
 					<control type = "group">
 						<posx>910</posx>
 						<posy>555</posy>
-						<include>EpisodeNextAiredTime</include>
+						<include>EpisodeNextAiredDateInfoScreen</include>
+					</control>
+					<control type = "group">
+						<posx>910</posx>
+						<posy>585</posy>
+						<include>EpisodeNextAiredTimeInfoScreen</include>
 					</control>
 				</control>
 				<control type = "group">
@@ -564,15 +569,20 @@
 						<aligny>center</aligny>
 						<label>Airing</label>
 					</control>
-					<control type = "group" id = "5012">
+					<control type = "group">
 						<posx>910</posx>
 						<posy>525</posy>
-						<include>EpisodeNextAiredDate</include>
+						<include>EpisodeNextAiredStatusInfoScreen</include>
 					</control>
 					<control type = "group">
 						<posx>910</posx>
 						<posy>555</posy>
-						<include>EpisodeNextAiredTime</include>
+						<include>EpisodeNextAiredDateInfoScreen</include>
+					</control>
+					<control type = "group">
+						<posx>910</posx>
+						<posy>585</posy>
+						<include>EpisodeNextAiredTimeInfoScreen</include>
 					</control>
 				</control>
 
@@ -690,15 +700,20 @@
 						<aligny>center</aligny>
 						<label>Airing</label>
 					</control>
-					<control type = "group" id = "5012">
+					<control type = "group">
 						<posx>910</posx>
 						<posy>525</posy>
-						<include>EpisodeNextAiredDate</include>
+						<include>EpisodeNextAiredStatusInfoScreen</include>
 					</control>
 					<control type = "group">
 						<posx>910</posx>
 						<posy>555</posy>
-						<include>EpisodeNextAiredTime</include>
+						<include>EpisodeNextAiredDateInfoScreen</include>
+					</control>
+					<control type = "group">
+						<posx>910</posx>
+						<posy>585</posy>
+						<include>EpisodeNextAiredTimeInfoScreen</include>
 					</control>
 				</control>
 				<control type = "group">
@@ -813,15 +828,20 @@
 						<aligny>center</aligny>
 						<label>Airing</label>
 					</control>
-					<control type = "group" id = "5012">
+					<control type = "group">
 						<posx>910</posx>
 						<posy>525</posy>
-						<include>EpisodeNextAiredDate</include>
+						<include>EpisodeNextAiredStatusInfoScreen</include>
 					</control>
 					<control type = "group">
 						<posx>910</posx>
 						<posy>555</posy>
-						<include>EpisodeNextAiredTime</include>
+						<include>EpisodeNextAiredDateInfoScreen</include>
+					</control>
+					<control type = "group">
+						<posx>910</posx>
+						<posy>585</posy>
+						<include>EpisodeNextAiredTimeInfoScreen</include>
 					</control>
 				</control>
 
@@ -956,13 +976,23 @@
 					<posy>15</posy>
 					<posx>20</posx>
 					<include>VisibleFadeEffect</include>
-					<control type = "image">
+					<control type = "image" id ="8995">
 						<posx>-20</posx>
 						<posy>-15</posy>
 						<width>480</width>
 						<height>720</height>
 						<aspectratio>stretch</aspectratio>
 						<texture>$INFO[Container.SeasonThumb]</texture>
+						<bordertexture border = "2">simplicity/folder-focus.png</bordertexture>
+						<bordersize>2</bordersize>
+					</control>
+					<control type = "image">
+						<posx>-20</posx>
+						<posy>-15</posy>
+						<width>480</width>
+						<height>720</height>
+						<aspectratio>stretch</aspectratio>
+						<texture>$INFO[ListItem.Path,,folder.jpg]</texture>
 						<bordertexture border = "2">simplicity/folder-focus.png</bordertexture>
 						<bordersize>2</bordersize>
 					</control>
@@ -1326,12 +1356,19 @@
 						<visible>Container.Content(TVShows)</visible>
 					</control>
 					<control type = "button" id = "15">
-						<description>Get Logo</description>
+						<description>Get Theme</description>
 						<include>ButtonInfoDialogsCommonValuesInfo</include>
 						<onclick>XBMC.RunScript(script.TvTunes,mode=solo&amp;tvpath=$INFO[ListItem.FilenameAndPath]&amp;tvname=$INFO[ListItem.TVShowTitle])</onclick>
 						<label>Theme</label>
 						<visible>Container.Content(TVShows)</visible>
 					</control>
+					<!--<control type = "button" id = "16">
+						<description>Get Theme</description>
+						<include>ButtonInfoDialogsCommonValuesInfo</include>
+						<onclick>ActivateWindow(1127)</onclick>
+						<label>Expert*</label>
+						<visible>Container.Content(TVShows)</visible>
+					</control>-->
 				</control>
 			</control>
 		</control>

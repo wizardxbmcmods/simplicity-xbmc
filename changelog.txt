@@ -1,7 +1,15 @@
+[B]1.0.9[/B] 
+
+- Fixed icons disappearing
+
+[B]1.0.8[/B] 
+
+- Too much to remember
+
 [B]1.0.7[/B] 
 
 - Added Search feature to Home screen
-- Added Now Playign screens
+- Added Now Playing screens
 
 [B]1.0.6[/B] 
 

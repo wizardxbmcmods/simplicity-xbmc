@@ -355,7 +355,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<aspectratio>keep</aspectratio>
-					<texture>special://skin/media/studios/$INFO[VideoPlayer.Studio,,.png]</texture>
+					<texture>studios/$INFO[VideoPlayer.Studio,,.png]</texture>
 				</control>
 				<control type="group">
 					<!-- Chapter Count images -->
@@ -423,7 +423,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<aspectratio>keep</aspectratio>
-					<texture>special://skin/media/studios/$INFO[VideoPlayer.Studio,,.png]</texture>
+					<texture>studios/$INFO[VideoPlayer.Studio,,.png]</texture>
 				</control>
 			</control>
 		</control>

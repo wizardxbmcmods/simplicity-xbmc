@@ -378,7 +378,7 @@
 				<aspectratio>keep</aspectratio>
 				<id>88</id>    
 				<width>76</width>		
-				<texture>special://skin/media/studios/$INFO[ListItem.Studio,,.png]</texture>
+				<texture>studios/$INFO[ListItem.Studio,,.png]</texture>
 			</control>    
 		</control>
 	</include>
@@ -389,7 +389,7 @@
 				<description>Studio</description>
 				<aspectratio>keep</aspectratio>
 				<width>105</width>		
-				<texture>special://skin/media/studios/$INFO[ListItem.Studio,,.png]</texture>
+				<texture>studios/$INFO[ListItem.Studio,,.png]</texture>
 			</control>    
 		</control>
 	</include>
@@ -401,7 +401,7 @@
 				<aspectratio>keep</aspectratio>
 				<height>40</height>
 				<width>80</width>		
-				<texture>special://skin/media/studios/$INFO[ListItem.Studio,,.png]</texture>
+				<texture>studios/$INFO[ListItem.Studio,,.png]</texture>
 			</control>    
 		</control>
 	</include>
@@ -412,7 +412,7 @@
 				<description>Studio</description>
 				<aspectratio>keep</aspectratio>
 				<width>150</width>		
-				<texture>special://skin/media/studios/$INFO[ListItem.Studio,,.png]</texture>
+				<texture>studios/$INFO[ListItem.Studio,,.png]</texture>
 			</control>    
 		</control>
 	</include>

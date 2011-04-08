@@ -79,7 +79,7 @@
 						<height>250</height>
 						<align>right</align>
 						<aspect>stretch</aspect>
-						<texture background="true">special://skin/media/simplicity/genres/$INFO[ListItem.label,,.jpg]</texture>
+						<texture background="true">simplicity/genres/$INFO[ListItem.label,,.jpg]</texture>
 						<bordertexture border="10">simplicity/thumbborder.png</bordertexture>
 						<bordersize>10</bordersize>
 					</control>
@@ -91,7 +91,7 @@
 						<height>250</height>
 						<align>right</align>
 						<aspect>stretch</aspect>
-						<texture background="true">special://skin/media/simplicity/musicgenres/$INFO[ListItem.label,,.jpg]</texture>
+						<texture background="true">simplicity/musicgenres/$INFO[ListItem.label,,.jpg]</texture>
 						<bordertexture border="10">simplicity/thumbborder.png</bordertexture>
 						<bordersize>10</bordersize>
 					</control>
@@ -103,7 +103,7 @@
 						<height>250</height>
 						<align>right</align>
 						<aspect>stretch</aspect>
-						<texture background="true">special://skin/media/studios/$INFO[ListItem.label,,.png]</texture>
+						<texture background="true">studios/$INFO[ListItem.label,,.png]</texture>
 						<bordertexture border="10">simplicity/thumbborder.png</bordertexture>
 						<bordersize>10</bordersize>
 					</control>
@@ -206,7 +206,7 @@
 						<width>110</width>
 						<height>110</height>
 						<aspectratio>keep</aspectratio>
-						<texture background="true">special://skin/media/simplicity/genres/$INFO[ListItem.label,,.jpg]</texture>
+						<texture background="true">simplicity/genres/$INFO[ListItem.label,,.jpg]</texture>
 						<visible>Container.Content(Genres)</visible>
 					</control>
 					<control type="image">
@@ -215,7 +215,7 @@
 						<width>110</width>
 						<height>110</height>
 						<aspectratio>keep</aspectratio>
-						<texture background="true">special://skin/media/simplicity/musicgenres/$INFO[ListItem.label,,.jpg]</texture>
+						<texture background="true">simplicity/musicgenres/$INFO[ListItem.label,,.jpg]</texture>
 						<visible>Container.Content(Genres)</visible>
 					</control>
 					<control type="image">
@@ -224,7 +224,7 @@
 						<width>110</width>
 						<height>110</height>
 						<aspectratio>keep</aspectratio>
-						<texture background="true">special://skin/media/studios/$INFO[ListItem.label,,.png]</texture>
+						<texture background="true">studios/$INFO[ListItem.label,,.png]</texture>
 						<visible>Container.Content(Studios)</visible>
 					</control>
 					<control type="label">
@@ -278,7 +278,7 @@
 						<width>110</width>
 						<height>110</height>
 						<aspectratio>keep</aspectratio>
-						<texture background="true">special://skin/media/simplicity/genres/$INFO[ListItem.label,,.jpg]</texture>
+						<texture background="true">simplicity/genres/$INFO[ListItem.label,,.jpg]</texture>
 						<visible>Container.Content(Genres)</visible>
 						<animation effect="zoom" start="100" end="110" center="auto" easing="out" tween="back" time="100">Focus</animation>
 					</control>
@@ -288,7 +288,7 @@
 						<width>110</width>
 						<height>110</height>
 						<aspectratio>keep</aspectratio>
-						<texture background="true">special://skin/media/simplicity/musicgenres/$INFO[ListItem.label,,.jpg]</texture>
+						<texture background="true">simplicity/musicgenres/$INFO[ListItem.label,,.jpg]</texture>
 						<animation effect="zoom" start="100" end="110" center="auto" easing="out" tween="back" time="100">Focus</animation>
 						<visible>Container.Content(Genres)</visible>
 					</control>
@@ -298,7 +298,7 @@
 						<width>110</width>
 						<height>110</height>
 						<aspectratio>keep</aspectratio>
-						<texture background="true">special://skin/media/studios/$INFO[ListItem.label,,.png]</texture>
+						<texture background="true">studios/$INFO[ListItem.label,,.png]</texture>
 						<visible>Container.Content(Studios)</visible>
 						<animation effect="zoom" start="100" end="110" center="auto" easing="out" tween="back" time="100">Focus</animation>
 					</control>
@@ -568,7 +568,7 @@
 						<width>200</width>
 						<height>200</height>
 						<fadetime>100</fadetime>
-						<texture background="true" fallback="simplicity/other.jpg">special://skin/media/simplicity/musicgenres/$INFO[ListItem.label,,.jpg]</texture>
+						<texture background="true" fallback="simplicity/other.jpg">simplicity/musicgenres/$INFO[ListItem.label,,.jpg]</texture>
 					</control>
 					<control type="label">
 						<posx>100</posx>
@@ -595,7 +595,7 @@
 						<bordertexture border="3">simplicity/folder-focus.png</bordertexture>
 						<bordersize>3</bordersize>
 						<fadetime>100</fadetime>
-						<texture background="true" fallback="simplicity/other.jpg">special://skin/media/simplicity/musicgenres/$INFO[ListItem.label,,.jpg]</texture>
+						<texture background="true" fallback="simplicity/other.jpg">simplicity/musicgenres/$INFO[ListItem.label,,.jpg]</texture>
 					</control>
 					<control type="label">
 						<posx>100</posx>
