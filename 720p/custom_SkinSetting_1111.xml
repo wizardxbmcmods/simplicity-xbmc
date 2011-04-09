@@ -5065,22 +5065,6 @@
 							<onclick>Skin.ToggleSetting(UseTvTunes)</onclick>
 							<selected>Skin.HasSetting(UseTvTunes)</selected>
 						</control>
-						<control type="radiobutton" id="2003">
-							<width>900</width>
-							<height>40</height>
-							<font>Simplicity_20</font>
-							<label>Enable "Delete" Prompt After Watching TV Episodes</label>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
-							<radiowidth>83</radiowidth>
-							<radioheight>67</radioheight>
-							<textureradiofocus>simplicity/settings-radiobutton-on.png</textureradiofocus>
-							<textureradionofocus>simplicity/settings-radiobutton-off.png</textureradionofocus>
-							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
-							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
-							<onclick>Skin.ToggleSetting(DeleteEps)</onclick>
-							<selected>Skin.HasSetting(DeleteEps)</selected>
-						</control>
 						<control type="label" id="2010">
 							<width>750</width>
 							<height>45</height>
@@ -5128,6 +5112,51 @@
 							<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
 							<font>Simplicity_20_Bold_title</font>
 							<onclick>XBMC.RunScript(script.TvTunes)</onclick>
+						</control>
+					<control type="label" id="2014">
+							<width>750</width>
+							<height>75</height>
+							<font>Simplicity_20_Bold_title</font>
+							<label>*EXPERT Option</label>
+							<textcolor>yellow</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<align>left</align>
+							<aligny>center</aligny>
+						</control>
+						<control type="label" id="2015">
+							<width>900</width>
+							<height>45</height>
+							<font>Simplicity_20</font>
+							<label>Important Information</label>
+							<textcolor>red</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<align>left</align>
+							<aligny>center</aligny>
+						</control>
+						<control type="textbox" id="2016">
+							<width>900</width>
+							<height>80</height>
+							<font>Simplicity_20</font>
+							<label>This feature will add an *EXPERT button to the Video Info Screen for TV Shows.  It will give you the ability to create a custom list of shows that will automatically prompt you to delete them after you have watched an episode.</label>
+							<textcolor>grey2</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<align>left</align>
+						</control>
+						<control type="radiobutton" id="2017">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_20</font>
+							<label>Enable "Delete" Prompt After Watching TV Episodes</label>
+							<textcolor>white</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<radiowidth>83</radiowidth>
+							<radioheight>67</radioheight>
+							<textureradiofocus>simplicity/settings-radiobutton-on.png</textureradiofocus>
+							<textureradionofocus>simplicity/settings-radiobutton-off.png</textureradionofocus>
+							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
+							<onclick>Skin.ToggleSetting(DeleteEps)</onclick>
+							<selected>Skin.HasSetting(DeleteEps)</selected>
 						</control>
 					</control>
 					<control type="grouplist" id="9021">

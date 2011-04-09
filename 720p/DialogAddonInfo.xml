@@ -445,7 +445,7 @@
 					<onup>8</onup>
 					<ondown>11</ondown>
 				</control>
-				<control type="button" id="11">
+				<!--<control type="button" id="11">
 					<visible>stringcompare(ListItem.Property(Addon.Type),Skin)</visible>  
 					<description>Preview button</description>
 					<posx>15</posx>
@@ -462,7 +462,7 @@
 					<onright>60</onright>
 					<onup>10</onup>
 					<ondown>6</ondown>
-				</control>
+				</control>-->
 			</control>
 		</control>
 	</controls>

@@ -4,18 +4,10 @@
 	<views>50,59,500,501,504,505,506,507,508,509,511,532,534,535,536,537,538,539,540,552,553,554,555,556</views>
 	<visible>!Skin.HasSetting(KioskMode)</visible>
 	<controls>
-		<!--<control type="button" id="9999">
-			<visible>Container.Content(TVShows) | Container.Content(Episodes)</visible>
-			<description>trigger</description>
-			<include condition="!Skin.HasSetting(UseTvTunes)">No_TV_Tunes</include>
-			<include condition="Skin.HasSetting(UseTvTunes)">Use_TV_Tunes</include>
-			<include condition="!Skin.HasSetting(DeleteEps)">No_Delete_Eps</include>
-			<include condition="stringcompare(Skin.String(Delete_Show_Number_1),Justified)">Delete_Eps</include>
-			<texturenofocus>-</texturenofocus>
-			<texturefocus>-</texturefocus>
-		</control>  -->
 
-	<control type="button" id="9999">
+<!--Universal Delete Configuration-->
+
+		<!--	<control type="button" id="9999">
 			<visible>Container.Content(TVShows) | Container.Content(Episodes)</visible>
 			<description>trigger</description>
 			<include condition="!Skin.HasSetting(UseTvTunes)">No_TV_Tunes</include>
@@ -24,11 +16,38 @@
 			<include condition="Window.Previous(FullScreenVideo) + !Player.HasVideo + Skin.HasSetting(DeleteEps)">Delete_Eps</include>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>
+		</control> 
+		<control type="button" id="9999">
+			<visible>!Container.Content(TVShows)</visible>
+			<onfocus>SetFocus(50)</onfocus>
+		</control>  -->
+
+<!--Specific Delete Configuration-->
+
+	<control type="button" id="9999">
+			<visible>[[Container.Content(TVShows) | Container.Content(Episodes)] + StringCompare(Skin.String(Delete_Show_Number_1),ListItem.TVShowTitle)] | [[Container.Content(TVShows) | Container.Content(Episodes)] + StringCompare(Skin.String(Delete_Show_Number_2),ListItem.TVShowTitle)] | [[Container.Content(TVShows) | Container.Content(Episodes)] + StringCompare(Skin.String(Delete_Show_Number_3),ListItem.TVShowTitle)] | [[Container.Content(TVShows) | Container.Content(Episodes)] + StringCompare(Skin.String(Delete_Show_Number_4),ListItem.TVShowTitle)] | [[Container.Content(TVShows) | Container.Content(Episodes)] + StringCompare(Skin.String(Delete_Show_Number_5),ListItem.TVShowTitle)] | [[Container.Content(TVShows) | Container.Content(Episodes)] + StringCompare(Skin.String(Delete_Show_Number_6),ListItem.TVShowTitle)] | [[Container.Content(TVShows) | Container.Content(Episodes)] + StringCompare(Skin.String(Delete_Show_Number_7),ListItem.TVShowTitle)] | [[Container.Content(TVShows) | Container.Content(Episodes)] + StringCompare(Skin.String(Delete_Show_Number_8),ListItem.TVShowTitle)] | [[Container.Content(TVShows) | Container.Content(Episodes)] + StringCompare(Skin.String(Delete_Show_Number_9),ListItem.TVShowTitle)] | [[Container.Content(TVShows) | Container.Content(Episodes)] + StringCompare(Skin.String(Delete_Show_Number_10),ListItem.TVShowTitle)]</visible>			
+			<description>trigger</description>
+			<include condition="!Skin.HasSetting(UseTvTunes)">No_TV_Tunes</include>
+			<include condition="Skin.HasSetting(UseTvTunes)">Use_TV_Tunes</include>
+			<include condition="!Skin.HasSetting(DeleteEps)">No_Delete_Eps</include>
+			<include condition="Window.Previous(FullScreenVideo) + !Player.HasVideo + Skin.HasSetting(DeleteEps)">Delete_Eps</include>
+			<texturenofocus>-</texturenofocus>
+			<texturefocus>-</texturefocus>
+		</control>
+	<control type="button" id="9999">
+			<visible>[[Container.Content(TVShows) | Container.Content(Episodes)] + !StringCompare(Skin.String(Delete_Show_Number_1),ListItem.TVShowTitle)] | [[Container.Content(TVShows) | Container.Content(Episodes)] + !StringCompare(Skin.String(Delete_Show_Number_2),ListItem.TVShowTitle)] | [[Container.Content(TVShows) | Container.Content(Episodes)] + !StringCompare(Skin.String(Delete_Show_Number_3),ListItem.TVShowTitle)] | [[Container.Content(TVShows) | Container.Content(Episodes)] + !StringCompare(Skin.String(Delete_Show_Number_4),ListItem.TVShowTitle)] | [[Container.Content(TVShows) | Container.Content(Episodes)] + !StringCompare(Skin.String(Delete_Show_Number_5),ListItem.TVShowTitle)] | [[Container.Content(TVShows) | Container.Content(Episodes)] + !StringCompare(Skin.String(Delete_Show_Number_6),ListItem.TVShowTitle)] | [[Container.Content(TVShows) | Container.Content(Episodes)] + !StringCompare(Skin.String(Delete_Show_Number_7),ListItem.TVShowTitle)] | [[Container.Content(TVShows) | Container.Content(Episodes)] + !StringCompare(Skin.String(Delete_Show_Number_8),ListItem.TVShowTitle)] | [[Container.Content(TVShows) | Container.Content(Episodes)] + !StringCompare(Skin.String(Delete_Show_Number_9),ListItem.TVShowTitle)] | [[Container.Content(TVShows) | Container.Content(Episodes)] + !StringCompare(Skin.String(Delete_Show_Number_10),ListItem.TVShowTitle)]</visible>			
+			<description>trigger</description>
+			<include condition="!Skin.HasSetting(UseTvTunes)">No_TV_Tunes</include>
+			<include condition="Skin.HasSetting(UseTvTunes)">Use_TV_Tunes</include>
+			<texturenofocus>-</texturenofocus>
+			<texturefocus>-</texturefocus>
 		</control>
 		<control type="button" id="9999">
 			<visible>!Container.Content(TVShows)</visible>
 			<onfocus>SetFocus(50)</onfocus>
 		</control>  
+
+
 		<include>CommonVideoBackground</include>
 		<control type="group">
 			<include>Window_OpenClose_Animation</include>		

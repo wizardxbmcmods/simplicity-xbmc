@@ -38,7 +38,7 @@
 				<posy>5</posy>
 				<width>430</width>
 				<height>200</height>
-				<label>[COLOR=red] *WARNING[/COLOR] Enabling the "Delete" prompt will result in an automatic prompt for the chosen shows that will ask you to delete the episode you just finished watching.</label>
+				<label>[COLOR=red] *WARNING*[/COLOR]: Enabling the "Delete" prompt will result in an automatic prompt for the chosen shows that will ask you to delete the episode you just finished watching.</label>
 				<align>justify</align>
 				<font>Simplicity_20</font>
 				<textcolor>white</textcolor>
@@ -67,7 +67,7 @@
 				<posy>345</posy>
 				<width>35</width>
 				<height>35</height>
-				<texture>simplicity/down-arrow.png</texture>
+				<texture>simplicity/right-arrow.png</texture>
 			</control>
 			<control type="label">
 				<description>Title</description>
@@ -75,7 +75,7 @@
 				<posy>348</posy>
 				<width>527</width>
 				<height>25</height>
-				<label>Move</label>
+				<label>Reset All</label>
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>Simplicity_24</font>
@@ -88,7 +88,16 @@
 				<height>210</height>
 				<onup>450</onup>
 				<onleft>Dialog.Close(1127)</onleft>
-				<onright>450</onright>
+				<onright>Skin.Reset(Delete_Show_Number_1)</onright>
+				<onright>Skin.Reset(Delete_Show_Number_2)</onright>
+				<onright>Skin.Reset(Delete_Show_Number_3)</onright>
+				<onright>Skin.Reset(Delete_Show_Number_4)</onright>
+				<onright>Skin.Reset(Delete_Show_Number_5)</onright>
+				<onright>Skin.Reset(Delete_Show_Number_6)</onright>
+				<onright>Skin.Reset(Delete_Show_Number_7)</onright>
+				<onright>Skin.Reset(Delete_Show_Number_8)</onright>
+				<onright>Skin.Reset(Delete_Show_Number_9)</onright>
+				<onright>Skin.Reset(Delete_Show_Number_10)</onright>
 				<ondown>450</ondown>
 				<pagecontrol>-</pagecontrol>
 				<scrolltime>200</scrolltime>
@@ -167,7 +176,7 @@
 				</focusedlayout>
 				<content>
 					<item id="1">
-						<label fallback="Enable Delete Prompt">$INFO[Skin.String(Delete_Show_Number_1)]</label>
+						<label fallback="Press 'ENTER' To Enable">$INFO[Skin.String(Delete_Show_Number_1)]</label>
 						<label2>1.</label2>
 						<onclick>Skin.SetString(Delete_Show_Number_1,$INFO[ListItem.Title])</onclick>
 						<onclick>-</onclick>
@@ -175,7 +184,7 @@
 						<thumb>-</thumb>
 					</item>
 					<item id="2">
-						<label fallback="Enable Delete Prompt">$INFO[Skin.String(Delete_Show_Number_2)]</label>
+						<label fallback="Press 'ENTER' To Enable">$INFO[Skin.String(Delete_Show_Number_2)]</label>
 						<label2>2.</label2>
 						<onclick>Skin.SetString(Delete_Show_Number_2,$INFO[ListItem.Title])</onclick>
 						<onclick>-</onclick>
@@ -183,7 +192,7 @@
 						<thumb>-</thumb>
 					</item>
 					<item id="3">
-						<label fallback="Enable Delete Prompt">$INFO[Skin.String(Delete_Show_Number_3)]</label>
+						<label fallback="Press 'ENTER' To Enable">$INFO[Skin.String(Delete_Show_Number_3)]</label>
 						<label2>3.</label2>
 						<onclick>Skin.SetString(Delete_Show_Number_3,$INFO[ListItem.Title])</onclick>
 						<onclick>-</onclick>
@@ -191,7 +200,7 @@
 						<thumb>-</thumb>
 					</item>
 					<item id="4">
-						<label fallback="Enable Delete Prompt">$INFO[Skin.String(Delete_Show_Number_4)]</label>
+						<label fallback="Press 'ENTER' To Enable">$INFO[Skin.String(Delete_Show_Number_4)]</label>
 						<label2>4.</label2>
 						<onclick>Skin.SetString(Delete_Show_Number_4,$INFO[ListItem.Title])</onclick>
 						<onclick>-</onclick>
@@ -199,7 +208,7 @@
 						<thumb>-</thumb>
 					</item>
 					<item id="5">
-						<label fallback="Enable Delete Prompt">$INFO[Skin.String(Delete_Show_Number_5)]</label>
+						<label fallback="Press 'ENTER' To Enable">$INFO[Skin.String(Delete_Show_Number_5)]</label>
 						<label2>5.</label2>
 						<onclick>Skin.SetString(Delete_Show_Number_5,$INFO[ListItem.Title])</onclick>
 						<onclick>-</onclick>
@@ -207,7 +216,7 @@
 						<thumb>-</thumb>
 					</item>
 					<item id="6">
-						<label fallback="Enable Delete Prompt">$INFO[Skin.String(Delete_Show_Number_6)]</label>
+						<label fallback="Press 'ENTER' To Enable">$INFO[Skin.String(Delete_Show_Number_6)]</label>
 						<label2>6.</label2>
 						<onclick>Skin.SetString(Delete_Show_Number_6,$INFO[ListItem.Title])</onclick>
 						<onclick>-</onclick>
@@ -215,7 +224,7 @@
 						<thumb>-</thumb>
 					</item>
 					<item id="7">
-						<label fallback="Enable Delete Prompt">$INFO[Skin.String(Delete_Show_Number_7)]</label>
+						<label fallback="Press 'ENTER' To Enable">$INFO[Skin.String(Delete_Show_Number_7)]</label>
 						<label2>7.</label2>
 						<onclick>Skin.SetString(Delete_Show_Number_7,$INFO[ListItem.Title])</onclick>
 						<onclick>-</onclick>
@@ -223,7 +232,7 @@
 						<thumb>-</thumb>
 					</item>
 					<item id="8">
-						<label fallback="Enable Delete Prompt">$INFO[Skin.String(Delete_Show_Number_8)]</label>
+						<label fallback="Press 'ENTER' To Enable">$INFO[Skin.String(Delete_Show_Number_8)]</label>
 						<label2>8.</label2>
 						<onclick>Skin.SetString(Delete_Show_Number_8,$INFO[ListItem.Title])</onclick>
 						<onclick>-</onclick>
@@ -231,7 +240,7 @@
 						<thumb>-</thumb>
 					</item>
 					<item id="9">
-						<label fallback="Enable Delete Prompt">$INFO[Skin.String(Delete_Show_Number_9)]</label>
+						<label fallback="Press 'ENTER' To Enable">$INFO[Skin.String(Delete_Show_Number_9)]</label>
 						<label2>9.</label2>
 						<onclick>Skin.SetString(Delete_Show_Number_9,$INFO[ListItem.Title])</onclick>
 						<onclick>-</onclick>
@@ -239,7 +248,7 @@
 						<thumb>-</thumb>
 					</item>
 					<item id="10">
-						<label fallback="Enable Delete Prompt">$INFO[Skin.String(Delete_Show_Number_10)]</label>
+						<label fallback="Press 'ENTER' To Enable">$INFO[Skin.String(Delete_Show_Number_10)]</label>
 						<label2>10.</label2>
 						<onclick>Skin.SetString(Delete_Show_Number_10,$INFO[ListItem.Title])</onclick>
 						<onclick>-</onclick>
@@ -247,18 +256,6 @@
 						<thumb>-</thumb>
 					</item>
 				</content>
-			</control>
-			<control type="label">
-				<description>Page label</description>
-				<posx>30r</posx>
-				<posy>670</posy>
-				<width>350</width>
-				<height>30</height>
-				<align>right</align>
-				<aligny>center</aligny>
-				<font>font12caps</font>
-				<textcolor>blue</textcolor>
-				<label>($INFO[Container(450).NumItems]) $LOCALIZE[31025] - $LOCALIZE[31024] ($INFO[Container(450).CurrentPage]/$INFO[Container(450).NumPages])</label>
 			</control>
 		</control>
 	</controls>
