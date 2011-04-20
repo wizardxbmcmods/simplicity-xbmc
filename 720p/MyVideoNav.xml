@@ -45,6 +45,8 @@
 		<control type="button" id="9999">
 			<visible>!Container.Content(TVShows)</visible>
 			<onfocus>SetFocus(50)</onfocus>
+			<texturenofocus>-</texturenofocus>
+			<texturefocus>-</texturefocus>
 		</control>  
 
 

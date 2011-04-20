@@ -833,6 +833,84 @@
 						<visible>!Skin.HasSetting(SubMenuNoTVPluginsButton)</visible>
 					</control>
 				</control>
+				<control type="grouplist" id="9018">
+					<posx>120</posx>
+					<posy>-135</posy>
+					<width>1020</width>
+					<height>550</height>
+					<onleft>9018</onleft>
+					<onright>9018</onright>
+					<onup>9000</onup>
+					<ondown>9000</ondown>
+					<itemgap>0</itemgap>
+					<orientation>horizontal</orientation>
+					<visible>Container(9000).HasFocus(15)</visible>
+					<control type="button" id="90181">
+						<animation effect="slide" start="0,0" end="0,-10" time="100" >Focus</animation>
+						<animation effect="slide" start="0,-10" end="0,0" time="100" >UnFocus</animation>
+						<include>ButtonHomeSubCommonValuesHome</include>
+						<align>center</align>
+						<label>Monday</label>
+						<onclick>ActivateWindow(1117,return)</onclick>
+						<visible>!Skin.HasSetting(HomeMenuNoTVGuideButton)</visible>
+					</control>
+					<control type="button" id="90182">
+						<animation effect="slide" start="0,0" end="0,-10" time="100" >Focus</animation>
+						<animation effect="slide" start="0,-10" end="0,0" time="100" >UnFocus</animation>
+						<include>ButtonHomeSubCommonValuesHome</include>
+						<align>center</align>
+						<label>Tuesday</label>
+						<onclick>ActivateWindow(1124,return)</onclick>
+						<visible>!Skin.HasSetting(HomeMenuNoTVGuideButton)</visible>
+					</control>
+					<control type="button" id="90183">
+						<animation effect="slide" start="0,0" end="0,-10" time="100" >Focus</animation>
+						<animation effect="slide" start="0,-10" end="0,0" time="100" >UnFocus</animation>
+						<include>ButtonHomeSubCommonValuesHome</include>
+						<align>center</align>
+						<label>Wednesday</label>
+						<onclick>ActivateWindow(1119,return)</onclick>
+						<visible>!Skin.HasSetting(HomeMenuNoTVGuideButton)</visible>
+					</control>
+					<control type="button" id="90184">
+						<animation effect="slide" start="0,0" end="0,-10" time="100" >Focus</animation>
+						<animation effect="slide" start="0,-10" end="0,0" time="100" >UnFocus</animation>
+						<include>ButtonHomeSubCommonValuesHome</include>
+						<align>center</align>
+						<label>Thursday</label>
+						<onclick>ActivateWindow(1120,return)</onclick>
+						<visible>!Skin.HasSetting(HomeMenuNoTVGuideButton)</visible>
+					</control>
+					<control type="button" id="90185">
+						<animation effect="slide" start="0,0" end="0,-10" time="100" >Focus</animation>
+						<animation effect="slide" start="0,-10" end="0,0" time="100" >UnFocus</animation>
+						<include>ButtonHomeSubCommonValuesHome</include>
+						<align>center</align>
+						<label>Friday</label>
+						<onclick>ActivateWindow(1121,return)</onclick>
+						<visible>!Skin.HasSetting(HomeMenuNoTVGuideButton)</visible>
+					</control>
+					<control type="button" id="90186">
+						<animation effect="slide" start="0,0" end="0,-10" time="100" >Focus</animation>
+						<animation effect="slide" start="0,-10" end="0,0" time="100" >UnFocus</animation>
+						<include>ButtonHomeSubCommonValuesHome</include>
+						<align>center</align>
+						<label>Saturday</label>
+						<onclick>ActivateWindow(1122,return)</onclick>
+						<visible>!Skin.HasSetting(HomeMenuNoTVGuideButton)</visible>
+					</control>
+					<control type="button" id="90187">
+						<animation effect="slide" start="0,0" end="0,-10" time="100" >Focus</animation>
+						<animation effect="slide" start="0,-10" end="0,0" time="100" >UnFocus</animation>
+						<include>ButtonHomeSubCommonValuesHome</include>
+						<align>center</align>
+						<label>Sunday</label>
+						<onclick>ActivateWindow(1123,return)</onclick>
+						<visible>!Skin.HasSetting(HomeMenuNoTVGuideButton)</visible>
+					</control>
+				</control>
+
+
 			</control>
 			<control type="image">
 				<posx>0</posx>
@@ -861,7 +939,6 @@
 			<height>1</height>
 			<label>-</label>
 			<font>-</font>
-			<onfocus>XBMC.RunScript(script.recentlyadded,limit=10&amp;totals=True&amp;albums=True&amp;unplayed=True)</onfocus>
 			<onfocus>SetFocus(9000)</onfocus>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>

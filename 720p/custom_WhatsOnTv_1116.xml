@@ -684,6 +684,7 @@
 				<texturenofocus border="5">-</texturenofocus>
 				<texturefocus border="5">simplicity/today-glow.png</texturefocus>
 				<font>Simplicity_20_Bold_title</font>
+				<onclick>ActivateWindow(1117)</onclick>
 			</control>
 			<control type="button" id="516">
 				<posx>290</posx>
@@ -704,6 +705,7 @@
 				<texturenofocus border="5">-</texturenofocus>
 				<texturefocus border="5">simplicity/today-glow.png</texturefocus>
 				<font>Simplicity_20_Bold_title</font>
+				<onclick>ActivateWindow(1124)</onclick>
 			</control>
 			<control type="button" id="517">
 				<posx>435</posx>
@@ -724,6 +726,7 @@
 				<texturenofocus border="5">-</texturenofocus>
 				<texturefocus border="5">simplicity/today-glow.png</texturefocus>
 				<font>Simplicity_20_Bold_title</font>
+				<onclick>ActivateWindow(1119)</onclick>
 			</control>
 			<control type="button" id="518">
 				<posx>580</posx>
@@ -744,6 +747,7 @@
 				<texturenofocus border="5">-</texturenofocus>
 				<texturefocus border="5">simplicity/today-glow.png</texturefocus>
 				<font>Simplicity_20_Bold_title</font>
+				<onclick>ActivateWindow(1120)</onclick>
 			</control>
 			<control type="button" id="519">
 				<posx>725</posx>
@@ -764,6 +768,7 @@
 				<texturenofocus border="5">-</texturenofocus>
 				<texturefocus border="5">simplicity/today-glow.png</texturefocus>
 				<font>Simplicity_20_Bold_title</font>
+				<onclick>ActivateWindow(1121)</onclick>
 			</control>
 			<control type="button" id="520">
 				<posx>870</posx>
@@ -784,6 +789,7 @@
 				<texturenofocus border="5">-</texturenofocus>
 				<texturefocus border="5">simplicity/today-glow.png</texturefocus>
 				<font>Simplicity_20_Bold_title</font>
+				<onclick>ActivateWindow(1122)</onclick>
 			</control>
 			<control type="button" id="521">
 				<posx>1015</posx>
@@ -804,6 +810,7 @@
 				<texturenofocus border="5">-</texturenofocus>
 				<texturefocus border="5">simplicity/today-glow.png</texturefocus>
 				<font>Simplicity_20_Bold_title</font>
+				<onclick>ActivateWindow(1123)</onclick>
 			</control>
 			<control type="group">
 				<posy>30</posy>

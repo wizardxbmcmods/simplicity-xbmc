@@ -1528,6 +1528,19 @@
 		<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
 		<pulseonselect>false</pulseonselect>
 	</include>
+	<include name="ButtonInfoDialogsCommonValuesTVGuide">
+		<height>110</height>
+		<width>260</width>
+		<font>Simplicity_24</font>
+		<textcolor>black</textcolor>
+		<focusedcolor>black</focusedcolor>
+		<shadowcolor>grey2</shadowcolor>
+		<align>center</align>
+		<aligny>center</aligny>
+		<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
+		<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
+		<pulseonselect>false</pulseonselect>
+	</include>
 	<include name="SmallMusicInfo">
 		<control type="image">
 			<description>gradient</description>
