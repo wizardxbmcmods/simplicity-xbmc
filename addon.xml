@@ -1,12 +1,11 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <addon
   id="skin.simplicity"
-  version="1.0.9"
+  version="1.1.0"
   name="Simplicity"
   provider-name="igotdvds">
   <requires>
     <import addon="xbmc.gui" version="2.11"/>
-	<import addon="script.recentlyadded" version="1.0.8"/>  
 	<import addon="script.logo-downloader" version="2.0"/>
 	<import addon="script.randomitems" version="1.0.2"/>
 	<import addon="script.favourites" version="1.0.3"/>

@@ -605,7 +605,7 @@
 							<width>297</width>
 							<height>445</height>
 							<aspectratio>stretch</aspectratio>
-							<texture diffuse="simplicity/posterdiffuse.png">$INFO[ListItem.Thumb]</texture>
+							<texture diffuse="simplicity/posterdiffuse.png" fallback="poster-fallback.png">$INFO[ListItem.Thumb]</texture>
 						</control>
 						<control type="image">
 							<posx>16</posx>
@@ -653,7 +653,7 @@
 							<width>297</width>
 							<height>445</height>
 							<aspectratio>stretch</aspectratio>
-							<texture diffuse="simplicity/posterdiffuse.png">$INFO[ListItem.Thumb]</texture>
+							<texture diffuse="simplicity/posterdiffuse.png" fallback="poster-fallback.png">$INFO[ListItem.Thumb]</texture>
 						</control>
 						<control type="image">
 							<posx>16</posx>

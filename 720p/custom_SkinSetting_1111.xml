@@ -556,7 +556,7 @@
 						<textureradionofocus>simplicity/settings-radiobutton-off.png</textureradionofocus>
 						<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
 						<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
-						<label>Show Recently Added Information</label>
+						<label>Show Extra Info Above Main Menu</label>
 						<onclick>Skin.ToggleSetting(homepageHideRecentlyAdded)</onclick>
 						<selected>Skin.HasSetting(homepageHideRecentlyAdded)</selected>
 					</control>
@@ -3052,7 +3052,23 @@
 							<onclick>Skin.ToggleSetting(EnableWatchedIconMovies)</onclick>
 							<selected>Skin.HasSetting(EnableWatchedIconMovies)</selected>
 						</control>
-						<control type="radiobutton" id="513">
+						<control type="radiobutton" id="512">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_20</font>
+							<label>Remove Library Totals From Home Screen</label>
+							<textcolor>white</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<radiowidth>83</radiowidth>
+							<radioheight>67</radioheight>
+							<textureradiofocus>simplicity/settings-radiobutton-on.png</textureradiofocus>
+							<textureradionofocus>simplicity/settings-radiobutton-off.png</textureradionofocus>
+							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
+							<onclick>Skin.ToggleSetting(NoTotals)</onclick>
+							<selected>Skin.HasSetting(NoTotals)</selected>
+						</control>
+						<control type="radiobutton" id="516">
 							<posx>0</posx>
 							<posy>0</posy>
 							<width>900</width>
@@ -3070,7 +3086,7 @@
 							<onclick>Skin.ToggleSetting(LyricScript_Enable)</onclick>
 							<selected>Skin.HasSetting(LyricScript_Enable)</selected>
 						</control>
-						<control type="button" id="514">
+						<control type="button" id="517">
 							<posx>0</posx>
 							<posy>0</posy>
 							<width>900</width>
@@ -3085,7 +3101,7 @@
 							<onclick>Skin.SetAddon(LyricScript_Path,xbmc.python.lyrics)</onclick>
 							<visible>Skin.HasSetting(LyricScript_Enable)</visible>
 						</control>
-						<control type="radiobutton" id="515">
+						<control type="radiobutton" id="518">
 							<width>900</width>
 							<height>40</height>
 							<font>Simplicity_20</font>
@@ -3101,7 +3117,7 @@
 							<onclick>Skin.ToggleSetting(SubtitleDownload_Enable)</onclick>
 							<selected>Skin.HasSetting(SubtitleDownload_Enable)</selected>
 						</control>
-						<control type="button" id="516">
+						<control type="button" id="519">
 							<width>900</width>
 							<height>40</height>
 							<font>Simplicity_18</font>
@@ -5065,7 +5081,16 @@
 							<onclick>Skin.ToggleSetting(UseTvTunes)</onclick>
 							<selected>Skin.HasSetting(UseTvTunes)</selected>
 						</control>
-						<control type="label" id="2010">
+						<control type="textbox" id="2010">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_20</font>
+							<label></label>
+							<textcolor>grey2</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<align>left</align>
+						</control>
+						<control type="label" id="2011">
 							<width>750</width>
 							<height>45</height>
 							<font>Simplicity_20_Bold_title</font>
@@ -5075,7 +5100,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 						</control>
-						<control type="button" id="2011">
+						<control type="button" id="2012">
 							<width>180</width>
 							<height>40</height>
 							<align>center</align>
@@ -5089,7 +5114,16 @@
 							<font>Simplicity_20_Bold_title</font>
 							<onclick>XBMC.RunScript(script.logo-downloader,mode=bulk,clearart=True,logo=True,showthumb=landscape.jpg,poster=poster.jpg,banner=banner.jpg)</onclick>
 						</control>
-						<control type="label" id="2012">
+						<control type="textbox" id="2013">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_20</font>
+							<label></label>
+							<textcolor>grey2</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<align>left</align>
+						</control>
+						<control type="label" id="2014">
 							<width>750</width>
 							<height>45</height>
 							<font>Simplicity_20_Bold_title</font>
@@ -5099,7 +5133,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 						</control>
-						<control type="button" id="2013">
+						<control type="button" id="2015">
 							<width>180</width>
 							<height>40</height>
 							<align>center</align>
@@ -5113,9 +5147,18 @@
 							<font>Simplicity_20_Bold_title</font>
 							<onclick>XBMC.RunScript(script.TvTunes)</onclick>
 						</control>
-					<control type="label" id="2014">
+						<control type="textbox" id="2016">
+							<width>900</width>
+							<height>70</height>
+							<font>Simplicity_20</font>
+							<label></label>
+							<textcolor>grey2</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<align>left</align>
+						</control>
+					<control type="label" id="2017">
 							<width>750</width>
-							<height>75</height>
+							<height>55</height>
 							<font>Simplicity_20_Bold_title</font>
 							<label>*EXPERT Option</label>
 							<textcolor>yellow</textcolor>
@@ -5123,7 +5166,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 						</control>
-						<control type="label" id="2015">
+						<control type="label" id="2018">
 							<width>900</width>
 							<height>45</height>
 							<font>Simplicity_20</font>
@@ -5133,7 +5176,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 						</control>
-						<control type="textbox" id="2016">
+						<control type="textbox" id="2019">
 							<width>900</width>
 							<height>80</height>
 							<font>Simplicity_20</font>
@@ -5142,7 +5185,7 @@
 							<shadowcolor>black</shadowcolor>
 							<align>left</align>
 						</control>
-						<control type="radiobutton" id="2017">
+						<control type="radiobutton" id="2020">
 							<width>900</width>
 							<height>40</height>
 							<font>Simplicity_20</font>
@@ -5159,6 +5202,50 @@
 							<selected>Skin.HasSetting(DeleteEps)</selected>
 						</control>
 					</control>
+					<control type="image">
+						<posx>658</posx>
+						<posy>240</posy>
+						<width>100</width>
+						<height>100</height>	
+						<texture diffuse="simplicity/addon-diffuse.png">addons/logos.png</texture>
+						<bordertexture border="2">simplicity/thumbborder.png</bordertexture>
+						<bordersize>2</bordersize>
+						<visible>Container(9000).Hasfocus(20)</visible>
+					</control>
+						<control type="label">
+							<posx>778</posx>
+							<posy>260</posy>
+						<width>400</width>
+						<height>400</height>	
+							<font>Simplicity_20_Bold</font>
+							<label>[COLOR =red]*[/COLOR] The Logo Downloader Addon is Required</label>
+							<textcolor>grey2</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<align>left</align>
+							<visible>Container(9000).Hasfocus(20)</visible>
+						</control>
+					<control type="image">
+						<posx>658</posx>
+						<posy>370</posy>
+						<width>100</width>
+						<height>100</height>	
+						<texture diffuse="simplicity/addon-diffuse.png">addons/tunes.png</texture>
+						<bordertexture border="2">simplicity/thumbborder.png</bordertexture>
+						<bordersize>2</bordersize>
+						<visible>Container(9000).Hasfocus(20)</visible>
+					</control>
+						<control type="label">
+							<posx>778</posx>
+							<posy>390</posy>
+						<width>400</width>
+						<height>400</height>	
+							<font>Simplicity_20_Bold</font>
+							<label>[COLOR =red]*[/COLOR] The TV Tunes Addon is Required</label>
+							<textcolor>grey2</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<align>left</align>
+							<visible>Container(9000).Hasfocus(20)</visible>
+						</control>
 					<control type="grouplist" id="9021">
 						<visible>Container(9000).Hasfocus(21)</visible>
 						<posx>310</posx>

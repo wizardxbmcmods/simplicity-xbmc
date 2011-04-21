@@ -73,7 +73,7 @@
 								<width>93</width>
 								<height>138</height>
 								<aspectratio>stretch</aspectratio>
-								<texture diffuse="simplicity/poster-home-diffuse.png">$INFO[ListItem.ActualIcon]</texture>
+								<texture diffuse="simplicity/poster-home-diffuse.png" fallback="poster-fallback.png">$INFO[ListItem.ActualIcon]</texture>
 							</control>
 							<control type="image">
 								<posx>0</posx>
@@ -103,7 +103,7 @@
 								<width>93</width>
 								<height>138</height>
 								<aspectratio>stretch</aspectratio>
-								<texture diffuse="simplicity/poster-home-diffuse.png">$INFO[ListItem.ActualIcon]</texture>
+								<texture diffuse="simplicity/poster-home-diffuse.png" fallback="poster-fallback.png">$INFO[ListItem.ActualIcon]</texture>
 							</control>
 							<control type="largeimage">
 								<posx>1</posx>
@@ -162,7 +162,7 @@
 						<posy>85</posy>
 						<height>20</height>
 						<width>260</width>
-						<label>$INFO[Window.Property(LatestMovie.1.Year)], $INFO[Window.Property(LatestMovie.1.RunningTime)]</label>
+						<label>$INFO[Window.Property(LatestMovie.1.Year)], $INFO[Window.Property(LatestMovie.1.RunningTime)] min</label>
 						<align>left</align>
 						<aligny>center</aligny>
 						<font>Simplicity_18</font>
@@ -174,7 +174,7 @@
 						<posy>115</posy>
 						<height>20</height>
 						<width>210</width>
-						<label>Director: [COLOR=white]$INFO[Window.Property(LatestMovie.1.Director)][/COLOR]</label>
+						<label>Rating: [COLOR=white]$INFO[Window.Property(LatestMovie.1.Rating)][/COLOR]</label>
 						<align>left</align>
 						<aligny>center</aligny>
 						<font>Simplicity_18</font>
@@ -186,7 +186,7 @@
 						<posy>145</posy>
 						<width>154</width>
 						<height>30</height>
-						<texture>$INFO[Window.Property(LatestMovie.1.RatingImage)].png</texture>
+						<texture>$INFO[Window.Property(LatestMovie.1.Rating)].png</texture>
 					</control>
 				</control>
 
@@ -230,7 +230,7 @@
 								<height>138</height>
 								<aspectratio align="left">stretch</aspectratio>
 								<fadetime>200</fadetime>
-								<texture diffuse="simplicity/poster-home-diffuse.png">$INFO[ListItem.ActualIcon]</texture>
+								<texture diffuse="simplicity/poster-home-diffuse.png" fallback="poster-fallback.png">$INFO[ListItem.ActualIcon]</texture>
 							</control>	
 							<control type="largeimage">
 								<posx>1</posx>
@@ -268,7 +268,7 @@
 								<width>93</width>
 								<height>138</height>
 								<aspectratio>stretch</aspectratio>
-								<texture diffuse="simplicity/poster-home-diffuse.png">$INFO[ListItem.ActualIcon]</texture>
+								<texture diffuse="simplicity/poster-home-diffuse.png" fallback="poster-fallback.png">$INFO[ListItem.ActualIcon]</texture>
 							</control>
 							<control type="largeimage">
 								<posx>1</posx>
@@ -504,18 +504,30 @@
 						<font>Simplicity_18</font>
 						<textcolor>grey2</textcolor>
 					</control>	
-					<!--<control type="label">
+					<control type="label">
 						<description>Title label</description>
-						<posx>220</posx>
-						<posy>130</posy>
+						<posx>270</posx>
+						<posy>120</posy>
 						<height>20</height>
-						<width>300</width>
-						<label>$INFO[Window.Property(RandomEpisode.1.RunningTime)]</label>
+						<width>210</width>
+						<label>Season: [COLOR=white]$INFO[Window.Property(LatestEpisode.1.EpisodeSeason)][/COLOR] - Episode: [COLOR=white]$INFO[Window.Property(LatestEpisode.1.EpisodeNumber)][/COLOR]</label>
 						<align>left</align>
 						<aligny>center</aligny>
-						<font>Simplicity_24_Bold</font>
+						<font>Simplicity_18</font>
 						<textcolor>grey2</textcolor>
-					</control>-->	
+					</control>	
+					<control type="label">
+						<description>Title label</description>
+						<posx>270</posx>
+						<posy>150</posy>
+						<height>20</height>
+						<width>210</width>
+						<label></label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<font>Simplicity_18</font>
+						<textcolor>grey2</textcolor>
+					</control>	
 				</control>
 
 				<control type="group">
@@ -575,19 +587,39 @@
 							</control>	
 							<control type="image">
 								<posx>4</posx>
-								<posy>98</posy>
+								<posy>4</posy>
 								<width>192</width>
-								<height>18</height>
+								<height>22</height>
 								<aspectratio>stretch</aspectratio>
-								<texture>simplicity/black.png</texture>
+								<texture flipy="true">recent-fade.png</texture>
+							</control>	
+							<control type="image">
+								<posx>4</posx>
+								<posy>94</posy>
+								<width>192</width>
+								<height>22</height>
+								<aspectratio>stretch</aspectratio>
+								<texture>recent-fade.png</texture>
 							</control>	
 							<control type="label">
 								<description>Title label</description>
-								<posx>102</posx>
-								<posy>96</posy>
+								<posx>100</posx>
+								<posy>2</posy>
 								<height>20</height>
 								<width>170</width>
 								<label>$INFO[ListItem.label]</label>
+								<align>center</align>
+								<aligny>center</aligny>
+								<font>Simplicity_16</font>
+								<textcolor>white</textcolor>
+							</control>		
+							<control type="label">
+								<description>Title label</description>
+								<posx>100</posx>
+								<posy>96</posy>
+								<height>20</height>
+								<width>170</width>
+								<label>$INFO[ListItem.label2]</label>
 								<align>center</align>
 								<aligny>center</aligny>
 								<font>Simplicity_16</font>
@@ -633,19 +665,39 @@
 							</control>	
 							<control type="image">
 								<posx>4</posx>
-								<posy>98</posy>
+								<posy>4</posy>
 								<width>192</width>
-								<height>18</height>
+								<height>22</height>
 								<aspectratio>stretch</aspectratio>
-								<texture>simplicity/black-back.png</texture>
+								<texture flipy="true">recent-fade.png</texture>
+							</control>	
+							<control type="image">
+								<posx>4</posx>
+								<posy>94</posy>
+								<width>192</width>
+								<height>22</height>
+								<aspectratio>stretch</aspectratio>
+								<texture>recent-fade.png</texture>
 							</control>	
 							<control type="label">
 								<description>Title label</description>
-								<posx>102</posx>
-								<posy>96</posy>
+								<posx>100</posx>
+								<posy>2</posy>
 								<height>20</height>
 								<width>170</width>
 								<label>$INFO[ListItem.label]</label>
+								<align>center</align>
+								<aligny>center</aligny>
+								<font>Simplicity_16</font>
+								<textcolor>white</textcolor>
+							</control>		
+							<control type="label">
+								<description>Title label</description>
+								<posx>100</posx>
+								<posy>96</posy>
+								<height>20</height>
+								<width>170</width>
+								<label>$INFO[ListItem.label2]</label>
 								<align>center</align>
 								<aligny>center</aligny>
 								<font>Simplicity_16</font>
@@ -664,42 +716,42 @@
 						<content>
 							<item id="2">
 								<label>$INFO[Window.Property(LatestEpisode.2.ShowTitle)]</label>
-								<label2>$INFO[Window.Property(LatestEpisode.2.Year)]</label2>
+								<label2>Season: [COLOR=white]$INFO[Window.Property(LatestEpisode.1.EpisodeSeason)][/COLOR] - Episode: [COLOR=white]$INFO[Window.Property(LatestEpisode.1.EpisodeNumber)][/COLOR]</label2>
 								<onclick>PlayMedia($INFO[Window.Property(LatestEpisode.2.Path)])</onclick>
 								<icon>$INFO[Window.Property(LatestEpisode.2.Thumb)]</icon>
 								<thumb>$INFO[Window.Property(LatestEpisode.2.RunningTime)]</thumb>
 							</item>
 							<item id="3">
 								<label>$INFO[Window.Property(LatestEpisode.3.ShowTitle)]</label>
-								<label2>$INFO[Window.Property(LatestEpisode.3.Year)]</label2>
+								<label2>Season: [COLOR=white]$INFO[Window.Property(LatestEpisode.3.EpisodeSeason)][/COLOR] - Episode: [COLOR=white]$INFO[Window.Property(LatestEpisode.3.EpisodeNumber)][/COLOR]</label2>
 								<onclick>PlayMedia($INFO[Window.Property(LatestEpisode.3.Path)])</onclick>
 								<icon>$INFO[Window.Property(LatestEpisode.3.Thumb)]</icon>
 								<thumb>$INFO[Window.Property(LatestEpisode.3.RunningTime)]</thumb>
 							</item>
 							<item id="4">
 								<label>$INFO[Window.Property(LatestEpisode.4.ShowTitle)]</label>
-								<label2>$INFO[Window.Property(LatestEpisode.4.Year)]</label2>
+								<label2>Season: [COLOR=white]$INFO[Window.Property(LatestEpisode.4.EpisodeSeason)][/COLOR] - Episode: [COLOR=white]$INFO[Window.Property(LatestEpisode.4.EpisodeNumber)][/COLOR]</label2>
 								<onclick>PlayMedia($INFO[Window.Property(LatestEpisode.4.Path)])</onclick>
 								<icon>$INFO[Window.Property(LatestEpisode.4.Thumb)]</icon>
 								<thumb>$INFO[Window.Property(LatestEpisode.4.RunningTime)]</thumb>
 							</item>
 							<item id="5">
 								<label>$INFO[Window.Property(LatestEpisode.5.ShowTitle)]</label>
-								<label2>$INFO[Window.Property(LatestEpisode.5.Year)]</label2>
+								<label2>Season: [COLOR=white]$INFO[Window.Property(LatestEpisode.5.EpisodeSeason)][/COLOR] - Episode: [COLOR=white]$INFO[Window.Property(LatestEpisode.5.EpisodeNumber)][/COLOR]</label2>
 								<onclick>PlayMedia($INFO[Window.Property(LatestEpisode.5.Path)])</onclick>
 								<icon>$INFO[Window.Property(LatestEpisode.5.Thumb)]</icon>
 								<thumb>$INFO[Window.Property(LatestEpisode.5.RunningTime)]</thumb>
 							</item>
 							<item id="6">
 								<label>$INFO[Window.Property(LatestEpisode.6.ShowTitle)]</label>
-								<label2>$INFO[Window.Property(LatestEpisode.6.Year)]</label2>
+								<label2>Season: [COLOR=white]$INFO[Window.Property(LatestEpisode.6.EpisodeSeason)][/COLOR] - Episode: [COLOR=white]$INFO[Window.Property(LatestEpisode.6.EpisodeNumber)][/COLOR]</label2>
 								<onclick>PlayMedia($INFO[Window.Property(LatestEpisode.6.Path)])</onclick>
 								<icon>$INFO[Window.Property(LatestEpisode.6.Thumb)]</icon>
 								<thumb>$INFO[Window.Property(LatestEpisode.6.RunningTime)]</thumb>
 							</item>
 							<item id="7">
 								<label>$INFO[Window.Property(LatestEpisode.7.ShowTitle)]</label>
-								<label2>$INFO[Window.Property(LatestEpisode.7.Year)]</label2>
+								<label2>Season: [COLOR=white]$INFO[Window.Property(LatestEpisode.7.EpisodeSeason)][/COLOR] - Episode: [COLOR=white]$INFO[Window.Property(LatestEpisode.7.EpisodeNumber)][/COLOR]</label2>
 								<onclick>PlayMedia($INFO[Window.Property(LatestEpisode.7.Path)])</onclick>
 								<icon>$INFO[Window.Property(LatestEpisode.7.Thumb)]</icon>
 								<thumb>$INFO[Window.Property(LatestEpisode.7.RunningTime)]</thumb>
@@ -1151,11 +1203,11 @@
 					<animation effect="fade" time="400" delay="800" start="0" end="100" condition="[Container(9000).Hasfocus(5) + !Skin.HasSetting(HomeMenuNoMusicButton)]">Conditional</animation>
 					<control type="label">
 						<description>Title label</description>
-						<posx>49</posx>
+						<posx>54</posx>
 						<posy>20</posy>
 						<height>20</height>
 						<width>200</width>
-						<label>Latest Music</label>
+						<label>Latest Album</label>
 						<align>center</align>
 						<aligny>center</aligny>
 						<font>Simplicity_26</font>
@@ -1163,11 +1215,11 @@
 					</control>	
 					<control type="label">
 						<description>Title label</description>
-						<posx>530</posx>
+						<posx>539</posx>
 						<posy>20</posy>
 						<height>20</height>
 						<width>200</width>
-						<label>New Music</label>
+						<label>Latest Songs</label>
 						<align>center</align>
 						<aligny>center</aligny>
 						<font>Simplicity_26</font>
@@ -1261,8 +1313,9 @@
 							<item id="1">
 								<label>-</label>
 								<label2>-</label2>
-								<onclick>PlayMedia($INFO[Window.Property(LatestSong.1.Path)])</onclick>
-								<icon>$INFO[Window.Property(LatestSong.1.Thumb)]</icon>
+								<onclick>PlayList.Clear</onclick>
+								<onclick>PlayMedia(&quot;$INFO[Window.Property(LatestAlbum.1.Path)]&quot;)</onclick>
+								<icon>$INFO[Window.Property(LatestAlbum.1.Thumb)]</icon>
 								<thumb>-</thumb>
 							</item>
 						</content>
@@ -1273,7 +1326,7 @@
 						<posy>60</posy>
 						<height>20</height>
 						<width>300</width>
-						<label>$INFO[Window.Property(LatestSong.1.Artist)]</label>
+						<label>$INFO[Window.Property(LatestAlbum.1.Title)]</label>
 						<align>left</align>
 						<aligny>center</aligny>
 						<font>Simplicity_18</font>
@@ -1285,7 +1338,7 @@
 						<posy>90</posy>
 						<height>20</height>
 						<width>300</width>
-						<label>"$INFO[Window.Property(LatestSong.1.Title)]"</label>
+						<label>"$INFO[Window.Property(LatestAlbum.1.Artist)]"</label>
 						<align>left</align>
 						<aligny>center</aligny>
 						<font>Simplicity_18</font>
@@ -1297,7 +1350,7 @@
 						<posy>120</posy>
 						<height>20</height>
 						<width>300</width>
-						<label>$INFO[Window.Property(LatestSong.1.Album)]</label>
+						<label>$INFO[Window.Property(LatestAlbum.1.Year)]</label>
 						<align>left</align>
 						<aligny>center</aligny>
 						<font>Simplicity_18</font>
@@ -1518,7 +1571,7 @@
 									<height>102</height>
 									<texture>simplicity/app-glow.png</texture>
 									<animation effect="zoom" start="100" end="105" center="auto" time="200" tween="back" easing="out" reversible="false">Focus</animation>
-									<visible>!Control.HasFocus(9000)</visible>
+									<visible>Control.HasFocus(8009)</visible>
 								</control>
 								<control type="image">
 									<posx>23</posx>
@@ -1648,7 +1701,7 @@
 									<height>102</height>
 									<texture>simplicity/app-glow.png</texture>
 									<animation effect="zoom" start="100" end="105" center="auto" time="200" tween="back" easing="out" reversible="false">Focus</animation>
-									<visible>!Control.HasFocus(9000)</visible>
+									<visible>Control.HasFocus(8011)</visible>
 								</control>
 								<control type="image">
 									<posx>23</posx>
@@ -1779,7 +1832,7 @@
 									<height>102</height>
 									<texture>simplicity/app-glow.png</texture>
 									<animation effect="zoom" start="100" end="105" center="auto" time="200" tween="back" easing="out" reversible="false">Focus</animation>
-									<visible>!Control.HasFocus(9000)</visible>
+									<visible>Control.HasFocus(8010)</visible>
 								</control>
 								<control type="image">
 									<posx>23</posx>
@@ -1837,8 +1890,7 @@
 					</control>
 				</control>		
 				
-			
-				
+							
 				
 				
 

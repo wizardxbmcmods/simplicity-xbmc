@@ -1,3 +1,10 @@
+[B]1.1.0[/B] 
+
+- Cleaned up home screen
+- Added totals to home screen
+- Removed Recently Added Script
+
+
 [B]1.0.9[/B] 
 
 - Fixed icons disappearing

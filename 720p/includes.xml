@@ -1134,6 +1134,47 @@
 		</control>	
 	</include>
 
+<include name="RightOpenTVGuideWithScroll">
+		<control type="group">
+			<include>BottomSlide</include>
+			<control type="image">
+				<posx>150r</posx>
+				<posy>679</posy>
+				<width>15</width>
+				<height>15</height>
+				<texture>simplicity/right-arrow.png</texture>
+			</control>
+			<control type="label">
+				<description>View Options</description>
+				<posx>170r</posx>
+				<posy>675</posy>
+				<height>20</height>
+				<width>275</width>
+				<label>TV Guide</label>
+				<align>right</align>
+				<aligny>center</aligny>
+				<font>Simplicity_20</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<visible>!Control.HasFocus(58)</visible>
+			</control>	
+			<control type="label">
+				<description>View Options</description>
+				<posx>170r</posx>
+				<posy>675</posy>
+				<height>20</height>
+				<width>275</width>
+				<label>Scroll</label>
+				<align>right</align>
+				<aligny>center</aligny>
+				<font>Simplicity_20</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<visible>!Control.HasFocus(60)</visible>
+			</control>	
+		</control>	
+	</include>
+
 	<include name="DownOpenTVGuide">
 		<control type="group">
 			<include>BottomSlide</include>

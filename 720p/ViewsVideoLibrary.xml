@@ -2709,7 +2709,7 @@
 					<onleft>538</onleft>
 					<onright>538</onright>
 					<pagecontrol>70</pagecontrol>
-					<scrolltime>200</scrolltime>
+					<scrolltime>300</scrolltime>
 					<focusposition>1</focusposition>
 					<itemspacing>25</itemspacing>
 					<movement>3</movement>
@@ -2752,7 +2752,7 @@
 							<height>133</height>
 							<aligny>center</aligny>
 							<texture background="true">simplicity/landscape-slide-shadow.png</texture>
-							<animation effect="zoom" end="140" center="auto" time="200">Focus</animation> 
+							<animation effect="zoom" end="140" center="auto" time="300" reversible="false">Focus</animation> 
 							<aspectratio>stretch</aspectratio>
 						</control>
 						<control type="largeimage">
@@ -2762,7 +2762,7 @@
 							<height>125</height>
 							<aligny>center</aligny>
 							<texture diffuse="simplicity/landscape-slide-diffuse.png" background="true" fallback="nothumb.png">$INFO[ListItem.Path,,landscape.jpg]</texture>
-							<animation effect="zoom" end="140" center="auto" time="200">Focus</animation> 
+							<animation effect="zoom" end="140" center="auto" time="300" reversible="false">Focus</animation> 
 							<aspectratio>stretch</aspectratio>
 						</control>
 						<control type="largeimage">
@@ -2772,7 +2772,7 @@
 							<height>125</height>
 							<aligny>center</aligny>
 							<texture diffuse="simplicity/landscape-slide-diffuse.png" background="true">simplicity/banner-gloss.png</texture>
-							<animation effect="zoom" end="140" center="auto" time="200">Focus</animation> 
+							<animation effect="zoom" end="140" center="auto" time="300" reversible="false">Focus</animation> 
 							<aspectratio>stretch</aspectratio>
 						</control>
 					</focusedlayout>

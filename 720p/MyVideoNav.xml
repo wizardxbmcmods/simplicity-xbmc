@@ -49,8 +49,6 @@
 			<texturefocus>-</texturefocus>
 		</control>  
 
-
-		<include>CommonVideoBackground</include>
 		<control type="group">
 			<include>Window_OpenClose_Animation</include>		
 			<control type="image">

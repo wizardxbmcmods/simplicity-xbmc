@@ -81,11 +81,11 @@
 						<height>175</height>
 						<aspectratio>stretch</aspectratio>
 						<fadetime>600</fadetime>
-						<texture background="true" diffuse="simplicity/fanart-slide-fanart-diffuse.png">simplicity/icon-background.png</texture>
+						<texture background="true">simplicity/icon-background.png</texture>
 					</control>
 					<control type="image">
 						<description>icon</description>
-						<posx>75</posx>
+						<posx>70</posx>
 						<posy>0</posy>
 						<width>110</width>
 						<height>110</height>
@@ -124,18 +124,18 @@
 						<height>175</height>
 						<aspectratio>stretch</aspectratio>
 						<fadetime>600</fadetime>
-						<texture background="true" diffuse="simplicity/fanart-slide-fanart-diffuse.png">simplicity/icon-background-glow-yellow.png</texture>
-						<animation effect="zoom" start="100" end="105" center="auto" easing="out" tween="back" time="100">Focus</animation>
+						<texture background="true">simplicity/icon-background-glow-yellow.png</texture>
+						<animation effect="zoom" start="100" end="105" center="auto" time="100">Focus</animation>
 					</control>
 					<control type="image">
 						<description>icon</description>
-						<posx>75</posx>
+						<posx>70</posx>
 						<posy>0</posy>
 						<width>110</width>
 						<height>110</height>
 						<aspectratio>keep</aspectratio>
 						<texture>$INFO[ListItem.ActualIcon]</texture>
-						<animation effect="zoom" start="100" end="120" center="auto" easing="out" tween="back" time="100">Focus</animation>
+						<animation effect="zoom" start="100" end="105" center="auto" time="100">Focus</animation>
 					</control>
 					<control type="label">
 						<description>header label</description>
@@ -148,7 +148,7 @@
 						<align>center</align>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<animation effect="zoom" start="100" end="110" easing="out" tween="back" time="100">Focus</animation>
+						<animation effect="zoom" start="100" end="105" time="100">Focus</animation>
 					</control>
 				</focusedlayout>
 				<content>
