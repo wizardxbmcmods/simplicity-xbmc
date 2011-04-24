@@ -1151,6 +1151,7 @@
 
 <include name="RightOpenTVGuideWithScroll">
 		<control type="group">
+			<visible>Container().HasNext | Container().HasPrevious</visible>
 			<include>BottomSlide</include>
 			<control type="image">
 				<posx>150r</posx>

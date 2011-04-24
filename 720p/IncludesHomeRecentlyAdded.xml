@@ -1539,8 +1539,8 @@
 								<height>100</height>
 								<aspectratio>stretch</aspectratio>
 								<texture fallback="nothumbalbum.png">$INFO[ListItem.Thumb]</texture>
-								<bordertexture border="4">thumbborder.png</bordertexture>
-								<bordersize>4</bordersize>
+								<bordertexture border="2">thumbborder-thin.png</bordertexture>
+								<bordersize>2</bordersize>
 							</control>
 							<control type="image">
 								<posx>24</posx>
@@ -1561,8 +1561,8 @@
 									<height>100</height>
 									<aspectratio>stretch</aspectratio>
 								<texture fallback="nothumbalbum.png">$INFO[ListItem.Thumb]</texture>
-									<bordertexture border="4">thumbborder.png</bordertexture>
-									<bordersize>4</bordersize>
+								<bordertexture border="2">thumbborder-thin.png</bordertexture>
+								<bordersize>2</bordersize>
 								</control>
 								<control type="image">
 									<posx>23</posx>
@@ -1669,8 +1669,8 @@
 								<height>100</height>
 								<aspectratio>stretch</aspectratio>
 								<texture fallback="nothumbalbum.png">$INFO[ListItem.Thumb]</texture>
-								<bordertexture border="4">thumbborder.png</bordertexture>
-								<bordersize>4</bordersize>
+								<bordertexture border="2">thumbborder-thin.png</bordertexture>
+								<bordersize>2</bordersize>
 							</control>
 							<control type="image">
 								<posx>24</posx>
@@ -1691,8 +1691,8 @@
 									<height>100</height>
 									<aspectratio>stretch</aspectratio>
 								<texture fallback="nothumbalbum.png">$INFO[ListItem.Thumb]</texture>
-									<bordertexture border="4">thumbborder.png</bordertexture>
-									<bordersize>4</bordersize>
+								<bordertexture border="2">thumbborder-thin.png</bordertexture>
+								<bordersize>2</bordersize>
 								</control>
 								<control type="image">
 									<posx>23</posx>
@@ -1800,8 +1800,8 @@
 								<height>100</height>
 								<aspectratio>stretch</aspectratio>
 								<texture fallback="nothumbalbum.png">$INFO[ListItem.Thumb]</texture>
-								<bordertexture border="4">thumbborder.png</bordertexture>
-								<bordersize>4</bordersize>
+								<bordertexture border="2">thumbborder-thin.png</bordertexture>
+								<bordersize>2</bordersize>
 							</control>
 							<control type="image">
 								<posx>24</posx>
@@ -1822,8 +1822,8 @@
 									<height>100</height>
 									<aspectratio>stretch</aspectratio>
 								<texture fallback="nothumbalbum.png">$INFO[ListItem.Thumb]</texture>
-									<bordertexture border="4">thumbborder.png</bordertexture>
-									<bordersize>4</bordersize>
+									<bordertexture border="2">thumbborder-thin.png</bordertexture>
+									<bordersize>2</bordersize>
 								</control>
 								<control type="image">
 									<posx>23</posx>

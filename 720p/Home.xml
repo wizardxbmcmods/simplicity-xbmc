@@ -711,6 +711,14 @@
 						<animation effect="slide" start="0,-10" end="0,0" time="100" >UnFocus</animation>
 						<include>ButtonHomeSubCommonValuesHome</include>
 						<align>center</align>
+						<label>Restart XBMC</label>
+						<onclick>XBMC.RestartApp</onclick>
+					</control>
+					<control type="button" id="90137">
+						<animation effect="slide" start="0,0" end="0,-10" time="100" >Focus</animation>
+						<animation effect="slide" start="0,-10" end="0,0" time="100" >UnFocus</animation>
+						<include>ButtonHomeSubCommonValuesHome</include>
+						<align>center</align>
 						<label>13012</label>
 						<onclick>XBMC.Quit()</onclick>
 					</control>
