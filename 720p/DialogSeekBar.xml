@@ -319,6 +319,7 @@
 
 			<control type="group">
 				<visible>VideoPlayer.Content(episodes)</visible>
+				<visible>!Window.IsVisible(142) + Skin.HasSetting(TimeOnInfoScreen)</visible>
 				<animation effect="slide" start="0,-120" end="0,0" time="100">WindowOpen</animation>
 				<animation effect="slide" start="0,0" end="0,-120" time="100">WindowClose</animation>
 				<posx>60</posx>
@@ -404,6 +405,7 @@
 			</control>
 			<control type="group">
 				<visible>VideoPlayer.Content(movies)</visible>
+				<visible>!Window.IsVisible(142) + Skin.HasSetting(TimeOnInfoScreen)</visible>
 				<animation effect="slide" start="0,-120" end="0,0" time="100">WindowOpen</animation>
 				<animation effect="slide" start="0,0" end="0,-120" time="100">WindowClose</animation>
 				<posx>60</posx>

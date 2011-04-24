@@ -1,6 +1,15 @@
 <window id="1123">
-		<defaultcontrol always="true">11000</defaultcontrol>
+		<defaultcontrol always="true">9991</defaultcontrol>
 	<controls>
+
+	<!--<control type="button" id="9991">
+			<description>trigger</description>
+			<include condition="!Skin.HasSetting(UseTvTunes)">No_TV_Tunes_Guide</include>
+			<include condition="Skin.HasSetting(UseTvTunes)">Use_TV_Tunes_Guide</include>
+			<texturenofocus>-</texturenofocus>
+			<texturefocus>-</texturefocus>
+		</control>-->
+
 			<control type="group">
 			<control type="image">
 				<posx>0</posx>

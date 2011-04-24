@@ -989,5 +989,8 @@
 			</control>
 			</control>
 
+<include condition="Skin.HasSetting(TimeOnInfoScreen)">Clock</include>
+
+
 	</controls>
 </window>

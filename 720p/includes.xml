@@ -569,6 +569,13 @@
 			<animation effect="fade" time="250">WindowOpen</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
 	</include>
+	<!--<include name="No_TV_Tunes_Guide">
+		<onfocus>SetFocus(11000)</onfocus>
+	</include>
+	<include name="Use_TV_Tunes_Guide">
+		<onfocus>XBMC.RunScript(script.TvTunes,backend=True&amp;loop=False)</onfocus>
+		<onfocus>SetFocus(11000)</onfocus>
+	</include> -->
 	<include name="No_TV_Tunes">
 		<onfocus>SetFocus(50)</onfocus>
 	</include>

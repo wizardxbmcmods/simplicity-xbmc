@@ -2992,7 +2992,7 @@
 							<width>900</width>
 							<height>40</height>
 							<font>Simplicity_20</font>
-							<label>Enable Clearart On Info Screen</label>
+							<label>Enable Clock On Info Screen While Playing Video</label>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<radiowidth>83</radiowidth>
@@ -3001,8 +3001,8 @@
 							<textureradionofocus>simplicity/settings-radiobutton-off.png</textureradionofocus>
 							<texturefocus>simplicity/button-focus.png</texturefocus>
 							<texturenofocus>simplicity/menuitemnf.png</texturenofocus>
-							<onclick>Skin.ToggleSetting(ClearartOnInfoScreen)</onclick>
-							<selected>Skin.HasSetting(ClearartOnInfoScreen)</selected>
+							<onclick>Skin.ToggleSetting(TimeOnInfoScreen)</onclick>
+							<selected>Skin.HasSetting(TimeOnInfoScreen)</selected>
 						</control>
 						<control type="radiobutton" id="509">
 							<width>900</width>
@@ -5225,10 +5225,11 @@
 						<posy>240</posy>
 						<width>100</width>
 						<height>100</height>	
-						<texture diffuse="simplicity/addon-diffuse.png">addons/logos.png</texture>
-						<bordertexture border="2">simplicity/thumbborder.png</bordertexture>
+						<texture>addons/logos.png</texture>
+						<bordertexture border="2">simplicity/thumbborder-thin.png</bordertexture>
 						<bordersize>2</bordersize>
 						<visible>Container(9000).Hasfocus(20)</visible>
+						<animation effect="zoom" end="608,220,150,150" time="300" condition="Control.HasFocus(2013)">Conditional</animation> 
 					</control>
 						<control type="label">
 							<posx>698</posx>
@@ -5241,15 +5242,18 @@
 							<shadowcolor>black</shadowcolor>
 							<align>left</align>
 							<visible>Container(9000).Hasfocus(20)</visible>
+						<animation effect="zoom" end="105" time="300" condition="Control.HasFocus(2013)">Conditional</animation> 
+						<animation effect="slide" end="68,0" time="300" condition="Control.HasFocus(2013)">Conditional</animation> 
 						</control>
 					<control type="image">
 						<posx>578</posx>
 						<posy>395</posy>
 						<width>100</width>
 						<height>100</height>	
-						<texture diffuse="simplicity/addon-diffuse.png">addons/tunes.png</texture>
-						<bordertexture border="2">simplicity/thumbborder.png</bordertexture>
+						<texture>addons/tunes.png</texture>
+						<bordertexture border="2">simplicity/thumbborder-thin.png</bordertexture>
 						<bordersize>2</bordersize>
+						<animation effect="zoom" end="608,375,150,150" time="300" condition="Control.HasFocus(2017)">Conditional</animation> 
 						<visible>Container(9000).Hasfocus(20)</visible>
 					</control>
 						<control type="label">
@@ -5263,6 +5267,8 @@
 							<shadowcolor>black</shadowcolor>
 							<align>left</align>
 							<visible>Container(9000).Hasfocus(20)</visible>
+							<animation effect="zoom" end="105" time="300" condition="Control.HasFocus(2017)">Conditional</animation> 
+							<animation effect="slide" end="68,0" time="300" condition="Control.HasFocus(2017)">Conditional</animation> 
 						</control>
 					<control type="grouplist" id="9021">
 						<visible>Container(9000).Hasfocus(21)</visible>
