@@ -546,20 +546,28 @@
 		</animation>
 	</include>
 	<include name="BottomSlide">
-		<animation effect="slide" start="0,0" end="0,500" delay="0" time="300">WindowClose</animation>
-		<animation effect="slide" start="0,500" end="0,0" delay="0" time="300">WindowOpen</animation>
+		<!--<animation effect="slide" start="0,0" end="0,500" delay="0" time="300">WindowClose</animation>
+		<animation effect="slide" start="0,500" end="0,0" delay="0" time="300">WindowOpen</animation>-->
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
 	</include>
 	<include name="TopSlide">
-		<animation effect="slide" start="0,0" end="0,-300" delay="0" time="300">WindowClose</animation>
-		<animation effect="slide" start="0,-300" end="0,0" delay="0" time="300">WindowOpen</animation>
+		<!--<animation effect="slide" start="0,0" end="0,-300" delay="0" time="300">WindowClose</animation>
+		<animation effect="slide" start="0,-300" end="0,0" delay="0" time="300">WindowOpen</animation>-->
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
 	</include>
 	<include name="RightSlide">
-		<animation effect="slide" start="0,0" end="500,0" delay="0" time="300">WindowClose</animation>
-		<animation effect="slide" start="500,0" end="0,0" delay="0" time="300">WindowOpen</animation>
+			<!--<animation effect="slide" start="0,0" end="500,0" delay="0" time="300">WindowClose</animation>
+			<animation effect="slide" start="500,0" end="0,0" delay="0" time="300">WindowOpen</animation>-->
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
 	</include>
 	<include name="LeftSlide">
-		<animation effect="slide" start="0,0" end="-500,0" delay="0" time="300">WindowClose</animation>
-		<animation effect="slide" start="-500,0" end="0,0" delay="0" time="300">WindowOpen</animation>
+		<!--<animation effect="slide" start="0,0" end="-500,0" delay="0" time="300">WindowClose</animation>
+			<animation effect="slide" start="-500,0" end="0,0" delay="0" time="300">WindowOpen</animation>-->
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
 	</include>
 	<include name="No_TV_Tunes">
 		<onfocus>SetFocus(50)</onfocus>
@@ -1156,7 +1164,7 @@
 				<font>Simplicity_20</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<visible>!Control.HasFocus(58)</visible>
+				<visible>Control.HasFocus(60)</visible>
 			</control>	
 			<control type="label">
 				<description>View Options</description>
@@ -2652,6 +2660,7 @@
 </include>
 
 <include name="Clock_Time">
+		<include>Window_OpenClose_Animation</include>
 	<control type="grouplist">
 		<posx>0</posx>
 		<posy>20</posy>

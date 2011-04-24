@@ -1,8 +1,6 @@
 <window id="1116">
 	<defaultcontrol always="true">512</defaultcontrol>
 	<controls>
-		<control type="group">
-			<include>Zoom</include>
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
@@ -10,6 +8,8 @@
 				<height>730</height>
 				<texture>simplicity/background-solid.png</texture>
 			</control>
+		<control type="group">
+			<include>Zoom</include>
 			<!--<control type="image">
 			<posx>100</posx>
 			<posy>271</posy>

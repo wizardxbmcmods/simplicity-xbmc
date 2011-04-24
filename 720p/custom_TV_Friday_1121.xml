@@ -1746,7 +1746,7 @@
 				<width>230</width>
 				<height>89</height>
 				<aspectratio>keep</aspectratio>
-				<texture>$INFO[ListItem.Thumb]</texture>
+				<texture fallback="logo-fallback.png">$INFO[ListItem.Thumb]</texture>
 			</control>
 					</itemlayout>
 					<focusedlayout height="160" width="260">
@@ -1764,7 +1764,7 @@
 				<width>230</width>
 				<height>89</height>
 				<aspectratio>keep</aspectratio>
-				<texture>$INFO[ListItem.Thumb]</texture>
+				<texture fallback="logo-fallback.png">$INFO[ListItem.Thumb]</texture>
 			</control>
 					</focusedlayout>
 					<content>

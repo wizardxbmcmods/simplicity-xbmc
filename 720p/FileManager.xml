@@ -137,7 +137,7 @@
 						<width>540</width>
 						<height>36</height>
 						<visible>Control.HasFocus(20)</visible>
-						<texture border="0,2,0,2">simplicity/menuitemfo.png</texture>
+						<texture border="0,2,0,2">simplicity/menuitem-focus.png</texture>
 					</control>
 					<control type="label">
 						<posx>0</posx>
@@ -299,7 +299,7 @@
 						<width>540</width>
 						<height>36</height>
 						<visible>Control.HasFocus(21)</visible>
-						<texture border="0,2,0,2">simplicity/menuitemfo.png</texture>
+						<texture border="0,2,0,2">simplicity/menuitem-focus.png</texture>
 					</control>
 					<control type="label">
 						<posx>0</posx>

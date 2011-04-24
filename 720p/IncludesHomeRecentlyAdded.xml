@@ -716,7 +716,7 @@
 						<content>
 							<item id="2">
 								<label>$INFO[Window.Property(LatestEpisode.2.ShowTitle)]</label>
-								<label2>Season: [COLOR=white]$INFO[Window.Property(LatestEpisode.1.EpisodeSeason)][/COLOR] - Episode: [COLOR=white]$INFO[Window.Property(LatestEpisode.1.EpisodeNumber)][/COLOR]</label2>
+								<label2>Season: [COLOR=white]$INFO[Window.Property(LatestEpisode.2.EpisodeSeason)][/COLOR] - Episode: [COLOR=white]$INFO[Window.Property(LatestEpisode.2.EpisodeNumber)][/COLOR]</label2>
 								<onclick>PlayMedia($INFO[Window.Property(LatestEpisode.2.Path)])</onclick>
 								<icon>$INFO[Window.Property(LatestEpisode.2.Thumb)]</icon>
 								<thumb>$INFO[Window.Property(LatestEpisode.2.RunningTime)]</thumb>
@@ -1452,6 +1452,13 @@
 							</control>
 						</focusedlayout>
 						<content>
+							<item id="1">
+								<label>$INFO[Window.Property(LatestSong.1.Artist)]</label>
+								<label2>$INFO[Window.Property(LatestSong.1.Year)]</label2>
+								<onclick>PlayMedia($INFO[Window.Property(LatestSong.1.Path)])</onclick>
+								<icon>$INFO[Window.Property(LatestSong.1.Thumb)]</icon>
+								<thumb>$INFO[Window.Property(LatestSong.1.RunningTime)]</thumb>
+							</item>
 							<item id="2">
 								<label>$INFO[Window.Property(LatestSong.2.Artist)]</label>
 								<label2>$INFO[Window.Property(LatestSong.2.Year)]</label2>
@@ -1486,13 +1493,6 @@
 								<onclick>PlayMedia($INFO[Window.Property(LatestSong.6.Path)])</onclick>
 								<icon>$INFO[Window.Property(LatestSong.6.Thumb)]</icon>
 								<thumb>$INFO[Window.Property(LatestSong.6.RunningTime)]</thumb>
-							</item>
-							<item id="7">
-								<label>$INFO[Window.Property(LatestSong.7.Artist)]</label>
-								<label2>$INFO[Window.Property(LatestSong.7.Year)]</label2>
-								<onclick>PlayMedia($INFO[Window.Property(LatestSong.7.Path)])</onclick>
-								<icon>$INFO[Window.Property(LatestSong.7.Thumb)]</icon>
-								<thumb>$INFO[Window.Property(LatestSong.7.RunningTime)]</thumb>
 							</item>
 						</content>
 					</control>				
@@ -1538,7 +1538,7 @@
 								<width>100</width>
 								<height>100</height>
 								<aspectratio>stretch</aspectratio>
-								<texture>$INFO[ListItem.Thumb]</texture>
+								<texture fallback="nothumbalbum.png">$INFO[ListItem.Thumb]</texture>
 								<bordertexture border="4">thumbborder.png</bordertexture>
 								<bordersize>4</bordersize>
 							</control>
@@ -1560,7 +1560,7 @@
 									<width>100</width>
 									<height>100</height>
 									<aspectratio>stretch</aspectratio>
-									<texture>$INFO[ListItem.Thumb]</texture>
+								<texture fallback="nothumbalbum.png">$INFO[ListItem.Thumb]</texture>
 									<bordertexture border="4">thumbborder.png</bordertexture>
 									<bordersize>4</bordersize>
 								</control>
@@ -1668,7 +1668,7 @@
 								<width>100</width>
 								<height>100</height>
 								<aspectratio>stretch</aspectratio>
-								<texture>$INFO[ListItem.Thumb]</texture>
+								<texture fallback="nothumbalbum.png">$INFO[ListItem.Thumb]</texture>
 								<bordertexture border="4">thumbborder.png</bordertexture>
 								<bordersize>4</bordersize>
 							</control>
@@ -1690,7 +1690,7 @@
 									<width>100</width>
 									<height>100</height>
 									<aspectratio>stretch</aspectratio>
-									<texture>$INFO[ListItem.Thumb]</texture>
+								<texture fallback="nothumbalbum.png">$INFO[ListItem.Thumb]</texture>
 									<bordertexture border="4">thumbborder.png</bordertexture>
 									<bordersize>4</bordersize>
 								</control>
@@ -1799,7 +1799,7 @@
 								<width>100</width>
 								<height>100</height>
 								<aspectratio>stretch</aspectratio>
-								<texture>$INFO[ListItem.Thumb]</texture>
+								<texture fallback="nothumbalbum.png">$INFO[ListItem.Thumb]</texture>
 								<bordertexture border="4">thumbborder.png</bordertexture>
 								<bordersize>4</bordersize>
 							</control>
@@ -1821,7 +1821,7 @@
 									<width>100</width>
 									<height>100</height>
 									<aspectratio>stretch</aspectratio>
-									<texture>$INFO[ListItem.Thumb]</texture>
+								<texture fallback="nothumbalbum.png">$INFO[ListItem.Thumb]</texture>
 									<bordertexture border="4">thumbborder.png</bordertexture>
 									<bordersize>4</bordersize>
 								</control>

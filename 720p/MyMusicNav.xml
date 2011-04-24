@@ -11,8 +11,7 @@
 				<posy>0</posy>
 				<width>1280</width>
 				<height>720</height>
-				<texture background="true" fallback="music-fallback.png">$INFO[ListItem.Property(Fanart_Image)]</texture>
-				<include>backgroundfade</include>
+				<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
 				<fadetime>FanartCrossfadeTime</fadetime>
 				<include>VisibleFadeEffect</include>
 				<visible>!Control.IsVisible(516)</visible>
@@ -26,8 +25,6 @@
 			<!-- view id = 50 -->
 			<include>ThumbnailView</include>
 			<!-- view id = 500 -->
-			<include>ThumbnailViewAlbum</include>
-			<!-- view id = 52 -->
 			<include>AlbumWrapView2_Fanart</include>
 			<!-- view id = 509 -->
 			<include>MusicVideoInfoListView</include>

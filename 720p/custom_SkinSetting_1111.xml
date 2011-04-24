@@ -919,7 +919,7 @@
 								<posy>0</posy>
 								<width>900</width>
 								<height>40</height>
-								<texture>simplicity/menuitemfo.png</texture>
+								<texture>simplicity/menuitem-focus.png</texture>
 								<visible>[Control.HasFocus(304) | Control.HasFocus(305)]</visible>
 							</control>
 							<control type="label">
@@ -2468,7 +2468,7 @@
 			<radioheight>67</radioheight>
 			<textureradiofocus>simplicity/settings-radiobutton-on.png</textureradiofocus>
 			<textureradionofocus>simplicity/settings-radiobutton-off.png</textureradionofocus>
-							<texturefocus border="0,2,0,2">simplicity/menuitemfo.png</texturefocus>
+							<texturefocus border="0,2,0,2">simplicity/menuitem-focus.png</texturefocus>
 							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
 							<label>$LOCALIZE[31119] [B]1[/B]</label>
 							<onclick>Skin.ToggleSetting(HomeScriptButton1)</onclick>
@@ -2481,7 +2481,7 @@
 							<font>Simplicity_20</font>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
-							<texturefocus border="0,2,0,2">simplicity/menuitemfo.png</texturefocus>
+							<texturefocus border="0,2,0,2">simplicity/menuitem-focus.png</texturefocus>
 							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
 							<label> - $LOCALIZE[31120]</label>
 							<label2>[COLOR=selected]$INFO[Skin.String(HomeScriptButton1_label)][/COLOR]</label2>
@@ -2495,7 +2495,7 @@
 							<font>Simplicity_20</font>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
-							<texturefocus border="0,2,0,2">simplicity/menuitemfo.png</texturefocus>
+							<texturefocus border="0,2,0,2">simplicity/menuitem-focus.png</texturefocus>
 							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
 							<label> - $LOCALIZE[31121]</label>
 							<label2>[COLOR=selected]$INFO[Skin.String(HomeScriptButton1_Path)][/COLOR]</label2>
@@ -2511,7 +2511,7 @@
 							<font>Simplicity_20</font>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
-							<texturefocus border="0,2,0,2">simplicity/menuitemfo.png</texturefocus>
+							<texturefocus border="0,2,0,2">simplicity/menuitem-focus.png</texturefocus>
 							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
 							<label>$LOCALIZE[31119] [B]2[/B]</label>
 							<onclick>Skin.ToggleSetting(HomeScriptButton2)</onclick>
@@ -2524,7 +2524,7 @@
 							<font>Simplicity_20</font>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
-							<texturefocus border="0,2,0,2">simplicity/menuitemfo.png</texturefocus>
+							<texturefocus border="0,2,0,2">simplicity/menuitem-focus.png</texturefocus>
 							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
 							<label> - $LOCALIZE[31120]</label>
 							<label2>[COLOR=selected]$INFO[Skin.String(HomeScriptButton2_label)][/COLOR]</label2>
@@ -2538,7 +2538,7 @@
 							<font>Simplicity_20</font>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
-							<texturefocus border="0,2,0,2">simplicity/menuitemfo.png</texturefocus>
+							<texturefocus border="0,2,0,2">simplicity/menuitem-focus.png</texturefocus>
 							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
 							<label> - $LOCALIZE[31121]</label>
 							<label2>[COLOR=selected]$INFO[Skin.String(HomeScriptButton2_Path)][/COLOR]</label2>
@@ -2554,7 +2554,7 @@
 							<font>Simplicity_20</font>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
-							<texturefocus border="0,2,0,2">simplicity/menuitemfo.png</texturefocus>
+							<texturefocus border="0,2,0,2">simplicity/menuitem-focus.png</texturefocus>
 							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
 							<label>$LOCALIZE[31119] [B]3[/B]</label>
 							<onclick>Skin.ToggleSetting(HomeScriptButton3)</onclick>
@@ -2567,7 +2567,7 @@
 							<font>Simplicity_20</font>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
-							<texturefocus border="0,2,0,2">simplicity/menuitemfo.png</texturefocus>
+							<texturefocus border="0,2,0,2">simplicity/menuitem-focus.png</texturefocus>
 							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
 							<label> - $LOCALIZE[31120]</label>
 							<label2>[COLOR=selected]$INFO[Skin.String(HomeScriptButton3_label)][/COLOR]</label2>
@@ -2581,7 +2581,7 @@
 							<font>Simplicity_20</font>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
-							<texturefocus border="0,2,0,2">simplicity/menuitemfo.png</texturefocus>
+							<texturefocus border="0,2,0,2">simplicity/menuitem-focus.png</texturefocus>
 							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
 							<label> - $LOCALIZE[31121]</label>
 							<label2>[COLOR=selected]$INFO[Skin.String(HomeScriptButton3_Path)][/COLOR]</label2>
@@ -2597,7 +2597,7 @@
 							<font>Simplicity_20</font>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
-							<texturefocus border="0,2,0,2">simplicity/menuitemfo.png</texturefocus>
+							<texturefocus border="0,2,0,2">simplicity/menuitem-focus.png</texturefocus>
 							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
 							<label>$LOCALIZE[31119] [B]4[/B]</label>
 							<onclick>Skin.ToggleSetting(HomeScriptButton4)</onclick>
@@ -2610,7 +2610,7 @@
 							<font>Simplicity_20</font>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
-							<texturefocus border="0,2,0,2">simplicity/menuitemfo.png</texturefocus>
+							<texturefocus border="0,2,0,2">simplicity/menuitem-focus.png</texturefocus>
 							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
 							<label> - $LOCALIZE[31120]</label>
 							<label2>[COLOR=selected]$INFO[Skin.String(HomeScriptButton4_label)][/COLOR]</label2>
@@ -2624,7 +2624,7 @@
 							<font>Simplicity_20</font>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
-							<texturefocus border="0,2,0,2">simplicity/menuitemfo.png</texturefocus>
+							<texturefocus border="0,2,0,2">simplicity/menuitem-focus.png</texturefocus>
 							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
 							<label> - $LOCALIZE[31121]</label>
 							<label2>[COLOR=selected]$INFO[Skin.String(HomeScriptButton4_Path)][/COLOR]</label2>
@@ -2640,7 +2640,7 @@
 							<font>Simplicity_20</font>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
-							<texturefocus border="0,2,0,2">simplicity/menuitemfo.png</texturefocus>
+							<texturefocus border="0,2,0,2">simplicity/menuitem-focus.png</texturefocus>
 							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
 							<label>$LOCALIZE[31119] [B]5[/B]</label>
 							<onclick>Skin.ToggleSetting(HomeScriptButton5)</onclick>
@@ -2653,7 +2653,7 @@
 							<font>Simplicity_20</font>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
-							<texturefocus border="0,2,0,2">simplicity/menuitemfo.png</texturefocus>
+							<texturefocus border="0,2,0,2">simplicity/menuitem-focus.png</texturefocus>
 							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
 							<label> - $LOCALIZE[31120]</label>
 							<label2>[COLOR=selected]$INFO[Skin.String(HomeScriptButton5_label)][/COLOR]</label2>
@@ -2667,7 +2667,7 @@
 							<font>Simplicity_20</font>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
-							<texturefocus border="0,2,0,2">simplicity/menuitemfo.png</texturefocus>
+							<texturefocus border="0,2,0,2">simplicity/menuitem-focus.png</texturefocus>
 							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
 							<label> - $LOCALIZE[31121]</label>
 							<label2>[COLOR=selected]$INFO[Skin.String(HomeScriptButton5_Path)][/COLOR]</label2>
@@ -2683,7 +2683,7 @@
 							<font>Simplicity_20</font>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
-							<texturefocus border="0,2,0,2">simplicity/menuitemfo.png</texturefocus>
+							<texturefocus border="0,2,0,2">simplicity/menuitem-focus.png</texturefocus>
 							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
 							<label>$LOCALIZE[31119] [B]6[/B]</label>
 							<onclick>Skin.ToggleSetting(HomeScriptButton6)</onclick>
@@ -2696,7 +2696,7 @@
 							<font>Simplicity_20</font>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
-							<texturefocus border="0,2,0,2">simplicity/menuitemfo.png</texturefocus>
+							<texturefocus border="0,2,0,2">simplicity/menuitem-focus.png</texturefocus>
 							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
 							<label> - $LOCALIZE[31120]</label>
 							<label2>[COLOR=selected]$INFO[Skin.String(HomeScriptButton6_label)][/COLOR]</label2>
@@ -2710,7 +2710,7 @@
 							<font>Simplicity_20</font>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
-							<texturefocus border="0,2,0,2">simplicity/menuitemfo.png</texturefocus>
+							<texturefocus border="0,2,0,2">simplicity/menuitem-focus.png</texturefocus>
 							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
 							<label> - $LOCALIZE[31121]</label>
 							<label2>[COLOR=selected]$INFO[Skin.String(HomeScriptButton6_Path)][/COLOR]</label2>
@@ -2737,7 +2737,7 @@
 							<font>Simplicity_20</font>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
-							<texturefocus border="0,2,0,2">simplicity/menuitemfo.png</texturefocus>
+							<texturefocus border="0,2,0,2">simplicity/menuitem-focus.png</texturefocus>
 							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
 							<label>$LOCALIZE[31119]</label>
 							<onclick>Skin.ToggleSetting(WeatherScript_Enable)</onclick>
@@ -2750,7 +2750,7 @@
 							<font>Simplicity_20</font>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
-							<texturefocus border="0,2,0,2">simplicity/menuitemfo.png</texturefocus>
+							<texturefocus border="0,2,0,2">simplicity/menuitem-focus.png</texturefocus>
 							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
 							<label> - $LOCALIZE[31120]</label>
 							<label2>[COLOR=selected]$INFO[Skin.String(WeatherScript_Label)][/COLOR]</label2>
@@ -2764,7 +2764,7 @@
 							<font>Simplicity_20</font>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
-							<texturefocus border="0,2,0,2">simplicity/menuitemfo.png</texturefocus>
+							<texturefocus border="0,2,0,2">simplicity/menuitem-focus.png</texturefocus>
 							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
 							<label> - $LOCALIZE[31121]</label>
 							<label2>[COLOR=selected]$INFO[Skin.String(WeatherScript_Path)][/COLOR]</label2>
@@ -2791,7 +2791,7 @@
 							<font>Simplicity_20</font>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
-							<texturefocus border="0,2,0,2">simplicity/menuitemfo.png</texturefocus>
+							<texturefocus border="0,2,0,2">simplicity/menuitem-focus.png</texturefocus>
 							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
 							<label>$LOCALIZE[31126]</label>
 							<onclick>Skin.ToggleSetting(LyricScript_Enable)</onclick>
@@ -2804,7 +2804,7 @@
 							<font>Simplicity_20</font>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
-							<texturefocus border="0,2,0,2">simplicity/menuitemfo.png</texturefocus>
+							<texturefocus border="0,2,0,2">simplicity/menuitem-focus.png</texturefocus>
 							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
 							<label>- $LOCALIZE[31127]</label>
 							<label2>[COLOR=selected]$INFO[Skin.String(LyricScript_Path)][/COLOR]</label2>
@@ -2831,7 +2831,7 @@
 							<font>Simplicity_20</font>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
-							<texturefocus border="0,2,0,2">simplicity/menuitemfo.png</texturefocus>
+							<texturefocus border="0,2,0,2">simplicity/menuitem-focus.png</texturefocus>
 							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
 							<label>$LOCALIZE[31129]</label>
 							<onclick>Skin.ToggleSetting(SubtitleDownload_Enable)</onclick>
@@ -2844,7 +2844,7 @@
 							<font>Simplicity_20</font>
 							<textcolor>white</textcolor>
 							<focusedcolor>white</focusedcolor>
-							<texturefocus border="0,2,0,2">simplicity/menuitemfo.png</texturefocus>
+							<texturefocus border="0,2,0,2">simplicity/menuitem-focus.png</texturefocus>
 							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
 							<label>- $LOCALIZE[31130]</label>
 							<label2>[COLOR=selected]$INFO[Skin.String(SubtitleScript_Path)][/COLOR]</label2>
@@ -5083,7 +5083,7 @@
 						</control>
 						<control type="textbox" id="2010">
 							<width>900</width>
-							<height>40</height>
+							<height>20</height>
 							<font>Simplicity_20</font>
 							<label></label>
 							<textcolor>grey2</textcolor>
@@ -5100,7 +5100,16 @@
 							<align>left</align>
 							<aligny>center</aligny>
 						</control>
-						<control type="button" id="2012">
+						<control type="textbox" id="2012">
+							<width>900</width>
+							<height>30</height>
+							<font>Simplicity_20</font>
+							<label></label>
+							<textcolor>grey2</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<align>left</align>
+						</control>
+						<control type="button" id="2013">
 							<width>180</width>
 							<height>40</height>
 							<align>center</align>
@@ -5114,7 +5123,7 @@
 							<font>Simplicity_20_Bold_title</font>
 							<onclick>XBMC.RunScript(script.logo-downloader,mode=bulk,clearart=True,logo=True,showthumb=landscape.jpg,poster=poster.jpg,banner=banner.jpg)</onclick>
 						</control>
-						<control type="textbox" id="2013">
+						<control type="textbox" id="2014">
 							<width>900</width>
 							<height>40</height>
 							<font>Simplicity_20</font>
@@ -5123,7 +5132,7 @@
 							<shadowcolor>black</shadowcolor>
 							<align>left</align>
 						</control>
-						<control type="label" id="2014">
+						<control type="label" id="2015">
 							<width>750</width>
 							<height>45</height>
 							<font>Simplicity_20_Bold_title</font>
@@ -5133,7 +5142,16 @@
 							<align>left</align>
 							<aligny>center</aligny>
 						</control>
-						<control type="button" id="2015">
+						<control type="textbox" id="2016">
+							<width>900</width>
+							<height>30</height>
+							<font>Simplicity_20</font>
+							<label></label>
+							<textcolor>grey2</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<align>left</align>
+						</control>
+						<control type="button" id="2017">
 							<width>180</width>
 							<height>40</height>
 							<align>center</align>
@@ -5147,16 +5165,16 @@
 							<font>Simplicity_20_Bold_title</font>
 							<onclick>XBMC.RunScript(script.TvTunes)</onclick>
 						</control>
-						<control type="textbox" id="2016">
+						<control type="textbox" id="2018">
 							<width>900</width>
-							<height>70</height>
+							<height>40</height>
 							<font>Simplicity_20</font>
 							<label></label>
 							<textcolor>grey2</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<align>left</align>
 						</control>
-					<control type="label" id="2017">
+					<control type="label" id="2019">
 							<width>750</width>
 							<height>55</height>
 							<font>Simplicity_20_Bold_title</font>
@@ -5166,7 +5184,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 						</control>
-						<control type="label" id="2018">
+						<control type="label" id="2020">
 							<width>900</width>
 							<height>45</height>
 							<font>Simplicity_20</font>
@@ -5176,7 +5194,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 						</control>
-						<control type="textbox" id="2019">
+						<control type="textbox" id="2021">
 							<width>900</width>
 							<height>80</height>
 							<font>Simplicity_20</font>
@@ -5185,7 +5203,7 @@
 							<shadowcolor>black</shadowcolor>
 							<align>left</align>
 						</control>
-						<control type="radiobutton" id="2020">
+						<control type="radiobutton" id="2022">
 							<width>900</width>
 							<height>40</height>
 							<font>Simplicity_20</font>
@@ -5203,7 +5221,7 @@
 						</control>
 					</control>
 					<control type="image">
-						<posx>658</posx>
+						<posx>578</posx>
 						<posy>240</posy>
 						<width>100</width>
 						<height>100</height>	
@@ -5213,7 +5231,7 @@
 						<visible>Container(9000).Hasfocus(20)</visible>
 					</control>
 						<control type="label">
-							<posx>778</posx>
+							<posx>698</posx>
 							<posy>260</posy>
 						<width>400</width>
 						<height>400</height>	
@@ -5225,8 +5243,8 @@
 							<visible>Container(9000).Hasfocus(20)</visible>
 						</control>
 					<control type="image">
-						<posx>658</posx>
-						<posy>370</posy>
+						<posx>578</posx>
+						<posy>395</posy>
 						<width>100</width>
 						<height>100</height>	
 						<texture diffuse="simplicity/addon-diffuse.png">addons/tunes.png</texture>
@@ -5235,8 +5253,8 @@
 						<visible>Container(9000).Hasfocus(20)</visible>
 					</control>
 						<control type="label">
-							<posx>778</posx>
-							<posy>390</posy>
+							<posx>698</posx>
+							<posy>415</posy>
 						<width>400</width>
 						<height>400</height>	
 							<font>Simplicity_20_Bold</font>

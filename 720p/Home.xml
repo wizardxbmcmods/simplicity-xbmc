@@ -19,8 +19,162 @@
 			<timeperimage>8000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>1000</fadetime>
+			<visible>!SubString(System.BuildVersion,10.1,Left) + ![Control.HasFocus(8005) | Control.HasFocus(8006) | Control.HasFocus(8007) | Control.HasFocus(8008)]</visible>
+			<include>VisibleFadeEffect</include>
+		</control>
+		<control type="multiimage">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<imagepath background="true">$INFO[Container(9000).ListItem.Icon]</imagepath>
+			<timeperimage>8000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>1000</fadetime>
+			<visible>SubString(System.BuildVersion,10.1,Left)</visible>
+			<include>VisibleFadeEffect</include>
 		</control>
 
+
+
+<control type="group">
+		<visible>!SubString(System.BuildVersion,10.1,Left)</visible>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture>$INFO[Window.Property(LatestMovie.1.Fanart)]</texture>						
+			<visible>Control.HasFocus(8005)</visible>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture>$INFO[Window.Property(LatestMovie.2.Fanart)]</texture>						
+			<visible>Control.HasFocus(8006) + Container(8006).Position(0)</visible>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture>$INFO[Window.Property(LatestMovie.3.Fanart)]</texture>						
+			<visible>Control.HasFocus(8006) + Container(8006).Position(1)</visible>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture>$INFO[Window.Property(LatestMovie.4.Fanart)]</texture>						
+			<visible>Control.HasFocus(8006) + Container(8006).Position(2)</visible>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture>$INFO[Window.Property(LatestMovie.5.Fanart)]</texture>						
+			<visible>Control.HasFocus(8006) + Container(8006).Position(3)</visible>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture>$INFO[Window.Property(LatestMovie.6.Fanart)]</texture>						
+			<visible>Control.HasFocus(8006) + Container(8006).Position(4)</visible>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+		</control>
+		</control>
+
+<!--Episode Fanart-->
+<control type="group">
+		<visible>!SubString(System.BuildVersion,10.1,Left)</visible>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture>$INFO[Window.Property(LatestEpisode.1.Fanart)]</texture>						
+			<visible>Control.HasFocus(8007)</visible>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture>$INFO[Window.Property(LatestEpisode.2.Fanart)]</texture>						
+			<visible>Control.HasFocus(8008) + Container(8008).Position(0)</visible>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture>$INFO[Window.Property(LatestEpisode.3.Fanart)]</texture>						
+			<visible>Control.HasFocus(8008) + Container(8008).Position(1)</visible>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture>$INFO[Window.Property(LatestEpisode.4.Fanart)]</texture>						
+			<visible>Control.HasFocus(8008) + Container(8008).Position(2)</visible>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture>$INFO[Window.Property(LatestEpisode.5.Fanart)]</texture>						
+			<visible>Control.HasFocus(8008) + Container(8008).Position(3)</visible>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture>$INFO[Window.Property(LatestEpisode.6.Fanart)]</texture>						
+			<visible>Control.HasFocus(8008) + Container(8008).Position(4)</visible>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture>$INFO[Window.Property(LatestEpisode.7.Fanart)]</texture>						
+			<visible>Control.HasFocus(8008) + Container(8008).Position(5)</visible>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+		</control>
+		</control>
 		<!-- New Home List Images-->
 
 		<control type="image">
@@ -387,7 +541,7 @@
 						<include>ButtonHomeSubCommonValuesHome</include>
 						<align>center</align>
 						<label>Addons</label>
-						<onclick>ActivateWindow(VideoFiles,Addons,return)</onclick>
+						<onclick>ActivateWindow(Videos,Addons,return])</onclick>
 					</control>
 				</control>
 				<control type="grouplist" id="9011">
@@ -650,7 +804,7 @@
 						<align>center</align>
 						<include>ButtonHomeSubCommonValuesHome</include>
 						<label>Video Addons</label>
-						<onclick>ActivateWindow(VideoFiles,Addons,return)</onclick>
+						<onclick>ActivateWindow(Videos,Addons,return])</onclick>
 					</control>
 					<control type="button" id="90152">
 						<animation effect="slide" start="0,0" end="0,-10" time="100" >Focus</animation>
@@ -798,7 +952,7 @@
 						<include>ButtonHomeSubCommonValuesHome</include>
 						<align>center</align>
 						<label>Addons</label>
-						<onclick>ActivateWindow(VideoFiles,Addons,return)</onclick>
+						<onclick>ActivateWindow(Videos,Addons,return])</onclick>
 						<visible>!Skin.HasSetting(SubMenuNoMoviesPluginsButton)</visible>
 					</control>
 				</control>
@@ -865,7 +1019,7 @@
 						<include>ButtonHomeSubCommonValuesHome</include>
 						<align>center</align>
 						<label>Addons</label>
-						<onclick>ActivateWindow(VideoFiles,Addons,return)</onclick>
+						<onclick>ActivateWindow(Videos,Addons,return])</onclick>
 						<visible>!Skin.HasSetting(SubMenuNoTVPluginsButton)</visible>
 					</control>
 				</control>
@@ -1044,6 +1198,7 @@
 
 		<include condition="Skin.HasSetting(homepageHideRecentlyAdded)">HomeRecentlyAddedInfo</include>
 
+
 		<control type="button" id="8999">
 			<description>Run Recently added</description>
 			<posx>-20</posx>
@@ -1055,7 +1210,21 @@
 			<onfocus>SetFocus(9000)</onfocus>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>
-			<visible>Skin.HasSetting(homepageHideRecentlyAdded)</visible>
+			<visible>Skin.HasSetting(homepageHideRecentlyAdded) + !SubString(System.BuildVersion,10.1,Left)</visible>
+		</control>
+		<control type="button" id="8999">
+			<description>Run Recently added</description>
+			<posx>-20</posx>
+			<posy>-20</posy>
+			<width>1</width>
+			<height>1</height>
+			<label>-</label>
+			<font>-</font>
+			<onfocus>XBMC.RunScript(script.recentlyadded,limit=10&amp;totals=True&amp;albums=True&amp;unplayed=True)</onfocus>
+			<onfocus>SetFocus(9000)</onfocus>
+			<texturenofocus>-</texturenofocus>
+			<texturefocus>-</texturefocus>
+			<visible>Skin.HasSetting(homepageHideRecentlyAdded) + SubString(System.BuildVersion,10.1,Left)</visible>
 		</control>
 		<control type="button" id="8999">
 			<description>Don't run Recently added</description>
