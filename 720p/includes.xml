@@ -21,6 +21,35 @@
 	<constant name="FanartCrossfadeTime">500</constant>
 	<constant name="IconCrossfadeTime">400</constant>
 
+	<include name="HomeBackgrounds">
+		<control type="multiimage">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<imagepath background="true">$INFO[Container(9000).ListItem.Icon]</imagepath>
+			<timeperimage>8000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+		</control>
+	</include>
+
+	<include name="HomeBackgroundsRecentlyAdded">
+		<control type="multiimage">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<imagepath background="true">$INFO[Container(9000).ListItem.Icon]</imagepath>
+			<timeperimage>8000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>1000</fadetime>
+			<visible>SubString(System.BuildVersion,10.1,Left)</visible>
+			<include>VisibleFadeEffect</include>
+		</control>
+	</include>
+
 
 	<include name="Overlay">
 		<control type="image">

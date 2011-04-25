@@ -10,18 +10,10 @@
 			<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
 			<effect type="fade" start="100" end="0" time="300" />
 		</animation>			
-		<control type="multiimage">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<imagepath background="true">$INFO[Container(9000).ListItem.Icon]</imagepath>
-			<timeperimage>8000</timeperimage>
-			<randomize>true</randomize>
-			<fadetime>1000</fadetime>
-			<visible>!SubString(System.BuildVersion,10.1,Left) + ![Control.HasFocus(8005) | Control.HasFocus(8006) | Control.HasFocus(8007) | Control.HasFocus(8008)]</visible>
-			<include>VisibleFadeEffect</include>
-		</control>
+
+		<include condition="!SubString(System.BuildVersion,10.1,Left) + ![Control.HasFocus(8005) | Control.HasFocus(8006) | Control.HasFocus(8007) | Control.HasFocus(8008)]">HomeBackgrounds</include>
+
+
 		<control type="multiimage">
 			<posx>0</posx>
 			<posy>0</posy>
