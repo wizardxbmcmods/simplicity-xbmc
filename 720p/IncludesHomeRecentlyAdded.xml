@@ -168,25 +168,59 @@
 						<font>Simplicity_18</font>
 						<textcolor>grey2</textcolor>
 					</control>	
-					<control type="label">
-						<description>Title label</description>
-						<posx>165</posx>
-						<posy>115</posy>
-						<height>20</height>
-						<width>210</width>
-						<label>Rating: [COLOR=white]$INFO[Window.Property(LatestMovie.1.Rating)][/COLOR]</label>
-						<align>left</align>
-						<aligny>center</aligny>
-						<font>Simplicity_18</font>
-						<textcolor>grey2</textcolor>
-					</control>	
 					<control type="image">
 						<description>Rating value</description>
 						<posx>165</posx>
-						<posy>145</posy>
-						<width>154</width>
-						<height>30</height>
-						<texture>$INFO[Window.Property(LatestMovie.1.Rating)].png</texture>
+						<posy>115</posy>
+						<width>108</width>
+						<height>21</height>
+						<texture>rating5.png</texture>
+						<visible>SubString(Window.Property(LatestMovie.1.Rating),10.,Left)</visible> 
+					</control>
+					<control type="image">
+						<description>Rating value</description>
+						<posx>165</posx>
+						<posy>115</posy>
+						<width>108</width>
+						<height>21</height>
+						<texture>rating4.png</texture>
+						<visible>SubString(Window.Property(LatestMovie.1.Rating),8.,Left) | SubString(Window.Property(LatestMovie.1.Rating),9.,Left)</visible> 
+					</control>
+					<control type="image">
+						<description>Rating value</description>
+						<posx>165</posx>
+						<posy>115</posy>
+						<width>108</width>
+						<height>21</height>
+						<texture>rating3.png</texture>
+						<visible>SubString(Window.Property(LatestMovie.1.Rating),6.,Left) | SubString(Window.Property(LatestMovie.1.Rating),7.,Left)</visible> 
+					</control>
+					<control type="image">
+						<description>Rating value</description>
+						<posx>165</posx>
+						<posy>115</posy>
+						<width>108</width>
+						<height>21</height>
+						<texture>rating2.png</texture>
+						<visible>SubString(Window.Property(LatestMovie.1.Rating),5.,Left) | SubString(Window.Property(LatestMovie.1.Rating),4.,Left)</visible> 
+					</control>
+					<control type="image">
+						<description>Rating value</description>
+						<posx>165</posx>
+						<posy>115</posy>
+						<width>108</width>
+						<height>21</height>
+						<texture>rating1.png</texture>
+						<visible>SubString(Window.Property(LatestMovie.1.Rating),2.,Left) | SubString(Window.Property(LatestMovie.1.Rating),3.,Left)</visible> 
+					</control>
+					<control type="image">
+						<description>Rating value</description>
+						<posx>165</posx>
+						<posy>115</posy>
+						<width>108</width>
+						<height>21</height>
+						<texture>rating0.png</texture>
+						<visible>SubString(Window.Property(LatestMovie.1.Rating),0.,Left) | SubString(Window.Property(LatestMovie.1.Rating),1.,Left)</visible> 
 					</control>
 				</control>
 

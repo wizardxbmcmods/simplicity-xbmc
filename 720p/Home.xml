@@ -9,17 +9,185 @@
 		<animation type="WindowClose" reversible="false">
 			<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
 			<effect type="fade" start="100" end="0" time="300" />
-		</animation>			
+		</animation>	
+		<control type="multiimage" id="665">
+			<posx>-10</posx>
+			<posy>-10</posy>
+			<width>1</width>
+			<height>1</height>
+			<imagepath background="true" fallback="special://skin/backgrounds/home.jpg">$INFO[Skin.String(Home_Custom_Back_Home_Folder)]</imagepath>
+			<timeperimage>8000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+		</control>					
+		<control type="multiimage" id="666">
+			<posx>-10</posx>
+			<posy>-10</posy>
+			<width>1</width>
+			<height>1</height>
+			<imagepath background="true" fallback="special://skin/backgrounds/movies.jpg">$INFO[Skin.String(Home_Custom_Back_Movies_Folder)]</imagepath>
+			<timeperimage>8000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+		</control>		
+		<control type="multiimage" id="667">
+			<posx>-10</posx>
+			<posy>-10</posy>
+			<width>1</width>
+			<height>1</height>
+			<imagepath background="true" fallback="special://skin/backgrounds/tvshows.jpg">$INFO[Skin.String(Home_Custom_Back_TVShows_Folder)]</imagepath>
+			<timeperimage>8000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+		</control>		
+		<control type="multiimage" id="668">
+			<posx>-10</posx>
+			<posy>-10</posy>
+			<width>1</width>
+			<height>1</height>
+			<imagepath background="true" fallback="special://skin/backgrounds/videos.jpg">$INFO[Skin.String(Home_Custom_Back_Video_Folder)]</imagepath>
+			<timeperimage>8000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+		</control>		
+		<control type="multiimage" id="669">
+			<posx>-10</posx>
+			<posy>-10</posy>
+			<width>1</width>
+			<height>1</height>
+			<imagepath background="true" fallback="special://skin/backgrounds/music.jpg">$INFO[Skin.String(Home_Custom_Back_Music_Folder)]</imagepath>
+			<timeperimage>8000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+		</control>		
+		<control type="multiimage" id="670">
+			<posx>-10</posx>
+			<posy>-10</posy>
+			<width>1</width>
+			<height>1</height>
+			<imagepath background="true" fallback="special://skin/backgrounds/pictures.jpg">$INFO[Skin.String(Home_Custom_Back_Pictures_Folder)]</imagepath>
+			<timeperimage>8000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+		</control>					
+		<control type="multiimage" id="671">
+			<posx>-10</posx>
+			<posy>-10</posy>
+			<width>1</width>
+			<height>1</height>
+			<imagepath background="true" fallback="special://skin/backgrounds/weather.jpg">$INFO[Skin.String(Home_Custom_Back_Weather_Folder)]</imagepath>
+			<timeperimage>8000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+			<visible>!Skin.HasSetting(ShowWeatherFanart) | IsEmpty(Skin.String(WeatherFanartDir))</visible>
+		</control>		
+		<control type="multiimage" id="671">
+			<posx>-10</posx>
+			<posy>-10</posy>
+			<width>1</width>
+			<height>1</height>
+			<imagepath background="true" fallback="special://skin/backgrounds/weather.jpg">$INFO[Skin.String(WeatherFanartDir)]$INFO[Weather.FanartCode]</imagepath>
+			<timeperimage>8000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+			<visible>Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))</visible>
+		</control>		
+		<control type="multiimage" id="672">
+			<posx>-10</posx>
+			<posy>-10</posy>
+			<width>1</width>
+			<height>1</height>
+			<imagepath background="true" fallback="special://skin/backgrounds/addons.jpg">$INFO[Skin.String(Home_Custom_Back_Addons_Folder)]</imagepath>
+			<timeperimage>8000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+		</control>		
+		<control type="multiimage" id="673">
+			<posx>-10</posx>
+			<posy>-10</posy>
+			<width>1</width>
+			<height>1</height>
+			<imagepath background="true" fallback="special://skin/backgrounds/programs.jpg">$INFO[Skin.String(Home_Custom_Back_Programs_Folder)]</imagepath>
+			<timeperimage>8000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+		</control>		
+		<control type="multiimage" id="674">
+			<posx>-10</posx>
+			<posy>-10</posy>
+			<width>1</width>
+			<height>1</height>
+			<imagepath background="true" fallback="special://skin/backgrounds/tvguide.jpg">$INFO[Skin.String(Home_Custom_Back_TVGuide_Folder)]</imagepath>
+			<timeperimage>8000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+		</control>		
+		<control type="multiimage" id="675">
+			<posx>-10</posx>
+			<posy>-10</posy>
+			<width>1</width>
+			<height>1</height>
+			<imagepath background="true" fallback="special://skin/backgrounds/search.jpg">$INFO[Skin.String(Home_Custom_Back_Search_Folder)]</imagepath>
+			<timeperimage>8000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+		</control>		
+		<control type="multiimage" id="676">
+			<posx>-10</posx>
+			<posy>-10</posy>
+			<width>1</width>
+			<height>1</height>
+			<imagepath background="true" fallback="special://skin/backgrounds/settings.jpg">$INFO[Skin.String(Home_Custom_Back_Settings_Folder)]</imagepath>
+			<timeperimage>8000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+		</control>		
+		<control type="multiimage" id="677">
+			<posx>-10</posx>
+			<posy>-10</posy>
+			<width>1</width>
+			<height>1</height>
+			<imagepath background="true" fallback="special://skin/backgrounds/shutdown.jpg">$INFO[Skin.String(Home_Custom_Back_Shutdown_Folder)]</imagepath>
+			<timeperimage>8000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+		</control>		
 
-		<include condition="!SubString(System.BuildVersion,10.1,Left) + ![Control.HasFocus(8005) | Control.HasFocus(8006) | Control.HasFocus(8007) | Control.HasFocus(8008)]">HomeBackgrounds</include>
 
 
-		<control type="multiimage">
+
+
+
+		<control type="image">
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<imagepath background="true">$INFO[Container(9000).ListItem.Icon]</imagepath>
+			<texture background="true">$INFO[Container(9000).ListItem.Label2]</texture>
+			<fadetime>1000</fadetime>
+			<visible>!SubString(System.BuildVersion,10.1,Left) + ![Control.HasFocus(8005) | Control.HasFocus(8006) | Control.HasFocus(8007) | Control.HasFocus(8008)]</visible>
+			<include>VisibleFadeEffect</include>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<imagepath background="true">$INFO[Container(9000).ListItem.Label2]</imagepath>
 			<timeperimage>8000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>1000</fadetime>
@@ -310,6 +478,7 @@
 				<item id="1">
 					<description>Home</description>
 					<label>$LOCALIZE[31503]</label>
+					<label2>$INFO[Control.GetLabel(665)]</label2>
 					<icon>special://skin/backgrounds/home.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Home_Folder)]</thumb>
 					<visible>!Skin.HasSetting(HomeMenuNoHomeButton)</visible>
@@ -319,7 +488,7 @@
 					<description>Movies</description>
 					<label>$LOCALIZE[31500]</label>
 					<icon>special://skin/backgrounds/movies.jpg</icon>
-					<thumb>$INFO[Skin.String(Home_Custom_Back_Movies_Folder)]</thumb>
+					<label2>$INFO[Control.GetLabel(666)]</label2>
 					<onclick>ActivateWindow(VideoLibrary,movietitles,return)</onclick>
 					<visible>!Skin.HasSetting(HomeMenuNoMoviesButton)</visible>
 				</item>
@@ -327,6 +496,7 @@
 					<description>TV Shows</description>
 					<label>$LOCALIZE[31502]</label>
 					<icon>special://skin/backgrounds/tvshows.jpg</icon>
+					<label2>$INFO[Control.GetLabel(667)]</label2>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_TVShows_Folder)]</thumb>
 					<onclick>ActivateWindow(VideoLibrary,tvshowtitles,return)</onclick>
 					<visible>!Skin.HasSetting(HomeMenuNoTVShowsButton)</visible>
@@ -334,6 +504,7 @@
 				<item id="4">
 					<description>Videos</description>
 					<label>$LOCALIZE[31501]</label>
+					<label2>$INFO[Control.GetLabel(668)]</label2>
 					<icon>special://skin/backgrounds/videos.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Video_Folder)]</thumb>
 					<onclick>ActivateWindow(VideoFiles)</onclick>
@@ -342,6 +513,7 @@
 				<item id="5">
 					<description>Music</description>
 					<label>$LOCALIZE[31504]</label>
+					<label2>$INFO[Control.GetLabel(669)]</label2>
 					<icon>special://skin/backgrounds/music.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Music_Folder)]</thumb>
 					<onclick>ActivateWindow(Music,return)</onclick>
@@ -350,6 +522,7 @@
 				<item id="6">
 					<description>Pictures</description>
 					<label>$LOCALIZE[31509]</label>
+					<label2>$INFO[Control.GetLabel(670)]</label2>
 					<icon>special://skin/backgrounds/pictures.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Pictures_Folder)]</thumb>
 					<onclick>ActivateWindow(Pictures,return)</onclick>
@@ -358,6 +531,7 @@
 				<item id="7">
 					<description>Weather</description>
 					<label>$LOCALIZE[31505]</label>
+					<label2>$INFO[Control.GetLabel(671)]</label2>
 					<onclick>ActivateWindow(Weather)</onclick>
 					<icon>special://skin/backgrounds/weather.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Weather_Folder)]</thumb>
@@ -367,6 +541,7 @@
 				<item id="7">
 					<description>Weather</description>
 					<label>$LOCALIZE[31505]</label>
+					<label2>$INFO[Control.GetLabel(671)]</label2>
 					<onclick>ActivateWindow(Weather)</onclick>
 					<icon>special://skin/backgrounds/weather.jpg</icon>
 					<thumb>$INFO[Skin.String(WeatherFanartDir)]$INFO[Weather.FanartCode]</thumb>
@@ -384,6 +559,7 @@
 				<item id="9">
 					<description>Addons</description>
 					<label>$LOCALIZE[31507]</label>
+					<label2>$INFO[Control.GetLabel(672)]</label2>
 					<icon>special://skin/backgrounds/addons.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Addons_Folder)]</thumb>
 					<onclick>ActivateWindow(AddonBrowser)</onclick>
@@ -392,6 +568,7 @@
 				<item id="14">
 					<description>Addons</description>
 					<label>$LOCALIZE[31506]</label>
+					<label2>$INFO[Control.GetLabel(673)]</label2>
 					<icon>special://skin/backgrounds/programs.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Programs_Folder)]</thumb>
 					<onclick>ActivateWindow(Programs,Addons,return)</onclick>
@@ -400,6 +577,7 @@
 				<item id="15">
 					<description>TV GUIDE</description>
 					<label>TV GUIDE</label>
+					<label2>$INFO[Control.GetLabel(674)]</label2>
 					<icon>special://skin/backgrounds/tvguide.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_TVGuide_Folder)]</thumb>
 					<onclick>ActivateWindow(1116)</onclick>
@@ -432,6 +610,7 @@
 				<item id="19">
 					<description>Search</description>
 					<label>SEARCH</label>
+					<label2>$INFO[Control.GetLabel(675)]</label2>
 					<icon>special://skin/backgrounds/search.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Search_Folder)]</thumb>
 					<visible>!Skin.HasSetting(HomeMenuNoSearchButton)</visible>
@@ -440,6 +619,7 @@
 				<item id="10">
 					<description>Settings</description>
 					<label>$LOCALIZE[31508]</label>
+					<label2>$INFO[Control.GetLabel(676)]</label2>
 					<icon>special://skin/backgrounds/settings.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Settings_Folder)]</thumb>
 					<onclick>ActivateWindow(4)</onclick>
@@ -448,6 +628,7 @@
 				<item id="11">
 					<description>Shutdown</description>
 					<label>$LOCALIZE[31510]</label>
+					<label2>$INFO[Control.GetLabel(677)]</label2>
 					<icon>special://skin/backgrounds/shutdown.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Shutdown_Folder)]</thumb>
 					<onclick>ActivateWindow(ShutdownMenu)</onclick>
@@ -1669,4 +1850,3 @@
 	</controls>
 
 </window>
-

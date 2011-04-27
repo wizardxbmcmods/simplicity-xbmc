@@ -781,6 +781,7 @@
 					<posy>23</posy>
 					<width>320</width>
 					<height>185</height>
+					<aspect>keep</aspect>
 					<texture>$INFO[VideoPlayer.Cover]</texture>
 					<bordertexture border="3">simplicity/folder-focus.png</bordertexture>
 					<bordersize>3</bordersize>
