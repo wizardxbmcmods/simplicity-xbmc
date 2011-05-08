@@ -5292,7 +5292,7 @@
 				</control>	
 				<control type="group">
 								<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
-					<visible>Container.Content(Movies)</visible>
+					<visible>Container.Content(Movies) + !Skin.HasSetting(Fanart_More_Info)</visible>
 					<include>Zoom</include>
 					<posx>-70</posx>
 					<posy>-90</posy>
@@ -5383,6 +5383,13 @@
 					</control>
 				</control>
 			</control>
+
+								<control type="group">
+										<visible>Skin.HasSetting(Fanart_More_Info)</visible>
+								<posy>-40</posy> 
+<include>MovieInfoTopCenter</include>
+		</control>
+
 		</control>
 	</include>
 	<include name="GridView">

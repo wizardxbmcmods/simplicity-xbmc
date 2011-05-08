@@ -311,6 +311,15 @@ on-->
 						<selected>Skin.HasSetting(UseFlags)</selected>
 						<visible>Control.IsVisible(532)</visible>
 					</control>
+					<control type="radiobutton" id="207">
+						<textwidth>170</textwidth>
+						<description>Toggle Flags Instead of Plot</description>
+						<include>ButtonCommonValuesSub</include>
+						<label>More Info</label>
+						<onclick>Skin.ToggleSetting(Fanart_More_Info)</onclick>
+						<selected>Skin.HasSetting(Fanart_More_Info)</selected>
+						<visible>Control.IsVisible(555)</visible>
+					</control>
 				</control>
 			</control>
 			<control type="group" id="9002">

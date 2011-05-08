@@ -1515,7 +1515,7 @@
 					<animation effect="slide" end="-85,0" time="0" condition="substring(Window(Home).Property(NextAired.3.Today),true)">Conditional</animation>
 					<animation effect="slide" end="-85,0" time="0" condition="substring(Window(Home).Property(NextAired.4.Today),true)">Conditional</animation>
 					<animation effect="slide" end="-85,0" time="0" condition="substring(Window(Home).Property(NextAired.5.Today),true)">Conditional</animation>
-					<posx>565</posx>
+					<posx>545</posx>
 					<posy>55</posy>
 					<visible>Container(9000).Hasfocus(15)</visible>
 					<include>VisibleFadeEffect</include>

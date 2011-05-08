@@ -18,7 +18,7 @@
 					<visible>[Container(9000).Hasfocus(2) + !Skin.HasSetting(HomeMenuNoMoviesButton)]</visible>
 					<include>VisibleFadeEffect</include>
 					<animation effect="slide" time="0" start="0,0" end="0,0" condition="[Library.HasContent(TVShows) + ![Skin.HasSetting(HomeMenuNoMoviesButton) | Skin.HasSetting(HomeMenuNoTVShowsButton)]]">Conditional</animation>
-					<animation effect="fade" time="400" delay="800" start="0" end="100" condition="[Container(9000).Hasfocus(2) + !Skin.HasSetting(HomeMenuNoMoviesButton)]">Conditional</animation>
+					<animation effect="fade" time="400" delay="640" start="0" end="100" condition="[Container(9000).Hasfocus(2) + !Skin.HasSetting(HomeMenuNoMoviesButton)]">Conditional</animation>
 					<control type="label">
 						<description>Title label</description>
 						<posx>32</posx>
@@ -379,7 +379,7 @@
 					<visible>Library.HasContent(TVShows)</visible>
 					<visible>[Container(9000).Hasfocus(3) + !Skin.HasSetting(HomeMenuNoTVShowsButton)]</visible>
 					<include>VisibleFadeEffect</include>
-					<animation effect="fade" time="400" delay="800" start="0" end="100" condition="[Container(9000).Hasfocus(3) + !Skin.HasSetting(HomeMenuNoTVShowsButton)]">Conditional</animation>
+					<animation effect="fade" time="400" delay="640" start="0" end="100" condition="[Container(9000).Hasfocus(3) + !Skin.HasSetting(HomeMenuNoTVShowsButton)]">Conditional</animation>
 					<control type="label">
 						<description>Title label</description>
 						<posx>49</posx>

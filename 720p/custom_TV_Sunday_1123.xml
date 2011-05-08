@@ -1090,7 +1090,6 @@
 				<width>260</width>
 				<aspectratio>keep</aspectratio>
 				<texture>simplicity/button-focus-black.png</texture>
-												<animation reversible="false" effect="zoom" end="110" center="auto" time="300">Focus</animation> 
 			</control>
 						<control type="image">
 				<posx>15</posx>
@@ -1099,7 +1098,6 @@
 				<height>89</height>
 				<aspectratio>keep</aspectratio>
 				<texture fallback="logo-fallback.png">$INFO[ListItem.Thumb]</texture>
-												<animation reversible="false" effect="zoom" end="110" center="auto" time="300">Focus</animation> 
 			</control>
 					</focusedlayout>
 					<content>

@@ -595,7 +595,7 @@
 						<height>110</height>
 						<aspectratio>keep</aspectratio>
 						<texture fallback="nothumbalbum.png">$INFO[ListItem.Icon]</texture>
-						<visible>!StringCompare(ListItem.label,Album information) + !StringCompare(ListItem.label,Lyrics) + !StringCompare(ListItem.label,Artist information) + !StringCompare(ListItem.label,Movie information) + !StringCompare(ListItem.label,Music Add-ons) + !StringCompare(ListItem.label,Music video information) + !StringCompare(ListItem.label,Picture Add-ons) + !StringCompare(ListItem.label,Program Add-ons) + !StringCompare(ListItem.label,Screensaver) + !StringCompare(ListItem.label,Skin) + !StringCompare(ListItem.label,Subtitles) + !StringCompare(ListItem.label,TV information) + !StringCompare(ListItem.label,Video Add-ons) + !StringCompare(ListItem.label,Visualization) + !StringCompare(ListItem.label,Weather) + !StringCompare(ListItem.label,All Add-ons) + !StringCompare(ListItem.label,Add-on repository) + !StringCompare(ListItem.label,Install from zip file)  + !StringCompare(ListItem.label,Music)  + !StringCompare(ListItem.label,Pictures)</visible>
+						<visible>!StringCompare(ListItem.label,Web interface) + !StringCompare(ListItem.label,Album information) + !StringCompare(ListItem.label,Lyrics) + !StringCompare(ListItem.label,Artist information) + !StringCompare(ListItem.label,Movie information) + !StringCompare(ListItem.label,Music Add-ons) + !StringCompare(ListItem.label,Music video information) + !StringCompare(ListItem.label,Picture Add-ons) + !StringCompare(ListItem.label,Program Add-ons) + !StringCompare(ListItem.label,Screensaver) + !StringCompare(ListItem.label,Skin) + !StringCompare(ListItem.label,Subtitles) + !StringCompare(ListItem.label,TV information) + !StringCompare(ListItem.label,Video Add-ons) + !StringCompare(ListItem.label,Visualization) + !StringCompare(ListItem.label,Weather) + !StringCompare(ListItem.label,All Add-ons) + !StringCompare(ListItem.label,Add-on repository) + !StringCompare(ListItem.label,Install from zip file)  + !StringCompare(ListItem.label,Music)  + !StringCompare(ListItem.label,Pictures)</visible>
 					</control>
 					<control type="label">
 						<description>header label</description>
@@ -637,7 +637,7 @@
 						<height>110</height>
 						<aspectratio>keep</aspectratio>
 						<texture fallback="nothumbalbum.png">$INFO[ListItem.Icon]</texture>
-						<visible>!StringCompare(ListItem.label,Album information) + !StringCompare(ListItem.label,Lyrics) + !StringCompare(ListItem.label,Artist information) + !StringCompare(ListItem.label,Movie information) + !StringCompare(ListItem.label,Music Add-ons) + !StringCompare(ListItem.label,Music video information) + !StringCompare(ListItem.label,Picture Add-ons) + !StringCompare(ListItem.label,Program Add-ons) + !StringCompare(ListItem.label,Screensaver) + !StringCompare(ListItem.label,Skin) + !StringCompare(ListItem.label,Subtitles) + !StringCompare(ListItem.label,TV information) + !StringCompare(ListItem.label,Video Add-ons) + !StringCompare(ListItem.label,Visualization) + !StringCompare(ListItem.label,Weather) + !StringCompare(ListItem.label,All Add-ons) + !StringCompare(ListItem.label,Add-on repository) + !StringCompare(ListItem.label,Install from zip file)  + !StringCompare(ListItem.label,Music)  + !StringCompare(ListItem.label,Pictures)</visible>
+						<visible>!StringCompare(ListItem.label,Web interface) + !StringCompare(ListItem.label,Album information) + !StringCompare(ListItem.label,Lyrics) + !StringCompare(ListItem.label,Artist information) + !StringCompare(ListItem.label,Movie information) + !StringCompare(ListItem.label,Music Add-ons) + !StringCompare(ListItem.label,Music video information) + !StringCompare(ListItem.label,Picture Add-ons) + !StringCompare(ListItem.label,Program Add-ons) + !StringCompare(ListItem.label,Screensaver) + !StringCompare(ListItem.label,Skin) + !StringCompare(ListItem.label,Subtitles) + !StringCompare(ListItem.label,TV information) + !StringCompare(ListItem.label,Video Add-ons) + !StringCompare(ListItem.label,Visualization) + !StringCompare(ListItem.label,Weather) + !StringCompare(ListItem.label,All Add-ons) + !StringCompare(ListItem.label,Add-on repository) + !StringCompare(ListItem.label,Install from zip file)  + !StringCompare(ListItem.label,Music)  + !StringCompare(ListItem.label,Pictures)</visible>
 						<animation effect="zoom" start="100" end="105" center="auto" time="100">Focus</animation>
 					</control>
 					<control type="label">
@@ -1051,7 +1051,7 @@
 						<height>100</height>
 						<aspectratio>stretch</aspectratio>
 						<texture fallback="nothumbalbum.png">$INFO[ListItem.Icon]</texture>
-						<visible>!StringCompare(ListItem.label,Get Add-ons) + !StringCompare(ListItem.label,Enabled Add-ons) + !StringCompare(ListItem.label,Disabled Add-ons) + !StringCompare(ListItem.label,Get More...) + !StringCompare(ListItem.label,Web interface) + !StringCompare(ListItem.label,Services) + !StringCompare(ListItem.label,Album information) + !StringCompare(ListItem.label,Lyrics) + !StringCompare(ListItem.label,Artist information) + !StringCompare(ListItem.label,Movie information) + !StringCompare(ListItem.label,Music Add-ons) + !StringCompare(ListItem.label,Music video information) + !StringCompare(ListItem.label,Picture Add-ons) + !StringCompare(ListItem.label,Program Add-ons) + !StringCompare(ListItem.label,Screensaver) + !StringCompare(ListItem.label,Skin) + !StringCompare(ListItem.label,Subtitles) + !StringCompare(ListItem.label,TV information) + !StringCompare(ListItem.label,Video Add-ons) + !StringCompare(ListItem.label,Visualization) + !StringCompare(ListItem.label,Weather) + !StringCompare(ListItem.label,All Add-ons) + !StringCompare(ListItem.label,Add-on repository) + !StringCompare(ListItem.label,Install from zip file)  + !StringCompare(ListItem.label,Music)  + !StringCompare(ListItem.label,Pictures)</visible>
+						<visible>!StringCompare(ListItem.label,Available Updates) + !StringCompare(ListItem.label,Get Add-ons) + !StringCompare(ListItem.label,Enabled Add-ons) + !StringCompare(ListItem.label,Disabled Add-ons) + !StringCompare(ListItem.label,Get More...) + !StringCompare(ListItem.label,Web interface) + !StringCompare(ListItem.label,Services) + !StringCompare(ListItem.label,Album information) + !StringCompare(ListItem.label,Lyrics) + !StringCompare(ListItem.label,Artist information) + !StringCompare(ListItem.label,Movie information) + !StringCompare(ListItem.label,Music Add-ons) + !StringCompare(ListItem.label,Music video information) + !StringCompare(ListItem.label,Picture Add-ons) + !StringCompare(ListItem.label,Program Add-ons) + !StringCompare(ListItem.label,Screensaver) + !StringCompare(ListItem.label,Skin) + !StringCompare(ListItem.label,Subtitles) + !StringCompare(ListItem.label,TV information) + !StringCompare(ListItem.label,Video Add-ons) + !StringCompare(ListItem.label,Visualization) + !StringCompare(ListItem.label,Weather) + !StringCompare(ListItem.label,All Add-ons) + !StringCompare(ListItem.label,Add-on repository) + !StringCompare(ListItem.label,Install from zip file)  + !StringCompare(ListItem.label,Music)  + !StringCompare(ListItem.label,Pictures)</visible>
 						<bordertexture border="1">simplicity/thumbborder-thin.png</bordertexture>
 						<bordersize>1</bordersize>					
 					</control>
@@ -1087,7 +1087,7 @@
 						<texture fallback="nothumbalbum.png">$INFO[ListItem.Icon]</texture>
 						<bordertexture border="1">-</bordertexture>
 						<bordersize>1</bordersize>		
-						<visible>!StringCompare(ListItem.label,Get Add-ons) + !StringCompare(ListItem.label,Enabled Add-ons) + !StringCompare(ListItem.label,Disabled Add-ons) + !StringCompare(ListItem.label,Get More...) + !StringCompare(ListItem.label,Web interface) + !StringCompare(ListItem.label,Services) + !StringCompare(ListItem.label,Album information) + !StringCompare(ListItem.label,Lyrics) + !StringCompare(ListItem.label,Artist information) + !StringCompare(ListItem.label,Movie information) + !StringCompare(ListItem.label,Music Add-ons) + !StringCompare(ListItem.label,Music video information) + !StringCompare(ListItem.label,Picture Add-ons) + !StringCompare(ListItem.label,Program Add-ons) + !StringCompare(ListItem.label,Screensaver) + !StringCompare(ListItem.label,Skin) + !StringCompare(ListItem.label,Subtitles) + !StringCompare(ListItem.label,TV information) + !StringCompare(ListItem.label,Video Add-ons) + !StringCompare(ListItem.label,Visualization) + !StringCompare(ListItem.label,Weather) + !StringCompare(ListItem.label,All Add-ons) + !StringCompare(ListItem.label,Add-on repository) + !StringCompare(ListItem.label,Install from zip file)  + !StringCompare(ListItem.label,Music)  + !StringCompare(ListItem.label,Pictures)</visible>
+						<visible>!StringCompare(ListItem.label,Available Updates) + !StringCompare(ListItem.label,Get Add-ons) + !StringCompare(ListItem.label,Enabled Add-ons) + !StringCompare(ListItem.label,Disabled Add-ons) + !StringCompare(ListItem.label,Get More...) + !StringCompare(ListItem.label,Web interface) + !StringCompare(ListItem.label,Services) + !StringCompare(ListItem.label,Album information) + !StringCompare(ListItem.label,Lyrics) + !StringCompare(ListItem.label,Artist information) + !StringCompare(ListItem.label,Movie information) + !StringCompare(ListItem.label,Music Add-ons) + !StringCompare(ListItem.label,Music video information) + !StringCompare(ListItem.label,Picture Add-ons) + !StringCompare(ListItem.label,Program Add-ons) + !StringCompare(ListItem.label,Screensaver) + !StringCompare(ListItem.label,Skin) + !StringCompare(ListItem.label,Subtitles) + !StringCompare(ListItem.label,TV information) + !StringCompare(ListItem.label,Video Add-ons) + !StringCompare(ListItem.label,Visualization) + !StringCompare(ListItem.label,Weather) + !StringCompare(ListItem.label,All Add-ons) + !StringCompare(ListItem.label,Add-on repository) + !StringCompare(ListItem.label,Install from zip file)  + !StringCompare(ListItem.label,Music)  + !StringCompare(ListItem.label,Pictures)</visible>
 						<animation effect="zoom" end="105" center="auto" time="100" reversible="false">Focus</animation>
 					</control>
 					<control type="image">
@@ -1336,6 +1336,15 @@
 				<texture background="true">addons/cracklefanart.jpg</texture>
 				<visible>substring(container.folderpath,plugin://plugin.video.crackle)</visible> 
 			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<aspectratio>stretch</aspectratio>
+				<texture background="true">addons/youtubefanart.jpg</texture>
+				<visible>substring(container.folderpath,plugin://plugin.video.youtube)</visible> 
+			</control>
 			<include>Overlay</include>
 			<include>UpOptions</include>
 			<include>AddonBreadCrumbs</include>
@@ -1355,7 +1364,7 @@
 				<scrolltime>300</scrolltime>
 				<focusposition>1</focusposition>
 				<preloaditems>400</preloaditems>
-				<visible>substring(container.folderpath,plugin://plugin.video.crackle) | substring(container.folderpath,plugin://plugin.video.hgtv) | substring(container.folderpath,plugin://plugin.video.secsports) | substring(container.folderpath,plugin://plugin.video.espn3) | substring(container.folderpath,plugin://plugin.video.KidsWB) | substring(container.folderpath,plugin://plugin.video.nickelodeon) | substring(container.folderpath,plugin://plugin.video.nickjr) | substring(container.folderpath,plugin://plugin.video.adult.swim) | substring(container.folderpath,plugin://plugin.video.cartoon.network) | substring(container.folderpath,plugin://plugin.video.cbs) | substring(container.folderpath,plugin://plugin.video.tnt) | substring(container.folderpath,plugin://plugin.video.tbs)</visible> 
+				<visible>substring(container.folderpath,plugin://plugin.video.youtube) | substring(container.folderpath,plugin://plugin.video.crackle) | substring(container.folderpath,plugin://plugin.video.hgtv) | substring(container.folderpath,plugin://plugin.video.secsports) | substring(container.folderpath,plugin://plugin.video.espn3) | substring(container.folderpath,plugin://plugin.video.KidsWB) | substring(container.folderpath,plugin://plugin.video.nickelodeon) | substring(container.folderpath,plugin://plugin.video.nickjr) | substring(container.folderpath,plugin://plugin.video.adult.swim) | substring(container.folderpath,plugin://plugin.video.cartoon.network) | substring(container.folderpath,plugin://plugin.video.cbs) | substring(container.folderpath,plugin://plugin.video.tnt) | substring(container.folderpath,plugin://plugin.video.tbs)</visible> 
 				<itemlayout height="220" width="360">	
 					<control type="image">
 						<posx>3</posx>
@@ -1368,6 +1377,7 @@
 						<visible>![substring(container.folderpath,plugin://plugin.video.crackle) + SubString(ListItem.label,Movies)]</visible>
 						<visible>![substring(container.folderpath,plugin://plugin.video.crackle) + SubString(ListItem.label,Television)]</visible>
 						<visible>![substring(container.folderpath,plugin://plugin.video.crackle) + SubString(ListItem.label,Collections)]</visible>
+							<include>NoYouTubeIcons</include>	
 					</control>
 					<control type="image">
 						<posy>28</posy>
@@ -1381,7 +1391,17 @@
 						<visible>![substring(container.folderpath,plugin://plugin.video.crackle) + SubString(ListItem.label,Movies)]</visible>
 						<visible>![substring(container.folderpath,plugin://plugin.video.crackle) + SubString(ListItem.label,Television)]</visible>
 						<visible>![substring(container.folderpath,plugin://plugin.video.crackle) + SubString(ListItem.label,Collections)]</visible>
+						<include>NoYouTubeIcons</include>
 					</control>
+					<control type="image">
+						<posx>-35</posx>
+						<posy>10</posy>
+						<width>220</width>
+						<height>220</height>
+						<aspectratio scalediffuse="false">keep</aspectratio>
+						<texture background="true">$INFO[Listitem.Icon]</texture>
+						<include>YouTubeIcons</include>	
+				</control>
 					<control type="image">
 						<posx>-35</posx>
 						<posy>-25</posy>
@@ -1441,6 +1461,7 @@
 						<visible>![substring(container.folderpath,plugin://plugin.video.crackle) + SubString(ListItem.label,Movies)]</visible>
 						<visible>![substring(container.folderpath,plugin://plugin.video.crackle) + SubString(ListItem.label,Television)]</visible>
 						<visible>![substring(container.folderpath,plugin://plugin.video.crackle) + SubString(ListItem.label,Collections)]</visible>
+						<include>NoYouTubeIcons</include>	
 					</control>
 				</itemlayout>
 				<focusedlayout height="340" width="420">
@@ -1459,6 +1480,7 @@
 							<visible>![substring(container.folderpath,plugin://plugin.video.crackle) + SubString(ListItem.label,Movies)]</visible>
 							<visible>![substring(container.folderpath,plugin://plugin.video.crackle) + SubString(ListItem.label,Television)]</visible>
 							<visible>![substring(container.folderpath,plugin://plugin.video.crackle) + SubString(ListItem.label,Collections)]</visible>
+							<include>NoYouTubeIcons</include>	
 						</control>
 						<control type="image">
 							<posy>4</posy>
@@ -1473,6 +1495,17 @@
 							<visible>![substring(container.folderpath,plugin://plugin.video.crackle) + SubString(ListItem.label,Movies)]</visible>
 							<visible>![substring(container.folderpath,plugin://plugin.video.crackle) + SubString(ListItem.label,Television)]</visible>
 							<visible>![substring(container.folderpath,plugin://plugin.video.crackle) + SubString(ListItem.label,Collections)]</visible>
+							<include>NoYouTubeIcons</include>	
+						</control>
+						<control type="image">
+							<posx>-35</posx>
+							<posy>-15</posy>
+							<width>220</width>
+							<height>220</height>
+							<aspectratio scalediffuse="false">stretch</aspectratio>
+							<texture background="true">$INFO[Listitem.Icon]</texture>
+							<animation effect="zoom" end="120" center="auto" time="200" reversible="false">Focus</animation> 
+							<include>YouTubeIcons</include>	
 						</control>
 						<control type="image">
 							<posx>-34</posx>
@@ -1652,6 +1685,35 @@
 				</control>
 			</control>
 
+			<control type="group">
+				<visible>substring(container.folderpath,plugin://plugin.video.youtube)</visible> 
+				<include>Zoom</include>
+				<control type="textbox">
+					<posx>165</posx>
+					<posy>110</posy>
+					<width>980</width>
+					<height>50</height>
+					<font>Simplicity_40</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<align>Left</align>
+					<label>$INFO[ListItem.label]</label>
+				</control>
+				<control type="label">
+					<posx>165</posx>
+					<posy>465</posy>
+					<width>400</width>
+					<height>25</height>
+					<font>Simplicity_20</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<scroll>false</scroll>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>Duration: $INFO[ListItem.Duration]</label>
+					<include>NoYouTubeIcons</include>	
+				</control>
+			</control>
 
 			<control type="group">
 				<visible>substring(container.folderpath,plugin://plugin.video.adult.swim)</visible> 
