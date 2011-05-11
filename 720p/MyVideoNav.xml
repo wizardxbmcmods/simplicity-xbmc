@@ -1,7 +1,7 @@
 <window id="25">
 	<defaultcontrol always="true">9999</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-	<views>50,54,55,57,58,59,65,66,67,500,501,504,505,506,507,508,509,511,532,534,535,536,537,538,539,540,552,553,554,555,556</views>
+	<views>50,54,55,57,58,59,65,66,67,500,501,504,505,506,507,508,509,511,532,534,535,536,537,538,539,540,552,553,554,555,556,557,558,559</views>
 	<visible>!Skin.HasSetting(KioskMode)</visible>
 	<controls>
 on-->
@@ -66,7 +66,9 @@ on-->
 				<visible>Container.Content(Movies)+!Control.IsVisible(508)</visible>
 				<visible>Container.Content(Movies)+!Control.IsVisible(540)</visible>
 				<visible>Container.Content(Movies) + !Control.IsVisible(556)</visible>
+				<visible>!Control.IsVisible(557)</visible>
 				<visible>!Control.IsVisible(556)</visible>
+				<visible>!Control.IsVisible(558)</visible>
 			</control>
 			<control type="image">
 				<posx>0</posx>
@@ -79,6 +81,8 @@ on-->
 				<visible>!Skin.HasSetting(VideoLibraryTVFanart)</visible>
 				<visible>!Skin.HasSetting(Multiple_TV_Fanart)</visible>
 				<visible>Container.Content(TVShows) | [Container.Content(Episodes) + substring(Container.FolderPath,videodb://5/)]</visible>
+				<visible>!Control.IsVisible(557)</visible>
+				<visible>!Control.IsVisible(558)</visible>
 			</control>
 			<control type="image">
 				<posx>0</posx>
@@ -92,6 +96,8 @@ on-->
 				<visible>!Skin.HasSetting(VideoLibraryTVFanart)</visible>
 				<visible>!Skin.HasSetting(Multiple_TV_Fanart)</visible>
 				<visible>Container.Content(Seasons) | [Container.Content(Episodes) + !substring(Container.FolderPath,videodb://5/)]</visible>
+				<visible>!Control.IsVisible(557)</visible>
+				<visible>!Control.IsVisible(558)</visible>
 			</control>
 			<control type="image">
 				<posx>0</posx>
@@ -102,6 +108,8 @@ on-->
 				<include>backgroundfade</include>
 				<fadetime>FanartCrossfadeTime</fadetime>
 				<visible>Container.Content(MusicVideos) | Container.Content(Artists) | Container.Content(Albums)</visible>
+				<visible>!Control.IsVisible(557)</visible>
+				<visible>!Control.IsVisible(558)</visible>
 			</control>
 		</control>
 		<include>CommonMediaPlayingBackground</include>
@@ -164,6 +172,12 @@ on-->
 			<!-- view id = 555 -->
 			<include>GridView</include>
 			<!-- view id = 556 -->
+			<include>LandscapeGridView</include>
+			<!-- view id = 557 -->
+			<include>LandscapePanelView</include>
+			<!-- view id = 558 -->
+			<include>EpisodePanelView</include>
+			<!-- view id = 559 -->
 			<include>MovieGenreView</include>
 			<!-- view id = 59 -->
 		</control>
@@ -320,6 +334,15 @@ on-->
 						<selected>Skin.HasSetting(Fanart_More_Info)</selected>
 						<visible>Control.IsVisible(555)</visible>
 					</control>
+					<control type="radiobutton" id="208">
+						<textwidth>170</textwidth>
+						<description>Toggle Flags Instead of Plot</description>
+						<include>ButtonCommonValuesSub</include>
+						<label>Use Clearart</label>
+						<onclick>Skin.ToggleSetting(UseClearart558)</onclick>
+						<selected>Skin.HasSetting(UseClearart558)</selected>
+						<visible>Control.IsVisible(558)</visible>
+					</control>
 				</control>
 			</control>
 			<control type="group" id="9002">
@@ -353,7 +376,6 @@ on-->
 					<onup>9011</onup>
 					<ondown>9011</ondown>
 					<itemgap>10</itemgap>
-
 
 					<control type="button" id="18">
 						<description>Actor Wall</description>
@@ -476,7 +498,19 @@ on-->
 						<onclick>Container.SetViewMode(504)</onclick>
 						<visible>Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(TvShowsUsePosters)] | [Container.Content(TVShows) + Skin.HasSetting(UsePosterJPG)]</visible>
 					</control>
-
+					<control type="button" id="32">
+						<description>Landscape Grid</description>
+						<width>174</width>
+						<height>95</height>
+						<align>center</align>
+						<aligny>center</aligny>
+						<texturenofocus border="5">simplicity/views/Landscape Grid/previewimage.png</texturenofocus>
+						<texturefocus border="5">simplicity/views/Landscape Grid/previewimage.png</texturefocus>
+						<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(32)">Conditional</animation>			
+						<animation effect="zoom" end="106" center="auto">Focus</animation>
+						<onclick>Container.SetViewMode(557)</onclick>
+						<visible>Container.Content(TVShows) + Skin.HasSetting(UseLandscapes)</visible>
+					</control>
 					<control type="button" id="33">
 						<description>Info Slide</description>
 						<width>174</width>
@@ -490,7 +524,19 @@ on-->
 						<onclick>Container.SetViewMode(509)</onclick>
 						<visible>Container.Content(Movies)</visible>
 					</control>
-
+					<control type="button" id="34">
+						<description>Landscape Panel</description>
+						<width>174</width>
+						<height>95</height>
+						<align>center</align>
+						<aligny>center</aligny>
+						<texturenofocus border="5">simplicity/views/Landscape Panel/previewimage.png</texturenofocus>
+						<texturefocus border="5">simplicity/views/Landscape Panel/previewimage.png</texturefocus>
+						<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(34)">Conditional</animation>			
+						<animation effect="zoom" end="106" center="auto">Focus</animation>
+						<onclick>Container.SetViewMode(558)</onclick>
+						<visible>Container.Content(TVShows) + Skin.HasSetting(UseLandscapes)</visible>
+					</control>
 					<control type="button" id="35">
 						<description>Landscape Slide</description>
 						<width>174</width>
@@ -737,6 +783,7 @@ on-->
 						<onclick>Container.SetViewMode(556)</onclick>		
 						<visible>Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(TvShowsUsePosters)] | [Container.Content(TVShows) + Skin.HasSetting(UsePosterJPG)]</visible>			
 					</control>
+
 				</control>
 				<control type="image">
 					<posx>95</posx>

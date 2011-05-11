@@ -244,6 +244,11 @@
 			<size>100</size>
 		</font>
 		<font>
+			<name>Simplicity_120</name>
+			<filename>CartoGothicStd-Book.ttf</filename>
+			<size>120</size>
+		</font>
+		<font>
 			<name>Simplicity_170</name>
 			<filename>CartoGothicStd-Book.ttf</filename>
 			<size>170</size>

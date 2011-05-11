@@ -973,6 +973,7 @@
 				<font>Simplicity_20</font>
 				<textcolor>grey2</textcolor>
 				<include>TopSlide</include>
+				<visible>!Control.IsVisible(559)</visible>
 			</control>	
 		</control>	
 	</include>
@@ -2865,17 +2866,15 @@
 							<bordersize>4</bordersize>
 							<visible>Container.Content(Episodes) + stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 						</control>
-					<!--	<control type="image">
+					<control type="image">
 							<posx>100</posx>
 							<posy>218</posy>
 							<width>247</width>
 							<height>371</height>
 							<align>left</align>
 							<aspectratio scalediffuse="false">stretch</aspectratio>
-							<texture background="true">paper.png</texture>
-							<bordertexture border="4">thumbborder.png</bordertexture>
-							<bordersize>4</bordersize>
-						</control>-->
+							<texture background="true">simplicity/poster-border5.png</texture>
+						</control>
 						<control type="image">
 							<description>Rating value</description>
 							<posx>370</posx>

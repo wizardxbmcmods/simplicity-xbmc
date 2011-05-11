@@ -205,7 +205,17 @@
 			<width>1280</width>
 			<height>720</height>
 			<texture>$INFO[Window.Property(LatestMovie.1.Fanart)]</texture>						
-			<visible>Control.HasFocus(8005)</visible>
+			<visible>Control.HasFocus(8005) + !Skin.HasSetting(UseRandomItems)</visible>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture>$INFO[Window.Property(RandomMovie.1.Fanart)]</texture>						
+			<visible>Control.HasFocus(8005) + Skin.HasSetting(UseRandomItems)</visible>
 			<fadetime>1000</fadetime>
 			<include>VisibleFadeEffect</include>
 		</control>
@@ -215,7 +225,7 @@
 			<width>1280</width>
 			<height>720</height>
 			<texture>$INFO[Window.Property(LatestMovie.2.Fanart)]</texture>						
-			<visible>Control.HasFocus(8006) + Container(8006).Position(0)</visible>
+			<visible>Control.HasFocus(8006) + Container(8006).Position(0) + !Skin.HasSetting(UseRandomItems)</visible>
 			<fadetime>1000</fadetime>
 			<include>VisibleFadeEffect</include>
 		</control>
@@ -225,7 +235,7 @@
 			<width>1280</width>
 			<height>720</height>
 			<texture>$INFO[Window.Property(LatestMovie.3.Fanart)]</texture>						
-			<visible>Control.HasFocus(8006) + Container(8006).Position(1)</visible>
+			<visible>Control.HasFocus(8006) + Container(8006).Position(1) + !Skin.HasSetting(UseRandomItems)</visible>
 			<fadetime>1000</fadetime>
 			<include>VisibleFadeEffect</include>
 		</control>
@@ -235,17 +245,17 @@
 			<width>1280</width>
 			<height>720</height>
 			<texture>$INFO[Window.Property(LatestMovie.4.Fanart)]</texture>						
-			<visible>Control.HasFocus(8006) + Container(8006).Position(2)</visible>
+			<visible>Control.HasFocus(8006) + Container(8006).Position(2) + !Skin.HasSetting(UseRandomItems)</visible>
 			<fadetime>1000</fadetime>
 			<include>VisibleFadeEffect</include>
 		</control>
-		<control type="image">
+	<control type="image">
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
 			<texture>$INFO[Window.Property(LatestMovie.5.Fanart)]</texture>						
-			<visible>Control.HasFocus(8006) + Container(8006).Position(3)</visible>
+			<visible>Control.HasFocus(8006) + Container(8006).Position(3) + !Skin.HasSetting(UseRandomItems)</visible>
 			<fadetime>1000</fadetime>
 			<include>VisibleFadeEffect</include>
 		</control>
@@ -255,7 +265,57 @@
 			<width>1280</width>
 			<height>720</height>
 			<texture>$INFO[Window.Property(LatestMovie.6.Fanart)]</texture>						
-			<visible>Control.HasFocus(8006) + Container(8006).Position(4)</visible>
+			<visible>Control.HasFocus(8006) + Container(8006).Position(4) + !Skin.HasSetting(UseRandomItems)</visible>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture>$INFO[Window.Property(LatestMovie.1.Fanart)]</texture>						
+			<visible>Control.HasFocus(8006) + Container(8006).Position(0) + Skin.HasSetting(UseRandomItems)</visible>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture>$INFO[Window.Property(LatestMovie.2.Fanart)]</texture>						
+			<visible>Control.HasFocus(8006) + Container(8006).Position(1) + Skin.HasSetting(UseRandomItems)</visible>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture>$INFO[Window.Property(LatestMovie.3.Fanart)]</texture>						
+			<visible>Control.HasFocus(8006) + Container(8006).Position(2) + Skin.HasSetting(UseRandomItems)</visible>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+		</control>
+	<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture>$INFO[Window.Property(LatestMovie.4.Fanart)]</texture>						
+			<visible>Control.HasFocus(8006) + Container(8006).Position(3) + Skin.HasSetting(UseRandomItems)</visible>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture>$INFO[Window.Property(LatestMovie.5.Fanart)]</texture>						
+			<visible>Control.HasFocus(8006) + Container(8006).Position(4) + Skin.HasSetting(UseRandomItems)</visible>
 			<fadetime>1000</fadetime>
 			<include>VisibleFadeEffect</include>
 		</control>
@@ -270,7 +330,37 @@
 			<width>1280</width>
 			<height>720</height>
 			<texture>$INFO[Window.Property(LatestEpisode.1.Fanart)]</texture>						
-			<visible>Control.HasFocus(8007)</visible>
+			<visible>Control.HasFocus(8007) + !Skin.HasSetting(UseRandomItems)</visible>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+		</control>
+		<control type="image">
+			<posx>440</posx>
+			<posy>450</posy>
+			<width>400</width>
+			<height>155</height>
+			<texture>$INFO[Window.Property(LatestEpisode.1.Path),,/../../logo.png]</texture>						
+			<visible>Control.HasFocus(8007) + !Skin.HasSetting(UseRandomItems)</visible>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture>$INFO[Window.Property(RandomEpisode.1.Fanart)]</texture>						
+			<visible>Control.HasFocus(8007) + Skin.HasSetting(UseRandomItems)</visible>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+		</control>
+		<control type="image">
+			<posx>440</posx>
+			<posy>450</posy>
+			<width>400</width>
+			<height>155</height>
+			<texture>$INFO[Window.Property(RandomEpisode.1.Path),,/../../logo.png]</texture>						
+			<visible>Control.HasFocus(8007) + Skin.HasSetting(UseRandomItems)</visible>
 			<fadetime>1000</fadetime>
 			<include>VisibleFadeEffect</include>
 		</control>
@@ -280,7 +370,17 @@
 			<width>1280</width>
 			<height>720</height>
 			<texture>$INFO[Window.Property(LatestEpisode.2.Fanart)]</texture>						
-			<visible>Control.HasFocus(8008) + Container(8008).Position(0)</visible>
+			<visible>Control.HasFocus(8008) + Container(8008).Position(0) + !Skin.HasSetting(UseRandomItems)</visible>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+		</control>
+		<control type="image">
+			<posx>440</posx>
+			<posy>450</posy>
+			<width>400</width>
+			<height>155</height>
+			<texture>$INFO[Window.Property(LatestEpisode.2.Path),,/../../logo.png]</texture>						
+			<visible>Control.HasFocus(8008) + Container(8008).Position(0) + !Skin.HasSetting(UseRandomItems)</visible>
 			<fadetime>1000</fadetime>
 			<include>VisibleFadeEffect</include>
 		</control>
@@ -290,7 +390,17 @@
 			<width>1280</width>
 			<height>720</height>
 			<texture>$INFO[Window.Property(LatestEpisode.3.Fanart)]</texture>						
-			<visible>Control.HasFocus(8008) + Container(8008).Position(1)</visible>
+			<visible>Control.HasFocus(8008) + Container(8008).Position(1) + !Skin.HasSetting(UseRandomItems)</visible>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+		</control>
+		<control type="image">
+			<posx>440</posx>
+			<posy>450</posy>
+			<width>400</width>
+			<height>155</height>
+			<texture>$INFO[Window.Property(LatestEpisode.3.Path),,/../../logo.png]</texture>						
+			<visible>Control.HasFocus(8008) + Container(8008).Position(1) + !Skin.HasSetting(UseRandomItems)</visible>
 			<fadetime>1000</fadetime>
 			<include>VisibleFadeEffect</include>
 		</control>
@@ -300,17 +410,37 @@
 			<width>1280</width>
 			<height>720</height>
 			<texture>$INFO[Window.Property(LatestEpisode.4.Fanart)]</texture>						
-			<visible>Control.HasFocus(8008) + Container(8008).Position(2)</visible>
+			<visible>Control.HasFocus(8008) + Container(8008).Position(2) + !Skin.HasSetting(UseRandomItems)</visible>
 			<fadetime>1000</fadetime>
 			<include>VisibleFadeEffect</include>
 		</control>
 		<control type="image">
+			<posx>440</posx>
+			<posy>450</posy>
+			<width>400</width>
+			<height>155</height>
+			<texture>$INFO[Window.Property(LatestEpisode.4.Path),,/../../logo.png]</texture>						
+			<visible>Control.HasFocus(8008) + Container(8008).Position(2) + !Skin.HasSetting(UseRandomItems)</visible>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+		</control>
+	<control type="image">
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
 			<texture>$INFO[Window.Property(LatestEpisode.5.Fanart)]</texture>						
-			<visible>Control.HasFocus(8008) + Container(8008).Position(3)</visible>
+			<visible>Control.HasFocus(8008) + Container(8008).Position(3) + !Skin.HasSetting(UseRandomItems)</visible>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+		</control>
+		<control type="image">
+			<posx>440</posx>
+			<posy>450</posy>
+			<width>400</width>
+			<height>155</height>
+			<texture>$INFO[Window.Property(LatestEpisode.5.Path),,/../../logo.png]</texture>						
+			<visible>Control.HasFocus(8008) + Container(8008).Position(3) + !Skin.HasSetting(UseRandomItems)</visible>
 			<fadetime>1000</fadetime>
 			<include>VisibleFadeEffect</include>
 		</control>
@@ -320,7 +450,17 @@
 			<width>1280</width>
 			<height>720</height>
 			<texture>$INFO[Window.Property(LatestEpisode.6.Fanart)]</texture>						
-			<visible>Control.HasFocus(8008) + Container(8008).Position(4)</visible>
+			<visible>Control.HasFocus(8008) + Container(8008).Position(4) + !Skin.HasSetting(UseRandomItems)</visible>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+		</control>
+		<control type="image">
+			<posx>440</posx>
+			<posy>450</posy>
+			<width>400</width>
+			<height>155</height>
+			<texture>$INFO[Window.Property(LatestEpisode.6.Path),,/../../logo.png]</texture>						
+			<visible>Control.HasFocus(8008) + Container(8008).Position(4) + !Skin.HasSetting(UseRandomItems)</visible>
 			<fadetime>1000</fadetime>
 			<include>VisibleFadeEffect</include>
 		</control>
@@ -329,8 +469,98 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<texture>$INFO[Window.Property(LatestEpisode.7.Fanart)]</texture>						
-			<visible>Control.HasFocus(8008) + Container(8008).Position(5)</visible>
+			<texture>$INFO[Window.Property(LatestEpisode.1.Fanart)]</texture>						
+			<visible>Control.HasFocus(8008) + Container(8008).Position(0) + Skin.HasSetting(UseRandomItems)</visible>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+		</control>
+		<control type="image">
+			<posx>440</posx>
+			<posy>450</posy>
+			<width>400</width>
+			<height>155</height>
+			<texture>$INFO[Window.Property(LatestEpisode.1.Path),,/../../logo.png]</texture>						
+			<visible>Control.HasFocus(8008) + Container(8008).Position(0) + Skin.HasSetting(UseRandomItems)</visible>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture>$INFO[Window.Property(LatestEpisode.2.Fanart)]</texture>						
+			<visible>Control.HasFocus(8008) + Container(8008).Position(1) + Skin.HasSetting(UseRandomItems)</visible>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+		</control>
+		<control type="image">
+			<posx>440</posx>
+			<posy>450</posy>
+			<width>400</width>
+			<height>155</height>
+			<texture>$INFO[Window.Property(LatestEpisode.2.Path),,/../../logo.png]</texture>						
+			<visible>Control.HasFocus(8008) + Container(8008).Position(1) + Skin.HasSetting(UseRandomItems)</visible>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture>$INFO[Window.Property(LatestEpisode.3.Fanart)]</texture>						
+			<visible>Control.HasFocus(8008) + Container(8008).Position(2) + Skin.HasSetting(UseRandomItems)</visible>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+		</control>
+		<control type="image">
+			<posx>440</posx>
+			<posy>450</posy>
+			<width>400</width>
+			<height>155</height>
+			<texture>$INFO[Window.Property(LatestEpisode.3.Path),,/../../logo.png]</texture>						
+			<visible>Control.HasFocus(8008) + Container(8008).Position(2) + Skin.HasSetting(UseRandomItems)</visible>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+		</control>
+	<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture>$INFO[Window.Property(LatestEpisode.4.Fanart)]</texture>						
+			<visible>Control.HasFocus(8008) + Container(8008).Position(3) + Skin.HasSetting(UseRandomItems)</visible>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+		</control>
+		<control type="image">
+			<posx>440</posx>
+			<posy>450</posy>
+			<width>400</width>
+			<height>155</height>
+			<texture>$INFO[Window.Property(LatestEpisode.4.Path),,/../../logo.png]</texture>						
+			<visible>Control.HasFocus(8008) + Container(8008).Position(3) + Skin.HasSetting(UseRandomItems)</visible>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture>$INFO[Window.Property(LatestEpisode.5.Fanart)]</texture>						
+			<visible>Control.HasFocus(8008) + Container(8008).Position(4) + Skin.HasSetting(UseRandomItems)</visible>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+		</control>
+		<control type="image">
+			<posx>440</posx>
+			<posy>450</posy>
+			<width>400</width>
+			<height>155</height>
+			<texture>$INFO[Window.Property(LatestEpisode.5.Path),,/../../logo.png]</texture>						
+			<visible>Control.HasFocus(8008) + Container(8008).Position(4) + Skin.HasSetting(UseRandomItems)</visible>
 			<fadetime>1000</fadetime>
 			<include>VisibleFadeEffect</include>
 		</control>
