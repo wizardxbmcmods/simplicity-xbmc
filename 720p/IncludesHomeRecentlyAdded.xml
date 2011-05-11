@@ -2148,7 +2148,7 @@
 					<animation effect="slide" end="-85,0" time="0" condition="Skin.HasSetting(HomeAddonButton5)">Conditional</animation>
 					<posx>565</posx>
 					<posy>310</posy>
-					<visible>Container(9000).Hasfocus(9)</visible>
+					<visible>Container(9000).Hasfocus(9) + !Skin.HasSetting(RandomAddons)</visible>
 					<include>VisibleFadeEffect</include>
 					<control type="list" id="8010">
 						<posx>0</posx>
@@ -2269,6 +2269,139 @@
 						</content>
 					</control>
 				</control>		
+
+				<control type="group">
+					<animation effect="fade" time="400" delay="800" start="0" end="100" condition="[Container(9000).Hasfocus(9)]">Conditional</animation>
+					<animation effect="slide" end="-85,0" time="0" condition="Skin.HasSetting(HomeAddonButton2)">Conditional</animation>
+					<animation effect="slide" end="-85,0" time="0" condition="Skin.HasSetting(HomeAddonButton3)">Conditional</animation>
+					<animation effect="slide" end="-85,0" time="0" condition="Skin.HasSetting(HomeAddonButton4)">Conditional</animation>
+					<animation effect="slide" end="-85,0" time="0" condition="Skin.HasSetting(HomeAddonButton5)">Conditional</animation>
+					<posx>565</posx>
+					<posy>310</posy>
+					<visible>Container(9000).Hasfocus(9) + Skin.HasSetting(RandomAddons)</visible>
+					<include>VisibleFadeEffect</include>
+					<control type="list" id="8010">
+						<posx>0</posx>
+						<posy>10</posy>
+						<width>1270</width>
+						<height>500</height>
+						<onleft>8010</onleft>
+						<onright>8010</onright>
+						<onup>-</onup>
+						<ondown>9000</ondown>
+						<orientation>horizontal</orientation>
+						<viewtype label="535">list</viewtype>
+						<pagecontrol>-</pagecontrol>
+						<scrolltime>0</scrolltime>
+						<visible>Skin.HasSetting(HomeAddonButton1) | Skin.HasSetting(HomeAddonButton2) | Skin.HasSetting(HomeAddonButton3) | Skin.HasSetting(HomeAddonButton4) | Skin.HasSetting(HomeAddonButton5)</visible>
+						<itemlayout height="150" width="170">
+							<control type="image">
+								<posx>24</posx>
+								<posy>38</posy>
+								<width>105</width>
+								<height>105</height>
+								<aspectratio>stretch</aspectratio>
+								<texture>simplicity/app-shadow-home.png</texture>
+							</control>
+							<control type="image">
+								<posx>24</posx>
+								<posy>38</posy>
+								<width>100</width>
+								<height>100</height>
+								<aspectratio>stretch</aspectratio>
+								<texture fallback="nothumbalbum.png">$INFO[ListItem.Thumb]</texture>
+								<bordertexture border="2">thumbborder-thin.png</bordertexture>
+								<bordersize>2</bordersize>
+							</control>
+							<control type="image">
+								<posx>24</posx>
+								<posy>38</posy>
+								<width>100</width>
+								<height>100</height>
+								<aspectratio>stretch</aspectratio>
+								<texture>simplicity/black-back.png</texture>
+							</control>
+						</itemlayout>
+						<focusedlayout height="150" width="170">
+							<control type="group">
+								<animation effect="zoom" start="100" end="105" center="auto" time="200" tween="back" easing="out" reversible="false">Focus</animation>
+								<control type="image">
+									<posx>24</posx>
+									<posy>38</posy>
+									<width>100</width>
+									<height>100</height>
+									<aspectratio>stretch</aspectratio>
+								<texture fallback="nothumbalbum.png">$INFO[ListItem.Thumb]</texture>
+									<bordertexture border="2">thumbborder-thin.png</bordertexture>
+									<bordersize>2</bordersize>
+								</control>
+								<control type="image">
+									<posx>23</posx>
+									<posy>37</posy>
+									<width>102</width>
+									<height>102</height>
+									<texture>simplicity/app-glow.png</texture>
+									<animation effect="zoom" start="100" end="105" center="auto" time="200" tween="back" easing="out" reversible="false">Focus</animation>
+									<visible>Control.HasFocus(8010)</visible>
+								</control>
+								<control type="image">
+									<posx>23</posx>
+									<posy>37</posy>
+									<width>102</width>
+									<height>102</height>
+									<aspectratio>stretch</aspectratio>
+									<texture>simplicity/black-back.png</texture>
+									<visible>!Control.HasFocus(8010)</visible>
+								</control>
+							</control>
+						</focusedlayout>
+						<content>
+							<item id="1">
+								<label>$INFO[Skin.String(HomeAddonButton1_label)]</label>
+								<label2>-</label2>
+								<onclick>RunAddon(RandomAddon.1.Path)</onclick>
+								<icon>-</icon>
+								<thumb>$INFO[Window.Property(RandomAddon.1.Thumb)]</thumb>
+								<visible>Skin.HasSetting(HomeAddonButton1)</visible>
+							</item>
+							<item id="2">
+								<label>$INFO[Skin.String(HomeAddonButton2_label)]</label>
+								<label2>-</label2>
+								<onclick>RunAddon(RandomAddon.2.Path)</onclick>
+								<icon>-</icon>
+								<thumb>$INFO[Window.Property(RandomAddon.2.Thumb)]</thumb>
+								<visible>Skin.HasSetting(HomeAddonButton2)</visible>
+							</item>
+							<item id="3">
+								<label>$INFO[Skin.String(HomeAddonButton3_label)]</label>
+								<label2>-</label2>
+								<onclick>RunAddon(RandomAddon.3.Path)</onclick>
+								<icon>-</icon>
+								<thumb>$INFO[Window.Property(RandomAddon.3.Thumb)]</thumb>
+								<visible>Skin.HasSetting(HomeAddonButton3)</visible>
+							</item>
+							<item id="4">
+								<label>$INFO[Skin.String(HomeAddonButton4_label)]</label>
+								<label2>-</label2>
+								<onclick>RunAddon(RandomAddon.4.Path)</onclick>
+								<icon>-</icon>
+								<thumb>$INFO[Window.Property(RandomAddon.4.Thumb)]</thumb>
+								<visible>Skin.HasSetting(HomeAddonButton4)</visible>
+							</item>
+							<item id="5">
+								<label>$INFO[Skin.String(HomeAddonButton5_label)]</label>
+								<label2>-</label2>
+								<onclick>RunAddon(RandomAddon.5.Path)</onclick>
+								<icon>-</icon>
+								<thumb>$INFO[Window.Property(RandomAddon.5.Thumb)]</thumb>
+								<visible>Skin.HasSetting(HomeAddonButton5)</visible>
+							</item>
+						</content>
+					</control>
+				</control>		
+
+
+
 			</control>
 		</control>
 
