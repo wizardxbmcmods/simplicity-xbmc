@@ -272,6 +272,23 @@
 						<onclick>Skin.ToggleSetting(DisableViewPreview)</onclick>
 						<selected>Skin.HasSetting(DisableViewPreview)</selected>
 					</control>
+					<control type="radiobutton" id="106">
+						<width>900</width>
+						<height>40</height>
+						<font>Simplicity_20</font>
+						<label>Enable Smoke Effect From AEON</label>
+						<textcolor>white</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<radiowidth>83</radiowidth>
+						<radioheight>67</radioheight>
+						<textureradiofocus>simplicity/settings-radiobutton-on.png</textureradiofocus>
+						<textureradionofocus>simplicity/settings-radiobutton-off.png</textureradionofocus>
+						<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+						<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(SmokeEffectOn)</onclick>
+						<selected>Skin.HasSetting(SmokeEffectOn)</selected>
+					</control>
+
 					<!--	<control type="radiobutton" id="133">
 						<posx>0</posx>
 						<posy>0</posy>
@@ -493,6 +510,25 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
+					<control type="radiobutton" id="225">
+						<description>enable weather info</description>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>900</width>
+						<height>40</height>
+						<font>Simplicity_20</font>
+						<textcolor>white</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<radiowidth>83</radiowidth>
+						<radioheight>67</radioheight>
+						<textureradiofocus>simplicity/settings-radiobutton-on.png</textureradiofocus>
+						<textureradionofocus>simplicity/settings-radiobutton-off.png</textureradionofocus>
+						<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+						<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
+						<label>Disable Weather Beside Clock</label>
+						<onclick>Skin.ToggleSetting(NoHomeWeather)</onclick>
+						<selected>Skin.HasSetting(NoHomeWeather)</selected>
+					</control>
 					<control type="radiobutton" id="227">
 						<description>enable weather info</description>
 						<posx>0</posx>
@@ -530,6 +566,25 @@
 						<label>Enable Random Items Functionality</label>
 						<onclick>Skin.ToggleSetting(UseRandomItems)</onclick>
 						<selected>Skin.HasSetting(UseRandomItems)</selected>
+					</control>
+					<control type="radiobutton" id="229">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>900</width>
+						<height>40</height>
+						<font>Simplicity_20</font>
+						<textcolor>white</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<radiowidth>83</radiowidth>
+						<radioheight>67</radioheight>
+						<textureradiofocus>simplicity/settings-radiobutton-on.png</textureradiofocus>
+						<textureradionofocus>simplicity/settings-radiobutton-off.png</textureradionofocus>
+						<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+						<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
+						<label>Remove Recently Added Fanart</label>
+						<onclick>Skin.ToggleSetting(NoRecentArt)</onclick>
+						<selected>Skin.HasSetting(NoRecentArt)</selected>
+					<visible>Skin.HasSetting(homepageHideRecentlyAdded)</visible>
 					</control>
 					<control type="label" id="226">
 						<width>750</width>
@@ -575,7 +630,7 @@
 						<textureradionofocus>simplicity/settings-radiobutton-off.png</textureradionofocus>
 						<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
 						<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
-						<label>Show Extra Info Above Main Menu</label>
+						<label>Show Extra Info Above Main Menu [COLOR=grey3](Recently Added)[/COLOR]</label>
 						<onclick>Skin.ToggleSetting(homepageHideRecentlyAdded)</onclick>
 						<selected>Skin.HasSetting(homepageHideRecentlyAdded)</selected>
 					</control>

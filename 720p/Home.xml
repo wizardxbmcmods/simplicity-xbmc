@@ -179,7 +179,8 @@
 			<height>720</height>
 			<texture background="true">$INFO[Container(9000).ListItem.Label2]</texture>
 			<fadetime>1000</fadetime>
-			<visible>!SubString(System.BuildVersion,10.1,Left) + ![Control.HasFocus(8005) | Control.HasFocus(8006) | Control.HasFocus(8007) | Control.HasFocus(8008)]</visible>
+			<visible>!SubString(System.BuildVersion,10.1,Left)</visible>
+			<visible>Skin.HasSetting(NoRecentArt) | ![Control.HasFocus(8005) | Control.HasFocus(8006) | Control.HasFocus(8007) | Control.HasFocus(8008)]</visible>
 			<include>VisibleFadeEffect</include>
 		</control>
 		<control type="image">
@@ -196,7 +197,8 @@
 		</control>
 
 
-
+<control type="group">
+		<visible>!Skin.HasSetting(NoRecentArt)</visible>
 <control type="group">
 		<visible>!SubString(System.BuildVersion,10.1,Left)</visible>
 		<control type="image">
@@ -565,8 +567,8 @@
 			<include>VisibleFadeEffect</include>
 		</control>
 		</control>
+		</control>
 		<!-- New Home List Images-->
-
 		<control type="image">
 			<posx>0</posx>
 			<posy>0</posy>
@@ -1602,8 +1604,6 @@
 		</control>
 
 
-
-
 		<!--END NEW HOME LIST-->
 
 
@@ -2074,6 +2074,7 @@
 		</control>
 
 
+		<include>BackgroundEffect</include>
 		<include>Clock</include>
 		<!--<include>Weather</include>-->
 

@@ -176,7 +176,7 @@ on-->
 			<!-- view id = 557 -->
 			<include>LandscapePanelView</include>
 			<!-- view id = 558 -->
-			<include>EpisodePanelView</include>
+			<include>Side-List</include>
 			<!-- view id = 559 -->
 			<include>MovieGenreView</include>
 			<!-- view id = 59 -->
@@ -343,6 +343,15 @@ on-->
 						<selected>Skin.HasSetting(UseClearart558)</selected>
 						<visible>Control.IsVisible(558)</visible>
 					</control>
+					<control type="radiobutton" id="209">
+						<textwidth>170</textwidth>
+						<description>Toggle Flags Instead of Plot</description>
+						<include>ButtonCommonValuesSub</include>
+						<label>Use Fanart Layout</label>
+						<onclick>Skin.ToggleSetting(TVInfoLeftFanart)</onclick>
+						<selected>Skin.HasSetting(TVInfoLeftFanart)</selected>
+						<visible>Control.IsVisible(532) | Control.IsVisible(534)</visible>
+					</control>
 				</control>
 			</control>
 			<control type="group" id="9002">
@@ -418,7 +427,19 @@ on-->
 						<onclick>Container.SetViewMode(507)</onclick>
 						<visible>Container.Content(TVShows) + !Skin.HasSetting(TVShowsUsePosters)</visible>
 					</control>
-
+					<control type="button" id="22">
+						<description>Side List</description>
+						<width>174</width>
+						<height>95</height>
+						<align>center</align>
+						<aligny>center</aligny>
+						<texturenofocus border="5">simplicity/views/Side List/previewimage.png</texturenofocus>
+						<texturefocus border="5">simplicity/views/Side List/previewimage.png</texturefocus>
+						<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(22)">Conditional</animation>			
+						<animation effect="zoom" end="106" center="auto">Focus</animation>
+						<onclick>Container.SetViewMode(559)</onclick>
+						<visible>Container.Content(TVShows) + Skin.HasSetting(EnableClearartViews)</visible>
+					</control>
 					<control type="button" id="24">
 						<description>Carousel</description>
 						<width>174</width>
@@ -954,7 +975,7 @@ on-->
 
 		</control>
 
-
+		<include>BackgroundEffect</include>
 		<include>Clock</include>
 		<include>BehindDialogFadeOut</include>
 	</controls>

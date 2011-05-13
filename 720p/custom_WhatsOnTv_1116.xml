@@ -11724,6 +11724,7 @@
 
 
 		</control>
+		<include>BackgroundEffect</include>
 		<include>Clock</include>
 	</controls>
 </window>
