@@ -357,6 +357,18 @@
 					<aligny>center</aligny>
 					<aspectratio>keep</aspectratio>
 					<texture>studios/$INFO[VideoPlayer.Studio,,.png]</texture>
+					<visible>!Skin.HasSetting(UseColoredFlags)</visible>
+				</control>
+				<control type="image">
+					<posx>993</posx>
+					<posy>22</posy>
+					<width>100</width>
+					<height>100</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<aspectratio>keep</aspectratio>
+					<texture>studios-color/$INFO[VideoPlayer.Studio,,.png]</texture>
+					<visible>Skin.HasSetting(UseColoredFlags)</visible>
 				</control>
 				<control type="group">
 					<!-- Chapter Count images -->

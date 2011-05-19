@@ -608,7 +608,7 @@
 		</control>
 	</include>
 
-<!--Info Screen-->
+	<!--Info Screen-->
 
 	<include name="EpisodeNextAiredDateInfoScreen">
 		<control type="group">

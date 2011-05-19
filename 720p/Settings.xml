@@ -143,12 +143,11 @@
 						<posy>130</posy>
 						<width>260</width>
 						<height>30</height>
-						<font>Simplicity_26</font>
+						<font>Simplicity_30</font>
 						<label>$INFO[ListItem.label]</label>
 						<align>center</align>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<animation effect="zoom" start="100" end="105" time="100">Focus</animation>
 					</control>
 				</focusedlayout>
 				<content>

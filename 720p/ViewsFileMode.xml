@@ -313,12 +313,12 @@
 						<posy>140</posy>
 						<width>220</width>
 						<height>30</height>
-						<font>Simplicity_20</font>
+						<font>Simplicity_22</font>
 						<label>$INFO[ListItem.label]</label>
 						<align>center</align>
 						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
 						<selectedcolor>white</selectedcolor>
-						<animation effect="zoom" start="100" end="105" easing="out" tween="back" time="100">Focus</animation>
 					</control>
 				</focusedlayout>
 			</control>
@@ -1020,6 +1020,7 @@
 			<include>AddonBreadCrumbs</include>
 			<control type="panel" id="58">
 				<include>Zoom</include>
+				<include>ZoomFocus</include>
 				<posx>135</posx>
 				<posy>110</posy>
 				<width>980</width>
@@ -1104,12 +1105,11 @@
 						<posy>125</posy>
 						<width>180</width>
 						<height>45</height>
-						<font>Simplicity_18</font>
+						<font>Simplicity_20</font>
 						<label>$INFO[ListItem.label]</label>
 						<align>center</align>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<animation effect="zoom" end="105" center="auto" time="100" reversible="false">Focus</animation>
 					</control>
 				</focusedlayout>
 			</control>
@@ -1377,7 +1377,7 @@
 						<visible>![substring(container.folderpath,plugin://plugin.video.crackle) + SubString(ListItem.label,Movies)]</visible>
 						<visible>![substring(container.folderpath,plugin://plugin.video.crackle) + SubString(ListItem.label,Television)]</visible>
 						<visible>![substring(container.folderpath,plugin://plugin.video.crackle) + SubString(ListItem.label,Collections)]</visible>
-							<include>NoYouTubeIcons</include>	
+						<include>NoYouTubeIcons</include>	
 					</control>
 					<control type="image">
 						<posy>28</posy>
@@ -1401,7 +1401,7 @@
 						<aspectratio scalediffuse="false">keep</aspectratio>
 						<texture background="true">$INFO[Listitem.Icon]</texture>
 						<include>YouTubeIcons</include>	
-				</control>
+					</control>
 					<control type="image">
 						<posx>-35</posx>
 						<posy>-25</posy>

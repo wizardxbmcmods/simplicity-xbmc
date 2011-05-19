@@ -151,6 +151,6 @@
 			</control>
 
 		</control>
-	<include>Clock</include>
+		<include>Clock-Solo</include>
 	</controls>
 </window>

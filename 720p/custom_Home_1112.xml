@@ -1,13 +1,13 @@
 <window id="1112">
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<controls>
-			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>1290</width>
-				<height>730</height>
-				<texture>simplicity/background-solid.png</texture>
-			</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1290</width>
+			<height>730</height>
+			<texture>simplicity/background-solid.png</texture>
+		</control>
 		<control type="group">
 			<include>Zoom</include>
 			<!--<visible>StringCompare(Window(Home).Property(LatestEpisode.10.ShowTitle),ListItem.Label)</visible>-->

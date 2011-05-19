@@ -47,7 +47,7 @@
 								<aligny>center</aligny>
 								<texture fallback="album-fallback.png" background="true">root-album.png</texture>
 								<aspectratio>stretch</aspectratio>
-							<visible>stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+								<visible>stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 							</control>
 							<control type="largeimage">
 								<posx>0</posx>
@@ -58,7 +58,7 @@
 								<texture fallback="album-fallback.png" background="true">$INFO[ListItem.Thumb]</texture>
 								<aspectratio>stretch</aspectratio>
 								<visible>!StringCompare(ListItem.label,* All albums)</visible>
-							<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+								<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 							</control>
 							<control type="largeimage">
 								<posx>0</posx>
@@ -69,7 +69,7 @@
 								<texture>simplicity/all-albums.png</texture>
 								<aspectratio>stretch</aspectratio>
 								<visible>StringCompare(ListItem.label,* All albums)</visible>
-							<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+								<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 							</control>
 							<control type="largeimage">
 								<posx>-2</posx>
@@ -120,7 +120,7 @@
 								<texture fallback="album-fallback.png" background="true">$INFO[ListItem.Thumb]</texture>
 								<animation  reversible="false" effect="zoom" end="160" center="auto" time="200">Focus</animation> 
 								<visible>!StringCompare(ListItem.label,* All albums)</visible>
-							<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+								<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 								<aspectratio>stretch</aspectratio>
 							</control>
 							<control type="largeimage">
@@ -132,7 +132,7 @@
 								<texture>simplicity/all-albums.png</texture>
 								<animation  reversible="false" effect="zoom" end="160" center="auto" time="200">Focus</animation> 
 								<visible>StringCompare(ListItem.label,* All albums)</visible>
-							<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+								<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 								<aspectratio>stretch</aspectratio>
 							</control>
 							<control type="largeimage">
@@ -148,7 +148,7 @@
 						</focusedlayout>
 					</control>	
 					<control type="group">
-								<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+						<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 						<include>Zoom</include>
 						<posx>-70</posx>
 						<posy>-90</posy>
@@ -481,7 +481,7 @@
 				<visible>Container.Content(Songs)</visible>
 				<itemlayout height="80" width="500">
 					<control type="group">
-							<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+						<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 						<posx>65</posx>
 						<control type="label">
 							<posx>110</posx>
@@ -541,7 +541,7 @@
 						<scrollspeed>0</scrollspeed>
 						<align>left</align>
 						<label>Released: [COLOR=grey4]$INFO[ListItem.Year][/COLOR]</label>
-							<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+						<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 					</control>
 					<control type="image">
 						<description>Rating value</description>
@@ -562,7 +562,7 @@
 						<texture fallback="album-fallback.png" background="true">$INFO[ListItem.Thumb]</texture>
 						<bordertexture border="8">simplicity/thumbborder.png</bordertexture>
 						<bordersize>8</bordersize>
-							<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+						<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 					</control>
 					<control type="image">
 						<posx>25</posx>
@@ -574,12 +574,12 @@
 						<texture fallback="album-fallback.png" background="true">root-album.png</texture>
 						<bordertexture border="8">simplicity/thumbborder.png</bordertexture>
 						<bordersize>8</bordersize>
-							<visible>stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+						<visible>stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 					</control>
 				</focusedlayout>
 			</control>
 			<control type="group">
-							<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+				<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 				<include>Zoom</include>		
 				<control type="label">
 					<posx>90</posx>
@@ -686,7 +686,7 @@
 				<visible>Container.Content(Albums)</visible>
 				<itemlayout height="80" width="500">
 					<control type="group">
-							<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+						<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 						<posx>45</posx>
 						<control type="label">
 							<posx>135</posx>
@@ -722,7 +722,7 @@
 						<scrollspeed>0</scrollspeed>
 						<align>left</align>
 						<label>$INFO[ListItem.label]</label>
-							<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+						<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 					</control>
 					<control type="label">
 						<posx>260</posx>
@@ -735,7 +735,7 @@
 						<scrollspeed>0</scrollspeed>
 						<align>left</align>
 						<label>[COLOR=grey4]$INFO[ListItem.Artist][/COLOR]</label>
-							<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+						<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 					</control>
 					<control type="image">
 						<description>Rating value</description>
@@ -756,7 +756,7 @@
 						<texture fallback="album-fallback.png" background="true">root-album.png</texture>
 						<bordertexture border="8">simplicity/thumbborder.png</bordertexture>
 						<bordersize>8</bordersize>
-							<visible>stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+						<visible>stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 					</control>
 					<control type="image">
 						<posx>45</posx>
@@ -769,7 +769,7 @@
 						<bordertexture border="8">simplicity/thumbborder.png</bordertexture>
 						<bordersize>8</bordersize>
 						<visible>!StringCompare(ListItem.label,* All albums)</visible>
-							<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+						<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 					</control>
 					<control type="image">
 						<posx>45</posx>
@@ -782,12 +782,12 @@
 						<bordertexture border="8">simplicity/thumbborder.png</bordertexture>
 						<bordersize>8</bordersize>
 						<visible>StringCompare(ListItem.label,* All albums)</visible>
-							<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+						<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 					</control>
 				</focusedlayout>
 			</control>
 			<control type="group">
-							<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+				<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 				<include>Zoom</include>		
 				<control type="label">
 					<posx>90</posx>
@@ -1112,7 +1112,7 @@
 				</focusedlayout>
 			</control>
 			<control type="group">
-						<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+				<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 				<include>Zoom</include>		
 				<control type="label">
 					<posx>90</posx>
@@ -1214,7 +1214,7 @@
 							<texture background="true" fallback="simplicity/artist-fallback.png">$INFO[ListItem.Thumb]</texture>
 							<bordertexture border="4">thumbborder.png</bordertexture>
 							<bordersize>4</bordersize>
-						<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+							<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 						</control>
 						<control type="image">
 							<posx>0</posx>
@@ -1225,7 +1225,7 @@
 							<texture background="true" fallback="simplicity/artist-fallback.png">root-album.png</texture>
 							<bordertexture border="4">thumbborder.png</bordertexture>
 							<bordersize>4</bordersize>
-						<visible>stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+							<visible>stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 						</control>
 						<control type="image">
 							<posx>0</posx>
@@ -1470,7 +1470,7 @@
 						<!-- 112 -->
 						<posy>0</posy>
 						<!-- -143 -->
-						<texture fallback="cd/default.png">$INFO[ListItem.Path],,cdart.png</texture>
+						<texture fallback="cd/default.png">$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem.Artist]$INFO[ListItem.Album,/,/cdart.png]</texture>
 						<aspectratio align="bottom">keep</aspectratio>
 					</control>
 					<control type="image">
@@ -1486,7 +1486,7 @@
 						<animation type="Focus" reversible="false">
 							<effect type="zoom" start="100" end="120" center="auto" time="100"/>
 						</animation>
-							<visible>stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+						<visible>stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 					</control>
 					<control type="image">
 						<posx>0</posx>
@@ -1501,7 +1501,7 @@
 						<animation type="Focus" reversible="false">
 							<effect type="zoom" start="100" end="120" center="auto" time="100"/>
 						</animation>
-							<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+						<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 					</control>
 					<control type="image">
 						<posx>0</posx>
@@ -1516,7 +1516,7 @@
 							<effect type="zoom" start="100" end="120" center="auto" time="100"/>
 						</animation>
 						<visible>StringCompare(ListItem.label,* All albums)</visible>
-							<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+						<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 					</control>
 					<control type="image">
 						<posx>0</posx>
@@ -1785,7 +1785,7 @@
 								<texture diffuse="simplicity/fanart-slide-poster-diffuse.png" background="true" fallback="simplicity/album-fallback.png">root-album.png</texture>
 								<animation effect="zoom" start="0,42,150,150" end="10,42,170,170" center="auto" time="300" reversible="false">Focus</animation> 
 								<aspectratio>stretch</aspectratio>
-							<visible>stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+								<visible>stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 							</control>
 							<control type="largeimage">
 								<posx>10</posx>
@@ -1796,7 +1796,7 @@
 								<texture diffuse="simplicity/fanart-slide-poster-diffuse-reflect.png" background="true" flipy="true" fallback="simplicity/album-fallback.png">root-album.png</texture>
 								<animation effect="zoom" start="0,197,150,150" end="10,217,170,170" center="auto" time="300" reversible="false">Focus</animation> 
 								<aspectratio>stretch</aspectratio>
-							<visible>stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+								<visible>stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 							</control>
 							<control type="largeimage">
 								<posx>10</posx>
@@ -1808,7 +1808,7 @@
 								<animation effect="zoom" start="0,42,150,150" end="10,42,170,170" center="auto" time="300" reversible="false">Focus</animation> 
 								<aspectratio>stretch</aspectratio>
 								<visible>!StringCompare(ListItem.label,* All albums)</visible>
-							<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+								<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 							</control>
 							<control type="largeimage">
 								<posx>10</posx>
@@ -1820,7 +1820,7 @@
 								<animation effect="zoom" start="0,197,150,150" end="10,217,170,170" center="auto" time="300" reversible="false">Focus</animation> 
 								<aspectratio>stretch</aspectratio>
 								<visible>!StringCompare(ListItem.label,* All albums)</visible>
-							<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+								<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 							</control>
 							<control type="largeimage">
 								<posx>10</posx>
@@ -1832,7 +1832,7 @@
 								<animation effect="zoom" start="0,42,150,150" end="10,42,170,170" center="auto" time="300" reversible="false">Focus</animation> 
 								<aspectratio>stretch</aspectratio>
 								<visible>StringCompare(ListItem.label,* All albums)</visible>
-							<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+								<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 							</control>
 							<control type="largeimage">
 								<posx>10</posx>
@@ -1844,7 +1844,7 @@
 								<animation effect="zoom" start="0,197,150,150" end="10,217,170,170" center="auto" time="300" reversible="false">Focus</animation> 
 								<aspectratio>stretch</aspectratio>
 								<visible>StringCompare(ListItem.label,* All albums)</visible>
-							<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+								<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 							</control>
 							<control type="largeimage">
 								<posx>8</posx>
@@ -1870,7 +1870,7 @@
 					</focusedlayout>
 				</control>	
 				<control type="group">
-							<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+					<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 					<include>Zoom</include>
 					<posx>-70</posx>
 					<posy>-60</posy>
@@ -2044,7 +2044,7 @@
 				</focusedlayout>
 			</control>
 			<control type="group">
-						<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+				<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 				<posx>27</posx>
 				<posy>-10</posy>
 				<include>Zoom</include>

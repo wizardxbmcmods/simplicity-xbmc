@@ -111,6 +111,18 @@
 					<itemgap>0</itemgap>
 					<orientation>horizontal</orientation>
 					<include>StudioFlaggingConditions</include>
+					<visible>!Skin.HasSetting(UseColoredFlags)</visible>		
+				</control>
+				<control type = "grouplist">
+					<description>Studio Codec Flagging Images</description>
+					<posx>510</posx>
+					<posy>80</posy>
+					<width>105</width>
+					<align>left</align>
+					<itemgap>0</itemgap>
+					<orientation>horizontal</orientation>
+					<include>StudioFlaggingConditionsColor</include>
+					<visible>Skin.HasSetting(UseColoredFlags)</visible>		
 				</control>
 				<control type = "grouplist">
 					<description>Media Codec Flagging Images</description>

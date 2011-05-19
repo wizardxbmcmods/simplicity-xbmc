@@ -234,7 +234,7 @@
 			<visible>substring(Listitem.mpaa,Rated NC)</visible>
 		</control>
 	</include>
-<include name="MPAAFlaggingConditionsSimple">
+	<include name="MPAAFlaggingConditionsSimple">
 		<control type="image">
 			<description>Rated G</description>
 			<width>130</width>
@@ -424,6 +424,17 @@
 			</control>    
 		</control>
 	</include>
+	<include name="StudioFlaggingConditionsColor">
+		<control type="group">
+			<description>GROUP FOR VISIBILITY FLAGGING</description>
+			<control type="image">
+				<description>Studio</description>
+				<aspectratio>keep</aspectratio>
+				<width>105</width>		
+				<texture>studios-color/$INFO[ListItem.Studio,,.png]</texture>
+			</control>    
+		</control>
+	</include>
 	<include name="StudioFlaggingConditionsSmall">
 		<control type="group">
 			<description>GROUP FOR VISIBILITY FLAGGING</description>
@@ -444,6 +455,17 @@
 				<aspectratio>keep</aspectratio>
 				<width>150</width>		
 				<texture>studios/$INFO[ListItem.Studio,,.png]</texture>
+			</control>    
+		</control>
+	</include>
+	<include name="StudioFlaggingConditionsBigColor">
+		<control type="group">
+			<description>GROUP FOR VISIBILITY FLAGGING</description>
+			<control type="image">
+				<description>Studio</description>
+				<aspectratio>keep</aspectratio>
+				<width>150</width>		
+				<texture>studios-color/$INFO[ListItem.Studio,,.png]</texture>
 			</control>    
 		</control>
 	</include>

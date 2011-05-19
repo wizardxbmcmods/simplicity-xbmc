@@ -169,7 +169,7 @@
 					<posx>310</posx>
 					<posy>50</posy>
 					<width>900</width>
-					<height>670</height>
+					<height>640</height>
 					<itemgap>-1</itemgap>
 					<pagecontrol>60</pagecontrol>
 					<onleft>9000</onleft>
@@ -510,6 +510,25 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
+					<control type="radiobutton" id="224">
+						<description>enable weather info</description>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>900</width>
+						<height>40</height>
+						<font>Simplicity_20</font>
+						<textcolor>white</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<radiowidth>83</radiowidth>
+						<radioheight>67</radioheight>
+						<textureradiofocus>simplicity/settings-radiobutton-on.png</textureradiofocus>
+						<textureradionofocus>simplicity/settings-radiobutton-off.png</textureradionofocus>
+						<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+						<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
+						<label>Use Alternate Home Layout (Icons)</label>
+						<onclick>Skin.ToggleSetting(AlternateHome)</onclick>
+						<selected>Skin.HasSetting(AlternateHome)</selected>
+					</control>
 					<control type="radiobutton" id="225">
 						<description>enable weather info</description>
 						<posx>0</posx>
@@ -584,7 +603,7 @@
 						<label>Remove Recently Added Fanart</label>
 						<onclick>Skin.ToggleSetting(NoRecentArt)</onclick>
 						<selected>Skin.HasSetting(NoRecentArt)</selected>
-					<visible>Skin.HasSetting(homepageHideRecentlyAdded)</visible>
+						<visible>Skin.HasSetting(homepageHideRecentlyAdded)</visible>
 					</control>
 					<control type="label" id="226">
 						<width>750</width>
@@ -3031,6 +3050,22 @@
 							<selected>Skin.HasSetting(UseTurntable)</selected>
 							<visible>!Skin.HasSetting(CleanVisScreen)</visible>
 						</control>
+						<control type="radiobutton" id="505">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_20</font>
+							<label>Enable Colored Studio Flags [COLOR=grey3] (Requires Separate Download Pack)[/COLOR]</label>
+							<textcolor>white</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<radiowidth>83</radiowidth>
+							<radioheight>67</radioheight>
+							<textureradiofocus>simplicity/settings-radiobutton-on.png</textureradiofocus>
+							<textureradionofocus>simplicity/settings-radiobutton-off.png</textureradionofocus>
+							<texturefocus>simplicity/button-focus.png</texturefocus>
+							<texturenofocus>simplicity/menuitemnf.png</texturenofocus>
+							<onclick>Skin.ToggleSetting(UseColoredFlags)</onclick>
+							<selected>Skin.HasSetting(UseColoredFlags)</selected>
+						</control>
 						<control type="radiobutton" id="506">
 							<width>900</width>
 							<height>40</height>
@@ -3160,6 +3195,18 @@
 							<onclick>Skin.ToggleSetting(CleanVisScreen)</onclick>
 							<selected>Skin.HasSetting(CleanVisScreen)</selected>
 						</control>
+						<!--<control type="button" id="514">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_20</font>
+							<label>Set Music Folder For CD Art [COLOR=grey3] (Your Root Music Folder)[/COLOR]</label>
+							<label2>[COLOR=selected]$INFO[Skin.String(Music_Folder_Path)][/COLOR]</label2>
+							<textcolor>white</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
+							<onclick>Skin.SetString(Music_Folder_Path)</onclick>
+						</control>-->
 						<control type="radiobutton" id="516">
 							<posx>0</posx>
 							<posy>0</posy>
@@ -5193,7 +5240,7 @@
 							<width>900</width>
 							<height>20</height>
 							<font>Simplicity_20</font>
-							<label></label>
+							<label/>
 							<textcolor>grey2</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<align>left</align>
@@ -5212,7 +5259,7 @@
 							<width>900</width>
 							<height>30</height>
 							<font>Simplicity_20</font>
-							<label></label>
+							<label/>
 							<textcolor>grey2</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<align>left</align>
@@ -5235,7 +5282,7 @@
 							<width>900</width>
 							<height>40</height>
 							<font>Simplicity_20</font>
-							<label></label>
+							<label/>
 							<textcolor>grey2</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<align>left</align>
@@ -5254,7 +5301,7 @@
 							<width>900</width>
 							<height>30</height>
 							<font>Simplicity_20</font>
-							<label></label>
+							<label/>
 							<textcolor>grey2</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<align>left</align>
@@ -5277,12 +5324,12 @@
 							<width>900</width>
 							<height>40</height>
 							<font>Simplicity_20</font>
-							<label></label>
+							<label/>
 							<textcolor>grey2</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<align>left</align>
 						</control>
-					<control type="label" id="2019">
+						<control type="label" id="2019">
 							<width>750</width>
 							<height>55</height>
 							<font>Simplicity_20_Bold_title</font>
@@ -5339,20 +5386,20 @@
 						<visible>Container(9000).Hasfocus(20)</visible>
 						<animation effect="zoom" end="608,220,150,150" time="300" condition="Control.HasFocus(2013)">Conditional</animation> 
 					</control>
-						<control type="label">
-							<posx>698</posx>
-							<posy>260</posy>
+					<control type="label">
+						<posx>698</posx>
+						<posy>260</posy>
 						<width>400</width>
 						<height>400</height>	
-							<font>Simplicity_20_Bold</font>
-							<label>[COLOR =red]*[/COLOR] The Logo Downloader Addon is Required</label>
-							<textcolor>grey2</textcolor>
-							<shadowcolor>black</shadowcolor>
-							<align>left</align>
-							<visible>Container(9000).Hasfocus(20)</visible>
+						<font>Simplicity_20_Bold</font>
+						<label>[COLOR =red]*[/COLOR] The Logo Downloader Addon is Required</label>
+						<textcolor>grey2</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>left</align>
+						<visible>Container(9000).Hasfocus(20)</visible>
 						<animation effect="zoom" end="105" time="300" condition="Control.HasFocus(2013)">Conditional</animation> 
 						<animation effect="slide" end="68,0" time="300" condition="Control.HasFocus(2013)">Conditional</animation> 
-						</control>
+					</control>
 					<control type="image">
 						<posx>578</posx>
 						<posy>395</posy>
@@ -5364,20 +5411,20 @@
 						<animation effect="zoom" end="608,375,150,150" time="300" condition="Control.HasFocus(2017)">Conditional</animation> 
 						<visible>Container(9000).Hasfocus(20)</visible>
 					</control>
-						<control type="label">
-							<posx>698</posx>
-							<posy>415</posy>
+					<control type="label">
+						<posx>698</posx>
+						<posy>415</posy>
 						<width>400</width>
 						<height>400</height>	
-							<font>Simplicity_20_Bold</font>
-							<label>[COLOR =red]*[/COLOR] The TV Tunes Addon is Required</label>
-							<textcolor>grey2</textcolor>
-							<shadowcolor>black</shadowcolor>
-							<align>left</align>
-							<visible>Container(9000).Hasfocus(20)</visible>
-							<animation effect="zoom" end="105" time="300" condition="Control.HasFocus(2017)">Conditional</animation> 
-							<animation effect="slide" end="68,0" time="300" condition="Control.HasFocus(2017)">Conditional</animation> 
-						</control>
+						<font>Simplicity_20_Bold</font>
+						<label>[COLOR =red]*[/COLOR] The TV Tunes Addon is Required</label>
+						<textcolor>grey2</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>left</align>
+						<visible>Container(9000).Hasfocus(20)</visible>
+						<animation effect="zoom" end="105" time="300" condition="Control.HasFocus(2017)">Conditional</animation> 
+						<animation effect="slide" end="68,0" time="300" condition="Control.HasFocus(2017)">Conditional</animation> 
+					</control>
 					<control type="grouplist" id="9021">
 						<visible>Container(9000).Hasfocus(21)</visible>
 						<posx>310</posx>

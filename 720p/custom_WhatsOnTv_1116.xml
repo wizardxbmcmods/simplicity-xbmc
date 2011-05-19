@@ -1,13 +1,13 @@
 <window id="1116">
 	<defaultcontrol always="true">512</defaultcontrol>
 	<controls>
-			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>1290</width>
-				<height>730</height>
-				<texture>simplicity/background-solid.png</texture>
-			</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1290</width>
+			<height>730</height>
+			<texture>simplicity/background-solid.png</texture>
+		</control>
 		<control type="group">
 			<include>Zoom</include>
 			<!--<control type="image">
@@ -4017,7 +4017,7 @@
 								<width>500</width>
 								<height>80</height>
 								<aspectratio>stretch</aspectratio>
-							<texture diffuse="simplicity/bannerdiffuse.png" fallback="banner-fallback.png">$INFO[ListItem.Thumb]</texture>
+								<texture diffuse="simplicity/bannerdiffuse.png" fallback="banner-fallback.png">$INFO[ListItem.Thumb]</texture>
 							</control>
 							<control type="image">
 								<posx>20</posx>

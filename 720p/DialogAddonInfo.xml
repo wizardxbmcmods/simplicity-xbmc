@@ -336,25 +336,25 @@
 			<control type="group">
 				<visible>ControlGroup(9200).HasFocus(11)</visible>
 
-					<control type="image">
-						<posx>288</posx>
-						<posy>140</posy>
-						<width>600</width>
-						<height>346</height>
-						<texture>now-playing-border.png</texture>
-					</control>
-		<control type="multiimage" id="9288">
-			<posx>298</posx>
-			<posy>150</posy>
-			<width>580</width>
-			<height>326</height>
-			<imagepath fallback="special://skin/extras/no-preview.jpg" background="true">special://skin/extras/skinshots/$INFO[ListItem.Property(Addon.Name)]</imagepath>
-			<timeperimage>3000</timeperimage>
-			<randomize>true</randomize>
-			<fadetime>1000</fadetime>
-			<include>VisibleFadeEffect</include>
-		</control>
-		</control>
+				<control type="image">
+					<posx>288</posx>
+					<posy>140</posy>
+					<width>600</width>
+					<height>346</height>
+					<texture>now-playing-border.png</texture>
+				</control>
+				<control type="multiimage" id="9288">
+					<posx>298</posx>
+					<posy>150</posy>
+					<width>580</width>
+					<height>326</height>
+					<imagepath fallback="special://skin/extras/no-preview.jpg" background="true">special://skin/extras/skinshots/$INFO[ListItem.Property(Addon.Name)]</imagepath>
+					<timeperimage>3000</timeperimage>
+					<randomize>true</randomize>
+					<fadetime>1000</fadetime>
+					<include>VisibleFadeEffect</include>
+				</control>
+			</control>
 
 
 			<control type="group" id="9200">

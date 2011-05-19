@@ -169,167 +169,167 @@
 					</control>				
 					<control type="group">
 						<visible>!Skin.HasSetting(UseRandomItems)</visible>
-					<control type="label">
-						<description>Title label</description>
-						<posx>165</posx>
-						<posy>55</posy>
-						<height>20</height>
-						<width>250</width>
-						<label>$INFO[Window.Property(LatestMovie.1.Title)]</label>
-						<align>left</align>
-						<aligny>center</aligny>
-						<font>Simplicity_18</font>
-						<textcolor>white</textcolor>
-					</control>	
-					<control type="label">
-						<description>Title label</description>
-						<posx>165</posx>
-						<posy>85</posy>
-						<height>20</height>
-						<width>260</width>
-						<label>$INFO[Window.Property(LatestMovie.1.Year)], $INFO[Window.Property(LatestMovie.1.RunningTime)] min</label>
-						<align>left</align>
-						<aligny>center</aligny>
-						<font>Simplicity_18</font>
-						<textcolor>grey2</textcolor>
-					</control>	
-					<control type="image">
-						<description>Rating value</description>
-						<posx>165</posx>
-						<posy>115</posy>
-						<width>108</width>
-						<height>21</height>
-						<texture>rating5.png</texture>
-						<visible>SubString(Window.Property(LatestMovie.1.Rating),10.,Left)</visible> 
+						<control type="label">
+							<description>Title label</description>
+							<posx>165</posx>
+							<posy>55</posy>
+							<height>20</height>
+							<width>250</width>
+							<label>$INFO[Window.Property(LatestMovie.1.Title)]</label>
+							<align>left</align>
+							<aligny>center</aligny>
+							<font>Simplicity_18</font>
+							<textcolor>white</textcolor>
+						</control>	
+						<control type="label">
+							<description>Title label</description>
+							<posx>165</posx>
+							<posy>85</posy>
+							<height>20</height>
+							<width>260</width>
+							<label>$INFO[Window.Property(LatestMovie.1.Year)], $INFO[Window.Property(LatestMovie.1.RunningTime)] min</label>
+							<align>left</align>
+							<aligny>center</aligny>
+							<font>Simplicity_18</font>
+							<textcolor>grey2</textcolor>
+						</control>	
+						<control type="image">
+							<description>Rating value</description>
+							<posx>165</posx>
+							<posy>115</posy>
+							<width>108</width>
+							<height>21</height>
+							<texture>rating5.png</texture>
+							<visible>SubString(Window.Property(LatestMovie.1.Rating),10.,Left)</visible> 
+						</control>
+						<control type="image">
+							<description>Rating value</description>
+							<posx>165</posx>
+							<posy>115</posy>
+							<width>108</width>
+							<height>21</height>
+							<texture>rating4.png</texture>
+							<visible>SubString(Window.Property(LatestMovie.1.Rating),8.,Left) | SubString(Window.Property(LatestMovie.1.Rating),9.,Left)</visible> 
+						</control>
+						<control type="image">
+							<description>Rating value</description>
+							<posx>165</posx>
+							<posy>115</posy>
+							<width>108</width>
+							<height>21</height>
+							<texture>rating3.png</texture>
+							<visible>SubString(Window.Property(LatestMovie.1.Rating),6.,Left) | SubString(Window.Property(LatestMovie.1.Rating),7.,Left)</visible> 
+						</control>
+						<control type="image">
+							<description>Rating value</description>
+							<posx>165</posx>
+							<posy>115</posy>
+							<width>108</width>
+							<height>21</height>
+							<texture>rating2.png</texture>
+							<visible>SubString(Window.Property(LatestMovie.1.Rating),5.,Left) | SubString(Window.Property(LatestMovie.1.Rating),4.,Left)</visible> 
+						</control>
+						<control type="image">
+							<description>Rating value</description>
+							<posx>165</posx>
+							<posy>115</posy>
+							<width>108</width>
+							<height>21</height>
+							<texture>rating1.png</texture>
+							<visible>SubString(Window.Property(LatestMovie.1.Rating),2.,Left) | SubString(Window.Property(LatestMovie.1.Rating),3.,Left)</visible> 
+						</control>
+						<control type="image">
+							<description>Rating value</description>
+							<posx>165</posx>
+							<posy>115</posy>
+							<width>108</width>
+							<height>21</height>
+							<texture>rating0.png</texture>
+							<visible>SubString(Window.Property(LatestMovie.1.Rating),0.,Left) | SubString(Window.Property(LatestMovie.1.Rating),1.,Left)</visible> 
+						</control>
 					</control>
-					<control type="image">
-						<description>Rating value</description>
-						<posx>165</posx>
-						<posy>115</posy>
-						<width>108</width>
-						<height>21</height>
-						<texture>rating4.png</texture>
-						<visible>SubString(Window.Property(LatestMovie.1.Rating),8.,Left) | SubString(Window.Property(LatestMovie.1.Rating),9.,Left)</visible> 
-					</control>
-					<control type="image">
-						<description>Rating value</description>
-						<posx>165</posx>
-						<posy>115</posy>
-						<width>108</width>
-						<height>21</height>
-						<texture>rating3.png</texture>
-						<visible>SubString(Window.Property(LatestMovie.1.Rating),6.,Left) | SubString(Window.Property(LatestMovie.1.Rating),7.,Left)</visible> 
-					</control>
-					<control type="image">
-						<description>Rating value</description>
-						<posx>165</posx>
-						<posy>115</posy>
-						<width>108</width>
-						<height>21</height>
-						<texture>rating2.png</texture>
-						<visible>SubString(Window.Property(LatestMovie.1.Rating),5.,Left) | SubString(Window.Property(LatestMovie.1.Rating),4.,Left)</visible> 
-					</control>
-					<control type="image">
-						<description>Rating value</description>
-						<posx>165</posx>
-						<posy>115</posy>
-						<width>108</width>
-						<height>21</height>
-						<texture>rating1.png</texture>
-						<visible>SubString(Window.Property(LatestMovie.1.Rating),2.,Left) | SubString(Window.Property(LatestMovie.1.Rating),3.,Left)</visible> 
-					</control>
-					<control type="image">
-						<description>Rating value</description>
-						<posx>165</posx>
-						<posy>115</posy>
-						<width>108</width>
-						<height>21</height>
-						<texture>rating0.png</texture>
-						<visible>SubString(Window.Property(LatestMovie.1.Rating),0.,Left) | SubString(Window.Property(LatestMovie.1.Rating),1.,Left)</visible> 
-					</control>
-				</control>
 					<control type="group">
 						<visible>Skin.HasSetting(UseRandomItems)</visible>
-					<control type="label">
-						<description>Title label</description>
-						<posx>165</posx>
-						<posy>55</posy>
-						<height>20</height>
-						<width>250</width>
-						<label>$INFO[Window.Property(RandomMovie.1.Title)]</label>
-						<align>left</align>
-						<aligny>center</aligny>
-						<font>Simplicity_18</font>
-						<textcolor>white</textcolor>
-					</control>	
-					<control type="label">
-						<description>Title label</description>
-						<posx>165</posx>
-						<posy>85</posy>
-						<height>20</height>
-						<width>260</width>
-						<label>$INFO[Window.Property(RandomMovie.1.Year)], $INFO[Window.Property(RandomMovie.1.RunningTime)] min</label>
-						<align>left</align>
-						<aligny>center</aligny>
-						<font>Simplicity_18</font>
-						<textcolor>grey2</textcolor>
-					</control>	
-					<control type="image">
-						<description>Rating value</description>
-						<posx>165</posx>
-						<posy>115</posy>
-						<width>108</width>
-						<height>21</height>
-						<texture>rating5.png</texture>
-						<visible>SubString(Window.Property(RandomMovie.1.Rating),10.,Left)</visible> 
-					</control>
-					<control type="image">
-						<description>Rating value</description>
-						<posx>165</posx>
-						<posy>115</posy>
-						<width>108</width>
-						<height>21</height>
-						<texture>rating4.png</texture>
-						<visible>SubString(Window.Property(RandomMovie.1.Rating),8.,Left) | SubString(Window.Property(RandomMovie.1.Rating),9.,Left)</visible> 
-					</control>
-					<control type="image">
-						<description>Rating value</description>
-						<posx>165</posx>
-						<posy>115</posy>
-						<width>108</width>
-						<height>21</height>
-						<texture>rating3.png</texture>
-						<visible>SubString(Window.Property(RandomMovie.1.Rating),6.,Left) | SubString(Window.Property(RandomMovie.1.Rating),7.,Left)</visible> 
-					</control>
-					<control type="image">
-						<description>Rating value</description>
-						<posx>165</posx>
-						<posy>115</posy>
-						<width>108</width>
-						<height>21</height>
-						<texture>rating2.png</texture>
-						<visible>SubString(Window.Property(RandomMovie.1.Rating),5.,Left) | SubString(Window.Property(RandomMovie.1.Rating),4.,Left)</visible> 
-					</control>
-					<control type="image">
-						<description>Rating value</description>
-						<posx>165</posx>
-						<posy>115</posy>
-						<width>108</width>
-						<height>21</height>
-						<texture>rating1.png</texture>
-						<visible>SubString(Window.Property(RandomMovie.1.Rating),2.,Left) | SubString(Window.Property(RandomMovie.1.Rating),3.,Left)</visible> 
-					</control>
-					<control type="image">
-						<description>Rating value</description>
-						<posx>165</posx>
-						<posy>115</posy>
-						<width>108</width>
-						<height>21</height>
-						<texture>rating0.png</texture>
-						<visible>SubString(Window.Property(RandomMovie.1.Rating),0.,Left) | SubString(Window.Property(RandomMovie.1.Rating),1.,Left)</visible> 
+						<control type="label">
+							<description>Title label</description>
+							<posx>165</posx>
+							<posy>55</posy>
+							<height>20</height>
+							<width>250</width>
+							<label>$INFO[Window.Property(RandomMovie.1.Title)]</label>
+							<align>left</align>
+							<aligny>center</aligny>
+							<font>Simplicity_18</font>
+							<textcolor>white</textcolor>
+						</control>	
+						<control type="label">
+							<description>Title label</description>
+							<posx>165</posx>
+							<posy>85</posy>
+							<height>20</height>
+							<width>260</width>
+							<label>$INFO[Window.Property(RandomMovie.1.Year)], $INFO[Window.Property(RandomMovie.1.RunningTime)] min</label>
+							<align>left</align>
+							<aligny>center</aligny>
+							<font>Simplicity_18</font>
+							<textcolor>grey2</textcolor>
+						</control>	
+						<control type="image">
+							<description>Rating value</description>
+							<posx>165</posx>
+							<posy>115</posy>
+							<width>108</width>
+							<height>21</height>
+							<texture>rating5.png</texture>
+							<visible>SubString(Window.Property(RandomMovie.1.Rating),10.,Left)</visible> 
+						</control>
+						<control type="image">
+							<description>Rating value</description>
+							<posx>165</posx>
+							<posy>115</posy>
+							<width>108</width>
+							<height>21</height>
+							<texture>rating4.png</texture>
+							<visible>SubString(Window.Property(RandomMovie.1.Rating),8.,Left) | SubString(Window.Property(RandomMovie.1.Rating),9.,Left)</visible> 
+						</control>
+						<control type="image">
+							<description>Rating value</description>
+							<posx>165</posx>
+							<posy>115</posy>
+							<width>108</width>
+							<height>21</height>
+							<texture>rating3.png</texture>
+							<visible>SubString(Window.Property(RandomMovie.1.Rating),6.,Left) | SubString(Window.Property(RandomMovie.1.Rating),7.,Left)</visible> 
+						</control>
+						<control type="image">
+							<description>Rating value</description>
+							<posx>165</posx>
+							<posy>115</posy>
+							<width>108</width>
+							<height>21</height>
+							<texture>rating2.png</texture>
+							<visible>SubString(Window.Property(RandomMovie.1.Rating),5.,Left) | SubString(Window.Property(RandomMovie.1.Rating),4.,Left)</visible> 
+						</control>
+						<control type="image">
+							<description>Rating value</description>
+							<posx>165</posx>
+							<posy>115</posy>
+							<width>108</width>
+							<height>21</height>
+							<texture>rating1.png</texture>
+							<visible>SubString(Window.Property(RandomMovie.1.Rating),2.,Left) | SubString(Window.Property(RandomMovie.1.Rating),3.,Left)</visible> 
+						</control>
+						<control type="image">
+							<description>Rating value</description>
+							<posx>165</posx>
+							<posy>115</posy>
+							<width>108</width>
+							<height>21</height>
+							<texture>rating0.png</texture>
+							<visible>SubString(Window.Property(RandomMovie.1.Rating),0.,Left) | SubString(Window.Property(RandomMovie.1.Rating),1.,Left)</visible> 
+						</control>
 					</control>
 				</control>
-			</control>
 				<control type="group">
 					<posx>-290</posx>
 					<posy>300</posy>
@@ -488,7 +488,7 @@
 					</control>				
 				</control>
 
-				
+
 
 				<control type="group">
 					<posx>110</posx>
@@ -654,192 +654,192 @@
 							</item>
 						</content>
 					</control>				
-				<control type="group">
-					<visible>!Skin.HasSetting(UseRandomItems)</visible>
-					<control type="label">
-						<description>Title label</description>
-						<posx>270</posx>
-						<posy>50</posy>
-						<height>20</height>
-						<width>270</width>
-						<label>$INFO[Window.Property(LatestEpisode.1.ShowTitle)]</label>
-						<align>left</align>
-						<aligny>center</aligny>
-						<font>Simplicity_18</font>
-						<textcolor>white</textcolor>
-					</control>	
-					<control type="label">
-						<description>Title label</description>
-						<posx>270</posx>
-						<posy>80</posy>
-						<height>20</height>
-						<width>270</width>
-						<label>"$INFO[Window.Property(LatestEpisode.1.EpisodeTitle)]"</label>
-						<align>left</align>
-						<aligny>center</aligny>
-						<font>Simplicity_18</font>
-						<textcolor>grey2</textcolor>
-					</control>	
-					<control type="label">
-						<description>Title label</description>
-						<posx>270</posx>
-						<posy>110</posy>
-						<height>20</height>
-						<width>210</width>
-						<label>Season: [COLOR=white]$INFO[Window.Property(LatestEpisode.1.EpisodeSeason)][/COLOR] - Episode: [COLOR=white]$INFO[Window.Property(LatestEpisode.1.EpisodeNumber)][/COLOR]</label>
-						<align>left</align>
-						<aligny>center</aligny>
-						<font>Simplicity_18</font>
-						<textcolor>grey2</textcolor>
-					</control>	
-					<control type="image">
-						<description>Rating value</description>
-						<posx>270</posx>
-						<posy>140</posy>
-						<width>108</width>
-						<height>21</height>
-						<texture>rating5.png</texture>
-						<visible>SubString(Window.Property(LatestEpisode.1.Rating),10.,Left)</visible> 
+					<control type="group">
+						<visible>!Skin.HasSetting(UseRandomItems)</visible>
+						<control type="label">
+							<description>Title label</description>
+							<posx>270</posx>
+							<posy>50</posy>
+							<height>20</height>
+							<width>270</width>
+							<label>$INFO[Window.Property(LatestEpisode.1.ShowTitle)]</label>
+							<align>left</align>
+							<aligny>center</aligny>
+							<font>Simplicity_18</font>
+							<textcolor>white</textcolor>
+						</control>	
+						<control type="label">
+							<description>Title label</description>
+							<posx>270</posx>
+							<posy>80</posy>
+							<height>20</height>
+							<width>270</width>
+							<label>"$INFO[Window.Property(LatestEpisode.1.EpisodeTitle)]"</label>
+							<align>left</align>
+							<aligny>center</aligny>
+							<font>Simplicity_18</font>
+							<textcolor>grey2</textcolor>
+						</control>	
+						<control type="label">
+							<description>Title label</description>
+							<posx>270</posx>
+							<posy>110</posy>
+							<height>20</height>
+							<width>210</width>
+							<label>Season: [COLOR=white]$INFO[Window.Property(LatestEpisode.1.EpisodeSeason)][/COLOR] - Episode: [COLOR=white]$INFO[Window.Property(LatestEpisode.1.EpisodeNumber)][/COLOR]</label>
+							<align>left</align>
+							<aligny>center</aligny>
+							<font>Simplicity_18</font>
+							<textcolor>grey2</textcolor>
+						</control>	
+						<control type="image">
+							<description>Rating value</description>
+							<posx>270</posx>
+							<posy>140</posy>
+							<width>108</width>
+							<height>21</height>
+							<texture>rating5.png</texture>
+							<visible>SubString(Window.Property(LatestEpisode.1.Rating),10.,Left)</visible> 
+						</control>
+						<control type="image">
+							<description>Rating value</description>
+							<posx>270</posx>
+							<posy>140</posy>
+							<width>108</width>
+							<height>21</height>
+							<texture>rating4.png</texture>
+							<visible>SubString(Window.Property(LatestEpisode.1.Rating),8.,Left) | SubString(Window.Property(LatestEpisode.1.Rating),9.,Left)</visible> 
+						</control>
+						<control type="image">
+							<description>Rating value</description>
+							<posx>270</posx>
+							<posy>140</posy>
+							<width>108</width>
+							<height>21</height>
+							<texture>rating3.png</texture>
+							<visible>SubString(Window.Property(LatestEpisode.1.Rating),6.,Left) | SubString(Window.Property(LatestEpisode.1.Rating),7.,Left)</visible> 
+						</control>
+						<control type="image">
+							<description>Rating value</description>
+							<posx>270</posx>
+							<posy>140</posy>
+							<width>108</width>
+							<height>21</height>
+							<texture>rating2.png</texture>
+							<visible>SubString(Window.Property(LatestEpisode.1.Rating),5.,Left) | SubString(Window.Property(LatestEpisode.1.Rating),4.,Left)</visible> 
+						</control>
+						<control type="image">
+							<description>Rating value</description>
+							<posx>270</posx>
+							<posy>140</posy>
+							<width>108</width>
+							<height>21</height>
+							<texture>rating1.png</texture>
+							<visible>SubString(Window.Property(LatestEpisode.1.Rating),2.,Left) | SubString(Window.Property(LatestEpisode.1.Rating),3.,Left)</visible> 
+						</control>
+						<control type="image">
+							<description>Rating value</description>
+							<posx>270</posx>
+							<posy>140</posy>
+							<width>108</width>
+							<height>21</height>
+							<texture>rating0.png</texture>
+							<visible>SubString(Window.Property(LatestEpisode.1.Rating),0.,Left) | SubString(Window.Property(LatestEpisode.1.Rating),1.,Left)</visible> 
+						</control>
 					</control>
-					<control type="image">
-						<description>Rating value</description>
-						<posx>270</posx>
-						<posy>140</posy>
-						<width>108</width>
-						<height>21</height>
-						<texture>rating4.png</texture>
-						<visible>SubString(Window.Property(LatestEpisode.1.Rating),8.,Left) | SubString(Window.Property(LatestEpisode.1.Rating),9.,Left)</visible> 
+					<control type="group">
+						<visible>Skin.HasSetting(UseRandomItems)</visible>
+						<control type="label">
+							<description>Title label</description>
+							<posx>270</posx>
+							<posy>50</posy>
+							<height>20</height>
+							<width>270</width>
+							<label>$INFO[Window.Property(RandomEpisode.1.ShowTitle)]</label>
+							<align>left</align>
+							<aligny>center</aligny>
+							<font>Simplicity_18</font>
+							<textcolor>white</textcolor>
+						</control>	
+						<control type="label">
+							<description>Title label</description>
+							<posx>270</posx>
+							<posy>80</posy>
+							<height>20</height>
+							<width>270</width>
+							<label>"$INFO[Window.Property(RandomEpisode.1.EpisodeTitle)]"</label>
+							<align>left</align>
+							<aligny>center</aligny>
+							<font>Simplicity_18</font>
+							<textcolor>grey2</textcolor>
+						</control>	
+						<control type="label">
+							<description>Title label</description>
+							<posx>270</posx>
+							<posy>110</posy>
+							<height>20</height>
+							<width>210</width>
+							<label>Season: [COLOR=white]$INFO[Window.Property(RandomEpisode.1.EpisodeSeason)][/COLOR] - Episode: [COLOR=white]$INFO[Window.Property(RandomEpisode.1.EpisodeNumber)][/COLOR]</label>
+							<align>left</align>
+							<aligny>center</aligny>
+							<font>Simplicity_18</font>
+							<textcolor>grey2</textcolor>
+						</control>	
+						<control type="image">
+							<description>Rating value</description>
+							<posx>270</posx>
+							<posy>140</posy>
+							<width>108</width>
+							<height>21</height>
+							<texture>rating5.png</texture>
+							<visible>SubString(Window.Property(RandomEpisode.1.Rating),10.,Left)</visible> 
+						</control>
+						<control type="image">
+							<description>Rating value</description>
+							<posx>270</posx>
+							<posy>140</posy>
+							<width>108</width>
+							<height>21</height>
+							<texture>rating4.png</texture>
+							<visible>SubString(Window.Property(RandomEpisode.1.Rating),8.,Left) | SubString(Window.Property(RandomEpisode.1.Rating),9.,Left)</visible> 
+						</control>
+						<control type="image">
+							<description>Rating value</description>
+							<posx>270</posx>
+							<posy>140</posy>
+							<width>108</width>
+							<height>21</height>
+							<texture>rating3.png</texture>
+							<visible>SubString(Window.Property(RandomEpisode.1.Rating),6.,Left) | SubString(Window.Property(RandomEpisode.1.Rating),7.,Left)</visible> 
+						</control>
+						<control type="image">
+							<description>Rating value</description>
+							<posx>270</posx>
+							<posy>140</posy>
+							<width>108</width>
+							<height>21</height>
+							<texture>rating2.png</texture>
+							<visible>SubString(Window.Property(RandomEpisode.1.Rating),5.,Left) | SubString(Window.Property(RandomEpisode.1.Rating),4.,Left)</visible> 
+						</control>
+						<control type="image">
+							<description>Rating value</description>
+							<posx>270</posx>
+							<posy>140</posy>
+							<width>108</width>
+							<height>21</height>
+							<texture>rating1.png</texture>
+							<visible>SubString(Window.Property(RandomEpisode.1.Rating),2.,Left) | SubString(Window.Property(RandomEpisode.1.Rating),3.,Left)</visible> 
+						</control>
+						<control type="image">
+							<description>Rating value</description>
+							<posx>270</posx>
+							<posy>140</posy>
+							<width>108</width>
+							<height>21</height>
+							<texture>rating0.png</texture>
+							<visible>SubString(Window.Property(RandomEpisode.1.Rating),0.,Left) | SubString(Window.Property(RandomEpisode.1.Rating),1.,Left)</visible> 
+						</control>
 					</control>
-					<control type="image">
-						<description>Rating value</description>
-						<posx>270</posx>
-						<posy>140</posy>
-						<width>108</width>
-						<height>21</height>
-						<texture>rating3.png</texture>
-						<visible>SubString(Window.Property(LatestEpisode.1.Rating),6.,Left) | SubString(Window.Property(LatestEpisode.1.Rating),7.,Left)</visible> 
-					</control>
-					<control type="image">
-						<description>Rating value</description>
-						<posx>270</posx>
-						<posy>140</posy>
-						<width>108</width>
-						<height>21</height>
-						<texture>rating2.png</texture>
-						<visible>SubString(Window.Property(LatestEpisode.1.Rating),5.,Left) | SubString(Window.Property(LatestEpisode.1.Rating),4.,Left)</visible> 
-					</control>
-					<control type="image">
-						<description>Rating value</description>
-						<posx>270</posx>
-						<posy>140</posy>
-						<width>108</width>
-						<height>21</height>
-						<texture>rating1.png</texture>
-						<visible>SubString(Window.Property(LatestEpisode.1.Rating),2.,Left) | SubString(Window.Property(LatestEpisode.1.Rating),3.,Left)</visible> 
-					</control>
-					<control type="image">
-						<description>Rating value</description>
-						<posx>270</posx>
-						<posy>140</posy>
-						<width>108</width>
-						<height>21</height>
-						<texture>rating0.png</texture>
-						<visible>SubString(Window.Property(LatestEpisode.1.Rating),0.,Left) | SubString(Window.Property(LatestEpisode.1.Rating),1.,Left)</visible> 
-					</control>
-				</control>
-				<control type="group">
-					<visible>Skin.HasSetting(UseRandomItems)</visible>
-					<control type="label">
-						<description>Title label</description>
-						<posx>270</posx>
-						<posy>50</posy>
-						<height>20</height>
-						<width>270</width>
-						<label>$INFO[Window.Property(RandomEpisode.1.ShowTitle)]</label>
-						<align>left</align>
-						<aligny>center</aligny>
-						<font>Simplicity_18</font>
-						<textcolor>white</textcolor>
-					</control>	
-					<control type="label">
-						<description>Title label</description>
-						<posx>270</posx>
-						<posy>80</posy>
-						<height>20</height>
-						<width>270</width>
-						<label>"$INFO[Window.Property(RandomEpisode.1.EpisodeTitle)]"</label>
-						<align>left</align>
-						<aligny>center</aligny>
-						<font>Simplicity_18</font>
-						<textcolor>grey2</textcolor>
-					</control>	
-					<control type="label">
-						<description>Title label</description>
-						<posx>270</posx>
-						<posy>110</posy>
-						<height>20</height>
-						<width>210</width>
-						<label>Season: [COLOR=white]$INFO[Window.Property(RandomEpisode.1.EpisodeSeason)][/COLOR] - Episode: [COLOR=white]$INFO[Window.Property(RandomEpisode.1.EpisodeNumber)][/COLOR]</label>
-						<align>left</align>
-						<aligny>center</aligny>
-						<font>Simplicity_18</font>
-						<textcolor>grey2</textcolor>
-					</control>	
-					<control type="image">
-						<description>Rating value</description>
-						<posx>270</posx>
-						<posy>140</posy>
-						<width>108</width>
-						<height>21</height>
-						<texture>rating5.png</texture>
-						<visible>SubString(Window.Property(RandomEpisode.1.Rating),10.,Left)</visible> 
-					</control>
-					<control type="image">
-						<description>Rating value</description>
-						<posx>270</posx>
-						<posy>140</posy>
-						<width>108</width>
-						<height>21</height>
-						<texture>rating4.png</texture>
-						<visible>SubString(Window.Property(RandomEpisode.1.Rating),8.,Left) | SubString(Window.Property(RandomEpisode.1.Rating),9.,Left)</visible> 
-					</control>
-					<control type="image">
-						<description>Rating value</description>
-						<posx>270</posx>
-						<posy>140</posy>
-						<width>108</width>
-						<height>21</height>
-						<texture>rating3.png</texture>
-						<visible>SubString(Window.Property(RandomEpisode.1.Rating),6.,Left) | SubString(Window.Property(RandomEpisode.1.Rating),7.,Left)</visible> 
-					</control>
-					<control type="image">
-						<description>Rating value</description>
-						<posx>270</posx>
-						<posy>140</posy>
-						<width>108</width>
-						<height>21</height>
-						<texture>rating2.png</texture>
-						<visible>SubString(Window.Property(RandomEpisode.1.Rating),5.,Left) | SubString(Window.Property(RandomEpisode.1.Rating),4.,Left)</visible> 
-					</control>
-					<control type="image">
-						<description>Rating value</description>
-						<posx>270</posx>
-						<posy>140</posy>
-						<width>108</width>
-						<height>21</height>
-						<texture>rating1.png</texture>
-						<visible>SubString(Window.Property(RandomEpisode.1.Rating),2.,Left) | SubString(Window.Property(RandomEpisode.1.Rating),3.,Left)</visible> 
-					</control>
-					<control type="image">
-						<description>Rating value</description>
-						<posx>270</posx>
-						<posy>140</posy>
-						<width>108</width>
-						<height>21</height>
-						<texture>rating0.png</texture>
-						<visible>SubString(Window.Property(RandomEpisode.1.Rating),0.,Left) | SubString(Window.Property(RandomEpisode.1.Rating),1.,Left)</visible> 
-					</control>
-				</control>
 				</control>
 
 				<control type="group">
@@ -1940,9 +1940,9 @@
 									<width>100</width>
 									<height>100</height>
 									<aspectratio>stretch</aspectratio>
-								<texture fallback="nothumbalbum.png">$INFO[ListItem.Thumb]</texture>
-								<bordertexture border="2">thumbborder-thin.png</bordertexture>
-								<bordersize>2</bordersize>
+									<texture fallback="nothumbalbum.png">$INFO[ListItem.Thumb]</texture>
+									<bordertexture border="2">thumbborder-thin.png</bordertexture>
+									<bordersize>2</bordersize>
 								</control>
 								<control type="image">
 									<posx>23</posx>
@@ -2070,9 +2070,9 @@
 									<width>100</width>
 									<height>100</height>
 									<aspectratio>stretch</aspectratio>
-								<texture fallback="nothumbalbum.png">$INFO[ListItem.Thumb]</texture>
-								<bordertexture border="2">thumbborder-thin.png</bordertexture>
-								<bordersize>2</bordersize>
+									<texture fallback="nothumbalbum.png">$INFO[ListItem.Thumb]</texture>
+									<bordertexture border="2">thumbborder-thin.png</bordertexture>
+									<bordersize>2</bordersize>
 								</control>
 								<control type="image">
 									<posx>23</posx>
@@ -2201,7 +2201,7 @@
 									<width>100</width>
 									<height>100</height>
 									<aspectratio>stretch</aspectratio>
-								<texture fallback="nothumbalbum.png">$INFO[ListItem.Thumb]</texture>
+									<texture fallback="nothumbalbum.png">$INFO[ListItem.Thumb]</texture>
 									<bordertexture border="2">thumbborder-thin.png</bordertexture>
 									<bordersize>2</bordersize>
 								</control>
@@ -2289,7 +2289,7 @@
 						<viewtype label="535">list</viewtype>
 						<pagecontrol>-</pagecontrol>
 						<scrolltime>0</scrolltime>
-					<itemlayout height="150" width="170">
+						<itemlayout height="150" width="170">
 							<control type="image">
 								<posx>24</posx>
 								<posy>38</posy>
@@ -2326,7 +2326,7 @@
 									<width>100</width>
 									<height>100</height>
 									<aspectratio>stretch</aspectratio>
-								<texture fallback="nothumbalbum.png">$INFO[ListItem.Thumb]</texture>
+									<texture fallback="nothumbalbum.png">$INFO[ListItem.Thumb]</texture>
 									<bordertexture border="2">thumbborder-thin.png</bordertexture>
 									<bordersize>2</bordersize>
 								</control>
@@ -2395,7 +2395,7 @@
 			</control>
 		</control>
 
-<!--<control type="group">
+		<!--<control type="group">
 					<posx>40</posx>
 					<posy>400</posy>
 					<visible>Library.HasContent(Movies)</visible>
