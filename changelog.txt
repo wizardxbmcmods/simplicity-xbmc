@@ -1,8 +1,14 @@
+[B]1.2.1[/B] 
+
+- Cleaned up thumbnail view
+- Added icons to Home Screen
+- Much more...
+
 [B]1.2.0[/B] 
 
 - Added ability to move within TV Guide
 - Added fanart for Recently Added Items
--Added support for more add-ons
+- Added support for more add-ons
 
 [B]1.1.0[/B] 
 

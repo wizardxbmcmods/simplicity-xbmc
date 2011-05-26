@@ -416,6 +416,7 @@
 							<fadetime>FanartCrossfadeTime</fadetime>
 							<texture diffuse="vis-diffuse.png">$INFO[MusicPlayer.offset(1).Cover]</texture>
 							<aspectratio aligny="bottom">stretch</aspectratio>
+							<visible>!stringcompare(MusicPlayer.offset(1).Cover,DefaultAlbumCover.png)</visible>
 						</control>
 						<control type="image" id="8983">
 							<description>cover image</description>
@@ -448,6 +449,25 @@
 							<texture>vis-shadow.png</texture>
 							<fadetime>FanartCrossfadeTime</fadetime>
 						</control>
+					<control type="image">
+						<description>Cd overlay</description>
+						<animation effect="slide" start="0,70" end="0,-70" time="1000" delay="600">WindowOpen</animation>
+					<animation effect="fade" start="0" end="100" delay="300" time="300">WindowOpen</animation>
+						<animation type="WindowClose">
+							<effect type="slide" start="0,0" end="0,70" time="800" delay="0"/>
+							<effect type="fade" start="100" end="0" time="0"/>
+							<condition type="!Player.Playing"/>
+						</animation>
+						<animation effect="rotate" end="-360" center="auto" time="2800" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
+						<width>250</width>
+						<height>250</height>
+						<posx>280</posx>
+						<!-- 112 -->
+						<posy>130</posy>
+						<!-- -143 -->
+						<texture fallback="cd/default.png">$INFO[Player.FolderPath]/cdart.png</texture>
+						<visible>!Skin.HasSetting(NoCdClean)</visible>
+					</control>
 						<control type="image">
 							<description>cover image</description>
 							<posx>255</posx>
@@ -457,6 +477,7 @@
 							<texture diffuse="vis-diffuse.png">$INFO[MusicPlayer.Cover]</texture>
 							<fadetime>FanartCrossfadeTime</fadetime>
 							<aspectratio aligny="bottom">stretch</aspectratio>
+							<visible>!stringcompare(MusicPlayer.Cover,DefaultAlbumCover.png)</visible>
 						</control>
 						<control type="image">
 							<description>cover image</description>
@@ -464,10 +485,10 @@
 							<posy>185</posy>
 							<width>300</width>
 							<height>300</height>
-							<texture>album-fallback.png</texture>
+							<texture diffuse="vis-diffuse.png">album-fallback.png</texture>
 							<fadetime>FanartCrossfadeTime</fadetime>
 							<aspectratio aligny="bottom">stretch</aspectratio>
-							<animation effect="slide" start="-518" end="0" time="1000" tween="cubic" easing="out" delay="500">WindowOpen</animation>
+							<animation effect="fade" start="0" end="100" time="100">WindowOpen</animation>
 							<visible>stringcompare(MusicPlayer.Cover,DefaultAlbumCover.png)</visible>
 						</control>
 						<control type="image">
@@ -479,6 +500,7 @@
 							<texture diffuse="vis-diffuse.png">vis-gloss.png</texture>
 							<fadetime>FanartCrossfadeTime</fadetime>
 							<aspectratio aligny="bottom">stretch</aspectratio>
+							<animation effect="fade" start="0" end="100" time="100">WindowOpen</animation>
 						</control>
 					</control>
 					<include condition="!Skin.HasSetting(NoVisualizationClock)">Clock</include>

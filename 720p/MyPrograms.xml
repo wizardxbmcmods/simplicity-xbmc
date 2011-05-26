@@ -32,6 +32,26 @@
 				<aspectratio>keep</aspectratio>
 				<texture>simplicity/simplicity-logo.png</texture>
 			</control>
+				<control type="label">
+				<posx>-185</posx>
+				<posy>668</posy>
+				<width>260</width>
+				<height>545</height>
+				<font>Simplicity_24</font>
+				<label>Exit Menu</label>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<align>left</align>
+			</control>
+		<control type="image">
+			<description>arrow</description>
+			<posx>-55</posx>
+			<posy>670</posy>
+			<width>25</width>
+			<height>25</height>
+			<aspectratio>keep</aspectratio>
+			<texture>simplicity/right-arrow.png</texture>
+		</control>
 			<control type="group" id="9000">
 				<posx>-220</posx>
 				<posy>130</posy>

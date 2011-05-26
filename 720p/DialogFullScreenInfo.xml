@@ -539,6 +539,28 @@
 			<aspectratio>stretch</aspectratio>
 			<texture border="40">simplicity/infoscreen-popup.png</texture>
 		</control>
+				<control type="image">
+					<posx>698</posx>
+					<posy>-16</posy>
+					<width>100</width>
+					<height>100</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<aspectratio>keep</aspectratio>
+					<texture>studios/$INFO[VideoPlayer.Studio,,.png]</texture>
+					<visible>!Skin.HasSetting(UseColoredFlags)</visible>
+				</control>
+				<control type="image">
+					<posx>698</posx>
+					<posy>-16</posy>
+					<width>100</width>
+					<height>100</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<aspectratio>keep</aspectratio>
+					<texture>studios-color/$INFO[VideoPlayer.Studio,,.png]</texture>
+					<visible>Skin.HasSetting(UseColoredFlags)</visible>
+				</control>
 		<control type="group">
 				<posx>180</posx>
 				<posy>0</posy>
@@ -748,6 +770,28 @@
 			<aspectratio>stretch</aspectratio>
 			<texture border="40">simplicity/infoscreen-popup.png</texture>
 		</control>
+				<control type="image">
+					<posx>698</posx>
+					<posy>-16</posy>
+					<width>100</width>
+					<height>100</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<aspectratio>keep</aspectratio>
+					<texture>studios/$INFO[VideoPlayer.Studio,,.png]</texture>
+					<visible>!Skin.HasSetting(UseColoredFlags)</visible>
+				</control>
+				<control type="image">
+					<posx>698</posx>
+					<posy>-16</posy>
+					<width>100</width>
+					<height>100</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<aspectratio>keep</aspectratio>
+					<texture>studios-color/$INFO[VideoPlayer.Studio,,.png]</texture>
+					<visible>Skin.HasSetting(UseColoredFlags)</visible>
+				</control>
 		<control type="group">
 				<posx>180</posx>
 				<posy>0</posy>
@@ -766,7 +810,7 @@
 				<control type="label">
 					<posx>200</posx>
 					<posy>30</posy>
-					<width>400</width>
+					<width>330</width>
 					<height>25</height>
 					<label>$INFO[VideoPlayer.TVShowTitle]</label>
 					<scroll>false</scroll>

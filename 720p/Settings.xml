@@ -16,8 +16,8 @@
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
-				<width>1280</width>
-				<height>720</height>
+				<width>1290</width>
+				<height>730</height>
 				<texture>simplicity/background-solid.png</texture>
 			</control>
 			<!--<control type="image">
@@ -42,9 +42,9 @@
 				<texture>simplicity/separator-white.png</texture>
 			</control>-->					
 			<control type="panel" id="9000">
-				<posx>120</posx>
-				<posy>175</posy>
-				<width>1080</width>
+				<posx>80</posx>
+				<posy>100</posy>
+				<width>1130</width>
 				<height>520</height>
 				<onleft>9000</onleft>
 				<onright>9000</onright>
@@ -53,30 +53,19 @@
 				<pagecontrol>-</pagecontrol>
 				<orientation>horizontal</orientation>
 				<scrolltime>300</scrolltime>
-				<itemlayout height="185" width="260">
-					<!--<control type="label">
-						<posx>10</posx>
-						<posy>0</posy>
-						<width>380</width>
-						<height>61</height>
-						<font>Simplicity_40</font>
-						<textcolor>white</textcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label]</label>
-					</control>-->
+				<itemlayout height="245" width="280">
 					<control type="image">
-						<posx>3</posx>
-						<posy>3</posy>
-						<width>250</width>
-						<height>175</height>
+						<posx>22</posx>
+						<posy>22</posy>
+						<width>254</width>
+						<height>179</height>
 						<aspectratio>stretch</aspectratio>
 						<fadetime>600</fadetime>
-						<texture background="true" diffuse="simplicity/fanart-slide-fanart-diffuse.png">simplicity/app-shadow.png</texture>
+						<texture background="true" diffuse="simplicity/fanart-slide-fanart-diffuse.png">simplicity/app-shadow-2.png</texture>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
+						<posx>20</posx>
+						<posy>20</posy>
 						<width>250</width>
 						<height>175</height>
 						<aspectratio>stretch</aspectratio>
@@ -86,68 +75,88 @@
 					<control type="image">
 						<description>icon</description>
 						<posx>70</posx>
-						<posy>0</posy>
-						<width>110</width>
-						<height>110</height>
+						<posy>30</posy>
+						<width>150</width>
+						<height>150</height>
 						<aspectratio>keep</aspectratio>
+						<align>center</align>
 						<texture>$INFO[ListItem.ActualIcon]</texture>
 					</control>
-					<control type="label">
-						<description>header label</description>
-						<posx>124</posx>
-						<posy>130</posy>
-						<width>260</width>
-						<height>30</height>
-						<font>Simplicity_26</font>
-						<label>$INFO[ListItem.label]</label>
-						<align>center</align>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-					</control>
-				</itemlayout>
-				<focusedlayout height="185" width="260">
-					<!--<control type="label">
-						<posx>10</posx>
-						<posy>0</posy>
-						<width>380</width>
-						<height>61</height>
-						<font>Simplicity_40</font>
-						<textcolor>white</textcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label]</label>
-					</control>-->
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
+						<posx>20</posx>
+						<posy>20</posy>
 						<width>250</width>
 						<height>175</height>
 						<aspectratio>stretch</aspectratio>
 						<fadetime>600</fadetime>
-						<texture background="true">simplicity/icon-background-glow-yellow.png</texture>
+						<texture background="true">simplicity/icon-shine.png</texture>
+					</control>
+					<control type="label">
+						<description>header label</description>
+						<posx>145</posx>
+						<posy>210</posy>
+						<width>220</width>
+						<height>30</height>
+						<font>Simplicity_26</font>
+						<label>$INFO[ListItem.label]</label>
+						<align>center</align>
+						<textcolor>grey2</textcolor>
+						<shadowcolor>black</shadowcolor>
+					</control>
+				</itemlayout>
+				<focusedlayout height="245" width="280">
+					<control type="image">
+						<posx>-5</posx>
+						<posy>-5</posy>
+						<width>300</width>
+						<height>225</height>
+						<aspectratio>stretch</aspectratio>
+						<fadetime>600</fadetime>
+						<texture background="true">simplicity/icon-background-light.png</texture>
+						<animation effect="zoom" start="100" end="105" center="auto" time="100">Focus</animation>
+					</control>
+					<control type="image">
+						<posx>20</posx>
+						<posy>20</posy>
+						<width>250</width>
+						<height>175</height>
+						<aspectratio>stretch</aspectratio>
+						<fadetime>600</fadetime>
+						<texture background="true">simplicity/icon-background.png</texture>
 						<animation effect="zoom" start="100" end="105" center="auto" time="100">Focus</animation>
 					</control>
 					<control type="image">
 						<description>icon</description>
 						<posx>70</posx>
-						<posy>0</posy>
-						<width>110</width>
-						<height>110</height>
+						<posy>30</posy>
+						<width>150</width>
+						<height>150</height>
 						<aspectratio>keep</aspectratio>
 						<texture>$INFO[ListItem.ActualIcon]</texture>
 						<animation effect="zoom" start="100" end="105" center="auto" time="100">Focus</animation>
 					</control>
 					<control type="label">
 						<description>header label</description>
-						<posx>124</posx>
-						<posy>130</posy>
-						<width>260</width>
+						<posx>145</posx>
+						<posy>210</posy>
+						<width>250</width>
 						<height>30</height>
 						<font>Simplicity_30</font>
 						<label>$INFO[ListItem.label]</label>
 						<align>center</align>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
+						<selectedcolor>white</selectedcolor>
+					</control>
+					<control type="image">
+						<posx>20</posx>
+						<posy>20</posy>
+						<width>250</width>
+						<height>175</height>
+						<aspectratio>stretch</aspectratio>
+						<fadetime>600</fadetime>
+						<texture background="true">simplicity/icon-shine.png</texture>
+						<animation effect="zoom" start="100" end="105" center="auto" time="100">Focus</animation>
 					</control>
 				</focusedlayout>
 				<content>
@@ -212,7 +221,7 @@
 			<control type="label">
 				<description>header label</description>
 				<posx>0</posx>
-				<posy>60</posy>
+				<posy>40</posy>
 				<width>1280</width>
 				<height>30</height>
 				<font>Simplicity_40</font>
@@ -233,16 +242,16 @@
 			</control>-->
 			<control type="textbox">
 				<description>Appearance Description</description>
-				<posx>120</posx>
-				<posy>560</posy>
-				<width>1080</width>
+				<posx>100</posx>
+				<posy>605</posy>
+				<width>1130</width>
 				<height>300</height>
-				<font>Simplicity_24</font>
+				<font>Simplicity_20</font>
 				<label>$INFO[Container(9000).ListItem.Label2]</label>
 				<align>justify</align>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-			</control>-->
+			</control>
 	</control>
 
 	<include>Clock</include>		

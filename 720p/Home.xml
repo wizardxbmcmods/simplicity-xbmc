@@ -634,23 +634,9 @@
 					<align>center</align>
 					<width>90</width>
 					<height>90</height>
+					<colordiffuse>40FFFFFF</colordiffuse>
 					<texture diffuse="icons/icondiffuse.png">$INFO[ListItem.Thumb]</texture>				
 					<animation effect="fade" start="100" end="0" time="100" condition="ControlGroup(9001).HasFocus">Conditional</animation>		
-					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8000)">Conditional</animation>
-					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8001)">Conditional</animation>					
-					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8002)">Conditional</animation>
-					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8003)">Conditional</animation>
-					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8004)">Conditional</animation>
-					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8005)">Conditional</animation>
-					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8006)">Conditional</animation>
-					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8007)">Conditional</animation>
-					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8008)">Conditional</animation>
-					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8009)">Conditional</animation>
-					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8010)">Conditional</animation>
-					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8011)">Conditional</animation>
-					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(23)">Conditional</animation>
-					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(24)">Conditional</animation>
-					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(25)">Conditional</animation>
 					<visible>Skin.HasSetting(AlternateHome)</visible>
 				</control>
 			</itemlayout>
@@ -709,6 +695,31 @@
 					<height>90</height>
 					<visible>Skin.HasSetting(AlternateHome)</visible>
 					<texture>$INFO[ListItem.Thumb]</texture>						
+				</control>
+				<control type="image">
+					<posx>45</posx>
+					<posy>35</posy>
+					<align>center</align>
+					<width>110</width>
+					<height>110</height>
+					<visible>Skin.HasSetting(AlternateHome)</visible>
+					<texture>lights.png</texture>				
+					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8000)">Conditional</animation>
+					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8001)">Conditional</animation>					
+					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8002)">Conditional</animation>
+					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8003)">Conditional</animation>
+					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8004)">Conditional</animation>
+					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8005)">Conditional</animation>
+					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8006)">Conditional</animation>
+					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8007)">Conditional</animation>
+					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8008)">Conditional</animation>
+					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8009)">Conditional</animation>
+					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8010)">Conditional</animation>
+					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8011)">Conditional</animation>
+					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(23)">Conditional</animation>
+					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(24)">Conditional</animation>
+					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(25)">Conditional</animation>
+					<animation effect="fade" start="100" end="0" time="100" condition="ControlGroup(9001).HasFocus">Conditional</animation>		
 				</control>
 			</focusedlayout>
 			<content>
@@ -1737,16 +1748,16 @@
 			<animation effect="fade" start="100" end="0" time="200" >WindowClose</animation>
 			<animation effect="fade" start="0" end="100" time="300" delay="700">WindowOpen</animation>
 			<animation effect="fade" time="400" delay="800" start="0" end="100" condition="[Container(9000).Hasfocus(15)]">Conditional</animation>
-			<animation effect="slide" end="-70,0" time="0" condition="substring(Window(Home).Property(NextAired.2.Today),true)">Conditional</animation>
-			<animation effect="slide" end="-70,0" time="0" condition="substring(Window(Home).Property(NextAired.3.Today),true)">Conditional</animation>
-			<animation effect="slide" end="-70,0" time="0" condition="substring(Window(Home).Property(NextAired.4.Today),true)">Conditional</animation>
-			<animation effect="slide" end="-70,0" time="0" condition="substring(Window(Home).Property(NextAired.5.Today),true)">Conditional</animation>
+			<animation effect="slide" end="-90,0" time="0" condition="substring(Window(Home).Property(NextAired.2.Today),true)">Conditional</animation>
+			<animation effect="slide" end="-90,0" time="0" condition="substring(Window(Home).Property(NextAired.3.Today),true)">Conditional</animation>
+			<animation effect="slide" end="-90,0" time="0" condition="substring(Window(Home).Property(NextAired.4.Today),true)">Conditional</animation>
+			<animation effect="slide" end="-90,0" time="0" condition="substring(Window(Home).Property(NextAired.5.Today),true)">Conditional</animation>
 			<posx>545</posx>
 			<posy>55</posy>
 			<visible>Container(9000).Hasfocus(15)</visible>
 			<include>VisibleFadeEffect</include>
 			<control type="list" id="8010">
-				<posx>-15</posx>
+				<posx>3</posx>
 				<posy>10</posy>
 				<width>1270</width>
 				<height>500</height>

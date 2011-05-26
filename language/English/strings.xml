@@ -135,14 +135,14 @@
   <string id="31424">More Info</string>
 
   <!-- Description Labels  -->
-  <string id="31400">[B]CONFIGURE APPEARANCE SETTINGS[/B][CR][CR]Change the skin · Set language and region · Change file listing options[CR]Set up a screensaver</string>
-  <string id="31401">[B]CONFIGURE VIDEO SETTINGS[/B][CR][CR]Manage your video library · Set video playback options · Change video listing options[CR]Set subtitle fonts</string>
-  <string id="31402">[B]CONFIGURE MUSIC SETTINGS[/B][CR][CR]Manage your music library · Set music playback options · Change music listing options[CR]Setup song submission · Set karaoke options</string>
-  <string id="31403">[B]CONFIGURE PICTURE SETTINGS[/B][CR][CR]Set picture listing options · Configure slideshows</string>
-  <string id="31404">[B]CONFIGURE WEATHER SETTINGS[/B][CR][CR]Set three cities to collect weather information</string>
-  <string id="31405">[B]CONFIGURE NETWORK SETTINGS[/B][CR][CR]Setup control of XBMC via UPnP and HTTP · Configure file sharing[CR]Set internet access options</string>
-  <string id="31406">[B]CONFIGURE SYSTEM SETTINGS[/B][CR][CR]Setup and calibrate displays · Configure audio output · Setup remote controls[CR]Set power saving options · Enable debugging · Setup master lock</string>
-  <string id="31407">[B]CONFIGURE SKIN SETTINGS[/B][CR][CR]Setup the Simplicity skin · Add and remove home menu items · Change the Home Screen</string>
+  <string id="31400">[B][COLOR=yellow]CONFIGURE APPEARANCE SETTINGS[/COLOR][/B][CR][CR]Change the skin · Set language and region · Change file listing options · Set up a screensaver</string>
+  <string id="31401">[B][COLOR=yellow]CONFIGURE VIDEO SETTINGS[/COLOR][/B][CR][CR]Manage your video library · Set video playback options · Change video listing options · Set subtitle fonts</string>
+  <string id="31402">[B][COLOR=yellow]CONFIGURE MUSIC SETTINGS[/COLOR][/B][CR][CR]Manage your music library · Set music playback options · Change music listing options · Setup song submission · [CR]Set karaoke options</string>
+  <string id="31403">[B][COLOR=yellow]CONFIGURE PICTURE SETTINGS[/COLOR][/B][CR][CR]Set picture listing options · Configure slideshows</string>
+  <string id="31404">[B][COLOR=yellow]CONFIGURE WEATHER SETTINGS[/COLOR][/B][CR][CR]Set three cities to collect weather information</string>
+  <string id="31405">[B][COLOR=yellow]CONFIGURE NETWORK SETTINGS[/COLOR][/B][CR][CR]Setup control of XBMC via UPnP and HTTP · Configure file sharing · Set internet access options</string>
+  <string id="31406">[B][COLOR=yellow]CONFIGURE SYSTEM SETTINGS[/COLOR][/B][CR][CR]Setup and calibrate displays · Configure audio output · Setup remote controls · Set power saving options · [CR]Enable debugging · Setup master lock</string>
+  <string id="31407">[B][COLOR=yellow]CONFIGURE SKIN SETTINGS[/COLOR][/B][CR][CR]Setup the Simplicity skin · Add and remove home menu items · Change the Home Screen</string>
 
   <string id="31420">[B][COLOR=white]XBMC has not detected a Disc.[/COLOR][/B][CR][CR]Please Insert a disc into your drive and try again or Cancel</string>
   <string id="31421">Select your XBMC user Profile[CR]to login and continue</string>

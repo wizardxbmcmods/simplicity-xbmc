@@ -1,7 +1,7 @@
 <window id="25">
 	<defaultcontrol always="true">9999</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-	<views>50,54,55,57,58,59,65,66,67,500,501,504,505,506,507,508,509,511,532,534,535,536,537,538,539,540,552,553,554,555,556,557,558,559</views>
+	<views>50,54,55,57,58,59,65,66,67,68,500,501,504,505,506,507,508,509,511,532,534,535,536,537,538,539,540,552,553,554,555,556,557,558,559</views>
 	<visible>!Skin.HasSetting(KioskMode)</visible>
 	<controls>
 on-->
@@ -132,7 +132,9 @@ on-->
 		<include>Addon-Slide</include>
 		<!-- view id = 66 -->
 		<include>Addon-Banner-Slide</include>
-		<!-- view id = 67 -->
+		<!-- view id = 67 -->			
+		<include>Addon-Grid-View</include>
+			<!-- view id = 68 -->
 		<include>Fanart-Slide</include>
 		<!-- view id = 504 -->
 		<include>Episode-Slide</include>
@@ -844,6 +846,26 @@ on-->
 			<height>64</height>
 			<aspectratio>keep</aspectratio>
 			<texture>simplicity/simplicity-logo.png</texture>
+		</control>
+		<control type="label">
+				<posx>-185</posx>
+				<posy>668</posy>
+				<width>260</width>
+				<height>545</height>
+				<font>Simplicity_24</font>
+				<label>Exit Menu</label>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<align>left</align>
+			</control>
+		<control type="image">
+			<description>arrow</description>
+			<posx>-55</posx>
+			<posy>670</posy>
+			<width>25</width>
+			<height>25</height>
+			<aspectratio>keep</aspectratio>
+			<texture>simplicity/right-arrow.png</texture>
 		</control>
 		<control type="group" id="9000">
 			<posx>-220</posx>

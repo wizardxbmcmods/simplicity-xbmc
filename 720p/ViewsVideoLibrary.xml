@@ -2055,6 +2055,7 @@
 				<onup>535</onup>
 				<ondown>535</ondown>
 				<viewtype label="Banner List">list</viewtype>
+					<preloaditems>40</preloaditems>
 				<focusposition>2</focusposition>
 				<pagecontrol>60</pagecontrol>
 				<scrolltime>300</scrolltime>
@@ -2272,7 +2273,7 @@
 					<itemspacing>25</itemspacing>
 					<movement>3</movement>
 					<orientation>horizontal</orientation>
-					<preloaditems>4</preloaditems>
+					<preloaditems>14</preloaditems>
 					<itemlayout height="290" width="440">
 						<control type="largeimage">
 							<posx>0</posx>
@@ -5957,7 +5958,6 @@
 				<visible>Container.Content(TVShows)</visible>
 				<itemlayout height="80" width="500">
 					<control type="group">
-						<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 						<posx>65</posx>
 						<control type="image">
 							<posx>80</posx>
@@ -5976,7 +5976,20 @@
 							<textcolor>grey4</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<align>left</align>
-							<label>$INFO[ListItem.title]</label>
+							<label>$INFO[ListItem.label]</label>
+							<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+						</control>	
+						<control type="label">
+							<posx>135</posx>
+							<posy>8</posy>
+							<width>500</width>
+							<height>30</height>
+							<font>Simplicity_24</font>
+							<textcolor>grey4</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<align>left</align>
+							<label>Go To Root...</label>
+							<visible>stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 						</control>	
 						<control type="label">
 							<posx>135</posx>
@@ -5988,12 +6001,12 @@
 							<shadowcolor>black</shadowcolor>
 							<align>left</align>
 							<label>$INFO[ListItem.Year]</label>
+						<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 						</control>					
 					</control>	
 				</itemlayout>
 				<focusedlayout height="110" width="660">
 					<control type="group">
-						<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 						<posx>65</posx>
 						<control type="image">
 							<posx>80</posx>
@@ -6012,7 +6025,20 @@
 							<textcolor>grey4</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<align>left</align>
-							<label>$INFO[ListItem.title]</label>
+							<label>$INFO[ListItem.label]</label>
+							<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+						</control>	
+						<control type="label">
+							<posx>135</posx>
+							<posy>8</posy>
+							<width>500</width>
+							<height>30</height>
+							<font>Simplicity_24</font>
+							<textcolor>grey4</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<align>left</align>
+							<label>Go To Root...</label>
+							<visible>stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 						</control>	
 						<control type="label">
 							<posx>135</posx>
@@ -6024,6 +6050,7 @@
 							<shadowcolor>black</shadowcolor>
 							<align>left</align>
 							<label>$INFO[ListItem.Year] | $INFO[ListItem.Genre]</label>
+							<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 						</control>					
 					</control>	
 					<control type="image">
@@ -6094,6 +6121,6 @@
 			</control>
 		</control>
 	</include>
-
+	
 
 </includes>

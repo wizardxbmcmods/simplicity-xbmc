@@ -134,7 +134,7 @@
 			<include>FileBreadCrumbs</include>
 			<include>DownOpenTVGuide</include>
 			<control type="image">
-				<posx>40</posx>
+				<posx>20</posx>
 				<posy>332.5</posy>
 				<width>50</width>
 				<height>50</height>
@@ -142,7 +142,7 @@
 				<visible>Container(500).HasPrevious</visible>
 			</control>
 			<control type="image">
-				<posx>1190</posx>
+				<posx>1210</posx>
 				<posy>332.5</posy>
 				<width>50</width>
 				<height>50</height>
@@ -151,9 +151,9 @@
 			</control>
 			<control type="panel" id="500">
 				<include>Zoom</include>
-				<posx>125</posx>
-				<posy>175</posy>
-				<width>1040</width>
+				<posx>80</posx>
+				<posy>100</posy>
+				<width>1130</width>
 				<height>520</height>
 				<onleft>500</onleft>
 				<onright>500</onright>
@@ -167,10 +167,10 @@
 				<visible>![Window.IsVisible(VideoLibrary) + Container.Content(TVShows) | Window.IsVisible(VideoLibrary) + Container.Content(Episodes)]</visible>
 				<visible>!substring(container.folderpath,plugin://plugin.video.xbmcflicks)</visible> 
 				<visible>!SubString(Container.FolderPath,addons)</visible>
-				<itemlayout height="185" width="260">
+				<itemlayout height="245" width="280">
 					<control type="image">
-						<posx>2</posx>
-						<posy>2</posy>
+						<posx>22</posx>
+						<posy>22</posy>
 						<width>254</width>
 						<height>179</height>
 						<aspectratio>stretch</aspectratio>
@@ -178,8 +178,8 @@
 						<texture background="true" diffuse="simplicity/fanart-slide-fanart-diffuse.png">simplicity/app-shadow-2.png</texture>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
+						<posx>20</posx>
+						<posy>20</posy>
 						<width>250</width>
 						<height>175</height>
 						<aspectratio>stretch</aspectratio>
@@ -188,79 +188,103 @@
 					</control>
 					<control type="image">
 						<posx>70</posx>
-						<posy>10</posy>
-						<width>110</width>
-						<height>110</height>
+						<posy>30</posy>
+						<width>150</width>
+						<height>150</height>
 						<aspectratio>keep</aspectratio>
+						<align>center</align>
 						<texture>simplicity/icons/$INFO[ListItem.label].png</texture>
 						<visible>!Container.Content(Genres) + !Container.Content(Studios)</visible>
 					</control>
 					<control type="image">
 						<posx>70</posx>
-						<posy>10</posy>
-						<width>110</width>
-						<height>110</height>
+						<posy>30</posy>
+						<width>150</width>
+						<height>150</height>
 						<aspectratio>keep</aspectratio>
+						<align>center</align>
 						<texture>$INFO[ListItem.Icon]</texture>
 						<visible>!Container.Content(Genres) + !Container.Content(Studios)</visible>
-						<visible>!StringCompare(ListItem.label,Countries) + !StringCompare(ListItem.label,Sets) + !StringCompare(ListItem.label,Studios) + !StringCompare(ListItem.label,Directors) + !StringCompare(ListItem.label,Year) + !StringCompare(ListItem.label,Genres) + !StringCompare(ListItem.label,Title) + !StringCompare(ListItem.label,Album information) + !StringCompare(ListItem.label,Lyrics) + !StringCompare(ListItem.label,Artist information) + !StringCompare(ListItem.label,Movie information) + !StringCompare(ListItem.label,Music Add-ons) + !StringCompare(ListItem.label,Music video information) + !StringCompare(ListItem.label,Picture Add-ons) + !StringCompare(ListItem.label,Program Add-ons) + !StringCompare(ListItem.label,Screensaver) + !StringCompare(ListItem.label,Skin) + !StringCompare(ListItem.label,Subtitles) + !StringCompare(ListItem.label,TV information) + !StringCompare(ListItem.label,Video Add-ons) + !StringCompare(ListItem.label,Visualization) + !StringCompare(ListItem.label,Weather) + !StringCompare(ListItem.label,All Add-ons) + !StringCompare(ListItem.label,Add-on repository) + !StringCompare(ListItem.label,Search) + !StringCompare(ListItem.label,Install from zip file) + !StringCompare(ListItem.label,Videos)</visible>
+						<visible>!StringCompare(ListItem.label,Services) + !StringCompare(ListItem.label,Countries) + !StringCompare(ListItem.label,Sets) + !StringCompare(ListItem.label,Studios) + !StringCompare(ListItem.label,Directors) + !StringCompare(ListItem.label,Year) + !StringCompare(ListItem.label,Genres) + !StringCompare(ListItem.label,Title) + !StringCompare(ListItem.label,Album information) + !StringCompare(ListItem.label,Lyrics) + !StringCompare(ListItem.label,Artist information) + !StringCompare(ListItem.label,Movie information) + !StringCompare(ListItem.label,Music Add-ons) + !StringCompare(ListItem.label,Music video information) + !StringCompare(ListItem.label,Picture Add-ons) + !StringCompare(ListItem.label,Program Add-ons) + !StringCompare(ListItem.label,Screensaver) + !StringCompare(ListItem.label,Skin) + !StringCompare(ListItem.label,Subtitles) + !StringCompare(ListItem.label,TV information) + !StringCompare(ListItem.label,Video Add-ons) + !StringCompare(ListItem.label,Visualization) + !StringCompare(ListItem.label,Weather) + !StringCompare(ListItem.label,All Add-ons) + !StringCompare(ListItem.label,Add-on repository) + !StringCompare(ListItem.label,Search) + !StringCompare(ListItem.label,Install from zip file) + !StringCompare(ListItem.label,Videos)</visible>
 					</control>
 					<control type="image">
 						<posx>70</posx>
-						<posy>15</posy>
-						<width>110</width>
-						<height>110</height>
+						<posy>30</posy>
+						<width>150</width>
+						<height>150</height>
 						<aspectratio>keep</aspectratio>
+						<align>center</align>
 						<texture background="true">simplicity/genres/$INFO[ListItem.label,,.jpg]</texture>
 						<visible>Container.Content(Genres)</visible>
 					</control>
 					<control type="image">
 						<posx>70</posx>
-						<posy>15</posy>
-						<width>110</width>
-						<height>110</height>
+						<posy>30</posy>
+						<width>150</width>
+						<height>150</height>
 						<aspectratio>keep</aspectratio>
+						<align>center</align>
 						<texture background="true" fallback="simplicity/musicgenres/other.jpg">simplicity/musicgenres/$INFO[ListItem.label,,.jpg]</texture>
 						<visible>Container.Content(Genres)</visible>
 					</control>
 					<control type="image">
 						<posx>70</posx>
-						<posy>10</posy>
-						<width>110</width>
-						<height>110</height>
+						<posy>30</posy>
+						<width>150</width>
+						<height>150</height>
 						<aspectratio>keep</aspectratio>
+						<align>center</align>
 						<texture background="true">studios/$INFO[ListItem.label,,.png]</texture>
 						<visible>Container.Content(Studios)</visible>
 					</control>
-					<control type="label">
+					<control type="textbox">
 						<description>header label</description>
-						<posx>125</posx>
-						<posy>140</posy>
-						<width>220</width>
-						<height>30</height>
+						<posx>20</posx>
+						<posy>210</posy>
+						<width>250</width>
+						<height>60</height>
 						<font>Simplicity_20</font>
 						<label>$INFO[ListItem.label]</label>
 						<align>center</align>
 						<textcolor>grey2</textcolor>
 						<shadowcolor>black</shadowcolor>
 					</control>
-				</itemlayout>
-				<focusedlayout height="185" width="260">
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
+						<posx>20</posx>
+						<posy>20</posy>
 						<width>250</width>
 						<height>175</height>
 						<aspectratio>stretch</aspectratio>
 						<fadetime>600</fadetime>
-						<texture background="true">simplicity/icon-background-glow-yellow.png</texture>
+						<texture background="true">simplicity/icon-shine.png</texture>
+					</control>
+				</itemlayout>
+				<focusedlayout height="245" width="280">
+					<control type="image">
+						<posx>-5</posx>
+						<posy>-5</posy>
+						<width>300</width>
+						<height>225</height>
+						<aspectratio>stretch</aspectratio>
+						<fadetime>600</fadetime>
+						<texture background="true">simplicity/icon-background-light.png</texture>
+						<animation effect="zoom" start="100" end="105" center="auto" time="100">Focus</animation>
+					</control>
+					<control type="image">
+						<posx>20</posx>
+						<posy>20</posy>
+						<width>250</width>
+						<height>175</height>
+						<aspectratio>stretch</aspectratio>
+						<fadetime>600</fadetime>
+						<texture background="true">simplicity/icon-background.png</texture>
 						<animation effect="zoom" start="100" end="105" center="auto" time="100">Focus</animation>
 					</control>
 					<control type="image">
 						<posx>70</posx>
-						<posy>10</posy>
-						<width>110</width>
-						<height>110</height>
+						<posy>30</posy>
+						<width>150</width>
+						<height>150</height>
 						<aspectratio>keep</aspectratio>
 						<texture>simplicity/icons/$INFO[ListItem.label].png</texture>
 						<visible>!Container.Content(Genres) + !Container.Content(Studios)</visible>
@@ -268,20 +292,20 @@
 					</control>
 					<control type="image">
 						<posx>70</posx>
-						<posy>10</posy>
-						<width>110</width>
-						<height>110</height>
+						<posy>30</posy>
+						<width>150</width>
+						<height>150</height>
 						<aspectratio>keep</aspectratio>
 						<texture>$INFO[ListItem.Icon]</texture>
 						<visible>!Container.Content(Genres) + !Container.Content(Studios)</visible>
-						<visible>!StringCompare(ListItem.label,Countries) + !StringCompare(ListItem.label,Sets) + !StringCompare(ListItem.label,Studios) + !StringCompare(ListItem.label,Directors) + !StringCompare(ListItem.label,Year) + !StringCompare(ListItem.label,Genres) + !StringCompare(ListItem.label,Title) + !StringCompare(ListItem.label,Album information) + !StringCompare(ListItem.label,Lyrics) + !StringCompare(ListItem.label,Artist information) + !StringCompare(ListItem.label,Movie information) + !StringCompare(ListItem.label,Music Add-ons) + !StringCompare(ListItem.label,Music video information) + !StringCompare(ListItem.label,Picture Add-ons) + !StringCompare(ListItem.label,Program Add-ons) + !StringCompare(ListItem.label,Screensaver) + !StringCompare(ListItem.label,Skin) + !StringCompare(ListItem.label,Subtitles) + !StringCompare(ListItem.label,TV information) + !StringCompare(ListItem.label,Video Add-ons) + !StringCompare(ListItem.label,Visualization) + !StringCompare(ListItem.label,Weather) + !StringCompare(ListItem.label,All Add-ons) + !StringCompare(ListItem.label,Add-on repository) + !StringCompare(ListItem.label,Search) + !StringCompare(ListItem.label,Install from zip file) + !StringCompare(ListItem.label,Videos)</visible>
+						<visible>!StringCompare(ListItem.label,Services) + !StringCompare(ListItem.label,Countries) + !StringCompare(ListItem.label,Sets) + !StringCompare(ListItem.label,Studios) + !StringCompare(ListItem.label,Directors) + !StringCompare(ListItem.label,Year) + !StringCompare(ListItem.label,Genres) + !StringCompare(ListItem.label,Title) + !StringCompare(ListItem.label,Album information) + !StringCompare(ListItem.label,Lyrics) + !StringCompare(ListItem.label,Artist information) + !StringCompare(ListItem.label,Movie information) + !StringCompare(ListItem.label,Music Add-ons) + !StringCompare(ListItem.label,Music video information) + !StringCompare(ListItem.label,Picture Add-ons) + !StringCompare(ListItem.label,Program Add-ons) + !StringCompare(ListItem.label,Screensaver) + !StringCompare(ListItem.label,Skin) + !StringCompare(ListItem.label,Subtitles) + !StringCompare(ListItem.label,TV information) + !StringCompare(ListItem.label,Video Add-ons) + !StringCompare(ListItem.label,Visualization) + !StringCompare(ListItem.label,Weather) + !StringCompare(ListItem.label,All Add-ons) + !StringCompare(ListItem.label,Add-on repository) + !StringCompare(ListItem.label,Search) + !StringCompare(ListItem.label,Install from zip file) + !StringCompare(ListItem.label,Videos)</visible>
 						<animation effect="zoom" start="100" end="105" center="auto" time="100">Focus</animation>
 					</control>
 					<control type="image">
 						<posx>70</posx>
-						<posy>15</posy>
-						<width>110</width>
-						<height>110</height>
+						<posy>30</posy>
+						<width>150</width>
+						<height>150</height>
 						<aspectratio>keep</aspectratio>
 						<texture background="true">simplicity/genres/$INFO[ListItem.label,,.jpg]</texture>
 						<visible>Container.Content(Genres)</visible>
@@ -289,30 +313,30 @@
 					</control>
 					<control type="image">
 						<posx>70</posx>
-						<posy>15</posy>
-						<width>110</width>
-						<height>110</height>
+						<posy>30</posy>
+						<width>150</width>
+						<height>150</height>
 						<aspectratio>keep</aspectratio>
 						<texture background="true" fallback="simplicity/musicgenres/other.jpg">simplicity/musicgenres/$INFO[ListItem.label,,.jpg]</texture>
 						<animation effect="zoom" start="100" end="105" center="auto" time="100">Focus</animation>
 						<visible>Container.Content(Genres)</visible>
 					</control>
 					<control type="image">
-						<posx>75</posx>
-						<posy>10</posy>
-						<width>110</width>
-						<height>110</height>
+						<posx>70</posx>
+						<posy>30</posy>
+						<width>150</width>
+						<height>150</height>
 						<aspectratio>keep</aspectratio>
 						<texture background="true">studios/$INFO[ListItem.label,,.png]</texture>
 						<visible>Container.Content(Studios)</visible>
 						<animation effect="zoom" start="100" end="105" center="auto" time="100">Focus</animation>
 					</control>
-					<control type="label">
+					<control type="textbox">
 						<description>header label</description>
-						<posx>125</posx>
-						<posy>140</posy>
-						<width>220</width>
-						<height>30</height>
+						<posx>20</posx>
+						<posy>210</posy>
+						<width>250</width>
+						<height>60</height>
 						<font>Simplicity_22</font>
 						<label>$INFO[ListItem.label]</label>
 						<align>center</align>
@@ -320,11 +344,21 @@
 						<shadowcolor>black</shadowcolor>
 						<selectedcolor>white</selectedcolor>
 					</control>
+					<control type="image">
+						<posx>20</posx>
+						<posy>20</posy>
+						<width>250</width>
+						<height>175</height>
+						<aspectratio>stretch</aspectratio>
+						<fadetime>600</fadetime>
+						<texture background="true">simplicity/icon-shine.png</texture>
+						<animation effect="zoom" start="100" end="105" center="auto" time="100">Focus</animation>
+					</control>
 				</focusedlayout>
 			</control>
 			<control type="scrollbar" id="60">
 				<posx>320</posx>
-				<posy>550</posy>
+				<posy>620</posy>
 				<width>640</width>
 				<height>25</height>
 				<texturesliderbackground border="14,0,14,0">scrollbarh.png</texturesliderbackground>
@@ -530,7 +564,7 @@
 			<include>AddonBreadCrumbs</include>
 			<include>DownOpenTVGuide</include>
 			<control type="image">
-				<posx>40</posx>
+				<posx>20</posx>
 				<posy>332.5</posy>
 				<width>50</width>
 				<height>50</height>
@@ -538,7 +572,7 @@
 				<visible>Container(55).HasPrevious</visible>
 			</control>
 			<control type="image">
-				<posx>1190</posx>
+				<posx>1210</posx>
 				<posy>332.5</posy>
 				<width>50</width>
 				<height>50</height>
@@ -547,24 +581,24 @@
 			</control>
 			<control type="panel" id="55">
 				<include>Zoom</include>
-				<posx>125</posx>
-				<posy>175</posy>
-				<width>1040</width>
+				<posx>80</posx>
+				<posy>100</posy>
+				<width>1130</width>
 				<height>520</height>
 				<onleft>55</onleft>
 				<onright>55</onright>
 				<onup>2</onup>
-				<ondown>ActivateWindow(1116,TVShows,return)</ondown>
+				<ondown>60</ondown>
 				<viewtype label="Addons">list</viewtype>
 				<pagecontrol>60</pagecontrol>
 				<scrolltime>300</scrolltime>
 				<preloaditems>2</preloaditems>
 				<orientation>horizontal</orientation>
 				<visible>SubString(Container.FolderPath,addons)</visible>
-				<itemlayout height="185" width="260">
+				<itemlayout height="245" width="280">
 					<control type="image">
-						<posx>2</posx>
-						<posy>2</posy>
+						<posx>22</posx>
+						<posy>22</posy>
 						<width>254</width>
 						<height>179</height>
 						<aspectratio>stretch</aspectratio>
@@ -572,8 +606,8 @@
 						<texture background="true" diffuse="simplicity/fanart-slide-fanart-diffuse.png">simplicity/app-shadow-2.png</texture>
 					</control>
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
+						<posx>20</posx>
+						<posy>20</posy>
 						<width>250</width>
 						<height>175</height>
 						<aspectratio>stretch</aspectratio>
@@ -582,78 +616,124 @@
 					</control>
 					<control type="image">
 						<posx>70</posx>
-						<posy>10</posy>
-						<width>110</width>
-						<height>110</height>
+						<posy>30</posy>
+						<width>150</width>
+						<height>150</height>
 						<aspectratio>keep</aspectratio>
+						<align>center</align>
 						<texture>simplicity/icons/$INFO[ListItem.label].png</texture>
 					</control>
 					<control type="image">
 						<posx>70</posx>
-						<posy>10</posy>
-						<width>110</width>
-						<height>110</height>
+						<posy>30</posy>
+						<width>150</width>
+						<height>150</height>
 						<aspectratio>keep</aspectratio>
+						<align>center</align>
 						<texture fallback="nothumbalbum.png">$INFO[ListItem.Icon]</texture>
-						<visible>!StringCompare(ListItem.label,Web interface) + !StringCompare(ListItem.label,Album information) + !StringCompare(ListItem.label,Lyrics) + !StringCompare(ListItem.label,Artist information) + !StringCompare(ListItem.label,Movie information) + !StringCompare(ListItem.label,Music Add-ons) + !StringCompare(ListItem.label,Music video information) + !StringCompare(ListItem.label,Picture Add-ons) + !StringCompare(ListItem.label,Program Add-ons) + !StringCompare(ListItem.label,Screensaver) + !StringCompare(ListItem.label,Skin) + !StringCompare(ListItem.label,Subtitles) + !StringCompare(ListItem.label,TV information) + !StringCompare(ListItem.label,Video Add-ons) + !StringCompare(ListItem.label,Visualization) + !StringCompare(ListItem.label,Weather) + !StringCompare(ListItem.label,All Add-ons) + !StringCompare(ListItem.label,Add-on repository) + !StringCompare(ListItem.label,Install from zip file)  + !StringCompare(ListItem.label,Music)  + !StringCompare(ListItem.label,Pictures)</visible>
+						<visible>!StringCompare(ListItem.label,Services) + !StringCompare(ListItem.label,Web interface) + !StringCompare(ListItem.label,Album information) + !StringCompare(ListItem.label,Lyrics) + !StringCompare(ListItem.label,Artist information) + !StringCompare(ListItem.label,Movie information) + !StringCompare(ListItem.label,Music Add-ons) + !StringCompare(ListItem.label,Music video information) + !StringCompare(ListItem.label,Picture Add-ons) + !StringCompare(ListItem.label,Program Add-ons) + !StringCompare(ListItem.label,Screensaver) + !StringCompare(ListItem.label,Skin) + !StringCompare(ListItem.label,Subtitles) + !StringCompare(ListItem.label,TV information) + !StringCompare(ListItem.label,Video Add-ons) + !StringCompare(ListItem.label,Visualization) + !StringCompare(ListItem.label,Weather) + !StringCompare(ListItem.label,All Add-ons) + !StringCompare(ListItem.label,Add-on repository) + !StringCompare(ListItem.label,Install from zip file)  + !StringCompare(ListItem.label,Music)  + !StringCompare(ListItem.label,Pictures)</visible>
 					</control>
-					<control type="label">
+					<control type="textbox">
 						<description>header label</description>
-						<posx>125</posx>
-						<posy>140</posy>
-						<width>220</width>
-						<height>30</height>
+						<posx>20</posx>
+						<posy>210</posy>
+						<width>250</width>
+						<height>60</height>
 						<font>Simplicity_20</font>
 						<label>$INFO[ListItem.label]</label>
 						<align>center</align>
 						<textcolor>grey2</textcolor>
 						<shadowcolor>black</shadowcolor>
 					</control>
-				</itemlayout>
-				<focusedlayout height="185" width="260">
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
+						<posx>20</posx>
+						<posy>20</posy>
 						<width>250</width>
 						<height>175</height>
 						<aspectratio>stretch</aspectratio>
 						<fadetime>600</fadetime>
-						<texture background="true">simplicity/icon-background-glow-yellow.png</texture>
+						<texture background="true">simplicity/icon-shine.png</texture>
+					</control>
+				</itemlayout>
+				<focusedlayout height="245" width="280">
+					<control type="image">
+						<posx>-5</posx>
+						<posy>-5</posy>
+						<width>300</width>
+						<height>225</height>
+						<aspectratio>stretch</aspectratio>
+						<fadetime>600</fadetime>
+						<texture background="true">simplicity/icon-background-light.png</texture>
+						<animation effect="zoom" start="100" end="105" center="auto" time="100">Focus</animation>
+					</control>
+					<control type="image">
+						<posx>20</posx>
+						<posy>20</posy>
+						<width>250</width>
+						<height>175</height>
+						<aspectratio>stretch</aspectratio>
+						<fadetime>600</fadetime>
+						<texture background="true">simplicity/icon-background.png</texture>
 						<animation effect="zoom" start="100" end="105" center="auto" time="100">Focus</animation>
 					</control>
 					<control type="image">
 						<posx>70</posx>
-						<posy>10</posy>
-						<width>110</width>
-						<height>110</height>
+						<posy>30</posy>
+						<width>150</width>
+						<height>150</height>
 						<aspectratio>keep</aspectratio>
 						<texture>simplicity/icons/$INFO[ListItem.label].png</texture>
 						<animation effect="zoom" start="100" end="105" center="auto" time="100">Focus</animation>
 					</control>
 					<control type="image">
 						<posx>70</posx>
-						<posy>10</posy>
-						<width>110</width>
-						<height>110</height>
+						<posy>30</posy>
+						<width>150</width>
+						<height>150</height>
 						<aspectratio>keep</aspectratio>
 						<texture fallback="nothumbalbum.png">$INFO[ListItem.Icon]</texture>
-						<visible>!StringCompare(ListItem.label,Web interface) + !StringCompare(ListItem.label,Album information) + !StringCompare(ListItem.label,Lyrics) + !StringCompare(ListItem.label,Artist information) + !StringCompare(ListItem.label,Movie information) + !StringCompare(ListItem.label,Music Add-ons) + !StringCompare(ListItem.label,Music video information) + !StringCompare(ListItem.label,Picture Add-ons) + !StringCompare(ListItem.label,Program Add-ons) + !StringCompare(ListItem.label,Screensaver) + !StringCompare(ListItem.label,Skin) + !StringCompare(ListItem.label,Subtitles) + !StringCompare(ListItem.label,TV information) + !StringCompare(ListItem.label,Video Add-ons) + !StringCompare(ListItem.label,Visualization) + !StringCompare(ListItem.label,Weather) + !StringCompare(ListItem.label,All Add-ons) + !StringCompare(ListItem.label,Add-on repository) + !StringCompare(ListItem.label,Install from zip file)  + !StringCompare(ListItem.label,Music)  + !StringCompare(ListItem.label,Pictures)</visible>
+						<visible>!StringCompare(ListItem.label,Services) + !StringCompare(ListItem.label,Web interface) + !StringCompare(ListItem.label,Album information) + !StringCompare(ListItem.label,Lyrics) + !StringCompare(ListItem.label,Artist information) + !StringCompare(ListItem.label,Movie information) + !StringCompare(ListItem.label,Music Add-ons) + !StringCompare(ListItem.label,Music video information) + !StringCompare(ListItem.label,Picture Add-ons) + !StringCompare(ListItem.label,Program Add-ons) + !StringCompare(ListItem.label,Screensaver) + !StringCompare(ListItem.label,Skin) + !StringCompare(ListItem.label,Subtitles) + !StringCompare(ListItem.label,TV information) + !StringCompare(ListItem.label,Video Add-ons) + !StringCompare(ListItem.label,Visualization) + !StringCompare(ListItem.label,Weather) + !StringCompare(ListItem.label,All Add-ons) + !StringCompare(ListItem.label,Add-on repository) + !StringCompare(ListItem.label,Install from zip file)  + !StringCompare(ListItem.label,Music)  + !StringCompare(ListItem.label,Pictures)</visible>
 						<animation effect="zoom" start="100" end="105" center="auto" time="100">Focus</animation>
 					</control>
-					<control type="label">
+					<control type="textbox">
 						<description>header label</description>
-						<posx>125</posx>
-						<posy>140</posy>
-						<width>220</width>
-						<height>30</height>
-						<font>Simplicity_20</font>
+						<posx>20</posx>
+						<posy>210</posy>
+						<width>250</width>
+						<height>60</height>
+						<font>Simplicity_22</font>
 						<label>$INFO[ListItem.label]</label>
 						<align>center</align>
 						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
 						<selectedcolor>white</selectedcolor>
-						<animation effect="zoom" start="100" end="105" easing="out" tween="back" time="100">Focus</animation>
+					</control>
+					<control type="image">
+						<posx>20</posx>
+						<posy>20</posy>
+						<width>250</width>
+						<height>175</height>
+						<aspectratio>stretch</aspectratio>
+						<fadetime>600</fadetime>
+						<texture background="true">simplicity/icon-shine.png</texture>
+						<animation effect="zoom" start="100" end="105" center="auto" time="100">Focus</animation>
 					</control>
 				</focusedlayout>
+			</control>
+			<control type="scrollbar" id="60">
+				<posx>320</posx>
+				<posy>620</posy>
+				<width>640</width>
+				<height>25</height>
+				<texturesliderbackground border="14,0,14,0">scrollbarh.png</texturesliderbackground>
+				<texturesliderbar border="14,0,14,0">scrollbarh_bar.png</texturesliderbar>
+				<texturesliderbarfocus border="14,0,14,0">scrollbarh_bar_focus.png</texturesliderbarfocus>
+				<textureslidernib>ScrollBarNib.png</textureslidernib>
+				<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
+				<onup>55</onup>
+				<ondown>ActivateWindow(1116,TVShows,return)</ondown>
+				<showonepage>false</showonepage>
+				<orientation>horizontal</orientation>
 			</control>
 		</control>
 	</include>	
@@ -1052,7 +1132,7 @@
 						<height>100</height>
 						<aspectratio>stretch</aspectratio>
 						<texture fallback="nothumbalbum.png">$INFO[ListItem.Icon]</texture>
-						<visible>!StringCompare(ListItem.label,Available Updates) + !StringCompare(ListItem.label,Get Add-ons) + !StringCompare(ListItem.label,Enabled Add-ons) + !StringCompare(ListItem.label,Disabled Add-ons) + !StringCompare(ListItem.label,Get More...) + !StringCompare(ListItem.label,Web interface) + !StringCompare(ListItem.label,Services) + !StringCompare(ListItem.label,Album information) + !StringCompare(ListItem.label,Lyrics) + !StringCompare(ListItem.label,Artist information) + !StringCompare(ListItem.label,Movie information) + !StringCompare(ListItem.label,Music Add-ons) + !StringCompare(ListItem.label,Music video information) + !StringCompare(ListItem.label,Picture Add-ons) + !StringCompare(ListItem.label,Program Add-ons) + !StringCompare(ListItem.label,Screensaver) + !StringCompare(ListItem.label,Skin) + !StringCompare(ListItem.label,Subtitles) + !StringCompare(ListItem.label,TV information) + !StringCompare(ListItem.label,Video Add-ons) + !StringCompare(ListItem.label,Visualization) + !StringCompare(ListItem.label,Weather) + !StringCompare(ListItem.label,All Add-ons) + !StringCompare(ListItem.label,Add-on repository) + !StringCompare(ListItem.label,Install from zip file)  + !StringCompare(ListItem.label,Music)  + !StringCompare(ListItem.label,Pictures)</visible>
+						<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png) + !StringCompare(ListItem.label,Available Updates) + !StringCompare(ListItem.label,Get Add-ons) + !StringCompare(ListItem.label,Enabled Add-ons) + !StringCompare(ListItem.label,Disabled Add-ons) + !StringCompare(ListItem.label,Get More...) + !StringCompare(ListItem.label,Web interface) + !StringCompare(ListItem.label,Services) + !StringCompare(ListItem.label,Album information) + !StringCompare(ListItem.label,Lyrics) + !StringCompare(ListItem.label,Artist information) + !StringCompare(ListItem.label,Movie information) + !StringCompare(ListItem.label,Music Add-ons) + !StringCompare(ListItem.label,Music video information) + !StringCompare(ListItem.label,Picture Add-ons) + !StringCompare(ListItem.label,Program Add-ons) + !StringCompare(ListItem.label,Screensaver) + !StringCompare(ListItem.label,Skin) + !StringCompare(ListItem.label,Subtitles) + !StringCompare(ListItem.label,TV information) + !StringCompare(ListItem.label,Video Add-ons) + !StringCompare(ListItem.label,Visualization) + !StringCompare(ListItem.label,Weather) + !StringCompare(ListItem.label,All Add-ons) + !StringCompare(ListItem.label,Add-on repository) + !StringCompare(ListItem.label,Install from zip file)  + !StringCompare(ListItem.label,Music)  + !StringCompare(ListItem.label,Pictures)</visible>
 						<bordertexture border="1">simplicity/thumbborder-thin.png</bordertexture>
 						<bordersize>1</bordersize>					
 					</control>
@@ -1088,7 +1168,7 @@
 						<texture fallback="nothumbalbum.png">$INFO[ListItem.Icon]</texture>
 						<bordertexture border="1">-</bordertexture>
 						<bordersize>1</bordersize>		
-						<visible>!StringCompare(ListItem.label,Available Updates) + !StringCompare(ListItem.label,Get Add-ons) + !StringCompare(ListItem.label,Enabled Add-ons) + !StringCompare(ListItem.label,Disabled Add-ons) + !StringCompare(ListItem.label,Get More...) + !StringCompare(ListItem.label,Web interface) + !StringCompare(ListItem.label,Services) + !StringCompare(ListItem.label,Album information) + !StringCompare(ListItem.label,Lyrics) + !StringCompare(ListItem.label,Artist information) + !StringCompare(ListItem.label,Movie information) + !StringCompare(ListItem.label,Music Add-ons) + !StringCompare(ListItem.label,Music video information) + !StringCompare(ListItem.label,Picture Add-ons) + !StringCompare(ListItem.label,Program Add-ons) + !StringCompare(ListItem.label,Screensaver) + !StringCompare(ListItem.label,Skin) + !StringCompare(ListItem.label,Subtitles) + !StringCompare(ListItem.label,TV information) + !StringCompare(ListItem.label,Video Add-ons) + !StringCompare(ListItem.label,Visualization) + !StringCompare(ListItem.label,Weather) + !StringCompare(ListItem.label,All Add-ons) + !StringCompare(ListItem.label,Add-on repository) + !StringCompare(ListItem.label,Install from zip file)  + !StringCompare(ListItem.label,Music)  + !StringCompare(ListItem.label,Pictures)</visible>
+						<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png) + !StringCompare(ListItem.label,Available Updates) + !StringCompare(ListItem.label,Get Add-ons) + !StringCompare(ListItem.label,Enabled Add-ons) + !StringCompare(ListItem.label,Disabled Add-ons) + !StringCompare(ListItem.label,Get More...) + !StringCompare(ListItem.label,Web interface) + !StringCompare(ListItem.label,Services) + !StringCompare(ListItem.label,Album information) + !StringCompare(ListItem.label,Lyrics) + !StringCompare(ListItem.label,Artist information) + !StringCompare(ListItem.label,Movie information) + !StringCompare(ListItem.label,Music Add-ons) + !StringCompare(ListItem.label,Music video information) + !StringCompare(ListItem.label,Picture Add-ons) + !StringCompare(ListItem.label,Program Add-ons) + !StringCompare(ListItem.label,Screensaver) + !StringCompare(ListItem.label,Skin) + !StringCompare(ListItem.label,Subtitles) + !StringCompare(ListItem.label,TV information) + !StringCompare(ListItem.label,Video Add-ons) + !StringCompare(ListItem.label,Visualization) + !StringCompare(ListItem.label,Weather) + !StringCompare(ListItem.label,All Add-ons) + !StringCompare(ListItem.label,Add-on repository) + !StringCompare(ListItem.label,Install from zip file)  + !StringCompare(ListItem.label,Music)  + !StringCompare(ListItem.label,Pictures)</visible>
 						<animation effect="zoom" end="105" center="auto" time="100" reversible="false">Focus</animation>
 					</control>
 					<control type="image">
@@ -1104,7 +1184,7 @@
 						<posx>35</posx>
 						<posy>125</posy>
 						<width>180</width>
-						<height>45</height>
+						<height>49</height>
 						<font>Simplicity_20</font>
 						<label>$INFO[ListItem.label]</label>
 						<align>center</align>
@@ -2460,6 +2540,134 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 			</control>
+		</control>
+	</include>
+	<include name="Addon-Grid-View">
+		<control type="group">
+			<visible>Control.IsVisible(68)</visible>
+			<include>VisibleFadeEffect</include>
+			<posx>0</posx>
+			<posy>0</posy>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<texture>simplicity/background-solid.png</texture>
+			</control>
+			<include>AddonBreadCrumbs</include>
+			<control type="Panel" id="68">
+				<include>Zoom</include>		
+				<posx>539</posx>
+				<posy>140</posy>
+				<width>725</width>
+				<height>435</height>
+				<onleft>2</onleft>
+				<onright>ActivateWindow(1112,Home,return)</onright>
+				<onup>68</onup>
+				<ondown>68</ondown>
+				<viewtype label="Album Wall">list</viewtype>
+				<pagecontrol>60</pagecontrol>
+				<scrolltime>300</scrolltime>
+				<preloaditems>300</preloaditems>
+				<orientation>vertical</orientation>
+				<visible>SubString(Container.FolderPath,addons)</visible>
+				<itemlayout height="145" width="145">
+					<control type="group">
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>120</width>
+							<height>120</height>
+						<aspectratio>stretch</aspectratio>
+							<texture background="true">root-album.png</texture>
+						<bordertexture border="1">simplicity/thumbborder-thin.png</bordertexture>
+						<bordersize>1</bordersize>		
+							<visible>stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+						</control>
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>120</width>
+							<height>120</height>
+						<aspectratio>stretch</aspectratio>
+							<texture background="true">simplicity/icons/get more....png</texture>
+						<bordertexture border="1">simplicity/thumbborder-thin.png</bordertexture>
+						<bordersize>1</bordersize>		
+							<visible>StringCompare(ListItem.label,Get More...)</visible>
+						</control>
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>120</width>
+							<height>120</height>
+						<aspectratio>stretch</aspectratio>
+							<texture background="true" fallback="nothumbalbum.png">$INFO[ListItem.Icon]</texture>
+						<bordertexture border="1">simplicity/thumbborder-thin.png</bordertexture>
+						<bordersize>1</bordersize>		
+							<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png) + !StringCompare(ListItem.label,Get More...)</visible>
+						</control>
+					</control>	
+				</itemlayout>
+				<focusedlayout height="530" width="230">
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>120</width>
+						<height>120</height>
+						<aspectratio>stretch</aspectratio>
+						<texture background="true" fallback="nothumbalbum.png">root-album.png</texture>
+						<bordertexture border="1"></bordertexture>
+						<bordersize>1</bordersize>		
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" start="100" end="120" center="auto" time="100"/>
+						</animation>
+							<visible>stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>120</width>
+						<height>120</height>
+						<aspectratio>stretch</aspectratio>
+							<texture background="true">simplicity/icons/get more....png</texture>
+						<bordertexture border="1"></bordertexture>
+						<bordersize>1</bordersize>		
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" start="100" end="120" center="auto" time="100"/>
+						</animation>
+							<visible>StringCompare(ListItem.label,Get More...)</visible>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>120</width>
+						<height>120</height>
+						<aspectratio>stretch</aspectratio>
+						<texture background="true" fallback="nothumbalbum.png">$INFO[ListItem.Icon]</texture>
+						<bordertexture border="1"></bordertexture>
+						<bordersize>1</bordersize>		
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" start="100" end="120" center="auto" time="100"/>
+						</animation>
+							<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png) + !StringCompare(ListItem.label,Get More...)</visible>
+					</control>			
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>120</width>
+						<height>120</height>
+						<aspectratio>stretch</aspectratio>
+						<texture background="true">simplicity/app-glow.png</texture>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" start="100" end="120" center="auto" time="100"/>
+						</animation>
+					</control>
+				</focusedlayout>
+			</control>
+			<include>RightOpenRecent</include>
+			<include>LeftOptions</include>
+			<include>AddonInfoLeftFanart</include>
 		</control>
 	</include>
 </includes>

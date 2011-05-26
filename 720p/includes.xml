@@ -21,6 +21,14 @@
 	<constant name="FanartCrossfadeTime">500</constant>
 	<constant name="IconCrossfadeTime">400</constant>
 
+	<include name="OpenGuide">
+				<ondown>ActivateWindow(1116,TVShows,return)</ondown>
+	</include>
+
+	<include name="OpenRecent">
+		<ondown>ActivateWindow(1112,Home,return)</ondown>
+	</include>
+
 	<include name="BackgroundEffectCommon">
 		<animations effect="fade" time="1000">Visible</animations>
 		<animations effect="fade" time="1000">Hidden</animations>
@@ -637,14 +645,14 @@
 		<onfocus>SetFocus(11000)</onfocus>
 	</include>
 	<include name="Use_TV_Tunes_Guide">
-		<onfocus>XBMC.RunScript(script.TvTunes,backend=True&amp;loop=False)</onfocus>
+		<onfocus>XBMC.RunScript(script.tvtunes,backend=True&amp;loop=False)</onfocus>
 		<onfocus>SetFocus(11000)</onfocus>
 	</include> -->
 	<include name="No_TV_Tunes">
 		<onfocus>SetFocus(50)</onfocus>
 	</include>
 	<include name="Use_TV_Tunes">
-		<onfocus>XBMC.RunScript(script.TvTunes,backend=True&amp;loop=False)</onfocus>
+		<onfocus>XBMC.RunScript(script.tvtunes,backend=True&amp;loop=False)</onfocus>
 		<onfocus>SetFocus(50)</onfocus>
 	</include> 
 	<include name="No_Delete_Eps">
@@ -3200,6 +3208,99 @@
 	</control>
 </include>
 
+<include name="AddonInfoLeftFanart">
+	<control type="group">
+		<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+		<include>Zoom</include>
+		<control type="image">
+			<posx>90</posx>
+			<posy>140</posy>
+			<width>384</width>
+			<height>216</height>
+			<texture background="true">now-playing-border.png</texture>
+		</control>
+		<control type="image">
+			<posx>92</posx>
+			<posy>142</posy>
+			<width>380</width>
+			<height>212</height>
+			<texture background="true" fallback="addons.jpg">$INFO[Listitem.Property(Fanart_Image)]</texture>
+			<fadetime>IconCrossfadeTime</fadetime>						
+		</control>
+		<control type="label">
+			<posx>90</posx>
+			<posy>376</posy>
+			<width>380</width>
+			<height>20</height>
+			<font>Simplicity_24</font>
+			<textcolor>yellow</textcolor>
+			<shadowcolor>black</shadowcolor>
+			<align>left</align>
+			<label>$INFO[ListItem.label]</label>
+		</control>
+		<control type="textbox">
+			<posx>90</posx>
+			<posy>376</posy>
+			<width>384</width>
+			<height>150</height>
+			<font>Simplicity_20</font>
+			<textcolor>white</textcolor>
+			<align>left</align>
+			<label>$INFO[ListItem.Plot]</label>
+			<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+		</control>
+		<control type="label">
+			<posx>90</posx>
+			<posy>546</posy>
+			<width>380</width>
+			<height>20</height>
+			<font>Simplicity_20</font>
+			<textcolor>yellow</textcolor>
+			<shadowcolor>black</shadowcolor>
+			<scroll>false</scroll>
+			<scrollspeed>0</scrollspeed>
+			<align>left</align>
+			<label>Created by: [COLOR=grey2]$INFO[ListItem.Property(Addon.Creator)][/COLOR]</label>
+							<visible>!StringCompare(ListItem.label,Get More...)</visible>
+		</control>
+		<control type="label">
+			<posx>90</posx>
+			<posy>576</posy>
+			<width>380</width>
+			<height>20</height>
+			<font>Simplicity_20</font>
+			<textcolor>yellow</textcolor>
+			<shadowcolor>black</shadowcolor>
+			<scroll>false</scroll>
+			<scrollspeed>0</scrollspeed>
+			<align>left</align>
+			<label>Version: [COLOR=grey2]$INFO[ListItem.Property(Addon.Version)][/COLOR]  Type: [COLOR=grey2]$INFO[ListItem.Property(Addon.Type)][/COLOR]</label>
+							<visible>!StringCompare(ListItem.label,Get More...)</visible>
+		</control>
+		<control type="textbox">
+			<posx>90</posx>
+			<posy>406</posy>
+			<width>384</width>
+			<height>120</height>
+			<font>Simplicity_20</font>
+			<textcolor>white</textcolor>
+			<align>left</align>
+			<label>$INFO[ListItem.Property(Addon.Description)]</label>
+							<visible>!StringCompare(ListItem.label,Get More...)</visible>
+		</control>
+		<control type="textbox">
+			<posx>90</posx>
+			<posy>406</posy>
+			<width>384</width>
+			<height>120</height>
+			<font>Simplicity_20</font>
+			<textcolor>white</textcolor>
+			<align>left</align>
+			<label>Download more addons from an XBMC repo.</label>
+							<visible>StringCompare(ListItem.label,Get More...)</visible>
+		</control>
+	</control>
+</include>
 
 <include name="MovieInfoTopCenter">
 	<control type="group">

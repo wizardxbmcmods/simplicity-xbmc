@@ -936,9 +936,9 @@
 					<scrollspeed>0</scrollspeed>
 					<align>left</align>
 					<label>&amp; more...</label>
-					<visible>IntegerGreaterThan(Container.NumItems,6) </visible>
+					<visible>IntegerGreaterThan(Container.NumItems,6)</visible>
 					<visible>StringCompare(ListItem.label,* All albums)</visible>
-				</control>		
+				</control>						
 				<control type="label">
 					<posx>90</posx>
 					<posy>210</posy>
@@ -1021,6 +1021,37 @@
 					<visible>!StringCompare(ListItem.label,* All albums)</visible>
 				</control>
 			</control>
+					<!--<control type="image">
+						<description>Cd overlay</description>
+						<width>140</width>
+						<height>140</height>
+						<posx>250</posx>
+						<posy>500</posy>
+					<fadetime>IconCrossfadeTime</fadetime>
+						<texture fallback="cd/default-2.png" background="true">$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem(2).Artist]$INFO[ListItem(2).Album,/,/cdart.png]</texture>
+						<aspectratio align="bottom">keep</aspectratio>
+						<visible>IntegerGreaterThan(Container(513).NumItems,2)</visible>
+					</control>
+					<control type="image">
+						<description>Cd overlay</description>
+						<width>140</width>
+						<height>140</height>
+						<posx>170</posx>
+						<posy>500</posy>
+					<fadetime>IconCrossfadeTime</fadetime>
+						<texture fallback="cd/default-1.png" background="true">$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem(1).Artist]$INFO[ListItem(1).Album,/,/cdart.png]</texture>
+						<aspectratio align="bottom">keep</aspectratio>
+					</control>
+	<control type="image">
+						<description>Cd overlay</description>
+						<width>140</width>
+						<height>140</height>
+						<posx>90</posx>
+						<posy>500</posy>
+					<fadetime>IconCrossfadeTime</fadetime>
+						<texture fallback="cd/default.png" background="true">$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem(0).Artist]$INFO[ListItem(0).Album,/,/cdart.png]</texture>
+						<aspectratio align="bottom">keep</aspectratio>
+					</control>-->
 		</control>
 	</include>
 	<include name="Artist-List-View">
@@ -1639,7 +1670,7 @@
 					<include>Zoom</include>
 					<posx>-282</posx>
 					<posy>484</posy>
-					<width>1800\</width>
+					<width>1800</width>
 					<height>300</height>		
 					<onleft>517</onleft>
 					<onright>517</onright>
