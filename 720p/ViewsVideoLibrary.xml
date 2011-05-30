@@ -1824,6 +1824,7 @@
 						<height>20</height>
 						<font>Simplicity_20</font>
 						<textcolor>grey2</textcolor>
+						<selectedcolor>grey2</selectedcolor>
 						<scroll>false</scroll>
 						<scrollspeed>0</scrollspeed>
 						<align>left</align>
@@ -2055,7 +2056,7 @@
 				<onup>535</onup>
 				<ondown>535</ondown>
 				<viewtype label="Banner List">list</viewtype>
-					<preloaditems>40</preloaditems>
+				<preloaditems>40</preloaditems>
 				<focusposition>2</focusposition>
 				<pagecontrol>60</pagecontrol>
 				<scrolltime>300</scrolltime>
@@ -6001,7 +6002,7 @@
 							<shadowcolor>black</shadowcolor>
 							<align>left</align>
 							<label>$INFO[ListItem.Year]</label>
-						<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+							<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 						</control>					
 					</control>	
 				</itemlayout>
@@ -6121,6 +6122,495 @@
 			</control>
 		</control>
 	</include>
-	
+	<include name="Fanart-Grid">
+		<control type="group">
+			<posx>0</posx>
+			<posy>0</posy>
+			<visible>Control.IsVisible(560)</visible>
+			<include>VisibleFadeEffect</include>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1290</width>
+				<height>730</height>
+				<texture>simplicity/background-solid.png</texture>
+			</control>
+			<include>LeftOptions</include>
+			<include>TVBreadCrumbs</include>
+			<include>RightOpenRecent</include>
+			<control type="group">
+				<posx>-20</posx>
+				<posy>-30</posy>
+				<control type="group">
+					<control type="panel" id="560">
+						<include>Zoom</include>
+						<visible>Container.Content(TVShows)</visible>
+						<viewtype label="Fanart Grid">Wraplist of Posters</viewtype>
+						<posx>20</posx>
+						<posy>140</posy>
+						<width>1300</width>
+						<height>540</height>		
+						<ondown>560</ondown>
+						<onup>560</onup>
+						<onleft>2</onleft>
+						<onright>ActivateWindow(1112,Home,return)</onright>
+						<pagecontrol>70</pagecontrol>
+						<scrolltime>300</scrolltime>
+						<focusposition>3</focusposition>
+						<orientation>vertical</orientation>
+						<preloaditems>200</preloaditems>
+						<itemlayout height="270" width="420">
+							<control type="image">
+								<posx>20</posx>
+								<posy>4</posy> 
+								<width>400</width>
+								<height>225</height>
+								<aligny>center</aligny>
+								<texture background="true">stack.png</texture>
+							</control>
+							<control type="image">
+								<posx>40</posx>
+								<posy>15</posy> 
+								<width>360</width>
+								<height>204</height>
+								<aligny>center</aligny>
+								<texture background="true">root-wide.png</texture>
+								<aspectratio>stretch</aspectratio>
+								<visible>stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+							</control>
+							<control type="image">
+								<posx>40</posx>
+								<posy>15</posy> 
+								<width>360</width>
+								<height>204</height>
+								<aligny>center</aligny>
+								<texture background="true" fallback="nothumb.png">$INFO[Listitem.Property(Fanart_Image)]</texture>
+								<aspectratio>stretch</aspectratio>
+								<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+							</control>
+							<control type="largeimage">
+								<posx>40</posx>
+								<posy>15</posy> 
+								<width>360</width>
+								<height>204</height>
+								<aligny>center</aligny>
+								<texture background="true">simplicity/black-back-3.png</texture>
+								<aspectratio>stretch</aspectratio>
+							</control>
+							<control type="largeimage">
+								<posx>113</posx>
+								<posy>116</posy> 
+								<width>214</width>
+								<height>83</height>
+								<texture background="true" fallback="logo-fallback.png">$INFO[ListItem.Path,,logo.png]</texture>
+								<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+							</control>
+							<control type="image">
+								<posx>322</posx>
+								<posy>-20</posy>
+								<width>70</width>
+								<align>bottom</align>
+								<itemgap>0</itemgap>
+								<aspectratio>keep</aspectratio>
+								<texture>studios/$INFO[ListItem.Studio,,.png]</texture>
+								<visible>Container.Content(TVShows)</visible>
+								<visible>!Skin.HasSetting(UseColoredFlags)</visible>	
+							</control>    
+							<control type="image">
+								<posx>322</posx>
+								<posy>-20</posy>
+								<width>70</width>
+								<align>bottom</align>
+								<itemgap>0</itemgap>
+								<aspectratio>keep</aspectratio>
+								<texture>studios-color/$INFO[ListItem.Studio,,.png]</texture>
+								<visible>Container.Content(TVShows)</visible>
+								<visible>Skin.HasSetting(UseColoredFlags)</visible>	
+							</control> 
+							<control type="largeimage">
+								<posx>40</posx>
+								<posy>15</posy> 
+								<width>360</width>
+								<height>204</height>
+								<aligny>center</aligny>
+								<texture background="true">simplicity/black-back-lighter.png</texture>
+								<aspectratio>stretch</aspectratio>
+							</control>
+							<control type="label">
+								<posx>220</posx>
+								<posy>230</posy>
+								<width>360</width>
+								<height>30</height>
+								<font>Simplicity_20</font>
+								<textcolor>grey2</textcolor>
+								<shadowcolor>black</shadowcolor>
+								<align>center</align>
+								<label>$INFO[ListItem.label]</label>
+							</control>
+						</itemlayout>
+						<focusedlayout height="270" width="420">
+							<control type="image">
+								<posx>20</posx>
+								<posy>4</posy> 
+								<width>400</width>
+								<height>225</height>
+								<aligny>center</aligny>
+								<texture background="true">stack.png</texture>
+							</control>
+							<control type="image">
+								<posx>21</posx>
+								<posy>-4</posy>
+								<width>398</width>
+								<height>242</height>
+								<aspectratio>stretch</aspectratio>
+								<fadetime>600</fadetime>
+								<texture background="true">fanart-light.png</texture>
+							</control>
+							<control type="image">
+								<posx>40</posx>
+								<posy>15</posy> 
+								<width>360</width>
+								<height>204</height>
+								<texture background="true" fallback="nothumb.png">$INFO[Listitem.Property(Fanart_Image)]</texture>
+								<aspectratio>stretch</aspectratio>
+								<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+								<animation type="Focus" reversible="false">
+									<effect type="fade" start="100" end="0"  time="300" delay="1050"/>
+								</animation>
+								<visible>!Skin.HasSetting(NoGridFade)</visible>
+							</control>
+							<control type="image">
+								<posx>40</posx>
+								<posy>15</posy> 
+								<width>360</width>
+								<height>204</height>
+								<texture background="true" fallback="nothumb.png">$INFO[Listitem.Property(Fanart_Image)]</texture>
+								<aspectratio>stretch</aspectratio>
+								<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+								<visible>Skin.HasSetting(NoGridFade)</visible>
+							</control>
+							<control type="image">
+								<posx>40</posx>
+								<posy>15</posy> 
+								<width>360</width>
+								<height>204</height>
+								<texture background="true" fallback="nothumb.png">grid-overlay.jpg</texture>
+								<aspectratio>stretch</aspectratio>
+								<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+								<animation type="Focus" reversible="false">
+									<effect type="fade" start="0" end="100"  time="300" delay="1050"/>
+								</animation>
+								<visible>!Skin.HasSetting(NoGridFade)</visible>
+							</control>
+							<control type="image">
+								<posx>40</posx>
+								<posy>15</posy> 
+								<width>360</width>
+								<height>204</height>
+								<aligny>center</aligny>
+								<texture background="true">root-wide.png</texture>
+								<aspectratio>stretch</aspectratio>
+								<visible>stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+							</control>
+							<control type="largeimage">
+								<posx>40</posx>
+								<posy>15</posy> 
+								<width>360</width>
+								<height>204</height>
+								<aligny>center</aligny>
+								<texture background="true">simplicity/black-back-4.png</texture>
+								<aspectratio>stretch</aspectratio>
+								<animation type="Focus" reversible="false">
+									<effect type="fade" start="100" end="0"  time="300" delay="1050"/>
+								</animation>
+								<visible>!Skin.HasSetting(NoGridFade)</visible>
+							</control>
+							<control type="largeimage">
+								<posx>40</posx>
+								<posy>15</posy> 
+								<width>360</width>
+								<height>204</height>
+								<aligny>center</aligny>
+								<texture background="true">simplicity/black-back-4.png</texture>
+								<aspectratio>stretch</aspectratio>
+								<visible>Skin.HasSetting(NoGridFade)</visible>
+							</control>
+							<control type="image">
+								<posx>322</posx>
+								<posy>-20</posy>
+								<width>70</width>
+								<align>bottom</align>
+								<itemgap>0</itemgap>
+								<aspectratio>keep</aspectratio>
+								<texture>studios/$INFO[ListItem.Studio,,.png]</texture>
+								<visible>Container.Content(TVShows)</visible>
+								<visible>!Skin.HasSetting(UseColoredFlags)</visible>	
+							</control>    
+							<control type="image">
+								<posx>322</posx>
+								<posy>-20</posy>
+								<width>70</width>
+								<align>bottom</align>
+								<itemgap>0</itemgap>
+								<aspectratio>keep</aspectratio>
+								<texture>studios-color/$INFO[ListItem.Studio,,.png]</texture>
+								<visible>Container.Content(TVShows)</visible>
+								<visible>Skin.HasSetting(UseColoredFlags)</visible>	
+							</control> 
+							<control type="largeimage">
+								<posx>113</posx>
+								<posy>116</posy> 
+								<width>214</width>
+								<height>83</height>
+								<texture background="true" fallback="logo-fallback.png">$INFO[ListItem.Path,,logo.png]</texture>
+								<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+								<animation type="Focus" reversible="false">
+									<effect type="fade" start="100" end="0"  time="300" delay="1050"/>
+								</animation>
+								<visible>!Skin.HasSetting(NoGridFade)</visible>
+							</control>
+							<control type="largeimage">
+								<posx>113</posx>
+								<posy>116</posy> 
+								<width>214</width>
+								<height>83</height>
+								<texture background="true" fallback="logo-fallback.png">$INFO[ListItem.Path,,logo.png]</texture>
+								<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+								<visible>Skin.HasSetting(NoGridFade)</visible>
+							</control>
+							<control type="textbox">
+								<description>Description Value The Movie</description>
+								<posx>45</posx>
+								<posy>130</posy>
+								<width>350</width>
+								<height>89</height>
+								<font>Simplicity_18</font>
+								<align>left</align>
+								<textcolor>grey4</textcolor>
+								<shadowcolor>black</shadowcolor>
+								<label>$INFO[ListItem.Plot]</label>
+								<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+								<animation type="Focus" reversible="false">
+									<effect type="fade" start="0" end="100"  time="300" delay="1050"/>
+								</animation>
+								<visible>!Skin.HasSetting(NoGridFade)</visible>
+							</control>
+							<control type="label">
+								<posx>45</posx>
+								<posy>30</posy>
+								<width>250</width>
+								<height>20</height>
+								<font>Simplicity_18</font>
+								<textcolor>white</textcolor>
+								<shadowcolor>black</shadowcolor>
+								<align>left</align>
+								<label>$INFO[ListItem.Property(TotalEpisodes)] [COLOR=grey4]episodes[/COLOR], $INFO[ListItem.Property(UnWatchedEpisodes)] [COLOR=grey4]unwatched[/COLOR]</label>
+								<animation type="Focus" reversible="false">
+									<effect type="fade" start="0" end="100"  time="300" delay="1050"/>
+								</animation>
+								<visible>!Skin.HasSetting(NoGridFade)</visible>
+							</control>		
+							<control type="label">
+								<posx>45</posx>
+								<posy>60</posy>
+								<width>250</width>
+								<height>20</height>
+								<font>Simplicity_18</font>
+								<scroll>false</scroll>
+								<scrollspeed>0</scrollspeed>
+								<textcolor>grey4</textcolor>
+								<shadowcolor>black</shadowcolor>
+								<align>left</align>
+								<label>$INFO[ListItem.Year] - $INFO[ListItem.Genre]</label>
+								<animation type="Focus" reversible="false">
+									<effect type="fade" start="0" end="100"  time="300" delay="1050"/>
+								</animation>
+								<visible>!Skin.HasSetting(NoGridFade)</visible>
+							</control>		
+							<control type="label">
+								<posx>45</posx>
+								<posy>100</posy>
+								<width>250</width>
+								<height>20</height>
+								<font>Simplicity_20</font>
+								<scroll>false</scroll>
+								<scrollspeed>0</scrollspeed>
+								<textcolor>white</textcolor>
+								<shadowcolor>black</shadowcolor>
+								<align>left</align>
+								<label>Plot:</label>
+								<animation type="Focus" reversible="false">
+									<effect type="fade" start="0" end="100"  time="300" delay="1050"/>
+								</animation>
+								<visible>!Skin.HasSetting(NoGridFade)</visible>
+							</control>		
+							<control type="image">
+								<posx>40</posx>
+								<posy>15</posy> 
+								<width>360</width>
+								<height>204</height>
+								<texture background="true">grid-shine.png</texture>
+								<aspectratio>stretch</aspectratio>
+								<animation type="Focus" reversible="false">
+									<effect type="fade" start="100" end="0"  time="300" delay="1050"/>
+								</animation>
+								<visible>!Skin.HasSetting(NoGridFade)</visible>
+							</control>
+							<control type="image">
+								<posx>40</posx>
+								<posy>15</posy> 
+								<width>360</width>
+								<height>204</height>
+								<texture background="true">grid-shine.png</texture>
+								<aspectratio>stretch</aspectratio>
+								<visible>Skin.HasSetting(NoGridFade)</visible>
+							</control>
+							<control type="label">
+								<posx>220</posx>
+								<posy>230</posy>
+								<width>360</width>
+								<height>30</height>
+								<font>Simplicity_20</font>
+								<textcolor>white</textcolor>
+								<shadowcolor>black</shadowcolor>
+								<align>center</align>
+								<label>$INFO[ListItem.label]</label>
+							</control>
+						</focusedlayout>
+					</control>	
+					<!--<control type="group">
+						<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+						<include>Zoom</include>
+						<posx>-50</posx>
+						<posy>-85</posy>
+						<control type="image">
+							<description>Rating value</description>
+							<posx>252</posx>
+							<posy>290</posy>
+							<width>154</width>
+							<height>30</height>
+							<align>left</align>
+							<texture>$INFO[Listitem.StarRating]</texture>
+							<visible>!Container.Content(Seasons)</visible>
+						</control>
+						<control type="label">
+							<posx>252</posx>
+							<posy>240</posy>
+							<width>800</width>
+							<height>30</height>
+							<font>Simplicity_40</font>
+							<textcolor>white</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<scroll>false</scroll>
+							<align>left</align>
+							<label>$INFO[ListItem.Title]</label>
+						</control>
+						<control type="label">
+							<posx>253</posx>
+							<posy>300</posy>
+							<width>350</width>
+							<height>20</height>
+							<font>Simplicity_20</font>
+							<textcolor>grey2</textcolor>
+							<align>left</align>
+							<label>$INFO[ListItem.Property(TotalEpisodes)] episodes, $INFO[ListItem.Property(UnWatchedEpisodes)] unwatched</label>
+							<visible>Container.Content(Seasons)</visible>
+						</control>		
+						<control type="label">
+							<posx>252</posx>
+							<posy>610</posy>
+							<width>800</width>
+							<height>30</height>
+							<font>Simplicity_20</font>
+							<textcolor>grey2</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<scroll>false</scroll>
+							<align>left</align>
+							<label>$INFO[ListItem.Year], $INFO[ListItem.Duration] Minutes</label>
+							<visible>Container.Content(Movies) + !Skin.HasSetting(NoMinutes)</visible>
+						</control>
+						<control type="label">
+							<posx>252</posx>
+							<posy>610</posy>
+							<width>800</width>
+							<height>30</height>
+							<font>Simplicity_20</font>
+							<textcolor>grey2</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<scroll>false</scroll>
+							<align>left</align>
+							<label>$INFO[ListItem.Year], $INFO[ListItem.Duration]</label>
+							<visible>Container.Content(Movies) + Skin.HasSetting(NoMinutes)</visible>
+						</control>
+						<control type="label">
+							<posx>252</posx>
+							<posy>610</posy>
+							<width>800</width>
+							<height>30</height>
+							<font>Simplicity_20</font>
+							<textcolor>grey2</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<scroll>false</scroll>
+							<align>left</align>
+							<label>$INFO[ListItem.Year], $INFO[ListItem.Genre]</label>
+							<visible>Container.Content(TVShows)</visible>
+						</control>
+						<control type="label">
+							<posx>252</posx>
+							<posy>610</posy>
+							<width>800</width>
+							<height>30</height>
+							<font>Simplicity_20</font>
+							<textcolor>grey2</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<scroll>false</scroll>
+							<align>left</align>
+							<label>$INFO[ListItem.Genre]</label>
+							<visible>Container.Content(Seasons)</visible>
+						</control>
+						<control type="textbox">
+							<description>Description Value The Movie</description>
+							<posx>250</posx>
+							<posy>640</posy>
+							<width>500</width>
+							<height>89</height>
+							<font>Simplicity_18</font>
+							<align>left</align>
+							<textcolor>white</textcolor>
+							<label>$INFO[ListItem.PlotOutline]</label>
+							<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+							<visible>Container.Content(Movies)</visible>
+						</control>
+						<control type="textbox">
+							<description>Description Value The Movie</description>
+							<posx>250</posx>
+							<posy>640</posy>
+							<width>500</width>
+							<height>89</height>
+							<font>Simplicity_18</font>
+							<align>left</align>
+							<textcolor>white</textcolor>
+							<label>$INFO[ListItem.Plot]</label>
+							<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+							<visible>Container.Content(TVShows)</visible>
+						</control>
+						<control type="textbox">
+							<description>Description Value The Movie</description>
+							<posx>252</posx>
+							<posy>640</posy>
+							<width>500</width>
+							<height>89</height>
+							<font>Simplicity_18</font>
+							<align>left</align>
+							<textcolor>white</textcolor>
+							<label>$INFO[Container.ShowPlot]</label>
+							<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+							<visible>Container.Content(Seasons)</visible>
+						</control>
+					</control>-->
+				</control>
+			</control>
+		</control>
+	</include>
 
 </includes>

@@ -1,4 +1,4 @@
-[B]1.2.1[/B] 
+[B]2.0[/B] 
 
 - Cleaned up thumbnail view
 - Added icons to Home Screen
