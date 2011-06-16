@@ -14,7 +14,9 @@
 			</control>
 			<include>LeftOptions</include>
 			<include>FileBreadCrumbs</include>
-			<include>RightOpenTVGuide</include>
+			<include condition="Skin.HasSetting(VideoUseGuide)">RightOpenTVGuide</include>
+			<include condition="Skin.HasSetting(VideoUseRecent)">RightOpenRecent</include>
+			<include condition="Skin.HasSetting(VideoUseCustom)">RightOpenCustom</include>
 			<control type="fixedlist" id="50">
 				<include>Zoom</include>		
 				<posx>494</posx>
@@ -22,7 +24,9 @@
 				<width>930</width>
 				<height>553</height>
 				<onleft>2</onleft>
-				<onright>ActivateWindow(1116,TVShows,return)</onright>
+				<include condition="Skin.HasSetting(VideoUseGuide)">OpenGuideRight</include>
+				<include condition="Skin.HasSetting(VideoUseRecent)">OpenRecentRight</include>
+				<include condition="Skin.HasSetting(VideoUseCustom)">OpenCustomRight</include>
 				<onup>50</onup>
 				<ondown>50</ondown>
 				<viewtype label="535">list</viewtype>
@@ -132,7 +136,9 @@
 			</control>
 			<include>UpOptions</include>
 			<include>FileBreadCrumbs</include>
-			<include>DownOpenTVGuide</include>
+			<include condition="Skin.HasSetting(VideoUseGuide)">DownOpenTVGuide</include>
+			<include condition="Skin.HasSetting(VideoUseRecent)">DownOpenRecent</include>
+			<include condition="Skin.HasSetting(VideoUseCustom)">DownOpenCustom</include>
 			<control type="image">
 				<posx>20</posx>
 				<posy>332.5</posy>
@@ -367,7 +373,9 @@
 				<textureslidernib>ScrollBarNib.png</textureslidernib>
 				<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
 				<onup>500</onup>
-				<ondown>ActivateWindow(1116,TVShows,return)</ondown>
+				<include condition="Skin.HasSetting(VideoUseGuide)">OpenGuideDown</include>
+				<include condition="Skin.HasSetting(VideoUseRecent)">OpenRecentDown</include>
+				<include condition="Skin.HasSetting(VideoUseCustom)">OpenCustomDown</include>
 				<showonepage>false</showonepage>
 				<orientation>horizontal</orientation>
 			</control>
@@ -562,7 +570,6 @@
 			</control>
 			<include>UpOptions</include>
 			<include>AddonBreadCrumbs</include>
-			<include>DownOpenTVGuide</include>
 			<control type="image">
 				<posx>20</posx>
 				<posy>332.5</posy>
@@ -731,7 +738,6 @@
 				<textureslidernib>ScrollBarNib.png</textureslidernib>
 				<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
 				<onup>55</onup>
-				<ondown>ActivateWindow(1116,TVShows,return)</ondown>
 				<showonepage>false</showonepage>
 				<orientation>horizontal</orientation>
 			</control>
@@ -1428,6 +1434,9 @@
 			<include>Overlay</include>
 			<include>UpOptions</include>
 			<include>AddonBreadCrumbs</include>
+			<include condition="Skin.HasSetting(VideoUseGuide)">DownOpenTVGuide</include>
+			<include condition="Skin.HasSetting(VideoUseRecent)">DownOpenRecent</include>
+			<include condition="Skin.HasSetting(VideoUseCustom)">DownOpenCustom</include>
 			<control type="fixedlist" id="65">
 				<include>Zoom</include>
 				<posx>-190</posx>
@@ -1437,7 +1446,9 @@
 				<onleft>65</onleft>
 				<onright>65</onright>
 				<onup>2</onup>
-				<ondown>527</ondown>
+				<include condition="Skin.HasSetting(VideoUseGuide)">OpenGuideDown</include>
+				<include condition="Skin.HasSetting(VideoUseRecent)">OpenRecentDown</include>
+				<include condition="Skin.HasSetting(VideoUseCustom)">OpenCustomDown</include>
 				<viewtype label="Addon Slide">list</viewtype>
 				<orientation>Horizontal</orientation>
 				<pagecontrol>60</pagecontrol>
@@ -2207,6 +2218,9 @@
 			</control>
 			<include>UpOptions</include>
 			<include>AddonBreadCrumbs</include>
+			<include condition="Skin.HasSetting(VideoUseGuide)">DownOpenTVGuide</include>
+			<include condition="Skin.HasSetting(VideoUseRecent)">DownOpenRecent</include>
+			<include condition="Skin.HasSetting(VideoUseCustom)">DownOpenCustom</include>
 			<control type="group">
 				<posx>0</posx>
 				<posy>-30</posy>
@@ -2219,7 +2233,9 @@
 						<posy>298</posy>
 						<width>1800</width>
 						<height>300</height>		
-						<ondown>-</ondown>
+						<include condition="Skin.HasSetting(VideoUseGuide)">OpenGuideDown</include>
+						<include condition="Skin.HasSetting(VideoUseRecent)">OpenRecentDown</include>
+						<include condition="Skin.HasSetting(VideoUseCustom)">OpenCustomDown</include>
 						<onup>2</onup>
 						<onleft>66</onleft>
 						<onright>66</onright>
@@ -2416,7 +2432,9 @@
 			<posy>0</posy>
 			<include>Overlay</include>
 			<include>UpOptions</include>
-			<include>DownOpenTVGuide</include>
+			<include condition="Skin.HasSetting(VideoUseGuide)">DownOpenTVGuide</include>
+			<include condition="Skin.HasSetting(VideoUseRecent)">DownOpenRecent</include>
+			<include condition="Skin.HasSetting(VideoUseCustom)">DownOpenCustom</include>
 			<include>AddonBreadCrumbs</include>
 			<control type="FixedList" id="67">
 				<include>Zoom</include>
@@ -2427,7 +2445,9 @@
 				<onleft>67</onleft>
 				<onright>67</onright>
 				<onup>2</onup>
-				<ondown>ActivateWindow(1116,TVShows,return)</ondown>
+				<include condition="Skin.HasSetting(VideoUseGuide)">OpenGuideDown</include>
+				<include condition="Skin.HasSetting(VideoUseRecent)">OpenRecentDown</include>
+				<include condition="Skin.HasSetting(VideoUseCustom)">OpenCustomDown</include>
 				<viewtype label="Banner Slide">list</viewtype>
 				<orientation>Horizontal</orientation>
 				<pagecontrol>60</pagecontrol>
@@ -2563,7 +2583,9 @@
 				<width>725</width>
 				<height>435</height>
 				<onleft>2</onleft>
-				<onright>ActivateWindow(1112,Home,return)</onright>
+				<include condition="Skin.HasSetting(VideoUseGuide)">OpenGuideRight</include>
+				<include condition="Skin.HasSetting(VideoUseRecent)">OpenRecentRight</include>
+				<include condition="Skin.HasSetting(VideoUseCustom)">OpenCustomRight</include>
 				<onup>68</onup>
 				<ondown>68</ondown>
 				<viewtype label="Album Wall">list</viewtype>
@@ -2579,10 +2601,10 @@
 							<posy>0</posy>
 							<width>120</width>
 							<height>120</height>
-						<aspectratio>stretch</aspectratio>
+							<aspectratio>stretch</aspectratio>
 							<texture background="true">root-album.png</texture>
-						<bordertexture border="1">simplicity/thumbborder-thin.png</bordertexture>
-						<bordersize>1</bordersize>		
+							<bordertexture border="1">simplicity/thumbborder-thin.png</bordertexture>
+							<bordersize>1</bordersize>		
 							<visible>stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 						</control>
 						<control type="image">
@@ -2590,10 +2612,10 @@
 							<posy>0</posy>
 							<width>120</width>
 							<height>120</height>
-						<aspectratio>stretch</aspectratio>
+							<aspectratio>stretch</aspectratio>
 							<texture background="true">simplicity/icons/get more....png</texture>
-						<bordertexture border="1">simplicity/thumbborder-thin.png</bordertexture>
-						<bordersize>1</bordersize>		
+							<bordertexture border="1">simplicity/thumbborder-thin.png</bordertexture>
+							<bordersize>1</bordersize>		
 							<visible>StringCompare(ListItem.label,Get More...)</visible>
 						</control>
 						<control type="image">
@@ -2601,10 +2623,10 @@
 							<posy>0</posy>
 							<width>120</width>
 							<height>120</height>
-						<aspectratio>stretch</aspectratio>
+							<aspectratio>stretch</aspectratio>
 							<texture background="true" fallback="nothumbalbum.png">$INFO[ListItem.Icon]</texture>
-						<bordertexture border="1">simplicity/thumbborder-thin.png</bordertexture>
-						<bordersize>1</bordersize>		
+							<bordertexture border="1">simplicity/thumbborder-thin.png</bordertexture>
+							<bordersize>1</bordersize>		
 							<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png) + !StringCompare(ListItem.label,Get More...)</visible>
 						</control>
 					</control>	
@@ -2617,12 +2639,12 @@
 						<height>120</height>
 						<aspectratio>stretch</aspectratio>
 						<texture background="true" fallback="nothumbalbum.png">root-album.png</texture>
-						<bordertexture border="1"></bordertexture>
+						<bordertexture border="1"/>
 						<bordersize>1</bordersize>		
 						<animation type="Focus" reversible="false">
 							<effect type="zoom" start="100" end="120" center="auto" time="100"/>
 						</animation>
-							<visible>stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+						<visible>stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 					</control>
 					<control type="image">
 						<posx>0</posx>
@@ -2630,13 +2652,13 @@
 						<width>120</width>
 						<height>120</height>
 						<aspectratio>stretch</aspectratio>
-							<texture background="true">simplicity/icons/get more....png</texture>
-						<bordertexture border="1"></bordertexture>
+						<texture background="true">simplicity/icons/get more....png</texture>
+						<bordertexture border="1"/>
 						<bordersize>1</bordersize>		
 						<animation type="Focus" reversible="false">
 							<effect type="zoom" start="100" end="120" center="auto" time="100"/>
 						</animation>
-							<visible>StringCompare(ListItem.label,Get More...)</visible>
+						<visible>StringCompare(ListItem.label,Get More...)</visible>
 					</control>
 					<control type="image">
 						<posx>0</posx>
@@ -2645,12 +2667,12 @@
 						<height>120</height>
 						<aspectratio>stretch</aspectratio>
 						<texture background="true" fallback="nothumbalbum.png">$INFO[ListItem.Icon]</texture>
-						<bordertexture border="1"></bordertexture>
+						<bordertexture border="1"/>
 						<bordersize>1</bordersize>		
 						<animation type="Focus" reversible="false">
 							<effect type="zoom" start="100" end="120" center="auto" time="100"/>
 						</animation>
-							<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png) + !StringCompare(ListItem.label,Get More...)</visible>
+						<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png) + !StringCompare(ListItem.label,Get More...)</visible>
 					</control>			
 					<control type="image">
 						<posx>0</posx>
@@ -2665,7 +2687,9 @@
 					</control>
 				</focusedlayout>
 			</control>
-			<include>RightOpenRecent</include>
+			<include condition="Skin.HasSetting(VideoUseGuide)">RightOpenTVGuide</include>
+			<include condition="Skin.HasSetting(VideoUseRecent)">RightOpenRecent</include>
+			<include condition="Skin.HasSetting(VideoUseCustom)">RightOpenCustom</include>
 			<include>LeftOptions</include>
 			<include>AddonInfoLeftFanart</include>
 		</control>

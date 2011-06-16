@@ -139,10 +139,10 @@
 								<visible>Control.HasFocus(8006)</visible>
 							</control>		
 							<control type="image">
-								<posx>23.5</posx>
-								<posy>46</posy>
-								<width>50</width>
-								<height>50</height>
+								<posx>4</posx>
+								<posy>25</posy>
+								<width>90</width>
+								<height>90</height>
 								<aspectratio>stretch</aspectratio>
 								<texture>osdplay.png</texture>
 								<visible>Control.HasFocus(8005)</visible>
@@ -430,10 +430,10 @@
 								<visible>!Control.HasFocus(8006)</visible>
 							</control>		
 							<control type="image">
-								<posx>24.5</posx>
-								<posy>47</posy>
-								<width>50</width>
-								<height>50</height>
+								<posx>4</posx>
+								<posy>25</posy>
+								<width>90</width>
+								<height>90</height>
 								<aspectratio>stretch</aspectratio>
 								<texture>osdplay.png</texture>
 								<visible>Control.HasFocus(8006)</visible>
@@ -550,39 +550,36 @@
 						<scrolltime>200</scrolltime>
 						<itemlayout height="240" width="240">
 							<control type="image">
-								<posx>5</posx>
-								<posy>5</posy>
-								<width>200</width>
-								<height>120</height>
+								<posx>2</posx>
+								<posy>2</posy>
+								<width>208</width>
+								<height>129</height>
 								<aspectratio>stretch</aspectratio>
 								<texture>simplicity/episode-shadow.png</texture>
 							</control>	
 							<control type="image">
 								<description>Main Icon</description>
-								<posx>0</posx>
-								<posy>0</posy>
+								<posx>2</posx>
+								<posy>2</posy>
 								<width>200</width>
 								<height>120</height>
 								<aspectratio align="left">stretch</aspectratio>
 								<fadetime>200</fadetime>
 								<texture fallback="nothumb.png">$INFO[ListItem.ActualIcon]</texture>
-								<bordertexture border="4">thumbborder.png</bordertexture>
-								<bordersize>4</bordersize>
 							</control>		
 							<control type="image">
-								<posx>4</posx>
-								<posy>4</posy>
-								<width>192</width>
-								<height>94</height>
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>204</width>
+								<height>124</height>
 								<aspectratio>stretch</aspectratio>
-								<texture>simplicity/black-back.png</texture>
-								<visible>Control.HasFocus(8008)</visible>
-							</control>	
+								<texture diffuse="recent-episode-diffuse.png">recent-episode-border.png</texture>
+							</control>
 							<control type="image">
-								<posx>4</posx>
-								<posy>98</posy>
-								<width>192</width>
-								<height>18</height>
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>204</width>
+								<height>124</height>
 								<aspectratio>stretch</aspectratio>
 								<texture>simplicity/black-back.png</texture>
 								<visible>Control.HasFocus(8008)</visible>
@@ -590,46 +587,43 @@
 						</itemlayout>
 						<focusedlayout height="240" width="240">
 							<control type="image">
-								<posx>5</posx>
-								<posy>5</posy>
-								<width>200</width>
-								<height>120</height>
+								<posx>2</posx>
+								<posy>2</posy>
+								<width>208</width>
+								<height>129</height>
 								<aspectratio>stretch</aspectratio>
 								<texture>simplicity/episode-shadow.png</texture>
+							</control>		
+							<control type="image">
+								<posx>2</posx>
+								<posy>2</posy>
+								<width>200</width>
+								<height>120</height>
+								<aspectratio align="left">stretch</aspectratio>
+								<texture fallback="nothumb.png" diffuse="recent-episode-diffuse.png">$INFO[ListItem.ActualIcon]</texture>
+							</control>
+							<control type="image">
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>204</width>
+								<height>124</height>
+								<aspectratio>stretch</aspectratio>
+								<texture diffuse="recent-episode-diffuse.png">recent-episode-border.png</texture>
 							</control>	
 							<control type="image">
 								<posx>0</posx>
 								<posy>0</posy>
-								<width>200</width>
-								<height>120</height>
-								<aspectratio align="left">stretch</aspectratio>
-								<texture fallback="nothumb.png">$INFO[ListItem.ActualIcon]</texture>
-								<bordertexture border="4">thumbborder.png</bordertexture>
-								<bordersize>4</bordersize>
-							</control>
-							<control type="image">
-								<posx>4</posx>
-								<posy>4</posy>
-								<width>192</width>
-								<height>94</height>
+								<width>204</width>
+								<height>124</height>
 								<aspectratio>stretch</aspectratio>
-								<texture>simplicity/black-back.png</texture>
+								<texture diffuse="recent-episode-diffuse.png">simplicity/black-back.png</texture>
 								<visible>Control.HasFocus(8008)</visible>
 							</control>	
 							<control type="image">
-								<posx>4</posx>
-								<posy>98</posy>
-								<width>192</width>
-								<height>18</height>
-								<aspectratio>stretch</aspectratio>
-								<texture>simplicity/black-back.png</texture>
-								<visible>Control.HasFocus(8008)</visible>
-							</control>	
-							<control type="image">
-								<posx>75</posx>
-								<posy>35</posy>
-								<width>50</width>
-								<height>50</height>
+								<posx>59</posx>
+								<posy>18</posy>
+								<width>90</width>
+								<height>90</height>
 								<aspectratio>stretch</aspectratio>
 								<texture>osdplay.png</texture>
 								<visible>Control.HasFocus(8007)</visible>
@@ -655,6 +649,7 @@
 						</content>
 					</control>				
 					<control type="group">
+					<posx>4</posx>
 						<visible>!Skin.HasSetting(UseRandomItems)</visible>
 						<control type="label">
 							<description>Title label</description>
@@ -748,6 +743,7 @@
 						</control>
 					</control>
 					<control type="group">
+					<posx>4</posx>
 						<visible>Skin.HasSetting(UseRandomItems)</visible>
 						<control type="label">
 							<description>Title label</description>
@@ -864,51 +860,49 @@
 						<scrolltime>200</scrolltime>
 						<itemlayout height="270" width="205">
 							<control type="image">
-								<posx>5</posx>
-								<posy>5</posy>
-								<width>200</width>
-								<height>120</height>
+								<posx>2</posx>
+								<posy>2</posy>
+								<width>208</width>
+								<height>129</height>
 								<aspectratio>stretch</aspectratio>
 								<texture>simplicity/episode-shadow.png</texture>
+							</control>		
+							<control type="image">
+								<posx>2</posx>
+								<posy>2</posy>
+								<width>200</width>
+								<height>120</height>
+								<aspectratio align="left">stretch</aspectratio>
+								<texture fallback="nothumb.png" diffuse="recent-episode-diffuse.png">$INFO[ListItem.ActualIcon]</texture>
+							</control>
+							<control type="image">
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>204</width>
+								<height>124</height>
+								<aspectratio>stretch</aspectratio>
+								<texture diffuse="recent-episode-diffuse.png">recent-episode-border.png</texture>
 							</control>	
 							<control type="image">
 								<posx>0</posx>
 								<posy>0</posy>
+								<width>204</width>
+								<height>124</height>
+								<aspectratio>stretch</aspectratio>
+								<texture diffuse="recent-episode-diffuse.png">simplicity/black-back.png</texture>
+							</control>	
+							<control type="image">
+								<posx>2</posx>
+								<posy>2</posy>
 								<width>200</width>
-								<height>120</height>
-								<aspectratio>stretch</aspectratio>
-								<texture fallback="nothumb.png">$INFO[ListItem.ActualIcon]</texture>
-								<bordertexture border="4">thumbborder.png</bordertexture>
-								<bordersize>4</bordersize>
-							</control>	
-							<control type="image">
-								<posx>4</posx>
-								<posy>4</posy>
-								<width>192</width>
-								<height>94</height>
-								<aspectratio>stretch</aspectratio>
-								<texture>simplicity/black-back.png</texture>
-							</control>	
-							<control type="image">
-								<posx>4</posx>
-								<posy>98</posy>
-								<width>192</width>
-								<height>18</height>
-								<aspectratio>stretch</aspectratio>
-								<texture>simplicity/black-back.png</texture>
-							</control>	
-							<control type="image">
-								<posx>4</posx>
-								<posy>4</posy>
-								<width>192</width>
 								<height>22</height>
 								<aspectratio>stretch</aspectratio>
-								<texture flipy="true">recent-fade.png</texture>
+								<texture>recent-fade.png</texture>
 							</control>	
 							<control type="image">
-								<posx>4</posx>
-								<posy>94</posy>
-								<width>192</width>
+								<posx>2</posx>
+								<posy>99</posy>
+								<width>200</width>
 								<height>22</height>
 								<aspectratio>stretch</aspectratio>
 								<texture>recent-fade.png</texture>
@@ -940,53 +934,50 @@
 						</itemlayout>
 						<focusedlayout height="270" width="205">
 							<control type="image">
-								<posx>5</posx>
-								<posy>5</posy>
-								<width>200</width>
-								<height>120</height>
+								<posx>2</posx>
+								<posy>2</posy>
+								<width>208</width>
+								<height>129</height>
 								<aspectratio>stretch</aspectratio>
 								<texture>simplicity/episode-shadow.png</texture>
+							</control>		
+							<control type="image">
+								<posx>2</posx>
+								<posy>2</posy>
+								<width>200</width>
+								<height>120</height>
+								<aspectratio align="left">stretch</aspectratio>
+								<texture fallback="nothumb.png" diffuse="recent-episode-diffuse.png">$INFO[ListItem.ActualIcon]</texture>
+							</control>
+							<control type="image">
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>204</width>
+								<height>124</height>
+								<aspectratio>stretch</aspectratio>
+								<texture diffuse="recent-episode-diffuse.png">recent-episode-border.png</texture>
 							</control>	
 							<control type="image">
 								<posx>0</posx>
 								<posy>0</posy>
+								<width>204</width>
+								<height>124</height>
+								<aspectratio>stretch</aspectratio>
+								<texture diffuse="recent-episode-diffuse.png">simplicity/black-back.png</texture>
+								<visible>!Control.HasFocus(8008)</visible>
+							</control>	
+							<control type="image">
+								<posx>2</posx>
+								<posy>2</posy>
 								<width>200</width>
-								<height>120</height>
-								<aspectratio>stretch</aspectratio>
-								<texture fallback="nothumb.png">$INFO[ListItem.ActualIcon]</texture>
-								<bordertexture border="4">thumbborder.png</bordertexture>
-								<bordersize>4</bordersize>
-							</control>
-							<control type="image">
-								<posx>4</posx>
-								<posy>4</posy>
-								<width>192</width>
-								<height>94</height>
-								<aspectratio>stretch</aspectratio>
-								<texture>simplicity/black-back.png</texture>
-								<visible>!Control.HasFocus(8008)</visible>
-							</control>	
-							<control type="image">
-								<posx>4</posx>
-								<posy>98</posy>
-								<width>192</width>
-								<height>18</height>
-								<aspectratio>stretch</aspectratio>
-								<texture>simplicity/black.png</texture>
-								<visible>!Control.HasFocus(8008)</visible>
-							</control>	
-							<control type="image">
-								<posx>4</posx>
-								<posy>4</posy>
-								<width>192</width>
 								<height>22</height>
 								<aspectratio>stretch</aspectratio>
-								<texture flipy="true">recent-fade.png</texture>
+								<texture>recent-fade.png</texture>
 							</control>	
 							<control type="image">
-								<posx>4</posx>
-								<posy>94</posy>
-								<width>192</width>
+								<posx>2</posx>
+								<posy>99</posy>
+								<width>200</width>
 								<height>22</height>
 								<aspectratio>stretch</aspectratio>
 								<texture>recent-fade.png</texture>
@@ -1016,10 +1007,10 @@
 								<textcolor>white</textcolor>
 							</control>		
 							<control type="image">
-								<posx>75</posx>
-								<posy>35</posy>
-								<width>50</width>
-								<height>50</height>
+								<posx>57</posx>
+								<posy>16</posy>
+								<width>90</width>
+								<height>90</height>
 								<aspectratio>stretch</aspectratio>
 								<texture>osdplay.png</texture>
 								<visible>Control.HasFocus(8008)</visible>
@@ -1562,31 +1553,29 @@
 						<itemlayout height="240" width="210">
 							<control type="image">
 								<description>Main Icon</description>
-								<posx>5</posx>
-								<posy>5</posy>
-								<width>120</width>
-								<height>120</height>
+								<posx>-2</posx>
+								<posy>-2</posy>
+								<width>155</width>
+								<height>155</height>
 								<aspectratio>stretch</aspectratio>
-								<texture>simplicity/music-home-shadow.png</texture>
+								<texture>recent-album-shadow.png</texture>
 							</control>	
 							<control type="image">
 								<description>Main Icon</description>
-								<posx>0</posx>
-								<posy>0</posy>
+								<posx>2</posx>
+								<posy>2</posy>
 								<width>120</width>
 								<height>120</height>
 								<aspectratio align="left">stretch</aspectratio>
 								<fadetime>200</fadetime>
-								<texture fallback="nothumbalbum.png">$INFO[ListItem.ActualIcon]</texture>
-								<bordertexture border="4">thumbborder.png</bordertexture>
-								<bordersize>4</bordersize>
+								<texture fallback="nothumbalbum.png" diffuse="recent-album-diffuse.png">$INFO[ListItem.ActualIcon]</texture>
 								<control type="image">
-									<posx>4</posx>
-									<posy>4</posy>
-									<width>112</width>
-									<height>112</height>
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>124</width>
+								<height>124</height>
 									<aspectratio>stretch</aspectratio>
-									<texture>simplicity/black-back.png</texture>
+									<texture diffuse="recent-album-diffuse.png">simplicity/black-back.png</texture>
 									<visible>Control.HasFocus(8010)</visible>
 								</control>
 							</control>		
@@ -1594,37 +1583,43 @@
 						<focusedlayout height="240" width="210">
 							<control type="image">
 								<description>Main Icon</description>
-								<posx>5</posx>
-								<posy>5</posy>
-								<width>120</width>
-								<height>120</height>
+								<posx>-2</posx>
+								<posy>-2</posy>
+								<width>155</width>
+								<height>155</height>
 								<aspectratio>stretch</aspectratio>
-								<texture>simplicity/music-home-shadow.png</texture>
+								<texture>recent-album-shadow.png</texture>
 							</control>	
 							<control type="image">
-								<posx>0</posx>
-								<posy>0</posy>
+								<posx>2</posx>
+								<posy>2</posy>
 								<width>120</width>
 								<height>120</height>
 								<aspectratio align="left">stretch</aspectratio>
-								<texture fallback="nothumbalbum.png">$INFO[ListItem.ActualIcon]</texture>
-								<bordertexture border="4">thumbborder.png</bordertexture>
-								<bordersize>4</bordersize>
+								<texture fallback="nothumbalbum.png" diffuse="recent-album-diffuse.png">$INFO[ListItem.ActualIcon]</texture>
 							</control>
 							<control type="image">
-								<posx>4</posx>
-								<posy>4</posy>
-								<width>112</width>
-								<height>112</height>
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>124</width>
+								<height>124</height>
+								<aspectratio align="left">stretch</aspectratio>
+								<texture diffuse="recent-album-diffuse.png">recent-album-border.png</texture>
+							</control>
+							<control type="image">
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>124</width>
+								<height>124</height>
 								<aspectratio>stretch</aspectratio>
-								<texture>simplicity/black-back.png</texture>
+								<texture diffuse="recent-album-diffuse.png">simplicity/black-back.png</texture>
 								<visible>Control.HasFocus(8010)</visible>
 							</control>
 							<control type="image">
-								<posx>35</posx>
-								<posy>35</posy>
-								<width>50</width>
-								<height>50</height>
+								<posx>19</posx>
+								<posy>18</posy>
+								<width>90</width>
+								<height>90</height>
 								<aspectratio>stretch</aspectratio>
 								<texture>osdplay.png</texture>
 								<visible>Control.HasFocus(8009)</visible>
@@ -1756,70 +1751,78 @@
 						<itemlayout height="270" width="125">
 							<control type="image">
 								<description>Main Icon</description>
-								<posx>5</posx>
-								<posy>5</posy>
-								<width>120</width>
-								<height>120</height>
+								<posx>-2</posx>
+								<posy>-2</posy>
+								<width>155</width>
+								<height>155</height>
 								<aspectratio>stretch</aspectratio>
-								<texture>simplicity/music-home-shadow.png</texture>
+								<texture>recent-album-shadow.png</texture>
 							</control>	
 							<control type="image">
-								<description>Main Icon</description>
-								<posx>0</posx>
-								<posy>0</posy>
+								<posx>2</posx>
+								<posy>2</posy>
 								<width>120</width>
 								<height>120</height>
-								<aspectratio>stretch</aspectratio>
-								<fadetime>200</fadetime>
-								<texture fallback="nothumbalbum.png">$INFO[ListItem.ActualIcon]</texture>
-								<bordertexture border="4">thumbborder.png</bordertexture>
-								<bordersize>4</bordersize>
+								<aspectratio align="left">stretch</aspectratio>
+								<texture fallback="nothumbalbum.png" diffuse="recent-album-diffuse.png">$INFO[ListItem.ActualIcon]</texture>
 							</control>
 							<control type="image">
-								<posx>4</posx>
-								<posy>4</posy>
-								<width>112</width>
-								<height>112</height>
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>124</width>
+								<height>124</height>
+								<aspectratio align="left">stretch</aspectratio>
+								<texture diffuse="recent-album-diffuse.png">recent-album-border.png</texture>
+							</control>
+							<control type="image">
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>124</width>
+								<height>124</height>
 								<aspectratio>stretch</aspectratio>
-								<texture>simplicity/black-back.png</texture>
+								<texture diffuse="recent-album-diffuse.png">simplicity/black-back.png</texture>
 							</control>		
 						</itemlayout>
 						<focusedlayout height="270" width="125">
 							<control type="image">
 								<description>Main Icon</description>
-								<posx>5</posx>
-								<posy>5</posy>
-								<width>120</width>
-								<height>120</height>
+								<posx>-2</posx>
+								<posy>-2</posy>
+								<width>155</width>
+								<height>155</height>
 								<aspectratio>stretch</aspectratio>
-								<texture>simplicity/music-home-shadow.png</texture>
+								<texture>recent-album-shadow.png</texture>
 							</control>	
 							<control type="image">
-								<description>Main Icon</description>
-								<posx>0</posx>
-								<posy>0</posy>
+								<posx>2</posx>
+								<posy>2</posy>
 								<width>120</width>
 								<height>120</height>
-								<aspectratio>stretch</aspectratio>
-								<fadetime>200</fadetime>
-								<texture fallback="nothumbalbum.png">$INFO[ListItem.ActualIcon]</texture>
-								<bordertexture border="4">thumbborder.png</bordertexture>
-								<bordersize>4</bordersize>
+								<aspectratio align="left">stretch</aspectratio>
+								<texture fallback="nothumbalbum.png" diffuse="recent-album-diffuse.png">$INFO[ListItem.ActualIcon]</texture>
 							</control>
 							<control type="image">
-								<posx>4</posx>
-								<posy>4</posy>
-								<width>112</width>
-								<height>112</height>
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>124</width>
+								<height>124</height>
+								<aspectratio align="left">stretch</aspectratio>
+								<texture diffuse="recent-album-diffuse.png">recent-album-border.png</texture>
+							</control>
+							<control type="image">
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>124</width>
+								<height>124</height>
 								<aspectratio>stretch</aspectratio>
-								<texture>simplicity/black-back.png</texture>
+								<texture diffuse="recent-album-diffuse.png">simplicity/black-back.png</texture>
 								<visible>!Control.HasFocus(8010)</visible>
 							</control>		
 							<control type="image">
-								<posx>35</posx>
-								<posy>35</posy>
-								<width>50</width>
-								<height>50</height>
+								<posx>19</posx>
+								<posy>18</posy>
+								<width>90</width>
+								<height>90</height>
 								<aspectratio>stretch</aspectratio>
 								<texture>osdplay.png</texture>
 								<visible>Control.HasFocus(8010)</visible>
@@ -1887,7 +1890,7 @@
 					<animation effect="slide" end="-85,0" time="0" condition="Skin.HasSetting(HomeScriptButton5)">Conditional</animation>
 					<posx>565</posx>
 					<posy>310</posy>
-					<visible>Container(9000).Hasfocus(14)</visible>
+					<visible>Container(9000).Hasfocus(14) + !Skin.HasSetting(RandomAddons2)</visible>
 					<include>VisibleFadeEffect</include>
 					<control type="list" id="8009">
 						<posx>0</posx>
@@ -2008,6 +2011,128 @@
 						</content>
 					</control>
 				</control>
+
+			<control type="group">
+					<animation effect="fade" time="400" delay="800" start="0" end="100" condition="[Container(9000).Hasfocus(14)]">Conditional</animation>
+					<posx>225</posx>
+					<posy>310</posy>
+					<visible>Container(9000).Hasfocus(14) + Skin.HasSetting(RandomAddons2)</visible>
+					<include>VisibleFadeEffect</include>
+					<control type="list" id="8009">
+						<posx>0</posx>
+						<posy>10</posy>
+						<width>1270</width>
+						<height>500</height>
+						<onleft>8009</onleft>
+						<onright>8009</onright>
+						<onup>-</onup>
+						<ondown>9000</ondown>
+						<orientation>horizontal</orientation>
+						<viewtype label="535">list</viewtype>
+						<pagecontrol>-</pagecontrol>
+						<scrolltime>0</scrolltime>
+						<itemlayout height="150" width="170">
+							<control type="image">
+								<posx>24</posx>
+								<posy>38</posy>
+								<width>105</width>
+								<height>105</height>
+								<aspectratio>stretch</aspectratio>
+								<texture>simplicity/app-shadow-home.png</texture>
+							</control>
+							<control type="image">
+								<posx>24</posx>
+								<posy>38</posy>
+								<width>100</width>
+								<height>100</height>
+								<aspectratio>stretch</aspectratio>
+								<texture fallback="nothumbalbum.png">$INFO[ListItem.Thumb]</texture>
+								<bordertexture border="2">thumbborder-thin.png</bordertexture>
+								<bordersize>2</bordersize>
+							</control>
+							<control type="image">
+								<posx>24</posx>
+								<posy>38</posy>
+								<width>100</width>
+								<height>100</height>
+								<aspectratio>stretch</aspectratio>
+								<texture>simplicity/black-back.png</texture>
+							</control>
+						</itemlayout>
+						<focusedlayout height="150" width="170">
+							<control type="group">
+								<animation effect="zoom" start="100" end="105" center="auto" time="200" tween="back" easing="out" reversible="false">Focus</animation>
+								<control type="image">
+									<posx>24</posx>
+									<posy>38</posy>
+									<width>100</width>
+									<height>100</height>
+									<aspectratio>stretch</aspectratio>
+									<texture fallback="nothumbalbum.png">$INFO[ListItem.Thumb]</texture>
+									<bordertexture border="2">thumbborder-thin.png</bordertexture>
+									<bordersize>2</bordersize>
+								</control>
+								<control type="image">
+									<posx>23</posx>
+									<posy>37</posy>
+									<width>102</width>
+									<height>102</height>
+									<texture>simplicity/app-glow.png</texture>
+									<animation effect="zoom" start="100" end="105" center="auto" time="200" tween="back" easing="out" reversible="false">Focus</animation>
+									<visible>Control.HasFocus(8009)</visible>
+								</control>
+								<control type="image">
+									<posx>23</posx>
+									<posy>37</posy>
+									<width>102</width>
+									<height>102</height>
+									<aspectratio>stretch</aspectratio>
+									<texture>simplicity/black-back.png</texture>
+									<visible>!Control.HasFocus(8009)</visible>
+								</control>
+							</control>
+						</focusedlayout>
+						<content>
+							<item id="1">
+								<label>$INFO[Skin.String(HomeAddonButton1_label)]</label>
+								<label2>-</label2>
+								<onclick>RunAddon($INFO[Window.Property(RandomAddon.6.Path)])</onclick>
+								<icon>-</icon>
+								<thumb>$INFO[Window.Property(RandomAddon.6.Thumb)]</thumb>
+							</item>
+							<item id="2">
+								<label>$INFO[Skin.String(HomeAddonButton2_label)]</label>
+								<label2>-</label2>
+								<onclick>RunAddon($INFO[Window.Property(RandomAddon.7.Path)])</onclick>
+								<icon>-</icon>
+								<thumb>$INFO[Window.Property(RandomAddon.7.Thumb)]</thumb>
+							</item>
+							<item id="3">
+								<label>$INFO[Skin.String(HomeAddonButton3_label)]</label>
+								<label2>-</label2>
+								<onclick>RunAddon($INFO[Window.Property(RandomAddon.8.Path)])</onclick>
+								<icon>-</icon>
+								<thumb>$INFO[Window.Property(RandomAddon.8.Thumb)]</thumb>
+							</item>
+							<item id="4">
+								<label>$INFO[Skin.String(HomeAddonButton4_label)]</label>
+								<label2>-</label2>
+								<onclick>RunAddon($INFO[Window.Property(RandomAddon.9.Path)])</onclick>
+								<icon>-</icon>
+								<thumb>$INFO[Window.Property(RandomAddon.9.Thumb)]</thumb>
+							</item>
+							<item id="5">
+								<label>$INFO[Skin.String(HomeAddonButton5_label)]</label>
+								<label2>-</label2>
+								<onclick>RunAddon($INFO[Window.Property(RandomAddon.10.Path)])</onclick>
+								<icon>-</icon>
+								<thumb>$INFO[Window.Property(RandomAddon.10.Thumb)]</thumb>
+							</item>
+						</content>
+					</control>
+				</control>		
+
+
 
 				<control type="group">
 					<animation effect="fade" time="400" delay="800" start="0" end="100" condition="[Container(9000).Hasfocus(6)]">Conditional</animation>

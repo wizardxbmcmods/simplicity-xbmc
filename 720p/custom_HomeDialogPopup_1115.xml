@@ -182,6 +182,49 @@
 							<icon>-</icon>
 							<thumb>-</thumb>
 						</item>
+						<item id="7">
+							<label>UPDATE VIDEO LIBRARY</label>
+							<label2>-]</label2>
+							<onclick>Dialog.Close(1115)</onclick>
+							<onclick>XBMC.UpdateLibrary(video)</onclick>
+							<icon>-</icon>
+							<thumb>-</thumb>
+						</item>
+						<item id="8">
+							<label>UPDATE MUSIC LIBRARY</label>
+							<label2>-]</label2>
+							<onclick>Dialog.Close(1115)</onclick>
+							<onclick>XBMC.UpdateLibrary(music)</onclick>
+							<icon>-</icon>
+							<thumb>-</thumb>
+						</item>
+						<item id="9">
+							<label>$INFO[Skin.String(Menu_Custom2_Label)]</label>
+							<label2>-</label2>
+							<onclick>$INFO[Skin.String(Menu_Custom2_Path)]</onclick>
+							<onclick>Dialog.Close(1115)</onclick>
+							<icon>-</icon>
+							<thumb>-</thumb>
+							<visible>Skin.HasSetting(Menu_Custom2)</visible>
+						</item>
+						<item id="10">
+							<label>$INFO[Skin.String(Menu_Custom3_Label)]</label>
+							<label2>-</label2>
+							<onclick>$INFO[Skin.String(Menu_Custom3_Path)]</onclick>
+							<onclick>Dialog.Close(1115)</onclick>
+							<icon>-</icon>
+							<thumb>-</thumb>
+							<visible>Skin.HasSetting(Menu_Custom3)</visible>
+						</item>
+						<item id="11">
+							<label>$INFO[Skin.String(Menu_Custom4_Label)]</label>
+							<label2>-</label2>
+							<onclick>$INFO[Skin.String(Menu_Custom4_Path)]</onclick>
+							<onclick>Dialog.Close(1115)</onclick>
+							<icon>-</icon>
+							<thumb>-</thumb>
+							<visible>Skin.HasSetting(Menu_Custom4)</visible>
+						</item>
 					</content>
 				</control>
 				<control type="label">

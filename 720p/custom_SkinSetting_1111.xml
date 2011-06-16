@@ -3225,6 +3225,22 @@
 							<onclick>Skin.SetPath(Music_Folder_Path)</onclick>
 						</control>
 						<control type="radiobutton" id="516">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_20</font>
+							<label>Disable New Episode Stars</label>
+							<textcolor>white</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<radiowidth>83</radiowidth>
+							<radioheight>67</radioheight>
+							<textureradiofocus>simplicity/settings-radiobutton-on.png</textureradiofocus>
+							<textureradionofocus>simplicity/settings-radiobutton-off.png</textureradionofocus>
+							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
+							<onclick>Skin.ToggleSetting(NoStarNewEps)</onclick>
+							<selected>Skin.HasSetting(NoStarNewEps)</selected>
+						</control>
+						<control type="radiobutton" id="517">
 							<posx>0</posx>
 							<posy>0</posy>
 							<width>900</width>
@@ -3242,7 +3258,7 @@
 							<onclick>Skin.ToggleSetting(LyricScript_Enable)</onclick>
 							<selected>Skin.HasSetting(LyricScript_Enable)</selected>
 						</control>
-						<control type="button" id="517">
+						<control type="button" id="518">
 							<posx>0</posx>
 							<posy>0</posy>
 							<width>900</width>
@@ -3257,7 +3273,7 @@
 							<onclick>Skin.SetAddon(LyricScript_Path,xbmc.python.lyrics)</onclick>
 							<visible>Skin.HasSetting(LyricScript_Enable)</visible>
 						</control>
-						<control type="radiobutton" id="518">
+						<control type="radiobutton" id="519">
 							<width>900</width>
 							<height>40</height>
 							<font>Simplicity_20</font>
@@ -3273,7 +3289,7 @@
 							<onclick>Skin.ToggleSetting(SubtitleDownload_Enable)</onclick>
 							<selected>Skin.HasSetting(SubtitleDownload_Enable)</selected>
 						</control>
-						<control type="button" id="519">
+						<control type="button" id="520">
 							<width>900</width>
 							<height>40</height>
 							<font>Simplicity_18</font>
@@ -3327,6 +3343,27 @@
 							<align>left</align>
 							<aligny>center</aligny>
 						</control>
+						<control type="radiobutton" id="600">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_20_Bold_title</font>
+							<label>Use Random Addons Instead Of Custom</label>
+							<textcolor>white</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<radiowidth>83</radiowidth>
+							<radioheight>67</radioheight>
+							<textureradiofocus>simplicity/settings-radiobutton-on.png</textureradiofocus>
+							<textureradionofocus>simplicity/settings-radiobutton-off.png</textureradionofocus>
+							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
+							<onclick>Skin.ToggleSetting(RandomAddons2)</onclick>
+							<onclick>Skin.Reset(HomeScriptButton1)</onclick>
+							<onclick>Skin.Reset(HomeScriptButton2)</onclick>
+							<onclick>Skin.Reset(HomeScriptButton3)</onclick>
+							<onclick>Skin.Reset(HomeScriptButton4)</onclick>
+							<onclick>Skin.Reset(HomeScriptButton5)</onclick>
+							<selected>Skin.HasSetting(RandomAddons2)</selected>
+						</control>
 						<control type="radiobutton" id="601">
 							<width>900</width>
 							<height>40</height>
@@ -3341,6 +3378,7 @@
 							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
 							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
 							<onclick>Skin.ToggleSetting(HomeScriptButton1)</onclick>
+							<onclick>Skin.Reset(RandomAddons2)</onclick>
 							<selected>Skin.HasSetting(HomeScriptButton1)</selected>
 						</control>
 						<control type="button" id="602">
@@ -3396,6 +3434,7 @@
 							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
 							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
 							<onclick>Skin.ToggleSetting(HomeScriptButton2)</onclick>
+							<onclick>Skin.Reset(RandomAddons2)</onclick>
 							<selected>Skin.HasSetting(HomeScriptButton2)</selected>
 						</control>
 						<control type="button" id="606">
@@ -3451,6 +3490,7 @@
 							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
 							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
 							<onclick>Skin.ToggleSetting(HomeScriptButton3)</onclick>
+							<onclick>Skin.Reset(RandomAddons2)</onclick>
 							<selected>Skin.HasSetting(HomeScriptButton3)</selected>
 						</control>
 						<control type="button" id="610">
@@ -3506,6 +3546,7 @@
 							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
 							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
 							<onclick>Skin.ToggleSetting(HomeScriptButton4)</onclick>
+							<onclick>Skin.Reset(RandomAddons2)</onclick>
 							<selected>Skin.HasSetting(HomeScriptButton4)</selected>
 						</control>
 						<control type="button" id="614">
@@ -3561,6 +3602,7 @@
 							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
 							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
 							<onclick>Skin.ToggleSetting(HomeScriptButton5)</onclick>
+							<onclick>Skin.Reset(RandomAddons2)</onclick>
 							<selected>Skin.HasSetting(HomeScriptButton5)</selected>
 						</control>
 						<control type="button" id="618">
@@ -3657,6 +3699,11 @@
 							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
 							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
 							<onclick>Skin.ToggleSetting(RandomAddons)</onclick>
+							<onclick>Skin.Reset(HomeAddonButton1)</onclick>
+							<onclick>Skin.Reset(HomeAddonButton2)</onclick>
+							<onclick>Skin.Reset(HomeAddonButton3)</onclick>
+							<onclick>Skin.Reset(HomeAddonButton4)</onclick>
+							<onclick>Skin.Reset(HomeAddonButton5)</onclick>
 							<selected>Skin.HasSetting(RandomAddons)</selected>
 						</control>
 						<control type="radiobutton" id="701">
@@ -3673,6 +3720,8 @@
 							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
 							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
 							<onclick>Skin.ToggleSetting(HomeAddonButton1)</onclick>
+							<onclick>Skin.ToggleSetting(RandomAddons)</onclick>
+							<onclick>Skin.Reset(RandomAddons)</onclick>
 							<selected>Skin.HasSetting(HomeAddonButton1)</selected>
 						</control>
 						<control type="button" id="702">
@@ -3729,6 +3778,7 @@
 							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
 							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
 							<onclick>Skin.ToggleSetting(HomeAddonButton2)</onclick>
+							<onclick>Skin.Reset(RandomAddons)</onclick>
 							<selected>Skin.HasSetting(HomeAddonButton2)</selected>
 						</control>
 						<control type="button" id="706">
@@ -3785,6 +3835,7 @@
 							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
 							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
 							<onclick>Skin.ToggleSetting(HomeAddonButton3)</onclick>
+							<onclick>Skin.Reset(RandomAddons)</onclick>
 							<selected>Skin.HasSetting(HomeAddonButton3)</selected>
 						</control>
 						<control type="button" id="710">
@@ -3841,6 +3892,7 @@
 							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
 							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
 							<onclick>Skin.ToggleSetting(HomeAddonButton4)</onclick>
+							<onclick>Skin.Reset(RandomAddons)</onclick>
 							<selected>Skin.HasSetting(HomeAddonButton4)</selected>
 						</control>
 						<control type="button" id="714">
@@ -3897,6 +3949,7 @@
 							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
 							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
 							<onclick>Skin.ToggleSetting(HomeAddonButton5)</onclick>
+							<onclick>Skin.Reset(RandomAddons)</onclick>
 							<selected>Skin.HasSetting(HomeAddonButton5)</selected>
 						</control>
 						<control type="button" id="718">
@@ -4757,8 +4810,20 @@
 							<onclick>Skin.SetImage(Menu_Custom2_Folder)</onclick>
 							<visible>Skin.HasSetting(Menu_Custom2)</visible>
 						</control>
-
-						<control type="radiobutton" id="917">
+						<control type="button" id="917">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_20</font>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
+							<label>- Icon</label>
+							<label2>[COLOR=selected]$INFO[Skin.String(Menu_Custom2_Icon)][/COLOR]</label2>
+							<onclick>Skin.SetImage(Menu_Custom2_Icon)</onclick>
+							<visible>Skin.HasSetting(Menu_Custom2)</visible>
+						</control>
+						<control type="radiobutton" id="918">
 							<width>900</width>
 							<height>40</height>
 							<font>Simplicity_20_Bold_title</font>
@@ -4776,7 +4841,7 @@
 							<selected>Skin.HasSetting(Menu_Custom3)</selected>
 							<enable>!Skin.HasSetting(Menu_Movies_Sub3)</enable>
 						</control>
-						<control type="button" id="918">
+						<control type="button" id="919">
 							<width>900</width>
 							<height>40</height>
 							<font>Simplicity_20</font>
@@ -4789,7 +4854,7 @@
 							<onclick>Skin.SetString(Menu_Custom3_Label)</onclick>
 							<visible>Skin.HasSetting(Menu_Custom3)</visible>
 						</control>
-						<control type="button" id="919">
+						<control type="button" id="920">
 							<width>900</width>
 							<height>40</height>
 							<font>Simplicity_20</font>
@@ -4803,7 +4868,7 @@
 							<onclick>ActivateWindow(1114)</onclick>
 							<visible>Skin.HasSetting(Menu_Custom3)</visible>
 						</control>
-						<control type="button" id="920">
+						<control type="button" id="921">
 							<width>900</width>
 							<height>40</height>
 							<font>Simplicity_20</font>
@@ -4816,8 +4881,20 @@
 							<onclick>Skin.SetImage(Menu_Custom3_Folder)</onclick>
 							<visible>Skin.HasSetting(Menu_Custom3)</visible>
 						</control>
-
-						<control type="radiobutton" id="921">
+						<control type="button" id="922">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_20</font>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
+							<label>- Icon</label>
+							<label2>[COLOR=selected]$INFO[Skin.String(Menu_Custom3_Icon)][/COLOR]</label2>
+							<onclick>Skin.SetImage(Menu_Custom3_Icon)</onclick>
+							<visible>Skin.HasSetting(Menu_Custom3)</visible>
+						</control>
+						<control type="radiobutton" id="923">
 							<width>900</width>
 							<height>40</height>
 							<font>Simplicity_20_Bold_title</font>
@@ -4835,7 +4912,7 @@
 							<selected>Skin.HasSetting(Menu_Custom4)</selected>
 							<enable>!Skin.HasSetting(Menu_Movies_Sub4)</enable>
 						</control>
-						<control type="button" id="922">
+						<control type="button" id="924">
 							<width>900</width>
 							<height>40</height>
 							<font>Simplicity_20</font>
@@ -4848,7 +4925,7 @@
 							<onclick>Skin.SetString(Menu_Custom4_Label)</onclick>
 							<visible>Skin.HasSetting(Menu_Custom4)</visible>
 						</control>
-						<control type="button" id="923">
+						<control type="button" id="925">
 							<width>900</width>
 							<height>40</height>
 							<font>Simplicity_20</font>
@@ -4862,7 +4939,7 @@
 							<onclick>ActivateWindow(1114)</onclick>
 							<visible>Skin.HasSetting(Menu_Custom4)</visible>
 						</control>
-						<control type="button" id="924">
+						<control type="button" id="926">
 							<width>900</width>
 							<height>40</height>
 							<font>Simplicity_20</font>
@@ -4873,6 +4950,19 @@
 							<label>- FANART</label>
 							<label2>[COLOR=selected]$INFO[Skin.String(Menu_Custom4_Folder)][/COLOR]</label2>
 							<onclick>Skin.SetImage(Menu_Custom4_Folder)</onclick>
+							<visible>Skin.HasSetting(Menu_Custom4)</visible>
+						</control>
+						<control type="button" id="927">
+							<width>900</width>
+							<height>40</height>
+							<font>Simplicity_20</font>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
+							<label>- Icon</label>
+							<label2>[COLOR=selected]$INFO[Skin.String(Menu_Custom4_Icon)][/COLOR]</label2>
+							<onclick>Skin.SetImage(Menu_Custom4_Icon)</onclick>
 							<visible>Skin.HasSetting(Menu_Custom4)</visible>
 						</control>
 					</control>

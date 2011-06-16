@@ -8,7 +8,9 @@
 			<include>Overlay</include>
 			<include>UpOptions</include>
 			<include>AlbumBreadCrumbs</include>
-			<include>DownOpenRecent</include>
+			<include condition="Skin.HasSetting(VideoUseGuide)">DownOpenTVGuide</include>
+			<include condition="Skin.HasSetting(VideoUseRecent)">DownOpenRecent</include>
+			<include condition="Skin.HasSetting(VideoUseCustom)">DownOpenCustom</include>
 			<control type="group">
 				<posx>0</posx>
 				<posy>-30</posy>
@@ -21,7 +23,9 @@
 						<posy>298</posy>
 						<width>1800</width>
 						<height>300</height>		
-						<ondown>ActivateWindow(1112,Home,return)</ondown>
+				<include condition="Skin.HasSetting(VideoUseGuide)">OpenGuideDown</include>
+				<include condition="Skin.HasSetting(VideoUseRecent)">OpenRecentDown</include>
+				<include condition="Skin.HasSetting(VideoUseCustom)">OpenCustomDown</include>
 						<onup>2</onup>
 						<onleft>509</onleft>
 						<onright>509</onright>
@@ -463,7 +467,9 @@
 			<include>Overlay</include>
 			<include>LeftOptions</include>
 			<include>SongBreadCrumbs</include>
-			<include>RightOpenRecent</include>
+			<include condition="Skin.HasSetting(VideoUseGuide)">RightOpenTVGuide</include>
+			<include condition="Skin.HasSetting(VideoUseRecent)">RightOpenRecent</include>
+			<include condition="Skin.HasSetting(VideoUseCustom)">RightOpenCustom</include>
 			<control type="fixedlist" id="512">
 				<include>Zoom</include>		
 				<posx>544</posx>
@@ -471,7 +477,9 @@
 				<width>930</width>
 				<height>540</height>
 				<onleft>2</onleft>
-				<onright>ActivateWindow(1112,Home,return)</onright>
+				<include condition="Skin.HasSetting(VideoUseGuide)">OpenGuideRight</include>
+				<include condition="Skin.HasSetting(VideoUseRecent)">OpenRecentRight</include>
+				<include condition="Skin.HasSetting(VideoUseCustom)">OpenCustomRight</include>
 				<onup>512</onup>
 				<ondown>512</ondown>
 				<viewtype label="Song List">list</viewtype>
@@ -668,7 +676,9 @@
 			<include>Overlay</include>
 			<include>LeftOptions</include>
 			<include>AlbumBreadCrumbs</include>
-			<include>RightOpenRecent</include>
+			<include condition="Skin.HasSetting(VideoUseGuide)">RightOpenTVGuide</include>
+			<include condition="Skin.HasSetting(VideoUseRecent)">RightOpenRecent</include>
+			<include condition="Skin.HasSetting(VideoUseCustom)">RightOpenCustom</include>
 			<control type="fixedlist" id="513">
 				<include>Zoom</include>		
 				<posx>544</posx>
@@ -676,7 +686,9 @@
 				<width>930</width>
 				<height>540</height>
 				<onleft>2</onleft>
-				<onright>ActivateWindow(1112,Home,return)</onright>
+				<include condition="Skin.HasSetting(VideoUseGuide)">OpenGuideRight</include>
+				<include condition="Skin.HasSetting(VideoUseRecent)">OpenRecentRight</include>
+				<include condition="Skin.HasSetting(VideoUseCustom)">OpenCustomRight</include>
 				<onup>513</onup>
 				<ondown>513</ondown>
 				<viewtype label="Album List">list</viewtype>
@@ -1063,7 +1075,9 @@
 			<include>Overlay</include>
 			<include>LeftOptions</include>
 			<include>ArtistBreadCrumbs</include>
-			<include>RightOpenRecent</include>
+			<include condition="Skin.HasSetting(VideoUseGuide)">RightOpenTVGuide</include>
+			<include condition="Skin.HasSetting(VideoUseRecent)">RightOpenRecent</include>
+			<include condition="Skin.HasSetting(VideoUseCustom)">RightOpenCustom</include>
 			<control type="fixedlist" id="514">
 				<include>Zoom</include>		
 				<posx>544</posx>
@@ -1071,7 +1085,9 @@
 				<width>930</width>
 				<height>540</height>
 				<onleft>2</onleft>
-				<onright>ActivateWindow(1112,Home,return)</onright>
+				<include condition="Skin.HasSetting(VideoUseGuide)">OpenGuideRight</include>
+				<include condition="Skin.HasSetting(VideoUseRecent)">OpenRecentRight</include>
+				<include condition="Skin.HasSetting(VideoUseCustom)">OpenCustomRight</include>
 				<onup>514</onup>
 				<ondown>514</ondown>
 				<viewtype label="Artist List">list</viewtype>
@@ -1225,7 +1241,9 @@
 				<width>1260</width>
 				<height>577</height>
 				<onleft>2</onleft>
-				<onright>ActivateWindow(1112,Home,return)</onright>
+				<include condition="Skin.HasSetting(VideoUseGuide)">OpenGuideRight</include>
+				<include condition="Skin.HasSetting(VideoUseRecent)">OpenRecentRight</include>
+				<include condition="Skin.HasSetting(VideoUseCustom)">OpenCustomRight</include>
 				<onup>515</onup>
 				<ondown>515</ondown>
 				<viewtype label="Artist Wall">list</viewtype>
@@ -1348,7 +1366,9 @@
 				<texture>simplicity/wall-bottom.png</texture>
 			</control>
 			<include>LeftOptions</include>
-			<include>RightOpenRecent</include>
+			<include condition="Skin.HasSetting(VideoUseGuide)">RightOpenTVGuide</include>
+			<include condition="Skin.HasSetting(VideoUseRecent)">RightOpenRecent</include>
+			<include condition="Skin.HasSetting(VideoUseCustom)">RightOpenCustom</include>
 			<!--<control type="group">
 				<include>Zoom</include>		
 					<control type="label">
@@ -1432,7 +1452,9 @@
 				<width>1260</width>
 				<height>577</height>
 				<onleft>2</onleft>
-				<onright>ActivateWindow(1112,Home,return)</onright>
+				<include condition="Skin.HasSetting(VideoUseGuide)">OpenGuideRight</include>
+				<include condition="Skin.HasSetting(VideoUseRecent)">OpenRecentRight</include>
+				<include condition="Skin.HasSetting(VideoUseCustom)">OpenCustomRight</include>
 				<onup>516</onup>
 				<ondown>516</ondown>
 				<viewtype label="Album Wall">list</viewtype>
@@ -1570,7 +1592,9 @@
 				<aspect>stretch</aspect>
 				<texture>simplicity/wall-bottom.png</texture>
 			</control>
-			<include>RightOpenRecent</include>
+			<include condition="Skin.HasSetting(VideoUseGuide)">RightOpenTVGuide</include>
+			<include condition="Skin.HasSetting(VideoUseRecent)">RightOpenRecent</include>
+			<include condition="Skin.HasSetting(VideoUseCustom)">RightOpenCustom</include>
 			<include>LeftOptions</include>
 			<!--<control type="group">
 				<include>Zoom</include>		
@@ -1662,7 +1686,9 @@
 				<texture>simplicity/grey2.png</texture>
 			</control>
 			<include>UpOptions</include>
-			<include>DownOpenRecent</include>
+			<include condition="Skin.HasSetting(VideoUseGuide)">DownOpenTVGuide</include>
+			<include condition="Skin.HasSetting(VideoUseRecent)">DownOpenRecent</include>
+			<include condition="Skin.HasSetting(VideoUseCustom)">DownOpenCustom</include>
 			<control type="group">
 				<posx>0</posx>
 				<posy>-30</posy>
@@ -1675,7 +1701,9 @@
 					<onleft>517</onleft>
 					<onright>517</onright>
 					<onup>2</onup>
-					<ondown>ActivateWindow(1112,Home,return)</ondown>
+				<include condition="Skin.HasSetting(VideoUseGuide)">OpenGuideDown</include>
+				<include condition="Skin.HasSetting(VideoUseRecent)">OpenRecentDown</include>
+				<include condition="Skin.HasSetting(VideoUseCustom)">OpenCustomDown</include>
 					<viewtype label="Fanart">list</viewtype>
 					<pagecontrol>60</pagecontrol>
 					<scrolltime>300</scrolltime>
@@ -1973,7 +2001,9 @@
 			<posy>0</posy>
 			<include>Overlay</include>
 			<include>UpOptions</include>
-			<include>DownOpenRecent</include>
+			<include condition="Skin.HasSetting(VideoUseGuide)">DownOpenTVGuide</include>
+			<include condition="Skin.HasSetting(VideoUseRecent)">DownOpenRecent</include>
+			<include condition="Skin.HasSetting(VideoUseCustom)">DownOpenCustom</include>
 			<include>SongBreadCrumbs</include>
 			<control type="FixedList" id="518">
 				<include>Zoom</include>
@@ -1984,7 +2014,9 @@
 				<onleft>518</onleft>
 				<onright>518</onright>
 				<onup>2</onup>
-				<ondown>ActivateWindow(1112,Home,return)</ondown>
+				<include condition="Skin.HasSetting(VideoUseGuide)">OpenGuideDown</include>
+				<include condition="Skin.HasSetting(VideoUseRecent)">OpenRecentDown</include>
+				<include condition="Skin.HasSetting(VideoUseCustom)">OpenCustomDown</include>
 				<viewtype label="Fanart Slide">list</viewtype>
 				<orientation>Horizontal</orientation>
 				<pagecontrol>60</pagecontrol>

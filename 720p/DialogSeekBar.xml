@@ -367,7 +367,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<aspectratio>keep</aspectratio>
-					<texture>studios-color/$INFO[VideoPlayer.Studio,,.png]</texture>
+					<texture>optional/studios-color/$INFO[VideoPlayer.Studio,,.png]</texture>
 					<visible>Skin.HasSetting(UseColoredFlags)</visible>
 				</control>
 				<control type="group">
@@ -448,7 +448,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<aspectratio>keep</aspectratio>
-					<texture>studios-color/$INFO[VideoPlayer.Studio,,.png]</texture>
+					<texture>optional/studios-color/$INFO[VideoPlayer.Studio,,.png]</texture>
 					<visible>Skin.HasSetting(UseColoredFlags)</visible>
 				</control>
 			</control>

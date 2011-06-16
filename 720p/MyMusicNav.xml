@@ -149,7 +149,53 @@
 						<selected>Skin.HasSetting(DisableCD)</selected>
 						<visible>Control.IsVisible(516)</visible>
 					</control>
+			<control type="radiobutton" id="204">
+					<textwidth>170</textwidth>
+					<include>ButtonCommonValuesSub</include>
+					<label>Use "Recent" Shortcut</label>
+					<onclick>Skin.ToggleSetting(VideoUseRecent)</onclick>
+					<onclick>Skin.Reset(VideoUseGuide)</onclick>
+					<onclick>Skin.Reset(VideoUseCustom)</onclick>
+					<onclick>XBMC.ReloadSkin</onclick>
+					<selected>Skin.HasSetting(VideoUseRecent)</selected>
 				</control>
+				<control type="radiobutton" id="205">
+					<textwidth>170</textwidth>
+					<include>ButtonCommonValuesSub</include>
+					<label>Use "Guide" Shortcut</label>
+					<onclick>Skin.ToggleSetting(VideoUseGuide)</onclick>
+					<onclick>Skin.Reset(VideoUseRecent)</onclick>
+					<onclick>Skin.Reset(VideoUseCustom)</onclick>
+					<onclick>XBMC.ReloadSkin</onclick>
+					<selected>Skin.HasSetting(VideoUseGuide)</selected>
+				</control>
+				<control type="radiobutton" id="206">
+					<textwidth>170</textwidth>
+					<include>ButtonCommonValuesSub</include>
+					<label>Use "Custom" Shortcut</label>
+					<onclick>Skin.ToggleSetting(VideoUseCustom)</onclick>
+					<onclick>Skin.Reset(VideoUseGuide)</onclick>
+					<onclick>Skin.Reset(VideoUseRecent)</onclick>
+					<onclick>XBMC.ReloadSkin</onclick>
+					<selected>Skin.HasSetting(VideoUseCustom)</selected>
+				</control>
+				</control>
+			<control type="image">
+				<posx>98</posx>
+				<posy>265</posy>
+				<width>20</width>
+				<height>20</height>
+				<texture>simplicity/arrowup.png</texture>
+				<visible>Container(9010).HasPrevious</visible>
+			</control>
+			<control type="image">
+				<posx>98</posx>
+				<posy>699</posy>
+				<width>20</width>
+				<height>20</height>
+				<texture>simplicity/arrowdown.png</texture>
+				<visible>Container(9010).HasNext</visible>
+			</control>
 			</control>
 			<control type="group" id="9002">
 				<visible>!Skin.HasSetting(DisableViewPreview)</visible>

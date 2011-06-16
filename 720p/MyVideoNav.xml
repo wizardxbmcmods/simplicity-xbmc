@@ -1,7 +1,7 @@
 <window id="25">
 	<defaultcontrol always="true">9999</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-	<views>50,54,55,57,58,59,65,66,67,68,500,501,504,505,506,507,508,509,511,532,534,535,536,537,538,539,540,552,553,554,555,556,557,558,559,560</views>
+	<views>50,54,55,57,58,59,65,66,67,68,500,501,504,505,506,507,508,509,511,532,534,535,536,537,538,539,540,552,553,554,555,556,557,558,559,560,561</views>
 	<visible>!Skin.HasSetting(KioskMode)</visible>
 	<controls>
 on-->
@@ -185,6 +185,8 @@ on-->
 		<!-- view id = 559 -->
 		<include>Fanart-Grid</include>
 		<!-- view id = 560-->
+		<include>Fanart-Slide-2</include>
+		<!-- view id = 561-->
 		<include>MovieGenreView</include>
 		<!-- view id = 59 -->
 	</control>
@@ -239,7 +241,7 @@ on-->
 				<posx>0</posx>
 				<posy>290</posy>
 				<width>220</width>
-				<height>550</height>
+				<height>405</height>
 				<onleft>9000</onleft>
 				<onright>50</onright>
 				<onup>9010</onup>
@@ -367,6 +369,52 @@ on-->
 					<selected>Skin.HasSetting(NoGridFade)</selected>
 					<visible>Control.IsVisible(560)</visible>
 				</control>
+				<control type="radiobutton" id="211">
+					<textwidth>170</textwidth>
+					<include>ButtonCommonValuesSub</include>
+					<label>Use "Recent" Shortcut</label>
+					<onclick>Skin.ToggleSetting(VideoUseRecent)</onclick>
+					<onclick>Skin.Reset(VideoUseGuide)</onclick>
+					<onclick>Skin.Reset(VideoUseCustom)</onclick>
+					<onclick>XBMC.ReloadSkin</onclick>
+					<selected>Skin.HasSetting(VideoUseRecent)</selected>
+				</control>
+				<control type="radiobutton" id="212">
+					<textwidth>170</textwidth>
+					<include>ButtonCommonValuesSub</include>
+					<label>Use "Guide" Shortcut</label>
+					<onclick>Skin.ToggleSetting(VideoUseGuide)</onclick>
+					<onclick>Skin.Reset(VideoUseRecent)</onclick>
+					<onclick>Skin.Reset(VideoUseCustom)</onclick>
+					<onclick>XBMC.ReloadSkin</onclick>
+					<selected>Skin.HasSetting(VideoUseGuide)</selected>
+				</control>
+				<control type="radiobutton" id="213">
+					<textwidth>170</textwidth>
+					<include>ButtonCommonValuesSub</include>
+					<label>Use "Custom" Shortcut</label>
+					<onclick>Skin.ToggleSetting(VideoUseCustom)</onclick>
+					<onclick>Skin.Reset(VideoUseGuide)</onclick>
+					<onclick>Skin.Reset(VideoUseRecent)</onclick>
+					<onclick>XBMC.ReloadSkin</onclick>
+					<selected>Skin.HasSetting(VideoUseCustom)</selected>
+				</control>
+			</control>
+			<control type="image">
+				<posx>98</posx>
+				<posy>265</posy>
+				<width>20</width>
+				<height>20</height>
+				<texture>simplicity/arrowup.png</texture>
+				<visible>Container(9010).HasPrevious</visible>
+			</control>
+			<control type="image">
+				<posx>98</posx>
+				<posy>699</posy>
+				<width>20</width>
+				<height>20</height>
+				<texture>simplicity/arrowdown.png</texture>
+				<visible>Container(9010).HasNext</visible>
 			</control>
 		</control>
 		<control type="group" id="9002">
@@ -520,6 +568,19 @@ on-->
 					<animation effect="zoom" end="106" center="auto">Focus</animation>
 					<onclick>Container.SetViewMode(560)</onclick>
 					<visible>Container.Content(TVShows)</visible>
+				</control>
+				<control type="button" id="29">
+					<description>Episode Slide</description>
+					<width>174</width>
+					<height>95</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<texturenofocus border="5">simplicity/views/Fanart Slide Alt./previewimage.png</texturenofocus>
+					<texturefocus border="5">simplicity/views/Fanart Slide Alt./previewimage.png</texturefocus>
+					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(29)">Conditional</animation>			
+					<animation effect="zoom" end="106" center="auto">Focus</animation>
+					<onclick>Container.SetViewMode(561)</onclick>
+					<visible>Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(TvShowsUsePosters)] | [Container.Content(TVShows) + Skin.HasSetting(UsePosterJPG)]</visible>
 				</control>
 				<control type="button" id="30">
 					<description>Fanart List</description>

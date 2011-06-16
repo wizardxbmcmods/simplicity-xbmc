@@ -166,8 +166,39 @@
 			<fadetime>1000</fadetime>
 			<include>VisibleFadeEffect</include>
 		</control>		
-
-
+		<control type="multiimage" id="678">
+			<posx>-10</posx>
+			<posy>-10</posy>
+			<width>1</width>
+			<height>1</height>
+			<imagepath background="true" fallback="special://skin/backgrounds/programs.jpg">$INFO[Skin.String(Menu_Custom2_Folder)]</imagepath>
+			<timeperimage>8000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+		</control>		
+		<control type="multiimage" id="679">
+			<posx>-10</posx>
+			<posy>-10</posy>
+			<width>1</width>
+			<height>1</height>
+			<imagepath background="true" fallback="special://skin/backgrounds/programs.jpg">$INFO[Skin.String(Menu_Custom3_Folder)]</imagepath>
+			<timeperimage>8000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+		</control>		
+		<control type="multiimage" id="680">
+			<posx>-10</posx>
+			<posy>-10</posy>
+			<width>1</width>
+			<height>1</height>
+			<imagepath background="true" fallback="special://skin/backgrounds/programs.jpg">$INFO[Skin.String(Menu_Custom4_Folder)]</imagepath>
+			<timeperimage>8000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+		</control>		
 		<control type="image">
 			<posx>0</posx>
 			<posy>0</posy>
@@ -635,7 +666,7 @@
 					<width>90</width>
 					<height>90</height>
 					<colordiffuse>40FFFFFF</colordiffuse>
-					<texture diffuse="icons/icondiffuse.png">$INFO[ListItem.Thumb]</texture>				
+					<texture diffuse="icons/icondiffuse.png" fallback="icons/programsicon.png">$INFO[ListItem.Thumb]</texture>			
 					<animation effect="fade" start="100" end="0" time="100" condition="ControlGroup(9001).HasFocus">Conditional</animation>		
 					<visible>Skin.HasSetting(AlternateHome)</visible>
 				</control>
@@ -694,7 +725,7 @@
 					<width>90</width>
 					<height>90</height>
 					<visible>Skin.HasSetting(AlternateHome)</visible>
-					<texture>$INFO[ListItem.Thumb]</texture>						
+					<texture fallback="icons/programsicon.png">$INFO[ListItem.Thumb]</texture>						
 				</control>
 				<control type="image">
 					<posx>45</posx>
@@ -835,24 +866,27 @@
 				<item id="16">
 					<description>Custom Button Two</description>
 					<label>$INFO[Skin.String(Menu_Custom2_Label)]</label>
-					<icon>special://skin/backgrounds/custom2.jpg</icon>
-					<thumb>icons/programsicon.png</thumb>
+					<label2>$INFO[Control.GetLabel(678)]</label2>
+					<icon>$INFO[Skin.String(Menu_Custom2_Folder)]</icon>
+					<thumb>$INFO[Skin.String(Menu_Custom2_Icon)]</thumb>
 					<onclick>$INFO[Skin.String(Menu_Custom2_Path)]</onclick>
 					<visible>Skin.HasSetting(Menu_Custom2)</visible>
 				</item>
 				<item id="17">
 					<description>Custom Button Three</description>
 					<label>$INFO[Skin.String(Menu_Custom3_Label)]</label>
+					<label2>$INFO[Control.GetLabel(679)]</label2>
 					<icon>special://skin/backgrounds/custom3.jpg</icon>
-					<thumb>icons/programsicon.png</thumb>
+					<thumb>$INFO[Skin.String(Menu_Custom3_Icon)]</thumb>
 					<onclick>$INFO[Skin.String(Menu_Custom3_Path)]</onclick>
 					<visible>Skin.HasSetting(Menu_Custom3)</visible>
 				</item>
 				<item id="18">
 					<description>Custom Button Four</description>
 					<label>$INFO[Skin.String(Menu_Custom4_Label)]</label>
+					<label2>$INFO[Control.GetLabel(680)]</label2>
 					<icon>special://skin/backgrounds/custom4.jpg</icon>
-					<thumb>icons/programsicon.png</thumb>
+					<thumb>$INFO[Skin.String(Menu_Custom4_Icon)]</thumb>
 					<onclick>$INFO[Skin.String(Menu_Custom4_Path)]</onclick>
 					<visible>Skin.HasSetting(Menu_Custom4)</visible>
 				</item>

@@ -431,7 +431,7 @@
 				<description>Studio</description>
 				<aspectratio>keep</aspectratio>
 				<width>105</width>		
-				<texture>studios-color/$INFO[ListItem.Studio,,.png]</texture>
+				<texture>optional/studios-color/$INFO[ListItem.Studio,,.png]</texture>
 			</control>    
 		</control>
 	</include>
@@ -465,7 +465,7 @@
 				<description>Studio</description>
 				<aspectratio>keep</aspectratio>
 				<width>150</width>		
-				<texture>studios-color/$INFO[ListItem.Studio,,.png]</texture>
+				<texture>optional/studios-color/$INFO[ListItem.Studio,,.png]</texture>
 			</control>    
 		</control>
 	</include>
