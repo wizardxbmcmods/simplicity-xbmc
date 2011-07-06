@@ -616,6 +616,7 @@
 			<animation effect="fade" start="100" end="20" time="0" condition="Control.HasFocus(8009)">Conditional</animation>
 			<animation effect="fade" start="100" end="20" time="0" condition="Control.HasFocus(8010)">Conditional</animation>
 			<animation effect="fade" start="100" end="20" time="0" condition="Control.HasFocus(8011)">Conditional</animation>
+			<animation effect="fade" start="100" end="20" time="0" condition="Control.HasFocus(8015)">Conditional</animation>
 			<animation effect="fade" start="100" end="20" time="0" condition="Control.HasFocus(23)">Conditional</animation>
 			<animation effect="fade" start="100" end="20" time="0" condition="Control.HasFocus(24)">Conditional</animation>
 			<animation effect="fade" start="100" end="20" time="0" condition="Control.HasFocus(25)">Conditional</animation>
@@ -694,6 +695,7 @@
 					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8009)">Conditional</animation>
 					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8010)">Conditional</animation>
 					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8011)">Conditional</animation>
+					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8015)">Conditional</animation>
 					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(23)">Conditional</animation>
 					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(24)">Conditional</animation>
 					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(25)">Conditional</animation>
@@ -715,6 +717,7 @@
 					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8009)">Conditional</animation>
 					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8010)">Conditional</animation>
 					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8011)">Conditional</animation>
+					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8015)">Conditional</animation>
 					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(23)">Conditional</animation>
 					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(24)">Conditional</animation>
 					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(25)">Conditional</animation>
@@ -747,6 +750,7 @@
 					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8009)">Conditional</animation>
 					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8010)">Conditional</animation>
 					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8011)">Conditional</animation>
+					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8015)">Conditional</animation>
 					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(23)">Conditional</animation>
 					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(24)">Conditional</animation>
 					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(25)">Conditional</animation>
@@ -916,6 +920,15 @@
 					<thumb>icons/shutdownicon.png</thumb>
 					<onclick>ActivateWindow(ShutdownMenu)</onclick>
 					<visible>!Skin.HasSetting(HomeMenuNoShutdownButton)</visible>
+				</item>
+				<item id="20">
+					<description>WELCOME</description>
+					<label>WELCOME</label>
+					<label2>$INFO[Control.GetLabel(681)]</label2>
+					<icon>special://skin/backgrounds/shutdown.jpg</icon>
+					<thumb>icons/welcome.png</thumb>
+					<onclick>XBMC.ActivateWindow(1125)</onclick>
+					<visible>!Skin.HasSetting(RemoveWelcome)</visible>
 				</item>
 				<!--<item id="11">
 					<description>Play Disc</description>
@@ -1678,6 +1691,7 @@
 			<animation effect="fade" start="100" end="20" time="0" condition="Control.HasFocus(8009)">Conditional</animation>
 			<animation effect="fade" start="100" end="20" time="0" condition="Control.HasFocus(8010)">Conditional</animation>
 			<animation effect="fade" start="100" end="20" time="0" condition="Control.HasFocus(8011)">Conditional</animation>
+			<animation effect="fade" start="100" end="20" time="0" condition="Control.HasFocus(8015)">Conditional</animation>
 			<animation effect="fade" start="100" end="20" time="0" condition="Control.HasFocus(23)">Conditional</animation>
 			<animation effect="fade" start="100" end="20" time="0" condition="Control.HasFocus(24)">Conditional</animation>
 			<animation effect="fade" start="100" end="20" time="0" condition="Control.HasFocus(25)">Conditional</animation>

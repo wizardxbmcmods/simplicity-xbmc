@@ -302,13 +302,27 @@
 							<posx>250</posx>
 							<posy>670</posy>
 							<width>500</width>
-							<height>69</height>
+							<height>67</height>
 							<font>Simplicity_18</font>
 							<align>left</align>
 							<textcolor>white</textcolor>
 							<label>$INFO[ListItem.Property(Album_Description) ]</label>
 							<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 						</control>
+
+							<control type="image">
+								<posx>860</posx>
+								<posy>590</posy> 
+								<width>400</width>
+								<height>155</height>
+								<aligny>center</aligny>
+								<texture>$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem.Artist,,\logo.png]</texture>
+								<aspectratio>keep</aspectratio>
+								<include>VisibleFadeEffect</include>
+								<fadetime>IconCrossfadeTime</fadetime>
+							</control>
+
+
 					</control>
 				</control>
 			</control>
@@ -587,7 +601,6 @@
 				</focusedlayout>
 			</control>
 			<control type="group">
-				<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 				<include>Zoom</include>		
 				<control type="label">
 					<posx>90</posx>
@@ -800,6 +813,7 @@
 			</control>
 			<control type="group">
 				<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+					<posy>-15</posy>
 				<include>Zoom</include>		
 				<control type="label">
 					<posx>90</posx>
@@ -1025,13 +1039,24 @@
 					<posx>90</posx>
 					<posy>350</posy>
 					<width>400</width>
-					<height>195</height>
+					<height>125</height>
 					<font>Simplicity_20</font>
 					<textcolor>white</textcolor>
 					<align>left</align>
 					<label>$INFO[ListItem.Property(Album_Description)]</label>
 					<visible>!StringCompare(ListItem.label,* All albums)</visible>
 				</control>
+							<control type="image">
+								<posx>90</posx>
+								<posy>490</posy> 
+								<width>400</width>
+								<height>155</height>
+								<aligny>center</aligny>
+								<texture>$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem.Artist,,\logo.png]</texture>
+								<aspectratio>keep</aspectratio>
+								<include>VisibleFadeEffect</include>
+								<fadetime>IconCrossfadeTime</fadetime>
+							</control>
 			</control>
 					<!--<control type="image">
 						<description>Cd overlay</description>
@@ -1160,6 +1185,7 @@
 			</control>
 			<control type="group">
 				<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+					<posy>-15</posy>
 				<include>Zoom</include>		
 				<control type="label">
 					<posx>90</posx>
@@ -1176,7 +1202,7 @@
 				</control>		
 				<control type="label">
 					<posx>90</posx>
-					<posy>240</posy>
+					<posy>210</posy>
 					<width>400</width>
 					<height>20</height>
 					<font>Simplicity_24</font>
@@ -1189,7 +1215,7 @@
 				</control>		
 				<control type="label">
 					<posx>90</posx>
-					<posy>270</posy>
+					<posy>240</posy>
 					<width>400</width>
 					<height>20</height>
 					<font>Simplicity_24</font>
@@ -1202,7 +1228,7 @@
 				</control>
 				<control type="label">
 					<posx>90</posx>
-					<posy>300</posy>
+					<posy>270</posy>
 					<width>400</width>
 					<height>20</height>
 					<font>Simplicity_24</font>
@@ -1215,14 +1241,25 @@
 				</control>				
 				<control type="textbox">
 					<posx>90</posx>
-					<posy>350</posy>
+					<posy>320</posy>
 					<width>400</width>
-					<height>190</height>
+					<height>148</height>
 					<font>Simplicity_20</font>
 					<textcolor>white</textcolor>
 					<align>left</align>
 					<label>$INFO[ListItem.Property(Artist_Description)]</label>
 				</control>
+							<control type="image">
+								<posx>90</posx>
+								<posy>490</posy> 
+								<width>400</width>
+								<height>155</height>
+								<aligny>center</aligny>
+								<texture>$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem.Artist,,\logo.png]</texture>
+								<aspectratio>keep</aspectratio>
+								<include>VisibleFadeEffect</include>
+								<fadetime>IconCrossfadeTime</fadetime>
+							</control>
 			</control>
 		</control>
 	</include>
@@ -2209,4 +2246,188 @@
 			</control>
 		</control>
 	</include>	
+	<!--<include name="Logo-Slide-Music">
+		<control type="group">
+			<posx>0</posx>
+			<posy>0</posy>
+			<visible>Control.IsVisible(519)</visible>
+			<include>VisibleFadeEffect</include>
+			<include>Overlay</include>
+			<include>UpOptions</include>
+			<include condition="Skin.HasSetting(VideoUseGuide)">DownOpenTVGuide</include>
+			<include condition="Skin.HasSetting(VideoUseRecent)">DownOpenRecent</include>
+			<include condition="Skin.HasSetting(VideoUseCustom)">DownOpenCustom</include>
+			<include>ArtistBreadCrumbs</include>
+
+		<control type="group">
+			<posx>-200</posx>
+<control type="image">
+<posx>0</posx>
+<posy>330</posy>
+							<width>310</width>
+							<height>145</height>
+							<texture background="true" fallback="logo-fallback.png">$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem(-1).Artist]/logo.png</texture>
+<visible>Control.IsVisible(519)</visible>
+							<aspectratio>keep</aspectratio>
+							<animation effect="fade" start="100" end="40" time="0" condition="Control.HasFocus(519)">conditional</animation>
+							<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(519)">conditional</animation>
+</control>
+<control type="image">
+<posx>440</posx>
+<posy>330</posy>
+							<width>310</width>
+							<height>145</height>
+							<texture background="true" fallback="logo-fallback.png">$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem.Artist]/logo.png</texture>
+<visible>Control.IsVisible(519)</visible>
+							<aspectratio>keep</aspectratio>
+<animation effect="zoom" center="auto" end="140" time="200" reversible="false">Visible</animation> 
+<visible>!Container.OnNext + !Container.OnPrevious</visible>
+</control>
+<control type="image">
+<posx>910</posx>
+<posy>330</posy>
+							<width>310</width>
+							<height>145</height>
+							<texture background="true" fallback="logo-fallback.png">$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem(1).Artist]/logo.png</texture>
+<visible>Control.IsVisible(519)</visible>
+							<aspectratio>keep</aspectratio>
+							<animation effect="fade" start="100" end="40" time="0" condition="Control.HasFocus(519)">conditional</animation>
+							<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(519)">conditional</animation>
+</control>
+
+<!--Move 3 to 2-->
+
+<!--<control type="image">
+<posx>900</posx>
+<posy>330</posy>
+							<width>310</width>
+							<height>145</height>
+							<texture background="true" fallback="logo-fallback.png">$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem(0).Artist]/logo.png</texture>
+							<aspectratio>keep</aspectratio>
+							<animation effect="fade" start="100" end="40" time="0" condition="Control.HasFocus(519)">conditional</animation>
+							<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(519)">conditional</animation>
+<animation effect="slide" end="-470" time="200" reversible="false">Visible</animation> 
+<visible>!Container.OnNext</visible>
+</control>
+
+
+
+
+<control type="image">
+<posx>1300</posx>
+<posy>330</posy>
+							<aspectratio>keep</aspectratio>
+							<width>310</width>
+							<height>145</height>
+							<texture background="true" fallback="logo-fallback.png">$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem(2).Artist]/logo.png</texture>
+<visible>Control.IsVisible(519)</visible>
+							<animation effect="fade" start="100" end="40" time="0" condition="Control.HasFocus(519)">conditional</animation>
+							<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(519)">conditional</animation>
+</control>
+</control>
+			<control type="group">
+				<control type="wraplist" id="519">
+					<include>Zoom</include>
+					<visible>Container.Content(Artists)</visible>
+					<viewtype label="Logo Slide">Wraplist of Posters</viewtype>
+					<posx>-200</posx>
+					<posy>320</posy>
+					<width>1800</width>
+					<height>200</height>		
+					<include condition="Skin.HasSetting(VideoUseGuide)">OpenGuideDown</include>
+					<include condition="Skin.HasSetting(VideoUseRecent)">OpenRecentDown</include>
+					<include condition="Skin.HasSetting(VideoUseCustom)">OpenCustomDown</include>
+					<onup>2</onup>
+					<onleft>519</onleft>
+					<onright>519</onright>
+					<pagecontrol>70</pagecontrol>
+					<scrolltime>200</scrolltime>
+					<focusposition>1</focusposition>
+					<itemspacing>25</itemspacing>
+					<movement>3</movement>
+					<orientation>horizontal</orientation>
+					<preloaditems>14</preloaditems>
+					<itemlayout height="290" width="440">-->
+						<!--<control type="largeimage">
+							<posx>0</posx>
+							<posy>10</posy> 
+							<width>310</width>
+							<height>145</height>
+							<aligny>center</aligny>
+							<texture background="true" fallback="logo-fallback.png">$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem.label,,\logo.png]</texture>
+							<aspectratio>keep</aspectratio>
+							<animation effect="fade" start="100" end="40" time="0" condition="Control.HasFocus(519)">conditional</animation>
+							<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(519)">conditional</animation>
+							<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+						</control>
+						<control type="largeimage">
+							<posx>0</posx>
+							<posy>10</posy> 
+							<width>310</width>
+							<height>145</height>
+							<aligny>center</aligny>
+							<texture background="true">root-logo.png</texture>
+							<aspectratio>keep</aspectratio>
+							<animation effect="fade" start="100" end="40" time="0" condition="Control.HasFocus(519)">conditional</animation>
+							<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(519)">conditional</animation>
+							<visible>stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+						</control>-->
+					<!--</itemlayout>
+					<focusedlayout height="290" width="440">-->
+					<!--	<control type="largeimage">
+							<posx>0</posx>
+							<posy>10</posy> 
+							<width>310</width>
+							<height>145</height>
+							<aligny>center</aligny>
+							<texture background="true" fallback="logo-fallback.png">$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem.label,,\logo.png]</texture>
+							<animation effect="zoom" end="140" center="auto" time="200">Focus</animation> 
+							<aspectratio>keep</aspectratio>
+							<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+						</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>10</posy>
+						<width>800</width>
+						<height>30</height>
+						<font>Simplicity_18</font>
+						<textcolor>white</textcolor>
+						<scroll>false</scroll>
+						<align>left</align>
+						<label>$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem.label,,\logo.png]]</label>
+					</control>
+						<control type="largeimage">
+							<posx>0</posx>
+							<posy>10</posy> 
+							<width>310</width>
+							<height>145</height>
+							<aligny>center</aligny>
+							<texture background="true">root-logo.png</texture>
+							<animation effect="zoom" end="140" center="auto" time="200">Focus</animation> 
+							<aspectratio>keep</aspectratio>
+							<visible>stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+						</control>-->
+					<!--</focusedlayout>
+				</control>	
+				<control type="group">
+					<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+					<include>Zoom</include>
+					<posx>-70</posx>
+					<posy>-90</posy>
+					<control type="textbox">
+						<description>Description Value The Movie</description>
+						<posx>250</posx>
+						<posy>600</posy>
+						<width>500</width>
+						<height>99</height>
+						<font>Simplicity_20</font>
+						<align>left</align>
+						<textcolor>white</textcolor>
+						<label>$INFO[ListItem.Property(Artist_Description)]</label>
+						<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+					</control>
+				</control>
+			</control>
+		</control>
+	</include>-->
 </includes>

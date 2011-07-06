@@ -1,7 +1,7 @@
 <window id="25">
 	<defaultcontrol always="true">9999</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-	<views>50,54,55,57,58,59,65,66,67,68,500,501,504,505,506,507,508,509,511,532,534,535,536,537,538,539,540,552,553,554,555,556,557,558,559,560,561</views>
+	<views>50,54,55,57,58,59,65,66,67,68,500,501,504,505,506,507,508,509,511,532,534,535,536,537,538,539,540,552,553,554,555,556,557,558,559,560,561,562,563,564</views>
 	<visible>!Skin.HasSetting(KioskMode)</visible>
 	<controls>
 on-->
@@ -187,6 +187,12 @@ on-->
 		<!-- view id = 560-->
 		<include>Fanart-Slide-2</include>
 		<!-- view id = 561-->
+		<include>Episode-List-2</include>
+		<!-- view id = 562-->
+		<include>Shade-View</include>
+		<!-- view id = 563-->
+		<include>Shade-View-2</include>
+		<!-- view id = 564-->
 		<include>MovieGenreView</include>
 		<!-- view id = 59 -->
 	</control>
@@ -315,6 +321,15 @@ on-->
 					<onclick>Skin.ToggleSetting(VideoLibraryMusicVideoFanart)</onclick>
 					<selected>Skin.HasSetting(VideoLibraryMusicVideoFanart)</selected>
 					<visible>Container.Content(MusicVideos) | Container.Content(Artists) | Container.Content(Albums)</visible>
+				</control>
+				<control type="radiobutton" id="204">
+					<textwidth>170</textwidth>
+					<description>Toggle Flags Instead of Plot</description>
+					<include>ButtonCommonValuesSub</include>
+					<label>Use Logo</label>
+					<onclick>Skin.ToggleSetting(Scroll_Logo)</onclick>
+					<selected>Skin.HasSetting(Scroll_Logo)</selected>
+					<visible>Control.IsVisible(563)</visible>
 				</control>
 				<control type="radiobutton" id="205">
 					<textwidth>170</textwidth>
@@ -502,6 +517,19 @@ on-->
 					<animation effect="zoom" end="106" center="auto">Focus</animation>
 					<onclick>Container.SetViewMode(559)</onclick>
 					<visible>Container.Content(TVShows) + Skin.HasSetting(EnableClearartViews)</visible>
+				</control>
+				<control type="button" id="23">
+					<description>Side List</description>
+					<width>174</width>
+					<height>95</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<texturenofocus border="5">simplicity/views/Scroll/previewimage.png</texturenofocus>
+					<texturefocus border="5">simplicity/views/Scroll/previewimage.png</texturefocus>
+					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(23)">Conditional</animation>			
+					<animation effect="zoom" end="106" center="auto">Focus</animation>
+					<onclick>Container.SetViewMode(564)</onclick>
+					<visible>Container.Content(Movies) | Container.Content(Seasons) | [Container.Content(TVShows) + Skin.HasSetting(TVShowsUsePosters)]</visible>
 				</control>
 				<control type="button" id="24">
 					<description>Carousel</description>

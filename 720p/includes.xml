@@ -14,9 +14,12 @@
 	<include file="IncludesNextAiredInfo.xml" />
 	<include file="custom_HomeDialogPopup_1115.xml" />
 	<include file="custom_SearchDialogPopup_1118.xml" />
+	<include file="custom_Welcome_Screen_1125.xml" />
+	<include file="Custom_Welcome_Screen_Close_Popup.xml" />
 	<include file="custom_TVDelete_1127.xml" />
 	<include file="MusicNowPlaying.xml" />
 	<include file="ViewsAdvancedLauncher.xml" />
+
 
 
 	<constant name="FanartCrossfadeTime">500</constant>
@@ -970,7 +973,7 @@
 				<posx>90</posx>
 				<posy>40</posy>
 				<height>20</height>
-				<width>900</width>
+				<width>800</width>
 				<label>$INFO[ListItem.TVShowTitle]</label>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -986,7 +989,7 @@
 				<posx>90</posx>
 				<posy>40</posy>
 				<height>20</height>
-				<width>900</width>
+				<width>800</width>
 				<label>$INFO[Container().ListItem(1).TVShowTitle]</label>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -1021,7 +1024,7 @@
 				<posx>90</posx>
 				<posy>40</posy>
 				<height>20</height>
-				<width>900</width>
+				<width>800</width>
 				<label>$INFO[ListItem.TVShowTitle]: Season $INFO[ListItem.Season]</label>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -1036,7 +1039,7 @@
 				<posx>90</posx>
 				<posy>40</posy>
 				<height>20</height>
-				<width>900</width>
+				<width>800</width>
 				<label>$INFO[Container().ListItem(1).TVShowTitle]: Season $INFO[Container().ListItem(1).Season]</label>
 				<align>left</align>
 				<aligny>center</aligny>
