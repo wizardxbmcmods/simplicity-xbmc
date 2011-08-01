@@ -60,6 +60,13 @@
 						<posy>28</posy>
 						<width>345</width>
 						<height>192</height>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<texture diffuse="simplicity/fanart-slide-fanart-diffuse.png" background="true">wide-shine-7.png</texture>
+					</control>
+					<control type="image">
+						<posy>28</posy>
+						<width>345</width>
+						<height>192</height>
 						<texture diffuse="simplicity/fanart-slide-fanart-diffuse.png" background="true">simplicity/black-back.png</texture>
 						<aspectratio scalediffuse="false">stretch</aspectratio>		
 					</control>
@@ -343,7 +350,7 @@
 						<posy>28</posy>
 						<width>345</width>
 						<height>192</height>
-						<texture diffuse="simplicity/fanart-slide-fanart-diffuse.png" background="true">wide-shine-6.png</texture>
+						<texture diffuse="simplicity/fanart-slide-fanart-diffuse.png" background="true">wide-shine-7.png</texture>
 						<aspectratio scalediffuse="false">stretch</aspectratio>		
 					</control>
 					<control type="image">
@@ -394,7 +401,7 @@
 						<width>345</width>
 						<height>192</height>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
-						<texture diffuse="simplicity/fanart-slide-fanart-diffuse.png" background="true">wide-shine-6.png</texture>
+						<texture diffuse="simplicity/fanart-slide-fanart-diffuse.png" background="true">wide-shine-7.png</texture>
 					</control>
 					<control type="image">
 						<posx>540.5</posx>
@@ -10476,11 +10483,249 @@
 				</focusedlayout>
 			</control>	
 		</control>
-
-
 	</include>
 
-
+<include name="Wall-Alaska">
+		<control type="group">
+			<visible>Control.IsVisible(565)</visible>
+			<!-- Browser -->
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1290</width>
+				<height>730</height>
+				<texture>simplicity/background-solid.png</texture>
+			</control>
+			<control type="group">
+				<include>Zoom</include>
+				<include>Animation_ZoomInZoomOut</include>
+				<include>Animation_WallPosterRowFloat</include>
+				<include>Animation_ZoomedByMenu</include>
+				<include>Animation_HiddenByInfo</include>
+				<control type="panel" id="565">
+					<viewtype label="Alaska">icon</viewtype>
+					<posx>0</posx>
+					<posy>195</posy>
+					<width>1280</width>
+					<height>714</height>
+					<pagecontrol>60</pagecontrol>
+					<scrolltime>200</scrolltime>
+					<orientation>horizontal</orientation>
+					<onup>2</onup>
+					<include condition="Skin.HasSetting(VideoUseGuide)">OpenGuideDown</include>
+					<include condition="Skin.HasSetting(VideoUseRecent)">OpenRecentDown</include>
+					<include condition="Skin.HasSetting(VideoUseCustom)">OpenCustomDown</include>
+					<preloaditems>20</preloaditems>
+					<visible>Container.Content(Movies)</visible>
+					<itemlayout width="167" height="238">
+						<control type="image">
+							<posx>70</posx>
+							<posy>16</posy>
+							<width>142</width>
+							<height>212</height>
+							<texture>wall/wallmatte.png</texture>
+							<colordiffuse>MatteDiffuse</colordiffuse>
+							<visible>!substring(ListItem.Icon,default) | Container.Content(genres)</visible>
+						</control>
+						<control type="image">
+							<posx>70</posx>
+							<posy>16</posy>
+							<width>142</width>
+							<height>212</height>
+							<fadetime>200</fadetime>
+							<texture background="true" diffuse="wall/wallmatte.png">$INFO[ListItem.Icon]</texture>
+						<aspectratio>stretch</aspectratio>
+						</control>
+						<control type="image">
+							<posx>69</posx>
+							<posy>15</posy>
+							<width>144</width>
+							<height>214</height>
+							<texture>wall/wallframeNF.png</texture>
+							<colordiffuse>MusicWallDiffuse</colordiffuse>
+							<visible>!substring(ListItem.Icon,default)</visible>
+						<aspectratio>stretch</aspectratio>
+						</control>
+						<control type="image">
+							<posx>69</posx>
+							<posy>15</posy>
+							<width>144</width>
+							<height>214</height>
+							<texture background="true" diffuse="wall/wallmatte.png">simplicity/black-back-3.png</texture>
+						<aspectratio>stretch</aspectratio>
+						</control>
+						<control type="image">
+							<posx>189</posx>
+							<posy>206</posy>
+							<width>22</width>
+							<height>22</height>
+							<texture>$INFO[ListItem.Overlay]</texture>
+							<colordiffuse>MusicWallDiffuse</colordiffuse>
+						</control>
+						<!--<control type="image">
+							<posx>79</posx>
+							<posy>206</posy>
+							<width>22</width>
+							<height>22</height>
+							<texture>New.png</texture>
+							<visible>[Container.Content(TVShows) + !Skin.HasSetting(HideNewEpisodes) + !stringcompare(ListItem.Overlay,OverlayWatched.png) + [StringCompare(Window(Home).Property(LatestEpisode.1.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.2.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.3.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.4.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.5.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.6.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.7.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.8.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.9.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.10.ShowTitle),ListItem.Label)]] | [Container.Content(Movies) + !Skin.HasSetting(HideNewMovies) + !stringcompare(ListItem.Overlay,OverlayWatched.png) + [StringCompare(Window(Home).Property(LatestMovie.1.Title),ListItem.Label) | StringCompare(Window(Home).Property(LatestMovie.2.Title),ListItem.Label) | StringCompare(Window(Home).Property(LatestMovie.3.Title),ListItem.Label) | StringCompare(Window(Home).Property(LatestMovie.4.Title),ListItem.Label) | StringCompare(Window(Home).Property(LatestMovie.5.Title),ListItem.Label) | StringCompare(Window(Home).Property(LatestMovie.6.Title),ListItem.Label) | StringCompare(Window(Home).Property(LatestMovie.7.Title),ListItem.Label) | StringCompare(Window(Home).Property(LatestMovie.8.Title),ListItem.Label) | StringCompare(Window(Home).Property(LatestMovie.9.Title),ListItem.Label) | StringCompare(Window(Home).Property(LatestMovie.10.Title),ListItem.Label)]]</visible>
+						</control>-->
+					</itemlayout>
+					<focusedlayout width="167" height="238">
+						<control type="image">
+							<posx>40</posx>
+							<posy>-10</posy>
+							<width>202</width>
+							<height>260</height>
+							<texture background="true">wall/wallglow.png</texture>
+							<animation type="Focus" reversible="false" condition="Container(565).Row(0)">
+								<effect type="fade" start="0" end="100" time="200" />
+								<effect type="zoom" center="auto" tween="back" start="60" end="100" time="400" />
+								<effect type="slide" start="0,0" end="0,-8" time="400" tween="back" easing="out" />
+							</animation>
+							<animation type="Focus" reversible="false" condition="Container(565).Row(1)">
+								<effect type="fade" start="0" end="100" time="200" />
+								<effect type="zoom" center="auto" tween="back" start="60" end="100" time="400" />
+							</animation>
+							<animation type="Focus" reversible="false" condition="Container(565).Row(2)">
+								<effect type="fade" start="0" end="100" time="200" />
+								<effect type="zoom" center="auto" tween="back" start="60" end="100" time="400" />
+								<effect type="slide" start="0,0" end="0,8" time="400" tween="back" easing="out" />
+							</animation>
+						<aspectratio>stretch</aspectratio>
+						</control>
+						<control type="image">
+							<posx>70</posx>
+							<posy>16</posy>
+							<width>142</width>
+							<height>212</height>
+							<texture background="true" diffuse="wall/wallmatte.png">$INFO[ListItem.Icon]</texture>
+							<animation type="Focus" reversible="false" condition="Container(565).Row(0)">
+								<effect type="fade" start="0" end="100" time="200" />
+								<effect type="zoom" center="auto" tween="back" start="60" end="100" time="400" />
+								<effect type="slide" start="0,0" end="0,-8" time="400" tween="back" easing="out" />
+							</animation>
+							<animation type="Focus" reversible="false" condition="Container(565).Row(1)">
+								<effect type="fade" start="0" end="100" time="200" />
+								<effect type="zoom" center="auto" tween="back" start="60" end="100" time="400" />
+							</animation>
+							<animation type="Focus" reversible="false" condition="Container(565).Row(2)">
+								<effect type="fade" start="0" end="100" time="200" />
+								<effect type="zoom" center="auto" tween="back" start="60" end="100" time="400" />
+								<effect type="slide" start="0,0" end="0,8" time="400" tween="back" easing="out" />
+							</animation>
+						<aspectratio>stretch</aspectratio>
+						</control>
+						<control type="image">
+							<posx>58</posx>
+							<posy>3</posy>
+							<width>167</width>
+							<height>238</height>
+							<texture>wall/wallframeF.png</texture>
+							<animation type="Focus" reversible="false" condition="Container(565).Row(0)">
+								<effect type="fade" start="0" end="100" time="200" />
+								<effect type="zoom" center="auto" tween="back" start="60" end="100" time="400" />
+								<effect type="slide" start="0,0" end="0,-8" time="400" tween="back" easing="out" />
+							</animation>
+							<animation type="Focus" reversible="false" condition="Container(565).Row(1)">
+								<effect type="fade" start="0" end="100" time="200" />
+								<effect type="zoom" center="auto" tween="back" start="60" end="100" time="400" />
+							</animation>
+							<animation type="Focus" reversible="false" condition="Container(565).Row(2)">
+								<effect type="fade" start="0" end="100" time="200" />
+								<effect type="zoom" center="auto" tween="back" start="60" end="100" time="400" />
+								<effect type="slide" start="0,0" end="0,8" time="400" tween="back" easing="out" />
+							</animation>
+						<aspectratio>stretch</aspectratio>
+						</control>
+						<control type="image">
+							<posx>58</posx>
+							<posy>3</posy>
+							<width>167</width>
+							<height>238</height>
+							<texture>wall/$INFO[ListItem.Overlay]</texture>
+							<animation type="Focus" reversible="false" condition="Container(565).Row(0)">
+								<effect type="fade" start="0" end="100" time="200" />
+								<effect type="zoom" center="82,118" tween="back" start="60" end="100" time="400" />
+								<effect type="slide" start="0,0" end="0,-8" time="400" tween="back" easing="out" />
+							</animation>
+							<animation type="Focus" reversible="false" condition="Container(565).Row(1)">
+								<effect type="fade" start="0" end="100" time="200" />
+								<effect type="zoom" center="82,118" tween="back" start="60" end="100" time="400" />
+							</animation>
+							<animation type="Focus" reversible="false" condition="Container(565).Row(2)">
+								<effect type="fade" start="0" end="100" time="200" />
+								<effect type="zoom" center="82,118" tween="back" start="60" end="100" time="400" />
+								<effect type="slide" start="0,0" end="0,8" time="400" tween="back" easing="out" />
+							</animation>
+						<aspectratio>stretch</aspectratio>
+						</control>
+						<!--<control type="image">
+							<posx>180</posx>
+							<posy>198</posy>
+							<width>28</width>
+							<height>28</height>
+							<texture>New.png</texture>
+							<animation type="Focus" reversible="false" condition="Container(565).Row(0)">
+								<effect type="fade" start="0" end="100" time="200" />
+								<effect type="zoom" center="82,118" tween="back" start="60" end="100" time="400" />
+								<effect type="slide" start="0,0" end="0,-8" time="400" tween="back" easing="out" />
+							</animation>
+							<animation type="Focus" reversible="false" condition="Container(565).Row(1)">
+								<effect type="fade" start="0" end="100" time="200" />
+								<effect type="zoom" center="82,118" tween="back" start="60" end="100" time="400" />
+							</animation>
+							<animation type="Focus" reversible="false" condition="Container(565).Row(2)">
+								<effect type="fade" start="0" end="100" time="200" />
+								<effect type="zoom" center="82,118" tween="back" start="60" end="100" time="400" />
+								<effect type="slide" start="0,0" end="0,8" time="400" tween="back" easing="out" />
+							</animation>
+							<visible>[Container.Content(TVShows) + !Skin.HasSetting(HideNewEpisodes) + !stringcompare(ListItem.Overlay,OverlayWatched.png) + [StringCompare(Window(Home).Property(LatestEpisode.1.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.2.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.3.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.4.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.5.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.6.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.7.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.8.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.9.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.10.ShowTitle),ListItem.Label)]] | [Container.Content(Movies) + !Skin.HasSetting(HideNewMovies) + !stringcompare(ListItem.Overlay,OverlayWatched.png) + [StringCompare(Window(Home).Property(LatestMovie.1.Title),ListItem.Label) | StringCompare(Window(Home).Property(LatestMovie.2.Title),ListItem.Label) | StringCompare(Window(Home).Property(LatestMovie.3.Title),ListItem.Label) | StringCompare(Window(Home).Property(LatestMovie.4.Title),ListItem.Label) | StringCompare(Window(Home).Property(LatestMovie.5.Title),ListItem.Label) | StringCompare(Window(Home).Property(LatestMovie.6.Title),ListItem.Label) | StringCompare(Window(Home).Property(LatestMovie.7.Title),ListItem.Label) | StringCompare(Window(Home).Property(LatestMovie.8.Title),ListItem.Label) | StringCompare(Window(Home).Property(LatestMovie.9.Title),ListItem.Label) | StringCompare(Window(Home).Property(LatestMovie.10.Title),ListItem.Label)]]</visible>
+						<aspectratio>stretch</aspectratio>
+						</control>-->
+					</focusedlayout>
+				</control>
+			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<texture>wall_vignette.png</texture>
+			</control>
+			<include>UpOptions</include>
+			<include >MovieBreadCrumbs</include>
+			<include condition="Skin.HasSetting(VideoUseGuide)">DownOpenTVGuide</include>
+			<include condition="Skin.HasSetting(VideoUseRecent)">DownOpenRecent</include>
+			<include condition="Skin.HasSetting(VideoUseCustom)">DownOpenCustom</include>
+			<control type="group">
+				<visible>IntegerGreaterThan(Container(565).NumItems,21)</visible>
+				<control type="image">
+					<posx>25</posx>
+					<posy>320</posy>
+					<width>30</width>
+					<height>30</height>
+					<texture flipx="true">pics/picsarrow.png</texture>
+					<include>Animation_ZoomInZoomOut</include>
+					<include>Animation_ZoomedByMenu</include>
+					<include>Animation_HiddenByInfo</include>
+					<visible>Control.IsVisible(565) + [!Container(565).Column(0) | Container(565).HasPrevious]</visible>
+				</control>
+				<control type="image">
+					<posx>1225</posx>
+					<posy>320</posy>
+					<width>30</width>
+					<height>30</height>
+					<texture>pics/picsarrow.png</texture>
+					<include>Animation_ZoomInZoomOut</include>
+					<include>Animation_ZoomedByMenu</include>
+					<include>Animation_HiddenByInfo</include>
+					<visible>Control.IsVisible(565) + [!Container(565).Column(6) | Container(565).HasNext]</visible>
+				</control>
+			</control>
+			<include>ScrollBar_Horizontal</include>
+		</control>
+	</include>
 
 
 </includes>

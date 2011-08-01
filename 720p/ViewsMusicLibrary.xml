@@ -1271,11 +1271,16 @@
 			<posy>0</posy>
 			<include>Overlay</include>
 			<include>ArtistBreadCrumbs</include>
+
+		<control type="group">
+		<animation effect="slide" end="40,0" time="200" tween="cubic" easing="inout" condition="Container(515).Column(0)">Conditional</animation>
+		<animation effect="slide" end="-40,0" time="200" tween="cubic" easing="inout" condition="Container(515).Column(7)">Conditional</animation>
+		<animation effect="slide" end="0,20" time="200" tween="cubic" easing="inout" condition="Container(515).Row(0)">Conditional</animation>
 			<control type="Panel" id="515">
 				<include>Zoom</include>		
-				<posx>22</posx>
+				<posx>-40</posx>
 				<posy>110</posy>
-				<width>1260</width>
+				<width>1330</width>
 				<height>577</height>
 				<onleft>2</onleft>
 				<include condition="Skin.HasSetting(VideoUseGuide)">OpenGuideRight</include>
@@ -1292,7 +1297,7 @@
 				<itemlayout height="155" width="155">
 					<control type="group">
 						<control type="image">
-							<posx>0</posx>
+							<posx>62</posx>
 							<posy>0</posy>
 							<width>150</width>
 							<height>150</height>
@@ -1303,7 +1308,7 @@
 							<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 						</control>
 						<control type="image">
-							<posx>0</posx>
+							<posx>62</posx>
 							<posy>0</posy>
 							<width>150</width>
 							<height>150</height>
@@ -1314,7 +1319,7 @@
 							<visible>stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 						</control>
 						<control type="image">
-							<posx>0</posx>
+							<posx>62</posx>
 							<posy>0</posy>
 							<width>150</width>
 							<height>150</height>
@@ -1323,9 +1328,9 @@
 						</control>
 					</control>	
 				</itemlayout>
-				<focusedlayout height="510" width="210">
+				<focusedlayout height="510" width="390">
 					<control type="image">
-						<posx>0</posx>
+						<posx>62</posx>
 						<posy>0</posy>
 						<width>150</width>
 						<height>150</height>
@@ -1334,12 +1339,12 @@
 						<bordertexture border="4">simplicity/thumbborder.png</bordertexture>
 						<bordersize>4</bordersize>
 						<animation type="Focus" reversible="false">
-							<effect type="zoom" start="100" end="120" center="auto" time="100"/>
+							<effect type="zoom" start="100" end="160" center="auto" time="100"/>
 						</animation>
 						<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 					</control>
 					<control type="image">
-						<posx>0</posx>
+						<posx>62</posx>
 						<posy>0</posy>
 						<width>150</width>
 						<height>150</height>
@@ -1348,30 +1353,29 @@
 						<bordertexture border="4">simplicity/thumbborder.png</bordertexture>
 						<bordersize>4</bordersize>
 						<animation type="Focus" reversible="false">
-							<effect type="zoom" start="100" end="120" center="auto" time="100"/>
+							<effect type="zoom" start="100" end="160" center="auto" time="100"/>
 						</animation>
 						<visible>stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 					</control>
 					<control type="image">
-						<posx>0</posx>
+						<posx>62</posx>
 						<posy>0</posy>
 						<width>150</width>
 						<height>150</height>
 						<aspectratio>scale</aspectratio>
 						<texture background="true">simplicity/actor-fade5.png</texture>
 						<animation type="Focus" reversible="false">
-							<effect type="zoom" start="100" end="120" center="auto" time="100"/>
+							<effect type="zoom" start="100" end="160" center="auto" time="100"/>
 						</animation>
 					</control>
 					<control type="label">
-						<posx>75</posx>
-						<posy>70</posy>
-						<width>150</width>
+						<posx>137</posx>
+						<posy>99</posy>
+						<width>220</width>
 						<height>150</height>
-						<font>Simplicity_18</font>
+						<font>Simplicity_24</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<wrapmultiline>true</wrapmultiline>
 						<scroll>false</scroll>
 						<align>center</align>
 						<aligny>center</aligny>
@@ -1382,17 +1386,18 @@
 						</animation>
 					</control>
 					<control type="image">
-						<posx>0</posx>
+						<posx>62</posx>
 						<posy>0</posy>
 						<width>150</width>
 						<height>150</height>
 						<aspectratio>scale</aspectratio>
 						<texture background="true" fallback="simplicity/artist-fallback.png">simplicity/poster-border5.png</texture>
 						<animation type="Focus" reversible="false">
-							<effect type="zoom" start="100" end="120" center="auto" time="100"/>
+							<effect type="zoom" start="100" end="160" center="auto" time="100"/>
 						</animation>
 					</control>
 				</focusedlayout>
+			</control>
 			</control>
 			<control type="image">
 				<posx>0</posx>
@@ -1473,7 +1478,6 @@
 			</control>-->
 		</control>
 	</include>
-
 	<include name="Album-Wall-View">
 		<control type="group">
 			<visible>Control.IsVisible(516)</visible>
@@ -1482,6 +1486,10 @@
 			<posy>0</posy>
 			<include>Overlay</include>
 			<include>AlbumBreadCrumbs</include>
+		<control type="group">
+		<animation effect="slide" end="40,0" time="200" tween="cubic" easing="inout" condition="Container(516).Column(0)">Conditional</animation>
+		<animation effect="slide" end="-40,0" time="200" tween="cubic" easing="inout" condition="Container(516).Column(7)">Conditional</animation>
+		<animation effect="slide" end="0,20" time="200" tween="cubic" easing="inout" condition="Container(516).Row(0)">Conditional</animation>
 			<control type="Panel" id="516">
 				<include>Zoom</include>		
 				<posx>22</posx>
@@ -1548,7 +1556,7 @@
 					</control>	
 				</itemlayout>
 				<focusedlayout height="510" width="210">
-					<control type="image">
+					<!--<control type="image">
 						<visible>!Skin.HasSetting(DisableCD)</visible>
 						<description>Cd overlay</description>
 						<animation effect="fade" start="0" end="100" time="0" delay="400">WindowOpen</animation>
@@ -1557,12 +1565,10 @@
 						<width>140</width>
 						<height>140</height>
 						<posx>5</posx>
-						<!-- 112 -->
 						<posy>0</posy>
-						<!-- -143 -->
-						<texture fallback="cd/default.png">$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem.Artist]$INFO[ListItem.Album,/,/cdart.png]</texture>
+						<texture fallback="cd/default.png">$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem.Artist]\$INFO[ListItem.Album,,\cdart.png]</texture>
 						<aspectratio align="bottom">keep</aspectratio>
-					</control>
+					</control>-->
 					<control type="image">
 						<posx>0</posx>
 						<posy>0</posy>
@@ -1574,7 +1580,7 @@
 						<bordersize>4</bordersize>
 						<visible>!StringCompare(ListItem.label,* All albums)</visible>
 						<animation type="Focus" reversible="false">
-							<effect type="zoom" start="100" end="120" center="auto" time="100"/>
+							<effect type="zoom" start="100" end="160" center="auto" time="100"/>
 						</animation>
 						<visible>stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 					</control>
@@ -1589,7 +1595,7 @@
 						<bordersize>4</bordersize>
 						<visible>!StringCompare(ListItem.label,* All albums)</visible>
 						<animation type="Focus" reversible="false">
-							<effect type="zoom" start="100" end="120" center="auto" time="100"/>
+							<effect type="zoom" start="100" end="160" center="auto" time="100"/>
 						</animation>
 						<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 					</control>
@@ -1603,7 +1609,7 @@
 						<bordertexture border="4">simplicity/thumbborder.png</bordertexture>
 						<bordersize>4</bordersize>
 						<animation type="Focus" reversible="false">
-							<effect type="zoom" start="100" end="120" center="auto" time="100"/>
+							<effect type="zoom" start="100" end="160" center="auto" time="100"/>
 						</animation>
 						<visible>StringCompare(ListItem.label,* All albums)</visible>
 						<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
@@ -1616,10 +1622,11 @@
 						<aspectratio>scale</aspectratio>
 						<texture background="true" fallback="simplicity/album-fallback.png">simplicity/poster-border5.png</texture>
 						<animation type="Focus" reversible="false">
-							<effect type="zoom" start="100" end="120" center="auto" time="100"/>
+							<effect type="zoom" start="100" end="160" center="auto" time="100"/>
 						</animation>
 					</control>
 				</focusedlayout>
+			</control>
 			</control>
 			<control type="image">
 				<posx>0</posx>

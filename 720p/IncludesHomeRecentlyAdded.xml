@@ -1637,7 +1637,7 @@
 					</control>				
 					<control type="label">
 						<description>Title label</description>
-						<posx>205</posx>
+						<posx>210</posx>
 						<posy>60</posy>
 						<height>20</height>
 						<width>300</width>
@@ -1649,7 +1649,7 @@
 					</control>	
 					<control type="label">
 						<description>Title label</description>
-						<posx>205</posx>
+						<posx>210</posx>
 						<posy>90</posy>
 						<height>20</height>
 						<width>300</width>
@@ -1661,7 +1661,7 @@
 					</control>	
 					<control type="label">
 						<description>Title label</description>
-						<posx>205</posx>
+						<posx>210</posx>
 						<posy>120</posy>
 						<height>20</height>
 						<width>300</width>
@@ -1673,7 +1673,7 @@
 					</control>
 					<control type="image">
 						<description>Rating value</description>
-						<posx>205</posx>
+						<posx>210</posx>
 						<posy>140</posy>
 						<width>108</width>
 						<height>21</height>
@@ -1682,7 +1682,7 @@
 					</control>
 					<control type="image">
 						<description>Rating value</description>
-						<posx>205</posx>
+						<posx>210</posx>
 						<posy>140</posy>
 						<width>108</width>
 						<height>21</height>
@@ -1691,7 +1691,7 @@
 					</control>
 					<control type="image">
 						<description>Rating value</description>
-						<posx>205</posx>
+						<posx>210</posx>
 						<posy>140</posy>
 						<width>108</width>
 						<height>21</height>
@@ -1700,7 +1700,7 @@
 					</control>
 					<control type="image">
 						<description>Rating value</description>
-						<posx>205</posx>
+						<posx>210</posx>
 						<posy>140</posy>
 						<width>108</width>
 						<height>21</height>
@@ -1709,7 +1709,7 @@
 					</control>
 					<control type="image">
 						<description>Rating value</description>
-						<posx>205</posx>
+						<posx>210</posx>
 						<posy>140</posy>
 						<width>108</width>
 						<height>21</height>
@@ -1718,7 +1718,7 @@
 					</control>
 					<control type="image">
 						<description>Rating value</description>
-						<posx>205</posx>
+						<posx>210</posx>
 						<posy>140</posy>
 						<width>108</width>
 						<height>21</height>

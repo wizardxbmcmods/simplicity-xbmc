@@ -621,6 +621,7 @@
 			<animation effect="fade" start="100" end="20" time="0" condition="Control.HasFocus(24)">Conditional</animation>
 			<animation effect="fade" start="100" end="20" time="0" condition="Control.HasFocus(25)">Conditional</animation>
 			<animation effect="fade" start="100" end="20" time="0" condition="ControlGroup(9001).HasFocus">Conditional</animation>
+			<visible>!Skin.HasSetting(HideBigHomeLabel)</visible>
 		</control>
 
 		<!-- END New Home List Images-->
@@ -800,7 +801,7 @@
 					<label2>$INFO[Control.GetLabel(669)]</label2>
 					<icon>special://skin/backgrounds/music.jpg</icon>
 					<thumb>icons/musicicon.png</thumb>
-					<onclick>ActivateWindow(Music,return)</onclick>
+					<onclick>ActivateWindow(MusicLibrary,Artists)</onclick>
 					<visible>!Skin.HasSetting(HomeMenuNoMusicButton)</visible>
 				</item>
 				<item id="6">

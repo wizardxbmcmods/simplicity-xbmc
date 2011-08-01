@@ -1,7 +1,7 @@
 <window id="25">
 	<defaultcontrol always="true">9999</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-	<views>50,54,55,57,58,59,65,66,67,68,500,501,504,505,506,507,508,509,511,532,534,535,536,537,538,539,540,552,553,554,555,556,557,558,559,560,561,562,563,564</views>
+	<views>50,54,55,57,58,59,65,66,67,68,500,501,504,505,506,507,508,509,511,532,534,535,536,537,538,539,540,552,553,554,555,556,557,558,559,560,561,562,563,564,565,566</views>
 	<visible>!Skin.HasSetting(KioskMode)</visible>
 	<controls>
 on-->
@@ -70,6 +70,7 @@ on-->
 			<visible>!Control.IsVisible(556)</visible>
 			<visible>!Control.IsVisible(558)</visible>
 			<visible>!Control.IsVisible(560)</visible>
+			<visible>!Control.IsVisible(565)</visible>
 		</control>
 		<control type="image">
 			<posx>0</posx>
@@ -85,6 +86,7 @@ on-->
 			<visible>!Control.IsVisible(557)</visible>
 			<visible>!Control.IsVisible(558)</visible>
 			<visible>!Control.IsVisible(560)</visible>
+			<visible>!Control.IsVisible(565)</visible>
 		</control>
 		<control type="image">
 			<posx>0</posx>
@@ -101,6 +103,7 @@ on-->
 			<visible>!Control.IsVisible(557)</visible>
 			<visible>!Control.IsVisible(558)</visible>
 			<visible>!Control.IsVisible(560)</visible>
+			<visible>!Control.IsVisible(565)</visible>
 		</control>
 		<control type="image">
 			<posx>0</posx>
@@ -193,6 +196,10 @@ on-->
 		<!-- view id = 563-->
 		<include>Shade-View-2</include>
 		<!-- view id = 564-->
+		<include>Wall-Alaska</include>
+		<!-- view id = 565-->		
+		<include>Viewtype_Showcase</include>
+		<!-- view id = 566-->		
 		<include>MovieGenreView</include>
 		<!-- view id = 59 -->
 	</control>

@@ -19,6 +19,8 @@
 	<include file="custom_TVDelete_1127.xml" />
 	<include file="MusicNowPlaying.xml" />
 	<include file="ViewsAdvancedLauncher.xml" />
+	<include file="Viewtype_Showcase.xml" />
+
 
 
 
@@ -29,6 +31,13 @@
 <visible>[StringCompare(Window(Home).Property(LatestEpisode.1.ShowTitle),ListItem.Label) + !StringCompare(ListItem.Property(UnWatchedEpisodes),0)] | [StringCompare(Window(Home).Property(LatestEpisode.2.ShowTitle),ListItem.Label) + !StringCompare(ListItem.Property(UnWatchedEpisodes),0)] | [StringCompare(Window(Home).Property(LatestEpisode.3.ShowTitle),ListItem.Label) + !StringCompare(ListItem.Property(UnWatchedEpisodes),0)] | [StringCompare(Window(Home).Property(LatestEpisode.4.ShowTitle),ListItem.Label) + !StringCompare(ListItem.Property(UnWatchedEpisodes),0)] | [StringCompare(Window(Home).Property(LatestEpisode.5.ShowTitle),ListItem.Label) + !StringCompare(ListItem.Property(UnWatchedEpisodes),0)] | [StringCompare(Window(Home).Property(LatestEpisode.6.ShowTitle),ListItem.Label) + !StringCompare(ListItem.Property(UnWatchedEpisodes),0)] | [StringCompare(Window(Home).Property(LatestEpisode.7.ShowTitle),ListItem.Label) + !StringCompare(ListItem.Property(UnWatchedEpisodes),0)] | [StringCompare(Window(Home).Property(LatestEpisode.8.ShowTitle),ListItem.Label) + !StringCompare(ListItem.Property(UnWatchedEpisodes),0)] | [StringCompare(Window(Home).Property(LatestEpisode.9.ShowTitle),ListItem.Label) + !StringCompare(ListItem.Property(UnWatchedEpisodes),0)] | [StringCompare(Window(Home).Property(LatestEpisode.10.ShowTitle),ListItem.Label) + !StringCompare(ListItem.Property(UnWatchedEpisodes),0)]</visible>
 
 </include>
+
+	<include name="Animation_WallPosterRowFloat">
+		<animation effect="slide" end="0,0" time="200" tween="cubic" easing="inout" condition="Container(565).Row(0)">Conditional</animation>
+		<animation effect="slide" end="0,-198" time="200" tween="cubic" easing="inout" condition="Container(565).Row(1)">Conditional</animation>
+		<animation effect="slide" end="0,-396" time="200" tween="cubic" easing="inout" condition="Container(565).Row(2)">Conditional</animation>
+	</include>
+
 
 
 <!--Shortcut Includes-->
