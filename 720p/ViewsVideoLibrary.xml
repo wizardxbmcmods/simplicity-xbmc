@@ -10726,6 +10726,583 @@
 			<include>ScrollBar_Horizontal</include>
 		</control>
 	</include>
-
-
+<include name="Character-Slide-Kids">
+		<control type="group">
+			<posx>0</posx>
+			<posy>0</posy>
+			<visible>Control.IsVisible(567) + Container.Content(TVShows)</visible>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1290</width>
+				<height>730</height>
+				<texture>simplicity/background-solid.png</texture>
+			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>130</posy>
+				<width>1280</width>
+				<height>370</height>
+				<texture>gallery-bg.png</texture>
+			</control>
+			<include>VisibleFadeEffect</include>
+			<include>UpOptions</include>
+			<include condition="Skin.HasSetting(VideoUseGuide)">DownOpenTVGuide</include>
+			<include condition="Skin.HasSetting(VideoUseRecent)">DownOpenRecent</include>
+			<include condition="Skin.HasSetting(VideoUseCustom)">DownOpenCustom</include>
+			<include>TVBreadCrumbs</include>
+			<control type="group">
+				<control type="wraplist" id="567">
+					<include>Zoom</include>
+					<visible>stringcompare(Container.FolderPath,special://skin/extras/tvplaylists/GenreChildren.xsp)</visible>
+					<viewtype label="Character Slide">Wraplist of Posters</viewtype>
+					<posx>-20</posx>
+					<posy>90</posy>
+					<width>1800</width>
+					<height>440</height>		
+					<include condition="Skin.HasSetting(VideoUseGuide)">OpenGuideDown</include>
+					<include condition="Skin.HasSetting(VideoUseRecent)">OpenRecentDown</include>
+					<include condition="Skin.HasSetting(VideoUseCustom)">OpenCustomDown</include>
+					<onup>2</onup>
+					<onleft>567</onleft>
+					<onright>567</onright>
+					<pagecontrol>70</pagecontrol>
+					<scrolltime>200</scrolltime>
+					<focusposition>2</focusposition>
+					<itemspacing>25</itemspacing>
+					<movement>3</movement>
+					<orientation>horizontal</orientation>
+					<preloaditems>14</preloaditems>
+					<itemlayout height="440" width="270">
+						<control type="image">
+							<posx>0</posx>
+							<posy>100</posy> 
+							<width>240</width>
+							<height>240</height>
+							<aligny>center</aligny>
+							<texture background="true" fallback="no-character.png">$INFO[ListItem.Path,,character.png]</texture>
+							<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(567)">conditional</animation>
+							<animation effect="fade" start="100" end="50" time="0" condition="!Control.HasFocus(567)">conditional</animation>
+							<aspectratio>keep</aspectratio>
+							<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+						</control>
+						<control type="image">
+							<posx>0</posx>
+							<posy>340</posy> 
+							<width>240</width>
+							<height>45</height>
+							<texture>gallery-shadow.png</texture>
+							<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(567)">conditional</animation>
+							<animation effect="fade" start="100" end="50" time="0" condition="!Control.HasFocus(567)">conditional</animation>
+						</control>
+					</itemlayout>
+					<focusedlayout height="440" width="270">
+						<control type="image">
+							<posx>0</posx>
+							<posy>100</posy> 
+							<width>240</width>
+							<height>240</height>
+							<aligny>center</aligny>
+							<texture background="true" fallback="no-character.png">$INFO[ListItem.Path,,character.png]</texture>
+							<animation effect="zoom" end="120" center="auto" time="200">Focus</animation>
+							<aspectratio>keep</aspectratio>
+							<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+						</control>
+						<control type="image">
+							<posx>0</posx>
+							<posy>340</posy> 
+							<width>240</width>
+							<height>45</height>
+							<texture>gallery-shadow.png</texture>
+							<animation effect="zoom" end="120" center="auto" time="200">Focus</animation>
+						</control>
+					</focusedlayout>
+				</control>	
+						<control type="image">
+							<posx>555</posx>
+							<posy>135</posy> 
+							<width>159</width>
+							<height>144</height>
+							<texture>gallery-bright-light.png</texture>
+						</control>
+				<control type="group">
+					<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+					<include>Zoom</include>
+					<posx>-70</posx>
+					<posy>60</posy>
+					<control type="label">
+						<posx>206</posx>
+						<posy>445</posy>
+						<width>1000</width>
+						<height>30</height>
+						<font>Simplicity_40</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<scroll>false</scroll>
+						<align>center</align>
+						<label>$INFO[ListItem.Title]</label>
+					</control>
+					<control type="image">
+						<description>Rating value</description>
+						<posx>630</posx>
+						<posy>495</posy>
+						<width>154</width>
+						<height>30</height>
+						<texture>$INFO[Listitem.StarRating]</texture>
+					</control>
+					<control type="label">
+						<posx>306</posx>
+						<posy>535</posy>
+						<width>800</width>
+						<height>30</height>
+						<font>Simplicity_20</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<scroll>false</scroll>
+						<align>center</align>
+						<label>Year: [COLOR=grey2]$INFO[ListItem.Year][/COLOR]    Unwatched: [COLOR=grey2]$INFO[ListItem.Property(UnWatchedEpisodes)][/COLOR]</label>
+					</control>
+				</control>
+			</control>
+		</control>
+	</include>
+<include name="Season-Slide-Kids">
+		<control type="group">
+			<posx>0</posx>
+			<posy>0</posy>
+			<visible>Control.IsVisible(568) + Container.Content(Seasons)</visible>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1290</width>
+				<height>730</height>
+				<texture>simplicity/background-overlay.png</texture>
+			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>130</posy>
+				<width>1280</width>
+				<height>370</height>
+				<texture>gallery-bg.png</texture>
+			</control>
+			<include>VisibleFadeEffect</include>
+			<include>UpOptions</include>
+			<include condition="Skin.HasSetting(VideoUseGuide)">DownOpenTVGuide</include>
+			<include condition="Skin.HasSetting(VideoUseRecent)">DownOpenRecent</include>
+			<include condition="Skin.HasSetting(VideoUseCustom)">DownOpenCustom</include>
+			<include>SeasonBreadCrumbs</include>
+			<control type="group">
+				<control type="fixedlist" id="568">
+					<include>Zoom</include>
+					<viewtype label="Seasons - Kids">Wraplist of Posters</viewtype>
+						<visible>Container.Content(Seasons)</visible>
+					<posx>280</posx>
+						<posy>218</posy>
+						<width>720</width>
+						<height>300</height>		
+				<include condition="Skin.HasSetting(VideoUseGuide)">OpenGuideDown</include>
+				<include condition="Skin.HasSetting(VideoUseRecent)">OpenRecentDown</include>
+				<include condition="Skin.HasSetting(VideoUseCustom)">OpenCustomDown</include>
+						<onup>2</onup>
+						<onleft>568</onleft>
+						<onright>568</onright>
+						<pagecontrol>70</pagecontrol>
+						<scrolltime>300</scrolltime>
+						<focusposition>2</focusposition>
+						<orientation>horizontal</orientation>
+				<itemlayout height="290" width="130">
+							<control type="image">
+								<posx>0</posx>
+								<posy>2</posy> 
+								<width>118</width>
+								<height>173</height>
+								<aligny>center</aligny>
+								<texture background="true">simplicity/poster-slide-poster-shadow.png</texture>
+							</control>
+							<control type="largeimage">
+								<posx>0</posx>
+								<posy>2</posy> 
+								<width>110</width>
+								<height>165</height>
+								<aligny>center</aligny>
+								<texture diffuse="simplicity/poster-slide-poster-diffuse.png" background="true">root.png</texture>
+								<aspectratio>stretch</aspectratio>
+								<visible>stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+							</control>
+							<control type="image">
+								<posx>0</posx>
+								<posy>2</posy> 
+								<width>110</width>
+								<height>165</height>
+								<aligny>center</aligny>
+								<texture diffuse="simplicity/poster-slide-poster-diffuse.png" background="true">$INFO[ListItem.Icon]</texture>
+								<aspectratio>stretch</aspectratio>
+								<visible>![Container.Content(TVShows) + Skin.HasSetting(UsePosterJPG)]</visible>
+								<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+							</control>
+							<control type="largeimage">
+								<posx>0</posx>
+								<posy>2</posy> 
+								<width>110</width>
+								<height>165</height>
+								<aligny>center</aligny>
+								<texture diffuse="simplicity/poster-slide-poster-diffuse.png" background="true">simplicity/black-back.png</texture>
+								<aspectratio>stretch</aspectratio>
+							</control>
+					<control type="label">
+						<posx>55</posx>
+						<posy>15</posy>
+						<width>110</width>
+						<height>165</height>
+						<font>Simplicity_70</font>
+						<textcolor>grey2</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<scroll>false</scroll>
+						<align>center</align>
+						<aligny>center</aligny>
+						<label>*</label>
+						<visible>stringcompare(ListItem.Title,* All Seasons)</visible>
+					</control>
+					<control type="label">
+						<posx>55</posx>
+						<posy>0</posy>
+						<width>110</width>
+						<height>165</height>
+						<font>Simplicity_70</font>
+						<textcolor>grey2</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<scroll>false</scroll>
+						<align>center</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Season]</label>
+					</control>
+						<control type="image">
+							<posx>-10</posx>
+							<posy>195</posy> 
+							<width>130</width>
+							<height>25</height>
+							<texture>gallery-shadow.png</texture>
+							<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(568)">conditional</animation>
+							<animation effect="fade" start="100" end="50" time="0" condition="!Control.HasFocus(568)">conditional</animation>
+						</control>
+						</itemlayout>
+						<focusedlayout height="390" width="210">
+							<control type="image">
+								<posx>40</posx>
+								<posy>3</posy> 
+								<width>118</width>
+								<height>173</height>
+								<aligny>center</aligny>
+								<texture background="true">simplicity/poster-slide-poster-shadow.png</texture>
+								<animation reversible="false" effect="zoom" end="160" center="auto" time="300">Focus</animation> 
+								<aspectratio>stretch</aspectratio>
+							</control>
+							<control type="largeimage">
+								<posx>40</posx>
+								<posy>3</posy> 
+								<width>110</width>
+								<height>165</height>
+								<aligny>center</aligny>
+								<texture diffuse="simplicity/poster-slide-poster-diffuse.png" background="true">root.png</texture>
+								<animation reversible="false" effect="zoom" end="160" center="auto" time="300">Focus</animation> 
+								<visible>stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+							</control>
+							<control type="image">
+								<posx>40</posx>
+								<posy>3</posy> 
+								<width>110</width>
+								<height>165</height>
+								<aligny>center</aligny>
+								<texture diffuse="simplicity/poster-slide-poster-diffuse.png" background="true">$INFO[ListItem.Icon]</texture>
+								<animation reversible="false" effect="zoom" end="160" center="auto" time="300">Focus</animation> 
+								<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+								<aspectratio>stretch</aspectratio>
+							</control>							
+							<control type="largeimage">
+								<posx>38</posx>
+								<posy>1</posy> 
+								<width>114</width>
+								<height>169</height>
+								<aligny>center</aligny>
+								<texture background="true">poster-slide-cover.png</texture>
+								<animation reversible="false" effect="zoom" end="160" center="auto" time="300">Focus</animation> 
+								<aspectratio>stretch</aspectratio>
+							</control>
+						<control type="image">
+							<posx>30</posx>
+							<posy>230</posy> 
+							<width>130</width>
+							<height>25</height>
+							<texture>gallery-shadow.png</texture>
+								<animation reversible="false" effect="zoom" end="160" center="auto" time="300">Focus</animation> 
+						</control>
+						</focusedlayout>
+				</control>	
+						<control type="largeimage">
+							<posx>555</posx>
+							<posy>135</posy> 
+							<width>159</width>
+							<height>144</height>
+							<texture>gallery-bright-light.png</texture>
+						</control>
+				<control type="group">
+					<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+					<include>Zoom</include>
+					<posx>-70</posx>
+					<posy>60</posy>
+					<control type="label">
+						<posx>206</posx>
+						<posy>455</posy>
+						<width>1000</width>
+						<height>30</height>
+						<font>Simplicity_50</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<scroll>false</scroll>
+						<align>center</align>
+						<label>$INFO[ListItem.Title]</label>
+					</control>
+					<control type="label">
+						<posx>306</posx>
+						<posy>525</posy>
+						<width>800</width>
+						<height>30</height>
+						<font>Simplicity_20</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<scroll>false</scroll>
+						<align>center</align>
+						<label>Watched: [COLOR=grey2]$INFO[ListItem.Property(WatchedEpisodes)][/COLOR]    Unwatched: [COLOR=grey2]$INFO[ListItem.Property(UnWatchedEpisodes)][/COLOR]</label>
+					</control>
+						<control type="image">
+							<posx>85</posx>
+							<posy>110</posy> 
+							<width>240</width>
+							<height>240</height>
+							<texture background="true" fallback="no-character.png">$INFO[ListItem.Path,,character.png]</texture>
+							<aspectratio>keep</aspectratio>
+							<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+						</control>
+						<control type="image">
+							<posx>85</posx>
+							<posy>360</posy> 
+							<width>240</width>
+							<height>45</height>
+							<texture>gallery-shadow.png</texture>
+						</control>
+						<control type="image">
+							<posx>1085</posx>
+							<posy>110</posy> 
+							<width>240</width>
+							<height>240</height>
+							<texture background="true" fallback="no-character.png">$INFO[ListItem.Path,,logo.png]</texture>
+							<aspectratio>keep</aspectratio>
+							<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+						</control>
+						<control type="image">
+							<posx>1085</posx>
+							<posy>360</posy> 
+							<width>240</width>
+							<height>45</height>
+							<texture>gallery-shadow.png</texture>
+						</control>
+				</control>
+			</control>
+		</control>
+	</include>
+<include name="Episode-Slide-Kids">
+		<control type="group">
+			<posx>0</posx>
+			<posy>0</posy>
+			<visible>Control.IsVisible(569) + Container.Content(Episodes)</visible>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1290</width>
+				<height>730</height>
+				<texture>simplicity/background-overlay.png</texture>
+			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>130</posy>
+				<width>1280</width>
+				<height>370</height>
+				<texture>gallery-bg.png</texture>
+			</control>
+			<include>VisibleFadeEffect</include>
+			<include>UpOptions</include>
+			<include condition="Skin.HasSetting(VideoUseGuide)">DownOpenTVGuide</include>
+			<include condition="Skin.HasSetting(VideoUseRecent)">DownOpenRecent</include>
+			<include condition="Skin.HasSetting(VideoUseCustom)">DownOpenCustom</include>
+			<include>EpisodeBreadCrumbs</include>
+			<control type="group">
+				<control type="wraplist" id="569">
+					<include>Zoom</include>
+					<viewtype label="Episodes - Kids">Wraplist of Posters</viewtype>
+				<posx>-305</posx>
+				<posy>185</posy>
+				<width>1900</width>
+				<height>400</height>
+				<onleft>569</onleft>
+				<onright>569</onright>
+				<onup>2</onup>
+				<include condition="Skin.HasSetting(VideoUseGuide)">OpenGuideDown</include>
+				<include condition="Skin.HasSetting(VideoUseRecent)">OpenRecentDown</include>
+				<include condition="Skin.HasSetting(VideoUseCustom)">OpenCustomDown</include>
+				<orientation>Horizontal</orientation>
+				<pagecontrol>60</pagecontrol>
+				<scrolltime>300</scrolltime>
+				<focusposition>2</focusposition>
+				<preloaditems>400</preloaditems>
+				<visible>Container.Content(Episodes)</visible>
+				<itemlayout height="220" width="360">	
+					<control type="image">
+						<posx>3</posx>
+						<posy>31</posy>
+						<width>347</width>
+						<height>194</height>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<texture diffuse="simplicity/fanart-slide-fanart-diffuse.png" background="true">simplicity/fanart-slide-fanart-shadow.png</texture>
+					</control>
+					<control type="image">
+						<posy>28</posy>
+						<width>345</width>
+						<height>192</height>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<texture diffuse="simplicity/fanart-slide-fanart-diffuse.png" background="true">$INFO[Listitem.Icon]</texture>
+						<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+					</control>
+					<control type="image">
+						<posy>28</posy>
+						<width>345</width>
+						<height>192</height>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<texture diffuse="simplicity/fanart-slide-fanart-diffuse.png" background="true">root-wide.png</texture>
+						<visible>stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+					</control>
+					<control type="image">
+						<posy>28</posy>
+						<width>345</width>
+						<height>192</height>
+						<texture diffuse="simplicity/fanart-slide-fanart-diffuse.png" background="true">wide-shine-7.png</texture>
+						<aspectratio scalediffuse="false">stretch</aspectratio>		
+					</control>
+					<control type="image">
+						<posy>28</posy>
+						<width>345</width>
+						<height>192</height>
+						<texture diffuse="simplicity/fanart-slide-fanart-diffuse.png" background="true">simplicity/black-back.png</texture>
+						<aspectratio scalediffuse="false">stretch</aspectratio>		
+					</control>
+					<control type="image">
+						<posx>301.5</posx>
+						<posy>178</posy>
+						<width>48</width>
+						<height>48</height>
+						<texture diffuse="simplicity/fanart-slide-fanart-diffuse.png">$INFO[ListItem.Overlay]</texture>
+					</control>
+						<control type="image">
+							<posx>-7</posx>
+							<posy>245</posy> 
+							<width>367</width>
+							<height>25</height>
+							<texture>gallery-shadow.png</texture>
+							<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(569)">conditional</animation>
+							<animation effect="fade" start="100" end="50" time="0" condition="!Control.HasFocus(569)">conditional</animation>
+						</control>
+				</itemlayout>
+				<focusedlayout height="340" width="465">
+			<control type="group">
+				<animation reversible="false" effect="zoom" end="130" center="auto" time="300">Focus</animation> 
+				<posx>60</posx>
+						<posy>10</posy>
+					<control type="image">
+						<posx>3</posx>
+						<posy>31</posy>
+						<width>347</width>
+						<height>194</height>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<texture diffuse="simplicity/fanart-slide-fanart-diffuse.png" background="true">simplicity/fanart-slide-fanart-shadow.png</texture>
+					</control>
+					<control type="image">
+						<posy>28</posy>
+						<width>345</width>
+						<height>192</height>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<texture diffuse="simplicity/fanart-slide-fanart-diffuse.png" background="true">$INFO[Listitem.Icon]</texture>
+						<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+					</control>
+					<control type="image">
+						<posy>28</posy>
+						<width>345</width>
+						<height>192</height>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<texture diffuse="simplicity/fanart-slide-fanart-diffuse.png" background="true">root-wide.png</texture>
+						<visible>stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+					</control>
+					<control type="image">
+						<posy>28</posy>
+						<width>345</width>
+						<height>192</height>
+						<texture diffuse="simplicity/fanart-slide-fanart-diffuse.png" background="true">wide-shine-7.png</texture>
+						<aspectratio scalediffuse="false">stretch</aspectratio>		
+					</control>
+					<control type="image">
+						<posx>301.5</posx>
+						<posy>178</posy>
+						<width>48</width>
+						<height>48</height>
+						<texture diffuse="simplicity/fanart-slide-fanart-diffuse.png">$INFO[ListItem.Overlay]</texture>
+					</control>
+						<control type="image">
+							<posx>-7</posx>
+							<posy>230</posy> 
+							<width>367</width>
+							<height>25</height>
+							<texture>gallery-shadow.png</texture>
+						</control>
+					</control>
+				</focusedlayout>
+				</control>	
+						<control type="largeimage">
+							<posx>555</posx>
+							<posy>135</posy> 
+							<width>159</width>
+							<height>144</height>
+							<texture>gallery-bright-light.png</texture>
+						</control>
+				<control type="group">
+					<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+					<include>Zoom</include>
+					<posx>-70</posx>
+					<posy>60</posy>
+					<control type="label">
+						<posx>206</posx>
+						<posy>455</posy>
+						<width>1000</width>
+						<height>30</height>
+						<font>Simplicity_50</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<scroll>false</scroll>
+						<align>center</align>
+						<label>"$INFO[ListItem.Title]"</label>
+					</control>
+					<control type="textbox">
+						<posx>454</posx>
+						<posy>525</posy>
+						<width>500</width>
+						<height>75</height>
+						<font>Simplicity_20</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<scroll>false</scroll>
+						<align>center</align>
+						<label>$INFO[ListItem.Plot]</label>
+						<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+					</control>
+				</control>
+			</control>
+		</control>
+	</include>
 </includes>

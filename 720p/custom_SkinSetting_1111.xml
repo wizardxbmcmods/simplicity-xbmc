@@ -1180,6 +1180,12 @@
 								<icon>special://skin/backgrounds/shutdown.jpg</icon>
 								<thumb>$INFO[Skin.String(Home_Custom_Back_Shutdown_Folder)]</thumb>
 							</item>
+							<item id="16">
+								<label>Kids</label>
+								<onclick>-</onclick>
+								<icon>special://skin/backgrounds/kids.jpg</icon>
+								<thumb>$INFO[Skin.String(Home_Custom_Kids_Folder)]</thumb>
+							</item>
 						</content>
 					</control>
 					<control type="image">
@@ -2554,6 +2560,109 @@
 								<font>Simplicity_20_Bold_title</font>
 								<align>center</align>
 								<onclick>Skin.SetString(Home_Custom_Back_Shutdown_Folder,simplicity/background-solid.png)</onclick>
+								<onleft>303</onleft>
+								<onright>300</onright>
+								<onup>304</onup>
+								<ondown>304</ondown>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container(9003).HasFocus(16)</visible>
+							<control type="button" id="300">
+								<description>Single Image button</description>
+								<posx>5</posx>
+								<posy>0</posy>
+								<width>180</width>
+								<height>40</height>
+								<label>31113</label>
+								<textcolor>black</textcolor>
+								<focusedcolor>black</focusedcolor>
+								<shadowcolor>grey2</shadowcolor>
+								<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
+								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
+								<font>Simplicity_20_Bold_title</font>
+								<align>center</align>
+								<onclick>Skin.SetImage(Home_Custom_Kids_Folder)</onclick>
+								<onleft>311</onleft>
+								<onright>301</onright>
+								<onup>304</onup>
+								<ondown>304</ondown>
+							</control>
+							<control type="button" id="301">
+								<description>Multi Image button</description>
+								<posx>190</posx>
+								<posy>0</posy>
+								<width>180</width>
+								<height>40</height>
+								<label>31114</label>
+								<textcolor>black</textcolor>
+								<focusedcolor>black</focusedcolor>
+								<shadowcolor>grey2</shadowcolor>
+								<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
+								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
+								<font>Simplicity_20_Bold_title</font>
+								<align>center</align>
+								<onclick>Skin.SetPath(Home_Custom_Kids_Folder)</onclick>
+								<onleft>300</onleft>
+								<onright>302</onright>
+								<onup>304</onup>
+								<ondown>304</ondown>
+							</control>
+							<control type="button" id="302">
+								<description>Default Image button</description>
+								<posx>375</posx>
+								<posy>0</posy>
+								<width>180</width>
+								<height>40</height>
+								<label>571</label>
+								<textcolor>black</textcolor>
+								<focusedcolor>black</focusedcolor>
+								<shadowcolor>grey2</shadowcolor>
+								<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
+								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
+								<font>Simplicity_20_Bold_title</font>
+								<align>center</align>
+								<onclick>Skin.Reset(Home_Custom_Kids_Folder)</onclick>
+								<onleft>301</onleft>
+								<onright>303</onright>
+								<onup>304</onup>
+								<ondown>304</ondown>
+							</control>
+							<control type="button" id="303">
+								<description>Video Fanart button</description>
+								<posx>560</posx>
+								<posy>0</posy>
+								<width>180</width>
+								<height>40</height>
+								<label>Use Fanart</label>
+								<textcolor>black</textcolor>
+								<focusedcolor>black</focusedcolor>
+								<shadowcolor>grey2</shadowcolor>
+								<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
+								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
+								<font>Simplicity_20_Bold_title</font>
+								<align>center</align>
+								<onclick>Skin.SetString(Home_Custom_Kids_Folder,special://profile/Thumbnails/Video/Fanart)</onclick>
+								<onleft>302</onleft>
+								<onright>311</onright>
+								<onup>304</onup>
+								<ondown>304</ondown>
+							</control>
+							<control type="button" id="311">
+								<description>No Fanart button</description>
+								<posx>745</posx>
+								<posy>0</posy>
+								<width>180</width>
+								<height>40</height>
+								<label>None</label>
+								<textcolor>black</textcolor>
+								<focusedcolor>black</focusedcolor>
+								<shadowcolor>grey2</shadowcolor>
+								<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
+								<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
+								<font>Simplicity_20_Bold_title</font>
+								<align>center</align>
+								<onclick>Skin.SetString(Home_Custom_Kids_Folder,simplicity/background-solid.png)</onclick>
 								<onleft>303</onleft>
 								<onright>300</onright>
 								<onup>304</onup>
@@ -5420,7 +5529,7 @@
 							<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
 							<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
 							<font>Simplicity_20_Bold_title</font>
-							<onclick>XBMC.RunScript(script.logo-downloader,mode=bulk,clearart=True,logo=True,showthumb=landscape.jpg,poster=poster.jpg,banner=banner.jpg)</onclick>
+							<onclick>XBMC.RunScript(script.logo-downloader,mode=bulk,characterart=True,clearart=True,logo=True,showthumb=landscape.jpg,poster=poster.jpg,banner=banner.jpg)</onclick>
 						</control>
 						<control type="textbox" id="2014">
 							<width>900</width>

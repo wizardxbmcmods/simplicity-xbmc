@@ -199,6 +199,17 @@
 			<fadetime>1000</fadetime>
 			<include>VisibleFadeEffect</include>
 		</control>		
+		<control type="multiimage" id="682">
+			<posx>-10</posx>
+			<posy>-10</posy>
+			<width>1</width>
+			<height>1</height>
+			<imagepath background="true" fallback="special://skin/backgrounds/kids.jpg">$INFO[Skin.String(Home_Custom_Kids_Folder)]</imagepath>
+			<timeperimage>8000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+		</control>		
 		<control type="image">
 			<posx>0</posx>
 			<posy>0</posy>
@@ -930,6 +941,15 @@
 					<thumb>icons/welcome.png</thumb>
 					<onclick>XBMC.ActivateWindow(1125)</onclick>
 					<visible>!Skin.HasSetting(RemoveWelcome)</visible>
+				</item>
+				<item id="21">
+					<description>Kids</description>
+					<label>KIDS</label>
+					<label2>$INFO[Control.GetLabel(682)]</label2>
+					<icon>special://skin/backgrounds/kids.jpg</icon>
+					<thumb>icons/children.png</thumb>
+					<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/tvplaylists/GenreChildren.xsp)</onclick>
+					<onclick>Container.SetViewMode(567)</onclick>
 				</item>
 				<!--<item id="11">
 					<description>Play Disc</description>

@@ -1254,7 +1254,7 @@
 					<control type = "button" id = "14">
 						<description>Logo</description>
 						<include>ButtonInfoDialogsCommonValuesInfo</include>
-						<onclick>XBMC.RunScript(script.logo-downloader,mode=solo,clearart=True,logo=True,showthumb=landscape.jpg,poster=poster.jpg,banner=banner.jpg,showname=$INFO[ListItem.TVShowTitle])</onclick>
+						<onclick>XBMC.RunScript(script.logo-downloader,mode=solo,characterart=True,clearart=True,logo=True,showthumb=landscape.jpg,poster=poster.jpg,banner=banner.jpg,showname=$INFO[ListItem.TVShowTitle])</onclick>
 						<label>Logo</label>
 						<visible>Container.Content(TVShows)</visible>
 					</control>
