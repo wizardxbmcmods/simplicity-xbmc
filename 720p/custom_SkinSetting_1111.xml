@@ -949,6 +949,25 @@
 						<onclick>Skin.ToggleSetting(HomeMenuNoSearchButton)</onclick>
 						<selected>Skin.HasSetting(HomeMenuNoSearchButton)</selected>
 					</control>
+					<control type="radiobutton" id="220">
+						<description>Hide Kids Button</description>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>900</width>
+						<height>40</height>
+						<font>Simplicity_20</font>
+						<textcolor>white</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<radiowidth>83</radiowidth>
+						<radioheight>67</radioheight>
+						<textureradiofocus>simplicity/settings-radiobutton-on.png</textureradiofocus>
+						<textureradionofocus>simplicity/settings-radiobutton-off.png</textureradionofocus>
+						<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
+						<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
+						<label>$LOCALIZE[31111] - Kids</label>
+						<onclick>Skin.ToggleSetting(HomeMenuNoKidsButton)</onclick>
+						<selected>Skin.HasSetting(HomeMenuNoKidsButton)</selected>
+					</control>
 				</control>
 				<control type="scrollbar" id="60">
 					<posx>1230</posx>

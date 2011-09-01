@@ -961,6 +961,7 @@
 					<thumb>icons/children.png</thumb>
 					<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/tvplaylists/GenreChildren.xsp,return)</onclick>
 					<onclick>Container.SetViewMode(567)</onclick>
+					<visible>!Skin.HasSetting(HomeMenuNoKidsButton)</visible>
 				</item>
 				<!--<item id="11">
 					<description>Play Disc</description>
