@@ -1,4 +1,5 @@
 <window id="133">
+	<onunload>XBMC.RunScript(script.logo-downloader,mode=bulk,characterart=True,clearart=True,logo=True,showthumb=landscape.jpg,poster=poster.jpg,banner=banner.jpg)</onunload>
 	<defaultcontrol/>
 	<animation effect="slide" start="0,-70" end="0,0" time="100">WindowOpen</animation>
 	<animation effect="slide" start="0,0" end="0,-70" delay="400" time="100">WindowClose</animation>

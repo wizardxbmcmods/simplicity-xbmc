@@ -7414,21 +7414,9 @@
 				</control>
 				<control type="group">
 					<visible>Skin.HasSetting(Scroll_Logo)</visible>
-	<control type="label">
-						<posx>206</posx>
-						<posy>500</posy>
-						<width>1000</width>
-						<height>30</height>
-						<font>Simplicity_30</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<scroll>false</scroll>
-						<align>center</align>
-						<label>$INFO[ListItem.Title]</label>
-					</control>
 						<control type="largeimage">
 							<posx>506</posx>
-							<posy>340</posy> 
+							<posy>360</posy> 
 							<width>400</width>
 							<height>155</height>
 							<aligny>center</aligny>
@@ -7438,7 +7426,7 @@
 						</control>
 					<control type="label">
 						<posx>306</posx>
-						<posy>535</posy>
+						<posy>530</posy>
 						<width>800</width>
 						<height>30</height>
 						<font>Simplicity_24</font>
@@ -10937,7 +10925,6 @@
 								<aligny>center</aligny>
 								<texture diffuse="simplicity/poster-slide-poster-diffuse.png" background="true">$INFO[ListItem.Icon]</texture>
 								<aspectratio>stretch</aspectratio>
-								<visible>![Container.Content(TVShows) + Skin.HasSetting(UsePosterJPG)]</visible>
 								<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 							</control>
 							<control type="largeimage">
@@ -11095,7 +11082,7 @@
 							<posy>110</posy> 
 							<width>240</width>
 							<height>240</height>
-							<texture background="true" fallback="no-character.png">$INFO[ListItem.Path,,logo.png]</texture>
+							<texture background="true" fallback="logo-fallback.png">$INFO[ListItem.Path,,logo.png]</texture>
 							<aspectratio>keep</aspectratio>
 							<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 						</control>
