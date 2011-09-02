@@ -11292,4 +11292,128 @@
 			</control>
 		</control>
 	</include>
+	<include name="Side-List-Kids">
+		<control type="group">
+			<visible>Control.IsVisible(570)</visible>
+			<include>VisibleFadeEffect</include>
+			<posx>0</posx>
+			<posy>0</posy>
+			<include>Overlay</include>
+			<include>LeftOptions</include>
+			<include>TVBreadCrumbs</include>
+			<include condition="Skin.HasSetting(VideoUseGuide)">RightOpenTVGuide</include>
+			<include condition="Skin.HasSetting(VideoUseRecent)">RightOpenRecent</include>
+			<include condition="Skin.HasSetting(VideoUseCustom)">RightOpenCustom</include>
+			<control type="wraplist" id="570">
+				<include>Zoom</include>		
+				<posx>700</posx>
+				<posy>110</posy>
+				<width>930</width>
+				<height>500</height>
+				<onleft>2</onleft>
+				<include condition="Skin.HasSetting(VideoUseGuide)">OpenGuideRight</include>
+				<include condition="Skin.HasSetting(VideoUseRecent)">OpenRecentRight</include>
+				<include condition="Skin.HasSetting(VideoUseCustom)">OpenCustomRight</include>
+				<onup>570</onup>
+				<ondown>570</ondown>
+				<viewtype label="Side List - Kids">list</viewtype>
+				<focusposition>1</focusposition>
+				<pagecontrol>60</pagecontrol>
+				<scrolltime>400</scrolltime>
+				<preloaditems>100</preloaditems>
+				<visible>Container.Content(TVShows)</visible>
+				<itemlayout height="160" width="400">
+					<control type="group">
+						<posx>95</posx>
+						<control type="largeimage">
+							<posx>0</posx>
+							<posy>10</posy> 
+							<width>267</width>
+							<height>125</height>
+							<aligny>center</aligny>
+							<texture background="true" fallback="logo-fallback.png">$INFO[ListItem.Path,,logo.png]</texture>
+							<aspectratio>keep</aspectratio>
+							<animation effect="fade" start="100" end="40" time="0" condition="Control.HasFocus(570)">conditional</animation>
+							<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(570)">conditional</animation>
+							<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+						</control>
+						<control type="largeimage">
+							<posx>0</posx>
+							<posy>10</posy> 
+							<width>267</width>
+							<height>125</height>
+							<aligny>center</aligny>
+							<texture background="true">root-logo.png</texture>
+							<aspectratio>keep</aspectratio>
+							<animation effect="fade" start="100" end="40" time="0" condition="Control.HasFocus(570)">conditional</animation>
+							<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(570)">conditional</animation>
+							<visible>stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+						</control>		
+					</control>	
+				</itemlayout>
+				<focusedlayout height="200" width="400">
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<height>185</height>
+						<width>457</width>		
+						<texture>white-selector.png</texture>
+					</control>    
+					<control type="group">
+						<posx>95</posx>
+							<posy>20</posy> 
+							<control type="largeimage">
+							<posx>0</posx>
+							<posy>10</posy> 
+							<width>267</width>
+							<height>125</height>
+							<aligny>center</aligny>
+							<texture background="true" fallback="logo-fallback.png">$INFO[ListItem.Path,,logo.png]</texture>
+							<animation reversible="false" effect="zoom" end="160" center="auto" time="200">Focus</animation> 
+							<aspectratio>keep</aspectratio>
+							<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+						</control>
+						<control type="largeimage">
+							<posx>0</posx>
+							<posy>10</posy> 
+							<width>267</width>
+							<height>125</height>
+							<aligny>center</aligny>
+							<texture background="true">root-logo.png</texture>
+							<animation reversible="false" effect="zoom" end="160" center="auto" time="200">Focus</animation> 
+							<aspectratio>keep</aspectratio>
+							<visible>stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+						</control>
+					</control>
+				</focusedlayout>
+			</control>				
+			<control type="group">
+				<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+				<visible>Container.Content(TVShows)</visible>
+				<include>Zoom</include>				
+				<control type="image">
+					<description>cover image</description>
+					<posx>20</posx>
+					<posy>594</posy>
+					<width>480</width>
+					<height>60</height>
+					<texture>logo-shadow.png</texture>
+					<fadetime>FanartCrossfadeTime</fadetime>
+				</control>
+				<control type="image">
+					<posx>60</posx>
+					<posy>280</posy> 
+					<width>350</width>
+					<height>350</height>
+					<aligny>bottom</aligny>
+					<texture background="true" fallback="no-character.png">$INFO[ListItem.Path,,Character.png]</texture>
+					<aspectratio>keep</aspectratio>
+					<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+					<fadetime>IconCrossfadeTime</fadetime>
+				</control>
+			</control>
+		</control>
+	</include>
+
+
 </includes>
