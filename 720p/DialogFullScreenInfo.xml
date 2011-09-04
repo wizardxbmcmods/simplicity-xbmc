@@ -269,7 +269,7 @@
 						<scroll>false</scroll>
 						<align>left</align>
 						<label>Director:</label>
-					</control>		
+					</control>
 					<control type="label">
 						<posy>70</posy>
 						<width>160</width>
@@ -280,7 +280,7 @@
 						<scroll>false</scroll>
 						<align>left</align>
 						<label>Genre:</label>
-					</control>			
+					</control>
 					<control type="label">
 						<posy>90</posy>
 						<width>160</width>
@@ -315,7 +315,7 @@
 						<scroll>false</scroll>
 						<align>left</align>
 						<label>$INFO[VideoPlayer.Director]</label>
-					</control>		
+					</control>
 					<control type="label">
 						<posx>200</posx>
 						<posy>70</posy>
@@ -327,7 +327,7 @@
 						<scroll>false</scroll>
 						<align>left</align>
 						<label>$INFO[VideoPlayer.Genre]</label>
-					</control>			
+					</control>
 					<control type="label">
 						<posx>200</posx>
 						<posy>90</posy>
@@ -339,7 +339,7 @@
 						<scroll>false</scroll>
 						<align>left</align>
 						<label>$INFO[VideoPlayer.Writer]</label>
-					</control>		
+					</control>
 					<control type="label">
 						<description>Popup Info</description>
 						<posy>110</posy>
@@ -389,7 +389,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$INFO[Player.FinishTime]</label>
-					</control>	
+					</control>
 				</control>
 			</control>
 
@@ -449,7 +449,7 @@
 						<scroll>false</scroll>
 						<align>left</align>
 						<label>Album:</label>
-					</control>		
+					</control>
 					<control type="label">
 						<posy>90</posy>
 						<width>160</width>
@@ -460,7 +460,7 @@
 						<scroll>false</scroll>
 						<align>left</align>
 						<label>Genre:</label>
-					</control>			
+					</control>
 					<control type="label">
 						<posy>120</posy>
 						<width>160</width>
@@ -495,7 +495,7 @@
 						<scroll>false</scroll>
 						<align>left</align>
 						<label>$INFO[VideoPlayer.Album]</label>
-					</control>		
+					</control>
 					<control type="label">
 						<posx>200</posx>
 						<posy>90</posy>
@@ -507,7 +507,7 @@
 						<scroll>false</scroll>
 						<align>left</align>
 						<label>$INFO[VideoPlayer.Genre]</label>
-					</control>			
+					</control>
 					<control type="label">
 						<posx>200</posx>
 						<posy>120</posy>
@@ -519,9 +519,9 @@
 						<scroll>false</scroll>
 						<align>left</align>
 						<label>$INFO[VideoPlayer.Year]</label>
-					</control>			
+					</control>
 				</control>
-			</control>		
+			</control>
 		</control>
 
 
@@ -588,7 +588,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>Elapsed: [COLOR=white]$INFO[Player.Time][/COLOR]</label>
-					</control>			
+					</control>
 				<control type="label">
 						<description>Popup Info</description>
 					<posx>625r</posx>
@@ -600,7 +600,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>Finish: [COLOR=white]$INFO[Player.FinishTime][/COLOR]</label>
-					</control>			
+					</control>
 <control type="progress" id="404">
 				<description>progress control</description>
 				<posx>60</posx>
@@ -608,11 +608,11 @@
 				<width>530</width>
 				<height>8</height>
 				<info>Player.Progress</info>
-					<visible>true</visible>	
+					<visible>true</visible>
 				<texturebg border="6,0,6,0">simplicity/progress-back.png</texturebg>
 				<lefttexture border="6,0,0,0">simplicity/progress-left.png</lefttexture>
 				<midtexture border="6,0,6,0">simplicity/osd-front.png</midtexture>
-			</control>	
+			</control>
 				<control type="image">
 					<posx>-150</posx>
 					<posy>14</posy>
@@ -633,7 +633,7 @@
 					<textcolor>white</textcolor>
 					<label>[B]$INFO[VideoPlayer.Plot][/B]</label>
 					<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
-				</control>				
+				</control>
 			<control type="grouplist">
 					<description>Media Codec Flagging Images</description>
 					<posx>60</posx>
@@ -897,19 +897,19 @@
 				<width>320</width>
 				<height>8</height>
 				<info>Player.Progress</info>
-					<visible>true</visible>	
+					<visible>true</visible>
 				<texturebg border="6,0,6,0">simplicity/progress-back.png</texturebg>
 				<lefttexture border="6,0,0,0">simplicity/progress-left.png</lefttexture>
 				<midtexture border="6,0,6,0">simplicity/osd-front.png</midtexture>
-			</control>	
+			</control>
 				<!--<control type="largeimage">
 					<posx>220</posx>
-					<posy>100</posy> 
+					<posy>100</posy>
 					<width>226</width>
 					<height>127</height>
 					<align>center</align>
 					<aligny>bottom</aligny>
-					<texture background="true">$INFO[Player.FolderPath]../clearart.png</texture> 
+					<texture background="true">$INFO[Player.FolderPath]../clearart.png</texture>
 					<visible>Skin.HasSetting(ClearartOnInfoScreen)</visible>
 				</control>-->
 				<control type="grouplist">
@@ -1059,7 +1059,7 @@
 					<width>147</width>
 					<height>57</height>
 					<aspectratio>keep</aspectratio>
-					<texture background="true">$INFO[Player.FolderPath]../logo.png</texture> 
+					<texture background="true">$INFO[Player.FolderPath]../logo.png</texture>
 				</control>
 				<control type="image">
 					<posx>820</posx>
@@ -1067,7 +1067,7 @@
 					<width>147</width>
 					<height>57</height>
 					<aspectratio>keep</aspectratio>
-					<texture background="true">$INFO[Player.FolderPath]logo.png</texture> 
+					<texture background="true">$INFO[Player.FolderPath]logo.png</texture>
 				</control>
 				<control type="image">
 					<posx>993</posx>

@@ -98,7 +98,7 @@
 						<bordertexture border="2">simplicity/thumbborder.png</bordertexture>
 						<bordersize>2</bordersize>
 						<texture fallback="album-fallback.png" background="true">$INFO[ListItem.Thumb]</texture>
-					</control>	
+					</control>
 					<control type="list" id="49">
 						<posx>510</posx>
 						<posy>170</posy>
@@ -547,7 +547,7 @@
 					<onfocus>Control.SetFocus(6)</onfocus>
 					<texturefocus>shade/button-focus-white.png</texturefocus>
 					<texturenofocus>button-nofocus.png</texturenofocus>
-				</control>  
+				</control>
 				<control type="image">
 					<posx>510</posx>
 					<posy>660</posy>

@@ -31,7 +31,7 @@
 						<font>Simplicity_26</font>
 						<textcolor>white</textcolor>
 						<visible>!Skin.HasSetting(UseRandomItems)</visible>
-					</control>	
+					</control>
 					<control type="label">
 						<description>Title label</description>
 						<posx>60</posx>
@@ -44,7 +44,7 @@
 						<font>Simplicity_26</font>
 						<textcolor>white</textcolor>
 						<visible>Skin.HasSetting(UseRandomItems)</visible>
-					</control>	
+					</control>
 					<control type="label">
 						<description>Title label</description>
 						<posx>393.4</posx>
@@ -56,7 +56,7 @@
 						<aligny>center</aligny>
 						<font>Simplicity_26</font>
 						<textcolor>white</textcolor>
-					</control>	
+					</control>
 					<control type="list" id="8005">
 						<posx>60</posx>
 						<posy>50</posy>
@@ -98,7 +98,7 @@
 								<fadetime>200</fadetime>
 								<texture diffuse="simplicity/poster-home-diffuse.png">simplicity/black-back.png</texture>
 								<visible>Control.HasFocus(8006)</visible>
-							</control>				
+							</control>
 						</itemlayout>
 						<focusedlayout height="240" width="150">
 							<control type="image">
@@ -121,7 +121,7 @@
 							</control>
 							<control type="largeimage">
 								<posx>1</posx>
-								<posy>1</posy> 
+								<posy>1</posy>
 								<width>96</width>
 								<height>141</height>
 								<aligny>center</aligny>
@@ -130,14 +130,14 @@
 							</control>
 							<control type="image">
 								<posx>1</posx>
-								<posy>1</posy> 
+								<posy>1</posy>
 								<width>96</width>
 								<height>141</height>
 								<aspectratio align="left">stretch</aspectratio>
 								<fadetime>200</fadetime>
 								<texture diffuse="simplicity/poster-home-diffuse.png">simplicity/black-back.png</texture>
 								<visible>Control.HasFocus(8006)</visible>
-							</control>		
+							</control>
 							<control type="image">
 								<posx>4</posx>
 								<posy>25</posy>
@@ -166,7 +166,7 @@
 								<visible>Skin.HasSetting(UseRandomItems)</visible>
 							</item>
 						</content>
-					</control>				
+					</control>
 					<control type="group">
 						<visible>!Skin.HasSetting(UseRandomItems)</visible>
 						<control type="label">
@@ -180,7 +180,7 @@
 							<aligny>center</aligny>
 							<font>Simplicity_18</font>
 							<textcolor>white</textcolor>
-						</control>	
+						</control>
 						<control type="label">
 							<description>Title label</description>
 							<posx>165</posx>
@@ -192,7 +192,7 @@
 							<aligny>center</aligny>
 							<font>Simplicity_18</font>
 							<textcolor>grey2</textcolor>
-						</control>	
+						</control>
 						<control type="image">
 							<description>Rating value</description>
 							<posx>165</posx>
@@ -200,7 +200,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating5.png</texture>
-							<visible>SubString(Window.Property(LatestMovie.1.Rating),10.,Left)</visible> 
+							<visible>SubString(Window.Property(LatestMovie.1.Rating),10.,Left)</visible>
 						</control>
 						<control type="image">
 							<description>Rating value</description>
@@ -209,7 +209,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating4.png</texture>
-							<visible>SubString(Window.Property(LatestMovie.1.Rating),8.,Left) | SubString(Window.Property(LatestMovie.1.Rating),9.,Left)</visible> 
+							<visible>SubString(Window.Property(LatestMovie.1.Rating),8.,Left) | SubString(Window.Property(LatestMovie.1.Rating),9.,Left)</visible>
 						</control>
 						<control type="image">
 							<description>Rating value</description>
@@ -218,7 +218,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating3.png</texture>
-							<visible>SubString(Window.Property(LatestMovie.1.Rating),6.,Left) | SubString(Window.Property(LatestMovie.1.Rating),7.,Left)</visible> 
+							<visible>SubString(Window.Property(LatestMovie.1.Rating),6.,Left) | SubString(Window.Property(LatestMovie.1.Rating),7.,Left)</visible>
 						</control>
 						<control type="image">
 							<description>Rating value</description>
@@ -227,7 +227,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating2.png</texture>
-							<visible>SubString(Window.Property(LatestMovie.1.Rating),5.,Left) | SubString(Window.Property(LatestMovie.1.Rating),4.,Left)</visible> 
+							<visible>SubString(Window.Property(LatestMovie.1.Rating),5.,Left) | SubString(Window.Property(LatestMovie.1.Rating),4.,Left)</visible>
 						</control>
 						<control type="image">
 							<description>Rating value</description>
@@ -236,7 +236,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating1.png</texture>
-							<visible>SubString(Window.Property(LatestMovie.1.Rating),2.,Left) | SubString(Window.Property(LatestMovie.1.Rating),3.,Left)</visible> 
+							<visible>SubString(Window.Property(LatestMovie.1.Rating),2.,Left) | SubString(Window.Property(LatestMovie.1.Rating),3.,Left)</visible>
 						</control>
 						<control type="image">
 							<description>Rating value</description>
@@ -245,7 +245,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating0.png</texture>
-							<visible>SubString(Window.Property(LatestMovie.1.Rating),0.,Left) | SubString(Window.Property(LatestMovie.1.Rating),1.,Left)</visible> 
+							<visible>SubString(Window.Property(LatestMovie.1.Rating),0.,Left) | SubString(Window.Property(LatestMovie.1.Rating),1.,Left)</visible>
 						</control>
 					</control>
 					<control type="group">
@@ -261,7 +261,7 @@
 							<aligny>center</aligny>
 							<font>Simplicity_18</font>
 							<textcolor>white</textcolor>
-						</control>	
+						</control>
 						<control type="label">
 							<description>Title label</description>
 							<posx>165</posx>
@@ -273,7 +273,7 @@
 							<aligny>center</aligny>
 							<font>Simplicity_18</font>
 							<textcolor>grey2</textcolor>
-						</control>	
+						</control>
 						<control type="image">
 							<description>Rating value</description>
 							<posx>165</posx>
@@ -281,7 +281,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating5.png</texture>
-							<visible>SubString(Window.Property(RandomMovie.1.Rating),10.,Left)</visible> 
+							<visible>SubString(Window.Property(RandomMovie.1.Rating),10.,Left)</visible>
 						</control>
 						<control type="image">
 							<description>Rating value</description>
@@ -290,7 +290,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating4.png</texture>
-							<visible>SubString(Window.Property(RandomMovie.1.Rating),8.,Left) | SubString(Window.Property(RandomMovie.1.Rating),9.,Left)</visible> 
+							<visible>SubString(Window.Property(RandomMovie.1.Rating),8.,Left) | SubString(Window.Property(RandomMovie.1.Rating),9.,Left)</visible>
 						</control>
 						<control type="image">
 							<description>Rating value</description>
@@ -299,7 +299,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating3.png</texture>
-							<visible>SubString(Window.Property(RandomMovie.1.Rating),6.,Left) | SubString(Window.Property(RandomMovie.1.Rating),7.,Left)</visible> 
+							<visible>SubString(Window.Property(RandomMovie.1.Rating),6.,Left) | SubString(Window.Property(RandomMovie.1.Rating),7.,Left)</visible>
 						</control>
 						<control type="image">
 							<description>Rating value</description>
@@ -308,7 +308,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating2.png</texture>
-							<visible>SubString(Window.Property(RandomMovie.1.Rating),5.,Left) | SubString(Window.Property(RandomMovie.1.Rating),4.,Left)</visible> 
+							<visible>SubString(Window.Property(RandomMovie.1.Rating),5.,Left) | SubString(Window.Property(RandomMovie.1.Rating),4.,Left)</visible>
 						</control>
 						<control type="image">
 							<description>Rating value</description>
@@ -317,7 +317,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating1.png</texture>
-							<visible>SubString(Window.Property(RandomMovie.1.Rating),2.,Left) | SubString(Window.Property(RandomMovie.1.Rating),3.,Left)</visible> 
+							<visible>SubString(Window.Property(RandomMovie.1.Rating),2.,Left) | SubString(Window.Property(RandomMovie.1.Rating),3.,Left)</visible>
 						</control>
 						<control type="image">
 							<description>Rating value</description>
@@ -326,7 +326,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating0.png</texture>
-							<visible>SubString(Window.Property(RandomMovie.1.Rating),0.,Left) | SubString(Window.Property(RandomMovie.1.Rating),1.,Left)</visible> 
+							<visible>SubString(Window.Property(RandomMovie.1.Rating),0.,Left) | SubString(Window.Property(RandomMovie.1.Rating),1.,Left)</visible>
 						</control>
 					</control>
 				</control>
@@ -371,10 +371,10 @@
 								<aspectratio align="left">stretch</aspectratio>
 								<fadetime>200</fadetime>
 								<texture diffuse="simplicity/poster-home-diffuse.png" fallback="poster-fallback.png">$INFO[ListItem.ActualIcon]</texture>
-							</control>	
+							</control>
 							<control type="largeimage">
 								<posx>1</posx>
-								<posy>1</posy> 
+								<posy>1</posy>
 								<width>96</width>
 								<height>141</height>
 								<aligny>center</aligny>
@@ -383,13 +383,13 @@
 							</control>
 							<control type="image">
 								<posx>1</posx>
-								<posy>1</posy> 
+								<posy>1</posy>
 								<width>96</width>
 								<height>141</height>
 								<aspectratio align="left">stretch</aspectratio>
 								<fadetime>200</fadetime>
 								<texture diffuse="simplicity/poster-home-diffuse.png">simplicity/black-back.png</texture>
-							</control>					
+							</control>
 						</itemlayout>
 						<focusedlayout height="240" width="115">
 							<control type="image">
@@ -412,7 +412,7 @@
 							</control>
 							<control type="largeimage">
 								<posx>1</posx>
-								<posy>1</posy> 
+								<posy>1</posy>
 								<width>96</width>
 								<height>141</height>
 								<aligny>center</aligny>
@@ -421,14 +421,14 @@
 							</control>
 							<control type="image">
 								<posx>1</posx>
-								<posy>1</posy> 
+								<posy>1</posy>
 								<width>96</width>
 								<height>141</height>
 								<aspectratio align="left">stretch</aspectratio>
 								<fadetime>200</fadetime>
 								<texture diffuse="simplicity/poster-home-diffuse.png">simplicity/black-back.png</texture>
 								<visible>!Control.HasFocus(8006)</visible>
-							</control>		
+							</control>
 							<control type="image">
 								<posx>4</posx>
 								<posy>25</posy>
@@ -475,7 +475,7 @@
 								<onclick>PlayMedia($INFO[Window.Property(LatestMovie.5.Path)])</onclick>
 								<icon>$INFO[Window.Property(LatestMovie.5.Thumb)]</icon>
 								<thumb>$INFO[Window.Property(LatestMovie.5.RunningTime)]</thumb>
-							</item>	
+							</item>
 							<item id="6">
 								<label>$INFO[Window.Property(LatestMovie.6.Title)]</label>
 								<label2>$INFO[Window.Property(LatestMovie.6.Year)]</label2>
@@ -483,9 +483,9 @@
 								<icon>$INFO[Window.Property(LatestMovie.6.Thumb)]</icon>
 								<thumb>$INFO[Window.Property(LatestMovie.6.RunningTime)]</thumb>
 								<visible>!Skin.HasSetting(UseRandomItems)</visible>
-							</item>	
+							</item>
 						</content>
-					</control>				
+					</control>
 				</control>
 
 
@@ -509,7 +509,7 @@
 						<font>Simplicity_26</font>
 						<textcolor>white</textcolor>
 						<visible>!Skin.HasSetting(UseRandomItems)</visible>
-					</control>	
+					</control>
 					<control type="label">
 						<description>Title label</description>
 						<posx>65</posx>
@@ -522,7 +522,7 @@
 						<font>Simplicity_26</font>
 						<textcolor>white</textcolor>
 						<visible>Skin.HasSetting(UseRandomItems)</visible>
-					</control>	
+					</control>
 					<control type="label">
 						<description>Title label</description>
 						<posx>530</posx>
@@ -534,7 +534,7 @@
 						<aligny>center</aligny>
 						<font>Simplicity_26</font>
 						<textcolor>white</textcolor>
-					</control>	
+					</control>
 					<control type="list" id="8007">
 						<posx>65</posx>
 						<posy>50</posy>
@@ -556,7 +556,7 @@
 								<height>129</height>
 								<aspectratio>stretch</aspectratio>
 								<texture>simplicity/episode-shadow.png</texture>
-							</control>	
+							</control>
 							<control type="image">
 								<description>Main Icon</description>
 								<posx>2</posx>
@@ -566,7 +566,7 @@
 								<aspectratio align="left">stretch</aspectratio>
 								<fadetime>200</fadetime>
 								<texture fallback="nothumb.png">$INFO[ListItem.ActualIcon]</texture>
-							</control>		
+							</control>
 							<control type="image">
 								<posx>0</posx>
 								<posy>0</posy>
@@ -583,7 +583,7 @@
 								<aspectratio>stretch</aspectratio>
 								<texture>simplicity/black-back.png</texture>
 								<visible>Control.HasFocus(8008)</visible>
-							</control>	
+							</control>
 						</itemlayout>
 						<focusedlayout height="240" width="240">
 							<control type="image">
@@ -593,7 +593,7 @@
 								<height>129</height>
 								<aspectratio>stretch</aspectratio>
 								<texture>simplicity/episode-shadow.png</texture>
-							</control>		
+							</control>
 							<control type="image">
 								<posx>2</posx>
 								<posy>2</posy>
@@ -609,7 +609,7 @@
 								<height>124</height>
 								<aspectratio>stretch</aspectratio>
 								<texture diffuse="recent-episode-diffuse.png">recent-episode-border.png</texture>
-							</control>	
+							</control>
 							<control type="image">
 								<posx>0</posx>
 								<posy>0</posy>
@@ -618,7 +618,7 @@
 								<aspectratio>stretch</aspectratio>
 								<texture diffuse="recent-episode-diffuse.png">simplicity/black-back.png</texture>
 								<visible>Control.HasFocus(8008)</visible>
-							</control>	
+							</control>
 							<control type="image">
 								<posx>59</posx>
 								<posy>18</posy>
@@ -647,7 +647,7 @@
 								<visible>Skin.HasSetting(UseRandomItems)</visible>
 							</item>
 						</content>
-					</control>				
+					</control>
 					<control type="group">
 					<posx>4</posx>
 						<visible>!Skin.HasSetting(UseRandomItems)</visible>
@@ -662,7 +662,7 @@
 							<aligny>center</aligny>
 							<font>Simplicity_18</font>
 							<textcolor>white</textcolor>
-						</control>	
+						</control>
 						<control type="label">
 							<description>Title label</description>
 							<posx>270</posx>
@@ -674,7 +674,7 @@
 							<aligny>center</aligny>
 							<font>Simplicity_18</font>
 							<textcolor>grey2</textcolor>
-						</control>	
+						</control>
 						<control type="label">
 							<description>Title label</description>
 							<posx>270</posx>
@@ -686,7 +686,7 @@
 							<aligny>center</aligny>
 							<font>Simplicity_18</font>
 							<textcolor>grey2</textcolor>
-						</control>	
+						</control>
 						<control type="image">
 							<description>Rating value</description>
 							<posx>270</posx>
@@ -694,7 +694,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating5.png</texture>
-							<visible>SubString(Window.Property(LatestEpisode.1.Rating),10.,Left)</visible> 
+							<visible>SubString(Window.Property(LatestEpisode.1.Rating),10.,Left)</visible>
 						</control>
 						<control type="image">
 							<description>Rating value</description>
@@ -703,7 +703,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating4.png</texture>
-							<visible>SubString(Window.Property(LatestEpisode.1.Rating),8.,Left) | SubString(Window.Property(LatestEpisode.1.Rating),9.,Left)</visible> 
+							<visible>SubString(Window.Property(LatestEpisode.1.Rating),8.,Left) | SubString(Window.Property(LatestEpisode.1.Rating),9.,Left)</visible>
 						</control>
 						<control type="image">
 							<description>Rating value</description>
@@ -712,7 +712,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating3.png</texture>
-							<visible>SubString(Window.Property(LatestEpisode.1.Rating),6.,Left) | SubString(Window.Property(LatestEpisode.1.Rating),7.,Left)</visible> 
+							<visible>SubString(Window.Property(LatestEpisode.1.Rating),6.,Left) | SubString(Window.Property(LatestEpisode.1.Rating),7.,Left)</visible>
 						</control>
 						<control type="image">
 							<description>Rating value</description>
@@ -721,7 +721,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating2.png</texture>
-							<visible>SubString(Window.Property(LatestEpisode.1.Rating),5.,Left) | SubString(Window.Property(LatestEpisode.1.Rating),4.,Left)</visible> 
+							<visible>SubString(Window.Property(LatestEpisode.1.Rating),5.,Left) | SubString(Window.Property(LatestEpisode.1.Rating),4.,Left)</visible>
 						</control>
 						<control type="image">
 							<description>Rating value</description>
@@ -730,7 +730,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating1.png</texture>
-							<visible>SubString(Window.Property(LatestEpisode.1.Rating),2.,Left) | SubString(Window.Property(LatestEpisode.1.Rating),3.,Left)</visible> 
+							<visible>SubString(Window.Property(LatestEpisode.1.Rating),2.,Left) | SubString(Window.Property(LatestEpisode.1.Rating),3.,Left)</visible>
 						</control>
 						<control type="image">
 							<description>Rating value</description>
@@ -739,7 +739,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating0.png</texture>
-							<visible>SubString(Window.Property(LatestEpisode.1.Rating),0.,Left) | SubString(Window.Property(LatestEpisode.1.Rating),1.,Left)</visible> 
+							<visible>SubString(Window.Property(LatestEpisode.1.Rating),0.,Left) | SubString(Window.Property(LatestEpisode.1.Rating),1.,Left)</visible>
 						</control>
 					</control>
 					<control type="group">
@@ -756,7 +756,7 @@
 							<aligny>center</aligny>
 							<font>Simplicity_18</font>
 							<textcolor>white</textcolor>
-						</control>	
+						</control>
 						<control type="label">
 							<description>Title label</description>
 							<posx>270</posx>
@@ -768,7 +768,7 @@
 							<aligny>center</aligny>
 							<font>Simplicity_18</font>
 							<textcolor>grey2</textcolor>
-						</control>	
+						</control>
 						<control type="label">
 							<description>Title label</description>
 							<posx>270</posx>
@@ -780,7 +780,7 @@
 							<aligny>center</aligny>
 							<font>Simplicity_18</font>
 							<textcolor>grey2</textcolor>
-						</control>	
+						</control>
 						<control type="image">
 							<description>Rating value</description>
 							<posx>270</posx>
@@ -788,7 +788,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating5.png</texture>
-							<visible>SubString(Window.Property(RandomEpisode.1.Rating),10.,Left)</visible> 
+							<visible>SubString(Window.Property(RandomEpisode.1.Rating),10.,Left)</visible>
 						</control>
 						<control type="image">
 							<description>Rating value</description>
@@ -797,7 +797,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating4.png</texture>
-							<visible>SubString(Window.Property(RandomEpisode.1.Rating),8.,Left) | SubString(Window.Property(RandomEpisode.1.Rating),9.,Left)</visible> 
+							<visible>SubString(Window.Property(RandomEpisode.1.Rating),8.,Left) | SubString(Window.Property(RandomEpisode.1.Rating),9.,Left)</visible>
 						</control>
 						<control type="image">
 							<description>Rating value</description>
@@ -806,7 +806,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating3.png</texture>
-							<visible>SubString(Window.Property(RandomEpisode.1.Rating),6.,Left) | SubString(Window.Property(RandomEpisode.1.Rating),7.,Left)</visible> 
+							<visible>SubString(Window.Property(RandomEpisode.1.Rating),6.,Left) | SubString(Window.Property(RandomEpisode.1.Rating),7.,Left)</visible>
 						</control>
 						<control type="image">
 							<description>Rating value</description>
@@ -815,7 +815,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating2.png</texture>
-							<visible>SubString(Window.Property(RandomEpisode.1.Rating),5.,Left) | SubString(Window.Property(RandomEpisode.1.Rating),4.,Left)</visible> 
+							<visible>SubString(Window.Property(RandomEpisode.1.Rating),5.,Left) | SubString(Window.Property(RandomEpisode.1.Rating),4.,Left)</visible>
 						</control>
 						<control type="image">
 							<description>Rating value</description>
@@ -824,7 +824,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating1.png</texture>
-							<visible>SubString(Window.Property(RandomEpisode.1.Rating),2.,Left) | SubString(Window.Property(RandomEpisode.1.Rating),3.,Left)</visible> 
+							<visible>SubString(Window.Property(RandomEpisode.1.Rating),2.,Left) | SubString(Window.Property(RandomEpisode.1.Rating),3.,Left)</visible>
 						</control>
 						<control type="image">
 							<description>Rating value</description>
@@ -833,7 +833,7 @@
 							<width>108</width>
 							<height>21</height>
 							<texture>rating0.png</texture>
-							<visible>SubString(Window.Property(RandomEpisode.1.Rating),0.,Left) | SubString(Window.Property(RandomEpisode.1.Rating),1.,Left)</visible> 
+							<visible>SubString(Window.Property(RandomEpisode.1.Rating),0.,Left) | SubString(Window.Property(RandomEpisode.1.Rating),1.,Left)</visible>
 						</control>
 					</control>
 				</control>
@@ -866,7 +866,7 @@
 								<height>129</height>
 								<aspectratio>stretch</aspectratio>
 								<texture>simplicity/episode-shadow.png</texture>
-							</control>		
+							</control>
 							<control type="image">
 								<posx>2</posx>
 								<posy>2</posy>
@@ -882,7 +882,7 @@
 								<height>124</height>
 								<aspectratio>stretch</aspectratio>
 								<texture diffuse="recent-episode-diffuse.png">recent-episode-border.png</texture>
-							</control>	
+							</control>
 							<control type="image">
 								<posx>0</posx>
 								<posy>0</posy>
@@ -890,7 +890,7 @@
 								<height>124</height>
 								<aspectratio>stretch</aspectratio>
 								<texture diffuse="recent-episode-diffuse.png">simplicity/black-back.png</texture>
-							</control>	
+							</control>
 							<control type="image">
 								<posx>2</posx>
 								<posy>2</posy>
@@ -898,7 +898,7 @@
 								<height>22</height>
 								<aspectratio>stretch</aspectratio>
 								<texture>recent-fade.png</texture>
-							</control>	
+							</control>
 							<control type="image">
 								<posx>2</posx>
 								<posy>99</posy>
@@ -906,7 +906,7 @@
 								<height>22</height>
 								<aspectratio>stretch</aspectratio>
 								<texture>recent-fade.png</texture>
-							</control>	
+							</control>
 							<control type="label">
 								<description>Title label</description>
 								<posx>100</posx>
@@ -918,7 +918,7 @@
 								<aligny>center</aligny>
 								<font>Simplicity_16</font>
 								<textcolor>white</textcolor>
-							</control>		
+							</control>
 							<control type="label">
 								<description>Title label</description>
 								<posx>100</posx>
@@ -930,7 +930,7 @@
 								<aligny>center</aligny>
 								<font>Simplicity_16</font>
 								<textcolor>white</textcolor>
-							</control>		
+							</control>
 						</itemlayout>
 						<focusedlayout height="270" width="205">
 							<control type="image">
@@ -940,7 +940,7 @@
 								<height>129</height>
 								<aspectratio>stretch</aspectratio>
 								<texture>simplicity/episode-shadow.png</texture>
-							</control>		
+							</control>
 							<control type="image">
 								<posx>2</posx>
 								<posy>2</posy>
@@ -956,7 +956,7 @@
 								<height>124</height>
 								<aspectratio>stretch</aspectratio>
 								<texture diffuse="recent-episode-diffuse.png">recent-episode-border.png</texture>
-							</control>	
+							</control>
 							<control type="image">
 								<posx>0</posx>
 								<posy>0</posy>
@@ -965,7 +965,7 @@
 								<aspectratio>stretch</aspectratio>
 								<texture diffuse="recent-episode-diffuse.png">simplicity/black-back.png</texture>
 								<visible>!Control.HasFocus(8008)</visible>
-							</control>	
+							</control>
 							<control type="image">
 								<posx>2</posx>
 								<posy>2</posy>
@@ -973,7 +973,7 @@
 								<height>22</height>
 								<aspectratio>stretch</aspectratio>
 								<texture>recent-fade.png</texture>
-							</control>	
+							</control>
 							<control type="image">
 								<posx>2</posx>
 								<posy>99</posy>
@@ -981,7 +981,7 @@
 								<height>22</height>
 								<aspectratio>stretch</aspectratio>
 								<texture>recent-fade.png</texture>
-							</control>	
+							</control>
 							<control type="label">
 								<description>Title label</description>
 								<posx>100</posx>
@@ -993,7 +993,7 @@
 								<aligny>center</aligny>
 								<font>Simplicity_16</font>
 								<textcolor>white</textcolor>
-							</control>		
+							</control>
 							<control type="label">
 								<description>Title label</description>
 								<posx>100</posx>
@@ -1005,7 +1005,7 @@
 								<aligny>center</aligny>
 								<font>Simplicity_16</font>
 								<textcolor>white</textcolor>
-							</control>		
+							</control>
 							<control type="image">
 								<posx>57</posx>
 								<posy>16</posy>
@@ -1069,7 +1069,7 @@
 								<thumb>$INFO[Window.Property(LatestEpisode.7.RunningTime)]</thumb>
 							</item>-->
 						</content>
-					</control>				
+					</control>
 				</control>
 
 				<control type="group">
@@ -1112,7 +1112,7 @@
 								<aligny>center</aligny>
 								<label>$INFO[ListItem.label]</label>
 								<wrapmultiline>true</wrapmultiline>
-							</control>	
+							</control>
 							<control type="image">
 								<posx>24</posx>
 								<posy>38</posy>
@@ -1157,7 +1157,7 @@
 									<aligny>center</aligny>
 									<label>$INFO[ListItem.label]</label>
 									<visible>!Control.HasFocus(8011)</visible>
-								</control>	
+								</control>
 								<control type="image">
 									<posx>24</posx>
 									<posy>38</posy>
@@ -1183,7 +1183,7 @@
 							<item id="1">
 								<label>Action</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreAction.xsp)</onclick> 
+								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreAction.xsp)</onclick>
 								<icon>-</icon>
 								<thumb>simplicity/new-genres/action.png</thumb>
 								<visible>Skin.HasSetting(HomeGenreButtonAction)</visible>
@@ -1191,7 +1191,7 @@
 							<item id="2">
 								<label>Adult</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreAdult.xsp)</onclick> 
+								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreAdult.xsp)</onclick>
 								<icon>-</icon>
 								<thumb>simplicity/new-genres/adult.png</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton2)</visible>
@@ -1199,7 +1199,7 @@
 							<item id="3">
 								<label>Adventure</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreAdventure.xsp)</onclick> 
+								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreAdventure.xsp)</onclick>
 								<icon>-</icon>
 								<thumb>simplicity/new-genres/adventure.png</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton3)</visible>
@@ -1207,7 +1207,7 @@
 							<item id="4">
 								<label>Animation</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreAnimation.xsp)</onclick> 
+								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreAnimation.xsp)</onclick>
 								<icon>-</icon>
 								<thumb>simplicity/new-genres/animation.png</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton4)</visible>
@@ -1215,7 +1215,7 @@
 							<item id="5">
 								<label>Anime</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreAnime.xsp)</onclick> 
+								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreAnime.xsp)</onclick>
 								<icon>-</icon>
 								<thumb>simplicity/new-genres/anime.png</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton5)</visible>
@@ -1223,7 +1223,7 @@
 							<item id="6">
 								<label>Biography</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreBiography.xsp)</onclick> 
+								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreBiography.xsp)</onclick>
 								<icon>-</icon>
 								<thumb>simplicity/new-genres/biography.png</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton6)</visible>
@@ -1231,7 +1231,7 @@
 							<item id="8">
 								<label>Bollywood</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreBollywood.xsp)</onclick> 
+								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreBollywood.xsp)</onclick>
 								<icon>-</icon>
 								<thumb>simplicity/new-genres/bollywood.png</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton8)</visible>
@@ -1239,7 +1239,7 @@
 							<item id="9">
 								<label>Children</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreChildren.xsp)</onclick> 
+								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreChildren.xsp)</onclick>
 								<icon>-</icon>
 								<thumb>simplicity/new-genres/children.png</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton9)</visible>
@@ -1247,7 +1247,7 @@
 							<item id="10">
 								<label>Christmas</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreChristmas.xsp)</onclick> 
+								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreChristmas.xsp)</onclick>
 								<icon>-</icon>
 								<thumb>simplicity/new-genres/christmas.png</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton10)</visible>
@@ -1255,7 +1255,7 @@
 							<item id="11">
 								<label>Comedy</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreComedy.xsp)</onclick> 
+								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreComedy.xsp)</onclick>
 								<icon>-</icon>
 								<thumb>simplicity/new-genres/comedy.png</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton11)</visible>
@@ -1263,7 +1263,7 @@
 							<item id="12">
 								<label>Concert</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreConcert.xsp)</onclick> 
+								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreConcert.xsp)</onclick>
 								<icon>-</icon>
 								<thumb>simplicity/new-genres/concert.png</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton12)</visible>
@@ -1271,7 +1271,7 @@
 							<item id="13">
 								<label>Crime</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreCrime.xsp)</onclick> 
+								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreCrime.xsp)</onclick>
 								<icon>-</icon>
 								<thumb>simplicity/new-genres/crime.png</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton13)</visible>
@@ -1279,7 +1279,7 @@
 							<item id="14">
 								<label>Disaster</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreDisaster.xsp)</onclick> 
+								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreDisaster.xsp)</onclick>
 								<icon>-</icon>
 								<thumb>simplicity/new-genres/disaster.png</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton14)</visible>
@@ -1287,7 +1287,7 @@
 							<item id="15">
 								<label>Documentary</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreDocumentary.xsp)</onclick> 
+								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreDocumentary.xsp)</onclick>
 								<icon>-</icon>
 								<thumb>simplicity/new-genres/documentary.png</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton15)</visible>
@@ -1295,7 +1295,7 @@
 							<item id="16">
 								<label>Drama</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreDrama.xsp)</onclick> 
+								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreDrama.xsp)</onclick>
 								<icon>-</icon>
 								<thumb>simplicity/new-genres/drama.png</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton16)</visible>
@@ -1303,7 +1303,7 @@
 							<item id="17">
 								<label>Family</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreFamily.xsp)</onclick> 
+								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreFamily.xsp)</onclick>
 								<icon>-</icon>
 								<thumb>simplicity/new-genres/family.png</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton17)</visible>
@@ -1311,7 +1311,7 @@
 							<item id="18">
 								<label>Fantasy</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreFantasy.xsp)</onclick> 
+								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreFantasy.xsp)</onclick>
 								<icon>-</icon>
 								<thumb>simplicity/new-genres/fantasy.png</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton18)</visible>
@@ -1319,7 +1319,7 @@
 							<item id="19">
 								<label>Halloween</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreHalloween.xsp)</onclick> 
+								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreHalloween.xsp)</onclick>
 								<icon>-</icon>
 								<thumb>simplicity/new-genres/halloween.png</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton19)</visible>
@@ -1327,7 +1327,7 @@
 							<item id="20">
 								<label>Hentai</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreHentai.xsp)</onclick> 
+								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreHentai.xsp)</onclick>
 								<icon>-</icon>
 								<thumb>simplicity/new-genres/hentai.png</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton20)</visible>
@@ -1335,7 +1335,7 @@
 							<item id="21">
 								<label>History</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreHistory.xsp)</onclick> 
+								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreHistory.xsp)</onclick>
 								<icon>-</icon>
 								<thumb>simplicity/new-genres/history.png</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton21)</visible>
@@ -1343,7 +1343,7 @@
 							<item id="22">
 								<label>Horror</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreHorror.xsp)</onclick> 
+								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreHorror.xsp)</onclick>
 								<icon>-</icon>
 								<thumb>simplicity/new-genres/horror.png</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton22)</visible>
@@ -1351,7 +1351,7 @@
 							<item id="23">
 								<label>Independent</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreIndependent.xsp)</onclick> 
+								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreIndependent.xsp)</onclick>
 								<icon>-</icon>
 								<thumb>simplicity/new-genres/independent.png</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton23)</visible>
@@ -1359,7 +1359,7 @@
 							<item id="24">
 								<label>Monster</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreMonster.xsp)</onclick> 
+								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreMonster.xsp)</onclick>
 								<icon>-</icon>
 								<thumb>simplicity/new-genres/monster.png</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton24)</visible>
@@ -1367,7 +1367,7 @@
 							<item id="25">
 								<label>Music</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreMusic.xsp)</onclick> 
+								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreMusic.xsp)</onclick>
 								<icon>-</icon>
 								<thumb>simplicity/new-genres/music.png</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton25)</visible>
@@ -1375,7 +1375,7 @@
 							<item id="26">
 								<label>Musical</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreMusical.xsp)</onclick> 
+								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreMusical.xsp)</onclick>
 								<icon>-</icon>
 								<thumb>simplicity/new-genres/musical.png</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton26)</visible>
@@ -1383,7 +1383,7 @@
 							<item id="27">
 								<label>Mystery</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreMystery.xsp)</onclick> 
+								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreMystery.xsp)</onclick>
 								<icon>-</icon>
 								<thumb>simplicity/new-genres/mystery.png</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton27)</visible>
@@ -1391,7 +1391,7 @@
 							<item id="28">
 								<label>Nature</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreNature.xsp)</onclick> 
+								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreNature.xsp)</onclick>
 								<icon>-</icon>
 								<thumb>simplicity/new-genres/nature.png</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton28)</visible>
@@ -1399,7 +1399,7 @@
 							<item id="29">
 								<label>Religion</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreReligion.xsp)</onclick> 
+								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreReligion.xsp)</onclick>
 								<icon>-</icon>
 								<thumb>simplicity/new-genres/religion.png</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton29)</visible>
@@ -1407,7 +1407,7 @@
 							<item id="30">
 								<label>Romance</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreRomance.xsp)</onclick> 
+								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreRomance.xsp)</onclick>
 								<icon>-</icon>
 								<thumb>simplicity/new-genres/romance.png</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton30)</visible>
@@ -1415,7 +1415,7 @@
 							<item id="31">
 								<label>Sci-fi</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreSciFi.xsp)</onclick> 
+								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreSciFi.xsp)</onclick>
 								<icon>-</icon>
 								<thumb>simplicity/new-genres/sci-fi.png</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton31)</visible>
@@ -1423,7 +1423,7 @@
 							<item id="32">
 								<label>Short</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreShort.xsp)</onclick> 
+								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreShort.xsp)</onclick>
 								<icon>-</icon>
 								<thumb>simplicity/new-genres/short.png</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton32)</visible>
@@ -1431,7 +1431,7 @@
 							<item id="33">
 								<label>Sport</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreSports.xsp)</onclick> 
+								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreSports.xsp)</onclick>
 								<icon>-</icon>
 								<thumb>simplicity/new-genres/sport.png</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton33)</visible>
@@ -1439,7 +1439,7 @@
 							<item id="34">
 								<label>Superhero</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreSuperhero.xsp)</onclick> 
+								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreSuperhero.xsp)</onclick>
 								<icon>-</icon>
 								<thumb>simplicity/new-genres/superhero.png</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton34)</visible>
@@ -1447,7 +1447,7 @@
 							<item id="35">
 								<label>Supernatural</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreSupernatural.xsp)</onclick> 
+								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreSupernatural.xsp)</onclick>
 								<icon>-</icon>
 								<thumb>simplicity/new-genres/supernatural.png</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton35)</visible>
@@ -1455,7 +1455,7 @@
 							<item id="36">
 								<label>Thriller</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreThriller.xsp)</onclick> 
+								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreThriller.xsp)</onclick>
 								<icon>-</icon>
 								<thumb>simplicity/new-genres/thriller.png</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton36)</visible>
@@ -1463,7 +1463,7 @@
 							<item id="37">
 								<label>War</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreWar.xsp)</onclick> 
+								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreWar.xsp)</onclick>
 								<icon>-</icon>
 								<thumb>simplicity/new-genres/war.png</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton37)</visible>
@@ -1471,7 +1471,7 @@
 							<item id="38">
 								<label>Western</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreWestern.xsp)</onclick> 
+								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreWestern.xsp)</onclick>
 								<icon>-</icon>
 								<thumb>simplicity/new-genres/western.png</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton38)</visible>
@@ -1479,7 +1479,7 @@
 							<item id="39">
 								<label>Wrestling</label>
 								<label2>-</label2>
-								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreWrestling.xsp)</onclick> 
+								<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreWrestling.xsp)</onclick>
 								<icon>-</icon>
 								<thumb>simplicity/new-genres/wrestling.png</thumb>
 								<visible>Skin.HasSetting(HomeGenreButton39)</visible>
@@ -1491,18 +1491,18 @@
 						<posy>65</posy>
 						<width>35</width>
 						<height>35</height>
-						<texture background="true">simplicity/left-arrow.png</texture> 
+						<texture background="true">simplicity/left-arrow.png</texture>
 						<animation effect="fade" start="100" end="30" time="0" condition="!Control.HasFocus(8011)">Conditional</animation>
 						<visible>Control.HasFocus(8011) + Skin.HasSetting(HomeGenreButton) + Container(8011).HasPrevious</visible>
-					</control>		
+					</control>
 					<control type="image">
 						<posx>1016</posx>
 						<posy>65</posy>
 						<width>35</width>
 						<height>35</height>
-						<texture background="true" flipx="true">simplicity/left-arrow.png</texture> 
+						<texture background="true" flipx="true">simplicity/left-arrow.png</texture>
 						<visible>Control.HasFocus(8011) + Skin.HasSetting(HomeGenreButton) + Container(8011).HasNext</visible>
-					</control>		
+					</control>
 				</control>
 
 
@@ -1524,7 +1524,7 @@
 						<aligny>center</aligny>
 						<font>Simplicity_26</font>
 						<textcolor>white</textcolor>
-					</control>	
+					</control>
 					<control type="label">
 						<description>Title label</description>
 						<posx>549</posx>
@@ -1536,7 +1536,7 @@
 						<aligny>center</aligny>
 						<font>Simplicity_26</font>
 						<textcolor>white</textcolor>
-					</control>	
+					</control>
 					<control type="list" id="8009">
 						<posx>77</posx>
 						<posy>50</posy>
@@ -1559,7 +1559,7 @@
 								<height>155</height>
 								<aspectratio>stretch</aspectratio>
 								<texture>recent-album-shadow.png</texture>
-							</control>	
+							</control>
 							<control type="image">
 								<description>Main Icon</description>
 								<posx>2</posx>
@@ -1578,7 +1578,7 @@
 									<texture diffuse="recent-album-diffuse.png">simplicity/black-back.png</texture>
 									<visible>Control.HasFocus(8010)</visible>
 								</control>
-							</control>		
+							</control>
 						</itemlayout>
 						<focusedlayout height="240" width="210">
 							<control type="image">
@@ -1589,7 +1589,7 @@
 								<height>155</height>
 								<aspectratio>stretch</aspectratio>
 								<texture>recent-album-shadow.png</texture>
-							</control>	
+							</control>
 							<control type="image">
 								<posx>2</posx>
 								<posy>2</posy>
@@ -1634,7 +1634,7 @@
 								<thumb>-</thumb>
 							</item>
 						</content>
-					</control>				
+					</control>
 					<control type="label">
 						<description>Title label</description>
 						<posx>210</posx>
@@ -1646,7 +1646,7 @@
 						<aligny>center</aligny>
 						<font>Simplicity_18</font>
 						<textcolor>white</textcolor>
-					</control>	
+					</control>
 					<control type="label">
 						<description>Title label</description>
 						<posx>210</posx>
@@ -1658,7 +1658,7 @@
 						<aligny>center</aligny>
 						<font>Simplicity_18</font>
 						<textcolor>grey2</textcolor>
-					</control>	
+					</control>
 					<control type="label">
 						<description>Title label</description>
 						<posx>210</posx>
@@ -1678,7 +1678,7 @@
 						<width>108</width>
 						<height>21</height>
 						<texture>rating5.png</texture>
-						<visible>SubString(Window.Property(LatestSong.1.Rating),10.,Left)</visible> 
+						<visible>SubString(Window.Property(LatestSong.1.Rating),10.,Left)</visible>
 					</control>
 					<control type="image">
 						<description>Rating value</description>
@@ -1687,7 +1687,7 @@
 						<width>108</width>
 						<height>21</height>
 						<texture>rating4.png</texture>
-						<visible>SubString(Window.Property(LatestSong.1.Rating),8.,Left) | SubString(Window.Property(LatestSong.1.Rating),9.,Left)</visible> 
+						<visible>SubString(Window.Property(LatestSong.1.Rating),8.,Left) | SubString(Window.Property(LatestSong.1.Rating),9.,Left)</visible>
 					</control>
 					<control type="image">
 						<description>Rating value</description>
@@ -1696,7 +1696,7 @@
 						<width>108</width>
 						<height>21</height>
 						<texture>rating3.png</texture>
-						<visible>SubString(Window.Property(LatestSong.1.Rating),6.,Left) | SubString(Window.Property(LatestSong.1.Rating),7.,Left)</visible> 
+						<visible>SubString(Window.Property(LatestSong.1.Rating),6.,Left) | SubString(Window.Property(LatestSong.1.Rating),7.,Left)</visible>
 					</control>
 					<control type="image">
 						<description>Rating value</description>
@@ -1705,7 +1705,7 @@
 						<width>108</width>
 						<height>21</height>
 						<texture>rating2.png</texture>
-						<visible>SubString(Window.Property(LatestSong.1.Rating),5.,Left) | SubString(Window.Property(LatestSong.1.Rating),4.,Left)</visible> 
+						<visible>SubString(Window.Property(LatestSong.1.Rating),5.,Left) | SubString(Window.Property(LatestSong.1.Rating),4.,Left)</visible>
 					</control>
 					<control type="image">
 						<description>Rating value</description>
@@ -1714,7 +1714,7 @@
 						<width>108</width>
 						<height>21</height>
 						<texture>rating1.png</texture>
-						<visible>SubString(Window.Property(LatestSong.1.Rating),2.,Left) | SubString(Window.Property(LatestSong.1.Rating),3.,Left)</visible> 
+						<visible>SubString(Window.Property(LatestSong.1.Rating),2.,Left) | SubString(Window.Property(LatestSong.1.Rating),3.,Left)</visible>
 					</control>
 					<control type="image">
 						<description>Rating value</description>
@@ -1723,7 +1723,7 @@
 						<width>108</width>
 						<height>21</height>
 						<texture>rating0.png</texture>
-						<visible>SubString(Window.Property(LatestSong.1.Rating),0.,Left) | SubString(Window.Property(LatestSong.1.Rating),1.,Left)</visible> 
+						<visible>SubString(Window.Property(LatestSong.1.Rating),0.,Left) | SubString(Window.Property(LatestSong.1.Rating),1.,Left)</visible>
 					</control>
 				</control>
 
@@ -1757,7 +1757,7 @@
 								<height>155</height>
 								<aspectratio>stretch</aspectratio>
 								<texture>recent-album-shadow.png</texture>
-							</control>	
+							</control>
 							<control type="image">
 								<posx>2</posx>
 								<posy>2</posy>
@@ -1781,7 +1781,7 @@
 								<height>124</height>
 								<aspectratio>stretch</aspectratio>
 								<texture diffuse="recent-album-diffuse.png">simplicity/black-back.png</texture>
-							</control>		
+							</control>
 						</itemlayout>
 						<focusedlayout height="270" width="125">
 							<control type="image">
@@ -1792,7 +1792,7 @@
 								<height>155</height>
 								<aspectratio>stretch</aspectratio>
 								<texture>recent-album-shadow.png</texture>
-							</control>	
+							</control>
 							<control type="image">
 								<posx>2</posx>
 								<posy>2</posy>
@@ -1817,7 +1817,7 @@
 								<aspectratio>stretch</aspectratio>
 								<texture diffuse="recent-album-diffuse.png">simplicity/black-back.png</texture>
 								<visible>!Control.HasFocus(8010)</visible>
-							</control>		
+							</control>
 							<control type="image">
 								<posx>19</posx>
 								<posy>18</posy>
@@ -1878,7 +1878,7 @@
 								<thumb>$INFO[Window.Property(LatestAlbum.6.RunningTime)]</thumb>
 							</item>
 						</content>
-					</control>				
+					</control>
 				</control>
 
 
@@ -2130,7 +2130,7 @@
 							</item>
 						</content>
 					</control>
-				</control>		
+				</control>
 
 
 
@@ -2393,7 +2393,7 @@
 							</item>
 						</content>
 					</control>
-				</control>		
+				</control>
 
 				<control type="group">
 					<animation effect="fade" time="400" delay="800" start="0" end="100" condition="[Container(9000).Hasfocus(9)]">Conditional</animation>
@@ -2513,7 +2513,7 @@
 							</item>
 						</content>
 					</control>
-				</control>		
+				</control>
 
 
 
@@ -2560,10 +2560,10 @@
 								<aspectratio align="left">stretch</aspectratio>
 								<fadetime>200</fadetime>
 								<texture diffuse="simplicity/poster-home-diffuse.png" fallback="poster-fallback.png">$INFO[ListItem.ActualIcon]</texture>
-							</control>	
+							</control>
 							<control type="largeimage">
 								<posx>1</posx>
-								<posy>1</posy> 
+								<posy>1</posy>
 								<width>96</width>
 								<height>141</height>
 								<aligny>center</aligny>
@@ -2572,13 +2572,13 @@
 							</control>
 							<control type="image">
 								<posx>1</posx>
-								<posy>1</posy> 
+								<posy>1</posy>
 								<width>96</width>
 								<height>141</height>
 								<aspectratio align="left">stretch</aspectratio>
 								<fadetime>200</fadetime>
 								<texture diffuse="simplicity/poster-home-diffuse.png">simplicity/black-back.png</texture>
-							</control>					
+							</control>
 						</itemlayout>
 						<focusedlayout height="240" width="175">
 							<control type="image">
@@ -2601,7 +2601,7 @@
 							</control>
 							<control type="largeimage">
 								<posx>1</posx>
-								<posy>1</posy> 
+								<posy>1</posy>
 								<width>96</width>
 								<height>141</height>
 								<aligny>center</aligny>
@@ -2610,14 +2610,14 @@
 							</control>
 							<control type="image">
 								<posx>1</posx>
-								<posy>1</posy> 
+								<posy>1</posy>
 								<width>96</width>
 								<height>141</height>
 								<aspectratio align="left">stretch</aspectratio>
 								<fadetime>200</fadetime>
 								<texture diffuse="simplicity/poster-home-diffuse.png">simplicity/black-back.png</texture>
 								<visible>!Control.HasFocus(8015)</visible>
-							</control>		
+							</control>
 							<control type="image">
 								<posx>24.5</posx>
 								<posy>47</posy>
@@ -2663,16 +2663,16 @@
 								<onclick>PlayMedia($INFO[Window.Property(RandomMovie.5.Path)])</onclick>
 								<icon>$INFO[Window.Property(RandomMovie.5.Thumb)]</icon>
 								<thumb>$INFO[Window.Property(RandomMovie.5.RunningTime)]</thumb>
-							</item>	
+							</item>
 							<item id="6">
 								<label>$INFO[Window.Property(RandomMovie.6.Title)]</label>
 								<label2>$INFO[Window.Property(RandomMovie.6.Year)]</label2>
 								<onclick>PlayMedia($INFO[Window.Property(RandomMovie.6.Path)])</onclick>
 								<icon>$INFO[Window.Property(RandomMovie.6.Thumb)]</icon>
 								<thumb>$INFO[Window.Property(RandomMovie.6.RunningTime)]</thumb>
-							</item>	
+							</item>
 						</content>
-					</control>				
+					</control>
 				</control>-->
 
 

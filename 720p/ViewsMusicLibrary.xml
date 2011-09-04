@@ -22,7 +22,7 @@
 						<posx>-355</posx>
 						<posy>298</posy>
 						<width>1800</width>
-						<height>300</height>		
+						<height>300</height>
 				<include condition="Skin.HasSetting(VideoUseGuide)">OpenGuideDown</include>
 				<include condition="Skin.HasSetting(VideoUseRecent)">OpenRecentDown</include>
 				<include condition="Skin.HasSetting(VideoUseCustom)">OpenCustomDown</include>
@@ -37,7 +37,7 @@
 						<itemlayout height="290" width="180">
 							<control type="largeimage">
 								<posx>0</posx>
-								<posy>2</posy> 
+								<posy>2</posy>
 								<width>168</width>
 								<height>168</height>
 								<aligny>center</aligny>
@@ -45,7 +45,7 @@
 							</control>
 							<control type="largeimage">
 								<posx>0</posx>
-								<posy>2</posy> 
+								<posy>2</posy>
 								<width>160</width>
 								<height>160</height>
 								<aligny>center</aligny>
@@ -55,7 +55,7 @@
 							</control>
 							<control type="largeimage">
 								<posx>0</posx>
-								<posy>2</posy> 
+								<posy>2</posy>
 								<width>160</width>
 								<height>160</height>
 								<aligny>center</aligny>
@@ -66,7 +66,7 @@
 							</control>
 							<control type="largeimage">
 								<posx>0</posx>
-								<posy>2</posy> 
+								<posy>2</posy>
 								<width>160</width>
 								<height>160</height>
 								<aligny>center</aligny>
@@ -77,7 +77,7 @@
 							</control>
 							<control type="largeimage">
 								<posx>-2</posx>
-								<posy>0</posy> 
+								<posy>0</posy>
 								<width>164</width>
 								<height>164</height>
 								<aligny>center</aligny>
@@ -86,7 +86,7 @@
 							</control>
 							<control type="largeimage">
 								<posx>-2</posx>
-								<posy>0</posy> 
+								<posy>0</posy>
 								<width>164</width>
 								<height>164</height>
 								<aligny>center</aligny>
@@ -97,60 +97,60 @@
 						<focusedlayout height="390" width="280">
 							<control type="largeimage">
 								<posx>50</posx>
-								<posy>4</posy> 
+								<posy>4</posy>
 								<width>169</width>
 								<height>169</height>
 								<aligny>center</aligny>
 								<texture>simplicity/album-slide-shadow.png</texture>
-								<animation  reversible="false" effect="zoom" end="160" center="auto" time="200">Focus</animation> 
+								<animation  reversible="false" effect="zoom" end="160" center="auto" time="200">Focus</animation>
 							</control>
 							<control type="largeimage">
 								<posx>50</posx>
-								<posy>4</posy> 
+								<posy>4</posy>
 								<width>160</width>
 								<height>160</height>
 								<aligny>center</aligny>
 								<texture fallback="album-fallback.png" background="true">root-album.png</texture>
-								<animation  reversible="false" effect="zoom" end="160" center="auto" time="200">Focus</animation> 
+								<animation  reversible="false" effect="zoom" end="160" center="auto" time="200">Focus</animation>
 								<visible>stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 								<aspectratio>stretch</aspectratio>
 							</control>
 							<control type="largeimage">
 								<posx>50</posx>
-								<posy>4</posy> 
+								<posy>4</posy>
 								<width>160</width>
 								<height>160</height>
 								<aligny>center</aligny>
 								<texture fallback="album-fallback.png" background="true">$INFO[ListItem.Thumb]</texture>
-								<animation  reversible="false" effect="zoom" end="160" center="auto" time="200">Focus</animation> 
+								<animation  reversible="false" effect="zoom" end="160" center="auto" time="200">Focus</animation>
 								<visible>!StringCompare(ListItem.label,* All albums)</visible>
 								<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 								<aspectratio>stretch</aspectratio>
 							</control>
 							<control type="largeimage">
 								<posx>50</posx>
-								<posy>4</posy> 
+								<posy>4</posy>
 								<width>160</width>
 								<height>160</height>
 								<aligny>center</aligny>
 								<texture>simplicity/all-albums.png</texture>
-								<animation  reversible="false" effect="zoom" end="160" center="auto" time="200">Focus</animation> 
+								<animation  reversible="false" effect="zoom" end="160" center="auto" time="200">Focus</animation>
 								<visible>StringCompare(ListItem.label,* All albums)</visible>
 								<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 								<aspectratio>stretch</aspectratio>
 							</control>
 							<control type="largeimage">
 								<posx>48</posx>
-								<posy>1</posy> 
+								<posy>1</posy>
 								<width>164</width>
 								<height>164</height>
 								<aligny>center</aligny>
 								<texture diffuse="simplicity/poster-slide-fanart-diffuse.png" background="true">simplicity/poster-border5.png</texture>
-								<animation  reversible="false" effect="zoom" end="160" center="auto" time="200">Focus</animation> 
+								<animation  reversible="false" effect="zoom" end="160" center="auto" time="200">Focus</animation>
 								<aspectratio>stretch</aspectratio>
 							</control>
 						</focusedlayout>
-					</control>	
+					</control>
 					<control type="group">
 						<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 						<include>Zoom</include>
@@ -312,7 +312,7 @@
 
 							<control type="image">
 								<posx>860</posx>
-								<posy>590</posy> 
+								<posy>590</posy>
 								<width>400</width>
 								<height>155</height>
 								<aligny>center</aligny>
@@ -354,7 +354,7 @@
 				<focusposition>1</focusposition>
 				<preloaditems>400</preloaditems>
 				<visible>Container.Content(MusicVideos)</visible>
-				<itemlayout height="220" width="360">	
+				<itemlayout height="220" width="360">
 					<control type="image">
 						<posx>3</posx>
 						<posy>31</posy>
@@ -377,7 +377,7 @@
 						<width>345</width>
 						<height>192</height>
 						<texture background="true">simplicity/black-back.png</texture>
-						<aspectratio scalediffuse="false">stretch</aspectratio>		
+						<aspectratio scalediffuse="false">stretch</aspectratio>
 					</control>
 				</itemlayout>
 				<focusedlayout height="340" width="420">
@@ -391,7 +391,7 @@
 							<height>200</height>
 							<aspectratio scalediffuse="false">stretch</aspectratio>
 							<texture background="true">simplicity/fanart-slide-fanart-shadow.png</texture>
-							<animation effect="zoom" end="120" center="auto" time="200">Focus</animation> 
+							<animation effect="zoom" end="120" center="auto" time="200">Focus</animation>
 						</control>
 						<control type="image">
 							<posy>4</posy>
@@ -401,7 +401,7 @@
 							<texture background="true">$INFO[Listitem.Icon]</texture>
 							<bordertexture border="4">simplicity/thumbborder.png</bordertexture>
 							<bordersize>4</bordersize>
-							<animation effect="zoom" end="120" center="auto" time="200">Focus</animation> 
+							<animation effect="zoom" end="120" center="auto" time="200">Focus</animation>
 						</control>
 					</control>
 				</focusedlayout>
@@ -485,7 +485,7 @@
 			<include condition="Skin.HasSetting(VideoUseRecent)">RightOpenRecent</include>
 			<include condition="Skin.HasSetting(VideoUseCustom)">RightOpenCustom</include>
 			<control type="fixedlist" id="512">
-				<include>Zoom</include>		
+				<include>Zoom</include>
 				<posx>544</posx>
 				<posy>120</posy>
 				<width>930</width>
@@ -524,7 +524,7 @@
 							<textcolor>grey4</textcolor>
 							<align>left</align>
 							<label>$INFO[ListItem.title]</label>
-						</control>	
+						</control>
 						<control type="label">
 							<posx>135</posx>
 							<posy>35</posy>
@@ -534,8 +534,8 @@
 							<textcolor>grey2</textcolor>
 							<align>left</align>
 							<label>Released: $INFO[ListItem.Year]</label>
-						</control>					
-					</control>	
+						</control>
+					</control>
 				</itemlayout>
 				<focusedlayout height="210" width="800">
 					<control type="label">
@@ -601,7 +601,7 @@
 				</focusedlayout>
 			</control>
 			<control type="group">
-				<include>Zoom</include>		
+				<include>Zoom</include>
 				<control type="label">
 					<posx>90</posx>
 					<posy>150</posy>
@@ -614,7 +614,7 @@
 					<scrollspeed>0</scrollspeed>
 					<align>left</align>
 					<label>$INFO[ListItem.Artist]</label>
-				</control>		
+				</control>
 				<control type="label">
 					<posx>90</posx>
 					<posy>210</posy>
@@ -627,7 +627,7 @@
 					<scrollspeed>0</scrollspeed>
 					<align>left</align>
 					<label>$INFO[ListItem.Album]</label>
-				</control>		
+				</control>
 				<control type="label">
 					<posx>90</posx>
 					<posy>240</posy>
@@ -640,7 +640,7 @@
 					<scrollspeed>0</scrollspeed>
 					<align>left</align>
 					<label>Released: [COLOR=grey4]$INFO[ListItem.Year][/COLOR]</label>
-				</control>		
+				</control>
 				<control type="label">
 					<posx>90</posx>
 					<posy>270</posy>
@@ -666,7 +666,7 @@
 					<scrollspeed>0</scrollspeed>
 					<align>left</align>
 					<label>Length: [COLOR=grey4]$INFO[ListItem.Duration][/COLOR]</label>
-				</control>				
+				</control>
 				<control type="textbox">
 					<posx>90</posx>
 					<posy>350</posy>
@@ -693,7 +693,7 @@
 			<include condition="Skin.HasSetting(VideoUseRecent)">RightOpenRecent</include>
 			<include condition="Skin.HasSetting(VideoUseCustom)">RightOpenCustom</include>
 			<control type="fixedlist" id="513">
-				<include>Zoom</include>		
+				<include>Zoom</include>
 				<posx>544</posx>
 				<posy>120</posy>
 				<width>930</width>
@@ -722,7 +722,7 @@
 							<textcolor>grey4</textcolor>
 							<align>left</align>
 							<label>$INFO[ListItem.label]</label>
-						</control>	
+						</control>
 						<control type="label">
 							<posx>135</posx>
 							<posy>35</posy>
@@ -732,8 +732,8 @@
 							<textcolor>grey2</textcolor>
 							<align>left</align>
 							<label>$INFO[ListItem.Artist]</label>
-						</control>					
-					</control>	
+						</control>
+					</control>
 				</itemlayout>
 				<focusedlayout height="210" width="800">
 					<control type="label">
@@ -814,7 +814,7 @@
 			<control type="group">
 				<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 					<posy>-15</posy>
-				<include>Zoom</include>		
+				<include>Zoom</include>
 				<control type="label">
 					<posx>90</posx>
 					<posy>150</posy>
@@ -828,7 +828,7 @@
 					<align>left</align>
 					<label>$INFO[ListItem.Artist]</label>
 					<visible>!StringCompare(ListItem.label,* All albums)</visible>
-				</control>		
+				</control>
 				<control type="label">
 					<posx>90</posx>
 					<posy>150</posy>
@@ -842,7 +842,7 @@
 					<align>left</align>
 					<label>$INFO[Container().ListItem(1).Artist]</label>
 					<visible>StringCompare(ListItem.label,* All albums)</visible>
-				</control>		
+				</control>
 				<control type="label">
 					<posx>90</posx>
 					<posy>210</posy>
@@ -856,7 +856,7 @@
 					<align>left</align>
 					<label>- $INFO[Container().ListItem(1).Label]</label>
 					<visible>StringCompare(ListItem.label,* All albums)</visible>
-				</control>		
+				</control>
 				<control type="label">
 					<posx>90</posx>
 					<posy>240</posy>
@@ -871,7 +871,7 @@
 					<label>- $INFO[Container().ListItem(2).Label]</label>
 					<visible>StringCompare(ListItem.label,* All albums)</visible>
 					<visible>!StringCompare(Container().ListItem(2).Label,* All albums)</visible>
-				</control>		
+				</control>
 				<control type="label">
 					<posx>90</posx>
 					<posy>270</posy>
@@ -891,7 +891,7 @@
 					<visible>!StringCompare(Container().ListItem(3).Label,Container().ListItem(4).Label)]</visible>
 					<visible>!StringCompare(Container().ListItem(3).Label,Container().ListItem(5).Label)]</visible>
 					<visible>!StringCompare(Container().ListItem(3).Label,Container().ListItem(6).Label)]</visible>
-				</control>		
+				</control>
 				<control type="label">
 					<posx>90</posx>
 					<posy>300</posy>
@@ -910,7 +910,7 @@
 					<visible>!StringCompare(Container().ListItem(4).Label,Container().ListItem(2).Label)]</visible>
 					<visible>!StringCompare(Container().ListItem(4).Label,Container().ListItem(3).Label)]</visible>
 					<visible>!StringCompare(Container().ListItem(4).Label,Container().ListItem(5).Label)]</visible>
-				</control>		
+				</control>
 				<control type="label">
 					<posx>90</posx>
 					<posy>330</posy>
@@ -929,7 +929,7 @@
 					<visible>!StringCompare(Container().ListItem(5).Label,Container().ListItem(2).Label)]</visible>
 					<visible>!StringCompare(Container().ListItem(5).Label,Container().ListItem(3).Label)]</visible>
 					<visible>!StringCompare(Container().ListItem(5).Label,Container().ListItem(4).Label)]</visible>
-				</control>		
+				</control>
 				<control type="label">
 					<posx>90</posx>
 					<posy>360</posy>
@@ -949,7 +949,7 @@
 					<visible>!StringCompare(Container().ListItem(6).Label,Container().ListItem(3).Label)]</visible>
 					<visible>!StringCompare(Container().ListItem(6).Label,Container().ListItem(4).Label)]</visible>
 					<visible>!StringCompare(Container().ListItem(6).Label,Container().ListItem(5).Label)]</visible>
-				</control>		
+				</control>
 				<control type="label">
 					<posx>100</posx>
 					<posy>390</posy>
@@ -964,7 +964,7 @@
 					<label>&amp; more...</label>
 					<visible>IntegerGreaterThan(Container.NumItems,6)</visible>
 					<visible>StringCompare(ListItem.label,* All albums)</visible>
-				</control>						
+				</control>
 				<control type="label">
 					<posx>90</posx>
 					<posy>210</posy>
@@ -978,7 +978,7 @@
 					<align>left</align>
 					<label>$INFO[ListItem.Album]</label>
 					<visible>!StringCompare(ListItem.label,* All albums)</visible>
-				</control>		
+				</control>
 				<control type="label">
 					<posx>90</posx>
 					<posy>210</posy>
@@ -992,7 +992,7 @@
 					<align>left</align>
 					<label>$INFO[ListItem.Album]</label>
 					<visible>!StringCompare(ListItem.label,* All albums)</visible>
-				</control>		
+				</control>
 				<control type="label">
 					<posx>90</posx>
 					<posy>240</posy>
@@ -1006,7 +1006,7 @@
 					<align>left</align>
 					<label>Released: [COLOR=grey4]$INFO[ListItem.Year][/COLOR]</label>
 					<visible>!StringCompare(ListItem.label,* All albums)</visible>
-				</control>		
+				</control>
 				<control type="label">
 					<posx>90</posx>
 					<posy>270</posy>
@@ -1034,7 +1034,7 @@
 					<align>left</align>
 					<label>Style: [COLOR=grey4]$INFO[ListItem.Property(Album_Style)][/COLOR]</label>
 					<visible>!StringCompare(ListItem.label,* All albums)</visible>
-				</control>				
+				</control>
 				<control type="textbox">
 					<posx>90</posx>
 					<posy>350</posy>
@@ -1048,7 +1048,7 @@
 				</control>
 							<control type="image">
 								<posx>90</posx>
-								<posy>490</posy> 
+								<posy>490</posy>
 								<width>400</width>
 								<height>155</height>
 								<aligny>center</aligny>
@@ -1104,7 +1104,7 @@
 			<include condition="Skin.HasSetting(VideoUseRecent)">RightOpenRecent</include>
 			<include condition="Skin.HasSetting(VideoUseCustom)">RightOpenCustom</include>
 			<control type="fixedlist" id="514">
-				<include>Zoom</include>		
+				<include>Zoom</include>
 				<posx>544</posx>
 				<posy>120</posy>
 				<width>930</width>
@@ -1141,8 +1141,8 @@
 							<textcolor>grey2</textcolor>
 							<align>left</align>
 							<label>$INFO[ListItem.artist]</label>
-						</control>					
-					</control>	
+						</control>
+					</control>
 				</itemlayout>
 				<focusedlayout height="220" width="800">
 					<control type="label">
@@ -1186,7 +1186,7 @@
 			<control type="group">
 				<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 					<posy>-15</posy>
-				<include>Zoom</include>		
+				<include>Zoom</include>
 				<control type="label">
 					<posx>90</posx>
 					<posy>150</posy>
@@ -1199,7 +1199,7 @@
 					<scrollspeed>0</scrollspeed>
 					<align>left</align>
 					<label>$INFO[ListItem.Artist]</label>
-				</control>		
+				</control>
 				<control type="label">
 					<posx>90</posx>
 					<posy>210</posy>
@@ -1212,7 +1212,7 @@
 					<scrollspeed>0</scrollspeed>
 					<align>left</align>
 					<label>Genre: [COLOR=grey4]$INFO[ListItem.Property(Artist_Genre)][/COLOR]</label>
-				</control>		
+				</control>
 				<control type="label">
 					<posx>90</posx>
 					<posy>240</posy>
@@ -1238,7 +1238,7 @@
 					<scrollspeed>0</scrollspeed>
 					<align>left</align>
 					<label>Years Active: [COLOR=grey4]$INFO[ListItem.Property(Artist_YearsActive)][/COLOR]</label>
-				</control>				
+				</control>
 				<control type="textbox">
 					<posx>90</posx>
 					<posy>320</posy>
@@ -1251,7 +1251,7 @@
 				</control>
 							<control type="image">
 								<posx>90</posx>
-								<posy>490</posy> 
+								<posy>490</posy>
 								<width>400</width>
 								<height>155</height>
 								<aligny>center</aligny>
@@ -1277,7 +1277,7 @@
 		<animation effect="slide" end="-40,0" time="200" tween="cubic" easing="inout" condition="Container(515).Column(7)">Conditional</animation>
 		<animation effect="slide" end="0,20" time="200" tween="cubic" easing="inout" condition="Container(515).Row(0)">Conditional</animation>
 			<control type="Panel" id="515">
-				<include>Zoom</include>		
+				<include>Zoom</include>
 				<posx>-40</posx>
 				<posy>110</posy>
 				<width>1330</width>
@@ -1326,7 +1326,7 @@
 							<aspectratio>scale</aspectratio>
 							<texture>simplicity/wall-grain.png</texture>
 						</control>
-					</control>	
+					</control>
 				</itemlayout>
 				<focusedlayout height="510" width="390">
 					<control type="image">
@@ -1401,7 +1401,7 @@
 			</control>
 			<control type="image">
 				<posx>0</posx>
-				<posy>640</posy>	
+				<posy>640</posy>
 				<width>1280</width>
 				<height>80</height>
 				<aspect>stretch</aspect>
@@ -1412,7 +1412,7 @@
 			<include condition="Skin.HasSetting(VideoUseRecent)">RightOpenRecent</include>
 			<include condition="Skin.HasSetting(VideoUseCustom)">RightOpenCustom</include>
 			<!--<control type="group">
-				<include>Zoom</include>		
+				<include>Zoom</include>
 					<control type="label">
 						<posx>90</posx>
 						<posy>150</posy>
@@ -1425,7 +1425,7 @@
 						<scrollspeed>0</scrollspeed>
 						<align>left</align>
 						<label>$INFO[ListItem.Artist]</label>
-					</control>		
+					</control>
 					<control type="label">
 						<posx>90</posx>
 						<posy>240</posy>
@@ -1438,7 +1438,7 @@
 						<scrollspeed>0</scrollspeed>
 						<align>left</align>
 						<label>Genre: [COLOR=grey4]$INFO[ListItem.Property(Artist_Genre)][/COLOR]</label>
-					</control>		
+					</control>
 					<control type="label">
 						<posx>90</posx>
 						<posy>270</posy>
@@ -1464,7 +1464,7 @@
 						<scrollspeed>0</scrollspeed>
 						<align>left</align>
 						<label>Years Active: [COLOR=grey4]$INFO[ListItem.Property(Artist_YearsActive)][/COLOR]</label>
-					</control>				
+					</control>
 			<control type="textbox">
 				<posx>90</posx>
 				<posy>350</posy>
@@ -1491,7 +1491,7 @@
 		<animation effect="slide" end="-40,0" time="200" tween="cubic" easing="inout" condition="Container(516).Column(7)">Conditional</animation>
 		<animation effect="slide" end="0,20" time="200" tween="cubic" easing="inout" condition="Container(516).Row(0)">Conditional</animation>
 			<control type="Panel" id="516">
-				<include>Zoom</include>		
+				<include>Zoom</include>
 				<posx>22</posx>
 				<posy>120</posy>
 				<width>1260</width>
@@ -1553,7 +1553,7 @@
 							<aspectratio>scale</aspectratio>
 							<texture>simplicity/wall-grain.png</texture>
 						</control>
-					</control>	
+					</control>
 				</itemlayout>
 				<focusedlayout height="510" width="210">
 					<!--<control type="image">
@@ -1630,7 +1630,7 @@
 			</control>
 			<control type="image">
 				<posx>0</posx>
-				<posy>640</posy>	
+				<posy>640</posy>
 				<width>1280</width>
 				<height>80</height>
 				<aspect>stretch</aspect>
@@ -1641,7 +1641,7 @@
 			<include condition="Skin.HasSetting(VideoUseCustom)">RightOpenCustom</include>
 			<include>LeftOptions</include>
 			<!--<control type="group">
-				<include>Zoom</include>		
+				<include>Zoom</include>
 					<control type="label">
 						<posx>90</posx>
 						<posy>150</posy>
@@ -1654,7 +1654,7 @@
 						<scrollspeed>0</scrollspeed>
 						<align>left</align>
 						<label>$INFO[ListItem.Artist]</label>
-					</control>		
+					</control>
 					<control type="label">
 						<posx>90</posx>
 						<posy>240</posy>
@@ -1667,7 +1667,7 @@
 						<scrollspeed>0</scrollspeed>
 						<align>left</align>
 						<label>Genre: [COLOR=grey4]$INFO[ListItem.Property(Artist_Genre)][/COLOR]</label>
-					</control>		
+					</control>
 					<control type="label">
 						<posx>90</posx>
 						<posy>270</posy>
@@ -1693,7 +1693,7 @@
 						<scrollspeed>0</scrollspeed>
 						<align>left</align>
 						<label>Years Active: [COLOR=grey4]$INFO[ListItem.Property(Artist_YearsActive)][/COLOR]</label>
-					</control>				
+					</control>
 			<control type="textbox">
 				<posx>90</posx>
 				<posy>350</posy>
@@ -1715,7 +1715,7 @@
 			<include>AlbumBreadCrumbs</include>
 			<control type="image">
 				<posx>0</posx>
-				<posy>630</posy>	
+				<posy>630</posy>
 				<width>1280</width>
 				<height>230</height>
 				<aspect>stretch</aspect>
@@ -1723,7 +1723,7 @@
 			</control>
 			<control type="image">
 				<posx>0</posx>
-				<posy>630</posy>	
+				<posy>630</posy>
 				<width>1280</width>
 				<height>2</height>
 				<aspect>stretch</aspect>
@@ -1741,7 +1741,7 @@
 					<posx>-282</posx>
 					<posy>484</posy>
 					<width>1800</width>
-					<height>300</height>		
+					<height>300</height>
 					<onleft>517</onleft>
 					<onright>517</onright>
 					<onup>2</onup>
@@ -1754,13 +1754,13 @@
 					<focusposition>5</focusposition>
 					<preloaditems>200</preloaditems>
 					<orientation>horizontal</orientation>
-					<visible>Container.Content(Albums)</visible> 
+					<visible>Container.Content(Albums)</visible>
 					<pagecontrol>70</pagecontrol>
 					<orientation>horizontal</orientation>
 					<itemlayout height="200" width="167">
 						<control type="largeimage">
 							<posx>2</posx>
-							<posy>41</posy> 
+							<posy>41</posy>
 							<width>156</width>
 							<height>157</height>
 							<aligny>center</aligny>
@@ -1768,7 +1768,7 @@
 						</control>
 						<control type="largeimage">
 							<posx>0</posx>
-							<posy>42</posy> 
+							<posy>42</posy>
 							<width>150</width>
 							<height>150</height>
 							<aligny>center</aligny>
@@ -1778,7 +1778,7 @@
 						</control>
 						<control type="largeimage">
 							<posx>0</posx>
-							<posy>197</posy> 
+							<posy>197</posy>
 							<width>150</width>
 							<height>150</height>
 							<aligny>center</aligny>
@@ -1788,7 +1788,7 @@
 						</control>
 						<control type="largeimage">
 							<posx>0</posx>
-							<posy>42</posy> 
+							<posy>42</posy>
 							<width>150</width>
 							<height>150</height>
 							<aligny>center</aligny>
@@ -1799,7 +1799,7 @@
 						</control>
 						<control type="largeimage">
 							<posx>0</posx>
-							<posy>197</posy> 
+							<posy>197</posy>
 							<width>150</width>
 							<height>150</height>
 							<aligny>center</aligny>
@@ -1810,7 +1810,7 @@
 						</control>
 						<control type="largeimage">
 							<posx>0</posx>
-							<posy>42</posy> 
+							<posy>42</posy>
 							<width>150</width>
 							<height>150</height>
 							<aligny>center</aligny>
@@ -1821,7 +1821,7 @@
 						</control>
 						<control type="largeimage">
 							<posx>0</posx>
-							<posy>197</posy> 
+							<posy>197</posy>
 							<width>150</width>
 							<height>150</height>
 							<aligny>center</aligny>
@@ -1832,7 +1832,7 @@
 						</control>
 						<control type="largeimage">
 							<posx>-2</posx>
-							<posy>40</posy> 
+							<posy>40</posy>
 							<width>154</width>
 							<height>154</height>
 							<aligny>center</aligny>
@@ -1841,7 +1841,7 @@
 						</control>
 						<control type="largeimage">
 							<posx>-2</posx>
-							<posy>195</posy> 
+							<posy>195</posy>
 							<width>154</width>
 							<height>154</height>
 							<aligny>center</aligny>
@@ -1850,7 +1850,7 @@
 						</control>
 						<control type="largeimage">
 							<posx>-2</posx>
-							<posy>40</posy> 
+							<posy>40</posy>
 							<width>154</width>
 							<height>154</height>
 							<aligny>center</aligny>
@@ -1859,7 +1859,7 @@
 						</control>
 						<control type="largeimage">
 							<posx>-2</posx>
-							<posy>195</posy> 
+							<posy>195</posy>
 							<width>154</width>
 							<height>154</height>
 							<aligny>center</aligny>
@@ -1871,107 +1871,107 @@
 						<control type="group">
 							<control type="largeimage">
 								<posx>12</posx>
-								<posy>41</posy> 
+								<posy>41</posy>
 								<width>156</width>
 								<height>157</height>
 								<aligny>center</aligny>
 								<texture diffuse="simplicity/fanart-slide-poster-diffuse.png" background="true">simplicity/poster-slide-poster-shadow.png</texture>
-								<animation effect="zoom" start="2,41,156,157" end="12,41,176,177" center="auto" time="300" reversible="false">Focus</animation> 
+								<animation effect="zoom" start="2,41,156,157" end="12,41,176,177" center="auto" time="300" reversible="false">Focus</animation>
 								<aspectratio>stretch</aspectratio>
 							</control>
 							<control type="largeimage">
 								<posx>10</posx>
-								<posy>42</posy> 
+								<posy>42</posy>
 								<width>150</width>
 								<height>150</height>
 								<aligny>center</aligny>
 								<texture diffuse="simplicity/fanart-slide-poster-diffuse.png" background="true" fallback="simplicity/album-fallback.png">root-album.png</texture>
-								<animation effect="zoom" start="0,42,150,150" end="10,42,170,170" center="auto" time="300" reversible="false">Focus</animation> 
+								<animation effect="zoom" start="0,42,150,150" end="10,42,170,170" center="auto" time="300" reversible="false">Focus</animation>
 								<aspectratio>stretch</aspectratio>
 								<visible>stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 							</control>
 							<control type="largeimage">
 								<posx>10</posx>
-								<posy>217</posy> 
+								<posy>217</posy>
 								<width>150</width>
 								<height>150</height>
 								<aligny>center</aligny>
 								<texture diffuse="simplicity/fanart-slide-poster-diffuse-reflect.png" background="true" flipy="true" fallback="simplicity/album-fallback.png">root-album.png</texture>
-								<animation effect="zoom" start="0,197,150,150" end="10,217,170,170" center="auto" time="300" reversible="false">Focus</animation> 
+								<animation effect="zoom" start="0,197,150,150" end="10,217,170,170" center="auto" time="300" reversible="false">Focus</animation>
 								<aspectratio>stretch</aspectratio>
 								<visible>stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 							</control>
 							<control type="largeimage">
 								<posx>10</posx>
-								<posy>42</posy> 
+								<posy>42</posy>
 								<width>150</width>
 								<height>150</height>
 								<aligny>center</aligny>
 								<texture diffuse="simplicity/fanart-slide-poster-diffuse.png" background="true" fallback="simplicity/album-fallback.png">$INFO[ListItem.thumb]</texture>
-								<animation effect="zoom" start="0,42,150,150" end="10,42,170,170" center="auto" time="300" reversible="false">Focus</animation> 
+								<animation effect="zoom" start="0,42,150,150" end="10,42,170,170" center="auto" time="300" reversible="false">Focus</animation>
 								<aspectratio>stretch</aspectratio>
 								<visible>!StringCompare(ListItem.label,* All albums)</visible>
 								<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 							</control>
 							<control type="largeimage">
 								<posx>10</posx>
-								<posy>217</posy> 
+								<posy>217</posy>
 								<width>150</width>
 								<height>150</height>
 								<aligny>center</aligny>
 								<texture diffuse="simplicity/fanart-slide-poster-diffuse-reflect.png" background="true" flipy="true" fallback="simplicity/album-fallback.png">$INFO[ListItem.thumb]</texture>
-								<animation effect="zoom" start="0,197,150,150" end="10,217,170,170" center="auto" time="300" reversible="false">Focus</animation> 
+								<animation effect="zoom" start="0,197,150,150" end="10,217,170,170" center="auto" time="300" reversible="false">Focus</animation>
 								<aspectratio>stretch</aspectratio>
 								<visible>!StringCompare(ListItem.label,* All albums)</visible>
 								<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 							</control>
 							<control type="largeimage">
 								<posx>10</posx>
-								<posy>42</posy> 
+								<posy>42</posy>
 								<width>150</width>
 								<height>150</height>
 								<aligny>center</aligny>
 								<texture diffuse="simplicity/fanart-slide-poster-diffuse.png" background="true" fallback="simplicity/album-fallback.png">simplicity/all-albums.png</texture>
-								<animation effect="zoom" start="0,42,150,150" end="10,42,170,170" center="auto" time="300" reversible="false">Focus</animation> 
+								<animation effect="zoom" start="0,42,150,150" end="10,42,170,170" center="auto" time="300" reversible="false">Focus</animation>
 								<aspectratio>stretch</aspectratio>
 								<visible>StringCompare(ListItem.label,* All albums)</visible>
 								<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 							</control>
 							<control type="largeimage">
 								<posx>10</posx>
-								<posy>217</posy> 
+								<posy>217</posy>
 								<width>150</width>
 								<height>150</height>
 								<aligny>center</aligny>
 								<texture diffuse="simplicity/fanart-slide-poster-diffuse-reflect.png" background="true" flipy="true" fallback="simplicity/album-fallback.png">simplicity/all-albums.png</texture>
-								<animation effect="zoom" start="0,197,150,150" end="10,217,170,170" center="auto" time="300" reversible="false">Focus</animation> 
+								<animation effect="zoom" start="0,197,150,150" end="10,217,170,170" center="auto" time="300" reversible="false">Focus</animation>
 								<aspectratio>stretch</aspectratio>
 								<visible>StringCompare(ListItem.label,* All albums)</visible>
 								<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 							</control>
 							<control type="largeimage">
 								<posx>8</posx>
-								<posy>40</posy> 
+								<posy>40</posy>
 								<width>154</width>
 								<height>154</height>
 								<aligny>center</aligny>
 								<texture diffuse="simplicity/fanart-slide-poster-diffuse.png" background="true">simplicity/poster-border5.png</texture>
-								<animation effect="zoom" start="-2,40,154,154" end="8,40,174,174" center="auto" time="300" reversible="false">Focus</animation> 
+								<animation effect="zoom" start="-2,40,154,154" end="8,40,174,174" center="auto" time="300" reversible="false">Focus</animation>
 								<aspectratio>stretch</aspectratio>
 							</control>
 							<control type="largeimage">
 								<posx>8</posx>
-								<posy>215</posy> 
+								<posy>215</posy>
 								<width>154</width>
 								<height>154</height>
 								<aligny>center</aligny>
 								<texture diffuse="simplicity/fanart-slide-poster-diffuse-reflect.png" background="true" flipy="true">simplicity/poster-border5.png</texture>
-								<animation effect="zoom" start="-2,195,154,154" end="8,215,174,174" center="auto" time="300" reversible="false">Focus</animation> 
+								<animation effect="zoom" start="-2,195,154,154" end="8,215,174,174" center="auto" time="300" reversible="false">Focus</animation>
 								<aspectratio>stretch</aspectratio>
 							</control>
 						</control>
 					</focusedlayout>
-				</control>	
+				</control>
 				<control type="group">
 					<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 					<include>Zoom</include>
@@ -2068,7 +2068,7 @@
 				<focusposition>1</focusposition>
 				<preloaditems>400</preloaditems>
 				<visible>Container.Content(Songs)</visible>
-				<itemlayout height="220" width="360">	
+				<itemlayout height="220" width="360">
 					<control type="group">
 						<posy>25</posy>
 						<control type="image">
@@ -2100,14 +2100,14 @@
 							<width>345</width>
 							<height>192</height>
 							<texture diffuse="simplicity/fanart-slide-fanart-diffuse.png" background="true">wide-shine-6.png</texture>
-							<aspectratio scalediffuse="false">stretch</aspectratio>		
+							<aspectratio scalediffuse="false">stretch</aspectratio>
 						</control>
 						<control type="image">
 							<posy>28</posy>
 							<width>345</width>
 							<height>192</height>
 							<texture diffuse="simplicity/fanart-slide-fanart-diffuse.png" background="true">simplicity/black-back.png</texture>
-							<aspectratio scalediffuse="false">stretch</aspectratio>		
+							<aspectratio scalediffuse="false">stretch</aspectratio>
 						</control>
 					</control>
 				</itemlayout>
@@ -2252,7 +2252,7 @@
 				</control>
 			</control>
 		</control>
-	</include>	
+	</include>
 	<!--<include name="Logo-Slide-Music">
 		<control type="group">
 			<posx>0</posx>
@@ -2287,7 +2287,7 @@
 							<texture background="true" fallback="logo-fallback.png">$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem.Artist]/logo.png</texture>
 <visible>Control.IsVisible(519)</visible>
 							<aspectratio>keep</aspectratio>
-<animation effect="zoom" center="auto" end="140" time="200" reversible="false">Visible</animation> 
+<animation effect="zoom" center="auto" end="140" time="200" reversible="false">Visible</animation>
 <visible>!Container.OnNext + !Container.OnPrevious</visible>
 </control>
 <control type="image">
@@ -2313,7 +2313,7 @@
 							<aspectratio>keep</aspectratio>
 							<animation effect="fade" start="100" end="40" time="0" condition="Control.HasFocus(519)">conditional</animation>
 							<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(519)">conditional</animation>
-<animation effect="slide" end="-470" time="200" reversible="false">Visible</animation> 
+<animation effect="slide" end="-470" time="200" reversible="false">Visible</animation>
 <visible>!Container.OnNext</visible>
 </control>
 
@@ -2340,7 +2340,7 @@
 					<posx>-200</posx>
 					<posy>320</posy>
 					<width>1800</width>
-					<height>200</height>		
+					<height>200</height>
 					<include condition="Skin.HasSetting(VideoUseGuide)">OpenGuideDown</include>
 					<include condition="Skin.HasSetting(VideoUseRecent)">OpenRecentDown</include>
 					<include condition="Skin.HasSetting(VideoUseCustom)">OpenCustomDown</include>
@@ -2357,7 +2357,7 @@
 					<itemlayout height="290" width="440">-->
 						<!--<control type="largeimage">
 							<posx>0</posx>
-							<posy>10</posy> 
+							<posy>10</posy>
 							<width>310</width>
 							<height>145</height>
 							<aligny>center</aligny>
@@ -2369,7 +2369,7 @@
 						</control>
 						<control type="largeimage">
 							<posx>0</posx>
-							<posy>10</posy> 
+							<posy>10</posy>
 							<width>310</width>
 							<height>145</height>
 							<aligny>center</aligny>
@@ -2383,12 +2383,12 @@
 					<focusedlayout height="290" width="440">-->
 					<!--	<control type="largeimage">
 							<posx>0</posx>
-							<posy>10</posy> 
+							<posy>10</posy>
 							<width>310</width>
 							<height>145</height>
 							<aligny>center</aligny>
 							<texture background="true" fallback="logo-fallback.png">$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem.label,,\logo.png]</texture>
-							<animation effect="zoom" end="140" center="auto" time="200">Focus</animation> 
+							<animation effect="zoom" end="140" center="auto" time="200">Focus</animation>
 							<aspectratio>keep</aspectratio>
 							<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 						</control>
@@ -2405,17 +2405,17 @@
 					</control>
 						<control type="largeimage">
 							<posx>0</posx>
-							<posy>10</posy> 
+							<posy>10</posy>
 							<width>310</width>
 							<height>145</height>
 							<aligny>center</aligny>
 							<texture background="true">root-logo.png</texture>
-							<animation effect="zoom" end="140" center="auto" time="200">Focus</animation> 
+							<animation effect="zoom" end="140" center="auto" time="200">Focus</animation>
 							<aspectratio>keep</aspectratio>
 							<visible>stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 						</control>-->
 					<!--</focusedlayout>
-				</control>	
+				</control>
 				<control type="group">
 					<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 					<include>Zoom</include>

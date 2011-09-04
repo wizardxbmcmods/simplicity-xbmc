@@ -338,7 +338,7 @@
 					<width>147</width>
 					<height>57</height>
 					<aspectratio>keep</aspectratio>
-					<texture background="true">$INFO[Player.FolderPath]../logo.png</texture> 
+					<texture background="true">$INFO[Player.FolderPath]../logo.png</texture>
 				</control>
 				<control type="image">
 					<posx>820</posx>
@@ -346,7 +346,7 @@
 					<width>147</width>
 					<height>57</height>
 					<aspectratio>keep</aspectratio>
-					<texture background="true">$INFO[Player.FolderPath]logo.png</texture> 
+					<texture background="true">$INFO[Player.FolderPath]logo.png</texture>
 				</control>
 				<control type="image">
 					<posx>993</posx>

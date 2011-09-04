@@ -129,7 +129,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<selectedcolor>white</selectedcolor>
-							<animation effect="zoom" end="105" time="100">Focus</animation> 
+							<animation effect="zoom" end="105" time="100">Focus</animation>
 							<info>ListItem.Label</info>
 						</control>
 					</focusedlayout>

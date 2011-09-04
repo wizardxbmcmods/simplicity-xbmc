@@ -224,7 +224,7 @@
 				<posx>30</posx>
 				<posy>344</posy>
 				<width>740</width>
-				<height>3</height>	
+				<height>3</height>
 				<align>center</align>
 				<texture>simplicity/separatorwhite_horizontal.png</texture>
 			</control>

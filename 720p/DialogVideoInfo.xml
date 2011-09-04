@@ -111,7 +111,7 @@
 					<itemgap>0</itemgap>
 					<orientation>horizontal</orientation>
 					<include>StudioFlaggingConditions</include>
-					<visible>!Skin.HasSetting(UseColoredFlags)</visible>		
+					<visible>!Skin.HasSetting(UseColoredFlags)</visible>
 				</control>
 				<control type = "grouplist">
 					<description>Studio Codec Flagging Images</description>
@@ -122,7 +122,7 @@
 					<itemgap>0</itemgap>
 					<orientation>horizontal</orientation>
 					<include>StudioFlaggingConditionsColor</include>
-					<visible>Skin.HasSetting(UseColoredFlags)</visible>		
+					<visible>Skin.HasSetting(UseColoredFlags)</visible>
 				</control>
 				<control type = "grouplist">
 					<description>Media Codec Flagging Images</description>
@@ -221,7 +221,7 @@
                             time = "3000"
                             delay = "4000"
                             repeat = "5000">!Control.HasFocus(61) + Skin.HasSetting(AutoScroll)</autoscroll>
-					</control>			
+					</control>
 					<control type = "label">
 						<posx>910</posx>
 						<posy>375</posy>
@@ -1114,7 +1114,7 @@
 							</item>
 						</content>
 					</control>
-				</control>			
+				</control>
 					<control type = "label">
 						<posx>510</posx>
 						<posy>385</posy>
@@ -1199,7 +1199,7 @@
 					<texture>$INFO[Container(50).Listitem.Icon]</texture>
 					<aspectratio>keep</aspectratio>
 					<visible>Control.HasFocus(50)</visible>
-				</control>		
+				</control>
 				<control type = "grouplist" id = "9000">
 					<posx>242</posx>
 					<posy>670</posy>

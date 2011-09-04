@@ -44,7 +44,7 @@
 			<onfocus>SetFocus(11)</onfocus>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>
-		</control>  
+		</control>
 		<include>CommonVideoBackground</include>
 	</controls>
 </window>

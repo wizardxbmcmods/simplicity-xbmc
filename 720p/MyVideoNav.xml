@@ -14,7 +14,7 @@
 			<include condition="Window.Previous(FullScreenVideo) + !Player.HasVideo + Skin.HasSetting(DeleteEps)">Delete_Eps</include>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>
-		</control> 
+		</control>
 		<control type="button" id="9999">
 			<visible>!Container.Content(TVShows)</visible>
 			<onfocus>SetFocus(50)</onfocus>
@@ -23,7 +23,7 @@
 	<!--Specific Delete Configuration-->
 
 	<control type="button" id="9999">
-		<visible>[[Container.Content(TVShows) | Container.Content(Episodes)] + StringCompare(Skin.String(Delete_Show_Number_1),ListItem.TVShowTitle)] | [[Container.Content(TVShows) | Container.Content(Episodes)] + StringCompare(Skin.String(Delete_Show_Number_2),ListItem.TVShowTitle)] | [[Container.Content(TVShows) | Container.Content(Episodes)] + StringCompare(Skin.String(Delete_Show_Number_3),ListItem.TVShowTitle)] | [[Container.Content(TVShows) | Container.Content(Episodes)] + StringCompare(Skin.String(Delete_Show_Number_4),ListItem.TVShowTitle)] | [[Container.Content(TVShows) | Container.Content(Episodes)] + StringCompare(Skin.String(Delete_Show_Number_5),ListItem.TVShowTitle)] | [[Container.Content(TVShows) | Container.Content(Episodes)] + StringCompare(Skin.String(Delete_Show_Number_6),ListItem.TVShowTitle)] | [[Container.Content(TVShows) | Container.Content(Episodes)] + StringCompare(Skin.String(Delete_Show_Number_7),ListItem.TVShowTitle)] | [[Container.Content(TVShows) | Container.Content(Episodes)] + StringCompare(Skin.String(Delete_Show_Number_8),ListItem.TVShowTitle)] | [[Container.Content(TVShows) | Container.Content(Episodes)] + StringCompare(Skin.String(Delete_Show_Number_9),ListItem.TVShowTitle)] | [[Container.Content(TVShows) | Container.Content(Episodes)] + StringCompare(Skin.String(Delete_Show_Number_10),ListItem.TVShowTitle)]</visible>			
+		<visible>[[Container.Content(TVShows) | Container.Content(Episodes)] + StringCompare(Skin.String(Delete_Show_Number_1),ListItem.TVShowTitle)] | [[Container.Content(TVShows) | Container.Content(Episodes)] + StringCompare(Skin.String(Delete_Show_Number_2),ListItem.TVShowTitle)] | [[Container.Content(TVShows) | Container.Content(Episodes)] + StringCompare(Skin.String(Delete_Show_Number_3),ListItem.TVShowTitle)] | [[Container.Content(TVShows) | Container.Content(Episodes)] + StringCompare(Skin.String(Delete_Show_Number_4),ListItem.TVShowTitle)] | [[Container.Content(TVShows) | Container.Content(Episodes)] + StringCompare(Skin.String(Delete_Show_Number_5),ListItem.TVShowTitle)] | [[Container.Content(TVShows) | Container.Content(Episodes)] + StringCompare(Skin.String(Delete_Show_Number_6),ListItem.TVShowTitle)] | [[Container.Content(TVShows) | Container.Content(Episodes)] + StringCompare(Skin.String(Delete_Show_Number_7),ListItem.TVShowTitle)] | [[Container.Content(TVShows) | Container.Content(Episodes)] + StringCompare(Skin.String(Delete_Show_Number_8),ListItem.TVShowTitle)] | [[Container.Content(TVShows) | Container.Content(Episodes)] + StringCompare(Skin.String(Delete_Show_Number_9),ListItem.TVShowTitle)] | [[Container.Content(TVShows) | Container.Content(Episodes)] + StringCompare(Skin.String(Delete_Show_Number_10),ListItem.TVShowTitle)]</visible>
 		<description>trigger</description>
 		<include condition="!Skin.HasSetting(UseTvTunes)">No_TV_Tunes</include>
 		<include condition="Skin.HasSetting(UseTvTunes)">Use_TV_Tunes</include>
@@ -33,7 +33,7 @@
 		<texturefocus>-</texturefocus>
 	</control>
 	<control type="button" id="9999">
-		<visible>[[Container.Content(TVShows) | Container.Content(Episodes)] + !StringCompare(Skin.String(Delete_Show_Number_1),ListItem.TVShowTitle)] | [[Container.Content(TVShows) | Container.Content(Episodes)] + !StringCompare(Skin.String(Delete_Show_Number_2),ListItem.TVShowTitle)] | [[Container.Content(TVShows) | Container.Content(Episodes)] + !StringCompare(Skin.String(Delete_Show_Number_3),ListItem.TVShowTitle)] | [[Container.Content(TVShows) | Container.Content(Episodes)] + !StringCompare(Skin.String(Delete_Show_Number_4),ListItem.TVShowTitle)] | [[Container.Content(TVShows) | Container.Content(Episodes)] + !StringCompare(Skin.String(Delete_Show_Number_5),ListItem.TVShowTitle)] | [[Container.Content(TVShows) | Container.Content(Episodes)] + !StringCompare(Skin.String(Delete_Show_Number_6),ListItem.TVShowTitle)] | [[Container.Content(TVShows) | Container.Content(Episodes)] + !StringCompare(Skin.String(Delete_Show_Number_7),ListItem.TVShowTitle)] | [[Container.Content(TVShows) | Container.Content(Episodes)] + !StringCompare(Skin.String(Delete_Show_Number_8),ListItem.TVShowTitle)] | [[Container.Content(TVShows) | Container.Content(Episodes)] + !StringCompare(Skin.String(Delete_Show_Number_9),ListItem.TVShowTitle)] | [[Container.Content(TVShows) | Container.Content(Episodes)] + !StringCompare(Skin.String(Delete_Show_Number_10),ListItem.TVShowTitle)]</visible>			
+		<visible>[[Container.Content(TVShows) | Container.Content(Episodes)] + !StringCompare(Skin.String(Delete_Show_Number_1),ListItem.TVShowTitle)] | [[Container.Content(TVShows) | Container.Content(Episodes)] + !StringCompare(Skin.String(Delete_Show_Number_2),ListItem.TVShowTitle)] | [[Container.Content(TVShows) | Container.Content(Episodes)] + !StringCompare(Skin.String(Delete_Show_Number_3),ListItem.TVShowTitle)] | [[Container.Content(TVShows) | Container.Content(Episodes)] + !StringCompare(Skin.String(Delete_Show_Number_4),ListItem.TVShowTitle)] | [[Container.Content(TVShows) | Container.Content(Episodes)] + !StringCompare(Skin.String(Delete_Show_Number_5),ListItem.TVShowTitle)] | [[Container.Content(TVShows) | Container.Content(Episodes)] + !StringCompare(Skin.String(Delete_Show_Number_6),ListItem.TVShowTitle)] | [[Container.Content(TVShows) | Container.Content(Episodes)] + !StringCompare(Skin.String(Delete_Show_Number_7),ListItem.TVShowTitle)] | [[Container.Content(TVShows) | Container.Content(Episodes)] + !StringCompare(Skin.String(Delete_Show_Number_8),ListItem.TVShowTitle)] | [[Container.Content(TVShows) | Container.Content(Episodes)] + !StringCompare(Skin.String(Delete_Show_Number_9),ListItem.TVShowTitle)] | [[Container.Content(TVShows) | Container.Content(Episodes)] + !StringCompare(Skin.String(Delete_Show_Number_10),ListItem.TVShowTitle)]</visible>
 		<description>trigger</description>
 		<include condition="!Skin.HasSetting(UseTvTunes)">No_TV_Tunes</include>
 		<include condition="Skin.HasSetting(UseTvTunes)">Use_TV_Tunes</include>
@@ -45,10 +45,10 @@
 		<onfocus>SetFocus(50)</onfocus>
 		<texturenofocus>-</texturenofocus>
 		<texturefocus>-</texturefocus>
-	</control>  
+	</control>
 
 	<control type="group">
-		<include>Window_OpenClose_Animation</include>		
+		<include>Window_OpenClose_Animation</include>
 		<control type="image">
 			<posx>0</posx>
 			<posy>0</posy>
@@ -122,7 +122,7 @@
 	</control>
 	<include>CommonMediaPlayingBackground</include>
 	<control type="group">
-		<include>Window_OpenClose_Animation</include>		
+		<include>Window_OpenClose_Animation</include>
 		<include>CommonRootView</include>
 		<!-- view id = 50 -->
 		<include>ThumbnailView</include>
@@ -140,7 +140,7 @@
 		<include>Addon-Slide</include>
 		<!-- view id = 66 -->
 		<include>Addon-Banner-Slide</include>
-		<!-- view id = 67 -->			
+		<!-- view id = 67 -->
 		<include>Addon-Grid-View</include>
 			<!-- view id = 68 -->
 		<include>Fanart-Slide</include>
@@ -199,17 +199,17 @@
 		<include>Shade-View-2</include>
 		<!-- view id = 564-->
 		<include>Wall-Alaska</include>
-		<!-- view id = 565-->		
+		<!-- view id = 565-->
 		<include>Viewtype_Showcase</include>
-		<!-- view id = 566-->		
+		<!-- view id = 566-->
 		<include>Character-Slide-Kids</include>
-		<!-- view id = 567-->		
+		<!-- view id = 567-->
 		<include>Season-Slide-Kids</include>
-		<!-- view id = 568-->		
+		<!-- view id = 568-->
 		<include>Episode-Slide-Kids</include>
-		<!-- view id = 569-->		
+		<!-- view id = 569-->
 		<include>Side-List-Kids</include>
-		<!-- view id = 570-->		
+		<!-- view id = 570-->
 		<include>MovieGenreView</include>
 		<!-- view id = 59 -->
 	</control>
@@ -489,8 +489,8 @@
 					<aligny>center</aligny>
 					<texturenofocus border="5">simplicity/views/Actor Wall/previewimage.png</texturenofocus>
 					<texturefocus border="5">simplicity/views/Actor Wall/previewimage.png</texturefocus>
-					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(18)">Conditional</animation>	
-					<animation effect="zoom" end="106" center="auto">Focus</animation>		
+					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(18)">Conditional</animation>
+					<animation effect="zoom" end="106" center="auto">Focus</animation>
 					<onclick>Container.SetViewMode(554)</onclick>
 					<visible>Container.Content(Actors)</visible>
 				</control>
@@ -503,7 +503,7 @@
 					<aligny>center</aligny>
 					<texturenofocus border="5">simplicity/views/Banner List/previewimage.png</texturenofocus>
 					<texturefocus border="5">simplicity/views/Banner List/previewimage.png</texturefocus>
-					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(20)">Conditional</animation>			
+					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(20)">Conditional</animation>
 					<animation effect="zoom" end="106" center="auto">Focus</animation>
 					<onclick>Container.SetViewMode(535)</onclick>
 					<visible>Container.Content(TVShows) + !Skin.HasSetting(TVShowsUsePosters)</visible>
@@ -517,7 +517,7 @@
 					<aligny>center</aligny>
 					<texturenofocus border="5">simplicity/views/Banner Slide/previewimage.png</texturenofocus>
 					<texturefocus border="5">simplicity/views/Banner Slide/previewimage.png</texturefocus>
-					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(21)">Conditional</animation>			
+					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(21)">Conditional</animation>
 					<animation effect="zoom" end="106" center="auto">Focus</animation>
 					<onclick>Container.SetViewMode(507)</onclick>
 					<visible>Container.Content(TVShows) + !Skin.HasSetting(TVShowsUsePosters)</visible>
@@ -530,7 +530,7 @@
 					<aligny>center</aligny>
 					<texturenofocus border="5">simplicity/views/Side List/previewimage.png</texturenofocus>
 					<texturefocus border="5">simplicity/views/Side List/previewimage.png</texturefocus>
-					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(22)">Conditional</animation>			
+					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(22)">Conditional</animation>
 					<animation effect="zoom" end="106" center="auto">Focus</animation>
 					<onclick>Container.SetViewMode(559)</onclick>
 					<visible>Container.Content(TVShows) + Skin.HasSetting(EnableClearartViews)</visible>
@@ -543,7 +543,7 @@
 					<aligny>center</aligny>
 					<texturenofocus border="5">simplicity/views/Scroll/previewimage.png</texturenofocus>
 					<texturefocus border="5">simplicity/views/Scroll/previewimage.png</texturefocus>
-					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(23)">Conditional</animation>			
+					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(23)">Conditional</animation>
 					<animation effect="zoom" end="106" center="auto">Focus</animation>
 					<onclick>Container.SetViewMode(564)</onclick>
 					<visible>Container.Content(Movies) | Container.Content(Seasons) | [Container.Content(TVShows) + Skin.HasSetting(TVShowsUsePosters)]</visible>
@@ -556,7 +556,7 @@
 					<aligny>center</aligny>
 					<texturenofocus border="5">simplicity/views/Carousel List/previewimage.png</texturenofocus>
 					<texturefocus border="5">simplicity/views/Carousel List/previewimage.png</texturefocus>
-					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(24)">Conditional</animation>			
+					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(24)">Conditional</animation>
 					<animation effect="zoom" end="106" center="auto">Focus</animation>
 					<onclick>Container.SetViewMode(552)</onclick>
 					<visible>Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(TVShowsUsePosters)]</visible>
@@ -569,7 +569,7 @@
 					<aligny>center</aligny>
 					<texturenofocus border="5">simplicity/views/Clear Showcase/previewimage.png</texturenofocus>
 					<texturefocus border="5">simplicity/views/Clear Showcase/previewimage.png</texturefocus>
-					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(25)">Conditional</animation>			
+					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(25)">Conditional</animation>
 					<animation effect="zoom" end="106" center="auto">Focus</animation>
 					<onclick>Container.SetViewMode(537)</onclick>
 					<visible>Container.Content(TVShows) + Skin.HasSetting(EnableClearartViews)</visible>
@@ -583,7 +583,7 @@
 					<aligny>center</aligny>
 					<texturenofocus border="5">simplicity/views/Episode List/previewimage.png</texturenofocus>
 					<texturefocus border="5">simplicity/views/Episode List/previewimage.png</texturefocus>
-					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(26)">Conditional</animation>			
+					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(26)">Conditional</animation>
 					<animation effect="zoom" end="106" center="auto">Focus</animation>
 					<onclick>Container.SetViewMode(532)</onclick>
 					<visible>Container.Content(Episodes)</visible>
@@ -596,7 +596,7 @@
 					<aligny>center</aligny>
 					<texturenofocus border="5">simplicity/views/Episode Slide/previewimage.png</texturenofocus>
 					<texturefocus border="5">simplicity/views/Episode Slide/previewimage.png</texturefocus>
-					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(27)">Conditional</animation>			
+					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(27)">Conditional</animation>
 					<animation effect="zoom" end="106" center="auto">Focus</animation>
 					<onclick>Container.SetViewMode(505)</onclick>
 					<visible>Container.Content(Episodes)</visible>
@@ -609,7 +609,7 @@
 					<aligny>center</aligny>
 					<texturenofocus border="5">simplicity/views/Fanart Grid/previewimage.png</texturenofocus>
 					<texturefocus border="5">simplicity/views/Fanart Grid/previewimage.png</texturefocus>
-					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(28)">Conditional</animation>			
+					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(28)">Conditional</animation>
 					<animation effect="zoom" end="106" center="auto">Focus</animation>
 					<onclick>Container.SetViewMode(560)</onclick>
 					<visible>Container.Content(TVShows)</visible>
@@ -622,7 +622,7 @@
 					<aligny>center</aligny>
 					<texturenofocus border="5">simplicity/views/Fanart Slide Alt./previewimage.png</texturenofocus>
 					<texturefocus border="5">simplicity/views/Fanart Slide Alt./previewimage.png</texturefocus>
-					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(29)">Conditional</animation>			
+					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(29)">Conditional</animation>
 					<animation effect="zoom" end="106" center="auto">Focus</animation>
 					<onclick>Container.SetViewMode(561)</onclick>
 					<visible>Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(TvShowsUsePosters)] | [Container.Content(TVShows) + Skin.HasSetting(UsePosterJPG)]</visible>
@@ -635,7 +635,7 @@
 					<aligny>center</aligny>
 					<texturenofocus border="5">simplicity/views/Fanart List/previewimage.png</texturenofocus>
 					<texturefocus border="5">simplicity/views/Fanart List/previewimage.png</texturefocus>
-					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(30)">Conditional</animation>			
+					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(30)">Conditional</animation>
 					<animation effect="zoom" end="106" center="auto">Focus</animation>
 					<onclick>Container.SetViewMode(539)</onclick>
 					<visible>Container.Content(Movies)</visible>
@@ -648,7 +648,7 @@
 					<aligny>center</aligny>
 					<texturenofocus border="5">simplicity/views/Fanart Slide/previewimage.png</texturenofocus>
 					<texturefocus border="5">simplicity/views/Fanart Slide/previewimage.png</texturefocus>
-					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(31)">Conditional</animation>			
+					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(31)">Conditional</animation>
 					<animation effect="zoom" end="106" center="auto">Focus</animation>
 					<onclick>Container.SetViewMode(504)</onclick>
 					<visible>Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(TvShowsUsePosters)] | [Container.Content(TVShows) + Skin.HasSetting(UsePosterJPG)]</visible>
@@ -661,7 +661,7 @@
 					<aligny>center</aligny>
 					<texturenofocus border="5">simplicity/views/Landscape Grid/previewimage.png</texturenofocus>
 					<texturefocus border="5">simplicity/views/Landscape Grid/previewimage.png</texturefocus>
-					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(32)">Conditional</animation>			
+					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(32)">Conditional</animation>
 					<animation effect="zoom" end="106" center="auto">Focus</animation>
 					<onclick>Container.SetViewMode(557)</onclick>
 					<visible>Container.Content(TVShows) + Skin.HasSetting(UseLandscapes)</visible>
@@ -674,7 +674,7 @@
 					<aligny>center</aligny>
 					<texturenofocus border="5">simplicity/views/Info Slide/previewimage.png</texturenofocus>
 					<texturefocus border="5">simplicity/views/Info Slide/previewimage.png</texturefocus>
-					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(33)">Conditional</animation>			
+					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(33)">Conditional</animation>
 					<animation effect="zoom" end="106" center="auto">Focus</animation>
 					<onclick>Container.SetViewMode(509)</onclick>
 					<visible>Container.Content(Movies)</visible>
@@ -687,7 +687,7 @@
 					<aligny>center</aligny>
 					<texturenofocus border="5">simplicity/views/Landscape Panel/previewimage.png</texturenofocus>
 					<texturefocus border="5">simplicity/views/Landscape Panel/previewimage.png</texturefocus>
-					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(34)">Conditional</animation>			
+					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(34)">Conditional</animation>
 					<animation effect="zoom" end="106" center="auto">Focus</animation>
 					<onclick>Container.SetViewMode(558)</onclick>
 					<visible>Container.Content(TVShows) + Skin.HasSetting(UseLandscapes)</visible>
@@ -700,7 +700,7 @@
 					<aligny>center</aligny>
 					<texturenofocus border="5">simplicity/views/Landscape Slide/previewimage.png</texturenofocus>
 					<texturefocus border="5">simplicity/views/Landscape Slide/previewimage.png</texturefocus>
-					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(35)">Conditional</animation>			
+					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(35)">Conditional</animation>
 					<animation effect="zoom" end="106" center="auto">Focus</animation>
 					<onclick>Container.SetViewMode(538)</onclick>
 					<visible>Container.Content(TVShows) + Skin.HasSetting(UseLandscapes)</visible>
@@ -714,10 +714,10 @@
 					<aligny>center</aligny>
 					<texturenofocus border="5">simplicity/views/List/previewimage.png</texturenofocus>
 					<texturefocus border="5">simplicity/views/List/previewimage.png</texturefocus>
-					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(36)">Conditional</animation>			
+					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(36)">Conditional</animation>
 					<animation effect="zoom" end="106" center="auto">Focus</animation>
 					<onclick>Container.SetViewMode(50)</onclick>
-					<visible>![substring(container.folderpath,plugin://plugin.video.xbmcflicks) | SubString(Container.FolderPath,addons)]</visible> 	
+					<visible>![substring(container.folderpath,plugin://plugin.video.xbmcflicks) | SubString(Container.FolderPath,addons)]</visible>
 				</control>
 
 
@@ -729,7 +729,7 @@
 					<aligny>center</aligny>
 					<texturenofocus border="5">simplicity/views/Logo Slide/previewimage.png</texturenofocus>
 					<texturefocus border="5">simplicity/views/Logo Slide/previewimage.png</texturefocus>
-					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(37)">Conditional</animation>			
+					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(37)">Conditional</animation>
 					<animation effect="zoom" end="106" center="auto">Focus</animation>
 					<onclick>Container.SetViewMode(536)</onclick>
 					<visible>Container.Content(TVShows) + Skin.HasSetting(EnableClearartViews)</visible>
@@ -744,7 +744,7 @@
 					<aligny>center</aligny>
 					<texturenofocus border="5">simplicity/views/Poster Popup/previewimage.png</texturenofocus>
 					<texturefocus border="5">simplicity/views/Poster Popup/previewimage.png</texturefocus>
-					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(38)">Conditional</animation>			
+					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(38)">Conditional</animation>
 					<animation effect="zoom" end="106" center="auto">Focus</animation>
 					<onclick>Container.SetViewMode(540)</onclick>
 					<visible>Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(TVShowsUsePosters) | Container.Content(Seasons)] | [Container.Content(TVShows) + Skin.HasSetting(UsePosterJPG)]</visible>
@@ -757,7 +757,7 @@
 					<aligny>center</aligny>
 					<texturenofocus border="5">simplicity/views/Poster Slide/previewimage.png</texturenofocus>
 					<texturefocus border="5">simplicity/views/Poster Slide/previewimage.png</texturefocus>
-					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(39)">Conditional</animation>			
+					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(39)">Conditional</animation>
 					<animation effect="zoom" end="106" center="auto">Focus</animation>
 					<onclick>Container.SetViewMode(506)</onclick>
 					<visible>Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(TVShowsUsePosters) | Container.Content(Seasons)] | [Container.Content(TVShows) + Skin.HasSetting(UsePosterJPG)]</visible>
@@ -771,7 +771,7 @@
 					<aligny>center</aligny>
 					<texturenofocus border="5">simplicity/views/Screens/previewimage.png</texturenofocus>
 					<texturefocus border="5">simplicity/views/Screens/previewimage.png</texturefocus>
-					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(40)">Conditional</animation>			
+					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(40)">Conditional</animation>
 					<animation effect="zoom" end="106" center="auto">Focus</animation>
 					<onclick>Container.SetViewMode(553)</onclick>
 					<visible>Container.Content(Movies)</visible>
@@ -785,8 +785,8 @@
 					<aligny>center</aligny>
 					<texturenofocus border="5">simplicity/views/Season List/previewimage.png</texturenofocus>
 					<texturefocus border="5">simplicity/views/Season List/previewimage.png</texturefocus>
-					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(41)">Conditional</animation>		
-					<animation effect="zoom" end="106" center="auto">Focus</animation>	
+					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(41)">Conditional</animation>
+					<animation effect="zoom" end="106" center="auto">Focus</animation>
 					<onclick>Container.SetViewMode(534)</onclick>
 					<visible>Container.Content(Seasons)</visible>
 				</control>
@@ -799,11 +799,11 @@
 					<aligny>center</aligny>
 					<texturenofocus border="5">simplicity/views/Thumbnail/previewimage.png</texturenofocus>
 					<texturefocus border="5">simplicity/views/Thumbnail/previewimage.png</texturefocus>
-					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(42)">Conditional</animation>			
+					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(42)">Conditional</animation>
 					<animation effect="zoom" end="106" center="auto">Focus</animation>
 					<onclick>Container.SetViewMode(500)</onclick>
 					<visible>![Window.IsVisible(VideoLibrary) + Container.Content(TVShows) | Window.IsVisible(VideoLibrary) + Container.Content(Episodes) | SubString(Container.FolderPath,addons)]</visible>
-					<visible>!substring(container.folderpath,plugin://plugin.video.xbmcflicks)</visible> 				
+					<visible>!substring(container.folderpath,plugin://plugin.video.xbmcflicks)</visible>
 				</control>
 
 				<control type="button" id="43">
@@ -814,10 +814,10 @@
 					<aligny>center</aligny>
 					<texturenofocus border="5">simplicity/views/Trailers/previewimage.png</texturenofocus>
 					<texturefocus border="5">simplicity/views/Trailers/previewimage.png</texturefocus>
-					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(43)">Conditional</animation>			
+					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(43)">Conditional</animation>
 					<animation effect="zoom" end="106" center="auto">Focus</animation>
 					<onclick>Container.SetViewMode(54)</onclick>
-					<visible>substring(container.folderpath,plugin://plugin.video.apple.movie.trailers.lite)</visible> 
+					<visible>substring(container.folderpath,plugin://plugin.video.apple.movie.trailers.lite)</visible>
 				</control>
 
 				<control type="button" id="44">
@@ -828,8 +828,8 @@
 					<aligny>center</aligny>
 					<texturenofocus border="5">simplicity/views/Wall/previewimage.png</texturenofocus>
 					<texturefocus border="5">simplicity/views/Wall/previewimage.png</texturefocus>
-					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(44)">Conditional</animation>	
-					<animation effect="zoom" end="106" center="auto">Focus</animation>		
+					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(44)">Conditional</animation>
+					<animation effect="zoom" end="106" center="auto">Focus</animation>
 					<onclick>Container.SetViewMode(508)</onclick>
 					<visible>Container.Content(Movies)</visible>
 				</control>
@@ -842,8 +842,8 @@
 					<aligny>center</aligny>
 					<texturenofocus border="5">simplicity/views/Addons/previewimage.png</texturenofocus>
 					<texturefocus border="5">simplicity/views/Addons/previewimage.png</texturefocus>
-					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(45)">Conditional</animation>	
-					<animation effect="zoom" end="106" center="auto">Focus</animation>		
+					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(45)">Conditional</animation>
+					<animation effect="zoom" end="106" center="auto">Focus</animation>
 					<onclick>Container.SetViewMode(55)</onclick>
 					<visible>SubString(Container.FolderPath,addons)</visible>
 				</control>
@@ -855,10 +855,10 @@
 					<aligny>center</aligny>
 					<texturenofocus border="5">simplicity/views/Netflix/previewimage.png</texturenofocus>
 					<texturefocus border="5">simplicity/views/Netflix/previewimage.png</texturefocus>
-					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(46)">Conditional</animation>	
-					<animation effect="zoom" end="106" center="auto">Focus</animation>		
+					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(46)">Conditional</animation>
+					<animation effect="zoom" end="106" center="auto">Focus</animation>
 					<onclick>Container.SetViewMode(57)</onclick>
-					<visible>substring(container.folderpath,plugin://plugin.video.xbmcflicks)</visible> 			
+					<visible>substring(container.folderpath,plugin://plugin.video.xbmcflicks)</visible>
 				</control>
 				<control type="button" id="47">
 					<description>Apps</description>
@@ -868,9 +868,9 @@
 					<aligny>center</aligny>
 					<texturenofocus border="5">simplicity/views/Apps/previewimage.png</texturenofocus>
 					<texturefocus border="5">simplicity/views/Apps/previewimage.png</texturefocus>
-					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(47)">Conditional</animation>	
-					<animation effect="zoom" end="106" center="auto">Focus</animation>		
-					<onclick>Container.SetViewMode(58)</onclick>		
+					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(47)">Conditional</animation>
+					<animation effect="zoom" end="106" center="auto">Focus</animation>
+					<onclick>Container.SetViewMode(58)</onclick>
 					<visible>SubString(Container.FolderPath,addons) | Window.IsVisible(addonbrowser)</visible>
 				</control>
 				<control type="button" id="48">
@@ -881,9 +881,9 @@
 					<aligny>center</aligny>
 					<texturenofocus border="5">simplicity/views/Genres/previewimage.png</texturenofocus>
 					<texturefocus border="5">simplicity/views/Genres/previewimage.png</texturefocus>
-					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(48)">Conditional</animation>	
-					<animation effect="zoom" end="106" center="auto">Focus</animation>		
-					<onclick>Container.SetViewMode(59)</onclick>		
+					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(48)">Conditional</animation>
+					<animation effect="zoom" end="106" center="auto">Focus</animation>
+					<onclick>Container.SetViewMode(59)</onclick>
 					<visible>Container.Content(Genres)</visible>
 				</control>
 				<control type="button" id="49">
@@ -894,10 +894,10 @@
 					<aligny>center</aligny>
 					<texturenofocus border="5">simplicity/views/Addon Slide/previewimage.png</texturenofocus>
 					<texturefocus border="5">simplicity/views/Addon Slide/previewimage.png</texturefocus>
-					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(49)">Conditional</animation>	
-					<animation effect="zoom" end="106" center="auto">Focus</animation>		
-					<onclick>Container.SetViewMode(65)</onclick>		
-					<visible>substring(container.folderpath,plugin://plugin.video.espn3) | substring(container.folderpath,plugin://plugin.video.crackle) | substring(container.folderpath,plugin://plugin.video.KidsWB) | substring(container.folderpath,plugin://plugin.video.nickelodeon) | substring(container.folderpath,plugin://plugin.video.nickjr) | substring(container.folderpath,plugin://plugin.video.adult.swim) | substring(container.folderpath,plugin://plugin.video.cartoon.network) | substring(container.folderpath,plugin://plugin.video.cbs) | substring(container.folderpath,plugin://plugin.video.tnt) | substring(container.folderpath,plugin://plugin.video.tbs)</visible> 
+					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(49)">Conditional</animation>
+					<animation effect="zoom" end="106" center="auto">Focus</animation>
+					<onclick>Container.SetViewMode(65)</onclick>
+					<visible>substring(container.folderpath,plugin://plugin.video.espn3) | substring(container.folderpath,plugin://plugin.video.crackle) | substring(container.folderpath,plugin://plugin.video.KidsWB) | substring(container.folderpath,plugin://plugin.video.nickelodeon) | substring(container.folderpath,plugin://plugin.video.nickjr) | substring(container.folderpath,plugin://plugin.video.adult.swim) | substring(container.folderpath,plugin://plugin.video.cartoon.network) | substring(container.folderpath,plugin://plugin.video.cbs) | substring(container.folderpath,plugin://plugin.video.tnt) | substring(container.folderpath,plugin://plugin.video.tbs)</visible>
 				</control>
 				<control type="button" id="51">
 					<description>Addon Slide</description>
@@ -907,10 +907,10 @@
 					<aligny>center</aligny>
 					<texturenofocus border="5">simplicity/views/Addon Slide/previewimage.png</texturenofocus>
 					<texturefocus border="5">simplicity/views/Addon Slide/previewimage.png</texturefocus>
-					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(51)">Conditional</animation>	
-					<animation effect="zoom" end="106" center="auto">Focus</animation>		
-					<onclick>Container.SetViewMode(66)</onclick>		
-					<visible>SubString(Container.FolderPath,addons)</visible>							
+					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(51)">Conditional</animation>
+					<animation effect="zoom" end="106" center="auto">Focus</animation>
+					<onclick>Container.SetViewMode(66)</onclick>
+					<visible>SubString(Container.FolderPath,addons)</visible>
 				</control>
 				<control type="button" id="52">
 					<description>Fanart</description>
@@ -920,10 +920,10 @@
 					<aligny>center</aligny>
 					<texturenofocus border="5">simplicity/views/Fanart/previewimage.png</texturenofocus>
 					<texturefocus border="5">simplicity/views/Fanart/previewimage.png</texturefocus>
-					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(52)">Conditional</animation>	
-					<animation effect="zoom" end="106" center="auto">Focus</animation>		
-					<onclick>Container.SetViewMode(555)</onclick>		
-					<visible>Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(TvShowsUsePosters)] | [Container.Content(TVShows) + Skin.HasSetting(UsePosterJPG)]</visible>					
+					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(52)">Conditional</animation>
+					<animation effect="zoom" end="106" center="auto">Focus</animation>
+					<onclick>Container.SetViewMode(555)</onclick>
+					<visible>Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(TvShowsUsePosters)] | [Container.Content(TVShows) + Skin.HasSetting(UsePosterJPG)]</visible>
 				</control>
 				<control type="button" id="53">
 					<description>Rows</description>
@@ -933,10 +933,10 @@
 					<aligny>center</aligny>
 					<texturenofocus border="5">simplicity/views/Rows/previewimage.png</texturenofocus>
 					<texturefocus border="5">simplicity/views/Rows/previewimage.png</texturefocus>
-					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(53)">Conditional</animation>	
-					<animation effect="zoom" end="106" center="auto">Focus</animation>		
-					<onclick>Container.SetViewMode(556)</onclick>		
-					<visible>Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(TvShowsUsePosters)] | [Container.Content(TVShows) + Skin.HasSetting(UsePosterJPG)]</visible>			
+					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(53)">Conditional</animation>
+					<animation effect="zoom" end="106" center="auto">Focus</animation>
+					<onclick>Container.SetViewMode(556)</onclick>
+					<visible>Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(TvShowsUsePosters)] | [Container.Content(TVShows) + Skin.HasSetting(UsePosterJPG)]</visible>
 				</control>
 
 			</control>

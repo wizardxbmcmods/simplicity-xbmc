@@ -18,7 +18,7 @@
   <string id="31025">Items</string>
   <string id="31026">Misc Options</string>
   <string id="31027">Location</string>
- 
+
   <!-- View Type labels -->
   <string id="31028">Poster Wrap</string>
   <string id="31029">Fanart</string>
@@ -46,7 +46,7 @@
   <string id="31058">System music files</string>
   <string id="31059">Current playlist</string>
   <string id="31060">This file is stacked, select the part you want to play from.</string>
-  
+
   <!-- Skin Settings labels -->
   <string id="31100"></string>
   <string id="31101">Home Screen Options</string>

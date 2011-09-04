@@ -5,10 +5,10 @@
 	<controls>
 		<include>CommonMediaPlayingBackground</include>
 		<control type="group">
-			<include>Window_OpenClose_Animation</include>		
+			<include>Window_OpenClose_Animation</include>
 		</control>
 		<control type="group">
-			<include>Window_OpenClose_Animation</include>		
+			<include>Window_OpenClose_Animation</include>
 			<include>CommonRootView</include>
 			<!-- view id = 50 -->
 			<include>ThumbnailView</include>

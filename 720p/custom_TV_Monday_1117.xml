@@ -259,7 +259,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>Monday</label>
-				</control>				
+				</control>
 
 				<!--Posters-->
 
@@ -315,7 +315,7 @@
 								<align>left</align>
 								<aligny>center</aligny>
 								<label>$INFO[ListItem.label]</label>
-							</control>		
+							</control>
 							<control type="label">
 								<posx>337</posx>
 								<posy>155</posy>
@@ -326,7 +326,7 @@
 								<align>left</align>
 								<aligny>center</aligny>
 								<label>Airing: [COLOR=white]$INFO[ListItem.label2][/COLOR]</label>
-							</control>		
+							</control>
 							<control type="label">
 								<posx>337</posx>
 								<posy>195</posy>
@@ -337,7 +337,7 @@
 								<align>left</align>
 								<aligny>center</aligny>
 								<label>Number: [COLOR=white]$INFO[ListItem.Property(NextNumber)][/COLOR]</label>
-							</control>		
+							</control>
 							<control type="label">
 								<posx>337</posx>
 								<posy>235</posy>
@@ -359,7 +359,7 @@
 								<align>left</align>
 								<aligny>center</aligny>
 								<label>Genre: [COLOR=white]$INFO[ListItem.Property(Genres)][/COLOR]</label>
-							</control>		
+							</control>
 							<control type="label">
 								<posx>337</posx>
 								<posy>315</posy>
@@ -370,7 +370,7 @@
 								<align>left</align>
 								<aligny>center</aligny>
 								<label>Premiered: [COLOR=white]$INFO[ListItem.Property(Premiered)][/COLOR]</label>
-							</control>		
+							</control>
 							<control type="label">
 								<posx>337</posx>
 								<posy>355</posy>
@@ -381,7 +381,7 @@
 								<align>left</align>
 								<aligny>center</aligny>
 								<label>Status: [COLOR=white]$INFO[ListItem.Property(Status)][/COLOR]</label>
-							</control>		
+							</control>
 							<control type="label">
 								<posx>337</posx>
 								<posy>395</posy>
@@ -392,7 +392,7 @@
 								<align>left</align>
 								<aligny>center</aligny>
 								<label>Runtime: [COLOR=white]$INFO[ListItem.Property(Runtime)][/COLOR]</label>
-							</control>		
+							</control>
 
 
 
@@ -432,7 +432,7 @@
 								<align>left</align>
 								<aligny>center</aligny>
 								<label>$INFO[ListItem.label]</label>
-							</control>		
+							</control>
 							<control type="label">
 								<posx>337</posx>
 								<posy>155</posy>
@@ -443,7 +443,7 @@
 								<align>left</align>
 								<aligny>center</aligny>
 								<label>Airing: [COLOR=white]$INFO[ListItem.label2][/COLOR]</label>
-							</control>		
+							</control>
 							<control type="label">
 								<posx>337</posx>
 								<posy>195</posy>
@@ -454,7 +454,7 @@
 								<align>left</align>
 								<aligny>center</aligny>
 								<label>Number: [COLOR=white]$INFO[ListItem.Property(NextNumber)][/COLOR]</label>
-							</control>		
+							</control>
 							<control type="label">
 								<posx>337</posx>
 								<posy>235</posy>
@@ -476,7 +476,7 @@
 								<align>left</align>
 								<aligny>center</aligny>
 								<label>Genre: [COLOR=white]$INFO[ListItem.Property(Genres)][/COLOR]</label>
-							</control>		
+							</control>
 							<control type="label">
 								<posx>337</posx>
 								<posy>315</posy>
@@ -487,7 +487,7 @@
 								<align>left</align>
 								<aligny>center</aligny>
 								<label>Premiered: [COLOR=white]$INFO[ListItem.Property(Premiered)][/COLOR]</label>
-							</control>		
+							</control>
 							<control type="label">
 								<posx>337</posx>
 								<posy>355</posy>
@@ -498,7 +498,7 @@
 								<align>left</align>
 								<aligny>center</aligny>
 								<label>Status: [COLOR=white]$INFO[ListItem.Property(Status)][/COLOR]</label>
-							</control>		
+							</control>
 							<control type="label">
 								<posx>337</posx>
 								<posy>395</posy>
@@ -509,7 +509,7 @@
 								<align>left</align>
 								<aligny>center</aligny>
 								<label>Runtime: [COLOR=white]$INFO[ListItem.Property(Runtime)][/COLOR]</label>
-							</control>		
+							</control>
 						</focusedlayout>
 						<content>
 							<item id="1">
@@ -683,7 +683,7 @@
 							<item id="9">
 								<label>$INFO[Window(Home).Property(NextAired.9.ShowTitle)]</label>
 								<label2>$INFO[Window(Home).Property(NextAired.9.NextDate)] at $INFO[Window(Home).Property(NextAired.9.shortime)]</label2>
-								<onclick>-</onclick>							
+								<onclick>-</onclick>
 								<property name="Airtime">$INFO[Window(Home).Property(NextAired.9.Airtime)]</property>
 								<property name="NextDate">$INFO[Window(Home).Property(NextAired.9.NextDate)]</property>
 								<property name="NextTitle">$INFO[Window(Home).Property(NextAired.9.NextTitle)]</property>
@@ -1317,7 +1317,7 @@
 				<height>35</height>
 				<texture>simplicity/left-arrow.png</texture>
 				<visible>Container(11000).HasPrevious</visible>
-			</control>	
+			</control>
 			<control type="image">
 				<posx>1215</posx>
 				<posy>627</posy>
@@ -1325,7 +1325,7 @@
 				<height>35</height>
 				<texture>simplicity/right-arrow.png</texture>
 				<visible>Container(11000).HasNext</visible>
-			</control>	
+			</control>
 
 
 			<control type="image">
@@ -1334,8 +1334,8 @@
 				<width>1235</width>
 				<height>1</height>
 				<texture>simplicity/line.png</texture>
-			</control>	
-		</control>	
+			</control>
+		</control>
 	</control>
 	<include>Clock</include>
 </controls>
