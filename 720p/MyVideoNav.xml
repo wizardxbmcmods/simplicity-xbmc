@@ -1,7 +1,7 @@
 <window id="25">
 	<defaultcontrol always="true">9999</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-	<views>50,54,55,57,58,59,65,66,67,68,500,501,504,505,506,507,508,509,511,532,534,535,536,537,538,539,540,552,553,554,555,556,557,558,559,560,561,562,563,564,565,566,567,568,569,570</views>
+	<views>50,54,55,57,58,59,65,66,67,68,500,501,504,505,506,507,508,509,511,532,534,535,536,537,538,539,540,552,553,554,555,556,557,558,559,560,561,562,563,564,565,566,567,568,569,570,572</views>
 	<visible>!Skin.HasSetting(KioskMode)</visible>
 	<controls>
 
@@ -211,6 +211,8 @@
 		<include>Side-List-Kids</include>
 		<!-- view id = 570-->
 		<include>MovieGenreView</include>
+		<!-- view id = 572-->
+		<include>Movies-Side-List</include>
 		<!-- view id = 59 -->
 	</control>
 	<include>ScrollOffsetLabel</include>

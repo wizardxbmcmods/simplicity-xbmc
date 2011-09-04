@@ -85,6 +85,9 @@
 	</include>
 
 <!--Right-->
+	<include name="OpenTrailerRight">
+            <onright>XBMC.PlayMedia($INFO[ListItem.Trailer],1,noresume)</onright>
+	</include>
 
 	<include name="OpenGuideRight">
 				<onright>ActivateWindow(1116,TVShows,return)</onright>
@@ -1258,6 +1261,32 @@
 				<width>275</width>
 				<label>View Options</label>
 				<align>left</align>
+				<aligny>center</aligny>
+				<font>Simplicity_20</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+			</control>
+		</control>
+	</include>
+
+	<include name="RightOpenTrailer">
+		<control type="group">
+			<include>BottomSlide</include>
+			<control type="image">
+				<posx>150r</posx>
+				<posy>679</posy>
+				<width>15</width>
+				<height>15</height>
+				<texture>simplicity/right-arrow.png</texture>
+			</control>
+			<control type="label">
+				<description>View Options</description>
+				<posx>170r</posx>
+				<posy>675</posy>
+				<height>20</height>
+				<width>275</width>
+				<label>Trailer</label>
+				<align>right</align>
 				<aligny>center</aligny>
 				<font>Simplicity_20</font>
 				<textcolor>white</textcolor>
