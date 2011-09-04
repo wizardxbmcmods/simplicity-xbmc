@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <addon
-  id="skin.simplicity"
+  id="skin.simplicity.git"
   version="2.0.1"
-  name="Simplicity"
+  name="Simplicity (git)"
   provider-name="igotdvds">
   <requires>
     <import addon="xbmc.gui" version="3.0"/>
