@@ -1985,6 +1985,7 @@
 			</control>		
 			<include>TVInfoLeftBanner</include>
 			<include>TVInfoLeftFanart</include>
+			<include>TVInfoLeftThumbnails</include>
 		</control>
 	</include>
 	<include name="Season-List">
@@ -2099,6 +2100,7 @@
 			</control>		
 			<include>TVInfoLeftBanner</include>
 			<include>TVInfoLeftFanart</include>
+			<include>TVInfoLeftThumbnails</include>
 		</control>
 	</include>
 	<include name="Banner-List">
