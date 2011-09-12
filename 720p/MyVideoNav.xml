@@ -390,7 +390,18 @@
 					<include>ButtonCommonValuesSub</include>
 					<label>Use Fanart Layout</label>
 					<onclick>Skin.ToggleSetting(TVInfoLeftFanart)</onclick>
+					<onclick>Skin.Reset(TVInfoLeftThumbnails)</onclick>
 					<selected>Skin.HasSetting(TVInfoLeftFanart)</selected>
+					<visible>Control.IsVisible(532) | Control.IsVisible(534)</visible>
+				</control>
+				<control type="radiobutton" id="214">
+					<textwidth>170</textwidth>
+					<description>Toggle Flags Instead of Plot</description>
+					<include>ButtonCommonValuesSub</include>
+					<label>Use Thumbnail Layout</label>
+					<onclick>Skin.ToggleSetting(TVInfoLeftThumbnails)</onclick>
+					<onclick>Skin.Reset(TVInfoLeftFanart)</onclick>
+					<selected>Skin.HasSetting(TVInfoLeftThumbnails)</selected>
 					<visible>Control.IsVisible(532) | Control.IsVisible(534)</visible>
 				</control>
 				<control type="radiobutton" id="210">

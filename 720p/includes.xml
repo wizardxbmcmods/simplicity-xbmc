@@ -3038,6 +3038,111 @@
 	</control>
 </include>
 
+<include name="TVInfoLeftThumbnails">
+	<control type="group">
+		<visible>Skin.HasSetting(TVInfoLeftThumbnails)</visible>
+		<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+		<include>Zoom</include>
+		<control type="image">
+			<posx>90</posx>
+			<posy>140</posy>
+			<width>384</width>
+			<height>216</height>
+			<texture background="true">now-playing-border.png</texture>
+		</control>
+		<control type="image">
+			<posx>92</posx>
+			<posy>142</posy>
+			<width>380</width>
+			<height>212</height>
+			<aspectratio scalediffuse="false" align="middle" aligny="top">keep</aspectratio>
+			<texture background="true" fallback="logo-fallback.png">$INFO[Listitem.Thumb]</texture>
+			<fadetime>IconCrossfadeTime</fadetime>						
+		</control>
+		<control type="image">
+			<posx>92</posx>
+			<posy>326</posy>
+			<width>380</width>
+			<height>28</height>
+			<texture background="true">simplicity/black-back.png</texture>
+		</control>		
+		<control type="label">
+			<posx>96</posx>
+			<posy>328</posy>
+			<width>270</width>
+			<height>20</height>
+			<font>Simplicity_20</font>
+			<textcolor>white</textcolor>
+			<align>left</align>
+			<label>$INFO[ListItem.Title]</label>
+		</control>
+		<control type="grouplist">
+			<description>Studio Codec Flagging Images</description>
+			<posx>400</posx>
+			<posy>320</posy>
+			<width>105</width>
+			<align>right</align>
+			<itemgap>0</itemgap>
+			<orientation>horizontal</orientation>
+			<include>StudioFlaggingConditionsSmall</include>
+		</control>
+		<control type="image">
+			<posx>96</posx>
+			<posy>356</posy>
+			<width>384</width>
+			<height>1</height>
+			<aspectratio>stretch</aspectratio>
+			<texture background="true">simplicity/line.png</texture>
+		</control>
+		<control type="group">
+			<posx>90</posx>
+			<posy>546</posy>
+			<include>EpisodeNextAiredDate</include>
+		</control>
+		<control type="group">
+			<posx>90</posx>
+			<posy>576</posy>
+			<include>EpisodeNextAiredTime</include>
+		</control>
+		<control type="textbox">
+			<posx>90</posx>
+			<posy>376</posy>
+			<width>384</width>
+			<height>150</height>
+			<font>Simplicity_20</font>
+			<textcolor>white</textcolor>
+			<align>left</align>
+			<label>$INFO[ListItem.Plot]</label>
+			<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+			<visible>Container.Content(Episodes)</visible>
+		</control>
+		<control type="label">
+			<posx>90</posx>
+			<posy>516</posy>
+			<width>300</width>
+			<height>20</height>
+			<font>Simplicity_20</font>
+			<textcolor>grey2</textcolor>
+			<shadowcolor>black</shadowcolor>
+			<scroll>false</scroll>
+			<scrollspeed>0</scrollspeed>
+			<align>left</align>
+			<label>$INFO[ListItem.Genre]</label>
+		</control>
+		<control type="textbox">
+			<posx>90</posx>
+			<posy>376</posy>
+			<width>384</width>
+			<height>120</height>
+			<font>Simplicity_20</font>
+			<textcolor>white</textcolor>
+			<align>left</align>
+			<label>$INFO[Container.ShowPlot]</label>
+			<visible>Container.Content(Seasons)</visible>
+		</control>
+	</control>
+</include>
+
 <include name="TVInfoLeftFanart">
 	<control type="group">
 		<visible>Skin.HasSetting(TVInfoLeftFanart)</visible>
@@ -3144,7 +3249,7 @@
 
 <include name="TVInfoLeftBanner">
 	<control type="group">
-		<visible>!Skin.HasSetting(TVInfoLeftFanart)</visible>
+		<visible>!(Skin.HasSetting(TVInfoLeftFanart) | Skin.HasSetting(TVInfoLeftThumbnails))</visible>
 		<visible>!substring(Container.FolderPath,videodb://5/)</visible> 
 		<control type="image">
 			<posx>90</posx>
