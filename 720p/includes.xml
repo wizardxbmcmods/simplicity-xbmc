@@ -3249,7 +3249,7 @@
 
 <include name="TVInfoLeftBanner">
 	<control type="group">
-		<visible>!(Skin.HasSetting(TVInfoLeftFanart) | Skin.HasSetting(TVInfoLeftThumbnails))</visible>
+		<visible>!Skin.HasSetting(TVInfoLeftFanart) + !Skin.HasSetting(TVInfoLeftThumbnails)</visible>
 		<visible>!substring(Container.FolderPath,videodb://5/)</visible> 
 		<control type="image">
 			<posx>90</posx>
