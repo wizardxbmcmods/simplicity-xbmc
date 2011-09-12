@@ -1866,7 +1866,96 @@
 						</control>					
 					</control>	
 				</itemlayout>
+				<focusedlayout height="120" width="800">
+					<visible>Skin.HasSetting(TVInfoLeftThumbnails)</visible>
+					<control type="group">
+						<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+						<posx>65</posx>
+						<control type="label">
+							<posx>110</posx>
+							<posy>15</posy>
+							<width>80</width>
+							<height>20</height>
+							<font>Simplicity_60</font>
+							<textcolor>grey4</textcolor>
+							<align>right</align>
+							<label>$INFO[ListItem.Episode]</label>
+						</control>
+						<control type="label">
+							<posx>135</posx>
+							<posy>8</posy>
+							<width>500</width>
+							<height>30</height>
+							<font>Simplicity_24</font>
+							<textcolor>grey4</textcolor>
+							<align>left</align>
+							<label>$INFO[ListItem.title]</label>
+						</control>	
+						<control type="label">
+							<posx>135</posx>
+							<posy>35</posy>
+							<width>350</width>
+							<height>20</height>
+							<font>Simplicity_20</font>
+							<textcolor>grey2</textcolor>
+							<align>left</align>
+							<label>Originally aired: $INFO[ListItem.Date]</label>
+						</control>					
+						<control type="image">
+							<description>Rating value</description>
+							<posx>135</posx>
+							<posy>65</posy>
+							<width>154</width>
+							<height>30</height>
+							<align>right</align>
+							<texture>$INFO[Listitem.StarRating]</texture>
+							<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
+						</control>
+						<control type="image">
+							<posx>315</posx>
+							<posy>62</posy>
+							<width>40</width>
+							<height>40</height>
+							<align>left</align>
+							<texture>simplicity/banners/$INFO[ListItem.Overlay]</texture>
+						</control>
+						<control type="group">
+							<visible>Skin.HasSetting(UseFlags)</visible>
+							<control type="group">
+								<description>Media Codec Flagging Images</description>
+								<posx>270</posx>
+								<posy>110</posy>
+								<include>VideoCodecFlaggingConditionsList</include>
+							</control>
+							<control type="group">
+								<description>Media Codec Flagging Images</description>
+								<posx>351</posx>
+								<posy>110</posy>
+								<include>VideoResolutionFlaggingConditionsList</include>
+							</control>
+							<control type="group">
+								<description>Media Codec Flagging Images</description>
+								<posx>438</posx>
+								<posy>110</posy>
+								<include>AspectCodecFlaggingConditions</include>
+							</control>
+							<control type="group">
+								<description>Media Codec Flagging Images</description>
+								<posx>525</posx>
+								<posy>110</posy>
+								<include>AudioCodecFlaggingConditionsList</include>
+							</control>
+							<control type="group">
+								<description>Media Codec Flagging Images</description>
+								<posx>612</posx>
+								<posy>110</posy>
+								<include>AudioChannelFlaggingConditionsList</include>
+							</control>
+						</control>
+					</control>	
+				</focusedlayout>
 				<focusedlayout height="210" width="800">
+					<visible>!Skin.HasSetting(TVInfoLeftThumbnails)</visible>
 					<control type="label">
 						<posx>270</posx>
 						<posy>24</posy>
