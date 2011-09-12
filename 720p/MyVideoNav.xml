@@ -210,7 +210,7 @@
 		<!-- view id = 569-->		
 		<include>Side-List-Kids</include>
 		<!-- view id = 570-->		
-		<include>Episode-List-Thumbnails</include>
+		<include>Episode-List-Thumbnail</include>
 		<!-- view id = 571-->
 		<include>MovieGenreView</include>
 		<!-- view id = 59 -->

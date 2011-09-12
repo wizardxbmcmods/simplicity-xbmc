@@ -1988,7 +1988,7 @@
 			<include>TVInfoLeftThumbnails</include>
 		</control>
 	</include>
-	<include name="Episode-List-Fanart">
+	<include name="Episode-List-Thumbnail">
 		<control type="group">
 			<visible>Control.IsVisible(571)</visible>
 			<include>VisibleFadeEffect</include>
@@ -2012,7 +2012,7 @@
 				<include condition="Skin.HasSetting(VideoUseCustom)">OpenCustomRight</include>
 				<onup>571</onup>
 				<ondown>571</ondown>
-				<viewtype label="Episode List with Fanart">list</viewtype>
+				<viewtype label="Episode List with Thumbnail">list</viewtype>
 				<focusposition>2</focusposition>
 				<pagecontrol>60</pagecontrol>
 				<scrolltime>300</scrolltime>
