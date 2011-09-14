@@ -1985,7 +1985,6 @@
 				</control>		
 				<include>TVInfoLeftBanner</include>
 				<include>TVInfoLeftFanart</include>
-				<include>TVInfoLeftThumbnails</include>
 			</control>
 		</include>
 		<include name="Episode-List-Thumbnail">
@@ -2012,7 +2011,7 @@
 					<include condition="Skin.HasSetting(VideoUseCustom)">OpenCustomRight</include>
 					<onup>579</onup>
 					<ondown>579</ondown>
-					<viewtype label="Episode List Alt. Thumbnail">list</viewtype>
+					<viewtype label="Episode List Thumbnail">list</viewtype>
 					<focusposition>2</focusposition>
 					<pagecontrol>60</pagecontrol>
 					<scrolltime>300</scrolltime>
@@ -2150,8 +2149,6 @@
 						</control>	
 					</focusedlayout>
 				</control>		
-				<include>TVInfoLeftBanner</include>
-				<include>TVInfoLeftFanart</include>
 				<include>TVInfoLeftThumbnails</include>
 			</control>
 		</include>
@@ -2267,7 +2264,6 @@
 				</control>		
 				<include>TVInfoLeftBanner</include>
 				<include>TVInfoLeftFanart</include>
-				<include>TVInfoLeftThumbnails</include>
 			</control>
 		</include>
 		<include name="Banner-List">

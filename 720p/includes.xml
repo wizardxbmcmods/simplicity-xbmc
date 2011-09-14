@@ -3040,7 +3040,6 @@
 
 <include name="TVInfoLeftThumbnails">
 	<control type="group">
-		<visible>Skin.HasSetting(TVInfoLeftThumbnails)</visible>
 		<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 		<include>Zoom</include>
 		<control type="image">
@@ -3249,7 +3248,7 @@
 
 <include name="TVInfoLeftBanner">
 	<control type="group">
-		<visible>!Skin.HasSetting(TVInfoLeftFanart) + !Skin.HasSetting(TVInfoLeftThumbnails)</visible>
+		<visible>!Skin.HasSetting(TVInfoLeftFanart)</visible>
 		<visible>!substring(Container.FolderPath,videodb://5/)</visible> 
 		<control type="image">
 			<posx>90</posx>
