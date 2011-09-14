@@ -2064,6 +2064,14 @@
 						<control type="group">
 							<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 							<posx>65</posx>
+							<control type="image">
+								<posx>0</posx>
+								<posy>30</posy>
+								<width>40</width>
+								<height>40</height>
+								<align>left</align>
+								<texture>simplicity/selection-arrow.png</texture>
+							</control>
 							<control type="label">
 								<posx>110</posx>
 								<posy>15</posy>
