@@ -1,7 +1,7 @@
 <window id="25">
 	<defaultcontrol always="true">9999</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-	<views>50,54,55,57,58,59,65,66,67,68,500,501,504,505,506,507,508,509,511,532,534,535,536,537,538,539,540,552,553,554,555,556,557,558,559,560,561,562,563,564,565,566,567,568,569,570</views>
+	<views>50,54,55,57,58,59,65,66,67,68,500,501,504,505,506,507,508,509,511,532,534,535,536,537,538,539,540,552,553,554,555,556,557,558,559,560,561,562,563,564,565,566,567,568,569,570,579</views>
 	<visible>!Skin.HasSetting(KioskMode)</visible>
 	<controls>
 
@@ -210,6 +210,8 @@
 		<!-- view id = 569-->		
 		<include>Side-List-Kids</include>
 		<!-- view id = 570-->		
+		<include>Episode-List-Thumbnail</include>
+		<!-- view id = 579-->
 		<include>MovieGenreView</include>
 		<!-- view id = 59 -->
 	</control>
@@ -569,7 +571,7 @@
 					<aligny>center</aligny>
 					<texturenofocus border="5">simplicity/views/Clear Showcase/previewimage.png</texturenofocus>
 					<texturefocus border="5">simplicity/views/Clear Showcase/previewimage.png</texturefocus>
-					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(25)">Conditional</animation>			
+					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(25)">Conditional</animation>
 					<animation effect="zoom" end="106" center="auto">Focus</animation>
 					<onclick>Container.SetViewMode(537)</onclick>
 					<visible>Container.Content(TVShows) + Skin.HasSetting(EnableClearartViews)</visible>
@@ -583,9 +585,22 @@
 					<aligny>center</aligny>
 					<texturenofocus border="5">simplicity/views/Episode List/previewimage.png</texturenofocus>
 					<texturefocus border="5">simplicity/views/Episode List/previewimage.png</texturefocus>
-					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(26)">Conditional</animation>			
+					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(26)">Conditional</animation>
 					<animation effect="zoom" end="106" center="auto">Focus</animation>
 					<onclick>Container.SetViewMode(532)</onclick>
+					<visible>Container.Content(Episodes)</visible>
+				</control>
+				<control type="button" id="5444">
+					<description>Episode List Alt.</description>
+					<width>174</width>
+					<height>95</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<texturenofocus border="5">simplicity/views/Episode List Alt Thumbnail/previewimage.png</texturenofocus>
+					<texturefocus border="5">simplicity/views/Episode List Alt Thumbnail/previewimage.png</texturefocus>
+					<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(5444)">Conditional</animation>
+					<animation effect="zoom" end="106" center="auto">Focus</animation>
+					<onclick>Container.SetViewMode(579)</onclick>
 					<visible>Container.Content(Episodes)</visible>
 				</control>
 				<control type="button" id="27">
