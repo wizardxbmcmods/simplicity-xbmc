@@ -6,7 +6,7 @@
 		<posx>0</posx>
 		<posy>0</posy>
 		<origin x="460" y="120" />
-	</coordinates>  
+	</coordinates>
 	<controls>
 		<include>dialogeffectfade</include>
 

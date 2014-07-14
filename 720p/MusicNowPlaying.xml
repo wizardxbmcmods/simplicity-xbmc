@@ -12,8 +12,8 @@
 					<posx>0</posx>
 					<posy>0</posy>
 					<width>1290</width>
-					<height>720</height>			
-					<texture>black-back.png</texture>	
+					<height>720</height>
+					<texture>black-back.png</texture>
 				</control>
 
 				<control type="image">
@@ -21,10 +21,10 @@
 					<posx>0</posx>
 					<posy>0</posy>
 					<width>1280</width>
-					<height>720</height>	    
-					<animation effect="fade" start="0" end="100" time="300" tween="quadratic" easing="out">WindowOpen</animation>		
-					<texture fallback="DefaultFanart.jpg">$INFO[MusicPlayer.Property(Fanart_Image)]</texture> 	
-					<visible>!Skin.HasSetting(UseAlternateFallback)</visible>			
+					<height>720</height>
+					<animation effect="fade" start="0" end="100" time="300" tween="quadratic" easing="out">WindowOpen</animation>
+					<texture fallback="DefaultFanart.jpg">$INFO[MusicPlayer.Property(Fanart_Image)]</texture>
+					<visible>!Skin.HasSetting(UseAlternateFallback)</visible>
 				</control>
 				<control type="image">
 					<description>visualisation background</description>
@@ -33,42 +33,42 @@
 					<width>1280</width>
 					<height>720</height>
 					<fadetime>FanartCrossfadeTime</fadetime>
-					<texture  fallback="DefaultFanart_old.jpg">$INFO[MusicPlayer.Property(Fanart_Image)]</texture> 	
-					<visible>Skin.HasSetting(UseAlternateFallback)</visible>				
-					<animation effect="fade" start="0" end="100" time="300" tween="quadratic" easing="out">WindowOpen</animation>		
+					<texture  fallback="DefaultFanart_old.jpg">$INFO[MusicPlayer.Property(Fanart_Image)]</texture>
+					<visible>Skin.HasSetting(UseAlternateFallback)</visible>
+					<animation effect="fade" start="0" end="100" time="300" tween="quadratic" easing="out">WindowOpen</animation>
 				</control>
 				<control type="image">
 					<description>Default background</description>
 					<posx>0</posx>
 					<posy>0</posy>
 					<width>1280</width>
-					<height>720</height>	    
-					<animation effect="fade" start="0" end="100" time="300" tween="quadratic" easing="out">WindowOpen</animation>		
-					<texture>DefaultFanart-now-playing.png</texture> 	
+					<height>720</height>
+					<animation effect="fade" start="0" end="100" time="300" tween="quadratic" easing="out">WindowOpen</animation>
+					<texture>DefaultFanart-now-playing.png</texture>
 				</control>
 				<include>Overlay</include>
 
 				<control type="group">
 					<visible>!Skin.HasSetting(NowPlayingAlternate)</visible>
-					<control type="image">			
+					<control type="image">
 						<description>Cd overlay</description>
-						<visible>Skin.HasSetting(VisualisationCDart)</visible>			
-						<animation effect="slide" start="-118" end="0" time="900" tween="cubic" easing="out" delay="1000">WindowOpen</animation>			
-						<animation type="WindowClose">			
-							<effect type="slide" start="0" end="-114" time="800" tween="cubic" easing="in" delay="0"/>			
-							<effect type="fade" start="100" end="0" time="1300"/>			
-							<condition type="!Player.Playing"/>			
-						</animation>           
+						<visible>Skin.HasSetting(VisualisationCDart)</visible>
+						<animation effect="slide" start="-118" end="0" time="900" tween="cubic" easing="out" delay="1000">WindowOpen</animation>
+						<animation type="WindowClose">
+							<effect type="slide" start="0" end="-114" time="800" tween="cubic" easing="in" delay="0"/>
+							<effect type="fade" start="100" end="0" time="1300"/>
+							<condition type="!Player.Playing"/>
+						</animation>
 						<animation effect="rotate" end="-360" center="auto" time="2800" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
-						<width>250</width>			
-						<height>250</height>			
+						<width>250</width>
+						<height>250</height>
 						<posx>170</posx>
-						<!-- 112 -->			
+						<!-- 112 -->
 						<posy>236</posy>
-						<!-- -143 -->			
-						<texture fallback="cd/default.png">$INFO[Player.FolderPath]/cdart.png</texture>			
-						<aspectratio align="bottom">keep</aspectratio>	
-						<visible>Skin.HasSetting(VisualisationCDart)</visible>	
+						<!-- -143 -->
+						<texture fallback="cd/default.png">$INFO[Player.FolderPath]/cdart.png</texture>
+						<aspectratio align="bottom">keep</aspectratio>
+						<visible>Skin.HasSetting(VisualisationCDart)</visible>
 					</control>
 
 					<control type="group">
@@ -80,7 +80,7 @@
 							<width>275</width>
 							<height>275</height>
 							<texture background="true">$INFO[MusicPlayer.cover]</texture>
-							<aspectratio aligny="bottom">stretch</aspectratio>				
+							<aspectratio aligny="bottom">stretch</aspectratio>
 							<fadetime>FanartCrossfadeTime</fadetime>
 							<bordertexture border="8">simplicity/thumbborder.png</bordertexture>
 							<bordersize>8</bordersize>
@@ -92,9 +92,9 @@
 							<width>275</width>
 							<height>275</height>
 							<texture>album-fallback.png</texture>
-							<aspectratio aligny="bottom">stretch</aspectratio>				
+							<aspectratio aligny="bottom">stretch</aspectratio>
 							<visible>stringcompare(MusicPlayer.Cover,DefaultAlbumCover.png)</visible>
-							<fadetime>FanartCrossfadeTime</fadetime>	
+							<fadetime>FanartCrossfadeTime</fadetime>
 							<bordertexture border="8">simplicity/thumbborder.png</bordertexture>
 							<bordersize>8</bordersize>
 						</control>
@@ -105,25 +105,25 @@
 				<control type="group">
 					<visible>Skin.HasSetting(NowPlayingAlternate)</visible>
 					<animation effect="slide" end="700,0" time="0"  reversible="false" condition="Skin.HasSetting(NowPlayingAlternate)">Conditional</animation>
-					<control type="image">			
+					<control type="image">
 						<description>Cd overlay</description>
-						<visible>Skin.HasSetting(VisualisationCDart)</visible>			
-						<animation effect="slide" start="-118" end="0" time="900" tween="cubic" easing="out" delay="1000">WindowOpen</animation>			
-						<animation type="WindowClose">			
-							<effect type="slide" start="0" end="-114" time="800" tween="cubic" easing="in" delay="0"/>			
-							<effect type="fade" start="100" end="0" time="1300"/>			
-							<condition type="!Player.Playing"/>			
-						</animation>           
+						<visible>Skin.HasSetting(VisualisationCDart)</visible>
+						<animation effect="slide" start="-118" end="0" time="900" tween="cubic" easing="out" delay="1000">WindowOpen</animation>
+						<animation type="WindowClose">
+							<effect type="slide" start="0" end="-114" time="800" tween="cubic" easing="in" delay="0"/>
+							<effect type="fade" start="100" end="0" time="1300"/>
+							<condition type="!Player.Playing"/>
+						</animation>
 						<animation effect="rotate" end="-360" center="auto" time="2800" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
-						<width>250</width>			
-						<height>250</height>			
+						<width>250</width>
+						<height>250</height>
 						<posx>170</posx>
-						<!-- 112 -->			
+						<!-- 112 -->
 						<posy>236</posy>
-						<!-- -143 -->			
-						<texture fallback="cd/default.png">$INFO[Player.FolderPath]/cdart.png</texture>			
-						<aspectratio align="bottom">keep</aspectratio>	
-						<visible>Skin.HasSetting(VisualisationCDart)</visible>	
+						<!-- -143 -->
+						<texture fallback="cd/default.png">$INFO[Player.FolderPath]/cdart.png</texture>
+						<aspectratio align="bottom">keep</aspectratio>
+						<visible>Skin.HasSetting(VisualisationCDart)</visible>
 					</control>
 
 					<control type="group">
@@ -134,7 +134,7 @@
 							<width>275</width>
 							<height>275</height>
 							<texture background="true">$INFO[MusicPlayer.cover]</texture>
-							<aspectratio aligny="bottom">stretch</aspectratio>				
+							<aspectratio aligny="bottom">stretch</aspectratio>
 							<fadetime>FanartCrossfadeTime</fadetime>
 							<bordertexture border="8">simplicity/thumbborder.png</bordertexture>
 							<bordersize>8</bordersize>
@@ -146,9 +146,9 @@
 							<width>275</width>
 							<height>275</height>
 							<texture>album-fallback.png</texture>
-							<aspectratio aligny="bottom">stretch</aspectratio>				
+							<aspectratio aligny="bottom">stretch</aspectratio>
 							<visible>stringcompare(MusicPlayer.Cover,DefaultAlbumCover.png)</visible>
-							<fadetime>FanartCrossfadeTime</fadetime>	
+							<fadetime>FanartCrossfadeTime</fadetime>
 							<bordertexture border="8">simplicity/thumbborder.png</bordertexture>
 							<bordersize>8</bordersize>
 						</control>
@@ -263,18 +263,18 @@
 						<posy>175</posy>
 						<width>300</width>
 						<height>14</height>
-						<info>Player.Progress</info>				
+						<info>Player.Progress</info>
 						<texturebg border="6,0,6,0">simplicity/progress-back.png</texturebg>
 						<lefttexture border="6,0,0,0">simplicity/progress-left.png</lefttexture>
-						<midtexture border="6,0,6,0">simplicity/osd-front.png</midtexture>		
+						<midtexture border="6,0,6,0">simplicity/osd-front.png</midtexture>
 					</control>
 
 
 					<control type="label">
 						<posx>340</posx>
 						<posy>-20</posy>
-						<width>470</width>					
-						<label>Next Tracks :</label>					
+						<width>470</width>
+						<label>Next Tracks :</label>
 						<font>Simplicity_26</font>
 						<textcolor>yellow</textcolor>
 						<shadowcolor>black</shadowcolor>
@@ -310,7 +310,7 @@
 						<posx>340</posx>
 						<posy>75</posy>
 						<width>470</width>
-						<scroll>true</scroll>		
+						<scroll>true</scroll>
 						<label>[COLOR white]$INFO[MusicPlayer.offset(3).tracknumber]:[/COLOR] $INFO[MusicPlayer.offset(3).Artist]: $INFO[MusicPlayer.offset(3).Title]</label>
 						<font>Simplicity_24</font>
 						<textcolor>white</textcolor>
@@ -326,9 +326,9 @@
 						<label>[COLOR white]$INFO[MusicPlayer.offset(4).tracknumber]:[/COLOR] $INFO[MusicPlayer.offset(4).Artist]: $INFO[MusicPlayer.offset(4).Title]</label>
 						<font>Simplicity_24</font>
 						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>						
+						<shadowcolor>black</shadowcolor>
 					</control>
-					<control type="label">						
+					<control type="label">
 						<visible>!IsEmpty(MusicPlayer.offset(5).Artist)</visible>
 						<posx>340</posx>
 						<posy>135</posy>
@@ -419,15 +419,15 @@
 							<height>20</height>
 							<texturebg border="6,0,6,0">simplicity/progress-back.png</texturebg>
 							<lefttexture border="6,0,0,0">simplicity/progress-left.png</lefttexture>
-							<midtexture border="6,0,6,0">simplicity/osd-front.png</midtexture>		
-							<info>Player.Progress</info>						
+							<midtexture border="6,0,6,0">simplicity/osd-front.png</midtexture>
+							<info>Player.Progress</info>
 						</control>
 
 						<control type="label">
 							<posx>220</posx>
 							<posy>160</posy>
-							<width>400</width>					
-							<label>Next Track:</label>					
+							<width>400</width>
+							<label>Next Track:</label>
 							<font>Simplicity_18</font>
 							<align>right</align>
 							<aligny>center</aligny>
@@ -461,7 +461,7 @@
 							<aligny>center</aligny>
 							<font>Simplicity_18</font>
 							<textcolor>grey</textcolor>
-							<shadowcolor>black</shadowcolor>						
+							<shadowcolor>black</shadowcolor>
 						</control>
 					</control>
 				</control>

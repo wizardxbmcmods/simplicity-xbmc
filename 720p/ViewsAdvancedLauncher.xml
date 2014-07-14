@@ -9,15 +9,15 @@
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>1280</width>
-				<height>720</height>		
+				<height>720</height>
 				<texture fallback="addons.jpg" background="true">optional/advanced launcher/$INFO[ListItem.Writer]/titles/$INFO[ListItem.label].png</texture>
 				<fadetime>FanartCrossfadeTime</fadetime>
-			</control>  
+			</control>
 			<include>Overlay</include>
 			<include>LeftOptions</include>
 			<include>AddonBreadCrumbs</include>
 			<control type="fixedlist" id="69">
-				<include>Zoom</include>		
+				<include>Zoom</include>
 				<posx>600</posx>
 				<posy>120</posy>
 				<width>930</width>
@@ -40,12 +40,12 @@
 							<posy>5</posy>
 							<align>left</align>
 							<width>80</width>
-							<height>120</height>		
+							<height>120</height>
 							<texture fallback="poster-fallback.png">$INFO[ListItem.Thumb]</texture>
 							<bordertexture border="1">simplicity/thumbborder-thin.png</bordertexture>
-							<bordersize>1</bordersize>		
+							<bordersize>1</bordersize>
 							<colordiffuse>80FFFFFF</colordiffuse>
-						</control>  
+						</control>
 						<control type="label">
 							<posx>135</posx>
 							<posy>25</posy>
@@ -57,7 +57,7 @@
 							<align>left</align>
 							<label>$INFO[ListItem.label]</label>
 							<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
-						</control>	
+						</control>
 						<control type="label">
 							<posx>135</posx>
 							<posy>35</posy>
@@ -69,7 +69,7 @@
 							<align>left</align>
 							<label>Go To Root...</label>
 							<visible>stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
-						</control>	
+						</control>
 						<control type="label">
 							<posx>135</posx>
 							<posy>53</posy>
@@ -81,7 +81,7 @@
 							<align>left</align>
 							<label>$INFO[ListItem.Genre] | $INFO[ListItem.premiered]</label>
 							<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
-						</control>					
+						</control>
 						<control type="label">
 							<posx>135</posx>
 							<posy>76</posy>
@@ -93,8 +93,8 @@
 							<align>left</align>
 							<label>$INFO[ListItem.Writer]</label>
 							<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
-						</control>						
-					</control>	
+						</control>
+					</control>
 				</itemlayout>
 				<focusedlayout height="130" width="660">
 					<control type="group">
@@ -110,7 +110,7 @@
 							<align>left</align>
 							<label>$INFO[ListItem.label]</label>
 							<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
-						</control>	
+						</control>
 						<control type="label">
 							<posx>135</posx>
 							<posy>35</posy>
@@ -122,7 +122,7 @@
 							<align>left</align>
 							<label>Go To Root...</label>
 							<visible>stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
-						</control>	
+						</control>
 						<control type="label">
 							<posx>135</posx>
 							<posy>53</posy>
@@ -134,7 +134,7 @@
 							<align>left</align>
 							<label>$INFO[ListItem.Genre] | $INFO[ListItem.premiered]</label>
 							<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
-						</control>					
+						</control>
 						<control type="label">
 							<posx>135</posx>
 							<posy>76</posy>
@@ -146,30 +146,30 @@
 							<align>left</align>
 							<label>$INFO[ListItem.Writer]</label>
 							<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
-						</control>		
-					</control>	
+						</control>
+					</control>
 					<control type="image">
 						<posx>55</posx>
 						<posy>0</posy>
 						<height>130</height>
-						<width>565</width>		
+						<width>565</width>
 						<texture>white-selector.png</texture>
-					</control>    
+					</control>
 					<control type="image">
 						<posx>85</posx>
 						<posy>5</posy>
 						<align>left</align>
 						<width>80</width>
-						<height>120</height>		
+						<height>120</height>
 						<texture fallback="poster-fallback.png">$INFO[ListItem.Thumb]</texture>
 						<bordertexture border="1">simplicity/thumbborder-thin.png</bordertexture>
-						<bordersize>1</bordersize>		
-					</control>  
+						<bordersize>1</bordersize>
+					</control>
 				</focusedlayout>
-			</control>				
+			</control>
 			<control type="group">
 				<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
-				<include>Zoom</include>				
+				<include>Zoom</include>
 				<control type="image">
 					<posx>90</posx>
 					<posy>140</posy>
@@ -184,7 +184,7 @@
 					<height>212</height>
 					<aspectratio aligny="center">keep</aspectratio>
 					<texture background="true" fallback="nothumb.png">optional/advanced launcher/$INFO[ListItem.Writer]/screenshots/$INFO[ListItem.label].png</texture>
-					<fadetime>IconCrossfadeTime</fadetime>						
+					<fadetime>IconCrossfadeTime</fadetime>
 				</control>
 				<control type="image">
 					<posx>96</posx>
@@ -238,14 +238,14 @@
 					<aspectratio aligny="center">keep</aspectratio>
 					<width>90</width>
 					<texture>studios/$INFO[ListItem.Studio,,.png]</texture>
-				</control>  
+				</control>
 				<control type="image">
 					<posx>290</posx>
 					<posy>426</posy>
 					<width>90</width>
 					<aspectratio aligny="center">keep</aspectratio>
 					<texture background="true" fallback="optional/advanced launcher/controllers/MAME.png">optional/advanced launcher/controllers/$INFO[ListItem.Writer].png</texture>
-					<fadetime>IconCrossfadeTime</fadetime>						
+					<fadetime>IconCrossfadeTime</fadetime>
 				</control>
 				<control type="image">
 					<posx>190</posx>
@@ -253,7 +253,7 @@
 					<width>90</width>
 					<aspectratio aligny="center">keep</aspectratio>
 					<texture background="true" fallback="optional/advanced launcher/consoles/MAME.png">optional/advanced launcher/consoles/$INFO[ListItem.Writer].png</texture>
-					<fadetime>IconCrossfadeTime</fadetime>						
+					<fadetime>IconCrossfadeTime</fadetime>
 				</control>
 				<control type="image">
 					<posx>90</posx>
@@ -261,7 +261,7 @@
 					<width>90</width>
 					<aspectratio aligny="center">keep</aspectratio>
 					<texture background="true" fallback="optional/advanced launcher/logos/MAME.png">optional/advanced launcher/logos/$INFO[ListItem.Writer].png</texture>
-					<fadetime>IconCrossfadeTime</fadetime>						
+					<fadetime>IconCrossfadeTime</fadetime>
 				</control>
 			</control>
 			<control type="scrollbar" id="60">
@@ -296,7 +296,7 @@
 			<include>LeftOptions</include>
 			<include>AddonBreadCrumbs</include>
 			<control type="fixedlist" id="70">
-				<include>Zoom</include>		
+				<include>Zoom</include>
 				<posx>544</posx>
 				<posy>120</posy>
 				<width>930</width>
@@ -324,7 +324,7 @@
 							<textcolor>grey2</textcolor>
 							<align>left</align>
 							<label>$INFO[ListItem.label]</label>
-						</control>	
+						</control>
 						<control type="label">
 							<posx>135</posx>
 							<posy>35</posy>
@@ -334,8 +334,8 @@
 							<textcolor>grey2</textcolor>
 							<align>left</align>
 							<label>$INFO[ListItem.Genre] | $INFO[ListItem.Premiered]</label>
-						</control>					
-					</control>	
+						</control>
+					</control>
 				</itemlayout>
 				<focusedlayout height="210" width="800">
 					<control type="label">
@@ -371,15 +371,15 @@
 						<description>Studio</description>
 						<aspectratio>keep</aspectratio>
 						<align>left</align>
-						<width>105</width>		
+						<width>105</width>
 						<texture>studios/$INFO[ListItem.Studio,,.png]</texture>
-					</control>    
+					</control>
 				<control type="image">
 					<posx>270</posx>
 					<posy>52</posy>
 						<aspectratio>keep</aspectratio>
 						<align>left</align>
-						<width>105</width>		
+						<width>105</width>
 						<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 					<texture background="true" fallback="optional/advanced launcher/logos/MAME.png">optional/advanced launcher/logos/$INFO[ListItem.Writer].png</texture>
 				</control>
@@ -391,7 +391,7 @@
 						<align>right</align>
 						<aspect>stretch</aspect>
 						<texture background="true" fallback="nothumb.png">optional/advanced launcher/$INFO[ListItem.Writer]/titles/$INFO[ListItem.label].png</texture>
-						<fadetime>IconCrossfadeTime</fadetime>		
+						<fadetime>IconCrossfadeTime</fadetime>
 						<bordertexture border="6">simplicity/thumbborder-thin.png</bordertexture>
 						<bordersize>6</bordersize>
 						<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
@@ -409,7 +409,7 @@
 						<visible>stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 					</control>
 				</focusedlayout>
-			</control>		
+			</control>
 			<control type="group">
 				<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 				<include>Zoom</include>
@@ -465,7 +465,7 @@
 					<align>left</align>
 					<label>$INFO[ListItem.Plot]</label>
 				</control>
-			</control>		
+			</control>
 			<control type="scrollbar" id="60">
 				<posx>1240</posx>
 				<posy>120</posy>
@@ -491,15 +491,15 @@
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>1280</width>
-				<height>720</height>		
+				<height>720</height>
 				<texture fallback="addons.jpg" background="true">optional/advanced launcher/$INFO[ListItem.Writer]/titles/$INFO[ListItem.label].png</texture>
 				<fadetime>FanartCrossfadeTime</fadetime>
-			</control>  
+			</control>
 			<include>Overlay</include>
 			<include>AddonBreadCrumbs</include>
 			<control type="image">
 				<posx>0</posx>
-				<posy>630</posy>	
+				<posy>630</posy>
 				<width>1280</width>
 				<height>230</height>
 				<aspect>stretch</aspect>
@@ -507,7 +507,7 @@
 			</control>
 			<control type="image">
 				<posx>0</posx>
-				<posy>630</posy>	
+				<posy>630</posy>
 				<width>1280</width>
 				<height>2</height>
 				<aspect>stretch</aspect>
@@ -522,7 +522,7 @@
 					<posx>-72</posx>
 					<posy>478</posy>
 					<width>1800</width>
-					<height>300</height>		
+					<height>300</height>
 					<onleft>71</onleft>
 					<onright>71</onright>
 					<onup>2</onup>
@@ -539,7 +539,7 @@
 					<itemlayout height="290" width="129">
 						<control type="largeimage">
 							<posx>0</posx>
-							<posy>42</posy> 
+							<posy>42</posy>
 							<width>110</width>
 							<height>160</height>
 							<aligny>center</aligny>
@@ -549,7 +549,7 @@
 						</control>
 						<control type="largeimage">
 							<posx>0</posx>
-							<posy>207</posy> 
+							<posy>207</posy>
 							<width>110</width>
 							<height>160</height>
 							<aligny>center</aligny>
@@ -559,7 +559,7 @@
 						</control>
 						<control type="largeimage">
 							<posx>0</posx>
-							<posy>42</posy> 
+							<posy>42</posy>
 							<width>110</width>
 							<height>160</height>
 								<aspectratio aligny="bottom">keep</aspectratio>
@@ -569,7 +569,7 @@
 						</control>
 						<control type="largeimage">
 							<posx>0</posx>
-							<posy>207</posy> 
+							<posy>207</posy>
 							<width>110</width>
 							<height>160</height>
 								<aspectratio aligny="top">keep</aspectratio>
@@ -580,58 +580,58 @@
 					</itemlayout>
 					<focusedlayout height="390" width="149">
 						<control type="group">
-							<posy>15</posy> 
+							<posy>15</posy>
 							<control type="largeimage">
 								<posx>10</posx>
-								<posy>22</posy> 
+								<posy>22</posy>
 								<width>110</width>
 								<height>160</height>
 								<aligny>center</aligny>
 								<texture diffuse="simplicity/fanart-slide-poster-diffuse.png" background="true">root.png</texture>
-								<animation effect="zoom" end="120" center="auto" time="300" reversible="false">Focus</animation> 
+								<animation effect="zoom" end="120" center="auto" time="300" reversible="false">Focus</animation>
 								<aspectratio>stretch</aspectratio>
 								<visible>stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 							</control>
 							<control type="largeimage">
 								<posx>10</posx>
-								<posy>229</posy> 
+								<posy>229</posy>
 								<width>110</width>
 								<height>160</height>
 								<aligny>center</aligny>
 								<texture diffuse="simplicity/fanart-slide-poster-diffuse-reflect.png" background="true" flipy="true">root.png</texture>
-								<animation effect="zoom" end="120" center="auto" time="300" reversible="false">Focus</animation> 
+								<animation effect="zoom" end="120" center="auto" time="300" reversible="false">Focus</animation>
 								<aspectratio>stretch</aspectratio>
 								<visible>stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 							</control>
 							<control type="largeimage">
 								<posx>10</posx>
-								<posy>22</posy> 
+								<posy>22</posy>
 								<width>110</width>
 								<height>160</height>
 								<aspectratio aligny="bottom">keep</aspectratio>
 								<texture diffuse="simplicity/fanart-slide-poster-diffuse.png" background="true">$INFO[ListItem.Icon]</texture>
-								<animation effect="zoom" end="120" center="auto" time="300" reversible="false">Focus</animation> 
+								<animation effect="zoom" end="120" center="auto" time="300" reversible="false">Focus</animation>
 								<aspectratio>stretch</aspectratio>
 								<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 							</control>
 							<control type="largeimage">
 								<posx>10</posx>
-								<posy>219</posy> 
+								<posy>219</posy>
 								<width>110</width>
 								<height>160</height>
 								<aspectratio aligny="top">keep</aspectratio>
 								<texture diffuse="simplicity/fanart-slide-poster-diffuse-reflect.png" background="true" flipy="true">$INFO[ListItem.Icon]</texture>
-								<animation effect="zoom" end="120" center="auto" time="300" reversible="false">Focus</animation> 
+								<animation effect="zoom" end="120" center="auto" time="300" reversible="false">Focus</animation>
 								<aspectratio>stretch</aspectratio>
 								<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 							</control>
 						</control>
 					</focusedlayout>
-				</control>					
+				</control>
 			</control>
 
 			<control type="group">
-				<posy>-40</posy> 
+				<posy>-40</posy>
 	<control type="group">
 		<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 		<include>Zoom</include>
@@ -683,7 +683,7 @@
 			<shadowcolor>black</shadowcolor>
 			<align>left</align>
 			<label>$INFO[ListItem.Writer]</label>
-		</control>		
+		</control>
 		<control type="grouplist">
 			<description>Studio Codec Flagging Images</description>
 			<posx>885</posx>
@@ -732,15 +732,15 @@
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>1280</width>
-				<height>720</height>		
+				<height>720</height>
 				<texture fallback="addons.jpg" background="true">optional/advanced launcher/$INFO[ListItem.Writer]/titles/$INFO[ListItem.label].png</texture>
 				<fadetime>FanartCrossfadeTime</fadetime>
-			</control>  
+			</control>
 			<include>Overlay</include>
 			<include>AddonBreadCrumbs</include>
 			<control type="image">
 				<posx>0</posx>
-				<posy>630</posy>	
+				<posy>630</posy>
 				<width>1280</width>
 				<height>230</height>
 				<aspect>stretch</aspect>
@@ -748,7 +748,7 @@
 			</control>
 			<control type="image">
 				<posx>0</posx>
-				<posy>630</posy>	
+				<posy>630</posy>
 				<width>1280</width>
 				<height>2</height>
 				<aspect>stretch</aspect>
@@ -763,7 +763,7 @@
 					<posx>-72</posx>
 					<posy>478</posy>
 					<width>1800</width>
-					<height>300</height>		
+					<height>300</height>
 					<onleft>72</onleft>
 					<onright>72</onright>
 					<onup>2</onup>
@@ -780,7 +780,7 @@
 					<itemlayout height="290" width="129">
 						<control type="largeimage">
 							<posx>0</posx>
-							<posy>42</posy> 
+							<posy>42</posy>
 							<width>110</width>
 							<height>160</height>
 							<aligny>center</aligny>
@@ -791,7 +791,7 @@
 						</control>
 						<control type="largeimage">
 							<posx>0</posx>
-							<posy>207</posy> 
+							<posy>207</posy>
 							<width>110</width>
 							<height>160</height>
 							<aligny>center</aligny>
@@ -802,7 +802,7 @@
 						</control>
 						<control type="largeimage">
 							<posx>0</posx>
-							<posy>42</posy> 
+							<posy>42</posy>
 							<width>110</width>
 							<height>160</height>
 								<aspectratio aligny="bottom">keep</aspectratio>
@@ -813,7 +813,7 @@
 						</control>
 						<control type="largeimage">
 							<posx>-4</posx>
-							<posy>201</posy> 
+							<posy>201</posy>
 							<width>110</width>
 							<height>160</height>
 								<aspectratio aligny="top">keep</aspectratio>
@@ -828,43 +828,43 @@
 					</itemlayout>
 					<focusedlayout height="390" width="149">
 						<control type="group">
-							<posy>15</posy> 
+							<posy>15</posy>
 							<control type="largeimage">
 								<posx>10</posx>
-								<posy>22</posy> 
+								<posy>22</posy>
 								<width>110</width>
 								<height>160</height>
 								<aligny>center</aligny>
 								<texture diffuse="simplicity/fanart-slide-poster-diffuse.png" background="true">root.png</texture>
-								<animation effect="zoom" end="140" center="auto" time="300" reversible="false">Focus</animation> 
+								<animation effect="zoom" end="140" center="auto" time="300" reversible="false">Focus</animation>
 								<aspectratio>stretch</aspectratio>
 								<visible>stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 							</control>
 							<control type="largeimage">
 								<posx>10</posx>
-								<posy>229</posy> 
+								<posy>229</posy>
 								<width>110</width>
 								<height>160</height>
 								<aligny>center</aligny>
 								<texture diffuse="simplicity/fanart-slide-poster-diffuse-reflect.png" background="true" flipy="true">root.png</texture>
-								<animation effect="zoom" end="140" center="auto" time="300" reversible="false">Focus</animation> 
+								<animation effect="zoom" end="140" center="auto" time="300" reversible="false">Focus</animation>
 								<aspectratio>stretch</aspectratio>
 								<visible>stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 							</control>
 							<control type="largeimage">
 								<posx>10</posx>
-								<posy>10</posy> 
+								<posy>10</posy>
 								<width>110</width>
 								<height>160</height>
 								<aspectratio aligny="bottom">keep</aspectratio>
 								<texture diffuse="simplicity/fanart-slide-poster-diffuse.png" background="true">optional/advanced launcher/$INFO[ListItem.Writer]/box-3d/$INFO[ListItem.label].png</texture>
-								<animation effect="zoom" end="140" center="auto" time="300" reversible="false">Focus</animation> 
+								<animation effect="zoom" end="140" center="auto" time="300" reversible="false">Focus</animation>
 								<aspectratio>stretch</aspectratio>
 								<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 							</control>
 						<control type="largeimage">
 							<posx>3</posx>
-							<posy>231</posy> 
+							<posy>231</posy>
 							<width>110</width>
 							<height>160</height>
 								<aspectratio aligny="top">keep</aspectratio>
@@ -878,11 +878,11 @@
 						</control>
 						</control>
 					</focusedlayout>
-				</control>					
+				</control>
 			</control>
 
 			<control type="group">
-				<posy>-40</posy> 
+				<posy>-40</posy>
 	<control type="group">
 		<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 		<include>Zoom</include>
@@ -927,7 +927,7 @@
 			<shadowcolor>black</shadowcolor>
 			<align>left</align>
 			<label>$INFO[ListItem.Writer]</label>
-		</control>		
+		</control>
 		<control type="grouplist">
 			<description>Studio Codec Flagging Images</description>
 			<posx>885</posx>
@@ -985,7 +985,7 @@
 			<include>LeftOptions</include>
 			<include>AddonBreadCrumbs</include>
 			<control type="fixedlist" id="73">
-				<include>Zoom</include>		
+				<include>Zoom</include>
 				<posx>544</posx>
 				<posy>120</posy>
 				<width>930</width>
@@ -1013,8 +1013,8 @@
 							<textcolor>grey2</textcolor>
 							<align>left</align>
 							<label>$INFO[ListItem.label]</label>
-						</control>				
-					</control>	
+						</control>
+					</control>
 				</itemlayout>
 				<focusedlayout height="160" width="800">
 					<control type="label">
@@ -1050,15 +1050,15 @@
 						<description>Studio</description>
 						<aspectratio>keep</aspectratio>
 						<align>left</align>
-						<width>105</width>		
+						<width>105</width>
 						<texture>studios/$INFO[ListItem.Studio,,.png]</texture>
-					</control>    
+					</control>
 				<control type="image">
 					<posx>270</posx>
 					<posy>65</posy>
 						<aspectratio>keep</aspectratio>
 						<align>left</align>
-						<width>105</width>		
+						<width>105</width>
 						<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 					<texture background="true" fallback="optional/advanced launcher/logos/MAME.png">optional/advanced launcher/logos/$INFO[ListItem.Writer].png</texture>
 				</control>
@@ -1070,7 +1070,7 @@
 						<align>right</align>
 						<aspect>stretch</aspect>
 						<texture background="true" fallback="nothumb.png">optional/advanced launcher/$INFO[ListItem.Writer]/titles/$INFO[ListItem.label].png</texture>
-						<fadetime>IconCrossfadeTime</fadetime>		
+						<fadetime>IconCrossfadeTime</fadetime>
 						<bordertexture border="6">simplicity/thumbborder-thin.png</bordertexture>
 						<bordersize>6</bordersize>
 						<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
@@ -1088,7 +1088,7 @@
 						<visible>stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 					</control>
 				</focusedlayout>
-			</control>		
+			</control>
 			<control type="group">
 				<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 				<include>Zoom</include>
@@ -1144,7 +1144,7 @@
 					<align>left</align>
 					<label>$INFO[ListItem.Plot]</label>
 				</control>
-			</control>	
+			</control>
 			<control type="scrollbar" id="60">
 				<posx>1240</posx>
 				<posy>120</posy>
@@ -1170,14 +1170,14 @@
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>1280</width>
-				<height>720</height>		
+				<height>720</height>
 				<texture fallback="addons.jpg" background="true">optional/advanced launcher/$INFO[ListItem.Writer]/screenshots/$INFO[ListItem.label].png</texture>
 				<fadetime>FanartCrossfadeTime</fadetime>
-			</control>  
+			</control>
 			<include>Overlay</include>
 			<control type="image">
 				<posx>0</posx>
-				<posy>430</posy>	
+				<posy>430</posy>
 				<width>1280</width>
 				<height>430</height>
 				<aspect>stretch</aspect>
@@ -1185,7 +1185,7 @@
 			</control>
 			<control type="image">
 				<posx>0</posx>
-				<posy>430</posy>	
+				<posy>430</posy>
 				<width>1280</width>
 				<height>2</height>
 				<aspect>stretch</aspect>
@@ -1201,7 +1201,7 @@
 					<posx>58</posx>
 					<posy>120</posy>
 					<width>1200</width>
-					<height>328</height>		
+					<height>328</height>
 					<onleft>2</onleft>
 					<onright>60</onright>
 					<onup>74</onup>
@@ -1212,13 +1212,13 @@
 					<focusposition>0</focusposition>
 					<preloaditems>200</preloaditems>
 					<orientation>vertical</orientation>
-					<visible>substring(container.folderpath,plugin://plugin.program.advanced.launcher)</visible>					
+					<visible>substring(container.folderpath,plugin://plugin.program.advanced.launcher)</visible>
 					<pagecontrol>70</pagecontrol>
 					<orientation>horizontal</orientation>
 					<itemlayout height="160" width="170">
 						<control type="largeimage">
 							<posx>0</posx>
-							<posy>0</posy> 
+							<posy>0</posy>
 							<width>150</width>
 							<height>150</height>
 							<texture background="true" fallback="nothumb.png">optional/advanced launcher/$INFO[ListItem.Writer]/titles/$INFO[ListItem.label].png</texture>
@@ -1229,7 +1229,7 @@
 						</control>
 						<control type="largeimage">
 							<posx>0</posx>
-							<posy>0</posy> 
+							<posy>0</posy>
 							<width>150</width>
 							<height>150</height>
 								<texture background="true">root-album.png</texture>
@@ -1237,17 +1237,17 @@
 								<bordertexture border="4">thumbborder.png</bordertexture>
 								<bordersize>4</bordersize>
 								<visible>stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
-						</control>					
+						</control>
 					</itemlayout>
 					<focusedlayout height="160" width="170">
-						<control type="group">						
+						<control type="group">
 							<control type="largeimage">
 								<posx>0</posx>
-								<posy>0</posy> 
+								<posy>0</posy>
 							<width>150</width>
 							<height>150</height>
 								<texture background="true">root-album.png</texture>
-								<animation reversible="false" effect="zoom" end="120" center="auto" time="150">Focus</animation> 	
+								<animation reversible="false" effect="zoom" end="120" center="auto" time="150">Focus</animation>
 								<bordertexture border="4">simplicity/thumbborder.png</bordertexture>
 								<bordersize>4</bordersize>
 							<aspectratio aligny="center">keep</aspectratio>
@@ -1255,11 +1255,11 @@
 							</control>
 							<control type="largeimage">
 								<posx>0</posx>
-								<posy>0</posy> 
+								<posy>0</posy>
 								<width>150</width>
 								<height>150</height>
 								<texture background="true" fallback="nothumb.png">optional/advanced launcher/$INFO[ListItem.Writer]/titles/$INFO[ListItem.label].png</texture>
-								<animation reversible="false" effect="zoom" end="120" center="auto" time="150">Focus</animation> 	
+								<animation reversible="false" effect="zoom" end="120" center="auto" time="150">Focus</animation>
 								<bordertexture border="4">simplicity/thumbborder.png</bordertexture>
 								<bordersize>4</bordersize>
 							<aspectratio aligny="center">keep</aspectratio>
@@ -1267,17 +1267,17 @@
 							</control>
 							<control type="image">
 								<posx>-1</posx>
-								<posy>-1</posy> 
+								<posy>-1</posy>
 								<width>118</width>
 								<height>176</height>
 								<aligny>center</aligny>
 								<texture background="true">simplicity/grid-glow.png</texture>
-								<animation reversible="false" effect="zoom" end="120" center="auto" time="150">Focus</animation> 	
+								<animation reversible="false" effect="zoom" end="120" center="auto" time="150">Focus</animation>
 								<aspectratio>stretch</aspectratio>
 							</control>
 						</control>
 					</focusedlayout>
-				</control>	
+				</control>
 <control type="group">
 					<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 					<include>Zoom</include>
@@ -1429,10 +1429,10 @@
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>1280</width>
-				<height>720</height>		
+				<height>720</height>
 				<texture fallback="addons.jpg" background="true">optional/advanced launcher/$INFO[ListItem.Writer]/screenshots/$INFO[ListItem.label].png</texture>
 				<fadetime>FanartCrossfadeTime</fadetime>
-			</control>  
+			</control>
 			<include>Overlay</include>
 			<include>AddonBreadCrumbs</include>
 			<include>LeftOptions</include>
@@ -1444,7 +1444,7 @@
 					<posx>58</posx>
 					<posy>120</posy>
 					<width>1200</width>
-					<height>392</height>		
+					<height>392</height>
 					<onleft>2</onleft>
 					<onup>75</onup>
 					<ondown>75</ondown>
@@ -1454,7 +1454,7 @@
 					<focusposition>0</focusposition>
 					<preloaditems>200</preloaditems>
 					<orientation>vertical</orientation>
-					<visible>substring(container.folderpath,plugin://plugin.program.advanced.launcher)</visible>			
+					<visible>substring(container.folderpath,plugin://plugin.program.advanced.launcher)</visible>
 					<pagecontrol>70</pagecontrol>
 					<orientation>horizontal</orientation>
 					<itemlayout height="196" width="150">
@@ -1463,7 +1463,7 @@
 							<posy>2</posy>
 							<control type="largeimage">
 								<posx>0</posx>
-								<posy>0</posy> 
+								<posy>0</posy>
 								<width>118</width>
 								<height>176</height>
 								<aligny>center</aligny>
@@ -1477,7 +1477,7 @@
 							</control>
 							<control type="largeimage">
 								<posx>0</posx>
-								<posy>0</posy> 
+								<posy>0</posy>
 								<width>118</width>
 								<height>176</height>
 								<aligny>center</aligny>
@@ -1491,7 +1491,7 @@
 							</control>
 							<control type="largeimage">
 								<posx>0</posx>
-								<posy>0</posy> 
+								<posy>0</posy>
 								<width>118</width>
 								<height>176</height>
 								<aligny>center</aligny>
@@ -1510,12 +1510,12 @@
 							<posy>2</posy>
 							<control type="largeimage">
 								<posx>0</posx>
-								<posy>0</posy> 
+								<posy>0</posy>
 								<width>118</width>
 								<height>176</height>
 								<aligny>center</aligny>
 								<texture background="true">root.png</texture>
-								<animation reversible="false" effect="zoom" end="115" center="auto" time="200">Focus</animation> 	
+								<animation reversible="false" effect="zoom" end="115" center="auto" time="200">Focus</animation>
 								<aspectratio>keep</aspectratio>
 								<bordertexture border="1">simplicity/thumbborder-thin.png</bordertexture>
 								<bordersize>1</bordersize>
@@ -1523,12 +1523,12 @@
 							</control>
 							<control type="largeimage">
 								<posx>0</posx>
-								<posy>0</posy> 
+								<posy>0</posy>
 								<width>118</width>
 								<height>176</height>
 								<aligny>center</aligny>
 								<texture background="true" fallback="addons/nes-fallback.png">$INFO[ListItem.Icon]</texture>
-								<animation reversible="false" effect="zoom" end="115" center="auto" time="200">Focus</animation> 	
+								<animation reversible="false" effect="zoom" end="115" center="auto" time="200">Focus</animation>
 								<aspectratio>keep</aspectratio>
 								<bordertexture border="1">simplicity/thumbborder-thin.png</bordertexture>
 								<bordersize>1</bordersize>
@@ -1537,12 +1537,12 @@
 							</control>
 							<control type="largeimage">
 								<posx>0</posx>
-								<posy>0</posy> 
+								<posy>0</posy>
 								<width>118</width>
 								<height>176</height>
 								<aligny>center</aligny>
 								<texture background="true">$INFO[ListItem.Icon]</texture>
-								<animation reversible="false" effect="zoom" end="115" center="auto" time="200">Focus</animation> 	
+								<animation reversible="false" effect="zoom" end="115" center="auto" time="200">Focus</animation>
 								<aspectratio>keep</aspectratio>
 								<bordertexture border="1">simplicity/thumbborder-thin.png</bordertexture>
 								<bordersize>1</bordersize>
@@ -1551,7 +1551,7 @@
 							</control>
 						</control>
 					</focusedlayout>
-				</control>	
+				</control>
 				<control type="group">
 					<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 					<include>Zoom</include>

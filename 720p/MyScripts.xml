@@ -6,7 +6,7 @@
 		<include>CommonMediaPlayingBackground</include>
 
 		<control type="group">
-			<include>Window_OpenClose_Animation</include>		
+			<include>Window_OpenClose_Animation</include>
 			<include>ThumbnailView</include>
 			<!-- view id = 500 -->
 			<include>AppView</include>
@@ -142,7 +142,7 @@
 				<font>Simplicity_30_UltraThin</font>
 				<textcolor>white</textcolor>
 				<visible>Control.IsVisible(8999) | Control.IsVisible(9000) | Control.IsVisible(9010)</visible>
-			</control>	
+			</control>
 			<control type="image">
 				<posx>1020</posx>
 				<posy>1178</posy>
@@ -171,7 +171,7 @@
 				<font>Simplicity_30_UltraThin</font>
 				<textcolor>white</textcolor>
 				<visible>Control.IsVisible(8999) | Control.IsVisible(9000) | Control.IsVisible(9010)</visible>
-			</control>	
+			</control>
 			<control type="label">
 				<description>View Options</description>
 				<posx>70</posx>
@@ -184,7 +184,7 @@
 				<font>Simplicity_30_UltraThin</font>
 				<textcolor>white</textcolor>
 				<visible>Control.IsVisible(8999) | Control.IsVisible(9000) | Control.IsVisible(9010)</visible>
-			</control>					
+			</control>
 		</control>
 		<include>BackgroundEffect</include>
 		<include>Clock</include>

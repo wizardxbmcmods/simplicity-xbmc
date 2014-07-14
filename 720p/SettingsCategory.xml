@@ -74,9 +74,9 @@
 				<onright>3</onright>
 				<onup>5</onup>
 				<ondown>5</ondown>
-			</control>			
+			</control>
 		</control>
-		<include>BehindDialogFadeOut</include>		
+		<include>BehindDialogFadeOut</include>
 
 		<control type="button" id="10">
 			<description>Default Category Button</description>

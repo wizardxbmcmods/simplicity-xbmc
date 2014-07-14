@@ -391,7 +391,7 @@
 
 			<control type="group">
 				<control type="group">
-					<visible>Player.ShowInfo</visible>				
+					<visible>Player.ShowInfo</visible>
 					<animation effect="fade" start="100" end="0" delay="0" time="300">WindowClose</animation>
 					<animation effect="fade" start="0" end="100" delay="0" time="300">WindowOpen</animation>
 					<animation effect="fade" start="100" end="0" delay="0" time="300">hidden</animation>
@@ -505,8 +505,8 @@
 					</control>
 					<include condition="!Skin.HasSetting(NoVisualizationClock)">Clock</include>
 				</control>
-			</control>		
-		</control>		
+			</control>
+		</control>
 
 		<control type="group">
 			<visible>!Skin.HasSetting(CleanVisScreen)</visible>
@@ -527,7 +527,7 @@
 				<posy>0</posy>
 				<width>1290</width>
 				<height>730</height>
-				<texture>simplicity/background-overlay.png</texture> 					
+				<texture>simplicity/background-overlay.png</texture>
 			</control>
 
 			<control type="visualisation" id="2">
@@ -574,7 +574,7 @@
 
 			<!--
 <texture fallback="cd/default.png">cd/$INFO[MusicPlayer.Artist]-$INFO[MusicPlayer.Album].png</texture>
-			
+
 
 <texture fallback="visualization/cd.png">$INFO[Player.FolderPath]/cdart.png</texture>
 -->
@@ -1010,7 +1010,7 @@
 						<posy>400</posy>
 						<width>373</width>
 						<height>308</height>
-						<texture>simplicity/table.png</texture> 					
+						<texture>simplicity/table.png</texture>
 					</control>
 					<control type="image" id="7656">
 						<description>Cd overlay</description>
@@ -1063,7 +1063,7 @@
 						<!-- -143 -->
 						<texture>cd/default.png</texture>
 						<visible>IsEmpty(Control.GetLabel(7656))</visible>
-					</control>		
+					</control>
 					<control type="image">
 						<animation effect="slide" start="-518" end="0" time="1000" tween="cubic" easing="out" delay="600">WindowOpen</animation>
 						<animation type="WindowClose">
@@ -1076,7 +1076,7 @@
 						<posy>400</posy>
 						<width>373</width>
 						<height>308</height>
-						<texture>simplicity/arm.png</texture> 	
+						<texture>simplicity/arm.png</texture>
 					</control>
 				</control>
 
@@ -1348,7 +1348,7 @@
 			</control>
 			<include condition="!Skin.HasSetting(NoVisualizationClock)">Clock</include>
 
-		</control>		
+		</control>
 
 
 	</controls>

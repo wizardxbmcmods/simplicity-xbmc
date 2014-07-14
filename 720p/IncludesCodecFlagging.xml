@@ -407,10 +407,10 @@
 			<control type="image">
 				<description>Studio</description>
 				<aspectratio>keep</aspectratio>
-				<id>88</id>    
-				<width>76</width>		
+				<id>88</id>
+				<width>76</width>
 				<texture>studios/$INFO[ListItem.Studio,,.png]</texture>
-			</control>    
+			</control>
 		</control>
 	</include>
 	<include name="StudioFlaggingConditions">
@@ -419,9 +419,9 @@
 			<control type="image">
 				<description>Studio</description>
 				<aspectratio>keep</aspectratio>
-				<width>105</width>		
+				<width>105</width>
 				<texture>studios/$INFO[ListItem.Studio,,.png]</texture>
-			</control>    
+			</control>
 		</control>
 	</include>
 	<include name="StudioFlaggingConditionsColor">
@@ -430,9 +430,9 @@
 			<control type="image">
 				<description>Studio</description>
 				<aspectratio>keep</aspectratio>
-				<width>105</width>		
+				<width>105</width>
 				<texture>optional/studios-color/$INFO[ListItem.Studio,,.png]</texture>
-			</control>    
+			</control>
 		</control>
 	</include>
 	<include name="StudioFlaggingConditionsSmall">
@@ -442,9 +442,9 @@
 				<description>Studio</description>
 				<aspectratio>keep</aspectratio>
 				<height>40</height>
-				<width>80</width>		
+				<width>80</width>
 				<texture>studios/$INFO[ListItem.Studio,,.png]</texture>
-			</control>    
+			</control>
 		</control>
 	</include>
 	<include name="StudioFlaggingConditionsBig">
@@ -453,9 +453,9 @@
 			<control type="image">
 				<description>Studio</description>
 				<aspectratio>keep</aspectratio>
-				<width>150</width>		
+				<width>150</width>
 				<texture>studios/$INFO[ListItem.Studio,,.png]</texture>
-			</control>    
+			</control>
 		</control>
 	</include>
 	<include name="StudioFlaggingConditionsBigColor">
@@ -464,9 +464,9 @@
 			<control type="image">
 				<description>Studio</description>
 				<aspectratio>keep</aspectratio>
-				<width>150</width>		
+				<width>150</width>
 				<texture>optional/studios-color/$INFO[ListItem.Studio,,.png]</texture>
-			</control>    
+			</control>
 		</control>
 	</include>
 	<include name="AudioCodecFlaggingConditions">

@@ -5,10 +5,10 @@
 	<controls>
 		<include>CommonMediaPlayingBackground</include>
 		<control type="group">
-			<include>Window_OpenClose_Animation</include>		
+			<include>Window_OpenClose_Animation</include>
 		</control>
 		<control type="group">
-			<include>Window_OpenClose_Animation</include>		
+			<include>Window_OpenClose_Animation</include>
 			<include>AppView</include>
 			<!-- view id = 55 -->
 			<include>AppView3</include>
@@ -87,8 +87,8 @@
 						<aligny>center</aligny>
 						<texturenofocus border="5">simplicity/views/Addons/previewimage.png</texturenofocus>
 						<texturefocus border="5">simplicity/views/Addons/previewimage.png</texturefocus>
-						<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(45)">Conditional</animation>	
-						<animation effect="zoom" end="106" center="auto">Focus</animation>		
+						<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(45)">Conditional</animation>
+						<animation effect="zoom" end="106" center="auto">Focus</animation>
 						<onclick>Container.SetViewMode(55)</onclick>
 						<visible>SubString(Container.FolderPath,addons)</visible>
 					</control>
@@ -100,10 +100,10 @@
 						<aligny>center</aligny>
 						<texturenofocus border="5">simplicity/views/Netflix/previewimage.png</texturenofocus>
 						<texturefocus border="5">simplicity/views/Netflix/previewimage.png</texturefocus>
-						<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(46)">Conditional</animation>	
-						<animation effect="zoom" end="106" center="auto">Focus</animation>		
+						<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(46)">Conditional</animation>
+						<animation effect="zoom" end="106" center="auto">Focus</animation>
 						<onclick>Container.SetViewMode(57)</onclick>
-						<visible>substring(container.folderpath,plugin://plugin.video.xbmcflicks)</visible> 			
+						<visible>substring(container.folderpath,plugin://plugin.video.xbmcflicks)</visible>
 					</control>
 					<control type="button" id="47">
 						<description>Apps</description>
@@ -113,9 +113,9 @@
 						<aligny>center</aligny>
 						<texturenofocus border="5">simplicity/views/Apps/previewimage.png</texturenofocus>
 						<texturefocus border="5">simplicity/views/Apps/previewimage.png</texturefocus>
-						<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(47)">Conditional</animation>	
-						<animation effect="zoom" end="106" center="auto">Focus</animation>		
-						<onclick>Container.SetViewMode(58)</onclick>		
+						<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(47)">Conditional</animation>
+						<animation effect="zoom" end="106" center="auto">Focus</animation>
+						<onclick>Container.SetViewMode(58)</onclick>
 						<visible>SubString(Container.FolderPath,addons) | Window.IsVisible(addonbrowser)</visible>
 					</control>
 					<control type="button" id="49">
@@ -126,10 +126,10 @@
 						<aligny>center</aligny>
 						<texturenofocus border="5">simplicity/views/Addon Slide/previewimage.png</texturenofocus>
 						<texturefocus border="5">simplicity/views/Addon Slide/previewimage.png</texturefocus>
-						<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(49)">Conditional</animation>	
-						<animation effect="zoom" end="106" center="auto">Focus</animation>		
-						<onclick>Container.SetViewMode(65)</onclick>		
-						<visible>substring(container.folderpath,plugin://plugin.video.KidsWB) | substring(container.folderpath,plugin://plugin.video.nickelodeon) | substring(container.folderpath,plugin://plugin.video.nickjr) | substring(container.folderpath,plugin://plugin.video.adult.swim) | substring(container.folderpath,plugin://plugin.video.cartoon.network) | substring(container.folderpath,plugin://plugin.video.cbs) | substring(container.folderpath,plugin://plugin.video.tnt) | substring(container.folderpath,plugin://plugin.video.tbs)</visible> 
+						<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(49)">Conditional</animation>
+						<animation effect="zoom" end="106" center="auto">Focus</animation>
+						<onclick>Container.SetViewMode(65)</onclick>
+						<visible>substring(container.folderpath,plugin://plugin.video.KidsWB) | substring(container.folderpath,plugin://plugin.video.nickelodeon) | substring(container.folderpath,plugin://plugin.video.nickjr) | substring(container.folderpath,plugin://plugin.video.adult.swim) | substring(container.folderpath,plugin://plugin.video.cartoon.network) | substring(container.folderpath,plugin://plugin.video.cbs) | substring(container.folderpath,plugin://plugin.video.tnt) | substring(container.folderpath,plugin://plugin.video.tbs)</visible>
 					</control>
 					<control type="button" id="51">
 						<description>Addon Slide</description>
@@ -139,10 +139,10 @@
 						<aligny>center</aligny>
 						<texturenofocus border="5">simplicity/views/Addon Slide/previewimage.png</texturenofocus>
 						<texturefocus border="5">simplicity/views/Addon Slide/previewimage.png</texturefocus>
-						<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(51)">Conditional</animation>	
-						<animation effect="zoom" end="106" center="auto">Focus</animation>		
-						<onclick>Container.SetViewMode(66)</onclick>		
-						<visible>SubString(Container.FolderPath,addons)</visible>							
+						<animation effect="fade" start="100" end="40" time="0" condition="!Control.HasFocus(51)">Conditional</animation>
+						<animation effect="zoom" end="106" center="auto">Focus</animation>
+						<onclick>Container.SetViewMode(66)</onclick>
+						<visible>SubString(Container.FolderPath,addons)</visible>
 					</control>
 				</control>
 				<control type="image">
@@ -291,7 +291,7 @@
 					<aligny>center</aligny>
 				</control>
 			</control>
-		</control>		
+		</control>
 		<include>BackgroundEffect</include>
 		<include>Clock</include>
 		<include>BehindDialogFadeOut</include>

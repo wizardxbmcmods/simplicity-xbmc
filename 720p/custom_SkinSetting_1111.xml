@@ -200,7 +200,7 @@
 						<textureradionofocus>simplicity/settings-radiobutton-off.png</textureradionofocus>
 						<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
 						<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
-						<label>Autoscroll Plot</label>	
+						<label>Autoscroll Plot</label>
 						<onclick>Skin.ToggleSetting(AutoScroll)</onclick>
 						<selected>Skin.HasSetting(AutoScroll)</selected>
 					</control>
@@ -218,7 +218,7 @@
 						<textureradionofocus>simplicity/settings-radiobutton-off.png</textureradionofocus>
 						<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
 						<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
-						<label>31103</label>						
+						<label>31103</label>
 						<onclick>Skin.ToggleSetting(Show_SlideShow_Paused)</onclick>
 						<selected>!Skin.HasSetting(Show_SlideShow_Paused)</selected>
 					</control>
@@ -313,7 +313,7 @@
 						<focusedcolor>white</focusedcolor>
 						<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
 						<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
-						<label>31104</label>						
+						<label>31104</label>
 						<onclick>Skin.ToggleSetting(WindowedTrailer)</onclick>
 						<selected>Skin.HasSetting(WindowedTrailer)</selected>
 					</control>-->
@@ -1009,7 +1009,7 @@
 						<posx>810</posx>
 						<posy>30</posy>
 						<width>48</width>
-						<height>70</height>		
+						<height>70</height>
 						<label>-</label>
 						<font>-</font>
 						<spinwidth>48</spinwidth>
@@ -1027,7 +1027,7 @@
 						<posx>858</posx>
 						<posy>30</posy>
 						<width>48</width>
-						<height>70</height>		
+						<height>70</height>
 						<label>-</label>
 						<font>-</font>
 						<spinwidth>48</spinwidth>
@@ -5488,7 +5488,7 @@
 							<textureradionofocus>simplicity/settings-radiobutton-off.png</textureradionofocus>
 							<texturefocus border="0,2,0,2">simplicity/button-focus.png</texturefocus>
 							<texturenofocus border="0,2,0,2">simplicity/menuitemnf.png</texturenofocus>
-							<label>Enable "Poster.jpg" Support</label>	
+							<label>Enable "Poster.jpg" Support</label>
 							<onclick>Skin.ToggleSetting(UsePosterJPG)</onclick>
 							<selected>Skin.HasSetting(UsePosterJPG)</selected>
 						</control>
@@ -5651,51 +5651,51 @@
 						<posx>578</posx>
 						<posy>240</posy>
 						<width>100</width>
-						<height>100</height>	
+						<height>100</height>
 						<texture>addons/logos.png</texture>
 						<bordertexture border="2">simplicity/thumbborder-thin.png</bordertexture>
 						<bordersize>2</bordersize>
 						<visible>Container(9000).Hasfocus(20)</visible>
-						<animation effect="zoom" end="608,220,150,150" time="300" condition="Control.HasFocus(2013)">Conditional</animation> 
+						<animation effect="zoom" end="608,220,150,150" time="300" condition="Control.HasFocus(2013)">Conditional</animation>
 					</control>
 					<control type="label">
 						<posx>698</posx>
 						<posy>260</posy>
 						<width>400</width>
-						<height>400</height>	
+						<height>400</height>
 						<font>Simplicity_20_Bold</font>
 						<label>[COLOR =red]*[/COLOR] The Logo Downloader Addon is Required</label>
 						<textcolor>grey2</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
 						<visible>Container(9000).Hasfocus(20)</visible>
-						<animation effect="zoom" end="105" time="300" condition="Control.HasFocus(2013)">Conditional</animation> 
-						<animation effect="slide" end="68,0" time="300" condition="Control.HasFocus(2013)">Conditional</animation> 
+						<animation effect="zoom" end="105" time="300" condition="Control.HasFocus(2013)">Conditional</animation>
+						<animation effect="slide" end="68,0" time="300" condition="Control.HasFocus(2013)">Conditional</animation>
 					</control>
 					<control type="image">
 						<posx>578</posx>
 						<posy>395</posy>
 						<width>100</width>
-						<height>100</height>	
+						<height>100</height>
 						<texture>addons/tunes.png</texture>
 						<bordertexture border="2">simplicity/thumbborder-thin.png</bordertexture>
 						<bordersize>2</bordersize>
-						<animation effect="zoom" end="608,375,150,150" time="300" condition="Control.HasFocus(2017)">Conditional</animation> 
+						<animation effect="zoom" end="608,375,150,150" time="300" condition="Control.HasFocus(2017)">Conditional</animation>
 						<visible>Container(9000).Hasfocus(20)</visible>
 					</control>
 					<control type="label">
 						<posx>698</posx>
 						<posy>415</posy>
 						<width>400</width>
-						<height>400</height>	
+						<height>400</height>
 						<font>Simplicity_20_Bold</font>
 						<label>[COLOR =red]*[/COLOR] The TV Tunes Addon is Required</label>
 						<textcolor>grey2</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
 						<visible>Container(9000).Hasfocus(20)</visible>
-						<animation effect="zoom" end="105" time="300" condition="Control.HasFocus(2017)">Conditional</animation> 
-						<animation effect="slide" end="68,0" time="300" condition="Control.HasFocus(2017)">Conditional</animation> 
+						<animation effect="zoom" end="105" time="300" condition="Control.HasFocus(2017)">Conditional</animation>
+						<animation effect="slide" end="68,0" time="300" condition="Control.HasFocus(2017)">Conditional</animation>
 					</control>
 					<control type="grouplist" id="9021">
 						<visible>Container(9000).Hasfocus(21)</visible>
@@ -5812,7 +5812,7 @@
 						<posx>448</posx>
 						<posy>318</posy>
 						<width>644</width>
-						<height>368</height>	
+						<height>368</height>
 						<texture>now-playing-border.png</texture>
 						<visible>Container(9000).Hasfocus(21)</visible>
 					</control>
@@ -5821,8 +5821,8 @@
 						<posx>450</posx>
 						<posy>320</posy>
 						<width>640</width>
-						<height>364</height>	  
-						<texture>nowplaying.png</texture> 	
+						<height>364</height>
+						<texture>nowplaying.png</texture>
 						<visible>Container(9000).Hasfocus(21) + !Control.HasFocus(2112) + !Skin.HasSetting(NowPlayingAlternate)</visible>
 					</control>
 					<control type="image">
@@ -5830,8 +5830,8 @@
 						<posx>450</posx>
 						<posy>320</posy>
 						<width>640</width>
-						<height>364</height>	  
-						<texture>nowplayingalternate.png</texture> 	
+						<height>364</height>
+						<texture>nowplayingalternate.png</texture>
 						<visible>[Container(9000).Hasfocus(21) + Control.HasFocus(2112)] | [Container(9000).HasFocus(21) + Skin.HasSetting(NowPlayingAlternate)]</visible>
 					</control>
 

@@ -17,7 +17,7 @@
 				<posx>-206</posx>
 				<posy>238</posy>
 				<width>1800</width>
-				<height>300</height>		
+				<height>300</height>
 				<onleft>508</onleft>
 				<onright>508</onright>
 				<onup>2</onup>
@@ -60,7 +60,7 @@
 						<bordertexture border="4">simplicity/thumbborder.png</bordertexture>
 						<bordersize>4</bordersize>
 						<texture background="true">$INFO[ListItem.Icon]</texture>
-						<animation effect="zoom" end="200" center="auto" time="200">Focus</animation> 
+						<animation effect="zoom" end="200" center="auto" time="200">Focus</animation>
 					</control>
 				</focusedlayout>
 			</control>

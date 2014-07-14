@@ -85,6 +85,9 @@
 	</include>
 
 <!--Right-->
+	<include name="OpenTrailerRight">
+            <onright>XBMC.PlayMedia($INFO[ListItem.Trailer],1,noresume)</onright>
+	</include>
 
 	<include name="OpenGuideRight">
 				<onright>ActivateWindow(1116,TVShows,return)</onright>
@@ -608,7 +611,7 @@
 			<textcolor>white</textcolor>
 			<shadowcolor>black</shadowcolor>
 			<include>TopSlide</include>
-		</control>	
+		</control>
 		<control type="label">
 			<description>Title label</description>
 			<posx>600</posx>
@@ -621,7 +624,7 @@
 			<font>Simplicity_20</font>
 			<textcolor>grey2</textcolor>
 			<include>TopSlide</include>
-		</control>	
+		</control>
 	</include>
 
 	<include name="MusicVideoCrumbs">
@@ -640,7 +643,7 @@
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<include>TopSlide</include>
-			</control>	
+			</control>
 			<control type="label">
 				<description>Title label</description>
 				<posx>385</posx>
@@ -653,8 +656,8 @@
 				<font>Simplicity_20</font>
 				<textcolor>grey2</textcolor>
 				<include>TopSlide</include>
-			</control>	
-		</control>	
+			</control>
+		</control>
 	</include>
 
 	<include name="ZoomFocus">
@@ -724,14 +727,14 @@
 	<include name="Use_TV_Tunes">
 		<onfocus>XBMC.RunScript(script.tvtunes,backend=True&amp;loop=False)</onfocus>
 		<onfocus>SetFocus(50)</onfocus>
-	</include> 
+	</include>
 	<include name="No_Delete_Eps">
 		<onfocus>SetFocus(50)</onfocus>
 	</include>
 	<include name="Delete_Eps">
 		<onfocus>Delete</onfocus>
 		<onfocus>SetFocus(50)</onfocus>
-	</include> 
+	</include>
 	<include name="FileBreadCrumbs">
 		<control type="group">
 			<visible>!Skin.HasSetting(DisableBreadCrumbs)</visible>
@@ -748,7 +751,7 @@
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<include>TopSlide</include>
-			</control>	
+			</control>
 			<control type="label">
 				<description>Title label</description>
 				<posx>200</posx>
@@ -761,8 +764,8 @@
 				<font>Simplicity_20</font>
 				<textcolor>grey2</textcolor>
 				<include>TopSlide</include>
-			</control>	
-		</control>	
+			</control>
+		</control>
 	</include>
 	<include name="TrailerBreadCrumbs">
 		<control type="group">
@@ -780,7 +783,7 @@
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<include>TopSlide</include>
-			</control>	
+			</control>
 			<control type="label">
 				<description>Title label</description>
 				<posx>260</posx>
@@ -793,8 +796,8 @@
 				<font>Simplicity_20</font>
 				<textcolor>grey2</textcolor>
 				<include>TopSlide</include>
-			</control>	
-		</control>	
+			</control>
+		</control>
 	</include>
 	<include name="AddonBreadCrumbs">
 		<control type="group">
@@ -812,7 +815,7 @@
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<include>TopSlide</include>
-			</control>	
+			</control>
 			<control type="label">
 				<description>Title label</description>
 				<posx>270</posx>
@@ -825,8 +828,8 @@
 				<font>Simplicity_20</font>
 				<textcolor>grey2</textcolor>
 				<include>TopSlide</include>
-			</control>	
-		</control>	
+			</control>
+		</control>
 	</include>
 	<include name="GenreBreadCrumbs">
 		<control type="group">
@@ -844,7 +847,7 @@
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<include>TopSlide</include>
-			</control>	
+			</control>
 			<control type="label">
 				<description>Title label</description>
 				<posx>270</posx>
@@ -857,8 +860,8 @@
 				<font>Simplicity_20</font>
 				<textcolor>grey2</textcolor>
 				<include>TopSlide</include>
-			</control>	
-		</control>	
+			</control>
+		</control>
 	</include>
 	<include name="PictureBreadCrumbs">
 		<control type="group">
@@ -876,7 +879,7 @@
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<include>TopSlide</include>
-			</control>	
+			</control>
 			<control type="label">
 				<description>Title label</description>
 				<posx>93</posx>
@@ -890,7 +893,7 @@
 				<textcolor>grey2</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<include>TopSlide</include>
-			</control>	
+			</control>
 			<control type="label">
 				<description>Title label</description>
 				<posx>270</posx>
@@ -903,8 +906,8 @@
 				<font>Simplicity_20</font>
 				<textcolor>grey2</textcolor>
 				<include>TopSlide</include>
-			</control>	
-		</control>	
+			</control>
+		</control>
 	</include>
 	<include name="MovieBreadCrumbs">
 		<control type="group">
@@ -923,7 +926,7 @@
 				<shadowcolor>black</shadowcolor>
 				<visible>Container.Content(Movies)</visible>
 				<include>TopSlide</include>
-			</control>	
+			</control>
 			<control type="label">
 				<description>Title label</description>
 				<posx>260</posx>
@@ -937,8 +940,8 @@
 				<textcolor>grey2</textcolor>
 				<visible>Container.Content(Movies)</visible>
 				<include>TopSlide</include>
-			</control>	
-		</control>	
+			</control>
+		</control>
 	</include>
 	<include name="TVBreadCrumbs">
 		<control type="group">
@@ -957,7 +960,7 @@
 				<shadowcolor>black</shadowcolor>
 				<visible>Container.Content(TVShows)</visible>
 				<include>TopSlide</include>
-			</control>	
+			</control>
 			<control type="label">
 				<description>Title label</description>
 				<posx>310</posx>
@@ -971,8 +974,8 @@
 				<textcolor>grey2</textcolor>
 				<visible>Container.Content(TVShows)</visible>
 				<include>TopSlide</include>
-			</control>	
-		</control>	
+			</control>
+		</control>
 	</include>
 	<include name="SeasonBreadCrumbs">
 		<control type="group">
@@ -992,7 +995,7 @@
 				<include>TopSlide</include>
 				<visible>Container.Content(Seasons)</visible>
 				<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
-			</control>	
+			</control>
 			<control type="label">
 				<description>Title label</description>
 				<posx>90</posx>
@@ -1008,7 +1011,7 @@
 				<include>TopSlide</include>
 				<visible>Container.Content(Seasons)</visible>
 				<visible>stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
-			</control>	
+			</control>
 			<control type="label">
 				<description>Title label</description>
 				<posx>93</posx>
@@ -1022,8 +1025,8 @@
 				<textcolor>grey2</textcolor>
 				<include>TopSlide</include>
 				<visible>Container.Content(Seasons)</visible>
-			</control>	
-		</control>	
+			</control>
+		</control>
 	</include>
 	<include name="EpisodeBreadCrumbs">
 		<control type="group">
@@ -1042,7 +1045,7 @@
 				<shadowcolor>black</shadowcolor>
 				<include>TopSlide</include>
 				<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
-			</control>	
+			</control>
 			<control type="label">
 				<description>Title label</description>
 				<posx>90</posx>
@@ -1057,7 +1060,7 @@
 				<shadowcolor>black</shadowcolor>
 				<include>TopSlide</include>
 				<visible>stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
-			</control>	
+			</control>
 			<control type="label">
 				<description>Title label</description>
 				<posx>93</posx>
@@ -1071,8 +1074,8 @@
 				<textcolor>grey2</textcolor>
 				<include>TopSlide</include>
 				<visible>!Control.IsVisible(559)</visible>
-			</control>	
-		</control>	
+			</control>
+		</control>
 	</include>
 	<include name="AlbumBreadCrumbs">
 		<control type="group">
@@ -1091,7 +1094,7 @@
 				<shadowcolor>black</shadowcolor>
 				<visible>Container.Content(Albums)</visible>
 				<include>TopSlide</include>
-			</control>	
+			</control>
 			<control type="label">
 				<description>Title label</description>
 				<posx>270</posx>
@@ -1105,8 +1108,8 @@
 				<textcolor>grey2</textcolor>
 				<visible>Container.Content(Albums)</visible>
 				<include>TopSlide</include>
-			</control>	
-		</control>	
+			</control>
+		</control>
 	</include>
 	<include name="SongBreadCrumbs">
 		<control type="group">
@@ -1125,7 +1128,7 @@
 				<shadowcolor>black</shadowcolor>
 				<visible>Container.Content(Songs)</visible>
 				<include>TopSlide</include>
-			</control>	
+			</control>
 			<control type="label">
 				<description>Title label</description>
 				<posx>240</posx>
@@ -1139,8 +1142,8 @@
 				<textcolor>grey2</textcolor>
 				<visible>Container.Content(Songs)</visible>
 				<include>TopSlide</include>
-			</control>	
-		</control>	
+			</control>
+		</control>
 	</include>
 	<include name="ArtistBreadCrumbs">
 		<control type="group">
@@ -1159,7 +1162,7 @@
 				<shadowcolor>black</shadowcolor>
 				<visible>Container.Content(Artists)</visible>
 				<include>TopSlide</include>
-			</control>	
+			</control>
 			<control type="label">
 				<description>Title label</description>
 				<posx>240</posx>
@@ -1173,8 +1176,8 @@
 				<textcolor>grey2</textcolor>
 				<visible>Container.Content(Artists)</visible>
 				<include>TopSlide</include>
-			</control>	
-		</control>	
+			</control>
+		</control>
 	</include>
 
 	<include name="ActorBreadCrumbs">
@@ -1194,7 +1197,7 @@
 				<shadowcolor>black</shadowcolor>
 				<visible>Container.Content(Actors)</visible>
 				<include>TopSlide</include>
-			</control>	
+			</control>
 			<control type="label">
 				<description>Title label</description>
 				<posx>240</posx>
@@ -1208,8 +1211,8 @@
 				<textcolor>grey2</textcolor>
 				<visible>Container.Content(Actors)</visible>
 				<include>TopSlide</include>
-			</control>	
-		</control>	
+			</control>
+		</control>
 	</include>
 
 
@@ -1236,8 +1239,8 @@
 				<font>Simplicity_20</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-			</control>	
-		</control>	
+			</control>
+		</control>
 	</include>
 	<include name="LeftOptions">
 		<control type="group">
@@ -1262,8 +1265,34 @@
 				<font>Simplicity_20</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-			</control>	
-		</control>	
+			</control>
+		</control>
+	</include>
+
+	<include name="RightOpenTrailer">
+		<control type="group">
+			<include>BottomSlide</include>
+			<control type="image">
+				<posx>150r</posx>
+				<posy>679</posy>
+				<width>15</width>
+				<height>15</height>
+				<texture>simplicity/right-arrow.png</texture>
+			</control>
+			<control type="label">
+				<description>View Options</description>
+				<posx>170r</posx>
+				<posy>675</posy>
+				<height>20</height>
+				<width>275</width>
+				<label>Trailer</label>
+				<align>right</align>
+				<aligny>center</aligny>
+				<font>Simplicity_20</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+			</control>
+		</control>
 	</include>
 
 	<include name="RightOpenTVGuide">
@@ -1288,8 +1317,8 @@
 				<font>Simplicity_20</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-			</control>	
-		</control>	
+			</control>
+		</control>
 	</include>
 
 	<include name="RightOpenTVGuideWithScroll">
@@ -1316,7 +1345,7 @@
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<visible>Control.HasFocus(60)</visible>
-			</control>	
+			</control>
 			<control type="label">
 				<description>View Options</description>
 				<posx>170r</posx>
@@ -1330,8 +1359,8 @@
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<visible>!Control.HasFocus(60)</visible>
-			</control>	
-		</control>	
+			</control>
+		</control>
 	</include>
 
 	<include name="DownOpenTVGuide">
@@ -1356,8 +1385,8 @@
 				<font>Simplicity_20</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-			</control>	
-		</control>	
+			</control>
+		</control>
 	</include>
 
 	<include name="RightOpenCustom">
@@ -1382,8 +1411,8 @@
 				<font>Simplicity_20</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-			</control>	
-		</control>	
+			</control>
+		</control>
 	</include>
 
 
@@ -1409,8 +1438,8 @@
 				<font>Simplicity_20</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-			</control>	
-		</control>	
+			</control>
+		</control>
 	</include>
 
 	<include name="DownOpenRecent">
@@ -1435,8 +1464,8 @@
 				<font>Simplicity_20</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-			</control>	
-		</control>	
+			</control>
+		</control>
 	</include>
 
 	<include name="DownOpenCustom">
@@ -1461,8 +1490,8 @@
 				<font>Simplicity_20</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-			</control>	
-		</control>	
+			</control>
+		</control>
 	</include>
 
 	<include name="PageNumbers">
@@ -2232,7 +2261,7 @@
 				<aligny>center</aligny>
 				<font>Simplicity_35_UltraThin</font>
 				<textcolor>white</textcolor>
-			</control>	
+			</control>
 			<control type="button" id="608">
 				<posx>38</posx>
 				<posy>0</posy>
@@ -2242,7 +2271,7 @@
 				<texturefocus border="5">simplicity/folder-focus.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
 				<onleft>50</onleft>
-				<onright>50</onright> 
+				<onright>50</onright>
 				<onup>603</onup>
 				<ondown>611</ondown>
 				<onclick>fullscreen</onclick>
@@ -2302,7 +2331,7 @@
 				<aligny>center</aligny>
 				<font>Simplicity_35_UltraThin</font>
 				<textcolor>white</textcolor>
-			</control>	
+			</control>
 			<control type="button" id="608">
 				<posx>38</posx>
 				<posy>0</posy>
@@ -2402,7 +2431,7 @@
 				<aligny>center</aligny>
 				<font>Simplicity_26</font>
 				<textcolor>white</textcolor>
-			</control>	
+			</control>
 			<control type="image">
 				<posx>96</posx>
 				<posy>6</posy>
@@ -2700,7 +2729,7 @@
 			<font>Simplicity_18</font>
 			<textcolor>white</textcolor>
 			<shadowcolor>black</shadowcolor>
-			<label>$INFO[System.Time]</label>				
+			<label>$INFO[System.Time]</label>
 		</control>
 		<control type="group">
 			<posx>1040</posx>
@@ -2768,7 +2797,7 @@
 		<font>Simplicity_18</font>
 		<textcolor>white</textcolor>
 		<shadowcolor>black</shadowcolor>
-		<label>$INFO[System.Time]</label>				
+		<label>$INFO[System.Time]</label>
 	</control>
 	<control type="label">
 		<description>time label</description>
@@ -2782,7 +2811,7 @@
 		<font>Simplicity_18</font>
 		<textcolor>white</textcolor>
 		<shadowcolor>black</shadowcolor>
-		<label>$INFO[Weather.Temperature]</label>				
+		<label>$INFO[Weather.Temperature]</label>
 		<visible>!Skin.HasSetting(NoHomeWeather)</visible>
 	</control>
 	<control type="group">
@@ -3056,7 +3085,7 @@
 			<width>380</width>
 			<height>212</height>
 			<texture background="true" fallback="logo-fallback.png">$INFO[Listitem.Property(Fanart_Image)]</texture>
-			<fadetime>IconCrossfadeTime</fadetime>						
+			<fadetime>IconCrossfadeTime</fadetime>
 		</control>
 		<control type="image">
 			<posx>92</posx>
@@ -3064,7 +3093,7 @@
 			<width>380</width>
 			<height>28</height>
 			<texture background="true">simplicity/black-back.png</texture>
-		</control>		
+		</control>
 		<control type="label">
 			<posx>96</posx>
 			<posy>328</posy>
@@ -3145,7 +3174,7 @@
 <include name="TVInfoLeftBanner">
 	<control type="group">
 		<visible>!Skin.HasSetting(TVInfoLeftFanart)</visible>
-		<visible>!substring(Container.FolderPath,videodb://5/)</visible> 
+		<visible>!substring(Container.FolderPath,videodb://5/)</visible>
 		<control type="image">
 			<posx>90</posx>
 			<posy>170</posy>
@@ -3153,7 +3182,7 @@
 			<height>79</height>
 			<align>right</align>
 			<texture background="false" diffuse="simplicity/bannerdiffuse.png">simplicity/banner-shadow7.png</texture>
-			<include>Zoom</include>		
+			<include>Zoom</include>
 		</control>
 		<control type="image">
 			<posx>90</posx>
@@ -3163,7 +3192,7 @@
 			<align>right</align>
 			<texture background="false" diffuse="simplicity/bannerdiffuse.png">$INFO[Container.TvshowThumb]</texture>
 			<include>Zoom</include>
-			<visible>!Skin.HasSetting(TVShowsUsePosters)</visible>		
+			<visible>!Skin.HasSetting(TVShowsUsePosters)</visible>
 		</control>
 		<control type="image">
 			<posx>90</posx>
@@ -3173,7 +3202,7 @@
 			<align>right</align>
 			<texture background="false" diffuse="simplicity/bannerdiffuse.png">$INFO[Listitem.Path]../banner.jpg</texture>
 			<include>Zoom</include>
-			<visible>Skin.HasSetting(TVShowsUsePosters)</visible>		
+			<visible>Skin.HasSetting(TVShowsUsePosters)</visible>
 		</control>
 		<control type="image">
 			<posx>90</posx>
@@ -3183,7 +3212,7 @@
 			<align>right</align>
 			<texture background="false" diffuse="simplicity/bannerdiffuse.png">$INFO[Listitem.Path]banner.jpg</texture>
 			<include>Zoom</include>
-			<visible>Skin.HasSetting(TVShowsUsePosters)</visible>		
+			<visible>Skin.HasSetting(TVShowsUsePosters)</visible>
 		</control>
 		<control type="image">
 			<posx>90</posx>
@@ -3192,7 +3221,7 @@
 			<height>73</height>
 			<align>right</align>
 			<texture background="false" diffuse="simplicity/bannerdiffuse.png">simplicity/banner-gloss.png</texture>
-			<include>Zoom</include>		
+			<include>Zoom</include>
 		</control>
 		<control type="grouplist">
 			<description>Studio Codec Flagging Images</description>
@@ -3203,8 +3232,8 @@
 			<itemgap>0</itemgap>
 			<orientation>horizontal</orientation>
 			<include>StudioFlaggingConditionsBig</include>
-			<include>Zoom</include>		
-			<visible>!Skin.HasSetting(UseColoredFlags)</visible>		
+			<include>Zoom</include>
+			<visible>!Skin.HasSetting(UseColoredFlags)</visible>
 		</control>
 		<control type="grouplist">
 			<description>Studio Codec Flagging Images</description>
@@ -3215,22 +3244,22 @@
 			<itemgap>0</itemgap>
 			<orientation>horizontal</orientation>
 			<include>StudioFlaggingConditionsBigColor</include>
-			<include>Zoom</include>		
-			<visible>Skin.HasSetting(UseColoredFlags)</visible>		
+			<include>Zoom</include>
+			<visible>Skin.HasSetting(UseColoredFlags)</visible>
 		</control>
 		<control type="group">
 			<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 			<posx>90</posx>
 			<posy>255</posy>
 			<include>EpisodeNextAiredDate</include>
-			<include>Zoom</include>		
+			<include>Zoom</include>
 		</control>
 		<control type="group">
 			<visible>!stringcompare(ListItem.Icon,DefaultFolderBack.png)</visible>
 			<posx>90</posx>
 			<posy>285</posy>
 			<include>EpisodeNextAiredTime</include>
-			<include>Zoom</include>		
+			<include>Zoom</include>
 		</control>
 		<control type="textbox">
 			<posx>90</posx>
@@ -3241,11 +3270,11 @@
 			<textcolor>white</textcolor>
 			<align>left</align>
 			<label>$INFO[Container.ShowPlot]</label>
-			<include>Zoom</include>		
+			<include>Zoom</include>
 		</control>
 	</control>
 	<control type="group">
-		<visible>substring(Container.FolderPath,videodb://5/)</visible> 
+		<visible>substring(Container.FolderPath,videodb://5/)</visible>
 		<include>Zoom</include>
 		<control type="image">
 			<posx>96</posx>
@@ -3283,7 +3312,7 @@
 			<itemgap>0</itemgap>
 			<orientation>horizontal</orientation>
 			<include>StudioFlaggingConditionsBig</include>
-			<include>Zoom</include>		
+			<include>Zoom</include>
 		</control>
 		<control type="label">
 			<posx>90</posx>
@@ -3347,7 +3376,7 @@
 			<width>380</width>
 			<height>212</height>
 			<texture background="true" fallback="addons.jpg">$INFO[Listitem.Property(Fanart_Image)]</texture>
-			<fadetime>IconCrossfadeTime</fadetime>						
+			<fadetime>IconCrossfadeTime</fadetime>
 		</control>
 		<control type="label">
 			<posx>90</posx>
@@ -3550,7 +3579,7 @@
 			<align>left</align>
 			<label>$INFO[ListItem.Property(TotalEpisodes)] episodes - $INFO[ListItem.Property(UnWatchedEpisodes)] unwatched</label>
 			<visible>Container.Content(Seasons)</visible>
-		</control>		
+		</control>
 		<control type="grouplist">
 			<description>Studio Codec Flagging Images</description>
 			<posx>885</posx>
@@ -3560,7 +3589,7 @@
 			<itemgap>0</itemgap>
 			<orientation>horizontal</orientation>
 			<include>StudioFlaggingConditions</include>
-			<visible>!Skin.HasSetting(UseColoredFlags)</visible>		
+			<visible>!Skin.HasSetting(UseColoredFlags)</visible>
 		</control>
 		<control type="grouplist">
 			<description>Studio Codec Flagging Images</description>
@@ -3571,7 +3600,7 @@
 			<itemgap>0</itemgap>
 			<orientation>horizontal</orientation>
 			<include>StudioFlaggingConditionsColor</include>
-			<visible>Skin.HasSetting(UseColoredFlags)</visible>		
+			<visible>Skin.HasSetting(UseColoredFlags)</visible>
 		</control>
 
 		<control type="label">
@@ -3683,7 +3712,7 @@
 			<posx>370</posx>
 			<posy>530</posy>
 			<include>EpisodeNextAiredDate</include>
-			<include>Zoom</include>		
+			<include>Zoom</include>
 			<visible>Container.Content(Seasons) | Container.Content(TVShows)</visible>
 		</control>
 		<control type="group">
@@ -3691,7 +3720,7 @@
 			<posx>370</posx>
 			<posy>560</posy>
 			<include>EpisodeNextAiredTime</include>
-			<include>Zoom</include>		
+			<include>Zoom</include>
 			<visible>Container.Content(Seasons) | Container.Content(TVShows)</visible>
 		</control>
 		<!--<control type="image">

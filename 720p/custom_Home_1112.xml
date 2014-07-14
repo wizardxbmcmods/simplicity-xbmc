@@ -30,7 +30,7 @@
 					<width>1320</width>
 					<height>63</height>
 					<texture>simplicity/shelfblack.png</texture>
-					<visible>Control.HasFocus(9001) | Control.HasFocus(9002) | Control.HasFocus(9003) | Control.HasFocus(9004)</visible>								
+					<visible>Control.HasFocus(9001) | Control.HasFocus(9002) | Control.HasFocus(9003) | Control.HasFocus(9004)</visible>
 				</control>
 				<control type="image">
 					<posx>-22</posx>
@@ -293,7 +293,7 @@
 					<posy>110</posy>
 					<width>35</width>
 					<height>35</height>
-					<texture background="true">simplicity/left-arrow.png</texture> 
+					<texture background="true">simplicity/left-arrow.png</texture>
 					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(9001) | Control.HasFocus(9002)">Conditional</animation>
 					<visible>Container(9000).HasPrevious</visible>
 				</control>
@@ -302,10 +302,10 @@
 					<posy>110</posy>
 					<width>35</width>
 					<height>35</height>
-					<texture background="true" flipx="true">simplicity/left-arrow.png</texture> 
+					<texture background="true" flipx="true">simplicity/left-arrow.png</texture>
 					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(9001) | Control.HasFocus(9002)">Conditional</animation>
 					<visible>Container(9000).HasNext</visible>
-				</control>		
+				</control>
 			</control>
 
 
@@ -322,7 +322,7 @@
 					<width>1320</width>
 					<height>63</height>
 					<texture>simplicity/shelfglow.png</texture>
-					<visible>Control.HasFocus(9001)</visible> 
+					<visible>Control.HasFocus(9001)</visible>
 
 				</control>
 				<control type="image">
@@ -340,7 +340,7 @@
 					<width>1280</width>
 					<height>63</height>
 					<texture>simplicity/shelf.png</texture>
-					<visible>Control.HasFocus(9001)</visible> 
+					<visible>Control.HasFocus(9001)</visible>
 					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(9004)">Conditional</animation>
 					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(9003)">Conditional</animation>
 					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(9002)">Conditional</animation>
@@ -606,7 +606,7 @@
 					<posy>180</posy>
 					<width>35</width>
 					<height>35</height>
-					<texture background="true">simplicity/left-arrow.png</texture> 
+					<texture background="true">simplicity/left-arrow.png</texture>
 					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(9002) | Control.HasFocus(9000) | Control.HasFocus(9003) | Control.HasFocus(9004)">Conditional</animation>
 					<visible>Container(9001).HasPrevious</visible>
 				</control>
@@ -615,10 +615,10 @@
 					<posy>180</posy>
 					<width>35</width>
 					<height>35</height>
-					<texture background="true" flipx="true">simplicity/left-arrow.png</texture> 
+					<texture background="true" flipx="true">simplicity/left-arrow.png</texture>
 					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(9002) | Control.HasFocus(9000) | Control.HasFocus(9003) | Control.HasFocus(9004)">Conditional</animation>
 					<visible>Container(9001).HasNext</visible>
-				</control>		
+				</control>
 			</control>
 
 
@@ -633,7 +633,7 @@
 					<width>1320</width>
 					<height>63</height>
 					<texture>simplicity/shelfglow.png</texture>
-					<visible>Control.HasFocus(9002)</visible> 
+					<visible>Control.HasFocus(9002)</visible>
 
 				</control>
 				<control type="image">
@@ -651,7 +651,7 @@
 					<width>1280</width>
 					<height>63</height>
 					<texture>simplicity/shelf.png</texture>
-					<visible>Control.HasFocus(9002)</visible> 
+					<visible>Control.HasFocus(9002)</visible>
 					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(9004)">Conditional</animation>
 					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(9003)">Conditional</animation>
 					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(9001)">Conditional</animation>
@@ -917,7 +917,7 @@
 					<posy>120</posy>
 					<width>35</width>
 					<height>35</height>
-					<texture background="true">simplicity/left-arrow.png</texture> 
+					<texture background="true">simplicity/left-arrow.png</texture>
 					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(9001) | Control.HasFocus(9000) | Control.HasFocus(9003) | Control.HasFocus(9004)">Conditional</animation>
 					<visible>Container(9002).HasPrevious</visible>
 				</control>
@@ -926,10 +926,10 @@
 					<posy>120</posy>
 					<width>35</width>
 					<height>35</height>
-					<texture background="true" flipx="true">simplicity/left-arrow.png</texture> 
+					<texture background="true" flipx="true">simplicity/left-arrow.png</texture>
 					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(9001) | Control.HasFocus(9000) | Control.HasFocus(9003) | Control.HasFocus(9004)">Conditional</animation>
 					<visible>Container(9002).HasNext</visible>
-				</control>		
+				</control>
 			</control>
 
 
@@ -945,7 +945,7 @@
 					<width>1320</width>
 					<height>63</height>
 					<texture>simplicity/shelfglow.png</texture>
-					<visible>Control.HasFocus(9003)</visible> 
+					<visible>Control.HasFocus(9003)</visible>
 
 				</control>
 				<control type="image">
@@ -963,7 +963,7 @@
 					<width>1280</width>
 					<height>63</height>
 					<texture>simplicity/shelf.png</texture>
-					<visible>Control.HasFocus(9003)</visible> 
+					<visible>Control.HasFocus(9003)</visible>
 					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(9004)">Conditional</animation>
 					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(9002)">Conditional</animation>
 					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(9001)">Conditional</animation>

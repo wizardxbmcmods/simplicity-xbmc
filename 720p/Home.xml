@@ -1,4 +1,4 @@
-<window id="0"> 
+<window id="0">
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<controls>
@@ -9,7 +9,7 @@
 		<animation type="WindowClose" reversible="false">
 			<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
 			<effect type="fade" start="100" end="0" time="300" />
-		</animation>	
+		</animation>
 		<control type="multiimage" id="665">
 			<posx>-10</posx>
 			<posy>-10</posy>
@@ -20,7 +20,7 @@
 			<randomize>true</randomize>
 			<fadetime>1000</fadetime>
 			<include>VisibleFadeEffect</include>
-		</control>					
+		</control>
 		<control type="multiimage" id="666">
 			<posx>-10</posx>
 			<posy>-10</posy>
@@ -31,7 +31,7 @@
 			<randomize>true</randomize>
 			<fadetime>1000</fadetime>
 			<include>VisibleFadeEffect</include>
-		</control>		
+		</control>
 		<control type="multiimage" id="667">
 			<posx>-10</posx>
 			<posy>-10</posy>
@@ -42,7 +42,7 @@
 			<randomize>true</randomize>
 			<fadetime>1000</fadetime>
 			<include>VisibleFadeEffect</include>
-		</control>		
+		</control>
 		<control type="multiimage" id="668">
 			<posx>-10</posx>
 			<posy>-10</posy>
@@ -53,7 +53,7 @@
 			<randomize>true</randomize>
 			<fadetime>1000</fadetime>
 			<include>VisibleFadeEffect</include>
-		</control>		
+		</control>
 		<control type="multiimage" id="669">
 			<posx>-10</posx>
 			<posy>-10</posy>
@@ -64,7 +64,7 @@
 			<randomize>true</randomize>
 			<fadetime>1000</fadetime>
 			<include>VisibleFadeEffect</include>
-		</control>		
+		</control>
 		<control type="multiimage" id="670">
 			<posx>-10</posx>
 			<posy>-10</posy>
@@ -75,7 +75,7 @@
 			<randomize>true</randomize>
 			<fadetime>1000</fadetime>
 			<include>VisibleFadeEffect</include>
-		</control>					
+		</control>
 		<control type="multiimage" id="671">
 			<posx>-10</posx>
 			<posy>-10</posy>
@@ -87,7 +87,7 @@
 			<fadetime>1000</fadetime>
 			<include>VisibleFadeEffect</include>
 			<visible>!Skin.HasSetting(ShowWeatherFanart) | IsEmpty(Skin.String(WeatherFanartDir))</visible>
-		</control>		
+		</control>
 		<control type="multiimage" id="671">
 			<posx>-10</posx>
 			<posy>-10</posy>
@@ -99,7 +99,7 @@
 			<fadetime>1000</fadetime>
 			<include>VisibleFadeEffect</include>
 			<visible>Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))</visible>
-		</control>		
+		</control>
 		<control type="multiimage" id="672">
 			<posx>-10</posx>
 			<posy>-10</posy>
@@ -110,7 +110,7 @@
 			<randomize>true</randomize>
 			<fadetime>1000</fadetime>
 			<include>VisibleFadeEffect</include>
-		</control>		
+		</control>
 		<control type="multiimage" id="673">
 			<posx>-10</posx>
 			<posy>-10</posy>
@@ -121,7 +121,7 @@
 			<randomize>true</randomize>
 			<fadetime>1000</fadetime>
 			<include>VisibleFadeEffect</include>
-		</control>		
+		</control>
 		<control type="multiimage" id="674">
 			<posx>-10</posx>
 			<posy>-10</posy>
@@ -132,7 +132,7 @@
 			<randomize>true</randomize>
 			<fadetime>1000</fadetime>
 			<include>VisibleFadeEffect</include>
-		</control>		
+		</control>
 		<control type="multiimage" id="675">
 			<posx>-10</posx>
 			<posy>-10</posy>
@@ -143,7 +143,7 @@
 			<randomize>true</randomize>
 			<fadetime>1000</fadetime>
 			<include>VisibleFadeEffect</include>
-		</control>		
+		</control>
 		<control type="multiimage" id="676">
 			<posx>-10</posx>
 			<posy>-10</posy>
@@ -154,7 +154,7 @@
 			<randomize>true</randomize>
 			<fadetime>1000</fadetime>
 			<include>VisibleFadeEffect</include>
-		</control>		
+		</control>
 		<control type="multiimage" id="677">
 			<posx>-10</posx>
 			<posy>-10</posy>
@@ -165,7 +165,7 @@
 			<randomize>true</randomize>
 			<fadetime>1000</fadetime>
 			<include>VisibleFadeEffect</include>
-		</control>		
+		</control>
 		<control type="multiimage" id="678">
 			<posx>-10</posx>
 			<posy>-10</posy>
@@ -176,7 +176,7 @@
 			<randomize>true</randomize>
 			<fadetime>1000</fadetime>
 			<include>VisibleFadeEffect</include>
-		</control>		
+		</control>
 		<control type="multiimage" id="679">
 			<posx>-10</posx>
 			<posy>-10</posy>
@@ -187,7 +187,7 @@
 			<randomize>true</randomize>
 			<fadetime>1000</fadetime>
 			<include>VisibleFadeEffect</include>
-		</control>		
+		</control>
 		<control type="multiimage" id="680">
 			<posx>-10</posx>
 			<posy>-10</posy>
@@ -198,7 +198,7 @@
 			<randomize>true</randomize>
 			<fadetime>1000</fadetime>
 			<include>VisibleFadeEffect</include>
-		</control>		
+		</control>
 		<control type="multiimage" id="682">
 			<posx>-10</posx>
 			<posy>-10</posy>
@@ -209,7 +209,7 @@
 			<randomize>true</randomize>
 			<fadetime>1000</fadetime>
 			<include>VisibleFadeEffect</include>
-		</control>		
+		</control>
 		<control type="multiimage" id="683">
 			<posx>-10</posx>
 			<posy>-10</posy>
@@ -220,7 +220,7 @@
 			<randomize>true</randomize>
 			<fadetime>1000</fadetime>
 			<include>VisibleFadeEffect</include>
-		</control>		
+		</control>
 		<control type="image">
 			<posx>0</posx>
 			<posy>0</posy>
@@ -242,7 +242,7 @@
 					<posy>0</posy>
 					<width>1280</width>
 					<height>720</height>
-					<texture>$INFO[Window.Property(LatestMovie.1.Fanart)]</texture>						
+					<texture>$INFO[Window.Property(LatestMovie.1.Fanart)]</texture>
 					<visible>Control.HasFocus(8005) + !Skin.HasSetting(UseRandomItems)</visible>
 					<fadetime>1000</fadetime>
 					<include>VisibleFadeEffect</include>
@@ -252,7 +252,7 @@
 					<posy>0</posy>
 					<width>1280</width>
 					<height>720</height>
-					<texture>$INFO[Window.Property(RandomMovie.1.Fanart)]</texture>						
+					<texture>$INFO[Window.Property(RandomMovie.1.Fanart)]</texture>
 					<visible>Control.HasFocus(8005) + Skin.HasSetting(UseRandomItems)</visible>
 					<fadetime>1000</fadetime>
 					<include>VisibleFadeEffect</include>
@@ -262,7 +262,7 @@
 					<posy>0</posy>
 					<width>1280</width>
 					<height>720</height>
-					<texture>$INFO[Window.Property(LatestMovie.2.Fanart)]</texture>						
+					<texture>$INFO[Window.Property(LatestMovie.2.Fanart)]</texture>
 					<visible>Control.HasFocus(8006) + Container(8006).Position(0) + !Skin.HasSetting(UseRandomItems)</visible>
 					<fadetime>1000</fadetime>
 					<include>VisibleFadeEffect</include>
@@ -272,7 +272,7 @@
 					<posy>0</posy>
 					<width>1280</width>
 					<height>720</height>
-					<texture>$INFO[Window.Property(LatestMovie.3.Fanart)]</texture>						
+					<texture>$INFO[Window.Property(LatestMovie.3.Fanart)]</texture>
 					<visible>Control.HasFocus(8006) + Container(8006).Position(1) + !Skin.HasSetting(UseRandomItems)</visible>
 					<fadetime>1000</fadetime>
 					<include>VisibleFadeEffect</include>
@@ -282,7 +282,7 @@
 					<posy>0</posy>
 					<width>1280</width>
 					<height>720</height>
-					<texture>$INFO[Window.Property(LatestMovie.4.Fanart)]</texture>						
+					<texture>$INFO[Window.Property(LatestMovie.4.Fanart)]</texture>
 					<visible>Control.HasFocus(8006) + Container(8006).Position(2) + !Skin.HasSetting(UseRandomItems)</visible>
 					<fadetime>1000</fadetime>
 					<include>VisibleFadeEffect</include>
@@ -292,7 +292,7 @@
 					<posy>0</posy>
 					<width>1280</width>
 					<height>720</height>
-					<texture>$INFO[Window.Property(LatestMovie.5.Fanart)]</texture>						
+					<texture>$INFO[Window.Property(LatestMovie.5.Fanart)]</texture>
 					<visible>Control.HasFocus(8006) + Container(8006).Position(3) + !Skin.HasSetting(UseRandomItems)</visible>
 					<fadetime>1000</fadetime>
 					<include>VisibleFadeEffect</include>
@@ -302,7 +302,7 @@
 					<posy>0</posy>
 					<width>1280</width>
 					<height>720</height>
-					<texture>$INFO[Window.Property(LatestMovie.6.Fanart)]</texture>						
+					<texture>$INFO[Window.Property(LatestMovie.6.Fanart)]</texture>
 					<visible>Control.HasFocus(8006) + Container(8006).Position(4) + !Skin.HasSetting(UseRandomItems)</visible>
 					<fadetime>1000</fadetime>
 					<include>VisibleFadeEffect</include>
@@ -312,7 +312,7 @@
 					<posy>0</posy>
 					<width>1280</width>
 					<height>720</height>
-					<texture>$INFO[Window.Property(LatestMovie.1.Fanart)]</texture>						
+					<texture>$INFO[Window.Property(LatestMovie.1.Fanart)]</texture>
 					<visible>Control.HasFocus(8006) + Container(8006).Position(0) + Skin.HasSetting(UseRandomItems)</visible>
 					<fadetime>1000</fadetime>
 					<include>VisibleFadeEffect</include>
@@ -322,7 +322,7 @@
 					<posy>0</posy>
 					<width>1280</width>
 					<height>720</height>
-					<texture>$INFO[Window.Property(LatestMovie.2.Fanart)]</texture>						
+					<texture>$INFO[Window.Property(LatestMovie.2.Fanart)]</texture>
 					<visible>Control.HasFocus(8006) + Container(8006).Position(1) + Skin.HasSetting(UseRandomItems)</visible>
 					<fadetime>1000</fadetime>
 					<include>VisibleFadeEffect</include>
@@ -332,7 +332,7 @@
 					<posy>0</posy>
 					<width>1280</width>
 					<height>720</height>
-					<texture>$INFO[Window.Property(LatestMovie.3.Fanart)]</texture>						
+					<texture>$INFO[Window.Property(LatestMovie.3.Fanart)]</texture>
 					<visible>Control.HasFocus(8006) + Container(8006).Position(2) + Skin.HasSetting(UseRandomItems)</visible>
 					<fadetime>1000</fadetime>
 					<include>VisibleFadeEffect</include>
@@ -342,7 +342,7 @@
 					<posy>0</posy>
 					<width>1280</width>
 					<height>720</height>
-					<texture>$INFO[Window.Property(LatestMovie.4.Fanart)]</texture>						
+					<texture>$INFO[Window.Property(LatestMovie.4.Fanart)]</texture>
 					<visible>Control.HasFocus(8006) + Container(8006).Position(3) + Skin.HasSetting(UseRandomItems)</visible>
 					<fadetime>1000</fadetime>
 					<include>VisibleFadeEffect</include>
@@ -352,7 +352,7 @@
 					<posy>0</posy>
 					<width>1280</width>
 					<height>720</height>
-					<texture>$INFO[Window.Property(LatestMovie.5.Fanart)]</texture>						
+					<texture>$INFO[Window.Property(LatestMovie.5.Fanart)]</texture>
 					<visible>Control.HasFocus(8006) + Container(8006).Position(4) + Skin.HasSetting(UseRandomItems)</visible>
 					<fadetime>1000</fadetime>
 					<include>VisibleFadeEffect</include>
@@ -367,7 +367,7 @@
 					<posy>0</posy>
 					<width>1280</width>
 					<height>720</height>
-					<texture>$INFO[Window.Property(LatestEpisode.1.Fanart)]</texture>						
+					<texture>$INFO[Window.Property(LatestEpisode.1.Fanart)]</texture>
 					<visible>Control.HasFocus(8007) + !Skin.HasSetting(UseRandomItems)</visible>
 					<fadetime>1000</fadetime>
 					<include>VisibleFadeEffect</include>
@@ -377,7 +377,7 @@
 					<posy>450</posy>
 					<width>400</width>
 					<height>155</height>
-					<texture>$INFO[Window.Property(LatestEpisode.1.Path),,/../../logo.png]</texture>						
+					<texture>$INFO[Window.Property(LatestEpisode.1.Path),,/../../logo.png]</texture>
 					<visible>Control.HasFocus(8007) + !Skin.HasSetting(UseRandomItems)</visible>
 					<fadetime>1000</fadetime>
 					<include>VisibleFadeEffect</include>
@@ -387,7 +387,7 @@
 					<posy>0</posy>
 					<width>1280</width>
 					<height>720</height>
-					<texture>$INFO[Window.Property(RandomEpisode.1.Fanart)]</texture>						
+					<texture>$INFO[Window.Property(RandomEpisode.1.Fanart)]</texture>
 					<visible>Control.HasFocus(8007) + Skin.HasSetting(UseRandomItems)</visible>
 					<fadetime>1000</fadetime>
 					<include>VisibleFadeEffect</include>
@@ -397,7 +397,7 @@
 					<posy>450</posy>
 					<width>400</width>
 					<height>155</height>
-					<texture>$INFO[Window.Property(RandomEpisode.1.Path),,/../../logo.png]</texture>						
+					<texture>$INFO[Window.Property(RandomEpisode.1.Path),,/../../logo.png]</texture>
 					<visible>Control.HasFocus(8007) + Skin.HasSetting(UseRandomItems)</visible>
 					<fadetime>1000</fadetime>
 					<include>VisibleFadeEffect</include>
@@ -407,7 +407,7 @@
 					<posy>0</posy>
 					<width>1280</width>
 					<height>720</height>
-					<texture>$INFO[Window.Property(LatestEpisode.2.Fanart)]</texture>						
+					<texture>$INFO[Window.Property(LatestEpisode.2.Fanart)]</texture>
 					<visible>Control.HasFocus(8008) + Container(8008).Position(0) + !Skin.HasSetting(UseRandomItems)</visible>
 					<fadetime>1000</fadetime>
 					<include>VisibleFadeEffect</include>
@@ -417,7 +417,7 @@
 					<posy>450</posy>
 					<width>400</width>
 					<height>155</height>
-					<texture>$INFO[Window.Property(LatestEpisode.2.Path),,/../../logo.png]</texture>						
+					<texture>$INFO[Window.Property(LatestEpisode.2.Path),,/../../logo.png]</texture>
 					<visible>Control.HasFocus(8008) + Container(8008).Position(0) + !Skin.HasSetting(UseRandomItems)</visible>
 					<fadetime>1000</fadetime>
 					<include>VisibleFadeEffect</include>
@@ -427,7 +427,7 @@
 					<posy>0</posy>
 					<width>1280</width>
 					<height>720</height>
-					<texture>$INFO[Window.Property(LatestEpisode.3.Fanart)]</texture>						
+					<texture>$INFO[Window.Property(LatestEpisode.3.Fanart)]</texture>
 					<visible>Control.HasFocus(8008) + Container(8008).Position(1) + !Skin.HasSetting(UseRandomItems)</visible>
 					<fadetime>1000</fadetime>
 					<include>VisibleFadeEffect</include>
@@ -437,7 +437,7 @@
 					<posy>450</posy>
 					<width>400</width>
 					<height>155</height>
-					<texture>$INFO[Window.Property(LatestEpisode.3.Path),,/../../logo.png]</texture>						
+					<texture>$INFO[Window.Property(LatestEpisode.3.Path),,/../../logo.png]</texture>
 					<visible>Control.HasFocus(8008) + Container(8008).Position(1) + !Skin.HasSetting(UseRandomItems)</visible>
 					<fadetime>1000</fadetime>
 					<include>VisibleFadeEffect</include>
@@ -447,7 +447,7 @@
 					<posy>0</posy>
 					<width>1280</width>
 					<height>720</height>
-					<texture>$INFO[Window.Property(LatestEpisode.4.Fanart)]</texture>						
+					<texture>$INFO[Window.Property(LatestEpisode.4.Fanart)]</texture>
 					<visible>Control.HasFocus(8008) + Container(8008).Position(2) + !Skin.HasSetting(UseRandomItems)</visible>
 					<fadetime>1000</fadetime>
 					<include>VisibleFadeEffect</include>
@@ -457,7 +457,7 @@
 					<posy>450</posy>
 					<width>400</width>
 					<height>155</height>
-					<texture>$INFO[Window.Property(LatestEpisode.4.Path),,/../../logo.png]</texture>						
+					<texture>$INFO[Window.Property(LatestEpisode.4.Path),,/../../logo.png]</texture>
 					<visible>Control.HasFocus(8008) + Container(8008).Position(2) + !Skin.HasSetting(UseRandomItems)</visible>
 					<fadetime>1000</fadetime>
 					<include>VisibleFadeEffect</include>
@@ -467,7 +467,7 @@
 					<posy>0</posy>
 					<width>1280</width>
 					<height>720</height>
-					<texture>$INFO[Window.Property(LatestEpisode.5.Fanart)]</texture>						
+					<texture>$INFO[Window.Property(LatestEpisode.5.Fanart)]</texture>
 					<visible>Control.HasFocus(8008) + Container(8008).Position(3) + !Skin.HasSetting(UseRandomItems)</visible>
 					<fadetime>1000</fadetime>
 					<include>VisibleFadeEffect</include>
@@ -477,7 +477,7 @@
 					<posy>450</posy>
 					<width>400</width>
 					<height>155</height>
-					<texture>$INFO[Window.Property(LatestEpisode.5.Path),,/../../logo.png]</texture>						
+					<texture>$INFO[Window.Property(LatestEpisode.5.Path),,/../../logo.png]</texture>
 					<visible>Control.HasFocus(8008) + Container(8008).Position(3) + !Skin.HasSetting(UseRandomItems)</visible>
 					<fadetime>1000</fadetime>
 					<include>VisibleFadeEffect</include>
@@ -487,7 +487,7 @@
 					<posy>0</posy>
 					<width>1280</width>
 					<height>720</height>
-					<texture>$INFO[Window.Property(LatestEpisode.6.Fanart)]</texture>						
+					<texture>$INFO[Window.Property(LatestEpisode.6.Fanart)]</texture>
 					<visible>Control.HasFocus(8008) + Container(8008).Position(4) + !Skin.HasSetting(UseRandomItems)</visible>
 					<fadetime>1000</fadetime>
 					<include>VisibleFadeEffect</include>
@@ -497,7 +497,7 @@
 					<posy>450</posy>
 					<width>400</width>
 					<height>155</height>
-					<texture>$INFO[Window.Property(LatestEpisode.6.Path),,/../../logo.png]</texture>						
+					<texture>$INFO[Window.Property(LatestEpisode.6.Path),,/../../logo.png]</texture>
 					<visible>Control.HasFocus(8008) + Container(8008).Position(4) + !Skin.HasSetting(UseRandomItems)</visible>
 					<fadetime>1000</fadetime>
 					<include>VisibleFadeEffect</include>
@@ -507,7 +507,7 @@
 					<posy>0</posy>
 					<width>1280</width>
 					<height>720</height>
-					<texture>$INFO[Window.Property(LatestEpisode.1.Fanart)]</texture>						
+					<texture>$INFO[Window.Property(LatestEpisode.1.Fanart)]</texture>
 					<visible>Control.HasFocus(8008) + Container(8008).Position(0) + Skin.HasSetting(UseRandomItems)</visible>
 					<fadetime>1000</fadetime>
 					<include>VisibleFadeEffect</include>
@@ -517,7 +517,7 @@
 					<posy>450</posy>
 					<width>400</width>
 					<height>155</height>
-					<texture>$INFO[Window.Property(LatestEpisode.1.Path),,/../../logo.png]</texture>						
+					<texture>$INFO[Window.Property(LatestEpisode.1.Path),,/../../logo.png]</texture>
 					<visible>Control.HasFocus(8008) + Container(8008).Position(0) + Skin.HasSetting(UseRandomItems)</visible>
 					<fadetime>1000</fadetime>
 					<include>VisibleFadeEffect</include>
@@ -527,7 +527,7 @@
 					<posy>0</posy>
 					<width>1280</width>
 					<height>720</height>
-					<texture>$INFO[Window.Property(LatestEpisode.2.Fanart)]</texture>						
+					<texture>$INFO[Window.Property(LatestEpisode.2.Fanart)]</texture>
 					<visible>Control.HasFocus(8008) + Container(8008).Position(1) + Skin.HasSetting(UseRandomItems)</visible>
 					<fadetime>1000</fadetime>
 					<include>VisibleFadeEffect</include>
@@ -537,7 +537,7 @@
 					<posy>450</posy>
 					<width>400</width>
 					<height>155</height>
-					<texture>$INFO[Window.Property(LatestEpisode.2.Path),,/../../logo.png]</texture>						
+					<texture>$INFO[Window.Property(LatestEpisode.2.Path),,/../../logo.png]</texture>
 					<visible>Control.HasFocus(8008) + Container(8008).Position(1) + Skin.HasSetting(UseRandomItems)</visible>
 					<fadetime>1000</fadetime>
 					<include>VisibleFadeEffect</include>
@@ -547,7 +547,7 @@
 					<posy>0</posy>
 					<width>1280</width>
 					<height>720</height>
-					<texture>$INFO[Window.Property(LatestEpisode.3.Fanart)]</texture>						
+					<texture>$INFO[Window.Property(LatestEpisode.3.Fanart)]</texture>
 					<visible>Control.HasFocus(8008) + Container(8008).Position(2) + Skin.HasSetting(UseRandomItems)</visible>
 					<fadetime>1000</fadetime>
 					<include>VisibleFadeEffect</include>
@@ -557,7 +557,7 @@
 					<posy>450</posy>
 					<width>400</width>
 					<height>155</height>
-					<texture>$INFO[Window.Property(LatestEpisode.3.Path),,/../../logo.png]</texture>						
+					<texture>$INFO[Window.Property(LatestEpisode.3.Path),,/../../logo.png]</texture>
 					<visible>Control.HasFocus(8008) + Container(8008).Position(2) + Skin.HasSetting(UseRandomItems)</visible>
 					<fadetime>1000</fadetime>
 					<include>VisibleFadeEffect</include>
@@ -567,7 +567,7 @@
 					<posy>0</posy>
 					<width>1280</width>
 					<height>720</height>
-					<texture>$INFO[Window.Property(LatestEpisode.4.Fanart)]</texture>						
+					<texture>$INFO[Window.Property(LatestEpisode.4.Fanart)]</texture>
 					<visible>Control.HasFocus(8008) + Container(8008).Position(3) + Skin.HasSetting(UseRandomItems)</visible>
 					<fadetime>1000</fadetime>
 					<include>VisibleFadeEffect</include>
@@ -577,7 +577,7 @@
 					<posy>450</posy>
 					<width>400</width>
 					<height>155</height>
-					<texture>$INFO[Window.Property(LatestEpisode.4.Path),,/../../logo.png]</texture>						
+					<texture>$INFO[Window.Property(LatestEpisode.4.Path),,/../../logo.png]</texture>
 					<visible>Control.HasFocus(8008) + Container(8008).Position(3) + Skin.HasSetting(UseRandomItems)</visible>
 					<fadetime>1000</fadetime>
 					<include>VisibleFadeEffect</include>
@@ -587,7 +587,7 @@
 					<posy>0</posy>
 					<width>1280</width>
 					<height>720</height>
-					<texture>$INFO[Window.Property(LatestEpisode.5.Fanart)]</texture>						
+					<texture>$INFO[Window.Property(LatestEpisode.5.Fanart)]</texture>
 					<visible>Control.HasFocus(8008) + Container(8008).Position(4) + Skin.HasSetting(UseRandomItems)</visible>
 					<fadetime>1000</fadetime>
 					<include>VisibleFadeEffect</include>
@@ -597,7 +597,7 @@
 					<posy>450</posy>
 					<width>400</width>
 					<height>155</height>
-					<texture>$INFO[Window.Property(LatestEpisode.5.Path),,/../../logo.png]</texture>						
+					<texture>$INFO[Window.Property(LatestEpisode.5.Path),,/../../logo.png]</texture>
 					<visible>Control.HasFocus(8008) + Container(8008).Position(4) + Skin.HasSetting(UseRandomItems)</visible>
 					<fadetime>1000</fadetime>
 					<include>VisibleFadeEffect</include>
@@ -627,7 +627,7 @@
 			<animation effect="fade" start="100" end="20" time="0" condition="Control.HasFocus(9000)">Conditional</animation>
 			<animation effect="fade" start="100" end="20" time="0" condition="Control.HasFocus(9010)">Conditional</animation>
 			<animation effect="fade" start="100" end="20" time="0" condition="Control.HasFocus(8000)">Conditional</animation>
-			<animation effect="fade" start="100" end="20" time="0" condition="Control.HasFocus(8001)">Conditional</animation>					
+			<animation effect="fade" start="100" end="20" time="0" condition="Control.HasFocus(8001)">Conditional</animation>
 			<animation effect="fade" start="100" end="20" time="0" condition="Control.HasFocus(8002)">Conditional</animation>
 			<animation effect="fade" start="100" end="20" time="0" condition="Control.HasFocus(8003)">Conditional</animation>
 			<animation effect="fade" start="100" end="20" time="0" condition="Control.HasFocus(8004)">Conditional</animation>
@@ -690,8 +690,8 @@
 					<width>90</width>
 					<height>90</height>
 					<colordiffuse>40FFFFFF</colordiffuse>
-					<texture diffuse="icons/icondiffuse.png" fallback="icons/programsicon.png">$INFO[ListItem.Thumb]</texture>			
-					<animation effect="fade" start="100" end="0" time="100" condition="ControlGroup(9001).HasFocus">Conditional</animation>		
+					<texture diffuse="icons/icondiffuse.png" fallback="icons/programsicon.png">$INFO[ListItem.Thumb]</texture>
+					<animation effect="fade" start="100" end="0" time="100" condition="ControlGroup(9001).HasFocus">Conditional</animation>
 					<visible>Skin.HasSetting(AlternateHome)</visible>
 				</control>
 			</itemlayout>
@@ -707,7 +707,7 @@
 					<label>$INFO[ListItem.Label]</label>
 					<textcolor>white</textcolor>
 					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8000)">Conditional</animation>
-					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8001)">Conditional</animation>					
+					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8001)">Conditional</animation>
 					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8002)">Conditional</animation>
 					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8003)">Conditional</animation>
 					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8004)">Conditional</animation>
@@ -729,7 +729,7 @@
 					<animation effect="slide" start="0,0" end="0,-45" time="100" >Focus</animation>
 					<animation effect="slide" start="0,-45" end="0,0" time="100" >UnFocus</animation>
 					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8000)">Conditional</animation>
-					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8001)">Conditional</animation>					
+					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8001)">Conditional</animation>
 					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8002)">Conditional</animation>
 					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8003)">Conditional</animation>
 					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8004)">Conditional</animation>
@@ -751,7 +751,7 @@
 					<width>90</width>
 					<height>90</height>
 					<visible>Skin.HasSetting(AlternateHome)</visible>
-					<texture fallback="icons/programsicon.png">$INFO[ListItem.Thumb]</texture>						
+					<texture fallback="icons/programsicon.png">$INFO[ListItem.Thumb]</texture>
 				</control>
 				<control type="image">
 					<posx>45</posx>
@@ -760,9 +760,9 @@
 					<width>110</width>
 					<height>110</height>
 					<visible>Skin.HasSetting(AlternateHome)</visible>
-					<texture>lights.png</texture>				
+					<texture>lights.png</texture>
 					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8000)">Conditional</animation>
-					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8001)">Conditional</animation>					
+					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8001)">Conditional</animation>
 					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8002)">Conditional</animation>
 					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8003)">Conditional</animation>
 					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8004)">Conditional</animation>
@@ -777,7 +777,7 @@
 					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(23)">Conditional</animation>
 					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(24)">Conditional</animation>
 					<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(25)">Conditional</animation>
-					<animation effect="fade" start="100" end="0" time="100" condition="ControlGroup(9001).HasFocus">Conditional</animation>		
+					<animation effect="fade" start="100" end="0" time="100" condition="ControlGroup(9001).HasFocus">Conditional</animation>
 				</control>
 			</focusedlayout>
 			<content>
@@ -789,7 +789,7 @@
 					<thumb>icons/homeicon.png</thumb>
 					<visible>!Skin.HasSetting(HomeMenuNoHomeButton)</visible>
 					<onclick>XBMC.ActivateWindow(1115)</onclick>
-				</item>		
+				</item>
 				<item id="2">
 					<description>Movies</description>
 					<label>$LOCALIZE[31500]</label>
@@ -925,7 +925,7 @@
 					<thumb>icons/searchicon.png</thumb>
 					<visible>!Skin.HasSetting(HomeMenuNoSearchButton)</visible>
 					<onclick>XBMC.ActivateWindow(1118)</onclick>
-				</item>		
+				</item>
 				<item id="10">
 					<description>Settings</description>
 					<label>$LOCALIZE[31508]</label>
@@ -980,7 +980,7 @@
 				<posy>522</posy>
 				<animation effect="slide" end="0,-20" time="200">Focus</animation>
 				<animation effect="slide" end="0,20" time="200">UnFocus</animation>
-				<animation effect="fade" start="100" end="0" time="0" condition="!ControlGroup(9001).HasFocus">Conditional</animation>  
+				<animation effect="fade" start="100" end="0" time="0" condition="!ControlGroup(9001).HasFocus">Conditional</animation>
 				<control type="grouplist" id="9010">
 					<posx>120</posx>
 					<posy>-135</posy>
@@ -1306,7 +1306,7 @@
 					<ondown>9000</ondown>
 					<itemgap>0</itemgap>
 					<orientation>horizontal</orientation>
-					<visible>Container(9000).HasFocus(9)</visible>						
+					<visible>Container(9000).HasFocus(9)</visible>
 					<control type="button" id="90151">
 						<animation effect="slide" start="0,0" end="0,-10" time="100" >Focus</animation>
 						<animation effect="slide" start="0,-10" end="0,0" time="100" >UnFocus</animation>
@@ -1333,7 +1333,7 @@
 						<label>Add Shortcut</label>
 						<onclick>ActivateWindow(1111)</onclick>
 						<onclick>Control.SetFocus(9000,5) </onclick>
-					</control>	
+					</control>
 					<control type="button" id="90154">
 						<animation effect="slide" start="0,0" end="0,-10" time="100" >Focus</animation>
 						<animation effect="slide" start="0,-10" end="0,0" time="100" >UnFocus</animation>
@@ -1530,7 +1530,7 @@
 						<include>ButtonHomeSubCommonValuesHome</include>
 						<align>center</align>
 						<label>31328</label>
-						<onclick>ActivateWindow(VideoLibrary,RecentlyAddedEpisodes,return)</onclick>	
+						<onclick>ActivateWindow(VideoLibrary,RecentlyAddedEpisodes,return)</onclick>
 						<visible>!Skin.HasSetting(SubMenuNoTVRecentlyAddedButton)</visible>
 					</control>
 					<control type="button" id="90177">
@@ -1639,7 +1639,7 @@
 						<label>Add Shortcut</label>
 						<onclick>ActivateWindow(1111)</onclick>
 						<onclick>Control.SetFocus(9000,4) </onclick>
-					</control>	
+					</control>
 					<control type="button" id="90192">
 						<animation effect="slide" start="0,0" end="0,-10" time="100" >Focus</animation>
 						<animation effect="slide" start="0,-10" end="0,0" time="100" >UnFocus</animation>
@@ -1723,7 +1723,7 @@
 			<animation effect="fade" start="0" end="100" time="300" delay="0">WindowOpen</animation>
 			<animation effect="fade" start="100" end="20" time="0" condition="Control.HasFocus(9010)">Conditional</animation>
 			<animation effect="fade" start="100" end="20" time="0" condition="Control.HasFocus(8000)">Conditional</animation>
-			<animation effect="fade" start="100" end="20" time="0" condition="Control.HasFocus(8001)">Conditional</animation>					
+			<animation effect="fade" start="100" end="20" time="0" condition="Control.HasFocus(8001)">Conditional</animation>
 			<animation effect="fade" start="100" end="20" time="0" condition="Control.HasFocus(8002)">Conditional</animation>
 			<animation effect="fade" start="100" end="20" time="0" condition="Control.HasFocus(8003)">Conditional</animation>
 			<animation effect="fade" start="100" end="20" time="0" condition="Control.HasFocus(8004)">Conditional</animation>
@@ -1872,7 +1872,7 @@
 						<align>center</align>
 						<aligny>center</aligny>
 						<label>Today</label>
-					</control>		
+					</control>
 					<control type="image">
 						<posx>31.5</posx>
 						<posy>85</posy>
@@ -1891,7 +1891,7 @@
 						<align>center</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.label2]</label>
-					</control>		
+					</control>
 					<control type="label">
 						<posx>90</posx>
 						<posy>155</posy>
@@ -1902,14 +1902,14 @@
 						<align>center</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.label]</label>
-					</control>		
+					</control>
 					<control type="image">
 						<posx>30</posx>
 						<posy>195</posy>
 						<width>119</width>
 						<height>1</height>
 						<texture>simplicity/line.png</texture>
-					</control>	
+					</control>
 				</itemlayout>
 				<focusedlayout height="124" width="182">
 					<control type="label">
@@ -1922,7 +1922,7 @@
 						<align>center</align>
 						<aligny>center</aligny>
 						<label>Today</label>
-					</control>		
+					</control>
 					<control type="image">
 						<posx>31.5</posx>
 						<posy>85</posy>
@@ -1941,7 +1941,7 @@
 						<align>center</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.label2]</label>
-					</control>		
+					</control>
 					<control type="label">
 						<posx>90</posx>
 						<posy>155</posy>
@@ -1952,14 +1952,14 @@
 						<align>center</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.label]</label>
-					</control>	
+					</control>
 					<control type="image">
 						<posx>30</posx>
 						<posy>195</posy>
 						<width>119</width>
 						<height>1</height>
 						<texture>simplicity/line.png</texture>
-					</control>	
+					</control>
 				</focusedlayout>
 				<content>
 					<item id="1">
@@ -2124,7 +2124,7 @@
 					</item>
 				</content>
 			</control>
-		</control>		
+		</control>
 
 
 		<!--TV Feed-->

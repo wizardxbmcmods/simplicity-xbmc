@@ -78,7 +78,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>Upcoming TV Schedule</label>
-			</control>		
+			</control>
 
 			<control type="button" id="512">
 				<posx>140</posx>
@@ -147,7 +147,7 @@
 			<width>1284</width>
 			<height>128</height>
 			<texture>simplicity/tv-show-button.png</texture>
-		</control>		
+		</control>
 		<control type="image">
 			<posx>-2</posx>
 			<posy>208</posy>
@@ -189,7 +189,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[Window(Home).Property(NextAired.1.ShowTitle)]</label>
-		</control>		
+		</control>
 		<control type="label">
 				<posx>535</posx>
 				<posy>228</posy>
@@ -200,7 +200,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[Window(Home).Property(NextAired.2.ShowTitle)]</label>
-		</control>		
+		</control>
 		<control type="label">
 				<posx>535</posx>
 				<posy>356</posy>
@@ -211,7 +211,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[Window(Home).Property(NextAired.3.ShowTitle)]</label>
-		</control>		
+		</control>
 		<control type="label">
 				<posx>535</posx>
 				<posy>484</posy>
@@ -222,7 +222,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[Window(Home).Property(NextAired.4.ShowTitle)]</label>
-		</control>		
+		</control>
 		<control type="label">
 				<posx>535</posx>
 				<posy>612</posy>
@@ -233,7 +233,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$INFO[Window(Home).Property(NextAired.5.ShowTitle)]</label>
-		</control>-->		
+		</control>-->
 
 			<!--Show Episode Names-->
 			<!--<control type="group">
@@ -248,7 +248,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>[B]Next Episode:[/B] "$INFO[Window(Home).Property(NextAired.1.NextTitle)]"</label>
-			</control>		
+			</control>
 			<control type="label">
 				<posx>535</posx>
 				<posy>258</posy>
@@ -259,7 +259,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>[B]Next Episode:[/B] "$INFO[Window(Home).Property(NextAired.2.NextTitle)]"</label>
-			</control>		
+			</control>
 			<control type="label">
 				<posx>535</posx>
 				<posy>386</posy>
@@ -270,7 +270,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>[B]Next Episode:[/B] "$INFO[Window(Home).Property(NextAired.3.NextTitle)]"</label>
-			</control>		
+			</control>
 			<control type="label">
 				<posx>535</posx>
 				<posy>514</posy>
@@ -281,7 +281,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>[B]Next Episode:[/B] "$INFO[Window(Home).Property(NextAired.4.NextTitle)]"</label>
-			</control>		
+			</control>
 			<control type="label">
 				<posx>535</posx>
 				<posy>642</posy>
@@ -292,7 +292,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>[B]Next Episode:[/B] "$INFO[Window(Home).Property(NextAired.5.NextTitle)]"</label>
-			</control>		
+			</control>
 		</control>		-->
 			<!--Show Air Dates-->
 
@@ -308,7 +308,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>[B]Airing:[/B] $INFO[Window(Home).Property(NextAired.1.airday)] at $INFO[Window(Home).Property(NextAired.1.shortime)] on $INFO[Window(Home).Property(NextAired.1.network)]</label>
-			</control>		
+			</control>
 			<control type="label">
 				<posx>535</posx>
 				<posy>288</posy>
@@ -319,7 +319,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>[B]Airing:[/B] $INFO[Window(Home).Property(NextAired.2.airday)] at $INFO[Window(Home).Property(NextAired.2.shortime)] on $INFO[Window(Home).Property(NextAired.2.network)]</label>
-			</control>		
+			</control>
 			<control type="label">
 				<posx>535</posx>
 				<posy>416</posy>
@@ -330,7 +330,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>[B]Airing:[/B] $INFO[Window(Home).Property(NextAired.3.airday)] at $INFO[Window(Home).Property(NextAired.3.shortime)] on $INFO[Window(Home).Property(NextAired.3.network)]</label>
-			</control>		
+			</control>
 			<control type="label">
 				<posx>535</posx>
 				<posy>544</posy>
@@ -341,7 +341,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>[B]Airing:[/B] $INFO[Window(Home).Property(NextAired.4.airday)] at $INFO[Window(Home).Property(NextAired.4.shortime)] on $INFO[Window(Home).Property(NextAired.4.network)]</label>
-			</control>		
+			</control>
 			<control type="label">
 				<posx>535</posx>
 				<posy>672</posy>
@@ -352,8 +352,8 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>[B]Airing:[/B] $INFO[Window(Home).Property(NextAired.5.airday)] at $INFO[Window(Home).Property(NextAired.5.shortime)] on $INFO[Window(Home).Property(NextAired.5.network)]</label>
-			</control>		
-		</control>	
+			</control>
+		</control>
 
 		<control type="group">
 			<posy>0</posy>
@@ -367,7 +367,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>[B]Duration:[/B] $INFO[Window(Home).Property(NextAired.1.Runtime)] mins.</label>
-			</control>		
+			</control>
 			<control type="label">
 				<posx>535</posx>
 				<posy>288</posy>
@@ -378,7 +378,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>[B]Duration:[/B] $INFO[Window(Home).Property(NextAired.2.Runtime)] mins.</label>
-			</control>		
+			</control>
 			<control type="label">
 				<posx>535</posx>
 				<posy>416</posy>
@@ -389,7 +389,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>[B]Duration:[/B] $INFO[Window(Home).Property(NextAired.3.Runtime)] mins.</label>
-			</control>		
+			</control>
 			<control type="label">
 				<posx>535</posx>
 				<posy>544</posy>
@@ -400,7 +400,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>[B]Duration:[/B] $INFO[Window(Home).Property(NextAired.4.Runtime)] mins.</label>
-			</control>		
+			</control>
 			<control type="label">
 				<posx>535</posx>
 				<posy>672</posy>
@@ -411,7 +411,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>[B]Duration:[/B] $INFO[Window(Home).Property(NextAired.5.Runtime)] mins.</label>
-			</control>		
+			</control>
 		</control>		-->
 
 			<!--Show Studio Logos-->
@@ -821,7 +821,7 @@
 				<height>30</height>
 				<aspectratio>stretch</aspectratio>
 				<texture>simplicity/today-glow.png</texture>
-				<visible>SubString(System.Date,Monday)</visible> 
+				<visible>SubString(System.Date,Monday)</visible>
 			</control>
 			<control type="image">
 				<posx>290</posx>
@@ -830,7 +830,7 @@
 				<height>30</height>
 				<aspectratio>stretch</aspectratio>
 				<texture>simplicity/today-glow.png</texture>
-				<visible>SubString(System.Date,Tuesday)</visible> 
+				<visible>SubString(System.Date,Tuesday)</visible>
 			</control>
 			<control type="image">
 				<posx>435</posx>
@@ -839,7 +839,7 @@
 				<height>30</height>
 				<aspectratio>stretch</aspectratio>
 				<texture>simplicity/today-glow.png</texture>
-				<visible>SubString(System.Date,Wednesday)</visible> 
+				<visible>SubString(System.Date,Wednesday)</visible>
 			</control>
 			<control type="image">
 				<posx>580</posx>
@@ -848,7 +848,7 @@
 				<height>30</height>
 				<aspectratio>stretch</aspectratio>
 				<texture>simplicity/today-glow.png</texture>
-				<visible>SubString(System.Date,Thursday)</visible> 
+				<visible>SubString(System.Date,Thursday)</visible>
 			</control>
 			<control type="image">
 				<posx>725</posx>
@@ -866,7 +866,7 @@
 				<height>30</height>
 				<aspectratio>stretch</aspectratio>
 				<texture>simplicity/today-glow.png</texture>
-				<visible>SubString(System.Date,Saturday)</visible> 
+				<visible>SubString(System.Date,Saturday)</visible>
 			</control>
 			<control type="image">
 				<posx>1015</posx>
@@ -875,7 +875,7 @@
 				<height>30</height>
 				<aspectratio>stretch</aspectratio>
 				<texture>simplicity/today-glow.png</texture>
-				<visible>SubString(System.Date,Sunday)</visible> 
+				<visible>SubString(System.Date,Sunday)</visible>
 			</control>!-->
 				<!--<control type="label">
 			<posx>115</posx>
@@ -898,7 +898,7 @@
 			<align>center</align>
 			<aligny>center</aligny>
 			<label>Tue</label>
-		</control>				
+		</control>
 		<control type="label">
 			<posx>405</posx>
 			<posy>70</posy>
@@ -909,7 +909,7 @@
 			<align>center</align>
 			<aligny>center</aligny>
 			<label>Wed</label>
-		</control>	
+		</control>
 		<control type="label">
 			<posx>550</posx>
 			<posy>70</posy>
@@ -920,7 +920,7 @@
 			<align>center</align>
 			<aligny>center</aligny>
 			<label>Thu</label>
-		</control>	
+		</control>
 		<control type="label">
 			<posx>695</posx>
 			<posy>70</posy>
@@ -931,7 +931,7 @@
 			<align>center</align>
 			<aligny>center</aligny>
 			<label>Fri</label>
-		</control>	
+		</control>
 		<control type="label">
 			<posx>840</posx>
 			<posy>70</posy>
@@ -942,7 +942,7 @@
 			<align>center</align>
 			<aligny>center</aligny>
 			<label>Sat</label>
-		</control>	
+		</control>
 		<control type="label">
 			<posx>985</posx>
 			<posy>70</posy>
@@ -954,7 +954,7 @@
 			<aligny>center</aligny>
 			<label>Sun</label>
 		</control>	-->
-			</control>	
+			</control>
 			<control type="group">
 				<visible>!Control.HasFocus(515) + !Control.HasFocus(516) + !Control.HasFocus(517) + !Control.HasFocus(518) + !Control.HasFocus(519) + !Control.HasFocus(520) + !Control.HasFocus(521)</visible>
 				<include>VisibleFadeEffect</include>
@@ -994,7 +994,7 @@
 								<align>center</align>
 								<aligny>center</aligny>
 								<label>$INFO[ListItem.label2]</label>
-							</control>		
+							</control>
 							<control type="label">
 								<posx>90</posx>
 								<posy>155</posy>
@@ -1005,7 +1005,7 @@
 								<align>center</align>
 								<aligny>center</aligny>
 								<label>$INFO[ListItem.label]</label>
-							</control>		
+							</control>
 							<!--<control type="image">
 				<posx>119</posx>
 				<posy>72</posy>
@@ -1019,7 +1019,7 @@
 								<width>119</width>
 								<height>1</height>
 								<texture>simplicity/line.png</texture>
-							</control>	
+							</control>
 						</itemlayout>
 						<focusedlayout height="124" width="182">
 							<control type="image">
@@ -1047,7 +1047,7 @@
 								<align>center</align>
 								<aligny>center</aligny>
 								<label>$INFO[ListItem.label2]</label>
-							</control>		
+							</control>
 							<control type="label">
 								<posx>90</posx>
 								<posy>155</posy>
@@ -1058,14 +1058,14 @@
 								<align>center</align>
 								<aligny>center</aligny>
 								<label>$INFO[ListItem.label]</label>
-							</control>	
+							</control>
 							<control type="image">
 								<posx>30</posx>
 								<posy>195</posy>
 								<width>119</width>
 								<height>1</height>
 								<texture>simplicity/line.png</texture>
-							</control>	
+							</control>
 						</focusedlayout>
 						<content>
 							<item id="1">
@@ -1310,7 +1310,7 @@
 								<align>center</align>
 								<aligny>center</aligny>
 								<label>$INFO[ListItem.label2]</label>
-							</control>		
+							</control>
 							<control type="label">
 								<posx>90</posx>
 								<posy>155</posy>
@@ -1321,14 +1321,14 @@
 								<align>center</align>
 								<aligny>center</aligny>
 								<label>$INFO[ListItem.label]</label>
-							</control>		
+							</control>
 							<control type="image">
 								<posx>30</posx>
 								<posy>195</posy>
 								<width>119</width>
 								<height>1</height>
 								<texture>simplicity/line.png</texture>
-							</control>	
+							</control>
 						</itemlayout>
 						<focusedlayout height="124" width="182">
 							<control type="image">
@@ -1356,7 +1356,7 @@
 								<align>center</align>
 								<aligny>center</aligny>
 								<label>$INFO[ListItem.label2]</label>
-							</control>		
+							</control>
 							<control type="label">
 								<posx>90</posx>
 								<posy>155</posy>
@@ -1367,14 +1367,14 @@
 								<align>center</align>
 								<aligny>center</aligny>
 								<label>$INFO[ListItem.label]</label>
-							</control>		
+							</control>
 							<control type="image">
 								<posx>30</posx>
 								<posy>195</posy>
 								<width>119</width>
 								<height>1</height>
 								<texture>simplicity/line.png</texture>
-							</control>	
+							</control>
 						</focusedlayout>
 						<content>
 							<item id="1">
@@ -1620,7 +1620,7 @@
 								<align>center</align>
 								<aligny>center</aligny>
 								<label>$INFO[ListItem.label2]</label>
-							</control>		
+							</control>
 							<control type="label">
 								<posx>90</posx>
 								<posy>155</posy>
@@ -1631,14 +1631,14 @@
 								<align>center</align>
 								<aligny>center</aligny>
 								<label>$INFO[ListItem.label]</label>
-							</control>		
+							</control>
 							<control type="image">
 								<posx>30</posx>
 								<posy>195</posy>
 								<width>119</width>
 								<height>1</height>
 								<texture>simplicity/line.png</texture>
-							</control>	
+							</control>
 						</itemlayout>
 						<focusedlayout height="124" width="182">
 							<control type="image">
@@ -1666,7 +1666,7 @@
 								<align>center</align>
 								<aligny>center</aligny>
 								<label>$INFO[ListItem.label2]</label>
-							</control>		
+							</control>
 							<control type="label">
 								<posx>90</posx>
 								<posy>155</posy>
@@ -1677,14 +1677,14 @@
 								<align>center</align>
 								<aligny>center</aligny>
 								<label>$INFO[ListItem.label]</label>
-							</control>		
+							</control>
 							<control type="image">
 								<posx>30</posx>
 								<posy>195</posy>
 								<width>119</width>
 								<height>1</height>
 								<texture>simplicity/line.png</texture>
-							</control>	
+							</control>
 						</focusedlayout>
 						<content>
 							<item id="1">
@@ -1930,7 +1930,7 @@
 								<align>center</align>
 								<aligny>center</aligny>
 								<label>$INFO[ListItem.label2]</label>
-							</control>		
+							</control>
 							<control type="label">
 								<posx>90</posx>
 								<posy>155</posy>
@@ -1941,14 +1941,14 @@
 								<align>center</align>
 								<aligny>center</aligny>
 								<label>$INFO[ListItem.label]</label>
-							</control>		
+							</control>
 							<control type="image">
 								<posx>30</posx>
 								<posy>195</posy>
 								<width>119</width>
 								<height>1</height>
 								<texture>simplicity/line.png</texture>
-							</control>	
+							</control>
 						</itemlayout>
 						<focusedlayout height="124" width="182">
 							<control type="image">
@@ -1976,7 +1976,7 @@
 								<align>center</align>
 								<aligny>center</aligny>
 								<label>$INFO[ListItem.label2]</label>
-							</control>		
+							</control>
 							<control type="label">
 								<posx>90</posx>
 								<posy>155</posy>
@@ -1987,14 +1987,14 @@
 								<align>center</align>
 								<aligny>center</aligny>
 								<label>$INFO[ListItem.label]</label>
-							</control>		
+							</control>
 							<control type="image">
 								<posx>30</posx>
 								<posy>195</posy>
 								<width>119</width>
 								<height>1</height>
 								<texture>simplicity/line.png</texture>
-							</control>	
+							</control>
 						</focusedlayout>
 						<content>
 							<item id="1">
@@ -2239,7 +2239,7 @@
 								<align>center</align>
 								<aligny>center</aligny>
 								<label>$INFO[ListItem.label2]</label>
-							</control>		
+							</control>
 							<control type="label">
 								<posx>90</posx>
 								<posy>155</posy>
@@ -2250,14 +2250,14 @@
 								<align>center</align>
 								<aligny>center</aligny>
 								<label>$INFO[ListItem.label]</label>
-							</control>		
+							</control>
 							<control type="image">
 								<posx>30</posx>
 								<posy>195</posy>
 								<width>119</width>
 								<height>1</height>
 								<texture>simplicity/line.png</texture>
-							</control>	
+							</control>
 						</itemlayout>
 						<focusedlayout height="124" width="182">
 							<control type="image">
@@ -2285,7 +2285,7 @@
 								<align>center</align>
 								<aligny>center</aligny>
 								<label>$INFO[ListItem.label2]</label>
-							</control>		
+							</control>
 							<control type="label">
 								<posx>90</posx>
 								<posy>155</posy>
@@ -2296,14 +2296,14 @@
 								<align>center</align>
 								<aligny>center</aligny>
 								<label>$INFO[ListItem.label]</label>
-							</control>		
+							</control>
 							<control type="image">
 								<posx>30</posx>
 								<posy>195</posy>
 								<width>119</width>
 								<height>1</height>
 								<texture>simplicity/line.png</texture>
-							</control>	
+							</control>
 						</focusedlayout>
 						<content>
 							<item id="1">
@@ -2548,7 +2548,7 @@
 								<align>center</align>
 								<aligny>center</aligny>
 								<label>$INFO[ListItem.label2]</label>
-							</control>		
+							</control>
 							<control type="label">
 								<posx>90</posx>
 								<posy>155</posy>
@@ -2566,7 +2566,7 @@
 								<width>119</width>
 								<height>1</height>
 								<texture>simplicity/line.png</texture>
-							</control>			
+							</control>
 						</itemlayout>
 						<focusedlayout height="124" width="182">
 							<control type="image">
@@ -2594,7 +2594,7 @@
 								<align>center</align>
 								<aligny>center</aligny>
 								<label>$INFO[ListItem.label2]</label>
-							</control>		
+							</control>
 							<control type="label">
 								<posx>90</posx>
 								<posy>155</posy>
@@ -2605,14 +2605,14 @@
 								<align>center</align>
 								<aligny>center</aligny>
 								<label>$INFO[ListItem.label]</label>
-							</control>		
+							</control>
 							<control type="image">
 								<posx>30</posx>
 								<posy>195</posy>
 								<width>119</width>
 								<height>1</height>
 								<texture>simplicity/line.png</texture>
-							</control>	
+							</control>
 						</focusedlayout>
 						<content>
 							<item id="1">
@@ -2857,7 +2857,7 @@
 								<align>center</align>
 								<aligny>center</aligny>
 								<label>$INFO[ListItem.label2]</label>
-							</control>		
+							</control>
 							<control type="label">
 								<posx>90</posx>
 								<posy>155</posy>
@@ -2868,14 +2868,14 @@
 								<align>center</align>
 								<aligny>center</aligny>
 								<label>$INFO[ListItem.label]</label>
-							</control>		
+							</control>
 							<control type="image">
 								<posx>30</posx>
 								<posy>195</posy>
 								<width>119</width>
 								<height>1</height>
 								<texture>simplicity/line.png</texture>
-							</control>	
+							</control>
 						</itemlayout>
 						<focusedlayout height="124" width="182">
 							<control type="image">
@@ -2903,7 +2903,7 @@
 								<align>center</align>
 								<aligny>center</aligny>
 								<label>$INFO[ListItem.label2]</label>
-							</control>		
+							</control>
 							<control type="label">
 								<posx>90</posx>
 								<posy>155</posy>
@@ -2914,14 +2914,14 @@
 								<align>center</align>
 								<aligny>center</aligny>
 								<label>$INFO[ListItem.label]</label>
-							</control>		
+							</control>
 							<control type="image">
 								<posx>30</posx>
 								<posy>195</posy>
 								<width>119</width>
 								<height>1</height>
 								<texture>simplicity/line.png</texture>
-							</control>	
+							</control>
 						</focusedlayout>
 						<content>
 							<item id="1">
@@ -3175,7 +3175,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>[COLOR=white]$INFO[ListItem.label][/COLOR]</label>
-						</control>				
+						</control>
 					</itemlayout>
 					<focusedlayout height="246" width="403">
 						<control type="label">
@@ -3188,7 +3188,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>[COLOR=white]$INFO[ListItem.label2][/COLOR]</label>
-						</control>		
+						</control>
 						<control type="label">
 							<posx>165</posx>
 							<posy>145</posy>
@@ -3199,7 +3199,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>[COLOR=white]$INFO[ListItem.label][/COLOR]</label>
-						</control>		
+						</control>
 					</focusedlayout>
 					<content>
 						<item id="1">
@@ -3463,7 +3463,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>Date: [COLOR=white]$INFO[ListItem.label][/COLOR]</label>
-						</control>		
+						</control>
 						<control type="label">
 							<posx>165</posx>
 							<posy>205</posy>
@@ -3474,7 +3474,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>Time: [COLOR=white]$INFO[ListItem.label2][/COLOR]</label>
-						</control>		
+						</control>
 					</itemlayout>
 					<focusedlayout height="246" width="403">
 						<control type="image">
@@ -3519,7 +3519,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>Date: [COLOR=white]$INFO[ListItem.label][/COLOR]</label>
-						</control>		
+						</control>
 						<control type="label">
 							<posx>165</posx>
 							<posy>205</posy>
@@ -3530,7 +3530,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>Time: [COLOR=white]$INFO[ListItem.label2][/COLOR]</label>
-						</control>		
+						</control>
 					</focusedlayout>
 					<content>
 						<item id="1">
@@ -3768,7 +3768,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>Premiered: [COLOR=white]$INFO[ListItem.label][/COLOR]</label>
-						</control>		
+						</control>
 					</itemlayout>
 					<focusedlayout height="160" width="600">
 						<control type="label">
@@ -3781,7 +3781,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>Premiered: [COLOR=white]$INFO[ListItem.label][/COLOR]</label>
-						</control>		
+						</control>
 					</focusedlayout>
 					<content>
 						<item id="1">
@@ -4045,14 +4045,14 @@
 								<align>left</align>
 								<aligny>center</aligny>
 								<label>Airing: [COLOR=white]$INFO[ListItem.label][/COLOR] at [COLOR=white]$INFO[ListItem.label2][/COLOR]</label>
-							</control>		
+							</control>
 							<control type="image">
 								<posx>25</posx>
 								<posy>240</posy>
 								<width>490</width>
 								<height>1</height>
 								<texture>simplicity/line.png</texture>
-							</control>	
+							</control>
 						</control>
 					</itemlayout>
 					<focusedlayout height="160" width="600">
@@ -4098,14 +4098,14 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>Airing: [COLOR=white]$INFO[ListItem.label][/COLOR] at [COLOR=white]$INFO[ListItem.label2][/COLOR]</label>
-						</control>		
+						</control>
 						<control type="image">
 							<posx>25</posx>
 							<posy>240</posy>
 							<width>490</width>
 							<height>1</height>
 							<texture>simplicity/line.png</texture>
-						</control>	
+						</control>
 					</focusedlayout>
 					<content>
 						<item id="1">
@@ -4356,7 +4356,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>[COLOR=white]$INFO[ListItem.label][/COLOR]</label>
-						</control>				
+						</control>
 					</itemlayout>
 					<focusedlayout height="246" width="403">
 						<control type="label">
@@ -4369,7 +4369,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>[COLOR=white]$INFO[ListItem.label2][/COLOR]</label>
-						</control>		
+						</control>
 						<control type="label">
 							<posx>165</posx>
 							<posy>145</posy>
@@ -4380,7 +4380,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>[COLOR=white]$INFO[ListItem.label][/COLOR]</label>
-						</control>		
+						</control>
 					</focusedlayout>
 					<content>
 						<item id="1">
@@ -4644,7 +4644,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>Date: [COLOR=white]$INFO[ListItem.label][/COLOR]</label>
-						</control>		
+						</control>
 						<control type="label">
 							<posx>165</posx>
 							<posy>205</posy>
@@ -4655,7 +4655,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>Time: [COLOR=white]$INFO[ListItem.label2][/COLOR]</label>
-						</control>		
+						</control>
 					</itemlayout>
 					<focusedlayout height="246" width="403">
 						<control type="image">
@@ -4700,7 +4700,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>Date: [COLOR=white]$INFO[ListItem.label][/COLOR]</label>
-						</control>		
+						</control>
 						<control type="label">
 							<posx>165</posx>
 							<posy>205</posy>
@@ -4711,7 +4711,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>Time: [COLOR=white]$INFO[ListItem.label2][/COLOR]</label>
-						</control>		
+						</control>
 					</focusedlayout>
 					<content>
 						<item id="1">
@@ -4959,7 +4959,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>Premiered: [COLOR=white]$INFO[ListItem.label][/COLOR]</label>
-						</control>		
+						</control>
 						<!--<control type="image">
 				<posx>119</posx>
 				<posy>72</posy>
@@ -4994,7 +4994,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>Premiered: [COLOR=white]$INFO[ListItem.label][/COLOR]</label>
-						</control>		
+						</control>
 					</focusedlayout>
 					<content>
 						<item id="1">
@@ -5264,7 +5264,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>Airing: [COLOR=white]$INFO[ListItem.label][/COLOR] at [COLOR=white]$INFO[ListItem.label2][/COLOR]</label>
-						</control>		
+						</control>
 						<!--<control type="image">
 				<posx>119</posx>
 				<posy>72</posy>
@@ -5278,7 +5278,7 @@
 							<width>490</width>
 							<height>1</height>
 							<texture>simplicity/line.png</texture>
-						</control>	
+						</control>
 					</itemlayout>
 					<focusedlayout height="160" width="600">
 						<control type="image">
@@ -5330,14 +5330,14 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>Airing: [COLOR=white]$INFO[ListItem.label][/COLOR] at [COLOR=white]$INFO[ListItem.label2][/COLOR]</label>
-						</control>		
+						</control>
 						<control type="image">
 							<posx>25</posx>
 							<posy>240</posy>
 							<width>490</width>
 							<height>1</height>
 							<texture>simplicity/line.png</texture>
-						</control>	
+						</control>
 					</focusedlayout>
 					<content>
 						<item id="1">
@@ -5587,7 +5587,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>[COLOR=white]$INFO[ListItem.label][/COLOR]</label>
-						</control>				
+						</control>
 					</itemlayout>
 					<focusedlayout height="246" width="403">
 						<control type="label">
@@ -5600,7 +5600,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>[COLOR=white]$INFO[ListItem.label2][/COLOR]</label>
-						</control>		
+						</control>
 						<control type="label">
 							<posx>165</posx>
 							<posy>145</posy>
@@ -5611,7 +5611,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>[COLOR=white]$INFO[ListItem.label][/COLOR]</label>
-						</control>		
+						</control>
 					</focusedlayout>
 					<content>
 						<item id="1">
@@ -5875,7 +5875,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>Date: [COLOR=white]$INFO[ListItem.label][/COLOR]</label>
-						</control>		
+						</control>
 						<control type="label">
 							<posx>165</posx>
 							<posy>205</posy>
@@ -5886,7 +5886,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>Time: [COLOR=white]$INFO[ListItem.label2][/COLOR]</label>
-						</control>		
+						</control>
 					</itemlayout>
 					<focusedlayout height="246" width="403">
 						<control type="image">
@@ -5931,7 +5931,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>Date: [COLOR=white]$INFO[ListItem.label][/COLOR]</label>
-						</control>		
+						</control>
 						<control type="label">
 							<posx>165</posx>
 							<posy>205</posy>
@@ -5942,7 +5942,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>Time: [COLOR=white]$INFO[ListItem.label2][/COLOR]</label>
-						</control>		
+						</control>
 					</focusedlayout>
 					<content>
 						<item id="1">
@@ -6192,7 +6192,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>Premiered: [COLOR=white]$INFO[ListItem.label][/COLOR]</label>
-						</control>		
+						</control>
 						<!--<control type="image">
 				<posx>119</posx>
 				<posy>72</posy>
@@ -6227,7 +6227,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>Premiered: [COLOR=white]$INFO[ListItem.label][/COLOR]</label>
-						</control>		
+						</control>
 					</focusedlayout>
 					<content>
 						<item id="1">
@@ -6496,7 +6496,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>Airing: [COLOR=white]$INFO[ListItem.label][/COLOR] at [COLOR=white]$INFO[ListItem.label2][/COLOR]</label>
-						</control>		
+						</control>
 						<!--<control type="image">
 				<posx>119</posx>
 				<posy>72</posy>
@@ -6510,7 +6510,7 @@
 							<width>490</width>
 							<height>1</height>
 							<texture>simplicity/line.png</texture>
-						</control>	
+						</control>
 					</itemlayout>
 					<focusedlayout height="160" width="600">
 						<control type="image">
@@ -6562,14 +6562,14 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>Airing: [COLOR=white]$INFO[ListItem.label][/COLOR] at [COLOR=white]$INFO[ListItem.label2][/COLOR]</label>
-						</control>		
+						</control>
 						<control type="image">
 							<posx>25</posx>
 							<posy>240</posy>
 							<width>490</width>
 							<height>1</height>
 							<texture>simplicity/line.png</texture>
-						</control>	
+						</control>
 					</focusedlayout>
 					<content>
 						<item id="1">
@@ -6819,7 +6819,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>[COLOR=white]$INFO[ListItem.label][/COLOR]</label>
-						</control>				
+						</control>
 					</itemlayout>
 					<focusedlayout height="246" width="403">
 						<control type="label">
@@ -6832,7 +6832,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>[COLOR=white]$INFO[ListItem.label2][/COLOR]</label>
-						</control>		
+						</control>
 						<control type="label">
 							<posx>165</posx>
 							<posy>145</posy>
@@ -6843,7 +6843,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>[COLOR=white]$INFO[ListItem.label][/COLOR]</label>
-						</control>		
+						</control>
 					</focusedlayout>
 					<content>
 						<item id="1">
@@ -7107,7 +7107,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>Date: [COLOR=white]$INFO[ListItem.label][/COLOR]</label>
-						</control>		
+						</control>
 						<control type="label">
 							<posx>165</posx>
 							<posy>205</posy>
@@ -7118,7 +7118,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>Time: [COLOR=white]$INFO[ListItem.label2][/COLOR]</label>
-						</control>		
+						</control>
 					</itemlayout>
 					<focusedlayout height="246" width="403">
 						<control type="image">
@@ -7163,7 +7163,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>Date: [COLOR=white]$INFO[ListItem.label][/COLOR]</label>
-						</control>		
+						</control>
 						<control type="label">
 							<posx>165</posx>
 							<posy>205</posy>
@@ -7174,7 +7174,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>Time: [COLOR=white]$INFO[ListItem.label2][/COLOR]</label>
-						</control>		
+						</control>
 					</focusedlayout>
 					<content>
 						<item id="1">
@@ -7424,7 +7424,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>Premiered: [COLOR=white]$INFO[ListItem.label][/COLOR]</label>
-						</control>		
+						</control>
 						<!--<control type="image">
 				<posx>119</posx>
 				<posy>72</posy>
@@ -7459,7 +7459,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>Premiered: [COLOR=white]$INFO[ListItem.label][/COLOR]</label>
-						</control>		
+						</control>
 					</focusedlayout>
 					<content>
 						<item id="1">
@@ -7731,7 +7731,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>Airing: [COLOR=white]$INFO[ListItem.label][/COLOR] at [COLOR=white]$INFO[ListItem.label2][/COLOR]</label>
-						</control>		
+						</control>
 						<!--<control type="image">
 				<posx>119</posx>
 				<posy>72</posy>
@@ -7745,7 +7745,7 @@
 							<width>490</width>
 							<height>1</height>
 							<texture>simplicity/line.png</texture>
-						</control>	
+						</control>
 					</itemlayout>
 					<focusedlayout height="160" width="600">
 						<control type="image">
@@ -7797,14 +7797,14 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>Airing: [COLOR=white]$INFO[ListItem.label][/COLOR] at [COLOR=white]$INFO[ListItem.label2][/COLOR]</label>
-						</control>		
+						</control>
 						<control type="image">
 							<posx>25</posx>
 							<posy>240</posy>
 							<width>490</width>
 							<height>1</height>
 							<texture>simplicity/line.png</texture>
-						</control>	
+						</control>
 					</focusedlayout>
 					<content>
 						<item id="1">
@@ -8056,7 +8056,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>[COLOR=white]$INFO[ListItem.label][/COLOR]</label>
-						</control>				
+						</control>
 					</itemlayout>
 					<focusedlayout height="246" width="403">
 						<control type="label">
@@ -8069,7 +8069,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>[COLOR=white]$INFO[ListItem.label2][/COLOR]</label>
-						</control>		
+						</control>
 						<control type="label">
 							<posx>165</posx>
 							<posy>145</posy>
@@ -8080,7 +8080,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>[COLOR=white]$INFO[ListItem.label][/COLOR]</label>
-						</control>		
+						</control>
 					</focusedlayout>
 					<content>
 						<item id="1">
@@ -8344,7 +8344,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>Date: [COLOR=white]$INFO[ListItem.label][/COLOR]</label>
-						</control>		
+						</control>
 						<control type="label">
 							<posx>165</posx>
 							<posy>205</posy>
@@ -8355,7 +8355,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>Time: [COLOR=white]$INFO[ListItem.label2][/COLOR]</label>
-						</control>		
+						</control>
 					</itemlayout>
 					<focusedlayout height="246" width="403">
 						<control type="image">
@@ -8400,7 +8400,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>Date: [COLOR=white]$INFO[ListItem.label][/COLOR]</label>
-						</control>		
+						</control>
 						<control type="label">
 							<posx>165</posx>
 							<posy>205</posy>
@@ -8411,7 +8411,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>Time: [COLOR=white]$INFO[ListItem.label2][/COLOR]</label>
-						</control>		
+						</control>
 					</focusedlayout>
 					<content>
 						<item id="1">
@@ -8661,7 +8661,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>Premiered: [COLOR=white]$INFO[ListItem.label][/COLOR]</label>
-						</control>		
+						</control>
 						<!--<control type="image">
 				<posx>119</posx>
 				<posy>72</posy>
@@ -8696,7 +8696,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>Premiered: [COLOR=white]$INFO[ListItem.label][/COLOR]</label>
-						</control>		
+						</control>
 					</focusedlayout>
 					<content>
 						<item id="1">
@@ -8968,7 +8968,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>Airing: [COLOR=white]$INFO[ListItem.label][/COLOR] at [COLOR=white]$INFO[ListItem.label2][/COLOR]</label>
-						</control>		
+						</control>
 						<!--<control type="image">
 				<posx>119</posx>
 				<posy>72</posy>
@@ -8982,7 +8982,7 @@
 							<width>490</width>
 							<height>1</height>
 							<texture>simplicity/line.png</texture>
-						</control>	
+						</control>
 					</itemlayout>
 					<focusedlayout height="160" width="600">
 						<control type="image">
@@ -9034,14 +9034,14 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>Airing: [COLOR=white]$INFO[ListItem.label][/COLOR] at [COLOR=white]$INFO[ListItem.label2][/COLOR]</label>
-						</control>		
+						</control>
 						<control type="image">
 							<posx>25</posx>
 							<posy>240</posy>
 							<width>490</width>
 							<height>1</height>
 							<texture>simplicity/line.png</texture>
-						</control>	
+						</control>
 					</focusedlayout>
 					<content>
 						<item id="1">
@@ -9291,7 +9291,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>[COLOR=white]$INFO[ListItem.label][/COLOR]</label>
-						</control>				
+						</control>
 					</itemlayout>
 					<focusedlayout height="246" width="403">
 						<control type="label">
@@ -9304,7 +9304,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>[COLOR=white]$INFO[ListItem.label2][/COLOR]</label>
-						</control>		
+						</control>
 						<control type="label">
 							<posx>165</posx>
 							<posy>145</posy>
@@ -9315,7 +9315,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>[COLOR=white]$INFO[ListItem.label][/COLOR]</label>
-						</control>		
+						</control>
 					</focusedlayout>
 					<content>
 						<item id="1">
@@ -9579,7 +9579,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>Date: [COLOR=white]$INFO[ListItem.label][/COLOR]</label>
-						</control>		
+						</control>
 						<control type="label">
 							<posx>165</posx>
 							<posy>205</posy>
@@ -9590,7 +9590,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>Time: [COLOR=white]$INFO[ListItem.label2][/COLOR]</label>
-						</control>		
+						</control>
 					</itemlayout>
 					<focusedlayout height="246" width="403">
 						<control type="image">
@@ -9635,7 +9635,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>Date: [COLOR=white]$INFO[ListItem.label][/COLOR]</label>
-						</control>		
+						</control>
 						<control type="label">
 							<posx>165</posx>
 							<posy>205</posy>
@@ -9646,7 +9646,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>Time: [COLOR=white]$INFO[ListItem.label2][/COLOR]</label>
-						</control>		
+						</control>
 					</focusedlayout>
 					<content>
 						<item id="1">
@@ -9897,7 +9897,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>Premiered: [COLOR=white]$INFO[ListItem.label][/COLOR]</label>
-						</control>		
+						</control>
 						<!--<control type="image">
 				<posx>119</posx>
 				<posy>72</posy>
@@ -9932,7 +9932,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>Premiered: [COLOR=white]$INFO[ListItem.label][/COLOR]</label>
-						</control>		
+						</control>
 					</focusedlayout>
 					<content>
 						<item id="1">
@@ -10204,7 +10204,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>Airing: [COLOR=white]$INFO[ListItem.label][/COLOR] at [COLOR=white]$INFO[ListItem.label2][/COLOR]</label>
-						</control>		
+						</control>
 						<!--<control type="image">
 				<posx>119</posx>
 				<posy>72</posy>
@@ -10218,7 +10218,7 @@
 							<width>490</width>
 							<height>1</height>
 							<texture>simplicity/line.png</texture>
-						</control>	
+						</control>
 					</itemlayout>
 					<focusedlayout height="160" width="600">
 						<control type="image">
@@ -10270,14 +10270,14 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>Airing: [COLOR=white]$INFO[ListItem.label][/COLOR] at [COLOR=white]$INFO[ListItem.label2][/COLOR]</label>
-						</control>		
+						</control>
 						<control type="image">
 							<posx>25</posx>
 							<posy>240</posy>
 							<width>490</width>
 							<height>1</height>
 							<texture>simplicity/line.png</texture>
-						</control>	
+						</control>
 					</focusedlayout>
 					<content>
 						<item id="1">
@@ -10528,7 +10528,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>[COLOR=white]$INFO[ListItem.label][/COLOR]</label>
-						</control>				
+						</control>
 					</itemlayout>
 					<focusedlayout height="246" width="403">
 						<control type="label">
@@ -10541,7 +10541,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>[COLOR=white]$INFO[ListItem.label2][/COLOR]</label>
-						</control>		
+						</control>
 						<control type="label">
 							<posx>165</posx>
 							<posy>145</posy>
@@ -10552,7 +10552,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>[COLOR=white]$INFO[ListItem.label][/COLOR]</label>
-						</control>		
+						</control>
 					</focusedlayout>
 					<content>
 						<item id="1">
@@ -10816,7 +10816,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>Date: [COLOR=white]$INFO[ListItem.label][/COLOR]</label>
-						</control>		
+						</control>
 						<control type="label">
 							<posx>165</posx>
 							<posy>205</posy>
@@ -10827,7 +10827,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>Time: [COLOR=white]$INFO[ListItem.label2][/COLOR]</label>
-						</control>		
+						</control>
 					</itemlayout>
 					<focusedlayout height="246" width="403">
 						<control type="image">
@@ -10872,7 +10872,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>Date: [COLOR=white]$INFO[ListItem.label][/COLOR]</label>
-						</control>		
+						</control>
 						<control type="label">
 							<posx>165</posx>
 							<posy>205</posy>
@@ -10883,7 +10883,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>Time: [COLOR=white]$INFO[ListItem.label2][/COLOR]</label>
-						</control>		
+						</control>
 					</focusedlayout>
 					<content>
 						<item id="1">
@@ -11135,7 +11135,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>Premiered: [COLOR=white]$INFO[ListItem.label][/COLOR]</label>
-						</control>		
+						</control>
 						<!--<control type="image">
 				<posx>119</posx>
 				<posy>72</posy>
@@ -11170,7 +11170,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>Premiered: [COLOR=white]$INFO[ListItem.label][/COLOR]</label>
-						</control>		
+						</control>
 					</focusedlayout>
 					<content>
 						<item id="1">
@@ -11442,7 +11442,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>Airing: [COLOR=white]$INFO[ListItem.label][/COLOR] at [COLOR=white]$INFO[ListItem.label2][/COLOR]</label>
-						</control>		
+						</control>
 						<!--<control type="image">
 				<posx>119</posx>
 				<posy>72</posy>
@@ -11456,7 +11456,7 @@
 							<width>490</width>
 							<height>1</height>
 							<texture>simplicity/line.png</texture>
-						</control>	
+						</control>
 					</itemlayout>
 					<focusedlayout height="160" width="600">
 						<control type="image">
@@ -11508,14 +11508,14 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>Airing: [COLOR=white]$INFO[ListItem.label][/COLOR] at [COLOR=white]$INFO[ListItem.label2][/COLOR]</label>
-						</control>		
+						</control>
 						<control type="image">
 							<posx>25</posx>
 							<posy>240</posy>
 							<width>490</width>
 							<height>1</height>
 							<texture>simplicity/line.png</texture>
-						</control>	
+						</control>
 					</focusedlayout>
 					<content>
 						<item id="1">

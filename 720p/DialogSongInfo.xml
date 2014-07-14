@@ -242,7 +242,7 @@
 					<posx>201</posx>
 					<posy>-19</posy>
 					<width>48</width>
-					<height>70</height>				
+					<height>70</height>
 					<spinwidth>48</spinwidth>
 					<spinheight>70</spinheight>
 					<onclick>IncreaseRating</onclick>

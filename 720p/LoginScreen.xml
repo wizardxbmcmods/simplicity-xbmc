@@ -19,7 +19,7 @@
 			<animation effect="fade" time="400">WindowClose</animation>
 		</control>-->
 		<control type="group">
-			<include>Window_OpenClose_Animation</include>		
+			<include>Window_OpenClose_Animation</include>
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>

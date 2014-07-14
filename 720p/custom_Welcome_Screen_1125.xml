@@ -9,7 +9,7 @@
 		<animation type="WindowClose" reversible="false">
 			<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
 			<effect type="fade" start="100" end="0" time="300" />
-		</animation>	
+		</animation>
 			<include>Zoom</include>
 			<control type="image">
 				<posx>0</posx>
@@ -66,7 +66,7 @@
 				<texturenofocus border="5">simplicity/button-nofocus.png</texturenofocus>
 				<texturefocus border="5">simplicity/button-focus-white.png</texturefocus>
 				<font>Simplicity_20_Bold_title</font>
-				<onclick>SetFocus(513)</onclick>			
+				<onclick>SetFocus(513)</onclick>
 			</control>
 			<control type="button" id="513">
 				<posx>300</posx>
@@ -188,12 +188,12 @@
 			</control>
 			</control>
 				<control type="textbox">
-					<animation effect="slide" end="-1280,0" time="200" reversible="true" condition="Control.HasFocus(513)">Conditional</animation>	
-					<animation effect="slide" end="-2560,0" time="200" reversible="true" condition="Control.HasFocus(514)">Conditional</animation>				
+					<animation effect="slide" end="-1280,0" time="200" reversible="true" condition="Control.HasFocus(513)">Conditional</animation>
+					<animation effect="slide" end="-2560,0" time="200" reversible="true" condition="Control.HasFocus(514)">Conditional</animation>
 					<animation effect="slide" end="-3840,0" time="200" reversible="true" condition="Control.HasFocus(515)">Conditional</animation>
 					<animation effect="slide" end="-5120,0" time="200" reversible="true" condition="Control.HasFocus(516)">Conditional</animation>
 					<animation effect="slide" end="-6400,0" time="200" reversible="true" condition="Control.HasFocus(517)">Conditional</animation>
-					<animation effect="slide" end="-7680,0" time="200" reversible="true" condition="Control.HasFocus(518)">Conditional</animation>										
+					<animation effect="slide" end="-7680,0" time="200" reversible="true" condition="Control.HasFocus(518)">Conditional</animation>
 					<description>Description Value The Movie</description>
 					<posx>140</posx>
 					<posy>150</posy>
@@ -208,12 +208,12 @@
 <!--Page 2-->
 	<control type="group">
 		<posx>1280</posx>
-			<animation effect="slide" end="-1280,0" time="200" reversible="true" condition="Control.HasFocus(513)">Conditional</animation>	
-			<animation effect="slide" end="-2560,0" time="200" reversible="true" condition="Control.HasFocus(514)">Conditional</animation>				
+			<animation effect="slide" end="-1280,0" time="200" reversible="true" condition="Control.HasFocus(513)">Conditional</animation>
+			<animation effect="slide" end="-2560,0" time="200" reversible="true" condition="Control.HasFocus(514)">Conditional</animation>
 			<animation effect="slide" end="-3840,0" time="200" reversible="true" condition="Control.HasFocus(515)">Conditional</animation>
 			<animation effect="slide" end="-5120,0" time="200" reversible="true" condition="Control.HasFocus(516)">Conditional</animation>
 			<animation effect="slide" end="-6400,0" time="200" reversible="true" condition="Control.HasFocus(517)">Conditional</animation>
-			<animation effect="slide" end="-7680,0" time="200" reversible="true" condition="Control.HasFocus(518)">Conditional</animation>			
+			<animation effect="slide" end="-7680,0" time="200" reversible="true" condition="Control.HasFocus(518)">Conditional</animation>
 				<control type="label">
 					<posx>0</posx>
 					<posy>130</posy>
@@ -275,12 +275,12 @@
 <!--Page 3-->
 	<control type="group">
 		<posx>2560</posx>
-			<animation effect="slide" end="-1280,0" time="200" reversible="true" condition="Control.HasFocus(513)">Conditional</animation>	
-			<animation effect="slide" end="-2560,0" time="200" reversible="true" condition="Control.HasFocus(514)">Conditional</animation>				
+			<animation effect="slide" end="-1280,0" time="200" reversible="true" condition="Control.HasFocus(513)">Conditional</animation>
+			<animation effect="slide" end="-2560,0" time="200" reversible="true" condition="Control.HasFocus(514)">Conditional</animation>
 			<animation effect="slide" end="-3840,0" time="200" reversible="true" condition="Control.HasFocus(515)">Conditional</animation>
 			<animation effect="slide" end="-5120,0" time="200" reversible="true" condition="Control.HasFocus(516)">Conditional</animation>
 			<animation effect="slide" end="-6400,0" time="200" reversible="true" condition="Control.HasFocus(517)">Conditional</animation>
-			<animation effect="slide" end="-7680,0" time="200" reversible="true" condition="Control.HasFocus(518)">Conditional</animation>			
+			<animation effect="slide" end="-7680,0" time="200" reversible="true" condition="Control.HasFocus(518)">Conditional</animation>
 				<control type="label">
 					<posx>0</posx>
 					<posy>130</posy>
@@ -342,12 +342,12 @@
 <!--Page 4-->
 	<control type="group">
 		<posx>3840</posx>
-			<animation effect="slide" end="-1280,0" time="200" reversible="true" condition="Control.HasFocus(513)">Conditional</animation>	
-			<animation effect="slide" end="-2560,0" time="200" reversible="true" condition="Control.HasFocus(514)">Conditional</animation>				
+			<animation effect="slide" end="-1280,0" time="200" reversible="true" condition="Control.HasFocus(513)">Conditional</animation>
+			<animation effect="slide" end="-2560,0" time="200" reversible="true" condition="Control.HasFocus(514)">Conditional</animation>
 			<animation effect="slide" end="-3840,0" time="200" reversible="true" condition="Control.HasFocus(515)">Conditional</animation>
 			<animation effect="slide" end="-5120,0" time="200" reversible="true" condition="Control.HasFocus(516)">Conditional</animation>
 			<animation effect="slide" end="-6400,0" time="200" reversible="true" condition="Control.HasFocus(517)">Conditional</animation>
-			<animation effect="slide" end="-7680,0" time="200" reversible="true" condition="Control.HasFocus(518)">Conditional</animation>			
+			<animation effect="slide" end="-7680,0" time="200" reversible="true" condition="Control.HasFocus(518)">Conditional</animation>
 				<control type="label">
 					<posx>0</posx>
 					<posy>130</posy>
@@ -409,12 +409,12 @@
 <!--Page 5-->
 	<control type="group">
 		<posx>5120</posx>
-			<animation effect="slide" end="-1280,0" time="200" reversible="true" condition="Control.HasFocus(513)">Conditional</animation>	
-			<animation effect="slide" end="-2560,0" time="200" reversible="true" condition="Control.HasFocus(514)">Conditional</animation>				
+			<animation effect="slide" end="-1280,0" time="200" reversible="true" condition="Control.HasFocus(513)">Conditional</animation>
+			<animation effect="slide" end="-2560,0" time="200" reversible="true" condition="Control.HasFocus(514)">Conditional</animation>
 			<animation effect="slide" end="-3840,0" time="200" reversible="true" condition="Control.HasFocus(515)">Conditional</animation>
 			<animation effect="slide" end="-5120,0" time="200" reversible="true" condition="Control.HasFocus(516)">Conditional</animation>
 			<animation effect="slide" end="-6400,0" time="200" reversible="true" condition="Control.HasFocus(517)">Conditional</animation>
-			<animation effect="slide" end="-7680,0" time="200" reversible="true" condition="Control.HasFocus(518)">Conditional</animation>			
+			<animation effect="slide" end="-7680,0" time="200" reversible="true" condition="Control.HasFocus(518)">Conditional</animation>
 				<control type="label">
 					<posx>0</posx>
 					<posy>130</posy>
@@ -476,12 +476,12 @@
 <!--Page 6-->
 	<control type="group">
 		<posx>6400</posx>
-			<animation effect="slide" end="-1280,0" time="200" reversible="true" condition="Control.HasFocus(513)">Conditional</animation>	
-			<animation effect="slide" end="-2560,0" time="200" reversible="true" condition="Control.HasFocus(514)">Conditional</animation>				
+			<animation effect="slide" end="-1280,0" time="200" reversible="true" condition="Control.HasFocus(513)">Conditional</animation>
+			<animation effect="slide" end="-2560,0" time="200" reversible="true" condition="Control.HasFocus(514)">Conditional</animation>
 			<animation effect="slide" end="-3840,0" time="200" reversible="true" condition="Control.HasFocus(515)">Conditional</animation>
 			<animation effect="slide" end="-5120,0" time="200" reversible="true" condition="Control.HasFocus(516)">Conditional</animation>
 			<animation effect="slide" end="-6400,0" time="200" reversible="true" condition="Control.HasFocus(517)">Conditional</animation>
-			<animation effect="slide" end="-7680,0" time="200" reversible="true" condition="Control.HasFocus(518)">Conditional</animation>			
+			<animation effect="slide" end="-7680,0" time="200" reversible="true" condition="Control.HasFocus(518)">Conditional</animation>
 				<control type="label">
 					<posx>0</posx>
 					<posy>130</posy>
@@ -543,12 +543,12 @@
 <!--Page 7-->
 	<control type="group">
 		<posx>7680</posx>
-			<animation effect="slide" end="-1280,0" time="200" reversible="true" condition="Control.HasFocus(513)">Conditional</animation>	
-			<animation effect="slide" end="-2560,0" time="200" reversible="true" condition="Control.HasFocus(514)">Conditional</animation>				
+			<animation effect="slide" end="-1280,0" time="200" reversible="true" condition="Control.HasFocus(513)">Conditional</animation>
+			<animation effect="slide" end="-2560,0" time="200" reversible="true" condition="Control.HasFocus(514)">Conditional</animation>
 			<animation effect="slide" end="-3840,0" time="200" reversible="true" condition="Control.HasFocus(515)">Conditional</animation>
 			<animation effect="slide" end="-5120,0" time="200" reversible="true" condition="Control.HasFocus(516)">Conditional</animation>
 			<animation effect="slide" end="-6400,0" time="200" reversible="true" condition="Control.HasFocus(517)">Conditional</animation>
-			<animation effect="slide" end="-7680,0" time="200" reversible="true" condition="Control.HasFocus(518)">Conditional</animation>			
+			<animation effect="slide" end="-7680,0" time="200" reversible="true" condition="Control.HasFocus(518)">Conditional</animation>
 				<control type="label">
 					<posx>0</posx>
 					<posy>130</posy>

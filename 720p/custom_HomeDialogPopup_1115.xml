@@ -1,6 +1,6 @@
 <window type="dialog" id="1115">
 	<defaultcontrol always="true">450</defaultcontrol>
-	<include>dialogeffect</include>	
+	<include>dialogeffect</include>
 	<coordinates>
 		<system>1</system>
 		<posx>0</posx>
@@ -129,7 +129,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<selectedcolor>white</selectedcolor>
-							<animation effect="zoom" end="105" time="100">Focus</animation> 
+							<animation effect="zoom" end="105" time="100">Focus</animation>
 							<info>ListItem.Label</info>
 						</control>
 					</focusedlayout>
